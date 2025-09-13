@@ -8,3 +8,6 @@ An LLM-guided synthetic dataset of 250 emails. These emulate conversations and i
 
 ## Ontology
 ![PERKOntology](https://github.com/prantikaC/PERK/blob/main/figures/PERKOntology.png)
+
+## Snapshot of PERK
+![perk_v3](https://github.com/prantikaC/PERK/blob/main/figures/perk_v3.png)
