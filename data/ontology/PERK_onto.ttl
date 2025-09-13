@@ -1,0 +1,290 @@
+@prefix : <http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/> .
+
+<http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R7xbLeFmwK0vOXCP26OTs3y
+<http://webprotege.stanford.edu/R7xbLeFmwK0vOXCP26OTs3y> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain :Dataset ,
+                                                                     :Method ;
+                                                         rdfs:range :Task .
+
+
+###  http://webprotege.stanford.edu/R98kIUF9CCgbiWPb6EUZi83
+<http://webprotege.stanford.edu/R98kIUF9CCgbiWPb6EUZi83> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain :Method ;
+                                                         rdfs:range :Dataset .
+
+
+###  http://webprotege.stanford.edu/RBqOiZd2IsgvfaqpCm9kV6j
+<http://webprotege.stanford.edu/RBqOiZd2IsgvfaqpCm9kV6j> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain :Metric ;
+                                                         rdfs:range :Dataset ,
+                                                                    :Method ,
+                                                                    :Task .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Paper ;
+           rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#identifies
+:identifies rdf:type owl:ObjectProperty ;
+            rdfs:domain :SubmissionID ;
+            rdfs:range :Paper .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#inVenue
+:inVenue rdf:type owl:ObjectProperty ;
+         rdfs:domain :SubmissionID ;
+         rdfs:range :Conference ,
+                    :Journal .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#mentions
+:mentions rdf:type owl:ObjectProperty ;
+          rdfs:domain :Email ;
+          rdfs:range :Dataset ,
+                     :Method ,
+                     :Metric ,
+                     :Task .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#movesTo
+:movesTo rdf:type owl:ObjectProperty ;
+         rdfs:domain :PaperStatus ,
+                     :SubmissionID ;
+         rdfs:range :PaperStatus .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#notifies
+:notifies rdf:type owl:ObjectProperty ;
+          rdfs:domain :Email ;
+          rdfs:range :Meeting ,
+                     :SubmissionID .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#partOf
+:partOf rdf:type owl:ObjectProperty ;
+        rdfs:domain :Email ;
+        rdfs:range :MailThread .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#receivedBy
+:receivedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Email ;
+            rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#sentBy
+:sentBy rdf:type owl:ObjectProperty ;
+        rdfs:domain :Email ;
+        rdfs:range :Person .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R88WNyTmaoSJqLM6BYuwcjL
+<http://webprotege.stanford.edu/R88WNyTmaoSJqLM6BYuwcjL> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :Metric .
+
+
+###  http://webprotege.stanford.edu/RBO7KIx5GgoujIjcTf9Mi7E
+<http://webprotege.stanford.edu/RBO7KIx5GgoujIjcTf9Mi7E> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :Dataset .
+
+
+###  http://webprotege.stanford.edu/RCNObdjQXSPaKkeGK4otCAR
+<http://webprotege.stanford.edu/RCNObdjQXSPaKkeGK4otCAR> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :Task .
+
+
+###  http://webprotege.stanford.edu/RDdhsbqqxImzbzUNMIjVpA5
+<http://webprotege.stanford.edu/RDdhsbqqxImzbzUNMIjVpA5> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :Method .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#affiliation
+:affiliation rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Person ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#confDate
+:confDate rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Conference ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#confTitle
+:confTitle rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Conference ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#confVenue
+:confVenue rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Conference ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:domain :SubmissionID ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#journalTitle
+:journalTitle rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Journal ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#mailDate
+:mailDate rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Email ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#mailNum
+:mailNum rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Email ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#meetAgenda
+:meetAgenda rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Meeting ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#meetDate
+:meetDate rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Meeting ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#meetLink
+:meetLink rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Meeting ;
+          rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#meetTime
+:meetTime rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Meeting ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#paperTitle
+:paperTitle rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Paper ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#personEmail
+:personEmail rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Person ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#personName
+:personName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#statusDate
+:statusDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :PaperStatus ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#statusType
+:statusType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :PaperStatus ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#subject
+:subject rdf:type owl:DatatypeProperty ;
+         rdfs:domain :MailThread ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#threadID
+:threadID rdf:type owl:DatatypeProperty ;
+          rdfs:domain :MailThread ;
+          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#Dataset
+:Dataset rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#Method
+:Method rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#Metric
+:Metric rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1#Task
+:Task rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/Conference
+:Conference rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/Email
+:Email rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/Journal
+:Journal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/MailThread
+:MailThread rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/Meeting
+:Meeting rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/Paper
+:Paper rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/PaperStatus
+:PaperStatus rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/prantika/ontologies/2025/8/EmailPRKGOntoV1/SubmissionID
+:SubmissionID rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
