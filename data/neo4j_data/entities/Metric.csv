@@ -1,0 +1,20 @@
+:ID,metricName,:LABEL
+mt1,accuracy,Metric
+mt2,F1-score,Metric
+mt3,temporal consistency score,Metric
+mt4,interpretability metrics,Metric
+mt5,Cultural and Temporal Sentiment Accuracy,Metric
+mt6,Cultural and Temporal Dynamics Evaluation,Metric
+mt7,Evaluation metrics for historical linguistic nuances and cultural dimensions,Metric
+mt8,Innovative Metric Design,Metric
+mt9,precision,Metric
+mt10,recall,Metric
+mt11,F1 score,Metric
+mt12,Precision,Metric
+mt13,Recall,Metric
+mt14,F1 Score,Metric
+mt15,BLEU,Metric
+mt16,ROUGE,Metric
+mt17,Cultural Context Interpretation Accuracy,Metric
+mt18,BERTScore,Metric
+mt19,MoverScore,Metric

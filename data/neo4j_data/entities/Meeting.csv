@@ -1,0 +1,162 @@
+:ID,passcode,meetDate,meetLink,meetAgenda,meetTime,:LABEL
+mg1,,2019-04-08,,Discuss ideas and coordinate next steps for Temporal Sentiment Analysis research,15:00-16:00,Meeting
+mg2,,2019-04-08,,delve deeper into the metrics and refine the evaluation framework for models,,Meeting
+mg3,,2019-04-08,,Discussing next steps for Temporal Sentiment Analysis project,,Meeting
+mg4,,2019-04-08,https://zoom.us/j/1234567890,Review of datasets and methodologies proposed,15:00-16:00,Meeting
+mg5,,,,Discuss reviewers' comments and strategize revisions for ACM Journal submission,,Meeting
+mg6,,2019-06-26,https://zoom.us/j/0987654321,Reviewing the reviewers' comments in detail. Discussing enhancements for a multimodal approach and refining feature extraction. Establishing a clear plan for addressing the feedback and preparing the revised submission.,15:00-16:30,Meeting
+mg7,,2019-06-26,,Revisions for ACM Journal Submission,,Meeting
+mg8,,2019-08-19,,clarify any lingering issues and confirm our next steps,,Meeting
+mg9,,2019-08-16,,Check-in meeting for final submission review,10:00,Meeting
+mg10,,2019-08-18,,Check-in meeting for final submission review,15:00,Meeting
+mg11,,2019-08-16,,Quick check-in for finalizing the camera-ready submission,10:00,Meeting
+mg12,,2019-08-16,https://zoom.us/j/1234567890,"Final review of the manuscript to ensure all feedback has been incorporated. Confirm any last-minute adjustments to figures, tables, and socio-political context segments. Finalize the authorship order and acknowledge contributions adequately. Discuss the formatting compliance and set a firm deadline for submission by 31st August.",10:00-10:30,Meeting
+mg13,,2019-09-14,,Exploring new research directions and preliminary ideas,,Meeting
+mg14,,2019-09-14,https://meet.google.com/qwe-rtyu-ioo,"Discussion on potential partnering archives and digital humanities projects. Methodological frameworks and incorporating transformers for analysis. Evaluation metrics that cater to historical linguistic nuances and cultural dimensions. Division of roles, if applicable, and laying out preliminary timelines.",10:00,Meeting
+mg15,,2019-10-01,,Follow-up meeting to check progress and recalibrate approach,,Meeting
+mg16,,2019-09-29,https://meet.google.com/abc-defg-hij,Final Review and Feedback on the Dataset Proposal - Last-minute observations and anticipated questions. Methodologies and Experimentation Plans - Initiating with BERT models and other identified techniques. Evaluation Strategies - Progress on metrics involving cultural and historical nuances. Contingency Plans - Discussing potential measures in case of data-sharing challenges.,15:00,Meeting
+mg17,,2019-09-29,https://meet.google.com/abc-defg-hij,"Scalability of BERT experimentations, contingency plans for dataset access",15:00,Meeting
+mg18,,2019-09-29,,"Follow-up meeting to discuss project scalability, model alignment, and alternative data access measures",15:00,Meeting
+mg19,,2019-09-29,,Follow-up on research structuring and next steps,,Meeting
+mg20,,2019-10-07,https://stanford.zoom.us/j/123456789,Review and Selection of Conferences and Journals. Division of Paper Writing Responsibilities. Establishment of a Draft Timeline for Abstract and Manuscript Submission. Addressing Any Potential Bottlenecks in Data Analysis and Experiments.,16:00,Meeting
+mg21,,2019-10-07,,Publication strategy discussion,,Meeting
+mg22,,2019-10-31,,Internal review of paper sections,,Meeting
+mg23,,2020-02-15,,strategize key points for ACL 2020 presentation,,Meeting
+mg24,,2020-02-14,,Review each reviewer's comments and discuss our strategies for addressing them specifically. Assign specific revision tasks to ensure all suggested changes are thoroughly implemented. Discuss and align our approach for the ACL presentation preparation.,16:00 IST / 10:30 GMT / 2:30 PST,Meeting
+mg25,,2020-02-14,https://zoom.us/j/1234567890?pwd=abc12345,Address ACL camera-ready revisions and JOCCH manuscript development,,Meeting
+mg26,,2020-02-14,,Discussion on ACL Revisions and JOCCH Progress,,Meeting
+mg27,,2020-03-07,,literature mapping sessions to deepen the cultural contexts,,Meeting
+mg28,,2020-03-10,,virtual presentation rehearsal for ACL 2020,,Meeting
+mg29,,2020-03-07,,Literature mapping session focused on cultural contexts,,Meeting
+mg30,,2020-03-08,,Brainstorming session for technological methodology exploration,,Meeting
+mg31,,2020-03-10,,Virtual rehearsal for ACL conference presentation,15:00,Meeting
+mg32,,2020-03-08,https://stanford.zoom.us/j/1234567890,"furthering technological methodologies, datasets for computational approaches, 19th-century literary corpora for BERT model refinements",10:00 PST / 18:00 GMT,Meeting
+mg33,,2020-03-15,,round table discussion with Dr. Edward Long on historical data interpretation through computational frameworks,,Meeting
+mg34,,2020-03-10,,ACL presentation rehearsal,,Meeting
+mg35,,2020-03-15,,Discuss outcomes from Ananya’s round table with Dr. Edward Long and colleagues at Oxford,,Meeting
+mg36,,2020-03-28,,Collective review meeting for manuscript objectives alignment,,Meeting
+mg37,,2020-03-28,,Review of Final Draft for JOCCH,16:00,Meeting
+mg38,,2020-03-28,,ACL Final Rehearsal,17:30,Meeting
+mg39,,,,"Addressing methodological clarifications, Expanding the dataset: discussing potential sources, Enhancing the discussion to align with interdisciplinary strands",,Meeting
+mg40,,2020-04-25,https://zoom.us/j/1234567890,"Overview of Review Feedback, Methodological Enhancements, Dataset Expansion Discussion, Discussion Section Enrichment, Setting Milestones",15:00 IST / 10:30 BST / 2:30 PDT,Meeting
+mg41,,2020-04-25,,"Review Feedback Recap, Methodological Enhancements, Dataset Expansion, Discussion Section Enhancement, Milestones and Timeline, Next Steps",,Meeting
+mg42,,2020-06-25,,Internal review of the complete final draft,,Meeting
+mg43,,2020-08-28,,Discussion on NLP applications in historical studies and securing access to UK datasets,,Meeting
+mg44,,2020-08-28,https://zoom.us/j/2345678901,"Review of Proposed Research Ideas, Pilot Projects and Grant Proposals, Resource and Collaboration Opportunities",16:00 IST / 11:30 BST / 03:30 PDT,Meeting
+mg45,,2020-08-28,,Exploring New Research Directions integrating NLP and historical analysis,,Meeting
+mg46,,2020-09-15,,Finalize proposal sections,,Meeting
+mg47,,2020-09-15,,Refine draft and finalize proposal for imminent submissions,,Meeting
+mg48,,2020-09-15,,Finalize key sections of the proposal,,Meeting
+mg49,,2020-11-23,,brainstorm necessary refinements and establish a timeline for resubmission,,Meeting
+mg50,,2020-11-24/25,,detailed discussion and initial idea exchange,,Meeting
+mg51,,2020-11-23,https://meet.google.com/gme-samplelink,"Sustainability Plan Fortification, Risk Mitigation Strategies, Financial Justifications, Integration of Feedback",15:00 IST / 09:30 BST / 01:30 PDT,Meeting
+mg52,,2020-11-23,,Proposal revision based on Horizon 2019 feedback,,Meeting
+mg53,,,,follow-up meeting post-submission to continue our proactive collaboration on algorithm refinement and prototype development,,Meeting
+mg54,,2020-12-08,,align on final revisions,,Meeting
+mg55,,2020-12-09,https://stanford.zoom.us/j/samplelink,Final Adjustments: Review all collective feedback and approve the final changes to be made in the proposal. Ensure seamless integration of sustainability and risk mitigation plans in the narrative. Submission Plan: Confirm all submission requirements have been met. Discuss timelines and responsibilities for the final submission on or before our deadline. Post-Submission Initiatives: Outline next steps for ongoing algorithm refinement. Plan a timeline for prototype development work concerning educational tools.,16:00 IST / 10:30 BST / 2:30 PDT,Meeting
+mg56,,2020-12-20,,compile initial thoughts and convene our first virtual session to map out next steps,,Meeting
+mg57,,2020-12-15,,Outline plans for algorithm refinement and educational tool development,,Meeting
+mg58,,2020-12-15,,strategic discussion on development goals,,Meeting
+mg59,,2020-12-15,,Discuss algorithm refinement and educational tool development,,Meeting
+mg60,,2020-12-15,,Algorithm refinement and development of educational tool prototypes,,Meeting
+mg61,,2020-12-30,,Discuss feedback on adaptive model integration plan,,Meeting
+mg62,,2020-12-30,,Refining selection criteria and reviewing platform capabilities,,Meeting
+mg63,,2020-12-30,,"Feedback Consolidation on Draft Plan, Technology Platform Selection, Pilot Phase Strategy",,Meeting
+mg64,,2021-01-12,,refine and progress our tool prototype,,Meeting
+mg65,,2021-01-12,,Discuss potential title suggestions and abstract drafts,,Meeting
+mg66,,2021-01-12,,"Title and Abstract Proposals, Manuscript Drafting and Responsibilities, Review Process and Collaborative Tools",,Meeting
+mg67,,2021-01-12,,set a comprehensive agenda for manuscript submission,,Meeting
+mg68,,2021-02-02,,focused review session to deliberate on improvements and the inclusion of any additional insights,,Meeting
+mg69,,2021-04-28,[Insert Zoom Link],"Discuss approaches in detail, address lingering questions, and synergize efforts for ACL 2021 paper revision",10:00,Meeting
+mg70,,2021-04-28,,Revisions for ACL 2021 manuscript,,Meeting
+mg71,,2021-05-04,[Insert Zoom Link],Follow-up review meeting to finalize drafts,10:00,Meeting
+mg72,,2021-05-20,,Virtual toast to celebrate submission and discuss future prospects,18:00,Meeting
+mg73,,2021-06-20,,review edits and align on presentation strategy,,Meeting
+mg74,,2021-06-20,,,,Meeting
+mg75,,2021-06-23,,,,Meeting
+mg76,,2021-06-20,,Collaborative review session for slide preparation and presentation delivery,,Meeting
+mg77,,2021-06-23,,Collaborative review session for slide preparation and presentation delivery,,Meeting
+mg78,,2021-06-25,,Mock presentation session for ACL 2021,17:00,Meeting
+mg79,,2021-07-28,,Pre-Conference Meetup to harmonize presentation and address last-minute concerns,,Meeting
+mg80,,2021-09,,brainstorming session to gather insights and set concrete goals for our next project phase,,Meeting
+mg81,,2021-09-15,https://meet.google.com/example-code,Detail immediate action points and strategies for the next research phase,16:00 IST / 07:30 PST / 15:30 GMT,Meeting
+mg82,,2021-09-15,,Post-ACL Research Meeting,,Meeting
+mg83,,2021-10-10,,Discuss integration of manuscript sections and brainstorm additional information or case studies,16:00 IST / 07:30 PST / 15:30 GMT,Meeting
+mg84,,2021-11-24,,Discuss progress on manuscript revisions,16:00 IST / 07:30 PST / 15:30 GMT,Meeting
+mg85,,2022-02-05,,Discuss potential directions and collaborations in applying methodologies to lesser-studied languages and cultural datasets,15:00 IST / 05:30 PST / 13:30 GMT,Meeting
+mg86,,2022-02-05,,discuss future research directions with potential focuses on uncharted linguistic and cultural datasets,,Meeting
+mg87,,2022-02-05,,explore fresh research initiatives in less-explored linguistic terrains,,Meeting
+mg88,,2022-02-05,,Discuss new research ventures,15:00 IST / 05:30 PST / 13:30 GMT,Meeting
+mg89,,2022-02-05,https://stanford.zoom.us/meeting-id,"Reflection on recent success, exploration of new research directions, potential collaboration opportunities, tools and techniques",,Meeting
+mg90,,2022-02-05,,"Celebration and Reflection, Exploring New Research Directions, Funding and Collaboration Opportunities, Advanced NLP Tools",,Meeting
+mg91,,2022-02-28,,seminar on advanced syntactic tools,,Meeting
+mg92,,2022-03-10,,Bi-weekly progress meetings to ensure project objectives are on track,15:00 IST / 05:30 PST / 13:30 GMT,Meeting
+mg93,,2022-02-28,,Michael's seminar to equip with critical tool proficiencies,,Meeting
+mg94,,2022-03-10,,First bi-weekly meeting on data analysis progress,,Meeting
+mg95,,2022-03-24,,Review progress on the advanced analysis using syntactic tools. Discuss preliminary outcomes from data trials and possible adjustments. Fine-tune grant proposals and develop strategies for submission. Coordinate timelines and roles regarding collaboration with regional linguistic bodies. Plan dissemination of our early findings at relevant academic forums.,15:00 IST / 05:30 PST / 13:30 GMT,Meeting
+mg96,,2022-03-24,,"Bi-weekly meeting to discuss syntactic tools, data trials, grant proposals, regional collaboration, and academic dissemination",,Meeting
+mg97,,2022-06-22,,Discuss strategies and actions for paper revisions,,Meeting
+mg98,,2022-06-26,https://stanford.zoom.us/meet/XYZ123,"Tool Clarifications and Contributions, Socio-Cultural Impact Deliberations, Data Visualization Enhancements",15:00 IST,Meeting
+mg99,,2022-06-26,,Strategy meeting for ACL 2022 revisions,,Meeting
+mg100,,2022-07-07,https://meet.google.com/zxy-bvwp-txy,Finalize remaining adjustments and polish document for camera-ready submission,16:00 IST / 06:30 PST / 14:30 GMT,Meeting
+mg101,,2022-07-07,,Comprehensive Review Session for final draft review,,Meeting
+mg102,,2022-07-07,,Finalize adjustments for ACL 2022 paper submission,,Meeting
+mg103,,2022-07-24,https://zoom.us/j/abcd1234efgh,brainstorm and refine research ideas on NLP in under-represented dialects,15:00 IST / 05:30 PST / 13:30 GMT,Meeting
+mg104,,2022-07-24,,Confirm availability for meeting to discuss further research directions,,Meeting
+mg105,,2022-07-24,,Post-ACL 2022 Research Strategy Discussion,,Meeting
+mg106,,2022-08-20,,Review initial drafts and insights,,Meeting
+mg107,,2022-08-20,,Preliminary Concept Presentations,,Meeting
+mg108,,2022-08-05,,Feedback session to refine ethical framework consultation process,,Meeting
+mg109,NRES2022,2022-08-20,https://zoom.us/j/hijk4567lmno,"Preliminary concept presentations for Dialect Expansion, Platform Development, Ethical Framework",15:00 IST,Meeting
+mg110,,2022-08-20,,Discussion on preliminary concepts for project development,,Meeting
+mg111,,2022-09-10,,"reevaluate timelines and ensure synergy between technical, cultural, and ethical aspects",,Meeting
+mg112,,,https://meet.google.com/xyz-abc123,"Review progress on dialect data collection, share updates on ethical consideration surveys, discuss sandbox tests on dialect recognition features, strategize on aligning goals",,Meeting
+mg113,,2022-09-15,,"Dialect Data Collection, Technical Developments, Ethical Consideration Surveys",,Meeting
+mg114,,2022-10-15,,Finalize the abstract and review technical progress,,Meeting
+mg115,,2022-10-22/2022-10-23,https://meet.google.com/xyz-abc123,Final review and approval of the abstract. Discuss technical progress and address scalability challenges. Coordination of ethical findings within our conference presentation. Identify any remaining support needed as we prepare to submit.,,Meeting
+mg116,,2022-10-23,,Review of Meeting Outcomes and Decision on Submission Strategy,,Meeting
+mg117,,2022-11-05,https://meet.google.com/xyz-connection456,Comprehensive review of the paper’s sections. Discussion on any last-minute inclusions or modifications. Final checks for ethical and methodological coherence.,14:00,Meeting
+mg118,,2023-03-22,https://meet.google.com/abc-final567,Review and finalize camera-ready submission content. Discuss presentation strategy and role allocation. Prepare outline of the talk for conference presentation.,15:00,Meeting
+mg119,,2023-03-29,https://meet.google.com/abc-final567,Final review of presentation content and role distribution. Outline practice sessions and setup a rehearsal timeline. Discussion on engaging Q&A session strategies for the conference audience.,15:00,Meeting
+mg120,,2023-04-02,https://meet.google.com/final-rehearsal123,Conduct a full practice run of our presentation. Finalize presentation delivery roles and transitions. Discuss strategies for dynamic interaction post-presentation.,14:00,Meeting
+mg121,,2023-04-02,https://meet.google.com/final-rehearsal123,Rehearsal for ACL 2023 presentation,14:00,Meeting
+mg122,,2023-07-14,,Dress Rehearsal at the conference hall,,Meeting
+mg123,,2023-07-14,,calm any last-minute nerves and reconfirm logistics,,Meeting
+mg124,,2023-07-14,https://zoom.us/aclc2023prep-call,"Pre-presentation call to reaffirm logistics, offer support, and solidify team resolve",16:00,Meeting
+mg125,,2023-04-14,https://zoom.us/aclc2023prep-call,"pre-presentation call to review presentation flow, address last-minute concerns, and encourage one another",16:00,Meeting
+mg126,,2023-09-01,https://zoom.us/jocch5678zx-review,Review feedback and define a clear plan of action for revision,10:00,Meeting
+mg127,,2023-09-01,https://zoom.us/jocch5678zx-review,Review meeting for JOCCH revision,10:00,Meeting
+mg128,,2023-09-01,,Review and Discussion on JOCCH Revisions,,Meeting
+mg129,,2023-09-26,https://meet.google.com/final-jocch-review,Final team review session to align on any remaining concerns and gain final approval. Discuss strategic points for cover letter and supplementary materials.,15:00,Meeting
+mg130,,2024-01-05,https://zoom.us/jocch-revisions,Discuss enhancements and align with other revisions for JOCCH manuscript,18:00 IST,Meeting
+mg131,,2024-01-05,https://zoom.us/jocch-revisions,"Review Algorithm Details, Ethical Narratives Expansion, Literature Review Updates, Integration and Coherence Discussion",18:00 IST (12:30 GMT),Meeting
+mg132,,2024-01-12,,finalize any outstanding matters before our January 12 internal review deadline,,Meeting
+mg133,,2024-01-10,https://zoom.us/JOCCH-final-integration,"Final integration, addressing any remaining comments or concerns, and ensuring we have a comprehensive understanding of our next steps for a successful resubmission.",16:00 IST,Meeting
+mg134,,2024-01-10,,Zoom integration meeting for JOCCH resubmission,,Meeting
+mg135,,2024-02-02,https://us05web.zoom.us/j/23456789012?pwd=abcd1234,Discuss integration of all sections and finalize revision strategy before submission deadline.,15:00 IST / 9:30 GMT / 1:30 PST,Meeting
+mg136,,2024-02-02,,Coordination Call on Manuscript Revisions,,Meeting
+mg137,,2024-03-04,https://us05web.zoom.us/j/76543210987?pwd=dcba4321,Discuss feedback and allocate tasks for revisions,15:00 GMT / 20:30 IST / 07:00 PST,Meeting
+mg138,,2024-03-04,,Revisions for manuscript submission to JOCCH,,Meeting
+mg139,,2024-03-25,https://meet.google.com/xyz-1234-abc,"Review of Consolidated Revisions, Addressing Cross-Cultural Implications, Finalizing Response Letter",15:00 GMT / 20:30 IST / 07:00 PST,Meeting
+mg140,,2024-03-25,,Final touchpoint meeting regarding the revisions for our manuscript,,Meeting
+mg141,,2024-04-28,,Collaborative review meeting for final draft revisions,,Meeting
+mg142,,2024-04-28,,Finalize key points for manuscript revisions,,Meeting
+mg143,,2024-04-28,,"Discuss manuscript's comprehensive overhaul, final points on integration, and strategic planning for incorporation of elements",,Meeting
+mg144,,2024-04-28,[Insert Your Unique Zoom Link Here],"Review updates on case study clarifications, cross-cultural framework enhancements, and ethical considerations expansions. Discuss Michael's technical strategies, including data preprocessing and algorithmic integration. Final integration points and preparation for submission readiness.",10:00 PST / 18:00 BST / 22:30 IST,Meeting
+mg145,,2024-07-30,https://zoom.us/j/123456789?pwd=example,"Discuss potential historical text corpora, outline specific metrics, review datasets for cross-cultural frameworks, evaluate real-world applications for bias mitigation, set timelines and responsibilities.",09:00-18:00,Meeting
+mg146,,2024-07-30,,Discussion on manuscript revision and task responsibilities,,Meeting
+mg147,,2024-09-08,,Share compiled sections and expedite the review process,,Meeting
+mg148,,2024-09-10,https://zoom.us/j/234567891?pwd=finalizeMeet,"Consolidation of Manuscript Sections, Pre-Submission Peer Review Strategy, Final Adjustments in Coordination with JOCCH Guidelines, Target Deadlines and Balancing Workloads",16:00 GMT,Meeting
+mg149,,2024-09-11,https://zoom.us/j/234567891?pwd=finalizeMeet,"Consolidation of Manuscript Sections, Pre-Submission Peer Review Strategy, Final Adjustments in Coordination with JOCCH Guidelines, Target Deadlines and Balancing Workloads",11:00 GMT,Meeting
+mg150,,2024-09-10,,Final Manuscript Review Meeting,,Meeting
+mg151,,2024-09-16,https://zoom.us/j/345678912?pwd=peerReview,"Section-by-Section Critique, Feedback Refinement, Final Adjustments",10:00 GMT,Meeting
+mg152,,2024-10-25,https://meet.google.com/xyz-finalEdits,Review of revisions made so far and plan for integrating pending suggestions. Finalizing additional visualizations and tables. Confirming adherence to formatting guidelines and submission readiness.,15:00 GMT,Meeting
+mg153,,2024-10-25,https://meet.google.com/xyz-finalEdits,Review the draft revisions and proposed additions to the narrative. Discuss progress on visual and empirical enhancements. Coordinate the final formatting and submission strategy.,15:00 GMT,Meeting
+mg154,,2024-11-01,https://meet.google.com/xyz-empiricalReview,Reviewing visualizations and making necessary adjustments in real-time,15:00 GMT,Meeting
+mg155,,2025-01-10,,Discussion on potential complementary studies and refinements for current work,,Meeting
+mg156,,2025-01-10,https://iacs.zoom.us/j/1234567890,"Advancement of Methods: Reviewing Prof. Bhatia's points on novel NLP frameworks. Discussion on how recent advancements can be incorporated into our study. Dataset Expansion: Exploration of additional datasets, potentially leveraging resources from Stanford and Oxford to add diverse cultural dimensions. Feedback Anticipation: Preparing our team for possible review insights from EMNLP, focusing on cross-cultural text analysis.",,Meeting
+mg157,,2025-01-10,,collaborative strategy session,,Meeting
+mg158,,2025-01-10,,Advancements and Strategic Discussions Post-Submission,,Meeting
+mg159,,2025-02-05,,technical workshops to ensure that our analytical strategies align with any new datasets and frameworks,,Meeting
+mg160,,2025-02-05,,technical workshop to align on analytical strategies and evaluate preliminary model outcomes,,Meeting
+mg161,,2025-02-05,https://meet.google.com/examplelink,"Integration of NLP Frameworks, Enhanced Dataset Utilization, Evaluation and Metrics, Action Plan and Forward Steps",10:00-12:00,Meeting

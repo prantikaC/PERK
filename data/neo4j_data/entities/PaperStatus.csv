@@ -1,0 +1,71 @@
+:ID,statusType,statusDate,:LABEL
+ps1,Submitted,2019-04-20,PaperStatus
+ps2,Revisions Required,2019-06-15,PaperStatus
+ps3,Accepted,2019-08-10,PaperStatus
+ps4,Accepted,2019-08-12,PaperStatus
+ps5,Camera Ready,2019-09-01,PaperStatus
+ps6,Submitted,2019-10-22,PaperStatus
+ps7,Accepted,2020-02-04,PaperStatus
+ps8,Accepted,2020-02-06,PaperStatus
+ps9,Camera-Ready Submitted,2020-02-25,PaperStatus
+ps10,Submitted,2020-03-31,PaperStatus
+ps11,Under Review,2020-04-10,PaperStatus
+ps12,Accepted with Minor Revisions,2020-06-07,PaperStatus
+ps13,Accepted with Minor Revisions,2020-06-10,PaperStatus
+ps14,Accepted,2020-06-16,PaperStatus
+ps15,Camera-Ready,2020-07-15,PaperStatus
+ps16,Camera-Ready,2020-07-12,PaperStatus
+ps17,Submitted,2020-09-22,PaperStatus
+ps18,Reviewed,2020-11-15,PaperStatus
+ps19,Submitted,2021-02-20,PaperStatus
+ps20,Revision Required,2021-04-15,PaperStatus
+ps21,Under Revision,2021-04-20,PaperStatus
+ps22,Under Revision,2021-05-05,PaperStatus
+ps23,Accepted,2021-06-11,PaperStatus
+ps24,Accepted,2021-06-13,PaperStatus
+ps25,Camera-Ready,2021-06-30,PaperStatus
+ps26,Submitted,2021-10-10,PaperStatus
+ps27,Accepted pending minor revisions,2021-11-15,PaperStatus
+ps28,Revised,2021-11-26,PaperStatus
+ps29,Accepted,2022-01-12,PaperStatus
+ps30,Camera-Ready,2022-01-31,PaperStatus
+ps31,Camera-Ready,2022-01-30,PaperStatus
+ps32,Submitted,2022-02-25,PaperStatus
+ps33,Submitted,2022-03-28,PaperStatus
+ps34,Accept with Minor Revisions,2022-06-15,PaperStatus
+ps35,Accepted with minor revisions,2022-06-16,PaperStatus
+ps36,Final Draft,2022-07-09,PaperStatus
+ps37,Revised,2022-07-10,PaperStatus
+ps38,Revised Submission,2022-07-11,PaperStatus
+ps39,Camera-Ready,2022-07-15,PaperStatus
+ps40,Camera-Ready,2022-07-16,PaperStatus
+ps41,Submitted,2022-11-07,PaperStatus
+ps42,Submitted,2022-11-15,PaperStatus
+ps43,Accepted,2023-03-10,PaperStatus
+ps44,Camera-Ready,2023-03-31,PaperStatus
+ps45,Submitted,2023-07-16,PaperStatus
+ps46,Rejected,2023-08-20,PaperStatus
+ps47,Revised,2023-09-30,PaperStatus
+ps48,Ready for Resubmission,2023-09-27,PaperStatus
+ps49,Revised Submission,2023-09-29,PaperStatus
+ps50,Major Revision Required,2023-11-15,PaperStatus
+ps51,Major Revisions,2023-11-20,PaperStatus
+ps52,Under Review,2024-01-15,PaperStatus
+ps53,Minor Revisions Required,2024-01-20,PaperStatus
+ps54,Minor Revisions Requested,2024-01-21,PaperStatus
+ps55,Revised,2024-02-15,PaperStatus
+ps56,Resubmitted,2024-02-17,PaperStatus
+ps57,Revision Required,2024-02-28,PaperStatus
+ps58,Resubmitted,2024-04-07,PaperStatus
+ps59,Revisions Required,2024-04-14,PaperStatus
+ps60,Submitted,2024-05-14,PaperStatus
+ps61,Rejected with Major Revisions,2024-07-20,PaperStatus
+ps62,Re-submitted,2024-09-25,PaperStatus
+ps63,Accepted with Minor Revisions,2024-10-15,PaperStatus
+ps64,Accepted with Minor Revisions,2024-10-18,PaperStatus
+ps65,Resubmitted,2024-11-05,PaperStatus
+ps66,Resubmitted,2024-11-06,PaperStatus
+ps67,Accepted,2024-11-22,PaperStatus
+ps68,Accepted,2024-11-23,PaperStatus
+ps69,Submitted,2024-12-01,PaperStatus
+ps70,Submitted,2025-03-16,PaperStatus
