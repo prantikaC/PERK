@@ -4,7 +4,7 @@ Emails are a rich yet underused source of personal and professional knowledge. T
 
 ##  PATRA.v1
 
-An LLM-guided synthetic dataset of 250 emails. These emulate conversations and information conveyed to a researcher via email that may be relevant to their work. The emails cover scientific discussions between collaborators, meeting notifications, and information related to their publications.
+PATRA or **P**ersonalized **A**I **T**exts for **R**esearch **A**ctivities is an LLM-guided synthetic dataset of 250 emails. These emulate conversations and information conveyed to a researcher via email that may be relevant to their work. The emails cover scientific discussions between collaborators, meeting notifications, and information related to their publications.
 
 ## Ontology
 ![PERKOntology](https://github.com/prantikaC/PERK/blob/main/figures/PERKOntology.png)
