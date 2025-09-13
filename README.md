@@ -7,4 +7,4 @@ Emails are a rich yet underused source of personal and professional knowledge. T
 An LLM-guided synthetic dataset of 250 emails. These emulate conversations and information conveyed to a researcher via email that may be relevant to their work. The emails cover scientific discussions between collaborators, meeting notifications, and information related to their publications.
 
 ## Ontology
-![EmailKGOntology](https://github.com/prantikaC/PERK/blob/main/Figures/EmailKGOntology.pdf)
+![PERKOntology](https://github.com/prantikaC/PERK/blob/main/figures/PERKOntology.png)
