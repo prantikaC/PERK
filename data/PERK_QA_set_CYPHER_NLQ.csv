@@ -1,0 +1,92 @@
+NLQ,GOLD_CYPHER_Q,GOLD_ANS,SYSTEM_ANS
+What is the email address of Sunita Sen?,"MATCH (p:Person)
+WHERE p.personName = ""Sunita Sen""
+RETURN p.personEmail;",sunita.sen@iacs.res.in,sunita.sen@iacs.res.in
+Which institution is Michael Bradley affiliated with?,"MATCH (p:Person)
+WHERE p.personName = ""Michael Bradley""
+RETURN p.affiliation;",Stanford University,Stanford University
+Who is affiliated with the University of Oxford?,"MATCH (p:Person)
+WHERE p.affiliation = ""University of Oxford""
+RETURN p.personName;",Ananya Chatterjee,Ananya Chatterjee
+What is the title of the paper submitted to ACL 2021?,"MATCH (sid:SubmissionID)-[:identifies]->(p:Paper),
+      (sid)-[:inVenue]->(c:Conference), (sid)-[:movesTo]->(s:PaperStatus)
+WHERE c.confTitle = ""ACL 2021"" AND s.statusType = ""Submitted""
+RETURN p.paperTitle;",Adaptive Model Integration for Historical Data Harnessing Multidisciplinary Synergies,"Adaptive Model Integration for Historical Data Harnessing Multidisciplinary Synergies,  Adaptive Model Integration for Historical Data Harnessing Multidisciplinary Synergies"
+Who are the authors of the ACL 2021 paper?,"MATCH (sid:SubmissionID)-[:identifies]->(p:Paper), (p)-[:hasAuthor]->(a:Person),
+      (sid)-[:inVenue]->(c:Conference)
+WHERE c.confTitle = ""ACL 2021""
+RETURN a.personName;","Sunita Sen, Ramesh Bhatia, Michael Bradley, Ananya Chatterjee","Ramesh Bhatia, Michael Bradley, Ananya Chatterjee, Sunita Sen, Ramesh Bhatia, Michael Bradley, Ananya Chatterjee, Sunita Sen,,Ramesh Bhatia, Michael Bradley, Ananya Chatterjee, Sunita Sen,"
+Which paper was accepted in Journal of Documentation?,"MATCH (sid:SubmissionID)-[:identifies]->(p:Paper),
+      (sid)-[:inVenue]->(j:Journal),
+      (sid)-[:movesTo]->(s:PaperStatus)
+WHERE j.journalTitle = ""Journal of Documentation""
+  AND s.statusType = ""Accepted""
+RETURN p.paperTitle;",Exploring Historical Narratives: An Interdisciplinary Approach through NLP,Exploring Historical Narratives: An Interdisciplinary Approach through NLP
+How many papers were submitted to ACM Journal on Computing and Cultural Heritage?,"MATCH (sid:SubmissionID)-[:identifies]->(p:Paper),
+      (sid)-[:inVenue]->(j:Journal),
+      (sid)-[:movesTo]->(s:PaperStatus)
+WHERE j.journalTitle = ""ACM Journal on Computing and Cultural Heritage""
+  AND s.statusType = ""Submitted""
+RETURN count(p);",3,4
+What is the venue of ACL 2023?,"MATCH (c:Conference)
+WHERE c.confTitle = ""ACL 2023""
+RETURN c.confVenue;","Vancouver Convention Center,Room B203",Vancouver Convention Center
+Which journals published papers by Sunita Sen?,"MATCH (sunita:Person {personName: ""Sunita Sen""})
+MATCH (paper:Paper)-[:hasAuthor]->(sunita)
+MATCH (sid:SubmissionID)-[:identifies]->(paper) MATCH (sid)-[:movesTo]->(pstat:PaperStatus)
+MATCH (sid)-[:inVenue]->(journal:Journal) WHERE pstat.statusType = ""Accepted""
+RETURN DISTINCT journal.journalTitle;","Journal of Documentation, ACM Journal on Computing and Cultural Heritage","ACM Journal on Computing and Cultural Heritage, Journal of Documentation"
+Was any paper published in IEEE journals?,"MATCH (sid:SubmissionID)-[:identifies]->(p:Paper),
+      (sid)-[:inVenue]->(j:Journal),
+      (sid)-[:movesTo]->(ps:PaperStatus)
+WHERE j.journalTitle CONTAINS ""IEEE"" AND ps.statusType = ""Accepted""
+RETURN COUNT(sid) > 0;
+",FALSE,FALSE
+"What was the agenda of the September 15, 2021 meeting?","MATCH (m:Meeting {meetDate: ""2021-09-15""})
+RETURN m.meetAgenda;","Research Publication Strategy, Grant and Funding Opportunities, Administrative Preparation","Detail immediate action points and strategies for the next research phase, Post-ACL Research Meeting"
+"When was the October 10, 2021 meeting held?","MATCH (m:Meeting)
+WHERE m.meetDate STARTS WITH ""2021-10-10""
+RETURN m.meetTime;",4 PM IST / 7:30 AM PST / 3:30 PM GMT,16:00 IST / 07:30 PST / 15:30 GMT
+"Which meeting link was shared for the April 28, 2021 discussion?","MATCH (m:Meeting {meetDate: ""2021-04-28""})
+RETURN m.meetLink;",FALSE,"[Insert Zoom Link], null"
+What was the status of the ACL 2020 paper after submission?,"MATCH (s:SubmissionID)-[:movesTo]->(st:PaperStatus),           
+(s)-[:inVenue]->(:Conference {confTitle: ""ACL 2020""})
+RETURN  st.statusType ORDER BY  st.statusDate DESC LIMIT 1;",Accepted,Camera-Ready Submitted
+Which papers moved to Rejectedstatus?,"MATCH (s:SubmissionID)-[:movesTo]->(st:PaperStatus {statusType: ""Rejected""})-[:identifies]->(p:Paper)
+RETURN p.paperTitle;",FALSE,FALSE
+On what date was the JOCCH 2019 paper accepted?,"MATCH (s:SubmissionID)-[:movesTo]->(st:PaperStatus {statusType: ""Accepted""}),
+      (s)-[:inVenue]->(:Journal {journalTitle: ""JOCCH 2019""})
+RETURN st.statusDate;",Aug-19,FALSE
+Which papers mention Historical Archives in their title?,"MATCH (p:Paper)
+WHERE p.paperTitle CONTAINS ""Historical Archives""
+RETURN p.paperTitle;",Temporal Sentiment Analysis in Historical Archives,Temporal Sentiment Analysis in Historical Archives
+Which journals have titles containing Computing�?,"MATCH (j:Journal)
+WHERE j.journalTitle CONTAINS ""Computing""
+RETURN j.journalTitle;",ACM Journal on Computing and Cultural Heritage (JOCCH),ACM Journal on Computing and Cultural Heritage
+Which conferences were held in 2019?,"MATCH (c:Conference)
+WHERE c.confDate STARTS WITH ""2019""
+RETURN c.confTitle;",FALSE,
+Which papers belong to ACL conferences?,"MATCH (s:SubmissionID)-[:inVenue]->(c:Conference), 
+(s)-[:identifies]->(p:Paper),
+(s)-[:movesTo]->(ps:PaperStatus)
+WHERE c.confTitle CONTAINS ""ACL"" AND ps.statusType = ""Accepted""
+RETURN DISTINCT p.paperTitle;","Custom wording related to NLP and Historical Data, Adaptive Model Integration for Historical Data Harnessing Multidisciplinary Synergies, Dialect Variation and Ethical Approaches in NLP Historical Data","ACL 2020 Paper,ACL 2020 Submission, ""Custom wording related to NLP and Historical Data, Adaptive Model Integration for Historical Data Harnessing Multidisciplinary Synergies, Dialect Variation and Ethical Approaches in NLP Historical Data"
+What status type is linked to “Dialect Variation and Ethical Approaches in NLP Historical Data”?,"MATCH (p:Paper {paperTitle: ""Dialect Variation and Ethical Approaches in NLP Historical Data""})<-[:identifies]-(s:SubmissionID)-[:movesTo]->(st:PaperStatus)
+RETURN st.statusType ORDER BY st.statusDate DESC LIMIT 1;",Accepted,Accepted
+Did Sunita Sen publish in IEEE TKDE?,"MATCH (s:SubmissionID)-[:inVenue]->(j:Journal),
+    (s)-[:identifies]->(p:Paper),
+      (p)-[:hasAuthor]->(a:Person)
+      
+WHERE j.journalTitle= ""IEEE TKDE"" AND a.personName = ""Sunita Sen""
+RETURN COUNT(s) > 0;",FALSE,FALSE
+Was a paper submitted to NeurIPS?,"MATCH (:SubmissionID)-[:inVenue]->(:Conference {confTitle: ""NeurIPS""})
+RETURN COUNT(*) > 0;",FALSE,FALSE
+Any collaborators from MIT?,"MATCH (p:Person {affiliation: ""MIT""})
+RETURN p.personName;",FALSE,FALSE
+Did Dr. Emily Zhao author a published paper?,"MATCH (p:Paper)-[:hasAuthor]->(a:Person {personName: ""Emily Zhao""})
+RETURN COUNT(p) > 0;
+",FALSE,FALSE
+Any WWW Conference acceptances?,"MATCH (:SubmissionID)-[:inVenue]->(c:Conference {confTitle: ""WWW""})
+RETURN COUNT(c) > 0;",FALSE,FALSE
+When was the paper titled Custom wording related to NLP and Historical Data submitted,"MATCH (s:SubmissionID) -[:identifies]->(p:Paper), (s)-[:movesTo]->(ps:PaperStatus) WHERE p.paperTitle = ""Custom wording related to NLP and Historical Data"" AND ps.statusType = ""Accepted"" RETURN ps.statusDate",22-10-2019,04-02-2020
+Where was ECIR 2023 held?,"MATCH (c.Conference) WHERE c.confName = ""ECIR 2023"" RETURN c.confVenue",FALSE,FALSE
