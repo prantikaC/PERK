@@ -1,0 +1,994 @@
+id,type,properties
+t1,MailThread,"{'threadID': 'K5L0QV', 'subject': 'Re: Proposal for Collaborative Research on Temporal Sentiment Analysis in Historical Archives'}"
+e1,Email,"{'mailNum': 'YT6A21', 'mailDate': '2019-04-02T00:00:00'}"
+pn1,Person,"{'personName': 'Sunita Sen', 'personEmail': 'scholar.sunita@iacs.res.in', 'affiliation': 'Indian Association for the Cultivation of Science'}"
+pn2,Person,"{'personName': 'Ramesh Bhatia', 'personEmail': 'ramesh.bhatia@iacs.res.in', 'affiliation': 'Indian Association for the Cultivation of Science'}"
+pn3,Person,"{'personName': 'Michael Bradley', 'personEmail': 'michael@cs.stanford.edu', 'affiliation': 'Stanford University'}"
+pn4,Person,"{'personName': 'Ananya Chatterjee', 'personEmail': 'ananya.chatterjee@ox.ac.uk', 'affiliation': 'University of Oxford'}"
+pa1,Paper,{'paperTitle': 'Temporal Sentiment Analysis in Historical Archives'}
+d1,Dataset,{'datasetName': 'Chronicling America'}
+d2,Dataset,{'datasetName': 'British Library Digital Collections'}
+d3,Dataset,{'datasetName': 'Corpus of Historical American English (COHA)'}
+me1,Method,{'methodName': 'Transformer-based models'}
+me2,Method,{'methodName': 'LSTM'}
+me3,Method,{'methodName': 'CRFs'}
+tk1,Task,{'taskName': 'Temporal Sentiment Analysis'}
+mt1,Metric,{'metricName': 'accuracy'}
+mt2,Metric,{'metricName': 'F1-score'}
+mt3,Metric,{'metricName': 'temporal consistency score'}
+e2,Email,"{'mailNum': 'YT6A22', 'mailDate': '2019-04-04T00:00:00'}"
+mg1,Meeting,"{'meetDate': '2019-04-08', 'meetTime': '15:00-16:00', 'meetAgenda': 'Discuss ideas and coordinate next steps for Temporal Sentiment Analysis research'}"
+e3,Email,"{'mailNum': 'YT6A23', 'mailDate': '2019-04-05T00:00:00'}"
+mg2,Meeting,"{'meetDate': '2019-04-08', 'meetAgenda': 'delve deeper into the metrics and refine the evaluation framework for models'}"
+e4,Email,"{'mailNum': 'YT6A24', 'mailDate': '2019-04-06T00:00:00'}"
+mg3,Meeting,"{'meetDate': '2019-04-08', 'meetAgenda': 'Discussing next steps for Temporal Sentiment Analysis project'}"
+t2,MailThread,"{'threadID': '0OSH6D', 'subject': 'Meeting Confirmation'}"
+e5,Email,"{'mailNum': 'YT6A25', 'mailDate': '2019-04-08T00:00:00'}"
+mg4,Meeting,"{'meetDate': '2019-04-08', 'meetTime': '15:00-16:00', 'meetLink': 'https://zoom.us/j/1234567890', 'meetAgenda': 'Review of datasets and methodologies proposed'}"
+t3,MailThread,"{'threadID': 'JT9DNS', 'subject': 'Draft of Meeting Minutes - Temporal Sentiment Analysis Project Meeting on 08-04-2019'}"
+e6,Email,"{'mailNum': 'YT6A26', 'mailDate': '2019-04-09T00:00:00'}"
+mt4,Metric,{'metricName': 'interpretability metrics'}
+t4,MailThread,"{'threadID': 'E8RJ9S', 'subject': 'Re: Proposal for Further Enhancement of Temporal Sentiment Analysis Framework'}"
+e7,Email,"{'mailNum': 'YT6A27', 'mailDate': '2019-04-11T00:00:00'}"
+me4,Method,{'methodName': 'Transformer-based model'}
+e8,Email,"{'mailNum': 'YT6A28', 'mailDate': '2019-04-14T00:00:00'}"
+t5,MailThread,"{'threadID': '3CUDC0', 'subject': 'Acknowledgement of Submission - Paper ID: JOCCH21-TSA039'}"
+e9,Email,"{'mailNum': 'YT6A29', 'mailDate': '2019-04-20T00:00:00'}"
+pn5,Person,{'personName': 'Ramesh Bhatia'}
+pn6,Person,{'personName': 'Ananya Chatterjee'}
+pn7,Person,{'personName': 'Michael Bradley'}
+j1,Journal,{'journalTitle': 'ACM Journal on Computing and Cultural Heritage'}
+s1,SubmissionID,{'identifier': 'JOCCH21-TSA039'}
+ps1,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2019-04-20'}"
+t6,MailThread,"{'threadID': 'Z19P5P', 'subject': 'Submission Update - Paper ID: JOCCH21-TSA039'}"
+e10,Email,"{'mailNum': 'YT6A30', 'mailDate': '2019-06-15T00:00:00'}"
+ps2,PaperStatus,"{'statusType': 'Revisions Required', 'statusDate': '2019-06-15'}"
+t7,MailThread,"{'threadID': 'QX46AL', 'subject': 'Upcoming Meeting to Discuss Paper Revisions'}"
+e11,Email,"{'mailNum': 'YT6A31', 'mailDate': '2019-06-18T00:00:00'}"
+mg5,Meeting,"{'meetAgenda': ""Discuss reviewers' comments and strategize revisions for ACM Journal submission""}"
+t8,MailThread,"{'threadID': 'S38LF1', 'subject': 'Scheduling Poll for Meeting on Revisions for ACM Journal Submission'}"
+e12,Email,"{'mailNum': 'YT6A32', 'mailDate': '2019-06-21T00:00:00'}"
+pa2,Paper,{'paperTitle': 'Revisions for ACM Journal Submission'}
+t9,MailThread,"{'threadID': 'Y1L43Z', 'subject': 'Confirmation of Meeting - Discussion on Revisions for ACM Journal Submission'}"
+e13,Email,"{'mailNum': 'YT6A33', 'mailDate': '2019-06-23T00:00:00'}"
+mg6,Meeting,"{'meetDate': '2019-06-26', 'meetTime': '15:00-16:30', 'meetLink': 'https://zoom.us/j/0987654321', 'meetAgenda': ""Reviewing the reviewers' comments in detail. Discussing enhancements for a multimodal approach and refining feature extraction. Establishing a clear plan for addressing the feedback and preparing the revised submission.""}"
+t10,MailThread,"{'threadID': 'PWH0PD', 'subject': 'Meeting Minutes - Revisions for ACM Journal Submission'}"
+e14,Email,"{'mailNum': 'YT6A34', 'mailDate': '2019-06-28T00:00:00'}"
+d4,Dataset,{'datasetName': 'Historical Archives'}
+me5,Method,"{'methodName': 'Multimodal Approach', 'taskName': 'Multimodal Approach'}"
+me6,Method,{'methodName': 'Feature Extraction Refinement'}
+me7,Method,{'methodName': 'Historical Contextualization'}
+mg7,Meeting,"{'meetDate': '2019-06-26', 'meetAgenda': 'Revisions for ACM Journal Submission'}"
+t11,MailThread,"{'threadID': '9K07LI', 'subject': 'Decision on Revised Submission - Paper ID: JOCCH21-TSA039'}"
+e15,Email,"{'mailNum': 'YT6A35', 'mailDate': '2019-08-10T00:00:00'}"
+ps3,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2019-08-10'}"
+t12,MailThread,"{'threadID': 'DQSWYL', 'subject': 'Re: Final Steps for ACM Journal Submission - Camera Ready Version'}"
+e16,Email,"{'mailNum': 'YT6A36', 'mailDate': '2019-08-12T00:00:00'}"
+ps4,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2019-08-12'}"
+mg8,Meeting,"{'meetAgenda': 'clarify any lingering issues and confirm our next steps', 'meetDate': '2019-08-19'}"
+e17,Email,"{'mailNum': 'YT6A37', 'mailDate': '2019-08-15T00:00:00'}"
+mg9,Meeting,"{'meetDate': '2019-08-16', 'meetTime': '10:00', 'meetAgenda': 'Check-in meeting for final submission review'}"
+mg10,Meeting,"{'meetDate': '2019-08-18', 'meetTime': '15:00', 'meetAgenda': 'Check-in meeting for final submission review'}"
+e18,Email,"{'mailNum': 'YT6A38', 'mailDate': '2019-08-19T00:00:00'}"
+mg11,Meeting,"{'meetDate': '2019-08-16', 'meetTime': '10:00', 'meetAgenda': 'Quick check-in for finalizing the camera-ready submission'}"
+t13,MailThread,"{'threadID': 'VHB55J', 'subject': 'Final Touches for Camera Ready Submission'}"
+e19,Email,"{'mailNum': 'YT6A39', 'mailDate': '2019-08-20T00:00:00'}"
+t14,MailThread,"{'threadID': 'KDVUA7', 'subject': 'Confirmation of Final Meeting - Camera Ready Version Submission'}"
+e20,Email,"{'mailNum': 'YT6A40', 'mailDate': '2019-08-22T00:00:00'}"
+mg12,Meeting,"{'meetDate': '2019-08-16', 'meetTime': '10:00-10:30', 'meetLink': 'https://zoom.us/j/1234567890', 'meetAgenda': 'Final review of the manuscript to ensure all feedback has been incorporated. Confirm any last-minute adjustments to figures, tables, and socio-political context segments. Finalize the authorship order and acknowledge contributions adequately. Discuss the formatting compliance and set a firm deadline for submission by 31st August.'}"
+t15,MailThread,"{'threadID': 'MRKNUA', 'subject': 'Acknowledgment of Camera Ready Paper Submission - Paper ID: JOCCH21-TSA039'}"
+e21,Email,"{'mailNum': 'YT6A41', 'mailDate': '2019-09-01T00:00:00'}"
+ps5,PaperStatus,"{'statusType': 'Camera Ready', 'statusDate': '2019-09-01'}"
+t16,MailThread,"{'threadID': '2JO4C3', 'subject': 'Re: New Research Directions and Preliminary Ideas'}"
+e22,Email,"{'mailNum': 'YT6A42', 'mailDate': '2019-09-10T00:00:00'}"
+tk2,Task,{'taskName': 'Comparative Sentiment Analysis'}
+d5,Dataset,{'datasetName': 'Multilingual Historical Texts'}
+me8,Method,{'methodName': 'Deep Learning Models with Transformers'}
+mt5,Metric,{'metricName': 'Cultural and Temporal Sentiment Accuracy'}
+e23,Email,"{'mailNum': 'YT6A43', 'mailDate': '2019-09-12T00:00:00'}"
+me9,Method,{'methodName': 'Transformers'}
+mt6,Metric,{'metricName': 'Cultural and Temporal Dynamics Evaluation'}
+e24,Email,"{'mailNum': 'YT6A44', 'mailDate': '2019-09-13T00:00:00'}"
+me10,Method,{'methodName': 'Transformer Models'}
+mg13,Meeting,"{'meetDate': '2019-09-14', 'meetAgenda': 'Exploring new research directions and preliminary ideas'}"
+t17,MailThread,"{'threadID': 'UB3PLF', 'subject': 'Coordination of Meeting for New Research Ideas'}"
+e25,Email,"{'mailNum': 'YT6A45', 'mailDate': '2019-09-14T00:00:00'}"
+mg14,Meeting,"{'meetDate': '2019-09-14', 'meetTime': '10:00', 'meetLink': 'https://meet.google.com/qwe-rtyu-ioo', 'meetAgenda': 'Discussion on potential partnering archives and digital humanities projects. Methodological frameworks and incorporating transformers for analysis. Evaluation metrics that cater to historical linguistic nuances and cultural dimensions. Division of roles, if applicable, and laying out preliminary timelines.'}"
+mt7,Metric,{'metricName': 'Evaluation metrics for historical linguistic nuances and cultural dimensions'}
+t18,MailThread,"{'threadID': 'GX6M46', 'subject': 'Meeting Minutes and Next Steps for New Research Project'}"
+e26,Email,"{'mailNum': 'YT6A46', 'mailDate': '2019-09-16T00:00:00'}"
+d6,Dataset,{'datasetName': 'British Library Collections'}
+d7,Dataset,{'datasetName': 'Library of Congress Collections'}
+me11,Method,{'methodName': 'BERT'}
+me12,Method,{'methodName': 'BERT Multilingual Variants'}
+tk3,Task,{'taskName': 'Historical NLP'}
+mg15,Meeting,"{'meetAgenda': 'Follow-up meeting to check progress and recalibrate approach', 'meetDate': '2019-10-01'}"
+t19,MailThread,"{'threadID': 'EOKVTH', 'subject': 'Follow-up on Datasets and Methodologies'}"
+e27,Email,"{'mailNum': 'YT6A47', 'mailDate': '2019-09-18T00:00:00'}"
+d8,Dataset,{'datasetName': 'British Library'}
+d9,Dataset,{'datasetName': 'Library of Congress'}
+mt8,Metric,{'metricName': 'Innovative Metric Design'}
+t20,MailThread,"{'threadID': 'QP8HKJ', 'subject': 'Progress on Dataset Acquisition'}"
+e28,Email,"{'mailNum': 'YT6A48', 'mailDate': '2019-09-20T00:00:00'}"
+d10,Dataset,{'datasetName': 'British Library Archives'}
+d11,Dataset,{'datasetName': 'Library of Congress Archives'}
+t21,MailThread,"{'threadID': 'WP2KM4', 'subject': 'Re: Feedback on Dataset Proposal Draft'}"
+e29,Email,"{'mailNum': 'YT6A49', 'mailDate': '2019-09-22T00:00:00'}"
+d12,Dataset,{'datasetName': 'Dataset Proposal Draft'}
+e30,Email,"{'mailNum': 'YT6A50', 'mailDate': '2019-09-23T00:00:00'}"
+d13,Dataset,{'datasetName': 'Library Partner Datasets'}
+t22,MailThread,"{'threadID': 'KEI8UA', 'subject': 'Finalized Dataset Proposal and Next Steps'}"
+e31,Email,"{'mailNum': 'YT6A51', 'mailDate': '2019-09-24T00:00:00'}"
+d14,Dataset,{'datasetName': 'Library of Congress Digital Collections'}
+t23,MailThread,"{'threadID': 'MA66W3', 'subject': 'Re: Organizing a Follow-up Meeting'}"
+e32,Email,"{'mailNum': 'YT6A52', 'mailDate': '2019-09-26T00:00:00'}"
+mg16,Meeting,"{'meetDate': '2019-09-29', 'meetTime': '15:00', 'meetLink': 'https://meet.google.com/abc-defg-hij', 'meetAgenda': 'Final Review and Feedback on the Dataset Proposal - Last-minute observations and anticipated questions. Methodologies and Experimentation Plans - Initiating with BERT models and other identified techniques. Evaluation Strategies - Progress on metrics involving cultural and historical nuances. Contingency Plans - Discussing potential measures in case of data-sharing challenges.'}"
+e33,Email,"{'mailNum': 'YT6A53', 'mailDate': '2019-09-27T00:00:00'}"
+mg17,Meeting,"{'meetDate': '2019-09-29', 'meetTime': '15:00', 'meetLink': 'https://meet.google.com/abc-defg-hij', 'meetAgenda': 'Scalability of BERT experimentations, contingency plans for dataset access'}"
+t24,MailThread,"{'threadID': 'SWPDFF', 'subject': 'Confirmation for Follow-up Meeting'}"
+e34,Email,"{'mailNum': 'YT6A54', 'mailDate': '2019-09-28T00:00:00'}"
+mg18,Meeting,"{'meetDate': '2019-09-29', 'meetTime': '15:00', 'meetAgenda': 'Follow-up meeting to discuss project scalability, model alignment, and alternative data access measures'}"
+t25,MailThread,"{'threadID': 'JKCVWJ', 'subject': 'Meeting Minutes from Follow-up Meeting'}"
+e35,Email,"{'mailNum': 'YT6A55', 'mailDate': '2019-09-30T00:00:00'}"
+me13,Method,{'methodName': 'Python-based web scraping'}
+mg19,Meeting,"{'meetAgenda': 'Follow-up on research structuring and next steps', 'meetDate': '2019-09-29'}"
+t26,MailThread,"{'threadID': 'PTRVHU', 'subject': 'Discussion on Paper Submission Options'}"
+e36,Email,"{'mailNum': 'YT6A56', 'mailDate': '2019-10-02T00:00:00'}"
+c1,Conference,"{'confTitle': 'ACL', 'confDate': '2020-02-20', 'confVenue': 'TBD'}"
+c2,Conference,{'confTitle': 'EMNLP'}
+j2,Journal,{'journalTitle': 'Journal of Documentation'}
+tk4,Task,{'taskName': 'NLP with Historical Datasets'}
+t27,MailThread,"{'threadID': 'CRGTEM', 'subject': 'Zoom Meeting Invitation for Publication Strategy Discussion'}"
+e37,Email,"{'mailNum': 'YT6A57', 'mailDate': '2019-10-03T00:00:00'}"
+mg20,Meeting,"{'meetDate': '2019-10-07', 'meetTime': '16:00', 'meetLink': 'https://stanford.zoom.us/j/123456789', 'meetAgenda': 'Review and Selection of Conferences and Journals. Division of Paper Writing Responsibilities. Establishment of a Draft Timeline for Abstract and Manuscript Submission. Addressing Any Potential Bottlenecks in Data Analysis and Experiments.'}"
+t28,MailThread,"{'threadID': 'KCYTO0', 'subject': 'Meeting Minutes for Publication Strategy Discussion'}"
+e38,Email,"{'mailNum': 'YT6A58', 'mailDate': '2019-10-08T00:00:00'}"
+c3,Conference,{'confTitle': 'ACL 2020'}
+j3,Journal,{'journalTitle': 'JOCCH'}
+me14,Method,{'methodName': 'BERT-based experiments'}
+d15,Dataset,{'datasetName': 'historical and cultural dataset'}
+mg21,Meeting,"{'meetAgenda': 'Publication strategy discussion', 'meetDate': '2019-10-07'}"
+t29,MailThread,"{'threadID': 'X9521F', 'subject': 'Progress Update and Next Steps for ACL Submission'}"
+e39,Email,"{'mailNum': 'YT6A59', 'mailDate': '2019-10-12T00:00:00'}"
+d16,Dataset,{'datasetName': 'Historical Datasets'}
+tk5,Task,{'taskName': 'NLP Techniques on Historical Datasets'}
+mg22,Meeting,"{'meetDate': '2019-10-31', 'meetAgenda': 'Internal review of paper sections'}"
+t30,MailThread,"{'threadID': 'I6XPY5', 'subject': 'Further Work on the Manuscript and Journal Submission Considerations'}"
+e40,Email,"{'mailNum': 'YT6A5A', 'mailDate': '2019-10-18T00:00:00'}"
+d17,Dataset,{'datasetName': 'Historical Data'}
+tk6,Task,{'taskName': 'NLP and Historical Scholarship'}
+t31,MailThread,"{'threadID': '3CQHDV', 'subject': 'Submission Acknowledgement for ACL 2020'}"
+e41,Email,"{'mailNum': 'YT6A5B', 'mailDate': '2019-10-22T00:00:00'}"
+s2,SubmissionID,{'identifier': 'ACL22-2135-P'}
+ps6,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2019-10-22'}"
+t32,MailThread,"{'threadID': 'YX6ONB', 'subject': 'Review Decision for Submission ID ACL22-2135-P'}"
+e42,Email,"{'mailNum': 'YT6A5C', 'mailDate': '2020-02-04T00:00:00'}"
+pa3,Paper,{'paperTitle': 'Custom wording related to NLP and Historical Data'}
+tk7,Task,{'taskName': 'NLP and Historical Data Analysis'}
+me15,Method,{'methodName': 'BERT-based models tailored to historical contexts'}
+ps7,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2020-02-04'}"
+t33,MailThread,"{'threadID': 'LR95R2', 'subject': 'ACL 2020 Acceptance Congratulations and Next Steps'}"
+e43,Email,"{'mailNum': 'YT6A5D', 'mailDate': '2020-02-06T00:00:00'}"
+pa4,Paper,{'paperTitle': 'Integrating NLP with Historical Dataset Analysis'}
+s3,SubmissionID,{'identifier': 'ACL2020-XYZ123'}
+ps8,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2020-02-06'}"
+mg23,Meeting,"{'meetDate': '2020-02-15', 'meetAgenda': 'strategize key points for ACL 2020 presentation'}"
+t34,MailThread,"{'threadID': '56MYXK', 'subject': 'Planning Upcoming Meetings for ACL Revisions and JOCCH Progress'}"
+e44,Email,"{'mailNum': 'YT6A5E', 'mailDate': '2020-02-10T00:00:00'}"
+mg24,Meeting,"{'meetDate': '2020-02-14', 'meetTime': '16:00 IST / 10:30 GMT / 2:30 PST', 'meetAgenda': ""Review each reviewer's comments and discuss our strategies for addressing them specifically. Assign specific revision tasks to ensure all suggested changes are thoroughly implemented. Discuss and align our approach for the ACL presentation preparation.""}"
+t35,MailThread,"{'threadID': '1BPZY6', 'subject': 'Confirmation of Upcoming Meeting and Additional Logistical Details'}"
+e45,Email,"{'mailNum': 'YT6A5F', 'mailDate': '2020-02-11T00:00:00'}"
+mg25,Meeting,"{'meetDate': '2020-02-14', 'meetLink': 'https://zoom.us/j/1234567890?pwd=abc12345', 'meetAgenda': 'Address ACL camera-ready revisions and JOCCH manuscript development'}"
+t36,MailThread,"{'threadID': '0KKZV2', 'subject': 'Meeting Minutes from Today’s Discussion on ACL Revisions and JOCCH Progress'}"
+e46,Email,"{'mailNum': 'YT6A5G', 'mailDate': '2020-02-14T00:00:00'}"
+mg26,Meeting,"{'meetDate': '2020-02-14', 'meetAgenda': 'Discussion on ACL Revisions and JOCCH Progress'}"
+t37,MailThread,"{'threadID': 'X4EHAF', 'subject': 'Further Improvements and Next Steps for ACL and JOCCH'}"
+e47,Email,"{'mailNum': 'YT6A5H', 'mailDate': '2020-02-21T00:00:00'}"
+tk8,Task,{'taskName': 'Historical Data Analysis'}
+t38,MailThread,"{'threadID': 'K3TOON', 'subject': 'Submission Confirmation and Conference Registration Reminder'}"
+e48,Email,"{'mailNum': 'YT6A5I', 'mailDate': '2020-02-25T00:00:00'}"
+ps9,PaperStatus,"{'statusType': 'Camera-Ready Submitted', 'statusDate': '2020-02-25'}"
+t39,MailThread,"{'threadID': '61WF1O', 'subject': 'Improving Our Work for Future Submissions and Conference Preparations'}"
+e49,Email,"{'mailNum': 'YT6A5J', 'mailDate': '2020-02-28T00:00:00'}"
+s4,SubmissionID,{'identifier': 'ACL2020-XYZ'}
+mg27,Meeting,"{'meetDate': '2020-03-07', 'meetAgenda': 'literature mapping sessions to deepen the cultural contexts'}"
+mg28,Meeting,"{'meetDate': '2020-03-10', 'meetAgenda': 'virtual presentation rehearsal for ACL 2020'}"
+t40,MailThread,"{'threadID': '71KQEB', 'subject': 'Setting Up Collaborative Framework for ACL Presentation and JOCCH Manuscript'}"
+e50,Email,"{'mailNum': 'YT6A5K', 'mailDate': '2020-03-04T00:00:00'}"
+mg29,Meeting,"{'meetDate': '2020-03-07', 'meetAgenda': 'Literature mapping session focused on cultural contexts'}"
+mg30,Meeting,"{'meetDate': '2020-03-08', 'meetAgenda': 'Brainstorming session for technological methodology exploration'}"
+mg31,Meeting,"{'meetDate': '2020-03-10', 'meetTime': '15:00', 'meetAgenda': 'Virtual rehearsal for ACL conference presentation'}"
+t41,MailThread,"{'threadID': 'X69GJ6', 'subject': 'Follow-Up on Literature Mapping Session and Technological Exploration'}"
+e51,Email,"{'mailNum': 'YT6A5L', 'mailDate': '2020-03-07T00:00:00'}"
+mg32,Meeting,"{'meetDate': '2020-03-08', 'meetTime': '10:00 PST / 18:00 GMT', 'meetLink': 'https://stanford.zoom.us/j/1234567890', 'meetAgenda': 'furthering technological methodologies, datasets for computational approaches, 19th-century literary corpora for BERT model refinements'}"
+d18,Dataset,{'datasetName': '19th-century literary corpora'}
+me16,Method,{'methodName': 'BERT model refinements'}
+t42,MailThread,"{'threadID': 'FZ4APE', 'subject': 'Outcomes from Technological Methodology Session and Oxford Collaboration Plans'}"
+e52,Email,"{'mailNum': 'YT6A5M', 'mailDate': '2020-03-08T00:00:00'}"
+pn8,Person,{'personName': 'Edward Long'}
+mg33,Meeting,"{'meetDate': '2020-03-15', 'meetAgenda': 'round table discussion with Dr. Edward Long on historical data interpretation through computational frameworks'}"
+mg34,Meeting,"{'meetDate': '2020-03-10', 'meetAgenda': 'ACL presentation rehearsal'}"
+t43,MailThread,"{'threadID': 'YEKLMC', 'subject': 'Meeting Minutes and Next Steps: ACL Presentation Rehearsal and JOCCH Collaboration'}"
+e53,Email,"{'mailNum': 'YT6A5N', 'mailDate': '2020-03-10T00:00:00'}"
+mg35,Meeting,"{'meetDate': '2020-03-15', 'meetAgenda': 'Discuss outcomes from Ananya’s round table with Dr. Edward Long and colleagues at Oxford'}"
+mg36,Meeting,"{'meetDate': '2020-03-28', 'meetAgenda': 'Collective review meeting for manuscript objectives alignment'}"
+t44,MailThread,"{'threadID': 'JHJGL5', 'subject': 'Insights from Oxford Round Table and Final Amendments for ACL & JOCCH'}"
+e54,Email,"{'mailNum': 'YT6A5O', 'mailDate': '2020-03-15T00:00:00'}"
+tk9,Task,{'taskName': 'Cultural Narrative and Technological Synthesis'}
+t45,MailThread,"{'threadID': '8T12XH', 'subject': 'Progress on JOCCH Manuscript and Upcoming ACL Presentation'}"
+e55,Email,"{'mailNum': 'YT6A5P', 'mailDate': '2020-03-25T00:00:00'}"
+c4,Conference,"{'confTitle': 'ACL Conference', 'confDate': '2020-04-15', 'confVenue': 'Virtual'}"
+mg37,Meeting,"{'meetDate': '2020-03-28', 'meetTime': '16:00', 'meetAgenda': 'Review of Final Draft for JOCCH'}"
+mg38,Meeting,"{'meetDate': '2020-03-28', 'meetTime': '17:30', 'meetAgenda': 'ACL Final Rehearsal'}"
+t46,MailThread,"{'threadID': 'Y7BLEH', 'subject': 'Confirmation of JOCCH Submission and Acknowledgment'}"
+e56,Email,"{'mailNum': 'YT6A5Q', 'mailDate': '2020-03-31T00:00:00'}"
+pa5,Paper,{'paperTitle': 'Interdisciplinary Narratives in NLP: Enhancing Historical Data Analysis through Cultural Contexts'}
+s5,SubmissionID,{'identifier': 'JOCCH22A5Q8Z'}
+ps10,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2020-03-31'}"
+t47,MailThread,"{'threadID': 'N1EJ5S', 'subject': 'Initial Review Feedback and Revision Request for Submission ID: JOCCH22A5Q8Z'}"
+e57,Email,"{'mailNum': 'YT6A5R', 'mailDate': '2020-04-10T00:00:00'}"
+ps11,PaperStatus,"{'statusType': 'Under Review', 'statusDate': '2020-04-10'}"
+tk10,Task,{'taskName': 'Integration of cultural narratives into NLP frameworks'}
+t48,MailThread,"{'threadID': 'OH2P4V', 'subject': 'Planning Revisions for JOCCH Submission: Insights Required'}"
+e58,Email,"{'mailNum': 'YT6A5S', 'mailDate': '2020-04-15T00:00:00'}"
+mg39,Meeting,"{'meetAgenda': 'Addressing methodological clarifications, Expanding the dataset: discussing potential sources, Enhancing the discussion to align with interdisciplinary strands'}"
+t49,MailThread,"{'threadID': '7PLD4W', 'subject': 'Planning Upcoming Zoom Meeting for JOCCH Revisions'}"
+e59,Email,"{'mailNum': 'YT6A5T', 'mailDate': '2020-04-20T00:00:00'}"
+mg40,Meeting,"{'meetDate': '2020-04-25', 'meetTime': '15:00 IST / 10:30 BST / 2:30 PDT', 'meetLink': 'https://zoom.us/j/1234567890', 'meetAgenda': 'Overview of Review Feedback, Methodological Enhancements, Dataset Expansion Discussion, Discussion Section Enrichment, Setting Milestones'}"
+t50,MailThread,"{'threadID': 'U5JV7H', 'subject': 'Meeting Minutes from April 25th JOCCH Revisions Zoom Meeting'}"
+e60,Email,"{'mailNum': 'YT6A5U', 'mailDate': '2020-04-25T00:00:00'}"
+mg41,Meeting,"{'meetDate': '2020-04-25', 'meetAgenda': 'Review Feedback Recap, Methodological Enhancements, Dataset Expansion, Discussion Section Enhancement, Milestones and Timeline, Next Steps'}"
+t51,MailThread,"{'threadID': '9FQQDH', 'subject': 'Decision on Revised Manuscript Submission ID: JOCCH22A5Q8Z'}"
+e61,Email,"{'mailNum': 'YT6A5V', 'mailDate': '2020-06-07T00:00:00'}"
+ps12,PaperStatus,"{'statusType': 'Accepted with Minor Revisions', 'statusDate': '2020-06-07'}"
+t52,MailThread,"{'threadID': '8VLBVG', 'subject': 'Re: Final Steps for Camera-Ready Submission: JOCCH22A5Q8Z'}"
+e62,Email,"{'mailNum': 'YT6A5W', 'mailDate': '2020-06-10T00:00:00'}"
+ps13,PaperStatus,"{'statusType': 'Accepted with Minor Revisions', 'statusDate': '2020-06-10'}"
+e63,Email,"{'mailNum': 'YT6A5X', 'mailDate': '2020-06-16T00:00:00'}"
+ps14,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2020-06-16'}"
+t53,MailThread,"{'threadID': '3ZSJ1B', 'subject': 'Internal Review Complete for JOCCH Camera-Ready Submission'}"
+e64,Email,"{'mailNum': 'YT6A5Y', 'mailDate': '2020-06-22T00:00:00'}"
+ps15,PaperStatus,"{'statusType': 'Camera-Ready', 'statusDate': '2020-07-15'}"
+mg42,Meeting,"{'meetDate': '2020-06-25', 'meetAgenda': 'Internal review of the complete final draft'}"
+t54,MailThread,"{'threadID': 'D852KK', 'subject': 'Confirmation of Final Submission and Camera-Ready Version: JOCCH22A5Q8Z'}"
+e65,Email,"{'mailNum': 'YT6A5Z', 'mailDate': '2020-07-12T00:00:00'}"
+ps16,PaperStatus,"{'statusType': 'Camera-Ready', 'statusDate': '2020-07-12'}"
+t55,MailThread,"{'threadID': '8GTZD3', 'subject': 'Re: Exploring New Research Directions in Historical NLP'}"
+e66,Email,"{'mailNum': 'AK2B3A', 'mailDate': '2020-08-10T00:00:00'}"
+tk11,Task,{'taskName': 'Chronology and Textual Anomalies Detection'}
+tk12,Task,{'taskName': 'Interdisciplinary Applications in Historical Data'}
+d19,Dataset,{'datasetName': 'British Museum Historical Data'}
+d20,Dataset,{'datasetName': 'The National Archives UK'}
+me17,Method,{'methodName': 'Adaptive Algorithms for Cultural Contexts'}
+e67,Email,"{'mailNum': 'AK2B3B', 'mailDate': '2020-08-15T00:00:00'}"
+d21,Dataset,{'datasetName': 'British Museum Datasets'}
+mg43,Meeting,"{'meetDate': '2020-08-28', 'meetAgenda': 'Discussion on NLP applications in historical studies and securing access to UK datasets'}"
+t56,MailThread,"{'threadID': '0FIE8I', 'subject': 'Scheduling Zoom Meeting for New Research Directions'}"
+e68,Email,"{'mailNum': 'AK2B3C', 'mailDate': '2020-08-20T00:00:00'}"
+mg44,Meeting,"{'meetDate': '2020-08-28', 'meetTime': '16:00 IST / 11:30 BST / 03:30 PDT', 'meetLink': 'https://zoom.us/j/2345678901', 'meetAgenda': 'Review of Proposed Research Ideas, Pilot Projects and Grant Proposals, Resource and Collaboration Opportunities'}"
+t57,MailThread,"{'threadID': 'TT96FF', 'subject': 'Meeting Minutes: Exploring New Research Directions'}"
+e69,Email,"{'mailNum': 'AK2B3D', 'mailDate': '2020-08-28T00:00:00'}"
+tk13,Task,{'taskName': 'Interdisciplinary Applications and Datasets'}
+tk14,Task,{'taskName': 'Adaptive Algorithms Development'}
+tk15,Task,{'taskName': 'Grant Proposal Development'}
+d22,Dataset,{'datasetName': 'British Museum Archives'}
+mg45,Meeting,"{'meetDate': '2020-08-28', 'meetAgenda': 'Exploring New Research Directions integrating NLP and historical analysis'}"
+t58,MailThread,"{'threadID': 'CA4Z5R', 'subject': 'Re: Improving Strategies for Grant Proposal and Dataset Exploration'}"
+e70,Email,"{'mailNum': 'OP3D2A', 'mailDate': '2020-09-01T00:00:00'}"
+d23,Dataset,{'datasetName': 'British Museum Dataset'}
+me18,Method,{'methodName': 'Adaptive Algorithm Prototyping'}
+tk16,Task,{'taskName': 'Chronology and Textual Anomalies Review'}
+mg46,Meeting,"{'meetDate': '2020-09-15', 'meetAgenda': 'Finalize proposal sections'}"
+e71,Email,"{'mailNum': 'OP3D2B', 'mailDate': '2020-09-08T00:00:00'}"
+me19,Method,"{'methodName': ""Johnson et al.'s frameworks""}"
+mg47,Meeting,"{'meetDate': '2020-09-15', 'meetAgenda': 'Refine draft and finalize proposal for imminent submissions'}"
+t59,MailThread,"{'threadID': 'WJ588D', 'subject': 'Literature Synthesis and Proposal Draft Attached'}"
+e72,Email,"{'mailNum': 'OP3D2C', 'mailDate': '2020-09-12T00:00:00'}"
+d24,Dataset,{'datasetName': 'British Museum'}
+tk17,Task,{'taskName': 'Chronological NLP for Anomaly Detection'}
+me20,Method,{'methodName': 'Adaptive Algorithms'}
+mg48,Meeting,"{'meetDate': '2020-09-15', 'meetAgenda': 'Finalize key sections of the proposal'}"
+t60,MailThread,"{'threadID': 'ABS6CS', 'subject': 'Feedback on Draft Proposal and Next Steps'}"
+e73,Email,"{'mailNum': 'OP3D2D', 'mailDate': '2020-09-15T00:00:00'}"
+t61,MailThread,"{'threadID': 'T6LP46', 'subject': 'Revised Proposal and Final Touches'}"
+e74,Email,"{'mailNum': 'OP3D2E', 'mailDate': '2020-09-18T00:00:00'}"
+me21,Method,{'methodName': 'adaptive algorithm models'}
+t62,MailThread,"{'threadID': 'GG6YO0', 'subject': 'Submission Confirmation and Next Steps'}"
+e75,Email,"{'mailNum': 'OP3D2F', 'mailDate': '2020-09-22T00:00:00'}"
+pa6,Paper,{'paperTitle': 'Integrating Historical Datasets with NLP: Bridging Cultural Narratives'}
+s6,SubmissionID,{'identifier': 'H202023GBM9'}
+ps17,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2020-09-22'}"
+tk18,Task,{'taskName': 'Integrating Historical Datasets with NLP'}
+t63,MailThread,"{'threadID': '9YT44U', 'subject': 'Review Feedback on Submission ID H202023GBM9 - Integrating Historical Datasets with NLP'}"
+e76,Email,"{'mailNum': 'YQ8H3A', 'mailDate': '2020-11-15T00:00:00'}"
+pn9,Person,{'personName': 'Clara Hoffmann'}
+ps18,PaperStatus,"{'statusType': 'Reviewed', 'statusDate': '2020-11-15'}"
+t64,MailThread,"{'threadID': 'V0EJUN', 'subject': 'Re: Feedback from Horizon 2019 on Our Proposal H202023GBM9'}"
+e77,Email,"{'mailNum': 'YQ8H3B', 'mailDate': '2020-11-16T00:00:00'}"
+mg49,Meeting,"{'meetAgenda': 'brainstorm necessary refinements and establish a timeline for resubmission', 'meetDate': '2020-11-23'}"
+e78,Email,"{'mailNum': 'YQ8H3C', 'mailDate': '2020-11-18T00:00:00'}"
+mg50,Meeting,"{'meetAgenda': 'detailed discussion and initial idea exchange', 'meetDate': '2020-11-24/25'}"
+t65,MailThread,"{'threadID': '1YOTHK', 'subject': 'Proposal Refurbishing Meeting Agenda and Details'}"
+e79,Email,"{'mailNum': 'YQ8H3D', 'mailDate': '2020-11-20T00:00:00'}"
+mg51,Meeting,"{'meetDate': '2020-11-23', 'meetTime': '15:00 IST / 09:30 BST / 01:30 PDT', 'meetLink': 'https://meet.google.com/gme-samplelink', 'meetAgenda': 'Sustainability Plan Fortification, Risk Mitigation Strategies, Financial Justifications, Integration of Feedback'}"
+t66,MailThread,"{'threadID': 'OI0234', 'subject': 'Meeting Minutes and Next Steps for Proposal Refinement'}"
+e80,Email,"{'mailNum': 'YQ8H3E', 'mailDate': '2020-11-24T00:00:00'}"
+mg52,Meeting,"{'meetDate': '2020-11-23', 'meetAgenda': 'Proposal revision based on Horizon 2019 feedback'}"
+t67,MailThread,"{'threadID': '2QI91R', 'subject': 'Preliminary Draft and Feedback Request'}"
+e81,Email,"{'mailNum': 'YQ8H3F', 'mailDate': '2020-12-03T00:00:00'}"
+d25,Dataset,{'datasetName': 'Horizon 2019'}
+mg53,Meeting,{'meetAgenda': 'follow-up meeting post-submission to continue our proactive collaboration on algorithm refinement and prototype development'}
+t68,MailThread,"{'threadID': 'VEKVK3', 'subject': 'Feedback on the Preliminary Draft and Further Suggestions'}"
+e82,Email,"{'mailNum': 'YQ8H3G', 'mailDate': '2020-12-06T00:00:00'}"
+mg54,Meeting,"{'meetDate': '2020-12-08', 'meetAgenda': 'align on final revisions'}"
+t69,MailThread,"{'threadID': 'QXP81D', 'subject': 'Final Review Meeting for Revised Proposal'}"
+e83,Email,"{'mailNum': 'YQ8H3H', 'mailDate': '2020-12-07T00:00:00'}"
+mg55,Meeting,"{'meetDate': '2020-12-09', 'meetTime': '16:00 IST / 10:30 BST / 2:30 PDT', 'meetLink': 'https://stanford.zoom.us/j/samplelink', 'meetAgenda': 'Final Adjustments: Review all collective feedback and approve the final changes to be made in the proposal. Ensure seamless integration of sustainability and risk mitigation plans in the narrative. Submission Plan: Confirm all submission requirements have been met. Discuss timelines and responsibilities for the final submission on or before our deadline. Post-Submission Initiatives: Outline next steps for ongoing algorithm refinement. Plan a timeline for prototype development work concerning educational tools.'}"
+t70,MailThread,"{'threadID': 'G68TV0', 'subject': 'Discussion on Algorithm Refinement and Tool Development'}"
+e84,Email,"{'mailNum': 'YQ8H3I', 'mailDate': '2020-12-11T00:00:00'}"
+tk19,Task,{'taskName': 'Algorithm Refinement'}
+tk20,Task,{'taskName': 'Educational Tool Development'}
+mg56,Meeting,"{'meetDate': '2020-12-20', 'meetAgenda': 'compile initial thoughts and convene our first virtual session to map out next steps'}"
+t71,MailThread,"{'threadID': 'I3WED7', 'subject': 'Re: Follow-up on Algorithm Refinement and Tool Development Plans'}"
+e85,Email,"{'mailNum': 'YQ8H3J', 'mailDate': '2020-12-12T00:00:00'}"
+mg57,Meeting,"{'meetDate': '2020-12-15', 'meetAgenda': 'Outline plans for algorithm refinement and educational tool development'}"
+e86,Email,"{'mailNum': 'YQ8H3K', 'mailDate': '2020-12-13T00:00:00'}"
+mg58,Meeting,"{'meetDate': '2020-12-15', 'meetAgenda': 'strategic discussion on development goals'}"
+t72,MailThread,"{'threadID': 'HEHGEB', 'subject': 'Confirmation for Virtual Discussion on Development Plans'}"
+e87,Email,"{'mailNum': 'YQ8H3L', 'mailDate': '2020-12-15T00:00:00'}"
+mg59,Meeting,"{'meetDate': '2020-12-15', 'meetAgenda': 'Discuss algorithm refinement and educational tool development'}"
+t73,MailThread,"{'threadID': 'VIRD21', 'subject': 'Minutes from Virtual Discussion on Development Plans'}"
+e88,Email,"{'mailNum': 'YQ8H3M', 'mailDate': '2020-12-16T00:00:00'}"
+mg60,Meeting,"{'meetDate': '2020-12-15', 'meetAgenda': 'Algorithm refinement and development of educational tool prototypes'}"
+tk21,Task,{'taskName': 'Algorithmic Integration and Strategies'}
+tk22,Task,{'taskName': 'User-Centered Prototype Development'}
+tk23,Task,{'taskName': 'Pilot Phase Proposal'}
+t74,MailThread,"{'threadID': '6WXEIN', 'subject': 'Draft Plan for Adaptive Model Integration'}"
+e89,Email,"{'mailNum': 'YQ8H3N', 'mailDate': '2020-12-20T00:00:00'}"
+tk24,Task,"{'taskName': 'Adaptive Model Integration', 'methodName': 'Adaptive Model Integration'}"
+d26,Dataset,{'datasetName': 'British Library archives'}
+t75,MailThread,"{'threadID': 'V55ASC', 'subject': 'Feedback on Draft Plan for Adaptive Model Integration'}"
+e90,Email,"{'mailNum': 'YQ8H3O', 'mailDate': '2020-12-22T00:00:00'}"
+d27,Dataset,{'datasetName': 'Bodleian Libraries'}
+d28,Dataset,"{'datasetName': ""Oxford's digital collections""}"
+mg61,Meeting,"{'meetDate': '2020-12-30', 'meetAgenda': 'Discuss feedback on adaptive model integration plan'}"
+t76,MailThread,"{'threadID': 'VF0ZA2', 'subject': 'Technology Platform Assessments for Prototype Development'}"
+e91,Email,"{'mailNum': 'YQ8H3P', 'mailDate': '2020-12-23T00:00:00'}"
+me22,Method,{'methodName': 'TensorFlow'}
+me23,Method,{'methodName': 'PyTorch'}
+me24,Method,{'methodName': 'Jupyter Notebooks'}
+me25,Method,{'methodName': 'Voila'}
+me26,Method,{'methodName': 'Google Colab'}
+d29,Dataset,{'datasetName': 'historical datasets'}
+mg62,Meeting,"{'meetDate': '2020-12-30', 'meetAgenda': 'Refining selection criteria and reviewing platform capabilities'}"
+t77,MailThread,"{'threadID': 'EMA4AD', 'subject': 'Meeting Minutes and Next Steps on Adaptive Models and Prototypes'}"
+e92,Email,"{'mailNum': 'YQ8H3Q', 'mailDate': '2020-12-30T00:00:00'}"
+mg63,Meeting,"{'meetDate': '2020-12-30', 'meetAgenda': 'Feedback Consolidation on Draft Plan, Technology Platform Selection, Pilot Phase Strategy'}"
+me27,Method,{'methodName': 'Jupyter'}
+t78,MailThread,"{'threadID': 'U5N9OS', 'subject': 'Final Plan for Adaptive Model Integration'}"
+e93,Email,"{'mailNum': 'YQ8H3R', 'mailDate': '2021-01-05T00:00:00'}"
+d30,Dataset,{'datasetName': 'Oxford’s digital collections'}
+mg64,Meeting,"{'meetDate': '2021-01-12', 'meetAgenda': 'refine and progress our tool prototype'}"
+t79,MailThread,"{'threadID': 'TCU8B1', 'subject': 'Further Discussion on Journal Submission and Next Steps'}"
+e94,Email,"{'mailNum': 'YQ8H3S', 'mailDate': '2021-01-08T00:00:00'}"
+mg65,Meeting,"{'meetDate': '2021-01-12', 'meetAgenda': 'Discuss potential title suggestions and abstract drafts'}"
+t80,MailThread,"{'threadID': 'HXCH6O', 'subject': 'Confirmation and Preparation for Journal Submission Meeting'}"
+e95,Email,"{'mailNum': 'YQ8H3T', 'mailDate': '2021-01-12T00:00:00'}"
+j4,Journal,{'journalTitle': 'JDoc'}
+mg66,Meeting,"{'meetDate': '2021-01-12', 'meetAgenda': 'Title and Abstract Proposals, Manuscript Drafting and Responsibilities, Review Process and Collaborative Tools'}"
+t81,MailThread,"{'threadID': '9UY58G', 'subject': 'Follow-Up on Manuscript Drafting and Journal Submission'}"
+e96,Email,"{'mailNum': 'YQ8H3U', 'mailDate': '2021-01-13T00:00:00'}"
+me28,Method,{'methodName': 'adaptive model'}
+tk25,Task,{'taskName': 'NLP applications within the humanities'}
+mg67,Meeting,"{'meetDate': '2021-01-12', 'meetAgenda': 'set a comprehensive agenda for manuscript submission'}"
+t82,MailThread,"{'threadID': '56YJOG', 'subject': 'Initial Draft Submission for Internal Review—NLP in Historical Data'}"
+e97,Email,"{'mailNum': 'YQ8H3V', 'mailDate': '2021-01-25T00:00:00'}"
+pa7,Paper,{'paperTitle': 'Adaptive Model Integration for Historical Data Harnessing Multidisciplinary Synergies'}
+me29,Method,{'methodName': 'adaptive model framework'}
+mg68,Meeting,"{'meetDate': '2021-02-02', 'meetAgenda': 'focused review session to deliberate on improvements and the inclusion of any additional insights'}"
+mt9,Metric,{'metricName': 'precision'}
+mt10,Metric,{'metricName': 'recall'}
+mt11,Metric,{'metricName': 'F1 score'}
+t83,MailThread,"{'threadID': 'J9M9CG', 'subject': 'Finalizing the Manuscript for Submission to JOCCH'}"
+e98,Email,"{'mailNum': 'YQ8H3W', 'mailDate': '2021-02-10T00:00:00'}"
+pa8,Paper,{'paperTitle': 'Manuscript for Submission to JOCCH'}
+tk26,Task,{'taskName': 'Manuscript Drafting and Finalization'}
+t84,MailThread,"{'threadID': 'ZETJIW', 'subject': 'Acknowledgment of Paper Submission - ACL 2021'}"
+e99,Email,"{'mailNum': 'XK9J3X', 'mailDate': '2021-02-20T00:00:00'}"
+c5,Conference,"{'confTitle': 'ACL 2021', 'confDate': '2021-07-29', 'confVenue': 'Dubrovnik'}"
+s7,SubmissionID,{'identifier': 'ACL2021-P1234'}
+ps19,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2021-02-20'}"
+t85,MailThread,"{'threadID': 'RS8GJ3', 'subject': 'Decision on Your Paper Submission - ACL 2021'}"
+e100,Email,"{'mailNum': 'XK9J3Y', 'mailDate': '2021-04-15T00:00:00'}"
+ps20,PaperStatus,"{'statusType': 'Revision Required', 'statusDate': '2021-04-15'}"
+mt12,Metric,{'metricName': 'Precision'}
+mt13,Metric,{'metricName': 'Recall'}
+mt14,Metric,{'metricName': 'F1 Score'}
+tk27,Task,{'taskName': 'Natural Language Processing and Digital Humanities'}
+t86,MailThread,"{'threadID': 'W9OTFQ', 'subject': 'Revision Plan for ACL Submission - Immediate Action Required'}"
+e101,Email,"{'mailNum': 'YQ8H3X', 'mailDate': '2021-04-20T00:00:00'}"
+s8,SubmissionID,{'identifier': 'ACL2021-AMI'}
+ps21,PaperStatus,"{'statusType': 'Under Revision', 'statusDate': '2021-04-20'}"
+me30,Method,{'methodName': 'Model Scalability'}
+t87,MailThread,"{'threadID': 'Y4UC9V', 'subject': 'Clarifications and Zoom Meeting Invitation for ACL Paper Revision'}"
+e102,Email,"{'mailNum': 'YQ8H3Y', 'mailDate': '2021-04-25T00:00:00'}"
+mg69,Meeting,"{'meetDate': '2021-04-28', 'meetTime': '10:00', 'meetLink': '[Insert Zoom Link]', 'meetAgenda': 'Discuss approaches in detail, address lingering questions, and synergize efforts for ACL 2021 paper revision'}"
+s9,SubmissionID,{'identifier': 'ACL2021'}
+t88,MailThread,"{'threadID': '8YCL3W', 'subject': 'Documentation of Meeting Minutes - ACL Revision Collaboration'}"
+e103,Email,"{'mailNum': 'YQ8H3Z', 'mailDate': '2021-04-29T00:00:00'}"
+mg70,Meeting,"{'meetDate': '2021-04-28', 'meetAgenda': 'Revisions for ACL 2021 manuscript'}"
+mg71,Meeting,"{'meetDate': '2021-05-04', 'meetTime': '10:00', 'meetLink': '[Insert Zoom Link]', 'meetAgenda': 'Follow-up review meeting to finalize drafts'}"
+t89,MailThread,"{'threadID': '6DLLAP', 'subject': 'Feedback and Final Adjustments for ACL Paper Revision'}"
+e104,Email,"{'mailNum': 'YQ8H40', 'mailDate': '2021-05-05T00:00:00'}"
+pa9,Paper,{'paperTitle': 'ACL 2021 Paper'}
+s10,SubmissionID,{'identifier': 'ACL2021-REV'}
+ps22,PaperStatus,"{'statusType': 'Under Revision', 'statusDate': '2021-05-05'}"
+me31,Method,{'methodName': 'Model Adaptability'}
+d31,Dataset,{'datasetName': 'Dataset Selection and Preprocessing'}
+t90,MailThread,"{'threadID': 'VESPWS', 'subject': 'Submission Confirmation and Final Thoughts on ACL Paper'}"
+e105,Email,"{'mailNum': 'YQ8H41', 'mailDate': '2021-05-09T00:00:00'}"
+mg72,Meeting,"{'meetDate': '2021-05-20', 'meetTime': '18:00', 'meetAgenda': 'Virtual toast to celebrate submission and discuss future prospects'}"
+t91,MailThread,"{'threadID': '9SY06E', 'subject': 'Notification of Acceptance - ACL 2021'}"
+e106,Email,"{'mailNum': 'YQ8H42', 'mailDate': '2021-06-11T00:00:00'}"
+ps23,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2021-06-11'}"
+t92,MailThread,"{'threadID': 'PO12SE', 'subject': 'Preparation for Camera-Ready Submission - ACL 2021'}"
+e107,Email,"{'mailNum': 'ZX6K12', 'mailDate': '2021-06-13T00:00:00'}"
+s11,SubmissionID,{'identifier': 'ACL2021-CR'}
+ps24,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2021-06-13'}"
+mg73,Meeting,"{'meetAgenda': 'review edits and align on presentation strategy', 'meetDate': '2021-06-20'}"
+t93,MailThread,"{'threadID': 'LV8OGC', 'subject': 'Drafting and Finalizing Technical Slides for ACL Presentation'}"
+e108,Email,"{'mailNum': 'ZX6K13', 'mailDate': '2021-06-15T00:00:00'}"
+mg74,Meeting,{'meetDate': '2021-06-20'}
+mg75,Meeting,{'meetDate': '2021-06-23'}
+t94,MailThread,"{'threadID': 'ZA04PN', 'subject': 'Visualization Strategy and Collaborative Session Confirmation'}"
+e109,Email,"{'mailNum': 'ZX6K14', 'mailDate': '2021-06-20T00:00:00'}"
+mg76,Meeting,"{'meetDate': '2021-06-20', 'meetAgenda': 'Collaborative review session for slide preparation and presentation delivery'}"
+mg77,Meeting,"{'meetDate': '2021-06-23', 'meetAgenda': 'Collaborative review session for slide preparation and presentation delivery'}"
+tk28,Task,{'taskName': 'Data Processing Visualization'}
+tk29,Task,{'taskName': 'Presentation Preparation for ACL 2021'}
+t95,MailThread,"{'threadID': '9N1ZWG', 'subject': 'Final Presentation Strategy and Mock Session Details for ACL 2021'}"
+e110,Email,"{'mailNum': 'ZX6K15', 'mailDate': '2021-06-22T00:00:00'}"
+mg78,Meeting,"{'meetDate': '2021-06-25', 'meetTime': '17:00', 'meetAgenda': 'Mock presentation session for ACL 2021'}"
+t96,MailThread,"{'threadID': 'JFPZB2', 'subject': 'Reminder: Camera-Ready Submission and Presentation Preparation - ACL 2021'}"
+e111,Email,"{'mailNum': 'ZX6K16', 'mailDate': '2021-07-02T00:00:00'}"
+ps25,PaperStatus,"{'statusType': 'Camera-Ready', 'statusDate': '2021-06-30'}"
+t97,MailThread,"{'threadID': 'T4D8IA', 'subject': 'Travel Plans and Final Coordination for ACL 2021'}"
+e112,Email,"{'mailNum': 'ZX6K17', 'mailDate': '2021-07-05T00:00:00'}"
+t98,MailThread,"{'threadID': '34OQ7S', 'subject': 'Final Travel Details and Pre-Conference Meetup Plans for ACL 2021'}"
+e113,Email,"{'mailNum': 'ZX6K18', 'mailDate': '2021-07-12T00:00:00'}"
+mg79,Meeting,"{'meetDate': '2021-07-28', 'meetAgenda': 'Pre-Conference Meetup to harmonize presentation and address last-minute concerns'}"
+t99,MailThread,"{'threadID': 'I7USLD', 'subject': 'Initial Thoughts on Next Research Phase Post-ACL 2021'}"
+e114,Email,"{'mailNum': 'GHY298', 'mailDate': '2021-07-20T00:00:00'}"
+mg80,Meeting,"{'meetAgenda': 'brainstorming session to gather insights and set concrete goals for our next project phase', 'meetDate': '2021-09'}"
+t100,MailThread,"{'threadID': 'WC1FM2', 'subject': 'Coordination for Post-ACL Research Meeting and Upcoming Collaborative Opportunities'}"
+e115,Email,"{'mailNum': 'GHY299', 'mailDate': '2021-09-01T00:00:00'}"
+mg81,Meeting,"{'meetDate': '2021-09-15', 'meetTime': '16:00 IST / 07:30 PST / 15:30 GMT', 'meetLink': 'https://meet.google.com/example-code', 'meetAgenda': 'Detail immediate action points and strategies for the next research phase'}"
+t101,MailThread,"{'threadID': 'OD3NEP', 'subject': 'Minutes from Post-ACL Research Meeting - September 15'}"
+e116,Email,"{'mailNum': 'GHY300', 'mailDate': '2021-09-16T00:00:00'}"
+pn10,Person,"{'personName': 'Emily Zhao', 'affiliation': 'University of Toronto'}"
+tk30,Task,{'taskName': 'Feedback Integration on Model Variability and Cultural Text Categorization'}
+tk31,Task,{'taskName': 'Dataset Expansion with Historical Texts'}
+tk32,Task,{'taskName': 'Manuscript Development for JOCCH/JDoc'}
+tk33,Task,{'taskName': 'Funding and Grants Exploration'}
+mg82,Meeting,"{'meetDate': '2021-09-15', 'meetAgenda': 'Post-ACL Research Meeting'}"
+t102,MailThread,"{'threadID': 'B8GUHU', 'subject': 'Further Discussions on Manuscript Submission and Funding Strategy'}"
+e117,Email,"{'mailNum': 'GHY301', 'mailDate': '2021-10-05T00:00:00'}"
+mg83,Meeting,"{'meetDate': '2021-10-10', 'meetTime': '16:00 IST / 07:30 PST / 15:30 GMT', 'meetAgenda': 'Discuss integration of manuscript sections and brainstorm additional information or case studies'}"
+t103,MailThread,"{'threadID': 'X24GDT', 'subject': 'Manuscript Submission Acknowledgment and Review Process Initiation'}"
+e118,Email,"{'mailNum': 'GHY302', 'mailDate': '2021-10-11T00:00:00'}"
+pa10,Paper,{'paperTitle': 'Exploring Historical Narratives: An Interdisciplinary Approach through NLP'}
+s12,SubmissionID,{'identifier': 'JDOC12345'}
+ps26,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2021-10-10'}"
+t104,MailThread,"{'threadID': 'WO7OX7', 'subject': 'Manuscript Review Decision for Submission ID JDOC12345'}"
+e119,Email,"{'mailNum': 'GHY303', 'mailDate': '2021-11-15T00:00:00'}"
+ps27,PaperStatus,"{'statusType': 'Accepted pending minor revisions', 'statusDate': '2021-11-15'}"
+t105,MailThread,"{'threadID': 'HJE665', 'subject': 'Collaboration on Manuscript Revisions for JDOC12345 - Feedback Integration'}"
+e120,Email,"{'mailNum': 'GHY304', 'mailDate': '2021-11-17T00:00:00'}"
+mg84,Meeting,"{'meetDate': '2021-11-24', 'meetTime': '16:00 IST / 07:30 PST / 15:30 GMT', 'meetAgenda': 'Discuss progress on manuscript revisions'}"
+t106,MailThread,"{'threadID': '8VRVOO', 'subject': 'Completion of Manuscript Revisions for JDOC12345'}"
+e121,Email,"{'mailNum': 'GHY305', 'mailDate': '2021-11-26T00:00:00'}"
+ps28,PaperStatus,"{'statusType': 'Revised', 'statusDate': '2021-11-26'}"
+t107,MailThread,"{'threadID': 'Q8EUEV', 'subject': 'Final Decision and Acceptance for Submission ID JDOC12345'}"
+e122,Email,"{'mailNum': 'GHY306', 'mailDate': '2022-01-12T00:00:00'}"
+ps29,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2022-01-12'}"
+t108,MailThread,"{'threadID': '77VE75', 'subject': 'Preparations for Camera-Ready Submission and Next Research Steps'}"
+e123,Email,"{'mailNum': 'GHY307', 'mailDate': '2022-01-15T00:00:00'}"
+ps30,PaperStatus,"{'statusType': 'Camera-Ready', 'statusDate': '2022-01-31'}"
+mg85,Meeting,"{'meetDate': '2022-02-05', 'meetTime': '15:00 IST / 05:30 PST / 13:30 GMT', 'meetAgenda': 'Discuss potential directions and collaborations in applying methodologies to lesser-studied languages and cultural datasets'}"
+t109,MailThread,"{'threadID': 'KSG7W8', 'subject': 'Camera-Ready Version Draft for Final Review'}"
+e124,Email,"{'mailNum': 'GHY308', 'mailDate': '2022-01-22T00:00:00'}"
+mg86,Meeting,"{'meetDate': '2022-02-05', 'meetAgenda': 'discuss future research directions with potential focuses on uncharted linguistic and cultural datasets'}"
+t110,MailThread,"{'threadID': 'YHPRER', 'subject': 'Feedback on Camera-Ready Draft'}"
+e125,Email,"{'mailNum': 'GHY309', 'mailDate': '2022-01-27T00:00:00'}"
+mg87,Meeting,"{'meetDate': '2022-02-05', 'meetAgenda': 'explore fresh research initiatives in less-explored linguistic terrains'}"
+t111,MailThread,"{'threadID': 'LIPG6Y', 'subject': 'Final Submission of Camera-Ready Version and Copyright Agreement for JDOC12345'}"
+e126,Email,"{'mailNum': 'GHY310', 'mailDate': '2022-01-30T00:00:00'}"
+ps31,PaperStatus,"{'statusType': 'Camera-Ready', 'statusDate': '2022-01-30'}"
+mg88,Meeting,"{'meetDate': '2022-02-05', 'meetTime': '15:00 IST / 05:30 PST / 13:30 GMT', 'meetAgenda': 'Discuss new research ventures'}"
+t112,MailThread,"{'threadID': 'YDYQPA', 'subject': 'Preparation for Upcoming Meeting on February 5'}"
+e127,Email,"{'mailNum': 'BGH401', 'mailDate': '2022-02-01T00:00:00'}"
+mg89,Meeting,"{'meetDate': '2022-02-05', 'meetLink': 'https://stanford.zoom.us/meeting-id', 'meetAgenda': 'Reflection on recent success, exploration of new research directions, potential collaboration opportunities, tools and techniques'}"
+d32,Dataset,"{'datasetName': ""Oxford's digital collection""}"
+me32,Method,{'methodName': 'Syntactic Structuring in Historical Texts'}
+t113,MailThread,"{'threadID': 'RTJ2S0', 'subject': 'Minutes from February 5 Meeting'}"
+e128,Email,"{'mailNum': 'BGH402', 'mailDate': '2022-02-05T00:00:00'}"
+d33,Dataset,"{'datasetName': ""Oxford's extensive history archives""}"
+d34,Dataset,{'datasetName': 'under-represented linguistic datasets'}
+d35,Dataset,{'datasetName': 'under-documented dialects in South Asian linguistics'}
+me33,Method,{'methodName': 'syntactic structuring'}
+mg90,Meeting,"{'meetDate': '2022-02-05', 'meetAgenda': 'Celebration and Reflection, Exploring New Research Directions, Funding and Collaboration Opportunities, Advanced NLP Tools'}"
+t114,MailThread,"{'threadID': 'P1U2Y2', 'subject': 'Draft Proposal for New Research on Under-Represented Linguistic Datasets'}"
+e129,Email,"{'mailNum': 'BGH403', 'mailDate': '2022-02-10T00:00:00'}"
+d36,Dataset,{'datasetName': 'Oxford Archives'}
+tk34,Task,{'taskName': 'Analysis of Under-Represented Linguistic Datasets'}
+me34,Method,{'methodName': 'Advanced Syntactic Structuring Tools'}
+e130,Email,"{'mailNum': 'BGH404', 'mailDate': '2022-02-15T00:00:00'}"
+mg91,Meeting,"{'meetDate': '2022-02-28', 'meetAgenda': 'seminar on advanced syntactic tools'}"
+t115,MailThread,"{'threadID': 'YQGMUC', 'subject': 'Finalized Proposal for New Research Initiative and Next Steps'}"
+e131,Email,"{'mailNum': 'BGH405', 'mailDate': '2022-02-20T00:00:00'}"
+d37,Dataset,{'datasetName': 'Under-represented Linguistic Datasets'}
+mg92,Meeting,"{'meetDate': '2022-03-10', 'meetTime': '15:00 IST / 05:30 PST / 13:30 GMT', 'meetAgenda': 'Bi-weekly progress meetings to ensure project objectives are on track'}"
+mg93,Meeting,"{'meetDate': '2022-02-28', 'meetAgenda': ""Michael's seminar to equip with critical tool proficiencies""}"
+t116,MailThread,"{'threadID': '3OBB9U', 'subject': 'Acknowledgment of Submission - JDOC23456'}"
+e132,Email,"{'mailNum': 'BGH406', 'mailDate': '2022-02-25T00:00:00'}"
+s13,SubmissionID,{'identifier': 'JDOC23456'}
+ps32,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2022-02-25'}"
+t117,MailThread,"{'threadID': 'VJR9ZI', 'subject': 'Follow-Up after Seminar on Advanced Syntactic Tools'}"
+e133,Email,"{'mailNum': 'BGH407', 'mailDate': '2022-02-28T00:00:00'}"
+tk35,Task,{'taskName': 'Syntactic Parsing and Tokenization for Under-documented Languages'}
+me35,Method,{'methodName': 'Syntactic Structuring Tools'}
+d38,Dataset,{'datasetName': 'Historical NLP Datasets'}
+t118,MailThread,"{'threadID': '6OK4Z5', 'subject': 'Updates from First Bi-Weekly Meeting - Progress on Data Analysis'}"
+e134,Email,"{'mailNum': 'BGH408', 'mailDate': '2022-03-10T00:00:00'}"
+me36,Method,{'methodName': 'Syntactic Tools'}
+mg94,Meeting,"{'meetAgenda': 'First bi-weekly meeting on data analysis progress', 'meetDate': '2022-03-10'}"
+t119,MailThread,"{'threadID': 'IL1JLA', 'subject': 'Next Steps for Grant Application and Upcoming Meeting Confirmation'}"
+e135,Email,"{'mailNum': 'BGH409', 'mailDate': '2022-03-15T00:00:00'}"
+mg95,Meeting,"{'meetDate': '2022-03-24', 'meetTime': '15:00 IST / 05:30 PST / 13:30 GMT', 'meetAgenda': 'Review progress on the advanced analysis using syntactic tools. Discuss preliminary outcomes from data trials and possible adjustments. Fine-tune grant proposals and develop strategies for submission. Coordinate timelines and roles regarding collaboration with regional linguistic bodies. Plan dissemination of our early findings at relevant academic forums.'}"
+t120,MailThread,"{'threadID': 'G6AQE5', 'subject': 'Minutes from March 24 Bi-Weekly Meeting'}"
+e136,Email,"{'mailNum': 'BGH410', 'mailDate': '2022-03-24T00:00:00'}"
+tk36,Task,{'taskName': 'Advanced Syntactic Tools Analysis'}
+tk37,Task,{'taskName': 'Preliminary Data Trial Outcomes'}
+tk38,Task,{'taskName': 'Grant Proposal Refinement'}
+tk39,Task,{'taskName': 'Regional Collaboration Strategy'}
+tk40,Task,{'taskName': 'Academic Dissemination Plans'}
+mg96,Meeting,"{'meetDate': '2022-03-24', 'meetAgenda': 'Bi-weekly meeting to discuss syntactic tools, data trials, grant proposals, regional collaboration, and academic dissemination'}"
+t121,MailThread,"{'threadID': '9SQQDW', 'subject': 'Acknowledgment of Submission - ACL2022-P01567'}"
+e137,Email,"{'mailNum': 'DEF123', 'mailDate': '2022-03-28T00:00:00'}"
+c6,Conference,"{'confTitle': 'ACL 2022', 'confDate': '2022-07-15'}"
+pa11,Paper,{'paperTitle': 'Linguistic Heritage and Modern NLP: Bridging Under-Represented Dialects with Technology'}
+s14,SubmissionID,{'identifier': 'ACL2022-P01567'}
+ps33,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2022-03-28'}"
+t122,MailThread,"{'threadID': 'X0JNMX', 'subject': 'Notification of Decision - ACL2022-P01567'}"
+e138,Email,"{'mailNum': 'DEF124', 'mailDate': '2022-06-15T00:00:00'}"
+ps34,PaperStatus,"{'statusType': 'Accept with Minor Revisions', 'statusDate': '2022-06-15'}"
+tk41,Task,{'taskName': 'Preservation of Linguistic Heritage'}
+t123,MailThread,"{'threadID': 'SJ6QO6', 'subject': 'Acceptance Notification and Required Revisions for ACL 2022'}"
+e139,Email,"{'mailNum': 'BGH411', 'mailDate': '2022-06-16T00:00:00'}"
+ps35,PaperStatus,"{'statusType': 'Accepted with minor revisions', 'statusDate': '2022-06-16'}"
+mg97,Meeting,"{'meetDate': '2022-06-22', 'meetAgenda': 'Discuss strategies and actions for paper revisions'}"
+t124,MailThread,"{'threadID': 'LDAT8M', 'subject': 'Strategy and Revisions Discussion for ACL 2022 Paper'}"
+e140,Email,"{'mailNum': 'DEF125', 'mailDate': '2022-06-22T00:00:00'}"
+mg98,Meeting,"{'meetDate': '2022-06-26', 'meetTime': '15:00 IST', 'meetLink': 'https://stanford.zoom.us/meet/XYZ123', 'meetAgenda': 'Tool Clarifications and Contributions, Socio-Cultural Impact Deliberations, Data Visualization Enhancements'}"
+t125,MailThread,"{'threadID': 'CZ3ODU', 'subject': 'Minutes from Strategy Meeting for ACL 2022 Revisions'}"
+e141,Email,"{'mailNum': 'DEF126', 'mailDate': '2022-06-26T00:00:00'}"
+tk42,Task,{'taskName': 'NLP Tool Clarifications and Contributions'}
+tk43,Task,{'taskName': 'Socio-Cultural Impact Deliberations'}
+tk44,Task,{'taskName': 'Data Visualization'}
+mg99,Meeting,"{'meetAgenda': 'Strategy meeting for ACL 2022 revisions', 'meetDate': '2022-06-26'}"
+t126,MailThread,"{'threadID': '23LZK8', 'subject': 'Final Review and Submission Strategy for ACL 2022'}"
+e142,Email,"{'mailNum': 'DEF127', 'mailDate': '2022-07-02T00:00:00'}"
+mg100,Meeting,"{'meetDate': '2022-07-07', 'meetTime': '16:00 IST / 06:30 PST / 14:30 GMT', 'meetLink': 'https://meet.google.com/zxy-bvwp-txy', 'meetAgenda': 'Finalize remaining adjustments and polish document for camera-ready submission'}"
+t127,MailThread,"{'threadID': 'TQHMBZ', 'subject': 'Final Draft Review for ACL 2022 Submission'}"
+e143,Email,"{'mailNum': 'DEF128', 'mailDate': '2022-07-08T00:00:00'}"
+mg101,Meeting,"{'meetDate': '2022-07-07', 'meetAgenda': 'Comprehensive Review Session for final draft review'}"
+t128,MailThread,"{'threadID': '7HZGSC', 'subject': 'Feedback on Final Draft for ACL 2022 Submission'}"
+e144,Email,"{'mailNum': 'DEF129', 'mailDate': '2022-07-09T00:00:00'}"
+s15,SubmissionID,{'identifier': 'ACL2022'}
+ps36,PaperStatus,"{'statusType': 'Final Draft', 'statusDate': '2022-07-09'}"
+t129,MailThread,"{'threadID': 'QEOHHH', 'subject': 'Final Adjustments and Confirmation for ACL 2022 Submission'}"
+e145,Email,"{'mailNum': 'DEF130', 'mailDate': '2022-07-10T00:00:00'}"
+mg102,Meeting,"{'meetDate': '2022-07-07', 'meetAgenda': 'Finalize adjustments for ACL 2022 paper submission'}"
+t130,MailThread,"{'threadID': 'KRP69U', 'subject': 'Submission Confirmation for ""Linguistic Heritage and Modern NLP"" ACL 2022'}"
+e146,Email,"{'mailNum': 'DEF131', 'mailDate': '2022-07-10T00:00:00'}"
+ps37,PaperStatus,"{'statusType': 'Revised', 'statusDate': '2022-07-10'}"
+tk45,Task,{'taskName': 'Comparative Analysis of NLP Tools'}
+t131,MailThread,"{'threadID': 'PTKW60', 'subject': 'Submission Received - ACL2022-P01567'}"
+e147,Email,"{'mailNum': 'DEF132', 'mailDate': '2022-07-11T00:00:00'}"
+ps38,PaperStatus,"{'statusType': 'Revised Submission', 'statusDate': '2022-07-11'}"
+t132,MailThread,"{'threadID': 'GPF9TV', 'subject': 'Camera-Ready Version Submission for ACL2022-P01567'}"
+e148,Email,"{'mailNum': 'DEF133', 'mailDate': '2022-07-15T00:00:00'}"
+ps39,PaperStatus,"{'statusType': 'Camera-Ready', 'statusDate': '2022-07-15'}"
+t133,MailThread,"{'threadID': 'CURPU7', 'subject': 'Camera-Ready Version Confirmation - ACL2022-P01567'}"
+e149,Email,"{'mailNum': 'DEF134', 'mailDate': '2022-07-16T00:00:00'}"
+ps40,PaperStatus,"{'statusType': 'Camera-Ready', 'statusDate': '2022-07-16'}"
+t134,MailThread,"{'threadID': 'LUTGNM', 'subject': 'Re: Post-ACL 2022 Discussion and Further Research Directions'}"
+e150,Email,"{'mailNum': 'GHI101', 'mailDate': '2022-07-17T00:00:00'}"
+tk46,Task,{'taskName': 'socio-cultural implications of NLP in under-represented dialects'}
+mg103,Meeting,"{'meetDate': '2022-07-24', 'meetTime': '15:00 IST / 05:30 PST / 13:30 GMT', 'meetLink': 'https://zoom.us/j/abcd1234efgh', 'meetAgenda': 'brainstorm and refine research ideas on NLP in under-represented dialects'}"
+e151,Email,"{'mailNum': 'GHI102', 'mailDate': '2022-07-18T00:00:00'}"
+tk47,Task,{'taskName': 'Data Collection for New Dialects'}
+tk48,Task,{'taskName': 'Development of Collaborative Platforms'}
+tk49,Task,{'taskName': 'Ethical Framework Establishment'}
+mg104,Meeting,"{'meetDate': '2022-07-24', 'meetAgenda': 'Confirm availability for meeting to discuss further research directions'}"
+t135,MailThread,"{'threadID': 'C0P1SI', 'subject': 'Meeting Minutes - Post-ACL 2022 Research Strategy Discussion'}"
+e152,Email,"{'mailNum': 'GHI103', 'mailDate': '2022-07-24T00:00:00'}"
+mg105,Meeting,"{'meetDate': '2022-07-24', 'meetAgenda': 'Post-ACL 2022 Research Strategy Discussion'}"
+tk50,Task,{'taskName': 'Expansion to Additional Dialects'}
+tk51,Task,{'taskName': 'Collaborative Platforms for Language Preservation'}
+tk52,Task,{'taskName': 'Ethics in NLP'}
+mg106,Meeting,"{'meetDate': '2022-08-20', 'meetAgenda': 'Review initial drafts and insights'}"
+t136,MailThread,"{'threadID': 'DIHT5P', 'subject': 'Feedback and Next Steps for Post-ACL Initiatives'}"
+e153,Email,"{'mailNum': 'GHI104', 'mailDate': '2022-07-25T00:00:00'}"
+tk53,Task,{'taskName': 'Dialect Recognition and Preservation'}
+mg107,Meeting,"{'meetDate': '2022-08-20', 'meetAgenda': 'Preliminary Concept Presentations'}"
+t137,MailThread,"{'threadID': '7J9RNR', 'subject': 'Survey Design for Ethical Framework Consultation'}"
+e154,Email,"{'mailNum': 'GHI105', 'mailDate': '2022-07-26T00:00:00'}"
+tk54,Task,{'taskName': 'Survey/Interview Framework for Ethical Framework Consultation'}
+mg108,Meeting,"{'meetAgenda': 'Feedback session to refine ethical framework consultation process', 'meetDate': '2022-08-05'}"
+t138,MailThread,"{'threadID': 'FU0TRG', 'subject': 'Preparation for Preliminary Concept Presentations'}"
+e155,Email,"{'mailNum': 'GHI106', 'mailDate': '2022-08-10T00:00:00'}"
+tk55,Task,{'taskName': 'Dialect Prioritization and Data Collation'}
+tk56,Task,{'taskName': 'Technical Feasibility Report for Collaboration Platform'}
+tk57,Task,{'taskName': 'Survey Design for Ethical Consultations'}
+mg109,Meeting,"{'meetDate': '2022-08-20', 'meetTime': '15:00 IST', 'meetLink': 'https://zoom.us/j/hijk4567lmno', 'meetAgenda': 'Preliminary concept presentations for Dialect Expansion, Platform Development, Ethical Framework', 'passcode': 'NRES2022'}"
+t139,MailThread,"{'threadID': 'VVLWSK', 'subject': 'Post-Meeting Reflection and Next Steps for Project Development'}"
+e156,Email,"{'mailNum': 'GHI107', 'mailDate': '2022-08-20T00:00:00'}"
+tk58,Task,{'taskName': 'Ethical Framework Advancement'}
+mg110,Meeting,"{'meetDate': '2022-08-20', 'meetAgenda': 'Discussion on preliminary concepts for project development'}"
+t140,MailThread,"{'threadID': '314VGL', 'subject': 'Follow-up on Initial Project Developments and Strategic Adjustments'}"
+e157,Email,"{'mailNum': 'GHI108', 'mailDate': '2022-09-01T00:00:00'}"
+d39,Dataset,{'datasetName': 'Dialect Data'}
+me37,Method,{'methodName': 'Dialect Recognition Features'}
+tk59,Task,"{'taskName': 'Dialect Data Collection', 'datasetName': 'Dialect Data Collection'}"
+mg111,Meeting,"{'meetAgenda': 'reevaluate timelines and ensure synergy between technical, cultural, and ethical aspects', 'meetDate': '2022-09-10'}"
+t141,MailThread,"{'threadID': 'XNK5RC', 'subject': 'Scheduling Our Next Collaborative Meeting'}"
+e158,Email,"{'mailNum': 'GHI109', 'mailDate': '2022-09-05T00:00:00'}"
+mg112,Meeting,"{'meetAgenda': 'Review progress on dialect data collection, share updates on ethical consideration surveys, discuss sandbox tests on dialect recognition features, strategize on aligning goals', 'meetLink': 'https://meet.google.com/xyz-abc123'}"
+t142,MailThread,"{'threadID': 'LJG36D', 'subject': 'Meeting Minutes and Action Plan Following Our September 15th Session'}"
+e159,Email,"{'mailNum': 'GHI110', 'mailDate': '2022-09-18T00:00:00'}"
+mg113,Meeting,"{'meetDate': '2022-09-15', 'meetAgenda': 'Dialect Data Collection, Technical Developments, Ethical Consideration Surveys'}"
+c7,Conference,"{'confTitle': 'ACL 2023', 'confDate': '2023-07-15', 'confVenue': 'Vancouver Convention Center'}"
+tk60,Task,{'taskName': 'Technical Developments'}
+tk61,Task,{'taskName': 'Ethical Consideration Surveys'}
+t143,MailThread,"{'threadID': 'Z0IJQA', 'subject': 'Next Steps in Our Project and Conference Submission Strategy'}"
+e160,Email,"{'mailNum': 'GHI111', 'mailDate': '2022-09-30T00:00:00'}"
+tk62,Task,{'taskName': 'Dialect Data Collection and Analysis'}
+mg114,Meeting,"{'meetDate': '2022-10-15', 'meetAgenda': 'Finalize the abstract and review technical progress'}"
+t144,MailThread,"{'threadID': '3FJVGI', 'subject': 'Finalizing Abstract for ACL 2023 Submission & Coordination Meeting'}"
+e161,Email,"{'mailNum': 'MNOP112', 'mailDate': '2022-10-15T00:00:00'}"
+mg115,Meeting,"{'meetDate': '2022-10-22/2022-10-23', 'meetLink': 'https://meet.google.com/xyz-abc123', 'meetAgenda': 'Final review and approval of the abstract. Discuss technical progress and address scalability challenges. Coordination of ethical findings within our conference presentation. Identify any remaining support needed as we prepare to submit.'}"
+t145,MailThread,"{'threadID': 'SF79B6', 'subject': 'Review of Meeting Outcomes and Decision on Submission Strategy'}"
+e162,Email,"{'mailNum': 'QRSTU113', 'mailDate': '2022-10-25T00:00:00'}"
+mg116,Meeting,"{'meetDate': '2022-10-23', 'meetAgenda': 'Review of Meeting Outcomes and Decision on Submission Strategy'}"
+t146,MailThread,"{'threadID': 'UL9MOQ', 'subject': 'Confirmation of Internal Review and Submission Preparations for ACL 2023'}"
+e163,Email,"{'mailNum': 'VWXY114', 'mailDate': '2022-11-03T00:00:00'}"
+mg117,Meeting,"{'meetDate': '2022-11-05', 'meetTime': '14:00', 'meetLink': 'https://meet.google.com/xyz-connection456', 'meetAgenda': 'Comprehensive review of the paper’s sections. Discussion on any last-minute inclusions or modifications. Final checks for ethical and methodological coherence.'}"
+t147,MailThread,"{'threadID': 'SKC3GX', 'subject': 'Confirmation of ACL 2023 Submission & Next Steps'}"
+e164,Email,"{'mailNum': 'ZABC115', 'mailDate': '2022-11-10T00:00:00'}"
+pa12,Paper,{'paperTitle': 'Dialect Variation and Ethical Approaches in NLP Historical Data'}
+s16,SubmissionID,{'identifier': 'ACL2023-7890'}
+ps41,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2022-11-07'}"
+t148,MailThread,"{'threadID': 'QTE8D4', 'subject': 'Acknowledgment of Submission - ACL 2023, Paper ID: ACL2023-7890'}"
+e165,Email,"{'mailNum': 'ZABC116', 'mailDate': '2022-11-15T00:00:00'}"
+ps42,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2022-11-15'}"
+t149,MailThread,"{'threadID': 'KXY8YE', 'subject': 'Decision Notification - ACL 2023, Paper ID: ACL2023-7890'}"
+e166,Email,"{'mailNum': 'ZABC117', 'mailDate': '2023-03-10T00:00:00'}"
+c8,Conference,{'confTitle': 'Annual Conference of the Association for Computational Linguistics (ACL) 2023'}
+ps43,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2023-03-10'}"
+tk63,Task,{'taskName': 'Dialect Variation in NLP Historical Data'}
+me38,Method,{'methodName': 'Ethical Frameworks for Privacy in NLP'}
+t150,MailThread,"{'threadID': 'IAD03C', 'subject': 'Preparations for Camera-Ready Submission and Presentation at ACL 2023'}"
+e167,Email,"{'mailNum': 'ZABC118', 'mailDate': '2023-03-12T00:00:00'}"
+pa13,Paper,{'paperTitle': 'NLP and Historical Data'}
+s17,SubmissionID,{'identifier': 'ACL2023-CR'}
+ps44,PaperStatus,"{'statusType': 'Camera-Ready', 'statusDate': '2023-03-31'}"
+mg118,Meeting,"{'meetDate': '2023-03-22', 'meetTime': '15:00', 'meetLink': 'https://meet.google.com/abc-final567', 'meetAgenda': 'Review and finalize camera-ready submission content. Discuss presentation strategy and role allocation. Prepare outline of the talk for conference presentation.'}"
+t151,MailThread,"{'threadID': 'HT6QWL', 'subject': 'Camera-Ready Submission Completed for ACL 2023'}"
+e168,Email,"{'mailNum': 'ZABC119', 'mailDate': '2023-03-25T00:00:00'}"
+mg119,Meeting,"{'meetDate': '2023-03-29', 'meetTime': '15:00', 'meetLink': 'https://meet.google.com/abc-final567', 'meetAgenda': 'Final review of presentation content and role distribution. Outline practice sessions and setup a rehearsal timeline. Discussion on engaging Q&A session strategies for the conference audience.'}"
+t152,MailThread,"{'threadID': 'G7TZM5', 'subject': 'Final Rehearsal and Last-Minute Preparations for ACL 2023 Presentation'}"
+e169,Email,"{'mailNum': 'ZABC120', 'mailDate': '2023-03-30T00:00:00'}"
+mg120,Meeting,"{'meetDate': '2023-04-02', 'meetTime': '14:00', 'meetLink': 'https://meet.google.com/final-rehearsal123', 'meetAgenda': 'Conduct a full practice run of our presentation. Finalize presentation delivery roles and transitions. Discuss strategies for dynamic interaction post-presentation.'}"
+t153,MailThread,"{'threadID': 'OXNJK8', 'subject': 'Final Thoughts on ACL 2023 Presentation Preparation'}"
+e170,Email,"{'mailNum': 'ZABC121', 'mailDate': '2023-04-02T00:00:00'}"
+tk64,Task,{'taskName': 'NLP and Historical Datasets Presentation'}
+mg121,Meeting,"{'meetDate': '2023-04-02', 'meetTime': '14:00', 'meetLink': 'https://meet.google.com/final-rehearsal123', 'meetAgenda': 'Rehearsal for ACL 2023 presentation'}"
+t154,MailThread,"{'threadID': 'X8X1H8', 'subject': 'Post-Rehearsal Reflections and Final Touches for ACL 2023 Presentation'}"
+e171,Email,"{'mailNum': 'ZABC122', 'mailDate': '2023-04-04T00:00:00'}"
+mg122,Meeting,"{'meetDate': '2023-07-14', 'meetAgenda': 'Dress Rehearsal at the conference hall'}"
+t155,MailThread,"{'threadID': 'YW4RKM', 'subject': 'Feedback from Dress Rehearsal and Last Minute Adjustments for ACL 2023'}"
+e172,Email,"{'mailNum': 'ZABC123', 'mailDate': '2023-04-08T00:00:00'}"
+mg123,Meeting,"{'meetDate': '2023-07-14', 'meetAgenda': 'calm any last-minute nerves and reconfirm logistics'}"
+t156,MailThread,"{'threadID': 'I2LZ61', 'subject': 'Pre-Presentation Coordination and Encouragement for ACL 2023'}"
+e173,Email,"{'mailNum': 'ZABC124', 'mailDate': '2023-04-13T00:00:00'}"
+mg124,Meeting,"{'meetDate': '2023-07-14', 'meetTime': '16:00', 'meetLink': 'https://zoom.us/aclc2023prep-call', 'meetAgenda': 'Pre-presentation call to reaffirm logistics, offer support, and solidify team resolve'}"
+t157,MailThread,"{'threadID': 'MLCGBM', 'subject': 'Coordination Call Reminder and Last-Minute Logistics for ACL 2023'}"
+e174,Email,"{'mailNum': 'ZABC125', 'mailDate': '2023-04-14T00:00:00'}"
+mg125,Meeting,"{'meetDate': '2023-04-14', 'meetTime': '16:00', 'meetLink': 'https://zoom.us/aclc2023prep-call', 'meetAgenda': 'pre-presentation call to review presentation flow, address last-minute concerns, and encourage one another'}"
+t158,MailThread,"{'threadID': '2HJJFL', 'subject': 'Acknowledgment of Manuscript Submission and Assignment of Submission ID'}"
+e175,Email,"{'mailNum': 'ZABC126', 'mailDate': '2023-07-16T00:00:00'}"
+pa14,Paper,{'paperTitle': 'NLP Techniques for Analyzing Historical Texts: Bridging Time and Technology with Ethical Considerations'}
+s18,SubmissionID,{'identifier': 'JOCCH5678ZX'}
+ps45,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2023-07-16'}"
+t159,MailThread,"{'threadID': 'PUT1CW', 'subject': 'Decision on Manuscript Submission ID: JOCCH5678ZX'}"
+e176,Email,"{'mailNum': 'JOCCH5678ZX1', 'mailDate': '2023-08-20T00:00:00'}"
+ps46,PaperStatus,"{'statusType': 'Rejected', 'statusDate': '2023-08-20'}"
+t160,MailThread,"{'threadID': '1KIY5S', 'subject': 'Feedback Review and Next Steps for JOCCH Resubmission'}"
+e177,Email,"{'mailNum': 'JOCCH5678ZX2', 'mailDate': '2023-08-25T00:00:00'}"
+tk65,Task,{'taskName': 'Analyzing Historical Texts'}
+mg126,Meeting,"{'meetDate': '2023-09-01', 'meetTime': '10:00', 'meetLink': 'https://zoom.us/jocch5678zx-review', 'meetAgenda': 'Review feedback and define a clear plan of action for revision'}"
+t161,MailThread,"{'threadID': 'GPFYKN', 'subject': 'Confirmation of Review Meeting and Preliminary Ideas for JOCCH Revision'}"
+e178,Email,"{'mailNum': 'JOCCH5678ZX3', 'mailDate': '2023-08-28T00:00:00'}"
+mg127,Meeting,"{'meetDate': '2023-09-01', 'meetTime': '10:00', 'meetLink': 'https://zoom.us/jocch5678zx-review', 'meetAgenda': 'Review meeting for JOCCH revision'}"
+t162,MailThread,"{'threadID': 'HE1FMW', 'subject': 'Meeting Minutes: Review and Discussion on JOCCH Revisions'}"
+e179,Email,"{'mailNum': 'JOCCH5678ZX4', 'mailDate': '2023-09-01T00:00:00'}"
+mg128,Meeting,"{'meetDate': '2023-09-01', 'meetAgenda': 'Review and Discussion on JOCCH Revisions'}"
+t163,MailThread,"{'threadID': 'EI0IFM', 'subject': 'Update on Progress and Final Steps for JOCCH Manuscript Resubmission'}"
+e180,Email,"{'mailNum': 'JOCCH5678ZX5', 'mailDate': '2023-09-20T00:00:00', 'identifier': 'JOCCH5678ZX5'}"
+ps47,PaperStatus,"{'statusType': 'Revised', 'statusDate': '2023-09-30'}"
+t164,MailThread,"{'threadID': 'DFBLGT', 'subject': 'Final Revision Check and Submission Readiness for JOCCH'}"
+e181,Email,"{'mailNum': 'JOCCH5678ZX6', 'mailDate': '2023-09-24T00:00:00'}"
+mg129,Meeting,"{'meetDate': '2023-09-26', 'meetTime': '15:00', 'meetLink': 'https://meet.google.com/final-jocch-review', 'meetAgenda': 'Final team review session to align on any remaining concerns and gain final approval. Discuss strategic points for cover letter and supplementary materials.'}"
+t165,MailThread,"{'threadID': 'T0SC47', 'subject': 'Recap of Final Review Session and Submission Strategy'}"
+e182,Email,"{'mailNum': 'JOCCH5678ZX7', 'mailDate': '2023-09-27T00:00:00'}"
+ps48,PaperStatus,"{'statusType': 'Ready for Resubmission', 'statusDate': '2023-09-27'}"
+t166,MailThread,"{'threadID': '82H8VG', 'subject': 'Acknowledgment of Submission - Manuscript ID: JOCCH2023NHD15'}"
+e183,Email,"{'mailNum': 'JOCCH5678ZX8', 'mailDate': '2023-09-29T00:00:00'}"
+s19,SubmissionID,{'identifier': 'JOCCH2023NHD15'}
+ps49,PaperStatus,"{'statusType': 'Revised Submission', 'statusDate': '2023-09-29'}"
+t167,MailThread,"{'threadID': 'GBFGXX', 'subject': 'Decision on Manuscript ID: JOCCH2023NHD15'}"
+e184,Email,"{'mailNum': 'JOCCH5678ZX9', 'mailDate': '2023-11-15T00:00:00'}"
+ps50,PaperStatus,"{'statusType': 'Major Revision Required', 'statusDate': '2023-11-15'}"
+t168,MailThread,"{'threadID': '1776PR', 'subject': 'Actionable Steps for Major Revisions of Our JOCCH Manuscript'}"
+e185,Email,"{'mailNum': 'JOCCH5678ZXA', 'mailDate': '2023-11-20T00:00:00'}"
+ps51,PaperStatus,"{'statusType': 'Major Revisions', 'statusDate': '2023-11-20'}"
+t169,MailThread,"{'threadID': 'OFGRW4', 'subject': 'Update on Algorithm Details and Upcoming Meeting for JOCCH Revisions'}"
+e186,Email,"{'mailNum': 'JOCCH5678ZXB', 'mailDate': '2024-01-02T00:00:00'}"
+mg130,Meeting,"{'meetDate': '2024-01-05', 'meetTime': '18:00 IST', 'meetLink': 'https://zoom.us/jocch-revisions', 'meetAgenda': 'Discuss enhancements and align with other revisions for JOCCH manuscript'}"
+t170,MailThread,"{'threadID': '787GCZ', 'subject': 'Confirmation for Revision Coordination Meeting and Final Steps'}"
+e187,Email,"{'mailNum': 'JOCCH5678ZXC', 'mailDate': '2024-01-04T00:00:00'}"
+mg131,Meeting,"{'meetDate': '2024-01-05', 'meetTime': '18:00 IST (12:30 GMT)', 'meetLink': 'https://zoom.us/jocch-revisions', 'meetAgenda': 'Review Algorithm Details, Ethical Narratives Expansion, Literature Review Updates, Integration and Coherence Discussion'}"
+t171,MailThread,"{'threadID': '1ISU3N', 'subject': 'Updates on Ethical Narratives and Upcoming Integration'}"
+e188,Email,"{'mailNum': 'JOCCH5678ZXD', 'mailDate': '2024-01-06T00:00:00'}"
+pa15,Paper,{'paperTitle': 'Ethical Narratives in NLP Applications on Historical Data'}
+tk66,Task,{'taskName': 'Ethical Narrative Expansion'}
+mg132,Meeting,"{'meetAgenda': 'finalize any outstanding matters before our January 12 internal review deadline', 'meetDate': '2024-01-12'}"
+t172,MailThread,"{'threadID': 'Q50F0K', 'subject': 'Final Integration Meeting and Preparations for JOCCH Resubmission'}"
+e189,Email,"{'mailNum': 'JOCCH5678ZXE', 'mailDate': '2024-01-08T00:00:00'}"
+mg133,Meeting,"{'meetDate': '2024-01-10', 'meetTime': '16:00 IST', 'meetLink': 'https://zoom.us/JOCCH-final-integration', 'meetAgenda': 'Final integration, addressing any remaining comments or concerns, and ensuring we have a comprehensive understanding of our next steps for a successful resubmission.'}"
+t173,MailThread,"{'threadID': 'BZ1JZQ', 'subject': 'Meeting Minutes and Final Steps for JOCCH Resubmission'}"
+e190,Email,"{'mailNum': 'JOCCH5678ZXF', 'mailDate': '2024-01-11T00:00:00'}"
+mg134,Meeting,"{'meetDate': '2024-01-10', 'meetAgenda': 'Zoom integration meeting for JOCCH resubmission'}"
+s20,SubmissionID,{'identifier': 'JOCCH Resubmission'}
+t174,MailThread,"{'threadID': '2GRHUE', 'subject': 'Confirmation of JOCCH Manuscript Resubmission and Final Steps'}"
+e191,Email,"{'mailNum': 'JOCCH5678ZXG', 'mailDate': '2024-01-15T00:00:00'}"
+s21,SubmissionID,{'identifier': 'JOCCH1234XYZ'}
+ps52,PaperStatus,"{'statusType': 'Under Review', 'statusDate': '2024-01-15'}"
+tk67,Task,{'taskName': 'NLP Techniques for Analyzing Historical Texts'}
+t175,MailThread,"{'threadID': 'UC6IJ4', 'subject': 'Decision on Manuscript JOCCH1234XYZ – Minor Revisions Required'}"
+e192,Email,"{'mailNum': 'JOCCH5678ZXH', 'mailDate': '2024-01-20T00:00:00'}"
+ps53,PaperStatus,"{'statusType': 'Minor Revisions Required', 'statusDate': '2024-01-20'}"
+t176,MailThread,"{'threadID': 'GP4KTP', 'subject': 'Strategy for Manuscript Revisions for JOCCH'}"
+e193,Email,"{'mailNum': 'JOCCH5678ZXI', 'mailDate': '2024-01-21T00:00:00'}"
+pa16,Paper,{'paperTitle': 'Manuscript for JOCCH'}
+ps54,PaperStatus,"{'statusType': 'Minor Revisions Requested', 'statusDate': '2024-01-21'}"
+t177,MailThread,"{'threadID': '2KSMZH', 'subject': 'Updates on Revision Progress for JOCCH'}"
+e194,Email,"{'mailNum': 'JOCCH5678ZXJ', 'mailDate': '2024-01-26T00:00:00'}"
+tk68,Task,{'taskName': 'Literature Review on Ethical NLP Practices'}
+t178,MailThread,"{'threadID': '8GJK97', 'subject': 'Coordination Call for Finalizing Manuscript Revisions'}"
+e195,Email,"{'mailNum': 'JOCCH5678ZXK', 'mailDate': '2024-01-29T00:00:00'}"
+mg135,Meeting,"{'meetDate': '2024-02-02', 'meetTime': '15:00 IST / 9:30 GMT / 1:30 PST', 'meetLink': 'https://us05web.zoom.us/j/23456789012?pwd=abcd1234', 'meetAgenda': 'Discuss integration of all sections and finalize revision strategy before submission deadline.'}"
+t179,MailThread,"{'threadID': 'OH7L12', 'subject': 'Follow-Up from Coordination Call on Manuscript Revisions'}"
+e196,Email,"{'mailNum': 'JOCCH5678ZXL', 'mailDate': '2024-02-02T00:00:00'}"
+mg136,Meeting,"{'meetDate': '2024-02-02', 'meetAgenda': 'Coordination Call on Manuscript Revisions'}"
+t180,MailThread,"{'threadID': 'Q98FVI', 'subject': 'Draft of Response Letter for JOCCH Manuscript Revisions'}"
+e197,Email,"{'mailNum': 'JOCCH5678ZXM', 'mailDate': '2024-02-05T00:00:00'}"
+t181,MailThread,"{'threadID': 'I07B16', 'subject': 'Feedback on Response Letter Draft for JOCCH Manuscript'}"
+e198,Email,"{'mailNum': 'JOCCH5678ZXN', 'mailDate': '2024-02-08T00:00:00'}"
+t182,MailThread,"{'threadID': 'NM187R', 'subject': 'Submission of Revised Manuscript to JOCCH'}"
+e199,Email,"{'mailNum': 'JOCCH5678ZXO', 'mailDate': '2024-02-15T00:00:00'}"
+ps55,PaperStatus,"{'statusType': 'Revised', 'statusDate': '2024-02-15'}"
+t183,MailThread,"{'threadID': 'P2OYSF', 'subject': 'Confirmation of Resubmission - JOCCH1234XYZ'}"
+e200,Email,"{'mailNum': 'JOCCH5678ZXP', 'mailDate': '2024-02-17T00:00:00'}"
+ps56,PaperStatus,"{'statusType': 'Resubmitted', 'statusDate': '2024-02-17'}"
+t184,MailThread,"{'threadID': 'KR38UJ', 'subject': 'Manuscript Decision for JOCCH1234XYZ - Revision Required'}"
+e201,Email,"{'mailNum': 'JOCCH5678ZXQ', 'mailDate': '2024-02-28T00:00:00'}"
+ps57,PaperStatus,"{'statusType': 'Revision Required', 'statusDate': '2024-02-28'}"
+t185,MailThread,"{'threadID': '6QV403', 'subject': 'Discussing Revisions for JOCCH Manuscript'}"
+e202,Email,"{'mailNum': 'JOCCH5678ZXR', 'mailDate': '2024-03-02T00:00:00'}"
+mg137,Meeting,"{'meetDate': '2024-03-04', 'meetTime': '15:00 GMT / 20:30 IST / 07:00 PST', 'meetLink': 'https://us05web.zoom.us/j/76543210987?pwd=dcba4321', 'meetAgenda': 'Discuss feedback and allocate tasks for revisions'}"
+t186,MailThread,"{'threadID': 'VSBQD2', 'subject': 'Documenting Meeting Minutes on JOCCH Revision Tasks'}"
+e203,Email,"{'mailNum': 'JOCCH5678ZXS', 'mailDate': '2024-03-04T00:00:00'}"
+mg138,Meeting,"{'meetAgenda': 'Revisions for manuscript submission to JOCCH', 'meetDate': '2024-03-04'}"
+t187,MailThread,"{'threadID': 'LRRGA8', 'subject': 'Progress Update on Manuscript Revisions for JOCCH'}"
+e204,Email,"{'mailNum': 'JOCCH5678ZXT', 'mailDate': '2024-03-20T00:00:00'}"
+t188,MailThread,"{'threadID': 'CIVY88', 'subject': 'Final Touchpoint Meeting on JOCCH Manuscript Revisions'}"
+e205,Email,"{'mailNum': 'JOCCH5678ZXU', 'mailDate': '2024-03-23T00:00:00'}"
+mg139,Meeting,"{'meetDate': '2024-03-25', 'meetTime': '15:00 GMT / 20:30 IST / 07:00 PST', 'meetLink': 'https://meet.google.com/xyz-1234-abc', 'meetAgenda': 'Review of Consolidated Revisions, Addressing Cross-Cultural Implications, Finalizing Response Letter'}"
+t189,MailThread,"{'threadID': '8W1CXS', 'subject': 'Meeting Minutes and Action Plan from Final Touchpoint for JOCCH Submission'}"
+e206,Email,"{'mailNum': 'JOCCH5678ZXV', 'mailDate': '2024-03-26T00:00:00'}"
+mg140,Meeting,"{'meetAgenda': 'Final touchpoint meeting regarding the revisions for our manuscript', 'meetDate': '2024-03-25'}"
+t190,MailThread,"{'threadID': 'KH7DGA', 'subject': 'Confirmation of Resubmission of Manuscript to JOCCH'}"
+e207,Email,"{'mailNum': 'JOCCH5678ZXW', 'mailDate': '2024-04-07T00:00:00'}"
+ps58,PaperStatus,"{'statusType': 'Resubmitted', 'statusDate': '2024-04-07'}"
+t191,MailThread,"{'threadID': 'LR2QUI', 'subject': 'Initial Decision on Your Revised JOCCH Submission (Submission ID: JOCCH1234XYZ)'}"
+e208,Email,"{'mailNum': 'JOCCH5678ZXX', 'mailDate': '2024-04-14T00:00:00'}"
+ps59,PaperStatus,"{'statusType': 'Revisions Required', 'statusDate': '2024-04-14'}"
+t192,MailThread,"{'threadID': 'P2D14K', 'subject': 'Aligning Strategies for Final Revisions on JOCCH Manuscript'}"
+e209,Email,"{'mailNum': 'JOCCH5678ZXY', 'mailDate': '2024-04-15T00:00:00'}"
+mg141,Meeting,"{'meetDate': '2024-04-28', 'meetAgenda': 'Collaborative review meeting for final draft revisions'}"
+t193,MailThread,"{'threadID': 'T3POBM', 'subject': 'Collaborating on Final Revisions - Cross-Cultural Frameworks and More'}"
+e210,Email,"{'mailNum': 'JOCCH5678ZXZ', 'mailDate': '2024-04-20T00:00:00'}"
+tk69,Task,{'taskName': 'Cross-Cultural Frameworks Development'}
+mg142,Meeting,"{'meetDate': '2024-04-28', 'meetAgenda': 'Finalize key points for manuscript revisions'}"
+t194,MailThread,"{'threadID': 'Z3JNYL', 'subject': 'Enhancing Final Revisions for JOCCH Submissions: Technical Aspects and Meeting Coordination'}"
+e211,Email,"{'mailNum': 'JOCCH5678ZYA', 'mailDate': '2024-04-22T00:00:00'}"
+mg143,Meeting,"{'meetDate': '2024-04-28', 'meetAgenda': ""Discuss manuscript's comprehensive overhaul, final points on integration, and strategic planning for incorporation of elements""}"
+me39,Method,{'methodName': 'adaptive learning algorithms'}
+t195,MailThread,"{'threadID': 'KOAOXX', 'subject': 'Video Conference Schedule and Preparations for Final Revisions'}"
+e212,Email,"{'mailNum': 'JOCCH5678ZYB', 'mailDate': '2024-04-23T00:00:00'}"
+mg144,Meeting,"{'meetDate': '2024-04-28', 'meetTime': '10:00 PST / 18:00 BST / 22:30 IST', 'meetLink': '[Insert Your Unique Zoom Link Here]', 'meetAgenda': ""Review updates on case study clarifications, cross-cultural framework enhancements, and ethical considerations expansions. Discuss Michael's technical strategies, including data preprocessing and algorithmic integration. Final integration points and preparation for submission readiness.""}"
+t196,MailThread,"{'threadID': 'P3GQA6', 'subject': 'Post-Conference Action Items and Final Steps for JOCCH Submission'}"
+e213,Email,"{'mailNum': 'JOCCH5678ZYC', 'mailDate': '2024-04-28T00:00:00'}"
+t197,MailThread,"{'threadID': 'A5WF5B', 'subject': 'Near-Final Draft for JOCCH Submission'}"
+e214,Email,"{'mailNum': 'JOCCH5678ZYD', 'mailDate': '2024-05-05T00:00:00'}"
+tk70,Task,{'taskName': 'Historical NLP Tasks'}
+me40,Method,{'methodName': 'Adaptive Learning Algorithms'}
+t198,MailThread,"{'threadID': '168DX4', 'subject': 'Acknowledgement of Manuscript Submission'}"
+e215,Email,"{'mailNum': 'JOCCH5678ZYE', 'mailDate': '2024-05-15T00:00:00'}"
+ps60,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2024-05-14'}"
+t199,MailThread,"{'threadID': 'DZVFG9', 'subject': 'Review Decision on Your Manuscript Submission'}"
+e216,Email,"{'mailNum': 'JOCCH5678ZYF', 'mailDate': '2024-07-20T00:00:00'}"
+ps61,PaperStatus,"{'statusType': 'Rejected with Major Revisions', 'statusDate': '2024-07-20'}"
+tk71,Task,{'taskName': 'historical text analysis'}
+t200,MailThread,"{'threadID': 'Y1MYHT', 'subject': 'New Directions for Manuscript Revision'}"
+e217,Email,"{'mailNum': 'JOCCH5678ZYG', 'mailDate': '2024-07-25T00:00:00'}"
+tk72,Task,{'taskName': 'bias mitigation'}
+d40,Dataset,{'datasetName': 'historical text corpora'}
+t201,MailThread,"{'threadID': '81NBII', 'subject': 'Arrangement for Virtual Meeting on Manuscript Revision'}"
+e218,Email,"{'mailNum': 'JOCCH5678ZYH', 'mailDate': '2024-07-28T00:00:00'}"
+mg145,Meeting,"{'meetDate': '2024-07-30', 'meetTime': '09:00-18:00', 'meetLink': 'https://zoom.us/j/123456789?pwd=example', 'meetAgenda': 'Discuss potential historical text corpora, outline specific metrics, review datasets for cross-cultural frameworks, evaluate real-world applications for bias mitigation, set timelines and responsibilities.'}"
+tk73,Task,{'taskName': 'Manuscript Revision'}
+d41,Dataset,{'datasetName': 'Historical Text Corpora'}
+t202,MailThread,"{'threadID': 'JW2DJ7', 'subject': 'Documentation of Meeting Minutes: Manuscript Revision'}"
+e219,Email,"{'mailNum': 'JOCCH5678ZYI', 'mailDate': '2024-07-30T00:00:00'}"
+tk74,Task,{'taskName': 'Empirical Testing of Adaptive Algorithms'}
+tk75,Task,{'taskName': 'Cross-Cultural Case Studies'}
+tk76,Task,{'taskName': 'Enhanced Ethical Discussions'}
+d42,Dataset,{'datasetName': 'Colonial India Narratives'}
+d43,Dataset,{'datasetName': 'Early 20th-century African Narratives'}
+d44,Dataset,{'datasetName': 'Rabindranath Tagore’s Translated Texts'}
+me41,Method,{'methodName': 'Bias Mitigation in NLP Tasks'}
+mt15,Metric,"{'metricName': 'BLEU', 'methodName': 'BLEU'}"
+mt16,Metric,"{'metricName': 'ROUGE', 'methodName': 'ROUGE'}"
+mg146,Meeting,"{'meetDate': '2024-07-30', 'meetAgenda': 'Discussion on manuscript revision and task responsibilities'}"
+t203,MailThread,"{'threadID': '9UEEQU', 'subject': 'Discussion on Progress and Strategy for Manuscript Revision Submission'}"
+e220,Email,"{'mailNum': 'JOCCH5678ZYJ', 'mailDate': '2024-09-02T00:00:00'}"
+d45,Dataset,{'datasetName': '18th and 19th Century Texts'}
+d46,Dataset,{'datasetName': 'Rabindranath Tagore’s Works'}
+me42,Method,{'methodName': 'bias mitigation strategies'}
+mg147,Meeting,"{'meetDate': '2024-09-08', 'meetAgenda': 'Share compiled sections and expedite the review process'}"
+t204,MailThread,"{'threadID': 'SF1NQB', 'subject': 'Scheduling the Next Meeting for Final Draft Review'}"
+e221,Email,"{'mailNum': 'JOCCH5678ZYK', 'mailDate': '2024-09-06T00:00:00'}"
+mg148,Meeting,"{'meetDate': '2024-09-10', 'meetTime': '16:00 GMT', 'meetLink': 'https://zoom.us/j/234567891?pwd=finalizeMeet', 'meetAgenda': 'Consolidation of Manuscript Sections, Pre-Submission Peer Review Strategy, Final Adjustments in Coordination with JOCCH Guidelines, Target Deadlines and Balancing Workloads'}"
+mg149,Meeting,"{'meetDate': '2024-09-11', 'meetTime': '11:00 GMT', 'meetLink': 'https://zoom.us/j/234567891?pwd=finalizeMeet', 'meetAgenda': 'Consolidation of Manuscript Sections, Pre-Submission Peer Review Strategy, Final Adjustments in Coordination with JOCCH Guidelines, Target Deadlines and Balancing Workloads'}"
+t205,MailThread,"{'threadID': 'O526PH', 'subject': 'Reflection and Commitments from the Final Manuscript Review Meeting'}"
+e222,Email,"{'mailNum': 'JOCCH5678ZYL', 'mailDate': '2024-09-10T00:00:00'}"
+d47,Dataset,{'datasetName': '18th and 19th century corpora'}
+d48,Dataset,{'datasetName': 'colonial and early 20th-century narratives'}
+mg150,Meeting,"{'meetDate': '2024-09-10', 'meetAgenda': 'Final Manuscript Review Meeting'}"
+t206,MailThread,"{'threadID': 'NZBVVH', 'subject': 'Update and Confirmation for Pre-Submission Peer Review Session'}"
+e223,Email,"{'mailNum': 'JOCCH5678ZYM', 'mailDate': '2024-09-12T00:00:00'}"
+mg151,Meeting,"{'meetDate': '2024-09-16', 'meetTime': '10:00 GMT', 'meetLink': 'https://zoom.us/j/345678912?pwd=peerReview', 'meetAgenda': 'Section-by-Section Critique, Feedback Refinement, Final Adjustments'}"
+t207,MailThread,"{'threadID': 'PYTGOB', 'subject': 'Acknowledgment of JOCCH Manuscript Re-submission'}"
+e224,Email,"{'mailNum': 'JOCCH5678ZYN', 'mailDate': '2024-09-28T00:00:00'}"
+ps62,PaperStatus,"{'statusType': 'Re-submitted', 'statusDate': '2024-09-25'}"
+t208,MailThread,"{'threadID': 'L8RA9J', 'subject': 'Decision on Manuscript Submission ID JOCCH1234XYZ'}"
+e225,Email,"{'mailNum': 'JOCCH5678ZYO', 'mailDate': '2024-10-15T00:00:00'}"
+ps63,PaperStatus,"{'statusType': 'Accepted with Minor Revisions', 'statusDate': '2024-10-15'}"
+tk77,Task,{'taskName': 'NLP Methodologies for Historical Texts'}
+d49,Dataset,{'datasetName': '18th and 19th-century datasets'}
+t209,MailThread,"{'threadID': 'MWC161', 'subject': 'Planning the Final Edits for JOCCH Submission'}"
+e226,Email,"{'mailNum': 'JOCCH5678ZYP', 'mailDate': '2024-10-18T00:00:00'}"
+ps64,PaperStatus,"{'statusType': 'Accepted with Minor Revisions', 'statusDate': '2024-10-18'}"
+mg152,Meeting,"{'meetDate': '2024-10-25', 'meetTime': '15:00 GMT', 'meetLink': 'https://meet.google.com/xyz-finalEdits', 'meetAgenda': 'Review of revisions made so far and plan for integrating pending suggestions. Finalizing additional visualizations and tables. Confirming adherence to formatting guidelines and submission readiness.'}"
+t210,MailThread,"{'threadID': '9JSV8X', 'subject': 'Follow-Up on Planning the Final Edits and Meeting Confirmation'}"
+e227,Email,"{'mailNum': 'JOCCH5678ZYQ', 'mailDate': '2024-10-25T00:00:00'}"
+mg153,Meeting,"{'meetDate': '2024-10-25', 'meetTime': '15:00 GMT', 'meetLink': 'https://meet.google.com/xyz-finalEdits', 'meetAgenda': 'Review the draft revisions and proposed additions to the narrative. Discuss progress on visual and empirical enhancements. Coordinate the final formatting and submission strategy.'}"
+t211,MailThread,"{'threadID': 'KWCSBU', 'subject': 'Update on Empirical Data Enhancements and Pre-Submission Coordination'}"
+e228,Email,"{'mailNum': 'JOCCH5678ZYR', 'mailDate': '2024-10-26T00:00:00'}"
+mg154,Meeting,"{'meetDate': '2024-11-01', 'meetTime': '15:00 GMT', 'meetLink': 'https://meet.google.com/xyz-empiricalReview', 'meetAgenda': 'Reviewing visualizations and making necessary adjustments in real-time'}"
+t212,MailThread,"{'threadID': 'I2OTDK', 'subject': 'Final Review Session Follow-Up and Submission Preparations'}"
+e229,Email,"{'mailNum': 'JOCCH5678ZYS', 'mailDate': '2024-11-01T00:00:00'}"
+t213,MailThread,"{'threadID': '6X7O11', 'subject': 'Final Verification and Resubmission to JOCCH'}"
+e230,Email,"{'mailNum': 'JOCCH5678ZYT', 'mailDate': '2024-11-05T00:00:00'}"
+ps65,PaperStatus,"{'statusType': 'Resubmitted', 'statusDate': '2024-11-05'}"
+t214,MailThread,"{'threadID': 'TVXBQL', 'subject': 'Acknowledgment of Resubmission - Manuscript ID JOCCH1234XYZ'}"
+e231,Email,"{'mailNum': 'JOCCH5678ZYU', 'mailDate': '2024-11-06T00:00:00'}"
+ps66,PaperStatus,"{'statusType': 'Resubmitted', 'statusDate': '2024-11-06'}"
+t215,MailThread,"{'threadID': 'EYZ9AQ', 'subject': 'Decision on Your Revised Manuscript - JOCCH1234XYZ'}"
+e232,Email,"{'mailNum': 'JOCCH5678ZYV', 'mailDate': '2024-11-22T00:00:00'}"
+ps67,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2024-11-22'}"
+t216,MailThread,"{'threadID': 'PAID79', 'subject': 'Manuscript Acceptance and Next Steps'}"
+e233,Email,"{'mailNum': 'JOCCH5678ZYW', 'mailDate': '2024-11-23T00:00:00', 'identifier': 'JOCCH5678ZYW'}"
+ps68,PaperStatus,"{'statusType': 'Accepted', 'statusDate': '2024-11-23'}"
+t217,MailThread,"{'threadID': 'U5E689', 'subject': 'Graphical Abstract and Final Proofreading Coordination'}"
+e234,Email,"{'mailNum': 'JOCCH5678ZYX', 'mailDate': '2024-11-25T00:00:00'}"
+pa17,Paper,{'paperTitle': 'Bridging Historical Data through NLP Techniques'}
+tk78,Task,{'taskName': 'Graphical Abstract Design'}
+tk79,Task,{'taskName': 'Final Proofreading'}
+t218,MailThread,"{'threadID': '481EV2', 'subject': 'Ethical Statement Draft and Final Touches for Submission'}"
+e235,Email,"{'mailNum': 'JOCCH5678ZYY', 'mailDate': '2024-11-28T00:00:00'}"
+t219,MailThread,"{'threadID': 'MCFZGM', 'subject': 'Acknowledgment of Paper Submission - Submission ID EMNLP2024XY45'}"
+e236,Email,"{'mailNum': 'EMNLP3456ABC', 'mailDate': '2024-12-01T00:00:00'}"
+c9,Conference,{'confTitle': 'EMNLP 2024'}
+pa18,Paper,{'paperTitle': 'NLP Approaches to Preserving Historical Narratives: Bridging Technological Interactions with Cultural Implications'}
+s22,SubmissionID,{'identifier': 'EMNLP2024XY45'}
+ps69,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2024-12-01'}"
+t220,MailThread,"{'threadID': 'NSQNEX', 'subject': 'Conference Submission and Upcoming Scientific Discussion'}"
+e237,Email,"{'mailNum': 'EMNLP3456ABD', 'mailDate': '2025-01-03T00:00:00'}"
+s23,SubmissionID,{'identifier': 'EMNLP2024'}
+pa19,Paper,{'paperTitle': 'Coupling Historical Narratives with Modern NLP Approaches'}
+tk80,Task,{'taskName': 'Analysis of Demographic Metadata in Historical Documents'}
+d50,Dataset,{'datasetName': 'Historical Datasets from Varied Cultural Contexts'}
+mg155,Meeting,"{'meetDate': '2025-01-10', 'meetAgenda': 'Discussion on potential complementary studies and refinements for current work'}"
+t221,MailThread,"{'threadID': 'Q3320N', 'subject': 'Re: Confirmation for Scientific Discussion and Upcoming Zoom Meeting'}"
+e238,Email,"{'mailNum': 'EMNLP3456ABE', 'mailDate': '2025-01-04T00:00:00'}"
+mg156,Meeting,"{'meetDate': '2025-01-10', 'meetLink': 'https://iacs.zoom.us/j/1234567890', 'meetAgenda': ""Advancement of Methods: Reviewing Prof. Bhatia's points on novel NLP frameworks. Discussion on how recent advancements can be incorporated into our study. Dataset Expansion: Exploration of additional datasets, potentially leveraging resources from Stanford and Oxford to add diverse cultural dimensions. Feedback Anticipation: Preparing our team for possible review insights from EMNLP, focusing on cross-cultural text analysis.""}"
+e239,Email,"{'mailNum': 'EMNLP3456ABF', 'mailDate': '2025-01-06T00:00:00'}"
+tk81,Task,{'taskName': 'Demographic Metadata Analysis'}
+d51,Dataset,{'datasetName': 'European and Asian Archives'}
+mg157,Meeting,"{'meetDate': '2025-01-10', 'meetAgenda': 'collaborative strategy session'}"
+t222,MailThread,"{'threadID': 'ISARZI', 'subject': 'Meeting Minutes: Advancements and Strategic Discussions Post-Submission'}"
+e240,Email,"{'mailNum': 'EMNLP3456ABG', 'mailDate': '2025-01-10T00:00:00'}"
+mg158,Meeting,"{'meetDate': '2025-01-10', 'meetAgenda': 'Advancements and Strategic Discussions Post-Submission'}"
+tk82,Task,{'taskName': 'Cultural Nuance Interpretation in NLP'}
+d52,Dataset,{'datasetName': 'European Archives'}
+d53,Dataset,{'datasetName': 'Asian Archives'}
+d54,Dataset,{'datasetName': 'Stanford Archives'}
+t223,MailThread,"{'threadID': 'DDKB3G', 'subject': 'Discussion on Recent NLP Frameworks and Dataset Expansion Progress'}"
+e241,Email,"{'mailNum': 'EMNLP3456ABH', 'mailDate': '2025-01-20T00:00:00'}"
+tk83,Task,{'taskName': 'NLP Framework Comparative Analysis'}
+me43,Method,{'methodName': 'GPT-X'}
+d55,Dataset,{'datasetName': 'Early Modern Embassies'}
+d56,Dataset,{'datasetName': 'Mediterranean Merchant Records'}
+mg159,Meeting,"{'meetAgenda': 'technical workshops to ensure that our analytical strategies align with any new datasets and frameworks', 'meetDate': '2025-02-05'}"
+t224,MailThread,"{'threadID': '5CKECH', 'subject': 'Further Discussion on Dataset and Framework Integration'}"
+e242,Email,"{'mailNum': 'EMNLP3456ABI', 'mailDate': '2025-01-25T00:00:00'}"
+mg160,Meeting,"{'meetDate': '2025-02-05', 'meetAgenda': 'technical workshop to align on analytical strategies and evaluate preliminary model outcomes'}"
+t225,MailThread,"{'threadID': 'UDH5CH', 'subject': 'Upcoming Technical Workshop: Integration of NLP Frameworks and Dataset Utilization'}"
+e243,Email,"{'mailNum': 'EMNLP3456ABJ', 'mailDate': '2025-01-30T00:00:00'}"
+mg161,Meeting,"{'meetDate': '2025-02-05', 'meetTime': '10:00-12:00', 'meetLink': 'https://meet.google.com/examplelink', 'meetAgenda': 'Integration of NLP Frameworks, Enhanced Dataset Utilization, Evaluation and Metrics, Action Plan and Forward Steps'}"
+t226,MailThread,"{'threadID': 'BNUJIX', 'subject': 'Post-Workshop Debrief and Strategic Planning'}"
+e244,Email,"{'mailNum': 'EMNLP3456ABK', 'mailDate': '2025-02-06T00:00:00'}"
+d57,Dataset,{'datasetName': 'National Archives of India'}
+tk84,Task,{'taskName': 'Cultural Nuance Interpretation'}
+mt17,Metric,{'metricName': 'Cultural Context Interpretation Accuracy'}
+t227,MailThread,"{'threadID': '5K6915', 'subject': 'Progress Update: GPT-X Trial Setup and Draft Paper Outline'}"
+e245,Email,"{'mailNum': 'EMNLP3456ABL', 'mailDate': '2025-02-15T00:00:00'}"
+pa20,Paper,{'paperTitle': 'Draft Paper for ACL Submission'}
+tk85,Task,{'taskName': 'Cross-cultural Text Interpretation'}
+t228,MailThread,"{'threadID': 'WKJDQ2', 'subject': 'Completion of GPT-X Technical Trials and Paper Draft Suggestions'}"
+e246,Email,"{'mailNum': 'EMNLP3456ABM', 'mailDate': '2025-02-28T00:00:00'}"
+tk86,Task,{'taskName': 'Historical Context Interpretation'}
+mt18,Metric,"{'metricName': 'BERTScore', 'methodName': 'BERTScore'}"
+mt19,Metric,"{'metricName': 'MoverScore', 'methodName': 'MoverScore'}"
+t229,MailThread,"{'threadID': 'HQT77H', 'subject': 'Draft Paper Completion and Journal/Conference Submission Discussion'}"
+e247,Email,"{'mailNum': 'EMNLP3456ABN', 'mailDate': '2025-03-04T00:00:00'}"
+pa21,Paper,{'paperTitle': 'Cross-Model Comparisons and Methodology Enhancement in Historical Textual Analysis'}
+tk87,Task,{'taskName': 'Cross-Model Comparisons'}
+t230,MailThread,"{'threadID': 'IEQT9U', 'subject': 'Feedback on Draft Paper and Finalizing Submission Plan'}"
+e248,Email,"{'mailNum': 'ACL2025ABO', 'mailDate': '2025-03-10T00:00:00'}"
+pa22,Paper,{'paperTitle': 'Integration of GPT-X Models with Historical Data Analysis'}
+t231,MailThread,"{'threadID': '7U3FMQ', 'subject': 'Update on Data Acquisition and Final Comments for Paper Submission'}"
+e249,Email,"{'mailNum': 'ACL2025ABP', 'mailDate': '2025-03-12T00:00:00'}"
+d58,Dataset,{'datasetName': 'British Library Archival Materials'}
+d59,Dataset,{'datasetName': 'National Archives Socio-Cultural Annotations'}
+tk88,Task,{'taskName': 'NLP and Digital Humanities Research'}
+t232,MailThread,"{'threadID': 'BPFLNM', 'subject': 'Submission Confirmation to ACL 2025'}"
+e250,Email,"{'mailNum': 'ACL2025ABQ', 'mailDate': '2025-03-16T00:00:00'}"
+c10,Conference,{'confTitle': 'ACL 2025'}
+pa23,Paper,{'paperTitle': 'Harnessing Modern NLP Frameworks for Contextual Analysis of Historical Documents: A Case Study of GPT-X on Mediterranean Merchant Records'}
+s24,SubmissionID,{'identifier': 'ACL2025ABC123'}
+ps70,PaperStatus,"{'statusType': 'Submitted', 'statusDate': '2025-03-16'}"
