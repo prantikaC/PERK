@@ -1,0 +1,1627 @@
+Evaluating GPT KG on 200 questions using Regex Checker...
+
+--- 1/200 | Q: What email address is associated with Sunita Sen? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") RETURN DISTINCT p.personEmail
+DB Output: [{'p.personEmail': 'scholar.sunita@iacs.res.in'}, {'p.personEmail': None}]...
+Eval: ✅ Pass (The correct email address 'scholar.sunita@iacs.res.in' is explicitly present in the raw database output, matching the Gold Answer, so it contains the necessary information despite the additional None entry.)
+
+--- 2/200 | Q: Which datasets are proposed for the Temporal Sentiment Analysis project? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS toLower("temporal sentiment analysis")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (The raw database output includes all three correct datasets listed in the Gold Answer: Chronicling America, British Library Digital Collections, and COHA. It also contains one extra irrelevant entry ('datasets'), but this does not prevent retrieving the correct information, so it is still useful.)
+
+--- 3/200 | Q: Will Sunita Sen collaborate with an expert in Temporal Sentiment Analysis? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+WITH p
+MATCH (expert:Person)-[:worksOn]->(task:Task)
+WHERE (toLower(task.taskName) CONTAINS toLower("temporal sentiment analysis") OR toLower(task.taskName) CONTAINS toLower("temporal sentiment") OR toLower(task.taskName) CONTAINS toLower("sentiment analysis"))
+AND expert.id <> p.id
+RETURN count(expert) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output returns True, which matches the Gold Answer (TRUE) and correctly satisfies the user’s question.)
+
+--- 4/200 | Q: Has the proposal for the Temporal Sentiment Analysis project been submitted to a conference? ---
+Cypher: MATCH (t:Task) 
+WHERE toLower(t.taskName) CONTAINS toLower("temporal sentiment analysis")
+MATCH (p:Person)-[:worksOn]->(t)
+MATCH (pa:Paper)-[:hasAuthor]->(p)
+MATCH (s:SubmissionID)-[:identifies]->(pa)
+MATCH (s)-[:inVenue]->(c:Conference)
+RETURN count(s) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ❌ Fail (The gold answer indicates the proposal has not been submitted (FALSE), but the database output returns True, which contradicts the correct answer. Therefore, it does not contain the correct information.)
+
+--- 5/200 | Q: What datasets were suggested for the Temporal Sentiment Analysis research? ---
+Cypher: MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS "temporal" OR toLower(t.taskName) CONTAINS "sentiment analysis"
+MATCH (d:Dataset)-[:usedFor]->(t)
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (The database output includes all datasets from the Gold Answer (Chronicling America, British Library Digital Collections), plus additional entries. Since the correct datasets are present, the output is usable, though it would need filtering to match the Gold Answer exactly.)
+
+--- 6/200 | Q: Which institutions are the potential collaborators from for the Temporal Sentiment Analysis project? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS toLower("temporal") OR toLower(t.taskName) CONTAINS toLower("sentiment")
+RETURN DISTINCT p.affiliation
+DB Output: [{'p.affiliation': 'Indian Association for the Cultivation of Science'}, {'p.affiliation': 'Stanford...
+Eval: ✅ Pass (Yes. The raw database output includes both institutions listed in the Gold Answer (Stanford University and University of Oxford). The extra institution (Indian Association for the Cultivation of Science) is irrelevant noise but does not prevent retrieving the correct information, so the DB output is still usable to satisfy the user’s question.)
+
+--- 7/200 | Q: Is Prof. Ramesh Bhatia affiliated with Indian Association for the Cultivation of Science? ---
+Cypher: MATCH (p:Person) 
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") AND toLower(p.affiliation) CONTAINS toLower("Indian Association for the Cultivation of Science") 
+RETURN count(p) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output indicates `True`, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 8/200 | Q: What is the exact publication date of Sunita Sen's paper on Temporal Sentiment Analysis? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(pa.paperTitle) CONTAINS toLower("Temporal Sentiment Analysis")
+MATCH (sid:SubmissionID)-[:identifies]->(pa)
+MATCH (sid)-[:movesTo]->(ps:PaperStatus)
+WHERE ps.statusDate IS NOT NULL
+RETURN DISTINCT ps.statusDate
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 9/200 | Q: What is the email address of Prof. Ramesh Bhatia? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") RETURN DISTINCT p.personEmail
+DB Output: [{'p.personEmail': 'ramesh.bhatia@iacs.res.in'}, {'p.personEmail': None}]...
+Eval: ✅ Pass (The correct email address 'ramesh.bhatia@iacs.res.in' is explicitly present in the first element of the raw database output, matching the Gold Answer. The additional None entry does not invalidate the presence of the correct information.)
+
+--- 10/200 | Q: Which datasets are suggested for the Temporal Sentiment Analysis project in historical archives? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "temporal" OR toLower(t.taskName) CONTAINS "sentiment" OR toLower(t.taskName) CONTAINS "historical" OR toLower(t.taskName) CONTAINS "archive"
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (The database output includes all three specific datasets from the gold answer (Chronicling America, British Library Digital Collections, Corpus of Historical American English (COHA)). Although it also contains many additional, less specific entries, the correct ones are present, so it provides the necessary information to answer the question.)
+
+--- 11/200 | Q: Is Sunita Sen affiliated with Indian Association for the Cultivation of Science? ---
+Cypher: MATCH (p:Person) 
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(p.affiliation) CONTAINS toLower("Indian Association for the Cultivation of Science") 
+RETURN count(p) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the Gold Answer (TRUE), so it correctly satisfies the user’s question.)
+
+--- 12/200 | Q: Has Prof. Ramesh Bhatia published any papers on Temporal Sentiment Analysis? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia")
+AND toLower(pa.paperTitle) CONTAINS toLower("temporal") 
+AND toLower(pa.paperTitle) CONTAINS toLower("sentiment")
+RETURN count(pa) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ❌ Fail (The gold answer indicates that Prof. Ramesh Bhatia has not published papers on Temporal Sentiment Analysis (FALSE), while the database output returns True. Therefore, the raw database output does not match the correct information.)
+
+--- 13/200 | Q: What is the email address of Dr. Michael Bradley? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") RETURN DISTINCT p.personEmail
+DB Output: [{'p.personEmail': None}, {'p.personEmail': 'michael@cs.stanford.edu'}]...
+Eval: ✅ Pass (The correct email address 'michael@cs.stanford.edu' is present as one of the returned values in the raw database output, matching the Gold Answer.)
+
+--- 14/200 | Q: Which method is proposed for Temporal Sentiment Analysis in the collaborative project? ---
+Cypher: MATCH (m:Method)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "temporal sentiment analysis"
+RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'temporal embeddings'}, {'m.methodName': 'Transformer-based models'}, {'m.methodNa...
+Eval: ✅ Pass (The raw database output includes 'Transformer-based models' as one of the methods, which matches the Gold Answer exactly. Therefore it contains the correct information to satisfy the user’s question, even though it also lists additional methods.)
+
+--- 15/200 | Q: Did Sunita Sen collaborate with researchers from Stanford University? ---
+  [Attempt 1] Regex Ontology check failed: Used anonymous nodes or undeclared variables in relationship. You MUST declare variables and labels (e.g., (p:Person)).
+  [Attempt 2] Regex Ontology check failed: Used anonymous nodes or undeclared variables in relationship. You MUST declare variables and labels (e.g., (p:Person)).
+  [Attempt 3] Regex Ontology check failed: Used anonymous nodes or undeclared variables in relationship. You MUST declare variables and labels (e.g., (p:Person)).
+  ❌ Failed to generate valid Cypher after 3 attempts. Skipping DB query.
+Cypher: MATCH (p1:Person)-[:worksWith|:worksOn]->(x)
+WHERE toLower(p1.personName) CONTAINS toLower("Sunita Sen")
+WITH DISTINCT p1, x
+MATCH (p2:Person)-[:worksWith|:worksOn]->(x)
+WHERE toLower(p2.affiliation) CONTAINS toLower("Stanford University") AND p1 <> p2
+RETURN count(p2) > 0 AS result
+DB Output: The information could not be extracted from the KG....
+Eval: ❌ Fail (The gold answer states that the correct answer is TRUE, but the database output says the information could not be extracted. It does not provide the correct answer and therefore cannot satisfy the user’s question.)
+
+--- 16/200 | Q: What datasets are used in the Temporal Sentiment Analysis project? ---
+Cypher: MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS "temporal" OR toLower(t.taskName) CONTAINS "sentiment analysis"
+MATCH (d:Dataset)-[:usedFor]->(t)
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ❌ Fail (The raw output includes all the correct datasets from the Gold Answer but also contains additional datasets not in the Gold Answer (e.g., 'key South Asian corpora', 'multilingual corpus'). Since it is not restricted to the listed datasets and introduces extra items, it does not accurately satisfy the question as defined by the Gold Answer.)
+
+--- 17/200 | Q: Which task is Dr. Ananya Chatterjee working on with Prof. Ramesh Bhatia and Sunita Sen? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+   OR toLower(p.personName) CONTAINS toLower("Ramesh Bhatia")
+   OR toLower(p.personName) CONTAINS toLower("Sunita Sen")
+WITH t, collect(DISTINCT toLower(p.personName)) AS people
+WHERE "ananya chatterjee" IN people AND "ramesh bhatia" IN people AND "sunita sen" IN people
+RETURN DISTINCT t.taskName
+DB Output: []...
+Eval: ❌ Fail (The database output is an empty list and does not contain any information, so it cannot provide the correct answer 'Temporal Sentiment Analysis' or anything about the task Dr. Ananya Chatterjee is working on.)
+
+--- 18/200 | Q: Does Dr. Ananya Chatterjee have any meetings scheduled before April 8th, 2019? ---
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND m.meetDate IS NOT NULL AND date(m.meetDate) < date("2019-04-08")
+RETURN count(m) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which corresponds to 'Yes' in the Gold Answer, so it contains the correct information to satisfy the user's question.)
+
+--- 19/200 | Q: What are the main datasets being used for the Temporal Sentiment Analysis project? ---
+Cypher: MATCH (t:Task) 
+WHERE toLower(t.taskName) CONTAINS "temporal" OR toLower(t.taskName) CONTAINS "sentiment"
+MATCH (d:Dataset)-[:usedFor]->(t)
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (The database output includes all three correct main datasets listed in the Gold Answer (Chronicling America, British Library Digital Collections, Corpus of Historical American English (COHA)). The extra entries can be ignored, so the raw output is sufficient to derive the correct answer.)
+
+--- 20/200 | Q: What is the affiliation of Ananya Chatterjee? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") RETURN DISTINCT p.affiliation
+DB Output: [{'p.affiliation': 'University of Oxford'}, {'p.affiliation': None}]...
+Eval: ✅ Pass (The database output includes an entry with 'p.affiliation' equal to 'University of Oxford', which matches the expected gold answer. The presence of an additional None value does not negate that the correct information is present.)
+
+--- 21/200 | Q: Which researchers are involved in the Temporal Sentiment Analysis project with Sunita Sen? ---
+Cypher: MATCH (p1:Person)-[:worksOn]->(t:Task)<-[:worksOn]-(p2:Person)
+WHERE (toLower(t.taskName) CONTAINS toLower("temporal") OR toLower(t.taskName) CONTAINS toLower("sentiment"))
+AND toLower(p1.personName) CONTAINS toLower("Sunita Sen")
+AND p2.id <> p1.id
+RETURN DISTINCT p2.personName
+DB Output: [{'p2.personName': 'Prof. Ramesh Bhatia'}, {'p2.personName': 'Dr Bradley'}, {'p2.personName': 'Dr Ch...
+Eval: ✅ Pass (All three researchers from the Gold Answer—Prof. Ramesh Bhatia, Dr. Michael Bradley, and Dr. Ananya Chatterjee—are present in the raw database output. The extra/variant entries (Dr Bradley, Dr Chatterjee) are duplicates or abbreviated forms and do not prevent correctly answering the question.)
+
+--- 22/200 | Q: Is Prof. Ramesh Bhatia affiliated with the Indian Association for the Cultivation of Science? ---
+Cypher: MATCH (p:Person) 
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") AND toLower(p.affiliation) CONTAINS toLower("Indian Association for the Cultivation of Science") 
+RETURN count(p) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the Gold Answer of TRUE and correctly indicates that Prof. Ramesh Bhatia is affiliated with the Indian Association for the Cultivation of Science.)
+
+--- 23/200 | Q: What is the outcome of the meeting scheduled for April 6th, 2019, regarding Temporal Sentiment Analysis? ---
+Cypher: MATCH (m:Meeting)
+WHERE m.meetDate = "2019-04-06" AND toLower(m.meetAgenda) CONTAINS toLower("Temporal Sentiment Analysis")
+RETURN m.meetAgenda, m.meetLink, m.meetTime, m.meetDate
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 24/200 | Q: What datasets are being used for the Temporal Sentiment Analysis project? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS toLower("temporal sentiment analysis")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (The raw database output lists the same four dataset names as the Gold Answer: Chronicling America, British Library Digital Collections, Corpus of Historical American English (COHA), and datasets. It therefore contains the correct information needed to answer the user’s question.)
+
+--- 25/200 | Q: Which metrics are being used to evaluate the Temporal Sentiment Analysis project? ---
+Cypher: MATCH (t:Task)<-[:evaluates]-(m:Metric)
+WHERE toLower(t.taskName) CONTAINS toLower("temporal") OR toLower(t.taskName) CONTAINS toLower("sentiment analysis")
+RETURN DISTINCT m.metricName
+DB Output: [{'m.metricName': 'accuracy'}, {'m.metricName': 'F1-score'}, {'m.metricName': 'temporal consistency ...
+Eval: ✅ Pass (The raw database output lists the same three metrics—accuracy, F1-score, and temporal consistency score—as the Gold Answer, so it fully satisfies the user’s question.)
+
+--- 26/200 | Q: For which task did Dr. Michael Bradley use the Chronicling America dataset? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") AND toLower(d.datasetName) CONTAINS toLower("Chronicling America")
+RETURN DISTINCT t.taskName
+DB Output: [{'t.taskName': 'Temporal Sentiment Analysis in Historical Archives'}, {'t.taskName': 'Temporal Sent...
+Eval: ✅ Pass (Yes. The raw database output explicitly includes all three tasks mentioned in the Gold Answer: 'Temporal Sentiment Analysis project', 'Michael's demonstration of OCR/post-processing pipeline (using shared Chronicling America samples)', and 'manual verification to ensure high textual fidelity and alignment with dual metadata mapping policies'. Thus it contains the correct information needed to answer the user’s question.)
+
+--- 27/200 | Q: Did Dr. Ananya Chatterjee contribute to task of model interpretability? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND toLower(t.taskName) CONTAINS "interpret" 
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the expected Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 28/200 | Q: Who is affiliated with the University of Oxford? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.affiliation) CONTAINS toLower("University of Oxford") RETURN DISTINCT p.personName
+DB Output: [{'p.personName': 'Dr Ananya Chatterjee'}, {'p.personName': 'Dr Chatterjee'}, {'p.personName': 'Dr. ...
+Eval: ✅ Pass (Yes. The raw database output includes entries for 'Dr Ananya Chatterjee' and 'Dr. Ananya Chatterjee', which clearly match the expected Gold Answer 'Dr. Ananya Chatterjee' (minor punctuation/spelling differences). Although there is an extra person (Ms. Laura Jenkins), the correct gold entity is present, so the output contains the needed information to answer the question.)
+
+--- 29/200 | Q: Which methods are being used as a baseline for analyzing temporal drift in sentiment? ---
+Cypher: MATCH (m:Method)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "temporal drift" OR toLower(t.taskName) CONTAINS "sentiment"
+RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'temporal embeddings'}, {'m.methodName': 'Transformer-based models'}, {'m.methodNa...
+Eval: ✅ Pass (The database output includes both methods specified in the Gold Answer: 'LSTM' and 'lexicon-based methods'. Therefore it contains the correct information needed to answer the user's question, even though it lists additional methods as well.)
+
+--- 30/200 | Q: Is there a meeting scheduled after 18th April 2019? ---
+Cypher: MATCH (m:Meeting) WHERE m.meetDate IS NOT NULL AND date(m.meetDate) > date("2019-04-18") RETURN count(m) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output is True, which matches the expected Gold Answer of TRUE, correctly indicating that there is a meeting scheduled after 18th April 2019.)
+
+--- 31/200 | Q: What is the dataset used for diachronic analysis in the project? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "diachronic"
+RETURN DISTINCT d.datasetName
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 32/200 | Q: What is Dr. Ananya Chatterjee's email address? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Dr. Ananya Chatterjee") RETURN DISTINCT p.personEmail
+DB Output: [{'p.personEmail': 'ananya.chatterjee@ox.ac.uk'}, {'p.personEmail': 'ananya.chatterjee@cs.ox.ac.uk'}...
+Eval: ✅ Pass (The raw database output includes the exact Gold Answer value 'ananya.chatterjee@cs.ox.ac.uk' among its results, so it contains the correct information needed to answer the question, even though it also includes an extra email address.)
+
+--- 33/200 | Q: What methods are being compared for model interpretability in the project? ---
+Cypher: MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS "interpret" OR toLower(t.taskName) CONTAINS "explain"
+MATCH (m:Method)-[:usedFor]->(t)
+RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'LIME'}, {'m.methodName': 'SHAP'}, {'m.methodName': 'temporal saliency mapping'}, ...
+Eval: ✅ Pass (The gold answer lists LIME and SHAP, and both appear explicitly in the raw database output among other methods. Therefore the raw output does contain the correct information needed to answer the user’s question.)
+
+--- 34/200 | Q: Is Sunita Sen involved in researching interpretability techniques specific to NLP on historical texts? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+  AND (
+    toLower(t.taskName) CONTAINS "interpret" OR
+    toLower(t.taskName) CONTAINS "explain" OR
+    toLower(t.taskName) CONTAINS "explanation"
+  )
+  AND (
+    toLower(t.taskName) CONTAINS "nlp" OR
+    toLower(t.taskName) CONTAINS "natural language" OR
+    toLower(t.taskName) CONTAINS "text"
+  )
+  AND (
+    toLower(t.taskName) CONTAINS "historical" OR
+    toLower(t.taskName) CONTAINS "history"
+  )
+RETURN count(t) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output indicates False, which matches the Gold Answer of FALSE. Therefore, it contains the correct information to satisfy the user's question.)
+
+--- 35/200 | Q: What is the affiliation of Dr. Michael Bradley? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") RETURN DISTINCT p.affiliation
+DB Output: [{'p.affiliation': 'Stanford University'}]...
+Eval: ✅ Pass (The database output provides 'Stanford University' as the affiliation, which exactly matches the expected gold answer. Therefore, it contains the correct information to answer the user’s question.)
+
+--- 36/200 | Q: What datasets is Sunita Sen working on for her data processing task? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND (toLower(t.taskName) CONTAINS "data process" OR toLower(t.taskName) CONTAINS "processing")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (The raw database output includes both correct datasets: 'Chronicling America' and 'British Library Digital Collections', which matches the Gold Answer. The extra 'both datasets' entry does not contradict or omit required information, so the output is still sufficient to answer the question accurately.)
+
+--- 37/200 | Q: What specific OCR correction tool is Sunita Sen using to address the challenges in her dataset processing? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(m.methodName) CONTAINS "ocr"
+RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'OCR correction'}, {'m.methodName': 'OCR'}, {'m.methodName': 'OCR error contextual...
+Eval: ✅ Pass (Yes. The database output includes an entry with methodName 'OCR correction', which matches the expected Gold Answer and directly answers the user’s question about the specific OCR correction tool Sunita Sen is using.)
+
+--- 38/200 | Q: What preprocessing tools did Dr. Michael Bradley suggest for improving OCR errors? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") AND toLower(m.methodName) CONTAINS "preprocess"
+RETURN DISTINCT m.methodName
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and does not contain any of the tools (Tesseract, ocropy, Project LaVa) mentioned in the Gold Answer, so it cannot satisfy the user’s question.)
+
+--- 39/200 | Q: Which institutions are Dr. Michael Bradley and Dr. Ananya Chatterjee affiliated with? ---
+Cypher: MATCH (p:Person)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") OR toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+RETURN DISTINCT p.personName, p.affiliation
+DB Output: [{'p.personName': 'Dr Michael Bradley', 'p.affiliation': 'Stanford University'}, {'p.personName': 'D...
+Eval: ✅ Pass (The database output includes entries clearly indicating that Dr Michael/Dr. Michael Bradley is affiliated with Stanford University and Dr Ananya/Dr. Ananya Chatterjee is affiliated with University of Oxford, matching the Gold Answer. Extra and slightly varied name formats and a null-affiliation row do not prevent answering the question correctly.)
+
+--- 40/200 | Q: Did Dr. Michael Bradley propose using a custom OCR correction model for improving text recovery? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley")
+  AND (
+    toLower(t.taskName) CONTAINS "ocr" OR
+    toLower(t.taskName) CONTAINS "correction" OR
+    toLower(t.taskName) CONTAINS "custom" OR
+    toLower(t.taskName) CONTAINS "text recovery" OR
+    toLower(t.taskName) CONTAINS "improv"
+  )
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output returns True, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 41/200 | Q: What dataset was used in the preprocessing workflow for digitized documents at Stanford Library? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE (toLower(t.taskName) CONTAINS "preprocess" OR toLower(t.taskName) CONTAINS "pre-processing" OR toLower(t.taskName) CONTAINS "workflow")
+  AND (toLower(t.taskName) CONTAINS "digitized" OR toLower(t.taskName) CONTAINS "document")
+  AND toLower(t.taskName) CONTAINS "stanford"
+RETURN DISTINCT d.datasetName
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 42/200 | Q: What is the email address of Dr. Ananya Chatterjee? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") RETURN DISTINCT p.personEmail
+DB Output: [{'p.personEmail': None}, {'p.personEmail': 'ananya.chatterjee@ox.ac.uk'}, {'p.personEmail': 'ananya...
+Eval: ✅ Pass (The database output includes the exact gold answer value 'ananya.chatterjee@cs.ox.ac.uk' among its results, so it does contain the correct information needed to answer the user’s question.)
+
+--- 43/200 | Q: Which dataset is Dr. Ananya Chatterjee planning to use for evaluating LIME/SHAP output? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+WITH DISTINCT d
+MATCH (d)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "lime" OR toLower(t.taskName) CONTAINS "shap" OR toLower(t.taskName) CONTAINS "output" OR toLower(t.taskName) CONTAINS "evaluat"
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'our current corpus subset'}, {'d.datasetName': 'clean corpus subset'}]...
+Eval: ❌ Fail (The gold answer specifies '1890s datasets' while the database output lists 'our current corpus subset' and 'clean corpus subset'. These do not match or imply the 1890s datasets, so the raw output does not contain the correct information.)
+
+--- 44/200 | Q: Is Dr. Ananya Chatterjee working on metadata standardization? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND toLower(t.taskName) CONTAINS toLower("metadata") OR toLower(t.taskName) CONTAINS toLower("standardization")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output is True, which matches the expected Gold Answer TRUE, so it correctly satisfies the user’s question.)
+
+--- 45/200 | Q: Has Sunita Sen published any papers on OCR correction tools? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+WITH DISTINCT pa
+MATCH (pa)-[:hasAuthor]->(p2:Person)
+WHERE toLower(p2.personName) CONTAINS toLower("Sunita Sen")
+WITH DISTINCT pa
+MATCH (pa)-[:hasAuthor]->(p3:Person)
+WHERE toLower(p3.personName) CONTAINS toLower("Sunita Sen")
+WITH DISTINCT pa
+WHERE toLower(pa.paperTitle) CONTAINS "ocr" OR toLower(pa.paperTitle) CONTAINS "correction" OR toLower(pa.paperTitle) CONTAINS "tool"
+RETURN count(pa) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ❌ Fail (The gold answer states that the correct answer is FALSE, but the raw database output returns True. Therefore, the database output does not match the correct information and is not useful.)
+
+--- 46/200 | Q: Which dataset is being used by Sunita Sen for OCR correction method? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)-[:uses]->(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(m.methodName) CONTAINS toLower("OCR correction")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America subset (1890–1900)'}]...
+Eval: ✅ Pass (The raw database output includes the dataset name 'Chronicling America subset (1890–1900)', which exactly matches the expected gold answer and correctly answers the user’s question about which dataset is being used.)
+
+--- 47/200 | Q: Did Sunita Sen suggest providing manually corrected excerpts for analysis? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ❌ Fail (The database output only contains an error message ('No valid path in schema') and provides no information about whether Sunita Sen suggested providing manually corrected excerpts. Therefore, it does not contain the correct information to satisfy the user’s question compared to the Gold Answer (TRUE).)
+
+--- 48/200 | Q: What is the venue for the meeting scheduled on 23rd April? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ✅ Pass (The gold answer indicates that the venue is not available, and the database output shows an error with no valid path, which effectively means the information cannot be retrieved. This aligns with the gold answer of 'Not available,' so the raw output is useful for satisfying the question.)
+
+--- 49/200 | Q: Which task is Dr. Michael Bradley planning to demonstrate during the meeting? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting), (p)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley")
+RETURN DISTINCT t.taskName
+DB Output: [{'t.taskName': 'Temporal Sentiment Analysis project'}, {'t.taskName': 'prepare results from prelimi...
+Eval: ✅ Pass (Yes. The database output contains the task "Michael's demonstration of OCR/post-processing pipeline (using shared Chronicling America samples)", which directly matches the expected answer of an OCR/post-processing pipeline demonstration.)
+
+--- 50/200 | Q: What is the email address of Sunita Sen? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") RETURN DISTINCT p.personEmail
+DB Output: [{'p.personEmail': 'scholar.sunita@iacs.res.in'}, {'p.personEmail': None}]...
+Eval: ✅ Pass (The raw database output includes an entry with 'p.personEmail': 'scholar.sunita@iacs.res.in', which matches the expected gold answer exactly. The additional None value does not invalidate the presence of the correct email address.)
+
+--- 51/200 | Q: Which researchers are involved in the meeting preparation for the paper submission? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE (toLower(t.taskName) CONTAINS "meeting" OR toLower(t.taskName) CONTAINS "prepare" OR toLower(t.taskName) CONTAINS "preparation")
+RETURN DISTINCT p.personName
+DB Output: [{'p.personName': 'Prof. Ramesh Bhatia'}, {'p.personName': 'Dr. Michael Bradley'}, {'p.personName': ...
+Eval: ✅ Pass (The raw database output lists the same four people as the Gold Answer, with only title and formatting differences (Prof./Dr. prefixes). Therefore, it contains the correct information needed to answer the user’s question.)
+
+--- 52/200 | Q: Is Ananya Chatterjee associated with University of Oxford? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND toLower(p.affiliation) CONTAINS toLower("University of Oxford") RETURN count(p) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output indicates `True`, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 53/200 | Q: Where was the paper  "NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers" submitted to? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+  [Attempt 3] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+  ❌ Failed to generate valid Cypher after 3 attempts. Skipping DB query.
+Cypher: MATCH (p:Paper)-[:hasAuthor]->(:Person), (s:SubmissionID)-[:identifies]->(p), (s)-[:inVenue]->(v)
+WHERE toLower(p.paperTitle) CONTAINS toLower("NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers")
+RETURN DISTINCT 
+  CASE 
+    WHEN v:Conference THEN v.confTitle
+    WHEN v:Journal THEN v.journalTitle
+    ELSE null
+  END AS venue
+DB Output: The information could not be extracted from the KG....
+Eval: ❌ Fail (The database output says that the information could not be extracted and does not provide the venue name. It does not contain the correct answer (ACM Journal on Computing and Cultural Heritage), so it cannot satisfy the user’s question.)
+
+--- 54/200 | Q: Which tasks involve the dataset of "british library"? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(d.datasetName) CONTAINS toLower("british library")
+RETURN DISTINCT t.taskName
+DB Output: [{'t.taskName': 'Temporal Sentiment Analysis in Historical Archives'}, {'t.taskName': 'Temporal Sent...
+Eval: ✅ Pass (The raw database output lists exactly the same tasks as the Gold Answer, with matching task names. It therefore contains the correct information to fully satisfy the user’s question.)
+
+--- 55/200 | Q: Has the team submited their work "Provenance-Aware NLP for Historical Texts: Annotation, Compliance, and Synthetic Instance Protocols" to a conference? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+Cypher: MATCH (p:Paper)-[:hasAuthor]->(:Person), 
+      (s:SubmissionID)-[:identifies]->(p), 
+      (s)-[:inVenue]->(c:Conference)
+WHERE toLower(p.paperTitle) CONTAINS toLower("Provenance-Aware NLP for Historical Texts: Annotation, Compliance, and Synthetic Instance Protocols")
+RETURN count(c) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 56/200 | Q: What are the evaluation metrics suggested for the baseline model? ---
+Cypher: MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS "baseline"
+MATCH (m:Metric)-[:evaluates]->(t)
+RETURN DISTINCT m.metricName
+DB Output: [{'m.metricName': 'accuracy'}, {'m.metricName': 'F1'}, {'m.metricName': 'historical lexicon recall'}...
+Eval: ✅ Pass (The gold answer is 'Not available', but the question asks for the evaluation metrics suggested for the baseline model. The database output lists a set of metrics (accuracy, F1, historical lexicon recall, etc.), which directly answers the user’s question. Therefore, the raw database output is useful and contains the needed information, even though the gold answer is empty.)
+
+--- 57/200 | Q: Which dataset was processed using Michael Bradley's latest OCR correction pipeline? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)-[:usedFor]->(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") AND toLower(m.methodName) CONTAINS toLower("ocr correction")
+WITH d, m
+ORDER BY m.methodName DESC
+RETURN DISTINCT d.datasetName LIMIT 1
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and does not mention 'Clean Corpus Subset' or any dataset, so it does not provide the correct information to answer the question.)
+
+--- 58/200 | Q: Did Sunita Sen collaborate with Michael Bradley on preparing a clean subset of the corpus? ---
+Cypher: MATCH (p1:Person)-[:worksOn]->(t:Task)<-[:worksOn]-(p2:Person)
+WHERE (toLower(p1.personName) CONTAINS toLower("Sunita Sen") AND toLower(p2.personName) CONTAINS toLower("Michael Bradley"))
+AND (toLower(t.taskName) CONTAINS "clean" OR toLower(t.taskName) CONTAINS "subset" OR toLower(t.taskName) CONTAINS "corpus" OR toLower(t.taskName) CONTAINS "prepar")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 59/200 | Q: What is the publication year of the paper discussing the dual metadata mapping policies? ---
+Cypher: MATCH (pa:Paper) WHERE toLower(pa.paperTitle) CONTAINS toLower("dual metadata mapping policies") 
+RETURN DISTINCT pa.paperTitle, pa.id
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 60/200 | Q: Has Dr. Ananya Chatterjee published in ACL or EMNLP? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)<-[:identifies]-(s:SubmissionID)-[:inVenue]->(c:Conference)
+WHERE (toLower(p.personName) CONTAINS toLower("Ananya Chatterjee"))
+  AND (toLower(c.confTitle) CONTAINS toLower("ACL") OR toLower(c.confTitle) CONTAINS toLower("EMNLP"))
+RETURN count(pa) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the expected Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 61/200 | Q: What tasks are being proposed for evaluation using stretch evaluation goals in the project on which Dr. Michael Bradley is working? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley")
+  AND (toLower(t.taskName) CONTAINS "stretch" OR toLower(t.taskName) CONTAINS "evaluation goal")
+RETURN DISTINCT t.taskName
+DB Output: [{'t.taskName': 'finalization of evaluation metrics & stretch goal feasibility'}]...
+Eval: ❌ Fail (The database output describes a task named 'finalization of evaluation metrics & stretch goal feasibility', which does not match the specific task 'cross-dataset transfer' given in the Gold Answer. Therefore it does not contain the correct information to answer the question.)
+
+--- 62/200 | Q: What evaluation metrics are being used by Prof Ramesh Bhatia for the task of manuscript integration? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)<-[:evaluates]-(m:Metric)
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") AND toLower(t.taskName) CONTAINS toLower("manuscript integration")
+RETURN DISTINCT m.metricName
+DB Output: [{'m.metricName': 'color-coded matrix'}, {'m.metricName': 'flagged consent conditions'}, {'m.metricN...
+Eval: ❌ Fail (The gold answer indicates that the information is not available, meaning no valid evaluation metrics are known. The database output lists various items as if they are evaluation metrics, but given the gold standard of ‘Not available,’ these cannot be treated as correct or verified. Therefore, the raw output does not correctly satisfy the user’s question compared to the gold answer.)
+
+--- 63/200 | Q: Has a paper been submitted to ACL by Prof. Ramesh Bhatia and his team? ---
+Cypher: MATCH (c:Conference) 
+WHERE toLower(c.confTitle) CONTAINS toLower("ACL")
+MATCH (p:Person)-[:hasAuthor]-(pa:Paper)<-[:identifies]-(s:SubmissionID)-[:inVenue]->(c)
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia")
+RETURN count(s) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output indicates result: True, which matches the expected Gold Answer TRUE. It correctly answers that a paper has been submitted, so it satisfies the user’s question.)
+
+--- 64/200 | Q: What methods are being used in the interpretability experiments mentioned by Dr. Ananya Chatterjee? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method), (m)-[:usedFor]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND toLower(t.taskName) CONTAINS "interpret" 
+RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'LIME'}, {'m.methodName': 'SHAP'}, {'m.methodName': 'temporal saliency mapping'}, ...
+Eval: ✅ Pass (The database output includes both LIME and SHAP among other methods. Since the user only asked which methods are being used and the gold answer is LIME and SHAP, the raw output contains the correct information needed to answer the question.)
+
+--- 65/200 | Q: Which conferences are being considered for the submission of the paper "Deploying Synthetic Preview and Embargo Protocols for Multilingual Historical NLP Resources"? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+Cypher: MATCH (p:Paper)-[:hasAuthor]->(:Person), 
+      (s:SubmissionID)-[:identifies]->(p), 
+      (s)-[:inVenue]->(c:Conference)
+WHERE toLower(p.paperTitle) CONTAINS toLower("Deploying Synthetic Preview and Embargo Protocols for Multilingual Historical NLP Resources")
+RETURN DISTINCT c.confTitle
+DB Output: [{'c.confTitle': 'ACL 2021'}, {'c.confTitle': 'ACL 2021 resource track'}]...
+Eval: ✅ Pass (The database output lists 'ACL 2021' and 'ACL 2021 resource track', which correspond to the gold answer entries 'ACL 2021' and 'ACL 2021 Resource Track'. Despite minor casing differences, the essential conference information matches and fully satisfies the user’s question.)
+
+--- 66/200 | Q: Does Dr. Ananya Chatterjee work with Sunita Sen on the interpretability project? ---
+Cypher: MATCH (p1:Person)-[:worksOn]->(t:Task)<-[:worksOn]-(p2:Person)
+WHERE (toLower(p1.personName) CONTAINS toLower("Ananya Chatterjee") AND toLower(p2.personName) CONTAINS toLower("Sunita Sen"))
+  AND (toLower(t.taskName) CONTAINS toLower("interpretability"))
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output indicates `True`, which matches the Gold Answer of TRUE, so it correctly answers the user’s question.)
+
+--- 67/200 | Q: Which venue is Sunita Sen aiming to position the research work  on "Language Variation and Accessibility: NLP Methods for Historical Question Answering with Cross-Dialectal Data"? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(pa.paperTitle) CONTAINS toLower("Language Variation and Accessibility: NLP Methods for Historical Question Answering with Cross-Dialectal Data")
+MATCH (sid:SubmissionID)-[:identifies]->(pa)
+OPTIONAL MATCH (sid)-[:inVenue]->(c:Conference)
+OPTIONAL MATCH (sid)-[:inVenue]->(j:Journal)
+RETURN DISTINCT 
+  coalesce(c.confTitle, j.journalTitle) AS venue
+DB Output: [{'venue': 'JOCCH'}, {'venue': 'ACM Journal on Computing and Cultural Heritage'}, {'venue': 'ACM JOC...
+Eval: ✅ Pass (The database output provides venue names that are equivalent or abbreviations of the Gold Answer (ACM Journal on Computing and Cultural Heritage (JOCCH)), so it contains the correct information needed to answer the question.)
+
+--- 68/200 | Q: Is Sunita Sen available for a meeting on 3rd May at 3 PM IST? ---
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+  AND m.meetDate IS NOT NULL
+  AND date(m.meetDate).month = 5
+  AND date(m.meetDate).day = 3
+  AND m.meetTime IS NOT NULL
+  AND toLower(m.meetTime) CONTAINS toLower("3 pm")
+RETURN count(m) = 0 AS result
+DB Output: [{'result': False}]...
+Eval: ❌ Fail (The gold answer indicates that Sunita Sen is available (TRUE), but the raw database output indicates she is not available (False). Therefore, the raw database output does not contain the correct information to satisfy the user’s question.)
+
+--- 69/200 | Q: What institution is Dr. Michael Bradley affiliated with? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") RETURN DISTINCT p.affiliation
+DB Output: [{'p.affiliation': 'Stanford University'}]...
+Eval: ✅ Pass (The raw database output lists the affiliation as 'Stanford University', which exactly matches the expected Gold Answer, so it contains the correct information to answer the user’s question.)
+
+--- 70/200 | Q: Which paper of the team got published in JCDL 2022 ? ---
+Cypher: MATCH (p:Paper)-[:hasAuthor]->(person:Person)-[:attends]->(conf:Conference)
+WHERE toLower(conf.confTitle) CONTAINS "jcdl" AND conf.confDate CONTAINS "2022"
+WITH DISTINCT p
+MATCH (sid:SubmissionID)-[:identifies]->(p)-[:hasAuthor]->(person)
+MATCH (sid)-[:inVenue]->(conf)
+WHERE toLower(conf.confTitle) CONTAINS "jcdl" AND conf.confDate CONTAINS "2022"
+RETURN DISTINCT p.paperTitle
+DB Output: []...
+Eval: ❌ Fail (The database output is an empty list and does not contain the paper title or any relevant information, so it cannot satisfy the user’s question.)
+
+--- 71/200 | Q: Will the initial draft of the baseline model configuration be distributed before the meeting on 3rd May? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ❌ Fail (The raw database output only reports an error ('No valid path in schema') and provides no information about whether the initial draft will be distributed before the meeting on 3rd May. It cannot be used to derive the TRUE answer, so it does not contain the correct information.)
+
+--- 72/200 | Q: Which conference is Dr. Ananya Chatterjee planning to submit the paper "NLP Methods for Historical Data: Provenance and Bias Mitigation" to? ---
+Cypher: MATCH (p:Paper)-[:hasAuthor]->(person:Person), (sid:SubmissionID)-[:identifies]->(p), (sid)-[:inVenue]->(conf:Conference)
+WHERE toLower(person.personName) CONTAINS toLower("Ananya Chatterjee")
+  AND toLower(p.paperTitle) CONTAINS toLower("NLP Methods for Historical Data: Provenance and Bias Mitigation")
+RETURN DISTINCT conf.confTitle
+DB Output: [{'conf.confTitle': 'ACL 2022'}]...
+Eval: ✅ Pass (The raw database output contains 'ACL 2022' as the conference title, which matches the expected Gold Answer exactly and thus satisfies the user’s question.)
+
+--- 73/200 | Q: What comparative methods do Ramesh Bhatia work with? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") AND toLower(m.methodName) CONTAINS "compar"
+RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'comparative NLP analysis'}, {'m.methodName': 'comparative protocol table'}, {'m.m...
+Eval: ✅ Pass (The raw database output lists the same set of methods as the Gold Answer (comparative NLP analysis, comparative protocol table, legal comparative table, comparative legal matrix), so it contains the correct information to answer the question.)
+
+--- 74/200 | Q: Has the pilot annotation exercise been submitted to a conference? ---
+Cypher: MATCH (t:Task) 
+WHERE toLower(t.taskName) CONTAINS toLower("pilot annotation")
+WITH t
+MATCH (d:Dataset)-[:usedFor]->(t)
+WITH t, d
+MATCH (p:Person)-[:worksWith]->(d)
+WITH t, d, p
+MATCH (ppr:Paper)-[:hasAuthor]->(p)
+WITH ppr
+MATCH (sid:SubmissionID)-[:identifies]->(ppr)
+MATCH (sid)-[:inVenue]->(c:Conference)
+RETURN count(c) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output returns False, which matches the expected Gold Answer of FALSE, so it correctly satisfies the user’s question.)
+
+--- 75/200 | Q: Who is responsible for the interpretability analysis in the ACL/EMNLP submission? ---
+Cypher: MATCH (c:Conference) 
+WHERE toLower(c.confTitle) CONTAINS "acl" OR toLower(c.confTitle) CONTAINS "emnlp"
+WITH c
+MATCH (s:SubmissionID)-[:inVenue]->(c)
+MATCH (s)-[:identifies]->(pa:Paper)
+MATCH (pa)-[:hasAuthor]->(p:Person)
+MATCH (p)-[:worksOn]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "interpret" AND t.taskName IS NOT NULL
+RETURN DISTINCT p.personName, p.personEmail, p.affiliation
+DB Output: [{'p.personName': 'Dr. Ananya Chatterjee', 'p.personEmail': 'ananya.chatterjee@cs.ox.ac.uk', 'p.affi...
+Eval: ✅ Pass (The raw database output includes an entry for 'Dr. Ananya Chatterjee', which matches the expected gold answer and is sufficient to identify who is responsible for the interpretability analysis.)
+
+--- 76/200 | Q: Was the paper "NLP Methods for Historical Data: Provenance and Bias Mitigation" submitted to EMNLP? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+Cypher: MATCH (p:Paper)-[:hasAuthor]->(:Person), 
+      (s:SubmissionID)-[:identifies]->(p), 
+      (s)-[:inVenue]->(c:Conference)
+WHERE toLower(p.paperTitle) CONTAINS toLower("NLP Methods for Historical Data: Provenance and Bias Mitigation")
+  AND toLower(c.confTitle) CONTAINS toLower("EMNLP")
+RETURN count(s) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output indicates result: False, which matches the Gold Answer of FALSE, so it correctly answers the user’s question.)
+
+--- 77/200 | Q: Does Ramesh Bhatia work with LIME and SHAP? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") AND (toLower(m.methodName) CONTAINS toLower("lime") OR toLower(m.methodName) CONTAINS toLower("shap"))
+RETURN count(m) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output is True, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 78/200 | Q: What are the metrics used to evaluate the LIME and SHAP models? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Method)-[:usedFor]-(Metric) is not a valid pair in any direction.
+Cypher: MATCH (m:Method)
+WHERE toLower(m.methodName) CONTAINS toLower("lime") OR toLower(m.methodName) CONTAINS toLower("shap")
+MATCH (metric:Metric)-[:evaluates]->(m)
+RETURN DISTINCT metric.metricName
+DB Output: [{'metric.metricName': 'explanation consistency scores'}, {'metric.metricName': 'faithfulness indice...
+Eval: ✅ Pass (The database output lists the same core metrics as in the gold answer: explanation consistency scores, faithfulness indices (equivalent to faithfulness metrics), stability of explanations, and quality of explanations (a close match to qualitative assessment of explanations). Minor wording differences do not change the meaning, so it satisfies the user’s question.)
+
+--- 79/200 | Q: Has Prof. Ramesh Bhatia co-authored any papers with Dr. Michael Bradley? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Person)-[:hasAuthor]->(Person) does not exist in ontology.
+Cypher: MATCH (p1:Person)-[:hasAuthor]-(pa:Paper)-[:hasAuthor]-(p2:Person)
+WHERE (toLower(p1.personName) CONTAINS toLower("Ramesh Bhatia") AND toLower(p2.personName) CONTAINS toLower("Michael Bradley"))
+   OR (toLower(p1.personName) CONTAINS toLower("Michael Bradley") AND toLower(p2.personName) CONTAINS toLower("Ramesh Bhatia"))
+RETURN count(pa) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output indicates `True`, which matches the Gold Answer of TRUE, so it correctly satisfies the user's question.)
+
+--- 80/200 | Q: Which researchers are involved in the interpretability evaluation project? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "interpret" OR toLower(t.taskName) CONTAINS "evaluation"
+RETURN DISTINCT p.personName
+DB Output: [{'p.personName': 'Dr. Ananya Chatterjee'}, {'p.personName': 'Dr. Michael Bradley'}, {'p.personName'...
+Eval: ✅ Pass (The database output lists the same four researchers as the gold answer, just in a different order and with identical names. It fully satisfies the user’s question.)
+
+--- 81/200 | Q: Is there a deadline for feedback on the annotation instructions? ---
+Cypher: MATCH (t:Task) 
+WHERE (toLower(t.taskName) CONTAINS "annotation" OR toLower(t.taskName) CONTAINS "instructions" OR toLower(t.taskName) CONTAINS "feedback") 
+AND t.taskDate IS NOT NULL 
+RETURN DISTINCT t.taskDate
+DB Output: [{'t.taskDate': '2019-05-10'}, {'t.taskDate': '2019-05-05'}, {'t.taskDate': '2019-05-07'}, {'t.taskD...
+Eval: ❌ Fail (The gold answer specifies a concrete deadline of 7th May 2019, but the database output only lists various dates, none of which is 2019-05-07 or clearly marked as the deadline for feedback on annotation instructions. Therefore it does not contain the specific required information.)
+
+--- 82/200 | Q: What dataset is being used for the historian review component in the interpretability evaluation? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "historian" OR toLower(t.taskName) CONTAINS "review"
+   OR toLower(t.taskName) CONTAINS "interpretability" OR toLower(t.taskName) CONTAINS "evaluation"
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'historical datasets'}, {'d.datasetName': '1890s datasets'}, {'d.datasetName': 'd...
+Eval: ❌ Fail (The gold answer indicates that the requested information is not available. The database output lists many dataset names but does not specify which, if any, is used for the historian review component in the interpretability evaluation. Therefore it does not correctly answer the specific question and conflicts with the gold answer of ‘Not available’.)
+
+--- 83/200 | Q: Who are the collaborators involved in annotation protocol? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS toLower("annotation protocol")
+RETURN DISTINCT p.personName
+DB Output: [{'p.personName': 'Sunita Sen'}, {'p.personName': 'Prof. Ramesh Bhatia'}, {'p.personName': 'Dr. Mich...
+Eval: ✅ Pass (The raw database output lists exactly the same four names as in the Gold Answer, so it fully satisfies the user’s question about the collaborators involved in the annotation protocol.)
+
+--- 84/200 | Q: Did Dr. Ananya Chatterjee work on annotation protocol? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND toLower(t.taskName) CONTAINS toLower("annotation protocol")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 85/200 | Q: What are the specific NLP methods mentioned in the annotation protocol? ---
+Cypher: MATCH (m:Method) WHERE toLower(m.methodName) CONTAINS toLower("nlp") OR toLower(m.methodName) CONTAINS toLower("annotation protocol") RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'large-scale historical NLP efforts'}, {'m.methodName': 'NLP processing'}, {'m.met...
+Eval: ✅ Pass (The database output includes all the NLP method names listed in the Gold Answer (e.g., large-scale historical NLP efforts, multilingual and low-resource historical NLP pipelines, HistocrNLP, cross-lingual historical NLP pipeline, etc.), plus some additional annotation-related items. Since all expected methods are present, it contains the correct information to satisfy the question.)
+
+--- 86/200 | Q: Which conferences are being considered for submission of the paper "Multilingual Historical Corpora for Semantic Drift Detection: A Hybrid Evaluation Approach"? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+Cypher: MATCH (p:Paper) 
+WHERE toLower(p.paperTitle) CONTAINS toLower("Multilingual Historical Corpora for Semantic Drift Detection: A Hybrid Evaluation Approach")
+MATCH (s:SubmissionID)-[:identifies]->(p)
+MATCH (s)-[:inVenue]->(c:Conference)
+RETURN DISTINCT c.confTitle
+DB Output: [{'c.confTitle': 'JCDL 2023'}]...
+Eval: ✅ Pass (The database output contains 'JCDL 2023', which exactly matches the expected Gold Answer and correctly answers the user’s question about which conferences are being considered.)
+
+--- 87/200 | Q: Is Sunita Sen responsible for the task of annotation instructions? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(t.taskName) CONTAINS toLower("annotation") AND toLower(t.taskName) CONTAINS toLower("instruction")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output indicates True, which matches the expected Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 88/200 | Q: What is the date for the ACL submission task? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS "acl" AND toLower(t.taskName) CONTAINS "submission" RETURN DISTINCT t.taskName, t.taskDate
+DB Output: [{'t.taskName': 'ACL/EMNLP submission draft', 't.taskDate': None}, {'t.taskName': 'outline prelimina...
+Eval: ✅ Pass (The database output includes tasks named 'initiate the submission to ACL' and 'official ACL submission' both with the date '2019-05-28', which matches the Gold Answer, so it contains the necessary correct information to answer the question.)
+
+--- 89/200 | Q: What is the email address of Dr Ajay Patel? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Ajay Patel") RETURN DISTINCT p.personEmail
+DB Output: [{'p.personEmail': None}]...
+Eval: ✅ Pass (The database output shows the email field as None, which aligns with the gold answer of 'Not available'. Both indicate that the email address is not available, so the raw output is correct and sufficient.)
+
+--- 90/200 | Q: Who are the collaborators working with Dr. Michael Bradley on the annotation project? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset)
+MATCH (p)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") AND (toLower(t.taskName) CONTAINS "annotat" OR toLower(t.taskName) CONTAINS "annotation")
+WITH DISTINCT p, t
+MATCH (collab:Person)-[:worksOn]->(t)
+WHERE collab.id <> p.id
+RETURN DISTINCT collab.personName
+DB Output: [{'collab.personName': 'Sunita Sen'}, {'collab.personName': 'Prof. Ramesh Bhatia'}, {'collab.personN...
+Eval: ❌ Fail (The database output includes the three correct collaborators (Sunita Sen, Prof. Ramesh Bhatia, Dr. Ananya Chatterjee) but also contains additional, apparently spurious or duplicate entries (Dr. Katherine Liu, Dr. Ajay Patel, Prof. Arvind Narayanan, Dr. Liu, Dr. Patel). Since it is not clear from the output which of these are actually working with Dr. Michael Bradley on this specific annotation project, the raw output does not directly satisfy the user’s question without further filtering or disambiguation.)
+
+--- 91/200 | Q: Is Dr Katherine Liu working on her annotation work with Dr Ajay Patel? ---
+Cypher: MATCH (p1:Person)-[:worksOn]->(t:Task)<-[:worksOn]-(p2:Person)
+WHERE (toLower(p1.personName) CONTAINS toLower("Katherine Liu") OR toLower(p1.personName) CONTAINS toLower("Dr Katherine Liu"))
+  AND (toLower(p2.personName) CONTAINS toLower("Ajay Patel") OR toLower(p2.personName) CONTAINS toLower("Dr Ajay Patel"))
+  AND (toLower(t.taskName) CONTAINS toLower("annotation"))
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output is True, which matches the Gold Answer of TRUE; thus it correctly satisfies the user’s question.)
+
+--- 92/200 | Q: Is there a dataset associated with the annotation project? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "annotat"
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'datasets'}, {'d.datasetName': 'stanford_annotations_may2019'}, {'d.datasetName':...
+Eval: ✅ Pass (The user asks if there is a dataset associated with the annotation project (a yes/no question with expected answer TRUE). The database output lists many dataset names, clearly indicating that datasets exist. This is sufficient to conclude TRUE, so the raw output contains the correct information.)
+
+--- 93/200 | Q: What is the affiliation of Sunita Sen? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") RETURN DISTINCT p.affiliation
+DB Output: [{'p.affiliation': 'Indian Association for the Cultivation of Science'}]...
+Eval: ✅ Pass (The raw database output includes 'Indian Association for the Cultivation of Science' as the affiliation, which exactly matches the Gold Answer and fully satisfies the user’s question.)
+
+--- 94/200 | Q: Which paper is being submitted to ACL 2024? ---
+Cypher: MATCH (c:Conference) 
+WHERE toLower(c.confTitle) CONTAINS toLower("ACL") AND c.confDate CONTAINS "2024"
+MATCH (s:SubmissionID)-[:inVenue]->(c)
+MATCH (s)-[:identifies]->(p:Paper)
+RETURN DISTINCT p.paperTitle
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and does not contain any information about the paper title, so it cannot satisfy the user’s question.)
+
+--- 95/200 | Q: What dataset was used for the annotation process in the email? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "annotat"
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'datasets'}, {'d.datasetName': 'stanford_annotations_may2019'}, {'d.datasetName':...
+Eval: ✅ Pass (The raw database output includes all key datasets and related items listed in the Gold Answer (Zenodo, annotated dataset, sample annotation guidelines, NDLI, supplementary annotation logs, edge cases, inter-annotator metadata, Bengal Gazette, Madras Chronicle, annotation packets, multi-lingual dataset, datasets, stanford_annotations_may2019, Stanford ContinuingReview_Sample.pdf, Europeana). Therefore, it contains the correct information needed to answer the user’s question.)
+
+--- 96/200 | Q: Which conference tracks are focused on explainable NLP this year? ---
+Cypher: MATCH (c:Conference)<-[:inVenue]-(s:SubmissionID)-[:identifies]->(:Paper)-[:hasAuthor]->(:Person)-[:worksOn]->(t:Task)
+WHERE t.taskName IS NOT NULL AND (toLower(t.taskName) CONTAINS "explain" OR toLower(t.taskName) CONTAINS "interpret" OR toLower(t.taskName) CONTAINS "explanation" OR toLower(t.taskName) CONTAINS "nlp")
+  AND c.confDate IS NOT NULL AND date(c.confDate).year = date().year
+RETURN DISTINCT c.confTitle
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 97/200 | Q: Did Dr. Ananya Chatterjee attend the coordination call on 15th December 2021? ---
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+AND m.meetDate = "2021-12-15"
+AND m.meetAgenda IS NOT NULL AND toLower(m.meetAgenda) CONTAINS toLower("coordination")
+RETURN count(m) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ❌ Fail (The gold answer indicates that Dr. Ananya Chatterjee did attend the coordination call (TRUE), while the raw database output states result: False. This directly contradicts the gold answer, so the database output does not contain the correct information.)
+
+--- 98/200 | Q: Is Dr Liu affiliated with Stanford University? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Dr Liu") AND toLower(p.affiliation) CONTAINS toLower("Stanford University") RETURN count(p) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output returns False, which matches the Gold Answer of FALSE, correctly indicating that Dr Liu is not affiliated with Stanford University.)
+
+--- 99/200 | Q: Who are the participants involved of the coordination call on 15th December 2021? ---
+Cypher: MATCH (m:Meeting)<-[:attends]-(p:Person)
+WHERE m.meetDate = "2021-12-15" AND m.meetAgenda IS NOT NULL AND toLower(m.meetAgenda) CONTAINS "coordination"
+RETURN DISTINCT p.personName
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and does not contain any of the participants named in the Gold Answer, so it cannot satisfy the user’s question.)
+
+--- 100/200 | Q: What are the specific reviewer guidelines from the latest ACL/EMNLP CFPs mentioned in the email? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ✅ Pass (The gold answer is 'Not available', meaning no specific information is expected. The raw database output indicates an error and provides no answer, which is consistent with the gold answer that the information is not available. Therefore, it is considered correct relative to the gold answer.)
+
+--- 101/200 | Q: Who are the researchers involved in the check-in on artifact reproducibility case? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS toLower("check-in") OR toLower(t.taskName) CONTAINS toLower("artifact reproducibility") OR toLower(t.taskName) CONTAINS toLower("case")
+RETURN DISTINCT p.personName
+DB Output: [{'p.personName': 'Prof. Ramesh Bhatia'}, {'p.personName': 'Sunita Sen'}, {'p.personName': 'Dr. Mich...
+Eval: ✅ Pass (The raw database output lists the same four researchers as in the Gold Answer, just in a different order. All names match exactly, so it fully satisfies the user’s question.)
+
+--- 102/200 | Q: Did Sunita Sen provide a Google Meet link for the meeting on 6th May 2019? ---
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") 
+  AND m.meetDate IS NOT NULL 
+  AND date(m.meetDate).year = 2019 
+  AND date(m.meetDate).month = 5 
+  AND date(m.meetDate).day = 6 
+  AND toLower(m.meetLink) CONTAINS "google"
+RETURN count(m) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output is True, which matches the Expected Gold Answer of TRUE, so it contains the correct information to satisfy the user’s question.)
+
+--- 103/200 | Q: What feedback did Dr Patel provide for the synthesis meeting? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ✅ Pass (The gold answer is 'Not available', meaning the system is not expected to have an answer. The database output indicates an error and does not provide any feedback content, which is consistent with the gold answer indicating no available information. Therefore, it is acceptable and effectively matches the gold answer.)
+
+--- 104/200 | Q: Which task involves integrating historian workflow with model caveats? ---
+Cypher: MATCH (t:Task)
+WHERE toLower(t.taskName) CONTAINS "integrat" AND (toLower(t.taskName) CONTAINS "historian" OR toLower(t.taskName) CONTAINS "workflow") AND (toLower(t.taskName) CONTAINS "model" OR toLower(t.taskName) CONTAINS "caveat")
+RETURN DISTINCT t.taskName
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and does not contain any information about tasks, historian workflow, or model caveats, so it cannot satisfy the user’s question compared to the Gold Answer.)
+
+--- 105/200 | Q: Did Dr. Ananya Chatterjee work on supplementary visualization? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND (toLower(t.taskName) CONTAINS toLower("supplementary") OR toLower(t.taskName) CONTAINS toLower("visualization"))
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 106/200 | Q: What are the quantitative metrics used to evaluate the trust in model explanations? ---
+Cypher: MATCH (m:Metric)
+WHERE (toLower(m.metricName) CONTAINS "trust" OR toLower(m.metricName) CONTAINS "reliab" OR toLower(m.metricName) CONTAINS "faith" OR toLower(m.metricName) CONTAINS "confidence")
+RETURN DISTINCT m.metricName
+DB Output: [{'m.metricName': 'faithfulness indices'}, {'m.metricName': 'trustworthiness'}, {'m.metricName': 'fa...
+Eval: ✅ Pass (The user asks for quantitative metrics used to evaluate trust in model explanations. The database output lists several relevant metrics and measures (e.g., faithfulness metrics/indices/ratings, Likert-scale ratings on trustworthiness, clarity, and faithfulness, and inter-rater reliability statistics). Even though the gold answer is not available, these outputs directly address the requested quantitative metrics, so the DB output is useful and sufficient to satisfy the question.)
+
+--- 107/200 | Q: Is Sunita Sen responsible for the use of original annotator codes data for the task of bar chart breakdown? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+  AND toLower(d.datasetName) CONTAINS toLower("original annotator codes")
+  AND toLower(t.taskName) CONTAINS toLower("bar chart breakdown")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output returns False, which matches the expected Gold Answer of FALSE, so it correctly satisfies the user’s question.)
+
+--- 108/200 | Q: What is the affiliation of Dr Liu mentioned in the synthesis meeting minutes? ---
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting)
+WHERE toLower(p.personName) CONTAINS toLower("Liu") AND m.meetAgenda IS NOT NULL AND toLower(m.meetAgenda) CONTAINS toLower("synthesis")
+RETURN DISTINCT p.affiliation
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 109/200 | Q: Does Prof. Ramesh Bhatia work with color palette for visualizations? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") AND toLower(d.datasetName) CONTAINS toLower("color palette")
+RETURN count(d) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output indicates False, which matches the Gold Answer of FALSE. It correctly satisfies the user’s question.)
+
+--- 110/200 | Q: Which conferences are the visualizations being prepared for in the context of the email? ---
+Cypher: MATCH (t:Task) 
+WHERE toLower(t.taskName) CONTAINS "visualization" OR toLower(t.taskName) CONTAINS "visualisations" OR toLower(t.taskName) CONTAINS "visualising" OR toLower(t.taskName) CONTAINS "visualize" OR toLower(t.taskName) CONTAINS "visualise" OR toLower(t.taskName) CONTAINS "prepar" 
+WITH DISTINCT t
+MATCH (p:Person)-[:worksOn]->(t)
+MATCH (p)-[:attends]->(c:Conference)
+RETURN DISTINCT c.confTitle
+DB Output: [{'c.confTitle': 'ACL'}, {'c.confTitle': 'EMNLP'}, {'c.confTitle': 'ACL 2019'}, {'c.confTitle': 'JCD...
+Eval: ✅ Pass (The raw database output includes both 'ACL' and 'EMNLP', which are exactly the conferences specified in the Gold Answer, so it contains the correct information needed, even though it also has additional unrelated entries.)
+
+--- 111/200 | Q: Has Sunita Sen co-authored any papers with Dr. Michael Bradley? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Person)-[:hasAuthor]->(Person) does not exist in ontology.
+Cypher: MATCH (pa:Paper)-[:hasAuthor]->(p1:Person), (pa)-[:hasAuthor]->(p2:Person)
+WHERE (toLower(p1.personName) CONTAINS toLower("Sunita Sen") AND toLower(p2.personName) CONTAINS toLower("Michael Bradley"))
+   OR (toLower(p2.personName) CONTAINS toLower("Sunita Sen") AND toLower(p1.personName) CONTAINS toLower("Michael Bradley"))
+RETURN count(pa) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output returns `True`, which matches the Gold Answer of TRUE to the yes/no question about co-authorship. Therefore, it correctly satisfies the user's question.)
+
+--- 112/200 | Q: What are the specific datasets used for the visualizations mentioned in the email? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ✅ Pass (The gold answer indicates that the information is not available, and the raw database output reports an error and provides no data. Both effectively convey that the system cannot provide the requested datasets, so the database output is consistent with the gold answer.)
+
+--- 113/200 | Q: Who are the co-authors working with Dr. Ananya Chatterjee on the visualization component? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)-[:hasAuthor]-(co:Person), (co)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+  AND toLower(t.taskName) CONTAINS toLower("visualization")
+  AND co.id <> p.id
+RETURN DISTINCT co.personName
+DB Output: [{'co.personName': 'Sunita Sen'}, {'co.personName': 'Prof. Ramesh Bhatia'}, {'co.personName': 'Dr. M...
+Eval: ✅ Pass (The database output includes all three correct co-authors (Prof. Ramesh Bhatia, Sunita Sen, Dr. Michael Bradley) along with Dr. Ananya Chatterjee herself. Despite the extra entry, the correct information needed to answer the question is fully present.)
+
+--- 114/200 | Q: Did Sunita Sen contribute to the selection of exemplar explanatory segments? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(t.taskName) CONTAINS "exemplar" AND toLower(t.taskName) CONTAINS "explanatory"
+RETURN count(t) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The database output indicates result: False, which matches the Gold Answer of FALSE, so it correctly satisfies the user’s question.)
+
+--- 115/200 | Q: Which datasets were used for the Faithfulness/Clarity Heatmaps? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "faithfulness" OR toLower(t.taskName) CONTAINS "clarity" OR toLower(t.taskName) CONTAINS "heatmap"
+RETURN DISTINCT d.datasetName
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 116/200 | Q: What is the title of the paper related to these visualization drafts? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS "visualization" OR toLower(t.taskName) CONTAINS "draft"
+MATCH (p:Person)-[:worksOn]->(t)
+MATCH (pa:Paper)-[:hasAuthor]->(p)
+RETURN DISTINCT pa.paperTitle
+DB Output: [{'pa.paperTitle': 'Temporal Sentiment Analysis in Historical Archives'}, {'pa.paperTitle': 'Evaluat...
+Eval: ✅ Pass (The gold answer is 'Not available', meaning there is no single known correct title. The raw database output does contain multiple paperTitle values that could plausibly be the titles of papers related to the visualization drafts, so it provides relevant candidate information beyond the gold answer. Therefore it is considered useful for satisfying the user’s question compared to the gold answer baseline.)
+
+--- 117/200 | Q: Which university is Dr. Michael Bradley affiliated with? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") RETURN DISTINCT p.affiliation
+DB Output: [{'p.affiliation': 'Stanford University'}]...
+Eval: ✅ Pass (The user only asked for Dr. Michael Bradley’s university affiliation. The raw database output correctly provides 'Stanford University,' which matches the Gold Answer’s affiliation. The collaborators listed in the Gold Answer are extra information not requested by the user, so the DB output is sufficient to answer the question.)
+
+--- 118/200 | Q: Did Sunita Sen work with researchers from Oxford University? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Person)-[:worksWith]-(Person) is not a valid pair in any direction.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Person)-[:worksWith]-(Person) is not a valid pair in any direction.
+  [Attempt 3] Regex Ontology check failed: Invalid Path: (Person)-[:worksWith]-(Person) is not a valid pair in any direction.
+  ❌ Failed to generate valid Cypher after 3 attempts. Skipping DB query.
+Cypher: MATCH (p1:Person)-[:worksWith]->()<-[:worksWith]-(p2:Person)
+WHERE toLower(p1.personName) CONTAINS toLower("Sunita Sen") AND toLower(p2.affiliation) CONTAINS toLower("Oxford University")
+RETURN count(p2) > 0 AS result
+DB Output: The information could not be extracted from the KG....
+Eval: ❌ Fail (The gold answer is TRUE, but the database output says the information could not be extracted, giving no indication that she did work with Oxford researchers. It does not provide the correct information to satisfy the question.)
+
+--- 119/200 | Q: What dataset was used for the visualization figures discussed in the email? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ✅ Pass (The gold answer is 'Not available,' indicating the information is not present. The raw database output shows an error and no data, which effectively conveys that the requested information is not available. Thus, it is consistent with the gold answer.)
+
+--- 120/200 | Q: What are the affiliations of Dr. Ananya Chatterjee and Dr. Michael Bradley? ---
+Cypher: MATCH (p:Person) 
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") OR toLower(p.personName) CONTAINS toLower("Michael Bradley") 
+RETURN DISTINCT p.personName, p.affiliation
+DB Output: [{'p.personName': 'Dr Michael Bradley', 'p.affiliation': 'Stanford University'}, {'p.personName': 'D...
+Eval: ✅ Pass (The database output contains entries for both Dr Michael Bradley/Dr. Michael Bradley with affiliation Stanford University and Dr Ananya Chatterjee/Dr. Ananya Chatterjee with affiliation University of Oxford, which matches the Gold Answer. Extra duplicate and one incomplete record do not prevent answering correctly.)
+
+--- 121/200 | Q: Which person is suggested to have contributed to the NLP evaluation on noisy historical data through annotator disagreements? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE (toLower(t.taskName) CONTAINS "nlp" OR toLower(t.taskName) CONTAINS "evaluation")
+  AND (toLower(t.taskName) CONTAINS "noisy" OR toLower(t.taskName) CONTAINS "historical")
+  AND (toLower(t.taskName) CONTAINS "annotator" OR toLower(t.taskName) CONTAINS "disagreement")
+RETURN DISTINCT p.personName
+DB Output: []...
+Eval: ❌ Fail (The database output is empty and does not contain the correct answer 'Sunita Sen' or any relevant information, so it cannot satisfy the user’s question.)
+
+--- 122/200 | Q: What is the title of the paper that includes the visualization assets discussed in the email? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ✅ Pass (The gold answer indicates that the answer is not available, and the database output reports an error and provides no title. Both effectively convey that the system cannot provide the requested information, so the database output is consistent with the gold answer in terms of satisfying the question.)
+
+--- 123/200 | Q: Which task was Dr. Michael Bradley responsible for in the manuscript preparation? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") AND toLower(t.taskName) CONTAINS toLower("manuscript")
+RETURN DISTINCT t.taskName
+DB Output: [{'t.taskName': 'suggest a sequence for figure order in the manuscript'}, {'t.taskName': 'manuscript...
+Eval: ✅ Pass (Among the listed task names there is an entry exactly matching the Gold Answer: 'camera-ready manuscript preparation'. Therefore, the raw database output does contain the correct information needed to answer the user’s question.)
+
+--- 124/200 | Q: What conference is the paper "Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data" intended for submission? ---
+Cypher: MATCH (p:Paper)-[:hasPaperInfo]->(pb:PaperBib)
+WHERE toLower(p.paperTitle) CONTAINS toLower("Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data")
+MATCH (sid:SubmissionID)-[:identifies]->(p)
+MATCH (sid)-[:inVenue]->(c:Conference)
+RETURN DISTINCT c.confTitle
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and does not contain any information, so it cannot provide the correct conference (ACL 2019) for the paper.)
+
+--- 125/200 | Q: Which conference is the paper that Sunita Sen and her co-authors are working on intended to be submitted to? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)<-[:usedFor]-(d:Dataset)
+WITH DISTINCT p, t
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+MATCH (p2:Person)-[:worksOn]->(t)
+MATCH (pa:Paper)-[:hasAuthor]->(p2)
+MATCH (s:SubmissionID)-[:identifies]->(pa)
+MATCH (s)-[:inVenue]->(c:Conference)
+RETURN DISTINCT c.confTitle
+DB Output: [{'c.confTitle': 'ACL 2019'}, {'c.confTitle': 'JCDL 2020'}, {'c.confTitle': 'ACM/IEEE Joint Conferen...
+Eval: ✅ Pass (The raw database output includes an entry with 'c.confTitle': 'ACL', which matches the expected gold answer, so it contains the correct information needed to answer the question.)
+
+--- 126/200 | Q: Is the manuscript draft ready for pre-submission administrative checks according to Sunita Sen? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+  AND (
+    toLower(t.taskName) CONTAINS "pre-submission" OR
+    toLower(t.taskName) CONTAINS "administrative check" OR
+    toLower(t.taskName) CONTAINS "admin check" OR
+    toLower(t.taskName) CONTAINS "manuscript draft ready"
+  )
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ❌ Fail (The gold answer states FALSE while the database output returns True, so the database output contradicts the correct answer and does not contain the correct information.)
+
+--- 127/200 | Q: What datasets are evaluated by the metrics that Sunita Sen works with? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Metric)-[:evaluates]->(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'annotated corpora'}, {'d.datasetName': 'NER annotation set'}, {'d.datasetName': ...
+Eval: ✅ Pass (The raw database output lists the exact same dataset names as the Gold Answer (annotated corpora, NER annotation set, topical annotation set, first dataset summaries), so it fully satisfies the user’s question.)
+
+--- 128/200 | Q: Is Sunita Sen associated with the Indian Association for the Cultivation of Science? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(p.affiliation) CONTAINS toLower("Indian Association for the Cultivation of Science") RETURN count(p) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output indicates True, which matches the expected Gold Answer (TRUE), so it correctly satisfies the user’s question.)
+
+--- 129/200 | Q: What is the target conference for the paper being prepared by Dr. Ananya Chatterjee and her team? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+WITH t
+MATCH (teamMember:Person)-[:worksOn]->(t)
+WITH DISTINCT t
+MATCH (t)<-[:usedFor]-(d:Dataset)
+WITH t
+MATCH (pa:Paper)-[:hasAuthor]->(teamMember:Person)-[:worksOn]->(t)
+WITH DISTINCT pa
+MATCH (s:SubmissionID)-[:identifies]->(pa)
+MATCH (s)-[:inVenue]->(c:Conference)
+RETURN DISTINCT c.confTitle AS targetConference
+DB Output: [{'targetConference': 'ACL 2019'}, {'targetConference': 'JCDL 2020'}, {'targetConference': 'ACM/IEEE...
+Eval: ✅ Pass (Yes. The raw database output includes an entry with 'targetConference': 'ACL 2019', which matches the Gold Answer exactly, so it contains the correct information needed to answer the question.)
+
+--- 130/200 | Q: What is the ID for the submission to 'ACL 2019' conference? ---
+Cypher: MATCH (c:Conference) WHERE toLower(c.confTitle) CONTAINS toLower("ACL 2019") 
+MATCH (s:SubmissionID)-[:inVenue]->(c) 
+RETURN DISTINCT s.identifier
+DB Output: [{'s.identifier': 'SUB-ACL-2019-0374'}]...
+Eval: ✅ Pass (The raw database output contains the identifier 'SUB-ACL-2019-0374', which exactly matches the Gold Answer. Therefore, it provides the correct information to satisfy the user's question.)
+
+--- 131/200 | Q: Is there a plan to submit the paper before June 2019? ---
+Cypher: MATCH (s:SubmissionID)-[:movesTo]->(ps:PaperStatus)
+WHERE ps.statusDate IS NOT NULL AND date(ps.statusDate) < date("2019-06-01")
+RETURN count(s) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output is True, which matches the expected Gold Answer TRUE, so it correctly satisfies the user’s question.)
+
+--- 132/200 | Q: What is the title of the paper being submitted to 'ACL 2019'? ---
+Cypher: MATCH (c:Conference) WHERE toLower(c.confTitle) CONTAINS toLower("ACL 2019")
+MATCH (s:SubmissionID)-[:inVenue]->(c)
+MATCH (s)-[:identifies]->(p:Paper)
+RETURN DISTINCT p.paperTitle
+DB Output: [{'p.paperTitle': 'Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical ...
+Eval: ✅ Pass (The raw database output contains the exact paper title matching the Gold Answer, so it fully satisfies the user’s question.)
+
+--- 133/200 | Q: What is the status of the paper titled 'Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data' submitted to 'ACL 2019'? ---
+Cypher: MATCH (p:Paper)-[:hasPaperInfo]->(pb:PaperBib), (p)<-[:identifies]-(s:SubmissionID)-[:inVenue]->(c:Conference), (s)-[:movesTo]->(ps:PaperStatus)
+WHERE toLower(p.paperTitle) CONTAINS toLower("Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data")
+  AND toLower(c.confTitle) CONTAINS toLower("ACL 2019")
+RETURN DISTINCT ps.statusType, ps.statusDate
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and does not indicate the status of the paper. It does not provide the expected answer 'Submitted' or any equivalent information, so it cannot satisfy the user’s question.)
+
+--- 134/200 | Q: Did Ananya Chatterjee submit any papers to conferences in 2019? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)<-[:identifies]-(s:SubmissionID)-[:inVenue]->(c:Conference)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND c.confDate IS NOT NULL AND date(c.confDate).year = 2019
+RETURN count(s) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ❌ Fail (The gold answer indicates that Ananya Chatterjee did submit papers in 2019 (TRUE), while the raw database output states False. Therefore, the database output does not provide the correct information compared to the gold answer.)
+
+--- 135/200 | Q: What methods were used in the paper submitted by Ananya Chatterjee to ACL 2019? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)<-[:hasAuthor]-(Person) does not exist in ontology.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Paper)<-[:usedFor]-(Method) does not exist in ontology.
+  [Attempt 3] Regex Ontology check failed: Invalid Path: (Paper)<-[:hasAuthor]-(Person) does not exist in ontology.
+  ❌ Failed to generate valid Cypher after 3 attempts. Skipping DB query.
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)<-[:identifies]-(s:SubmissionID)-[:inVenue]->(c:Conference)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND toLower(c.confTitle) CONTAINS toLower("ACL") AND c.confDate CONTAINS "2019"
+MATCH (pa)<-[:hasAuthor]-(p2:Person)-[:worksWith]->(m:Method)
+WHERE p2 = p
+RETURN DISTINCT m.methodName
+DB Output: The information could not be extracted from the KG....
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 136/200 | Q: What is the title of the paper submitted to ACL 2019 by the team including Dr. Michael Bradley and Dr. Ananya Chatterjee? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)<-[:identifies]-(s:SubmissionID)-[:inVenue]->(c:Conference)
+WHERE (toLower(p.personName) CONTAINS toLower("Michael Bradley") OR toLower(p.personName) CONTAINS toLower("Ananya Chatterjee"))
+AND toLower(c.confTitle) CONTAINS toLower("ACL")
+AND c.confDate IS NOT NULL AND date(c.confDate).year = 2019
+RETURN DISTINCT pa.paperTitle
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 137/200 | Q: Did the team consider preparing a presentation for internal departmental meetings post-submission? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE (toLower(t.taskName) CONTAINS "presentation" OR toLower(t.taskName) CONTAINS "internal" OR toLower(t.taskName) CONTAINS "department" OR toLower(t.taskName) CONTAINS "meeting")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output is True, which directly corresponds to the Gold Answer of 'Yes', so it contains the correct information.)
+
+--- 138/200 | Q: What dataset is planned to be released in conjunction with the ACL 2019 paper? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)<-[:worksWith]-(Person) does not exist in ontology.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Paper)<-[:worksWith]-(Person) does not exist in ontology.
+  [Attempt 3] Regex Ontology check failed: Invalid Path: (Paper)<-[:worksWith]-(Person) does not exist in ontology.
+  ❌ Failed to generate valid Cypher after 3 attempts. Skipping DB query.
+Cypher: MATCH (c:Conference) 
+WHERE toLower(c.confTitle) CONTAINS toLower("ACL") AND c.confDate CONTAINS "2019"
+MATCH (s:SubmissionID)-[:inVenue]->(c)
+MATCH (s)-[:identifies]->(p:Paper)
+MATCH (p)<-[:worksWith]-(person:Person)-[:worksWith]->(d:Dataset)
+RETURN DISTINCT d.datasetName
+DB Output: The information could not be extracted from the KG....
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 139/200 | Q: Which conferences were mentioned in the email thread involving Sunita Sen? ---
+Cypher: MATCH (p:Person)-[:sentBy|:receivedBy]-(e:Email)-[:partOf]->(mt:MailThread)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+WITH DISTINCT mt
+MATCH (e2:Email)-[:partOf]->(mt)
+MATCH (e2)-[:sentBy|:receivedBy]-(p2:Person)-[:attends]->(c:Conference)
+RETURN DISTINCT c.confTitle
+DB Output: [{'c.confTitle': 'ACL'}, {'c.confTitle': 'EMNLP'}, {'c.confTitle': 'ACL 2019'}, {'c.confTitle': 'JCD...
+Eval: ✅ Pass (Yes. The database output includes 'ACL 2019', which matches the expected gold answer, so it contains the correct information needed to answer the question, even though it also includes many additional conferences.)
+
+--- 140/200 | Q: Is there a plan to release a dataset related to the ACL 2019 submission? ---
+Cypher: MATCH (c:Conference) 
+WHERE toLower(c.confTitle) CONTAINS toLower("ACL") AND c.confDate CONTAINS "2019"
+MATCH (s:SubmissionID)-[:inVenue]->(c)
+MATCH (s)-[:identifies]->(p:Paper)
+MATCH (d:Dataset)<-[:worksWith]-(a:Person)<-[:hasAuthor]-(p)
+RETURN DISTINCT d.datasetName
+DB Output: []...
+Eval: ❌ Fail (The raw database output is empty and does not indicate whether there is a plan to release a dataset. It does not provide the TRUE answer required by the gold answer, so it cannot satisfy the user’s question.)
+
+--- 141/200 | Q: Has the paper "Semantic Adjudication and Entity Agreement Protocols for Historical South Asian Legal Texts" been accepted to the Journal of Documentation (JDoc)? ---
+Cypher: MATCH (p:Paper)-[:hasAuthor]->(:Person), 
+      (sid:SubmissionID)-[:identifies]->(p), 
+      (sid)-[:inVenue]->(j:Journal), 
+      (sid)-[:movesTo]->(ps:PaperStatus)
+WHERE toLower(p.paperTitle) CONTAINS toLower("Semantic Adjudication and Entity Agreement Protocols for Historical South Asian Legal Texts")
+  AND toLower(j.journalTitle) CONTAINS toLower("Journal of Documentation")
+  AND toLower(ps.statusType) CONTAINS toLower("accept")
+RETURN count(ps) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The database output returns False, which matches the expected Gold Answer (FALSE) to the yes/no question about the paper’s acceptance. Therefore, it contains the correct information.)
+
+--- 142/200 | Q: What are the specific datasets planned for phased release discussed in the meeting? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (m:Meeting)<-[:attends]-(p:Person)-[:worksWith]->(d:Dataset)
+WHERE m.meetAgenda IS NOT NULL AND toLower(m.meetAgenda) CONTAINS "phased release"
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ❌ Fail (The gold answer indicates that the specific datasets planned for phased release are not available, while the database output lists many dataset names without identifying which ones are specifically planned for phased release. Therefore, it does not clearly or correctly answer the user’s question as framed by the gold answer.)
+
+--- 143/200 | Q: Is the meeting scheduled for 2nd June going to be attended by Sunita Sen? ---
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+  AND m.meetDate IS NOT NULL
+  AND date(m.meetDate).month = 6
+  AND date(m.meetDate).day = 2
+RETURN count(m) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output is True, which matches the Gold Answer TRUE, so it correctly satisfies the user’s question.)
+
+--- 144/200 | Q: Which journal is targeted for the extended version of the paper after ACL feedback? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)<-[:worksOn]-(Person) does not exist in ontology.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Paper)<-[:hasAuthor]-(Person) does not exist in ontology.
+  [Attempt 3] Regex Ontology check failed: Invalid Path: (Paper)<-[:worksOn]-(Person) does not exist in ontology.
+  ❌ Failed to generate valid Cypher after 3 attempts. Skipping DB query.
+Cypher: MATCH (t:Task)
+WHERE (toLower(t.taskName) CONTAINS "extended version" OR toLower(t.taskName) CONTAINS "extension" OR toLower(t.taskName) CONTAINS "journal" OR toLower(t.taskName) CONTAINS "acl feedback")
+WITH t
+MATCH (p:Paper)<-[:worksOn]-(per:Person)-[:worksOn]->(t)
+MATCH (sid:SubmissionID)-[:identifies]->(p)
+MATCH (sid)-[:inVenue]->(j:Journal)
+RETURN DISTINCT j.journalTitle
+DB Output: The information could not be extracted from the KG....
+Eval: ❌ Fail (The raw database output states that the information could not be extracted, and does not mention JOCCH or any journal. Therefore, it does not contain the correct answer.)
+
+--- 145/200 | Q: Is there a planned dataset release by 16 June 2019? ---
+Error executing Cypher against Neo4j: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Text cannot be parsed to a Date
+"23"
+ ^} {gql_status: 22007} {gql_status_description: error: data exception - invalid date, time, or datetime format}
+Cypher: MATCH (t:Task)
+WHERE t.taskDate IS NOT NULL AND date(t.taskDate) <= date("2019-06-16") AND (toLower(t.taskName) CONTAINS "release" OR toLower(t.taskName) CONTAINS "dataset")
+RETURN count(t) > 0 AS result
+DB Output: Error during execution....
+Eval: ❌ Fail (The raw database output only shows an execution error and provides no information about planned dataset releases, so it does not contain the correct information corresponding to the Gold Answer of TRUE.)
+
+--- 146/200 | Q: What is the affiliation of Prof. Ramesh Bhatia? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") RETURN DISTINCT p.affiliation
+DB Output: [{'p.affiliation': 'Indian Association for the Cultivation of Science'}, {'p.affiliation': 'Professo...
+Eval: ✅ Pass (Yes. The database output includes the full, correct affiliation string: 'Professor, Department of Computer Science, Indian Association for the Cultivation of Science', which matches the gold answer.)
+
+--- 147/200 | Q: Which dataset is Sunita Sen compiling descriptive statistics for? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)<-[:usedFor]-(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+  AND (toLower(t.taskName) CONTAINS "descriptive" OR toLower(t.taskName) CONTAINS "statistic" OR toLower(t.taskName) CONTAINS "compile")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'annotated OCR error corpus'}, {'d.datasetName': 'annotated corpus (late-19th-cen...
+Eval: ✅ Pass (Yes. The raw database output includes 'annotated OCR error corpus' and 'annotated historical OCR error corpus', which align with the Gold Answer 'OCR error corpus'. Despite slight naming differences, it clearly contains the correct dataset information needed to answer the question.)
+
+--- 148/200 | Q: Is Sunita Sen responsible for preparing the first draft of the digital poster? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+  AND (toLower(t.taskName) CONTAINS "first draft" OR toLower(t.taskName) CONTAINS "digital poster" OR toLower(t.taskName) CONTAINS "prepare")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output is True, which matches the expected Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 149/200 | Q: Has Sunita Sen co-authored any papers with Dr. Michael Bradley?  ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Person)-[:hasAuthor]->(Person) does not exist in ontology.
+Cypher: MATCH (pa:Paper)-[:hasAuthor]->(p1:Person), (pa)-[:hasAuthor]->(p2:Person)
+WHERE (toLower(p1.personName) CONTAINS toLower("Sunita Sen") AND toLower(p2.personName) CONTAINS toLower("Michael Bradley"))
+   OR (toLower(p2.personName) CONTAINS toLower("Sunita Sen") AND toLower(p1.personName) CONTAINS toLower("Michael Bradley"))
+RETURN count(pa) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output indicates 'True', which matches the expected Gold Answer of TRUE and correctly answers that Sunita Sen has co-authored papers with Dr. Michael Bradley.)
+
+--- 150/200 | Q: What is the title of the paper that will include the dataset documentation template? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "dataset documentation template"
+WITH DISTINCT t
+MATCH (p:Person)-[:worksOn]->(t)
+MATCH (pa:Paper)-[:hasAuthor]->(p)
+RETURN DISTINCT pa.paperTitle
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 151/200 | Q: Has the preliminary checklist for dataset compliance been uploaded by 10 June? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ✅ Pass (The gold answer says the information is not available, and the database output reports an error indicating no valid path in the schema, which also implies the system cannot retrieve the requested information. Thus, it effectively matches the gold answer in that the information is not available.)
+
+--- 152/200 | Q: What are the OCR error cases mentioned in the dataset documentation? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ❌ Fail (The raw database output only reports an error message ('No valid path in schema') and does not mention the annotated corpus, summary statistics, or selected representative OCR error cases. It provides no substantive information related to the OCR error cases described in the Gold Answer.)
+
+--- 153/200 | Q: Which tasks are being evaluated using Cohen’s kappa and F1 scores according to the email? ---
+Cypher: MATCH (m:Metric)-[:evaluates]->(t:Task)
+WHERE (toLower(m.metricName) CONTAINS toLower("cohen") OR toLower(m.metricName) CONTAINS toLower("kappa") OR toLower(m.metricName) CONTAINS toLower("f1"))
+RETURN DISTINCT t.taskName
+DB Output: [{'t.taskName': 'Temporal Sentiment Analysis in Historical Archives'}, {'t.taskName': 'Temporal Sent...
+Eval: ✅ Pass (The database output contains tasks explicitly about annotator disagreement/annotator agreement and related analysis, which aligns with the gold answer of 'Annotator disagreement analysis,' so it has the correct underlying information.)
+
+--- 154/200 | Q: Does Sunita Sen need to provide any data before 14 June? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+WITH DISTINCT p, d
+MATCH (d)-[:usedFor]->(t:Task)
+WHERE t.taskDate IS NOT NULL AND date(t.taskDate) < date("2024-06-14")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the Gold Answer (TRUE), so it correctly satisfies the user’s question.)
+
+--- 155/200 | Q: Has Dr. Michael Bradley published any papers in a journal? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)<-[:identifies]-(s:SubmissionID)-[:inVenue]->(j:Journal)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley")
+RETURN count(pa) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output indicates 'True', which matches the expected Gold Answer 'TRUE' that Dr. Michael Bradley has published papers in a journal.)
+
+--- 156/200 | Q: What dataset is being used for the OCR error cases in the project led by Sunita Sen? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)<-[:usedFor]-(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen")
+  AND (toLower(t.taskName) CONTAINS "ocr" OR toLower(t.taskName) CONTAINS "error")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'data impacted by OCR noise or metadata inconsistencies'}, {'d.datasetName': 'ann...
+Eval: ✅ Pass (Among the database results is the exact expected dataset name: 'annotated corpus (late-19th-century Bengali and English periodicals segment)', so the raw output does contain the correct information needed to answer the question, even though it also includes additional datasets.)
+
+--- 157/200 | Q: What is the title of Sunita Sen's paper submitted under ID SUB-JOCCH-2019-0187? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)<-[:identifies]-(s:SubmissionID)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(s.identifier) CONTAINS toLower("SUB-JOCCH-2019-0187")
+RETURN DISTINCT pa.paperTitle
+DB Output: [{'pa.paperTitle': 'Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling a...
+Eval: ✅ Pass (The first element of the raw database output includes the exact paper title matching the Gold Answer, so the correct information is present, despite additional irrelevant entries.)
+
+--- 158/200 | Q: Which datasets were reviewed by Dr. Ananya Chatterjee for the JOCCH expectations? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (The gold answer is 'Not available', implying no specific datasets are expected. The DB output, however, lists many dataset names but does not indicate which (if any) were reviewed by Dr. Ananya Chatterjee for the JOCCH expectations. Since the gold answer is essentially that the information is unknown or not provided, the DB output does not contradict it and therefore is acceptable relative to the gold.)
+
+--- 159/200 | Q: Did Sunita Sen work on the compliance draft for internal approvals? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND (toLower(t.taskName) CONTAINS toLower("compliance") OR toLower(t.taskName) CONTAINS toLower("draft") OR toLower(t.taskName) CONTAINS toLower("internal approval"))
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output returns True, which matches the expected Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 160/200 | Q: What is the submission status of the paper prepared for the internal review meeting on 16 June? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)<-[:hasAuthor]-(Person) does not exist in ontology.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Meeting) does not exist in ontology.
+Cypher: MATCH (m:Meeting)
+WHERE m.meetDate IS NOT NULL AND date(m.meetDate).month = 6 AND date(m.meetDate).day = 16 AND toLower(m.meetAgenda) CONTAINS "internal review"
+WITH m
+MATCH (p:Paper)-[:hasAuthor]->(person:Person)-[:attends]->(m)
+MATCH (sid:SubmissionID)-[:identifies]->(p)
+MATCH (sid)-[:movesTo]->(ps:PaperStatus)
+RETURN DISTINCT p.paperTitle, ps.statusType, ps.statusDate
+DB Output: []...
+Eval: ✅ Pass (Both correctly identified missing information.)
+
+--- 161/200 | Q: What dataset is Sunita Sen working on for the internal review meeting? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (p:Person)-[:worksWith]->(d:Dataset), (p)-[:attends]->(m:Meeting)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(m.meetAgenda) CONTAINS toLower("internal review")
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (Among the many entries, one item exactly matches the gold answer: 'annotated historical OCR error corpus'. Therefore, the raw database output does contain the correct information needed to answer the question.)
+
+--- 162/200 | Q: Is there a sensitive data/risk assessment and external attestation recommendation task assigned to Ananya Chatterjee? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE (toLower(p.personName) CONTAINS toLower("Ananya Chatterjee"))
+  AND (
+    toLower(t.taskName) CONTAINS toLower("sensitive data")
+    OR toLower(t.taskName) CONTAINS toLower("risk assessment")
+    OR toLower(t.taskName) CONTAINS toLower("external attestation")
+    OR toLower(t.taskName) CONTAINS toLower("recommendation")
+  )
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the expected Gold Answer of TRUE and correctly answers the user’s question.)
+
+--- 163/200 | Q: Has the dataset been prepared for submission to a journal? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "prepare" OR toLower(t.taskName) CONTAINS "submission" OR toLower(t.taskName) CONTAINS "journal"
+RETURN count(d) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ❌ Fail (The gold answer indicates that the information is not available, while the database output asserts a definite True. This conflicts with the expected answer, so the raw output does not correctly satisfy the user’s question.)
+
+--- 164/200 | Q: What statuses has the paper 'Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives' passed through? ---
+Cypher: MATCH (pa:Paper)-[:hasAuthor]->(:Person)
+WHERE toLower(pa.paperTitle) CONTAINS toLower("Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives")
+MATCH (sid:SubmissionID)-[:identifies]->(pa)
+MATCH (sid)-[:movesTo]->(ps:PaperStatus)
+RETURN DISTINCT ps.statusType, ps.statusDate
+ORDER BY ps.statusDate
+DB Output: [{'ps.statusType': 'Camera-ready submitted', 'ps.statusDate': neo4j.time.Date(2019, 1, 18)}, {'ps.st...
+Eval: ❌ Fail (The database output includes many of the status values but also introduces extra, incorrect, or differently named statuses (e.g., 'Submitted', 'Minor Revision', 'Revised manuscript received', 'Under editorial board assessment', 'Under final reviewer verification') and has a different order than the Gold Answer. It does not cleanly match the exact sequence of statuses in the Gold Answer, so it cannot directly satisfy the user’s question without additional interpretation and filtering.)
+
+--- 165/200 | Q: What was the agenda of the meeting held on 6th April 2019? ---
+Cypher: MATCH (m:Meeting) WHERE m.meetDate = "2019-04-06" RETURN m.meetAgenda
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and does not contain any of the agenda details (datasets, methods, metrics, or timeline) specified in the Gold Answer, so it cannot satisfy the user’s question.)
+
+--- 166/200 | Q: Which email first mentioned the Chronicling America dataset? ---
+Cypher: MATCH (e:Email)-[:partOf]->(t:MailThread), (d:Dataset)
+WHERE toLower(d.datasetName) CONTAINS toLower("Chronicling America")
+WITH e, d
+ORDER BY e.mailDate ASC
+WITH collect(e) AS emails
+RETURN emails[0] AS first_email
+DB Output: [{'first_email': {'mailNum': 'YT6A21', 'id': 'e1', 'mailDate': neo4j.time.Date(2019, 4, 1)}}]...
+Eval: ✅ Pass (The database output shows 'first_email' with mailNum 'YT6A21', which matches the expected gold answer exactly. Thus, it contains the correct information to answer the question.)
+
+--- 167/200 | Q: Which papers were under review in 2019? ---
+Cypher: MATCH (s:SubmissionID)-[:movesTo]->(ps:PaperStatus), (s)-[:identifies]->(p:Paper)
+WHERE ps.statusType IS NOT NULL AND toLower(ps.statusType) CONTAINS "review" AND ps.statusDate IS NOT NULL AND date(ps.statusDate).year = 2019
+RETURN DISTINCT p.paperTitle
+DB Output: [{'p.paperTitle': 'JOCCH minor revision'}, {'p.paperTitle': 'Cross-Institutional Methods for NLP on ...
+Eval: ❌ Fail (The gold answer paper title does not appear in the raw database output; none of the returned titles match or clearly correspond to “Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives,” so the system output does not contain the correct information for the question.)
+
+--- 168/200 | Q: What is the full citation for the Supplementary Historical Newspapers Dataset as specified by the team? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Dataset)<-[:uses]-(Paper) does not exist in ontology.
+Cypher: MATCH (d:Dataset) 
+WHERE toLower(d.datasetName) CONTAINS toLower("Supplementary Historical Newspapers")
+MATCH (p:Person)-[:worksWith]->(d)
+MATCH (p)-[:hasAuthor]-(pa:Paper)
+RETURN DISTINCT pa.id, pa.paperTitle
+DB Output: []...
+Eval: ❌ Fail (The raw database output is an empty list and contains no information, so it does not provide the required citation or any part of the gold answer.)
+
+--- 169/200 | Q: Which methods is Sunita Sen working with in the Temporal Sentiment Analysis project? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method), (p)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(t.taskName) CONTAINS toLower("temporal sentiment analysis")
+RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'temporal embeddings'}, {'m.methodName': 'historical lexicons'}, {'m.methodName': ...
+Eval: ✅ Pass (All three methods in the Gold Answer (temporal embeddings, historical lexicons, Transformer models) are present or trivially matched in the database output (`temporal embeddings`, `historical lexicons`, and `Transformer-based models`). Extra methods do not harm usability, so the DB output contains the correct information needed to answer the question.)
+
+--- 170/200 | Q: Which researchers are working with methods for interpretability? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)
+WHERE toLower(m.methodName) CONTAINS toLower("interpret")
+RETURN DISTINCT p.personName
+DB Output: [{'p.personName': 'Prof. Ramesh Bhatia'}, {'p.personName': 'Dr. Ananya Chatterjee'}]...
+Eval: ✅ Pass (The raw database output lists the same two researchers (Prof. Ramesh Bhatia and Dr. Ananya Chatterjee) as in the Gold Answer, so it fully satisfies the user’s question.)
+
+--- 171/200 | Q: Is Dr. Michael Bradley working with temporal embeddings? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") AND toLower(m.methodName) CONTAINS toLower("temporal embedding")
+RETURN count(m) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output indicates `True`, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 172/200 | Q: Which method does Dr. Michael Bradley use alongside Transformer models? ---
+⚠️ Warning: Massive DB result detected. Truncating for evaluator...
+Cypher: MATCH (p:Person)-[:worksWith]->(m1:Method), (p)-[:worksWith]->(m2:Method)
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley")
+  AND (toLower(m1.methodName) CONTAINS toLower("Transformer") OR toLower(m2.methodName) CONTAINS toLower("Transformer"))
+  AND NOT (toLower(m1.methodName) CONTAINS toLower("Transformer") AND toLower(m2.methodName) CONTAINS toLower("Transformer"))
+RETURN DISTINCT
+  CASE
+    WHEN toLower(m1.methodName) CONTAINS toLower("Transformer") THEN m2.methodName
+    ELSE m1.methodName
+  END AS methodName
+DB Output: [{'methodName': 'temporal embeddings'}, {'methodName': 'BERT'}, {'methodName': 'LSTM'}, {'methodName...
+Eval: ✅ Pass (The gold answer lists 'temporal embeddings, alignment methods'. The raw database output includes entries with methodName 'temporal embeddings' and 'alignment methods', so it contains the necessary correct information to answer the question.)
+
+--- 173/200 | Q: Is Sunita Sen working with CRF models? ---
+Cypher: MATCH (p:Person)-[:worksWith]->(m:Method)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(m.methodName) CONTAINS toLower("CRF")
+RETURN count(m) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output indicates `False`, which matches the Gold Answer of FALSE. Therefore, it contains the correct information to satisfy the user’s question.)
+
+--- 174/200 | Q: Which methods are used for the Temporal Sentiment Analysis task? ---
+Cypher: MATCH (m:Method)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS toLower("temporal") OR toLower(t.taskName) CONTAINS toLower("sentiment")
+RETURN DISTINCT m.methodName
+DB Output: [{'m.methodName': 'temporal embeddings'}, {'m.methodName': 'Transformer-based models'}, {'m.methodNa...
+Eval: ✅ Pass (The database output includes temporal embeddings, Transformer-based models (matching Transformer models), LSTM, and historical lexicons for language change (matching historical lexicons). While CRF is not present, most key methods from the gold answer are covered, so the output is fundamentally useful for answering the question.)
+
+--- 175/200 | Q: Which metrics are used to evaluate the LIME method? ---
+Cypher: MATCH (m:Metric)-[:evaluates]->(me:Method) 
+WHERE toLower(me.methodName) CONTAINS toLower("LIME") 
+RETURN DISTINCT m.metricName
+DB Output: [{'m.metricName': 'explanation consistency scores'}, {'m.metricName': 'faithfulness indices'}, {'m.m...
+Eval: ✅ Pass (All four metrics in the Gold Answer—explanation consistency scores, faithfulness indices, stability of explanations, and quality of explanations—are present in the database output. The extra item, 'faithfulness metrics', is redundant but not conflicting. Therefore, the database output contains the correct information needed to answer the user’s question.)
+
+--- 176/200 | Q: Does the SHAP method get evaluated using faithfulness indices? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Method)-[:usedFor]-(Metric) is not a valid pair in any direction.
+  [Attempt 2] Regex Ontology check failed: Invalid Path: (Method)-[:usedFor]-(Metric) is not a valid pair in any direction.
+  [Attempt 3] Regex Ontology check failed: Invalid Path: (Method)-[:usedFor]-(Metric) is not a valid pair in any direction.
+  ❌ Failed to generate valid Cypher after 3 attempts. Skipping DB query.
+Cypher: MATCH (m:Method)-[:usedFor]->(:Task)<-[:evaluates]-(metric:Metric)
+WHERE toLower(m.methodName) CONTAINS toLower("shap") AND toLower(metric.metricName) CONTAINS toLower("faithfulness")
+RETURN count(metric) > 0 AS result
+DB Output: The information could not be extracted from the KG....
+Eval: ❌ Fail (The database output only states that the information could not be extracted from the knowledge graph and does not confirm that SHAP is evaluated using faithfulness indices. It does not provide the TRUE answer required by the gold standard, so it is not useful.)
+
+--- 177/200 | Q: Which method is evaluated by the Likert-scale responses metric? ---
+Cypher: MATCH (m:Metric)-[:evaluates]->(me:Method)
+WHERE toLower(m.metricName) CONTAINS toLower("Likert-scale responses")
+RETURN DISTINCT me.methodName
+DB Output: [{'me.methodName': 'model explanations'}]...
+Eval: ❌ Fail (The gold answer specifies that the metric evaluates 'methods for interpretability,' while the database output states 'model explanations.' These are related concepts but not the same phrase or clearly equivalent category. The output does not explicitly mention 'methods for interpretability,' so it does not reliably satisfy the user’s question as defined by the gold answer.)
+
+--- 178/200 | Q: Is accuracy used as a metric in the Temporal Sentiment Analysis project? ---
+Cypher: MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS toLower("temporal sentiment analysis")
+MATCH (m:Metric)-[:evaluates]->(t) WHERE toLower(m.metricName) CONTAINS toLower("accuracy")
+RETURN count(m) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output returns True, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 179/200 | Q: Which metrics evaluate the methods for interpretability? ---
+Cypher: MATCH (m:Method)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "interpret"
+WITH DISTINCT m
+MATCH (metric:Metric)-[:evaluates]->(m)
+RETURN DISTINCT metric.metricName
+DB Output: [{'metric.metricName': 'explanation consistency scores'}, {'metric.metricName': 'faithfulness indice...
+Eval: ❌ Fail (The gold answer focuses on human-centered evaluation metrics (Likert-scale responses, trust, willingness to use), whereas the database output lists technical/explanation-centric metrics (explanation consistency, faithfulness, stability, quality). These are different kinds of metrics, so the DB output does not provide the same information needed to answer the question as specified by the Gold Answer.)
+
+--- 180/200 | Q: Which journal is the paper 'NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers' submitted to? ---
+  [Attempt 1] Regex Ontology check failed: Invalid Path: (Paper)-[:hasAuthor]->(Paper) does not exist in ontology.
+Cypher: MATCH (p:Paper) 
+WHERE toLower(p.paperTitle) CONTAINS toLower("NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers")
+MATCH (s:SubmissionID)-[:identifies]->(p)
+MATCH (s)-[:inVenue]->(j:Journal)
+RETURN DISTINCT j.journalTitle
+DB Output: [{'j.journalTitle': 'JOCCH'}, {'j.journalTitle': 'ACM Journal on Computing and Cultural Heritage'}, ...
+Eval: ✅ Pass (Yes. The raw database output includes 'ACM Journal on Computing and Cultural Heritage', which exactly matches the Gold Answer, so it contains the correct information to answer the question.)
+
+--- 181/200 | Q: Has the submission SUB-JCDL-2020-0143 been accepted? ---
+Cypher: MATCH (s:SubmissionID)-[:movesTo]->(ps:PaperStatus)
+WHERE toLower(s.identifier) CONTAINS toLower("SUB-JCDL-2020-0143") AND toLower(ps.statusType) CONTAINS toLower("accept")
+RETURN count(ps) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ❌ Fail (The gold answer indicates the submission was accepted (TRUE), while the database output indicates it was not accepted (False). Therefore, the database output does not contain the correct information.)
+
+--- 182/200 | Q: What is the final status of submission SUB-JOCCH-2021-0612? ---
+Cypher: MATCH (s:SubmissionID)-[:movesTo]->(ps:PaperStatus)
+WHERE toLower(s.identifier) CONTAINS toLower("SUB-JOCCH-2021-0612")
+RETURN ps.statusType, ps.statusDate
+ORDER BY ps.statusDate DESC
+LIMIT 1
+DB Output: [{'ps.statusType': 'Galley proofs to be generated', 'ps.statusDate': None}]...
+Eval: ❌ Fail (The raw database output indicates the status 'Galley proofs to be generated', which does not match the expected final status 'Scheduled for publication'. Therefore, it does not contain the correct information to satisfy the user’s question.)
+
+--- 183/200 | Q: Has the submission SUB-ACL-2021-0842 been accepted? ---
+Cypher: MATCH (s:SubmissionID)-[:movesTo]->(ps:PaperStatus)
+WHERE toLower(s.identifier) CONTAINS toLower("SUB-ACL-2021-0842") AND toLower(ps.statusType) CONTAINS toLower("accept")
+RETURN count(ps) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output shows result: True, which matches the expected Gold Answer of TRUE, so it correctly answers that the submission has been accepted.)
+
+--- 184/200 | Q: Which task is the Corpus of Historical American English (COHA) used for? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(d.datasetName) CONTAINS toLower("Corpus of Historical American English") OR toLower(d.datasetName) CONTAINS toLower("COHA")
+RETURN DISTINCT t.taskName
+DB Output: [{'t.taskName': 'Temporal Sentiment Analysis in Historical Archives'}]...
+Eval: ✅ Pass (The raw database output contains the exact same task name, 'Temporal Sentiment Analysis in Historical Archives', which matches the Gold Answer and correctly answers the user’s question.)
+
+--- 185/200 | Q: Is the British Library Digital Collections dataset used for the Temporal Sentiment Analysis task? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(d.datasetName) CONTAINS toLower("British Library Digital Collections")
+  AND toLower(t.taskName) CONTAINS toLower("temporal sentiment analysis")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The database output returns True, which matches the expected Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 186/200 | Q: Which datasets are used for the sentiment analysis task? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS "sentiment"
+RETURN DISTINCT d.datasetName
+DB Output: [{'d.datasetName': 'Chronicling America'}, {'d.datasetName': 'British Library Digital Collections'},...
+Eval: ✅ Pass (The raw database output includes all three correct datasets listed in the Gold Answer. The extra generic entry 'datasets' can be ignored, so the output fundamentally contains the correct information needed to answer the question.)
+
+--- 187/200 | Q: Is the Chronicling America dataset used for OCR correction tasks? ---
+Cypher: MATCH (d:Dataset)-[:usedFor]->(t:Task)
+WHERE toLower(d.datasetName) CONTAINS toLower("Chronicling America") AND (toLower(t.taskName) CONTAINS toLower("ocr") OR toLower(t.taskName) CONTAINS toLower("correction"))
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ❌ Fail (The gold answer says the dataset is not used for OCR correction tasks (FALSE), but the database output returns True, which is the opposite. Therefore the raw output does not contain the correct information.)
+
+--- 188/200 | Q: What is the final status of the submission SUB-JOCCH-2019-0187? ---
+Cypher: MATCH (s:SubmissionID)-[:movesTo]->(ps:PaperStatus)
+WHERE toLower(s.identifier) CONTAINS toLower("SUB-JOCCH-2019-0187")
+RETURN ps.statusType, ps.statusDate
+ORDER BY ps.statusDate DESC
+LIMIT 1
+DB Output: [{'ps.statusType': 'Received', 'ps.statusDate': None}]...
+Eval: ❌ Fail (The database output shows the status as 'Received', but the expected final status is 'Camera-ready received'. These are not the same, so the raw output does not contain the correct information to satisfy the user’s question.)
+
+--- 189/200 | Q: Was the submission SUB-JCDL-2020-0718 accepted? ---
+Cypher: MATCH (s:SubmissionID)-[:movesTo]->(ps:PaperStatus) 
+WHERE toLower(s.identifier) CONTAINS toLower("SUB-JCDL-2020-0718") AND toLower(ps.statusType) CONTAINS "accept"
+RETURN count(ps) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output `True` matches the expected Gold Answer `TRUE`, correctly indicating that the submission was accepted.)
+
+--- 190/200 | Q: What is the current status of the submission SUB-JOCCH-2020-0047? ---
+Cypher: MATCH (s:SubmissionID)-[:movesTo]->(ps:PaperStatus)
+WHERE toLower(s.identifier) CONTAINS toLower("SUB-JOCCH-2020-0047")
+RETURN ps.statusType, ps.statusDate
+ORDER BY ps.statusDate DESC
+LIMIT 1
+DB Output: [{'ps.statusType': 'Minor Revision', 'ps.statusDate': None}]...
+Eval: ❌ Fail (The raw database output indicates the status as 'Minor Revision', which does not match the expected gold answer 'Conditionally accepted'. Therefore, it does not contain the correct information to satisfy the user's question.)
+
+--- 191/200 | Q: Who attended the meeting on 6th April 2019? ---
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting)
+WHERE m.meetDate IS NOT NULL AND date(m.meetDate) = date("2019-04-06")
+RETURN DISTINCT p.personName
+DB Output: [{'p.personName': 'Sunita Sen'}, {'p.personName': 'Prof. Ramesh Bhatia'}, {'p.personName': 'Dr Micha...
+Eval: ✅ Pass (The raw database output contains all four correct attendees: Sunita Sen, Prof. Ramesh Bhatia, Dr Michael Bradley, and Dr Ananya Chatterjee. Although there are duplicates and minor formatting differences (missing periods after titles), the essential information needed to answer the question is fully present and correct.)
+
+--- 192/200 | Q: Did Prof. Ramesh Bhatia attend the meeting on 6th April 2019? ---
+Cypher: MATCH (p:Person)-[:attends]->(m:Meeting)
+WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") AND m.meetDate = "2019-04-06"
+RETURN count(m) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ❌ Fail (The gold answer indicates that the correct response is TRUE, but the raw database output returns False. Therefore, the raw database output does not contain the correct information to satisfy the user’s question.)
+
+--- 193/200 | Q: What was the agenda of the meeting on 19th April 2019? ---
+Cypher: MATCH (m:Meeting) WHERE m.meetDate = "2019-04-19" RETURN m.meetAgenda
+DB Output: []...
+Eval: ❌ Fail (The database output is an empty list and does not contain any information, so it cannot provide the correct agenda (‘first progress check-in group call’) for the meeting on 19th April 2019.)
+
+--- 194/200 | Q: Is Prof. Ramesh Bhatia affiliated with Stanford University? ---
+Cypher: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Ramesh Bhatia") AND toLower(p.affiliation) CONTAINS toLower("Stanford University") RETURN count(p) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output indicates `False`, which matches the Gold Answer of FALSE. It correctly answers that Prof. Ramesh Bhatia is not affiliated with Stanford University.)
+
+--- 195/200 | Q: Did Dr. Ananya Chatterjee submit any papers to JCDL in 2019? ---
+Cypher: MATCH (p:Person)-[:hasAuthor]-(pa:Paper)<-[:identifies]-(s:SubmissionID)-[:inVenue]->(c:Conference)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+  AND toLower(c.confTitle) CONTAINS toLower("JCDL")
+  AND c.confDate IS NOT NULL AND date(c.confDate).year = 2019
+RETURN count(s) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output indicates False, which matches the Gold Answer of FALSE, so it correctly satisfies the user’s question.)
+
+--- 196/200 | Q: Is Dr. Michael Bradley affiliated with the University of Oxford? ---
+Cypher: MATCH (p:Person) 
+WHERE toLower(p.personName) CONTAINS toLower("Michael Bradley") AND toLower(p.affiliation) CONTAINS toLower("University of Oxford") 
+RETURN count(p) > 0 AS result
+DB Output: [{'result': False}]...
+Eval: ✅ Pass (The raw database output indicates False, which matches the expected Gold Answer of FALSE, so it correctly satisfies the user’s question.)
+
+--- 197/200 | Q: Which task is Sunita Sen working on related to semantic drift? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Sunita Sen") AND toLower(t.taskName) CONTAINS toLower("semantic drift")
+RETURN DISTINCT t.taskName
+DB Output: [{'t.taskName': 'conducting literature reviews on evaluation metrics for semantic drift in diachroni...
+Eval: ✅ Pass (Both database task names clearly refer to work on semantic drift (specifically evaluation metrics for semantic drift in diachronic NER), which falls under the broader description of 'semantic drift studies' given in the Gold Answer. Thus, the DB output provides the correct information.)
+
+--- 198/200 | Q: Which researchers are working on the Temporal Sentiment Analysis in Historical Archives task? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(t.taskName) CONTAINS toLower("temporal sentiment analysis") OR toLower(t.taskName) CONTAINS toLower("historical archives")
+RETURN DISTINCT p.personName
+DB Output: [{'p.personName': 'Sunita Sen'}, {'p.personName': 'Prof. Ramesh Bhatia'}, {'p.personName': 'Dr Bradl...
+Eval: ✅ Pass (The database output includes all researchers listed in the gold answer: Sunita Sen, Prof. Ramesh Bhatia, Dr. Michael Bradley, and Dr. Ananya Chatterjee. The extra partial/duplicate entries (Dr Bradley, Dr Chatterjee) do not remove correctness and can be normalized, so the raw output is sufficient to satisfy the question.)
+
+--- 199/200 | Q: Is Dr. Ananya Chatterjee working on the Temporal Sentiment Analysis project? ---
+Cypher: MATCH (p:Person)-[:worksOn]->(t:Task)
+WHERE toLower(p.personName) CONTAINS toLower("Ananya Chatterjee") AND toLower(t.taskName) CONTAINS toLower("Temporal Sentiment Analysis")
+RETURN count(t) > 0 AS result
+DB Output: [{'result': True}]...
+Eval: ✅ Pass (The raw database output returns True, which matches the Gold Answer of TRUE, so it correctly satisfies the user’s question.)
+
+--- 200/200 | Q: What is the exact page count of the paper submitted under SUB-JOCCH-2019-0187? ---
+Cypher: RETURN 'No valid path in schema' AS Error
+DB Output: [{'Error': 'No valid path in schema'}]...
+Eval: ✅ Pass (The gold answer indicates that the information is not available, and the database output shows an error ('No valid path in schema'), which also implies that the requested information cannot be retrieved. Thus, the raw output effectively conveys that the page count is not available, matching the gold answer.)
+
+====================================
+✅ GPT Pipeline Evaluation Complete! Accuracy: 75.50%
+Data saved to KG_UTILITY_RESULTS_GPT_ISWC_PRASHNA_PATRA_v3_v12.csv
+Logs saved to KG_UTILITY_LOG_GPT_ISWC_PRASHNA_PATRA_v3_v12.txt
+====================================
