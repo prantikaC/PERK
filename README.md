@@ -227,12 +227,4 @@ Full ontology files (OWL, Turtle) are in `ontology/`.
 
 ---
 
-## Citation
 
-```bibtex
-@inproceedings{perk2025,
-  title     = {PERK: Personal Email Research Knowledge Graph},
-  booktitle = {Proceedings of the International Semantic Web Conference (ISWC)},
-  year      = {2025}
-}
-```
