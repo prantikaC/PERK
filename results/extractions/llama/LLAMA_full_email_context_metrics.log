@@ -1,0 +1,60 @@
+Model: LLAMA
+Context: full_email_context
+Timestamp: 2026-04-03 20:27:06.024869
+
+
+Tau=0.60
+Subject     P=0.7665 R=0.9247 F1=0.8382
+Object      P=0.5140 R=0.7606 F1=0.6134
+All Entities P=0.6815 R=0.8301 F1=0.7485
+Predicate   P=0.2179 R=0.6395 F1=0.3251
+Triple      P=0.1461 R=0.1465 F1=0.1463
+
+Tau=0.65
+Subject     P=0.7665 R=0.9247 F1=0.8382
+Object      P=0.5140 R=0.7606 F1=0.6134
+All Entities P=0.6815 R=0.8301 F1=0.7485
+Predicate   P=0.2179 R=0.6395 F1=0.3251
+Triple      P=0.1461 R=0.1465 F1=0.1463
+
+Tau=0.70
+Subject     P=0.7665 R=0.9247 F1=0.8382
+Object      P=0.5140 R=0.7606 F1=0.6134
+All Entities P=0.6815 R=0.8301 F1=0.7485
+Predicate   P=0.2179 R=0.6395 F1=0.3251
+Triple      P=0.1461 R=0.1465 F1=0.1463
+
+Tau=0.75
+Subject     P=0.7665 R=0.9247 F1=0.8382
+Object      P=0.5134 R=0.7597 F1=0.6128
+All Entities P=0.6811 R=0.8296 F1=0.7481
+Predicate   P=0.2179 R=0.6395 F1=0.3251
+Triple      P=0.1461 R=0.1465 F1=0.1463
+
+Tau=0.80
+Subject     P=0.7647 R=0.9225 F1=0.8362
+Object      P=0.5085 R=0.7524 F1=0.6069
+All Entities P=0.6769 R=0.8245 F1=0.7435
+Predicate   P=0.2179 R=0.6395 F1=0.3251
+Triple      P=0.1461 R=0.1465 F1=0.1463
+
+Tau=0.85
+Subject     P=0.7647 R=0.9225 F1=0.8362
+Object      P=0.5041 R=0.7459 F1=0.6016
+All Entities P=0.6736 R=0.8205 F1=0.7398
+Predicate   P=0.2179 R=0.6395 F1=0.3251
+Triple      P=0.1451 R=0.1455 F1=0.1453
+
+Tau=0.90
+Subject     P=0.7637 R=0.9213 F1=0.8351
+Object      P=0.4964 R=0.7346 F1=0.5925
+All Entities P=0.6674 R=0.8129 F1=0.7330
+Predicate   P=0.2179 R=0.6395 F1=0.3251
+Triple      P=0.1426 R=0.1431 F1=0.1429
+
+Tau=0.95
+Subject     P=0.7439 R=0.8974 F1=0.8134
+Object      P=0.4295 R=0.6356 F1=0.5126
+All Entities P=0.6095 R=0.7424 F1=0.6694
+Predicate   P=0.2179 R=0.6395 F1=0.3251
+Triple      P=0.1290 R=0.1294 F1=0.1292
