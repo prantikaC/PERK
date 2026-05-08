@@ -1,0 +1,86 @@
+==================================================
+ UNCONNECTED ENTITIES ANALYSIS REPORT
+==================================================
+
+Analyzing model: OPENAI
+------------------------------
+  Total unconnected entities: 245
+  Breakdown by Entity Type:
+    - Task: 186
+    - Dataset: 14
+    - Method: 8
+    - Meeting: 8
+    - Paper: 8
+    - Conference: 7
+    - Person: 6
+    - Journal: 5
+    - Metric: 3
+
+Analyzing model: LLAMA
+------------------------------
+  Total unconnected entities: 2842
+  Breakdown by Entity Type:
+    - Task: 1122
+    - Dataset: 582
+    - Method: 376
+    - Metric: 277
+    - Event: 144
+    - Paper: 122
+    - Meeting: 68
+    - PaperStatus: 50
+    - Journal: 36
+    - Conference: 36
+    - Person: 16
+    - SubmissionID: 7
+    - Resource: 2
+    - Document: 2
+    - PaperBib: 2
+
+Analyzing model: GEMMA
+------------------------------
+  Total unconnected entities: 1524
+  Breakdown by Entity Type:
+    - Task: 790
+    - Paper: 249
+    - Dataset: 164
+    - Meeting: 88
+    - Method: 53
+    - Metric: 50
+    - Journal: 48
+    - Conference: 33
+    - PaperStatus: 25
+    - SubmissionID: 21
+    - Person: 3
+
+Analyzing model: QWEN
+------------------------------
+  Total unconnected entities: 1744
+  Breakdown by Entity Type:
+    - Metric: 554
+    - Task: 551
+    - Method: 264
+    - Dataset: 153
+    - Paper: 83
+    - Journal: 44
+    - Meeting: 33
+    - Conference: 27
+    - PaperStatus: 18
+    - SubmissionID: 10
+    - Person: 5
+    - PaperBib: 1
+    - Document: 1
+
+Analyzing model: QWEN32b
+------------------------------
+  Total unconnected entities: 566
+  Breakdown by Entity Type:
+    - Task: 222
+    - Method: 96
+    - Dataset: 75
+    - Metric: 59
+    - Meeting: 58
+    - Paper: 19
+    - Person: 17
+    - Conference: 12
+    - Journal: 7
+    - Document: 1
