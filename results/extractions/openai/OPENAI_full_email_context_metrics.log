@@ -1,0 +1,60 @@
+Model: OPENAI
+Context: full_email_context
+Timestamp: 2026-04-03 20:23:45.962938
+
+
+Tau=0.60
+Subject     P=0.7891 R=0.9950 F1=0.8802
+Object      P=0.7347 R=0.9921 F1=0.8442
+All Entities P=0.7729 R=0.9938 F1=0.8695
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6810 R=0.9818 F1=0.8042
+
+Tau=0.65
+Subject     P=0.7891 R=0.9950 F1=0.8802
+Object      P=0.7347 R=0.9921 F1=0.8442
+All Entities P=0.7729 R=0.9938 F1=0.8695
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6810 R=0.9818 F1=0.8042
+
+Tau=0.70
+Subject     P=0.7891 R=0.9950 F1=0.8802
+Object      P=0.7347 R=0.9921 F1=0.8442
+All Entities P=0.7729 R=0.9938 F1=0.8695
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6810 R=0.9818 F1=0.8042
+
+Tau=0.75
+Subject     P=0.7891 R=0.9950 F1=0.8802
+Object      P=0.7347 R=0.9921 F1=0.8442
+All Entities P=0.7729 R=0.9938 F1=0.8695
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6810 R=0.9818 F1=0.8042
+
+Tau=0.80
+Subject     P=0.7891 R=0.9950 F1=0.8802
+Object      P=0.7347 R=0.9921 F1=0.8442
+All Entities P=0.7729 R=0.9938 F1=0.8695
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6810 R=0.9818 F1=0.8042
+
+Tau=0.85
+Subject     P=0.7891 R=0.9950 F1=0.8802
+Object      P=0.7347 R=0.9921 F1=0.8442
+All Entities P=0.7729 R=0.9938 F1=0.8695
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6810 R=0.9818 F1=0.8042
+
+Tau=0.90
+Subject     P=0.7891 R=0.9950 F1=0.8802
+Object      P=0.7347 R=0.9921 F1=0.8442
+All Entities P=0.7729 R=0.9938 F1=0.8695
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6810 R=0.9818 F1=0.8042
+
+Tau=0.95
+Subject     P=0.7891 R=0.9950 F1=0.8802
+Object      P=0.7347 R=0.9921 F1=0.8442
+All Entities P=0.7729 R=0.9938 F1=0.8695
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6810 R=0.9818 F1=0.8042

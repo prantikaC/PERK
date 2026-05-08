@@ -1,0 +1,60 @@
+Model: OPENAI
+Context: evidence_sentence
+Timestamp: 2026-04-03 20:21:13.333969
+
+
+Tau=0.60
+Subject     P=0.7780 R=0.9809 F1=0.8677
+Object      P=0.7252 R=0.9793 F1=0.8333
+All Entities P=0.7619 R=0.9795 F1=0.8571
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6846 R=0.9864 F1=0.8083
+
+Tau=0.65
+Subject     P=0.7708 R=0.9718 F1=0.8597
+Object      P=0.7246 R=0.9786 F1=0.8327
+All Entities P=0.7584 R=0.9751 F1=0.8532
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6846 R=0.9864 F1=0.8083
+
+Tau=0.70
+Subject     P=0.7556 R=0.9527 F1=0.8428
+Object      P=0.7230 R=0.9764 F1=0.8309
+All Entities P=0.7508 R=0.9653 F1=0.8446
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6846 R=0.9864 F1=0.8083
+
+Tau=0.75
+Subject     P=0.7348 R=0.9265 F1=0.8196
+Object      P=0.7220 R=0.9750 F1=0.8296
+All Entities P=0.7414 R=0.9533 F1=0.8341
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6846 R=0.9864 F1=0.8083
+
+Tau=0.80
+Subject     P=0.7093 R=0.8943 F1=0.7911
+Object      P=0.7193 R=0.9714 F1=0.8266
+All Entities P=0.7290 R=0.9372 F1=0.8201
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6846 R=0.9864 F1=0.8083
+
+Tau=0.85
+Subject     P=0.6733 R=0.8489 F1=0.7510
+Object      P=0.7146 R=0.9650 F1=0.8211
+All Entities P=0.7120 R=0.9154 F1=0.8010
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6842 R=0.9864 F1=0.8080
+
+Tau=0.90
+Subject     P=0.6342 R=0.7996 F1=0.7073
+Object      P=0.7093 R=0.9579 F1=0.8151
+All Entities P=0.6916 R=0.8892 F1=0.7780
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6836 R=0.9856 F1=0.8073
+
+Tau=0.95
+Subject     P=0.5663 R=0.7140 F1=0.6316
+Object      P=0.6903 R=0.9322 F1=0.7932
+All Entities P=0.6532 R=0.8398 F1=0.7348
+Predicate   P=0.7365 R=0.9835 F1=0.8423
+Triple      P=0.6807 R=0.9814 F1=0.8038
