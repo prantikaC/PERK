@@ -225,6 +225,8 @@ PERKOnto defines 14 node types and 14 relationship types covering the research c
 
 Full ontology files (OWL, Turtle) are in `ontology/`.
 
+![PERKOnto](ontology/PERKOnto.png)
+
 ---
 
 
