@@ -1,0 +1,60 @@
+Model: GEMMA
+Context: evidence_sentence
+Timestamp: 2026-04-03 20:27:56.423752
+
+
+Tau=0.60
+Subject     P=0.6651 R=0.7120 F1=0.6877
+Object      P=0.4208 R=0.3983 F1=0.4092
+All Entities P=0.6272 R=0.5300 F1=0.5745
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.2147 R=0.0792 F1=0.1157
+
+Tau=0.65
+Subject     P=0.5964 R=0.6385 F1=0.6167
+Object      P=0.3597 R=0.3405 F1=0.3498
+All Entities P=0.5477 R=0.4628 F1=0.5017
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.1984 R=0.0733 F1=0.1070
+
+Tau=0.70
+Subject     P=0.5014 R=0.5368 F1=0.5185
+Object      P=0.3069 R=0.2905 F1=0.2985
+All Entities P=0.4639 R=0.3921 F1=0.4250
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.1823 R=0.0673 F1=0.0984
+
+Tau=0.75
+Subject     P=0.3960 R=0.4240 F1=0.4095
+Object      P=0.2451 R=0.2320 F1=0.2384
+All Entities P=0.3665 R=0.3097 F1=0.3357
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.1626 R=0.0597 F1=0.0874
+
+Tau=0.80
+Subject     P=0.2766 R=0.2961 F1=0.2860
+Object      P=0.1885 R=0.1784 F1=0.1834
+All Entities P=0.2659 R=0.2247 F1=0.2436
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.1402 R=0.0517 F1=0.0755
+
+Tau=0.85
+Subject     P=0.1580 R=0.1692 F1=0.1634
+Object      P=0.1418 R=0.1342 F1=0.1379
+All Entities P=0.1722 R=0.1455 F1=0.1577
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.1208 R=0.0445 F1=0.0650
+
+Tau=0.90
+Subject     P=0.0818 R=0.0876 F1=0.0846
+Object      P=0.0807 R=0.0764 F1=0.0785
+All Entities P=0.0953 R=0.0806 F1=0.0873
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.0843 R=0.0313 F1=0.0457
+
+Tau=0.95
+Subject     P=0.0386 R=0.0413 F1=0.0399
+Object      P=0.0339 R=0.0321 F1=0.0330
+All Entities P=0.0411 R=0.0347 F1=0.0376
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.0660 R=0.0246 F1=0.0358

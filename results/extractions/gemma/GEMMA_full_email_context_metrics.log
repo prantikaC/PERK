@@ -1,0 +1,60 @@
+Model: GEMMA
+Context: full_email_context
+Timestamp: 2026-04-03 20:29:57.307787
+
+
+Tau=0.60
+Subject     P=0.8307 R=0.8892 F1=0.8589
+Object      P=0.6237 R=0.5903 F1=0.6065
+All Entities P=0.8494 R=0.7178 F1=0.7781
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.2275 R=0.0847 F1=0.1235
+
+Tau=0.65
+Subject     P=0.8307 R=0.8892 F1=0.8589
+Object      P=0.6237 R=0.5903 F1=0.6065
+All Entities P=0.8494 R=0.7178 F1=0.7781
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.2275 R=0.0847 F1=0.1235
+
+Tau=0.70
+Subject     P=0.8307 R=0.8892 F1=0.8589
+Object      P=0.6237 R=0.5903 F1=0.6065
+All Entities P=0.8494 R=0.7178 F1=0.7781
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.2275 R=0.0847 F1=0.1235
+
+Tau=0.75
+Subject     P=0.8307 R=0.8892 F1=0.8589
+Object      P=0.6237 R=0.5903 F1=0.6065
+All Entities P=0.8494 R=0.7178 F1=0.7781
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.2275 R=0.0847 F1=0.1235
+
+Tau=0.80
+Subject     P=0.8297 R=0.8882 F1=0.8580
+Object      P=0.6222 R=0.5889 F1=0.6051
+All Entities P=0.8478 R=0.7165 F1=0.7767
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.2253 R=0.0839 F1=0.1222
+
+Tau=0.85
+Subject     P=0.8297 R=0.8882 F1=0.8580
+Object      P=0.6192 R=0.5860 F1=0.6021
+All Entities P=0.8457 R=0.7147 F1=0.7747
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.2258 R=0.0839 F1=0.1223
+
+Tau=0.90
+Subject     P=0.8288 R=0.8872 F1=0.8570
+Object      P=0.6101 R=0.5774 F1=0.5933
+All Entities P=0.8389 R=0.7089 F1=0.7685
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.2201 R=0.0817 F1=0.1192
+
+Tau=0.95
+Subject     P=0.8175 R=0.8751 F1=0.8453
+Object      P=0.5445 R=0.5153 F1=0.5295
+All Entities P=0.7878 R=0.6658 F1=0.7217
+Predicate   P=0.3175 R=0.4403 F1=0.3690
+Triple      P=0.1991 R=0.0737 F1=0.1076
