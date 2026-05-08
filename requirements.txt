@@ -1,0 +1,29 @@
+# Core
+openai>=1.0.0
+python-dotenv
+tqdm
+pandas
+networkx
+scikit-learn
+matplotlib
+numpy
+
+# HuggingFace models (Gemma, LLaMA, Qwen) — skip if using OpenAI only
+torch
+transformers
+
+# Entity resolution
+sentence-transformers
+faiss-cpu          # or faiss-gpu if running on GPU
+vllm
+jellyfish
+thefuzz[speedup]
+
+# Neo4j
+neo4j
+langchain-neo4j
+
+# QA evaluation
+langchain-openai
+langchain-core
+pydantic
