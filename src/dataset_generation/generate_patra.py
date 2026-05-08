@@ -11,8 +11,7 @@ load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-DEFAULT_PROMPT = Path(__file__).resolve().parent / "prompts" / "patra_gen_prompt.txt"
-
+DEFAULT_PROMPT = Path(__file__).resolve().parent.parent / "prompts" / "patra_gen_prompt.txt"
 
 def load_prompt(prompt_file: str) -> str:
     with open(prompt_file, "r", encoding="utf-8") as f:
