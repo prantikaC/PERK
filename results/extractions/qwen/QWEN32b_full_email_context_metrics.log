@@ -1,0 +1,60 @@
+Model: QWEN32b
+Context: full_email_context
+Timestamp: 2026-04-03 20:36:26.534589
+
+
+Tau=0.60
+Subject     P=0.7409 R=0.9587 F1=0.8358
+Object      P=0.5598 R=0.8951 F1=0.6888
+All Entities P=0.7154 R=0.9230 F1=0.8061
+Predicate   P=0.4251 R=0.7654 F1=0.5467
+Triple      P=0.2733 R=0.4197 F1=0.3311
+
+Tau=0.65
+Subject     P=0.7409 R=0.9587 F1=0.8358
+Object      P=0.5598 R=0.8951 F1=0.6888
+All Entities P=0.7154 R=0.9230 F1=0.8061
+Predicate   P=0.4251 R=0.7654 F1=0.5467
+Triple      P=0.2733 R=0.4197 F1=0.3311
+
+Tau=0.70
+Subject     P=0.7409 R=0.9587 F1=0.8358
+Object      P=0.5598 R=0.8951 F1=0.6888
+All Entities P=0.7154 R=0.9230 F1=0.8061
+Predicate   P=0.4251 R=0.7654 F1=0.5467
+Triple      P=0.2733 R=0.4197 F1=0.3311
+
+Tau=0.75
+Subject     P=0.7409 R=0.9587 F1=0.8358
+Object      P=0.5594 R=0.8944 F1=0.6883
+All Entities P=0.7151 R=0.9226 F1=0.8057
+Predicate   P=0.4251 R=0.7654 F1=0.5467
+Triple      P=0.2733 R=0.4197 F1=0.3311
+
+Tau=0.80
+Subject     P=0.7401 R=0.9577 F1=0.8349
+Object      P=0.5580 R=0.8922 F1=0.6866
+All Entities P=0.7137 R=0.9208 F1=0.8041
+Predicate   P=0.4251 R=0.7654 F1=0.5467
+Triple      P=0.2736 R=0.4202 F1=0.3314
+
+Tau=0.85
+Subject     P=0.7393 R=0.9567 F1=0.8341
+Object      P=0.5563 R=0.8894 F1=0.6844
+All Entities P=0.7123 R=0.9190 F1=0.8026
+Predicate   P=0.4251 R=0.7654 F1=0.5467
+Triple      P=0.2730 R=0.4193 F1=0.3307
+
+Tau=0.90
+Subject     P=0.7385 R=0.9557 F1=0.8332
+Object      P=0.5500 R=0.8794 F1=0.6767
+All Entities P=0.7075 R=0.9128 F1=0.7971
+Predicate   P=0.4251 R=0.7654 F1=0.5467
+Triple      P=0.2694 R=0.4138 F1=0.3264
+
+Tau=0.95
+Subject     P=0.7315 R=0.9466 F1=0.8253
+Object      P=0.5027 R=0.8037 F1=0.6185
+All Entities P=0.6692 R=0.8634 F1=0.7540
+Predicate   P=0.4251 R=0.7654 F1=0.5467
+Triple      P=0.2597 R=0.3981 F1=0.3144
