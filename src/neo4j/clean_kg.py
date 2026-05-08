@@ -50,7 +50,7 @@ def main():
     )
     parser.add_argument("--entities_in",   required=True)
     parser.add_argument("--relations_in",  required=True)
-    parser.add_argument("--ontology",      default="perk_ontology.json")
+    parser.add_argument("--ontology",      default="PERKOnto.json")
     parser.add_argument("--entities_out",  required=True)
     parser.add_argument("--relations_out", required=True)
     args = parser.parse_args()

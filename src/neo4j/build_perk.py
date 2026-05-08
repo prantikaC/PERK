@@ -54,7 +54,7 @@ def main():
     parser.add_argument("--data_dir",  required=True,
                         help="Directory containing entities/ and relations/ subdirs "
                              "(output of prepare_import.py)")
-    parser.add_argument("--ontology",  default="perk_ontology.json")
+    parser.add_argument("--ontology",  default="PERKOnto.json")
     parser.add_argument("--uri",       default=os.getenv("NEO4J_URI"),
                         help="Neo4j bolt URI (or set NEO4J_URI)")
     parser.add_argument("--user",      default=os.getenv("NEO4J_USERNAME"),
