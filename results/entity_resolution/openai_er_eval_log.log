@@ -1,0 +1,24 @@
+2026-02-28 01:40:18,374 - INFO - Starting End-to-End Pipeline Evaluation...
+2026-02-28 01:40:18,382 - INFO - Loaded 497 manually annotated pairs from the Golden Set.
+2026-02-28 01:40:18,536 - INFO - Loaded 28800 predictions from the LLM Resolved file.
+2026-02-28 01:50:10,545 - INFO - Starting End-to-End Pipeline Evaluation...
+2026-02-28 01:50:10,554 - INFO - Loaded 497 manually annotated pairs from the Golden Set.
+2026-02-28 01:50:10,718 - INFO - Loaded 28800 predictions from the LLM Resolved file.
+2026-02-28 01:50:10,875 - INFO - Computing Recall@K for the FAISS blocking window...
+2026-02-28 02:01:19,658 - INFO - Starting End-to-End Pipeline Evaluation...
+2026-02-28 02:01:19,973 - INFO - Calculating true FAISS ranks from the original unannotated file...
+2026-02-28 02:01:20,270 - INFO - ==================================================
+2026-02-28 02:01:20,271 - INFO -  END-TO-END PIPELINE PERFORMANCE
+2026-02-28 02:01:20,271 - INFO - ==================================================
+2026-02-28 02:01:20,271 - INFO - Precision: 0.6538 (Accuracy of MATCH predictions)
+2026-02-28 02:01:20,271 - INFO - Recall:    0.5730 (Percentage of actual MATCHES successfully found)
+2026-02-28 02:01:20,271 - INFO - F1-Score:  0.6108 (Harmonic Mean)
+2026-02-28 02:01:20,271 - INFO - --------------------------------------------------
+2026-02-28 02:01:20,271 - INFO - 🔍 RECALL @ K (FAISS Neighborhood Optimization)
+2026-02-28 02:01:20,271 - INFO - Recall @  1: 49.4%
+2026-02-28 02:01:20,272 - INFO - Recall @  2: 78.7%
+2026-02-28 02:01:20,272 - INFO - Recall @  3: 100.0%
+2026-02-28 02:01:20,272 - INFO - -> 100% of true matches are captured by K=3. Searching deeper wastes compute.
+2026-02-28 02:01:20,272 - INFO - --------------------------------------------------
+2026-02-28 02:01:20,272 - INFO - Error Analysis: 65 misclassified pairs saved to openai_pipeline_errors.csv
+2026-02-28 02:01:20,272 - INFO - ==================================================

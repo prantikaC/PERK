@@ -1,0 +1,17 @@
+2026-04-13 00:25:10,347 - INFO - Starting End-to-End Pipeline Evaluation...
+2026-04-13 00:25:10,500 - INFO - Calculating true FAISS ranks from the original unannotated file...
+2026-04-13 00:25:10,650 - INFO - ==================================================
+2026-04-13 00:25:10,650 - INFO -  END-TO-END PIPELINE PERFORMANCE
+2026-04-13 00:25:10,650 - INFO - ==================================================
+2026-04-13 00:25:10,650 - INFO - Precision: 0.6591 (Accuracy of MATCH predictions)
+2026-04-13 00:25:10,650 - INFO - Recall:    0.3919 (Percentage of actual MATCHES successfully found)
+2026-04-13 00:25:10,650 - INFO - F1-Score:  0.4915 (Harmonic Mean)
+2026-04-13 00:25:10,650 - INFO - --------------------------------------------------
+2026-04-13 00:25:10,650 - INFO - 🔍 RECALL @ K (FAISS Neighborhood Optimization)
+2026-04-13 00:25:10,650 - INFO - Recall @  1: 48.6%
+2026-04-13 00:25:10,651 - INFO - Recall @  2: 74.3%
+2026-04-13 00:25:10,651 - INFO - Recall @  3: 100.0%
+2026-04-13 00:25:10,651 - INFO - -> 100% of true matches are captured by K=3. Searching deeper wastes compute.
+2026-04-13 00:25:10,651 - INFO - --------------------------------------------------
+2026-04-13 00:25:10,651 - INFO - Error Analysis: 60 misclassified pairs saved to qwen32b_pipeline_errors.csv
+2026-04-13 00:25:10,651 - INFO - ==================================================
