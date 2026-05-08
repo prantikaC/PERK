@@ -3,6 +3,7 @@ import argparse
 import gc
 import logging
 import os
+from pathlib import Path
 
 import pandas as pd
 import torch
@@ -23,7 +24,12 @@ def setup_logger(log_file):
     )
 
 
+_PROMPT_FILE = Path(__file__).resolve().parent.parent / "prompts" / "llm_judgement_prompt.txt"
+
+
 def build_prompt(golden_file):
+    sys_p = _PROMPT_FILE.read_text(encoding="utf-8")
+
     df = pd.read_csv(golden_file)
     df = df[df["label"].isin(["MATCH", "NO_MATCH"])]
 
@@ -32,16 +38,6 @@ def build_prompt(golden_file):
         df[df["label"] == "NO_MATCH"].sample(n=3, random_state=42),
     ])
 
-    sys_p = (
-        "You are an expert ontology curator. Determine if Entity 1 and Entity 2 "
-        "refer to the exact same real-world concept.\n"
-        "RULES:\n"
-        "1. Semantic equivalence matters more than exact spelling.\n"
-        "2. Acronyms matching full expansions are a MATCH.\n"
-        "3. STRICT REJECTION: Contradicting dates or emails means NO_MATCH.\n"
-        "4. Sub-components are NO_MATCH.\n"
-        "Respond ONLY with 'MATCH' or 'NO_MATCH'.\n\nEXAMPLES:\n"
-    )
     for _, r in few_shot.iterrows():
         sys_p += (
             f"Entity 1: {r['entity_label_1']} | Context: {r['evidence_1']}\n"
