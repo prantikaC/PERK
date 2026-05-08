@@ -1,0 +1,200 @@
+:START_ID,:END_ID,:TYPE,context,source
+s2,ps1,movesTo,We are pleased to confirm receipt of your recent submission to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e69
+ps1,ps2,movesTo,"The editorial office will now conduct initial checks to ensure compliance with our technical and ethical standards, as well as completeness of supporting documentation and data availability statements.",e69
+ps2,ps3,movesTo,"Upon completion of this preliminary review, your submission will proceed to associate editor assignment and peer review.",e69
+s2,ps4,movesTo,"Your manuscript has been forwarded to the assigned Associate Editor, who will oversee the peer review process.",e70
+s2,ps5,movesTo,the Associate Editor has reached the following decision: **Minor Revision Required**.,e71
+s2,ps5,movesTo,the formal “Minor Revision Required” decision,e72
+s2,ps6,movesTo,for our JOCCH minor revision (Submission ID: SUB-JOCCH-2019-0187).,e79
+s2,ps7,movesTo,"has been successfully submitted this morning via the ACM submission portal.
+...
+- **JOCCH Submission ID**: SUB-JOCCH-2019-0187
+- **Date & Time of Submission**: 15th August 2019, 09:23 IST",e83
+s2,ps4,movesTo,has passed initial editorial checks and has now been sent out for peer review.,e84
+s2,ps8,movesTo,"we are pleased to inform you that your submission has been accepted for publication, pending minor revisions.",e85
+ps9,pa6,movesTo,"positive decision from JOCCH on our manuscript, pending minor revisions (see editorial message of 10 December)",e86
+s2,ps10,movesTo,"This message is to formally acknowledge receipt of your resubmitted manuscript ...
+
+Submission ID: SUB-JOCCH-2019-0187  
+Date Received: 13th November 2019",e99
+ps10,ps11,movesTo,The editorial office has now initiated the second-round peer review as per the minor revision pathway.,e99
+s2,ps6,movesTo,a small number of additional points were raised during this round which we ask you to address before publication,e100
+s2,ps12,movesTo,This is to formally acknowledge receipt of your revised manuscript entitled,e109
+s2,ps13,movesTo,The manuscript will now be transferred to the editorial board for assessment of the minor revisions,e109
+s2,ps14,movesTo,and will be sent for final reviewer verification as needed.,e109
+s2,ps15,movesTo,"has accepted the paper pending receipt of the final, camera-ready version.",e110
+s2,ps17,movesTo,I am submitting the camera-ready package for our manuscript entitled “NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers” (Submission ID: SUB-JOCCH-2019-0187).,e116
+s2,ps18,movesTo,we have received your camera-ready submission package for the manuscript entitled ... (Submission ID: SUB-JOCCH-2019-0187) via the ScholarOne system on 18th January 2019.,e117
+ps18,ps19,movesTo,"Assuming all materials meet the publication checklist, your article is scheduled for inclusion in an upcoming JOCCH issue.",e117
+ps20,pa14,movesTo,"With that, I wholeheartedly approve the current version for submission to JCDL 2020.",e134
+s3,ps7,movesTo,"the JCDL 2020 tutorial proposal has now been officially submitted via the conference portal.
+...
+We have been assigned the following Submission ID for tracking and correspondence:
+SUB-JCDL-2020-0143",e136
+s3,ps4,movesTo,it will now be forwarded to the tutorial selection committee for review.,e137
+s3,ps16,movesTo,We are pleased to inform you that your tutorial proposal has been **accepted** for presentation at JCDL 2020,e138
+s4,ps21,movesTo,Status: Camera-ready submission received and queued for committee verification,e150
+s4,ps22,movesTo,- **Status:** Camera-ready package verified and accepted,e151
+s5,ps7,movesTo,has now been formally submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e189
+s5,ps23,movesTo,Our editorial office has initiated the preliminary technical and compliance review.,e190
+ps23,ps24,movesTo,"Once the pre-review check is completed, your manuscript will be forwarded to the Editorial Board for peer review.",e190
+s5,ps6,movesTo,your submission has been evaluated and the editorial decision is “Minor Revision.”,e191
+s5,ps9,movesTo,I am thrilled that the outcome was positive—minor revisions only!,e192
+s5,ps6,movesTo,reaching the minor revision stage for SUB-JOCCH-2020-0047.,e193
+s5,tk1002,movesTo,we finalize our minor revision for submission to JOCCH (SUB-JOCCH-2020-0047).,e197
+tk1185,tk1186,movesTo,Target for initial draft circulation: 12 November. Internal deadline for review and consolidated submission: 19 November,e197
+tk1186,tk1187,movesTo,a week ahead of the journal cutoff (26 November).,e197
+s5,ps6,movesTo,Decision: Minor Revision,e206
+s5,ps25,movesTo,editorial decision email on SUB-JOCCH-2020-0047 and summarized the main revision requests,e207
+s5,ps7,movesTo,our revised manuscript entitled “Domain Transfer Limits and Anchor-Based Reviewer Navigation for NLP on Historical Data” was submitted to the ACM Journal on Computing and Cultural Heritage.,e219
+s5,ps26,movesTo,have successfully passed the technical check and are now in the queue for editorial review.,e220
+s5,ps6,movesTo,the editorial board has reached a decision of minor revision.,e221
+s5,ps6,movesTo,the decision from the JOCCH editorial office (SUB-JOCCH-2020-0047) requires only a minor revision,e222
+s5,ps6,movesTo,our JOCCH minor revision resubmission (SUB-JOCCH-2020-0047),e225
+s5,ps6,movesTo,our JOCCH minor revision (SUB-JOCCH-2020-0047),e230
+s5,ps27,movesTo,"our fully revised minor revision manuscript, response letter, and all supplementary files for our JOCCH submission (Submission ID: SUB-JOCCH-2020-0047) were successfully uploaded and submitted via ScholarOne at 14:12 BST today.",e232
+s5,ps28,movesTo,"Your revision has now been assigned to the Associate Editor for further assessment, following which it may be forwarded to external reviewers for confirmation of revision adequacy.",e233
+s5,ps29,movesTo,"we are pleased to announce that your manuscript is **conditionally accepted**, pending minor clarifications.",e234
+s5,ps29,movesTo,conditional acceptance of our JOCCH manuscript (SUB-JOCCH-2020-0047),e235
+s6,ps18,movesTo,This is to formally acknowledge receipt of your camera-ready manuscript and supplementary materials for the submission entitled,e245
+s6,ps30,movesTo,Your submission is now being transferred to the production and editorial review teams for a final assessment prior to scheduling for publication.,e245
+s6,ps32,movesTo,"The JOCCH editorial office will now conduct a detailed pre-publication checklist for formatting, metadata accuracy, and compliance with ACM author guidelines.",e245
+s6,ps31,movesTo,"Assuming there are no outstanding technical issues, galley proofs for your article will be generated and circulated to the corresponding author for final approval prior to online publication.",e245
+s6,ps33,movesTo,has completed the editorial pre-publication process and is ready for the final production stage.,e246
+s6,ps34,movesTo,"With these minor corrections incorporated, we are confident the article will be ready for online publication.",e250
+s6,ps35,movesTo,we will proceed to schedule your article for publication in the upcoming issue of the ACM Journal on Computing and Cultural Heritage.,e251
+s6,ps35,movesTo,"has now been scheduled for publication in Volume 16, Issue 4 (September 2021)",e253
+ps36,pa42,movesTo,confirming our September issue slot and imminent DOI,e254
+ps37,pa43,movesTo,"now that our ""HistocrNLP"" paper is entering its publication phase.",e255
+s8,ps7,movesTo,has now been formally submitted to the ACL 2021 resource track.,e318
+s8,ps1,movesTo,"We are pleased to confirm receipt of your manuscript submission to the ACL 2021 Resource Track:
+
+- **Title:** ...
+- **Submission ID:** SUB-ACL-2021-0842
+- **Date Submitted:** 11th June 2019",e319
+ps1,ps38,movesTo,Your submission has been successfully entered into our review system (SOFTCONF START) and is currently under administrative compliance check.,e319
+s8,ps39,movesTo,we are pleased to inform you that your submission has been **accepted for presentation** at the ACL 2021 Resource Track,e320
+s8,ps16,movesTo,the official acceptance notification from ACL 2021 for our resource track paper (SUB-ACL-2021-0842),e321
+ps16,c10,movesTo,Let me echo everyone’s congratulations on our ACL acceptance—this is a gratifying step for our team.,e324
+ps17,tk1002,movesTo,We are now officially awaiting the final camera-ready check by the ACL admin team.,e336
+s9,ps40,movesTo,"The submission is now under formal review by the camera-ready compliance team for a final check on formatting, required checklists, and repository links.",e337
+s9,ps16,movesTo,has passed the final compliance review and has been officially accepted for publication in the ACL 2021 conference proceedings.,e338
+s9,ps16,movesTo,"Your accepted paper, ""Provenance-Aware NLP for Historical Texts: Annotation, Compliance, and Synthetic Instance Protocols"" (Submission ID: SUB-ACL-2021-0471)",e341
+s9,ps16,movesTo,"our accepted paper, ""Provenance-Aware NLP for Historical Texts..."" (Submission ID: SUB-ACL-2021-0471)",e342
+s10,ps41,movesTo,Presenting Author Registration: Your registration under reference number ACL2021-REG-18542 has been verified in our system.,e345
+s9,ps42,movesTo,"Thank you for submitting the revised abstract for your paper, ""Provenance-Aware NLP for Historical Texts: Annotation, Compliance, and Synthetic Instance Protocols"" (Submission ID: SUB-ACL-2021-0471).",e350
+ps42,ps43,movesTo,Please expect a final confirmation regarding the successful incorporation of your revised abstract by 31st October 2019.,e350
+s9,ps44,movesTo,has been reviewed and officially incorporated into the ACL 2021 online proceedings and printed program,e351
+s11,ps7,movesTo,I have successfully submitted our oral presentation materials ... to the ACL 2021 submission portal,e365
+s11,ps16,movesTo,your oral presentation submission has been **ACCEPTED** for presentation at ACL 2021.,e366
+s12,ps7,movesTo,our camera-ready package for ACL 2022 has been officially submitted as of this morning.,e378
+s12,ps18,movesTo,We are pleased to confirm receipt of your camera-ready materials for your paper submitted to ACL 2022,e379
+s12,ps16,movesTo,"your paper has been ACCEPTED for presentation at the main conference, and will appear in the official proceedings.",e380
+s12,ps16,movesTo,our paper “NLP Methods for Historical Data: Provenance and Bias Mitigation” has been officially ACCEPTED for presentation at ACL 2022 (SUB-ACL-2022-0047).,e381
+s13,ps7,movesTo,"has been successfully submitted this afternoon to the ACM Journal on Computing and Cultural Heritage (JOCCH).
+
+The JOCCH editorial system has acknowledged receipt and assigned the following Submission ID for our reference: SUB-JOCCH-2022-0362.",e426
+s13,ps45,movesTo,status remains under editorial review.,e446
+s14,ps4,movesTo,your submission has been received and is now under review.,e476
+s14,ps8,movesTo,your submission to JCDL 2022 entitled “Cross-Institutional Protocols for Metadata and Embargo: An Integrated FAQ Annex” (Submission ID: SUB-JCDL-2022-0432) has been accepted **with minor revisions**.,e477
+ps46,pa79,movesTo,with just a handful of minor revisions required.,e478
+s14,ps47,movesTo,our camera-ready manuscript for JCDL 2022 (Submission ID: SUB-JCDL-2022-0432) has been uploaded via the official submission portal,e484
+s14,ps16,movesTo,your manuscript is officially accepted into the JCDL 2022 proceedings.,e485
+s15,ps7,movesTo,"Thank you, Ananya, for swiftly handling our submission to the JCDL 2022 spotlight session and for circulating the Submission ID (SUB-JCDL-2022-0092)",e533
+s16,ps7,movesTo,"has been successfully uploaded to the conference submission portal this morning.
+
+Submission Details:
+- ...
+- Submission ID: SUB-JCDL-2022-1189
+- Date/Time Submitted: 21st September 2020, 09:14 AM (IST)",e548
+s16,ps7,movesTo,"- Submission Type: Spotlight Session (Pre-recorded Video + Supplementary Materials)
+- Date Submitted: 21st September 2020",e549
+ps7,ps4,movesTo,Peer review will now begin according to the conference schedule.,e549
+ps48,tk3549,movesTo,"As of today, JCDL’s proceedings submission deadline is projected for 23rd November 2020",e592
+s17,ps7,movesTo,has now been successfully submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH),e611
+s17,ps45,movesTo,have passed our initial technical checks and are now under editorial review.,e612
+tk1002,tk1309,movesTo,as we move into the editorial screening phase ... Timely completion will prevent any delays in progressing to peer review.,e613
+s17,ps49,movesTo,I am pleased to confirm that I have completed the ACM copyright agreement earlier today. The portal confirmation message indicated that my submission is now recorded,e614
+s17,ps50,movesTo,confirming that our manuscript has now progressed past the initial technical and scope screening.,e616
+ps50,ps51,movesTo,The editorial notice states that the manuscript is being forwarded to the assigned Associate Editor for reviewer selection.,e616
+s17,ps52,movesTo,our manuscript and supporting files have cleared initial checks without any need for technical revisions.,e617
+s17,ps53,movesTo,the JOCCH editorial system indicates that our paper has now formally entered the external peer review phase,e624
+s18,ps7,movesTo,"The submission, including all accompanying supplementary material, was successfully uploaded to our system on 3rd January 2021.",e646
+ps7,ps4,movesTo,Preliminary format checks and administrative review will be completed within the next two weeks.,e646
+ps4,ps54,movesTo,Notification of acceptance or requests for minor revision will be sent to the corresponding author (Dr. Ananya Chatterjee) by 10th March 2021.,e646
+s18,ps4,movesTo,Preliminary format checks and administrative review will be completed within the next two weeks.,e646
+s18,ps54,movesTo,Notification of acceptance or requests for minor revision will be sent to the corresponding author (Dr. Ananya Chatterjee) by 10th March 2021.,e646
+s18,tk1002,movesTo,Preliminary format checks and administrative review will be completed within the next two weeks.,e646
+s18,tk3938,movesTo,Notification of acceptance or requests for minor revision will be sent to the corresponding author (Dr. Ananya Chatterjee) by 10th March 2021.,e646
+s18,ps16,movesTo,has been ACCEPTED for presentation at JCDL 2023.,e647
+s19,ps1,movesTo,The automated confirmation reiterated successful receipt of both our main manuscript and all supplementary files.,e663
+ps1,ps4,movesTo,Expected timeline: Initial review results around 31st May 2021.,e663
+s19,ps16,movesTo,has been **ACCEPTED** for presentation at the conference.,e664
+s20,ps7,movesTo,have now been successfully submitted to the JCDL 2023 portal. ... **Submission ID:** SUB-JCDL-2023-0147,e675
+s20,ps18,movesTo,We are pleased to confirm the receipt of your camera-ready submission to the 2023 Joint Conference on Digital Libraries (JCDL),e676
+s20,ps55,movesTo,your submission (ID: SUB-JCDL-2023-0147) has successfully passed our administrative compliance check,e677
+s20,ps56,movesTo,we can now assert with confidence that all administrative obligations have been met for SUB-JCDL-2023-0147.,e681
+s20,ps57,movesTo,your entire team is now fully compliant with the final administrative and procedural requirements for inclusion in the JCDL 2023 proceedings.,e683
+s20,ps58,movesTo,"If no issues are found, your paper will be forwarded to the production queue.",e683
+s22,ps7,movesTo,I have today initiated our manuscript submission to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e734
+s22,ps7,movesTo,"Thank you, Ramesh, for submitting our manuscript and for your meticulous orchestration...",e735
+s22,ps59,movesTo,the manuscript has been provisionally accepted pending a set of minor revisions.,e739
+s22,ps60,movesTo,The Editorial Manager portal confirms our resubmission and indicates that the processing status is now set to “Minor Revision – Materials Submitted.”,e743
+s22,ps61,movesTo,Your manuscript now enters the final editorial assessment phase.,e744
+s22,ps16,movesTo,has been formally accepted for publication in the ACM Journal on Computing and Cultural Heritage.,e745
+s22,ps16,movesTo,I am delighted to share the acceptance notification from the JOCCH Editorial Office regarding our manuscript,e746
+ps16,ps62,movesTo,achieving publication in ACM’s Journal on Computing and Cultural Heritage!,e746
+s22,ps63,movesTo,"the ACM production team has just sent the galley proofs for our JOCCH article, “Semantic Adjudication and Entity Agreement Protocols for Historical South Asian Legal Texts” (SUB-JOCCH-2023-0193).",e750
+s22,ps64,movesTo,I have now consolidated the proof corrections from our shared Google Sheet and am preparing the final correction form for submission to ACM Production for our article (SUB-JOCCH-2023-0193).,e754
+s22,ps65,movesTo,We would like to acknowledge receipt of your consolidated proof corrections for your article “Semantic Adjudication and Entity Agreement Protocols for Historical South Asian Legal Texts” (Submission ID: SUB-JOCCH-2023-0193).,e756
+s22,ps66,movesTo,The production office will complete all correction executions by 4th October 2021.,e756
+s22,ps67,movesTo,Your article remains scheduled for online publication in the August 2023 issue of JOCCH.,e756
+s23,ps7,movesTo,"our manuscript ... has been officially submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) this afternoon. The full package ... was uploaded via the ACM submission portal, and the system has issued our submission acknowledgment",e778
+ps7,ps68,movesTo,"The journal’s notification states that initial editorial checks will be completed within 7–10 days, after which the manuscript will proceed to peer review.",e778
+ps68,ps69,movesTo,"initial editorial checks will be completed within 7–10 days, after which the manuscript will proceed to peer review.",e778
+s23,ps70,movesTo,your manuscript entitled “Transparent Documentation Pipelines for Multilingual NLP on Historical Data: Compliance and Workflow Reflections” (Submission ID: SUB-JOCCH-2023-0782) has successfully passed the initial editorial screening.,e779
+s23,ps71,movesTo,**Decision: Major Revision**,e780
+s25,ps7,movesTo,"has been successfully submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) this afternoon. Please find the official submission details below:
+
+**Submission ID:** SUB-JOCCH-2023-0843",e794
+s26,ps72,movesTo,Decision: Revise & Resubmit,e819
+s27,ps4,movesTo,Your paper has been successfully uploaded and is now under review.,e836
+s27,ps16,movesTo,we are pleased to inform you that your paper has been **ACCEPTED** for presentation at ACL 2024.,e837
+ps16,pa143,movesTo,"First, a heartfelt congratulations to the entire team for our acceptance at ACL 2024!",e838
+s28,ps16,movesTo,your paper has been **ACCEPTED** for presentation at ACL2024 and inclusion in the conference proceedings,e856
+s28,ps16,movesTo,"Congratulations again on the acceptance of your submission, “Annotation Strategies and Workflow Transparency for 19th-Century Bengali-English Historical Texts” (Submission ID: SUB-ACL-2024-0193), to ACL2024.",e857
+s29,ps18,movesTo,"This is to acknowledge receipt of your camera-ready manuscript and supplementary materials for your accepted paper, submitted under Submission ID: SUB-ACL-2024-2386",e866
+ps18,ps73,movesTo,Our technical and publication teams will be conducting a final compliance check to ensure your files adhere to ACL2024 guidelines,e866
+ps73,ps74,movesTo,"A confirmation of technical compliance, and/or notification of required corrections, will be sent by 17th May 2022.",e866
+ps74,ps75,movesTo,"Upon approval, your manuscript will be queued for inclusion in the formal conference proceedings.",e866
+s29,ps16,movesTo,Your paper is now officially accepted into the ACL2024 proceedings and will be published as part of the formal record.,e867
+s30,ps7,movesTo,has been formally submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e895
+s30,ps1,movesTo,"We are pleased to confirm receipt of your submission, which has been assigned the following tracking number:
+
+**Submission ID:** SUB-JOCCH-2024-0421",e896
+s30,ps8,movesTo,"we are pleased to inform you that your submission has been accepted for publication, pending minor revisions.",e897
+s30,ps76,movesTo,has been accepted pending minor revisions,e898
+s30,ps10,movesTo,Date of resubmission: 23rd September 2022,e904
+s30,ps7,movesTo,confirming the successful submission of our revised resource note to JOCCH (SUB-JOCCH-2024-0421),e905
+ps77,pa155,movesTo,Once our JOCCH article is formally accepted,e907
+ps78,pa155,movesTo,as soon as we have a response from the JOCCH editorial office,e907
+s30,ps7,movesTo,"has been formally submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) today.
+
+**Submission details:**
+- Submission ID: SUB-JOCCH-2024-0421",e932
+s30,ps1,movesTo,"We are pleased to confirm receipt of your manuscript entitled “Practical Workflows for NLP on International Historical Archival Data: Legal, Technical, and Community Lessons Learned” submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) on 22nd October 2022.",e933
+s30,ps79,movesTo,"Your submission package (main manuscript, figures, supplementary appendices, and author cover letter) has passed our initial technical check.",e933
+ps79,ps80,movesTo,The manuscript will now be assigned to an Associate Editor who will perform a preliminary assessment before proceeding to full peer review.,e933
+ps80,ps81,movesTo,who will perform a preliminary assessment before proceeding to full peer review.,e933
+s30,ps71,movesTo,**Editorial Decision:** Major Revision,e934
+s31,ps7,movesTo,has been successfully submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) as of this morning.,e951
+s31,ps4,movesTo,"Your manuscript will now move to the full peer review phase, under the supervision of an Associate Editor.",e952
+s31,ps82,movesTo,Decision: Major Revision Required,e953
+s31,ps83,movesTo,forwarding the editorial decision and detailed reviewer comments regarding our JOCCH submission (SUB-JOCCH-2024-1143),e954
+s32,ps7,movesTo,"has been formally submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) as of today, 27th January 2022",e971
+s32,ps1,movesTo,- Date received: 27th January 2022,e972
+s32,ps71,movesTo,the reviewers have recommended a major revision prior to potential acceptance for publication.,e973
+s32,ps71,movesTo,"The verdict is ‘major revision’, which is encouraging",e974
+s33,ps7,movesTo,has been successfully uploaded and submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) portal as of 10:15 IST today. ... Date of Submission: 14th March 2022,e988
+s33,ps84,movesTo,We are writing to formally acknowledge receipt of your major revision submission to the ACM Journal on Computing and Cultural Heritage (JOCCH):,e989
+tk6069,tk6070,movesTo,"Once we have compiled the reviewer feedback from JOCCH (hopefully soon!), we can finalize the angle and intended venue.",e993

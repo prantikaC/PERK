@@ -1,0 +1,28 @@
+:START_ID,:END_ID,:TYPE,context,source
+pa1,tk1,hasPaperInfo,I wanted to propose a new research project on Temporal Sentiment Analysis in Historical Archives.,e1
+pa3,d193,hasPaperInfo,"your dataset, the technical reproducibility of your validation pipeline, and your careful integration of compliance documentation.",e71
+pa7,me143,hasPaperInfo,"manuscript, entitled “NER Methodology and Heritage Data: A Multilingual Benchmark for Bengali-English Colonial Documents,”",e99
+pa7,d75,hasPaperInfo,"manuscript, entitled “NER Methodology and Heritage Data: A Multilingual Benchmark for Bengali-English Colonial Documents,”",e99
+pa20,j8,hasPaperInfo,Your submission files and ancillary materials will be preserved in the ACM Digital Library as part of the official JCDL proceedings.,e151
+pa42,pb1,hasPaperInfo,You will receive a notification with the anticipated publication date and digital object identifier (DOI) once the online version is available.,e251
+pa42,pb1,hasPaperInfo,"scheduled for publication in Volume 16, Issue 4 (September 2021) of the ACM Journal on Computing and Cultural Heritage.",e253
+pa43,pb1,hasPaperInfo,once the DOI and URL are provided,e255
+pa45,me142,hasPaperInfo,New Publication Announcement: HistocrNLP—Reproducible NLP Pipeline for Historical Corpora,e262
+pa46,mg130,hasPaperInfo,"the public registration link for our “NLP Methods for Historical Data: Global Challenges, Local Contexts” webinar is now live and accessible to all invitees: https://events.iacs.res.in/histocrnlp.",e277
+pa68,pb1,hasPaperInfo,"JOCCH, 16(2), 105-128.",e406
+pa69,pb1,hasPaperInfo,"Journal of Documentation, 79(1), 48-71.",e406
+pa70,pb1,hasPaperInfo,"ACM Computing Surveys, 56(4), Article 78.",e406
+pa98,pb1,hasPaperInfo,submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH),e611
+tk1002,pb1,hasPaperInfo,our collaborative annotated bibliography template is now live. Please access it here: https://docs.google.com/document/d/1Annotated-Bibliography-NLP-History-2022/edit?usp=sharing,e630
+pa111,j23,hasPaperInfo,our plan to draft the arXiv preprint version once we have final compliance clearance.,e663
+pa118,pb1,hasPaperInfo,"Please use the ACM JOCCH LaTeX template (latest version, available at: https://dl.acm.org/journal/jocch/author-guidelines)",e721
+pa123,pb1,hasPaperInfo,Your article remains scheduled for online publication in the August 2023 issue of JOCCH.,e756
+pa140,pb1,hasPaperInfo,"“Digitizing Heritage: Protocol Challenges in Southeast Asian Archives,” Journal of Documentation, 2021.",e831
+pa141,pb1,hasPaperInfo,"“Frameworks for Data Reuse in African Cultural Heritage Projects,” ACM JOCCH, 2022.",e831
+pa142,pb1,hasPaperInfo,- Submission Portal: https://acl2024.org/submissions/0483,e836
+pa142,pb1,hasPaperInfo,reviewer comments and meta-review available on your submission portal at https://acl2024.org/submissions/0483.,e837
+pa146,pb1,hasPaperInfo,"the newly published peer-reviewed source (“Chattopadhyay et al., JDoc 2023”)",e864
+pa152,pb2,hasPaperInfo,"Supplementary Historical Newspapers Dataset. Zenodo. https://doi.org/10.5281/zenodo.xxxxxx [dataset, embargo until DD/MM/YYYY].",e901
+d400,pb2,hasPaperInfo,"Supplementary Historical Newspapers Dataset. Zenodo. https://doi.org/10.5281/zenodo.xxxxxx [dataset, embargo until DD/MM/YYYY].",e901
+pa165,j1,hasPaperInfo,I approve the final manuscript and accompanying documents for formal submission to JOCCH.,e970
+pa166,pb1,hasPaperInfo,You may track the status of your manuscript by logging into your account on the JOCCH submission portal at https://mc.manuscriptcentral.com/jocch.,e972

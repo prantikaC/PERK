@@ -1,0 +1,354 @@
+:START_ID,:END_ID,:TYPE,context,source
+s1,c3,inVenue,"our manuscript, titled “Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data,” has been successfully submitted to ACL 2019. We have received the official submission confirmation, and our Submission ID is SUB-ACL-2019-0374.",e49
+j1,tk1002,inVenue,General agreement on JOCCH as primary target for an extended journal version,e54
+j2,tk1002,inVenue,Journal Extension (JOCCH/JDoc),e54
+s2,j3,inVenue,The ScholarOne platform has assigned the following Submission ID for reference: SUB-JOCCH-2019-0187.,e68
+s2,j3,inVenue,We are pleased to confirm receipt of your recent submission to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e69
+s2,j3,inVenue,submitted to the ACM Journal on Computing and Cultural Heritage.,e70
+s2,j1,inVenue,the latest JOCCH notification (SUB-JOCCH-2019-0187),e72
+s2,j1,inVenue,point-by-point response letter based on the reviewer reports (SUB-JOCCH-2019-0187),e76
+s2,j5,inVenue,our minor revision of the manuscript for the ACM JOCCH (Submission ID: SUB-JOCCH-2019-0187).,e77
+s2,j1,inVenue,for our JOCCH minor revision (Submission ID: SUB-JOCCH-2019-0187).,e79
+s2,j3,inVenue,"our revised manuscript package for the ACM Journal on Computing and Cultural Heritage (JOCCH) has been successfully submitted this morning via the ACM submission portal.
+...
+- **JOCCH Submission ID**: SUB-JOCCH-2019-0187",e83
+s2,j3,inVenue,Thank you for choosing the ACM Journal on Computing and Cultural Heritage for your work.,e84
+s2,j3,inVenue,"your manuscript submitted to the ACM Journal on Computing and Cultural Heritage, entitled ...",e85
+pa6,j1,inVenue,"positive decision from JOCCH on our manuscript, pending minor revisions",e86
+s2,j3,inVenue,I have now formally submitted our revised manuscript ... to the ACM Journal on Computing and Cultural Heritage (Submission ID: SUB-JOCCH-2019-0187).,e98
+s2,j3,inVenue,"your resubmitted manuscript, entitled “NER Methodology and Heritage Data: A Multilingual Benchmark for Bengali-English Colonial Documents,” to the ACM Journal on Computing and Cultural Heritage.
+
+Submission ID: SUB-JOCCH-2019-0187",e99
+s2,j3,inVenue,"your resubmission to the ACM Journal on Computing and Cultural Heritage, entitled “NER Methodology and Heritage Data: A Multilingual Benchmark for Bengali-English Colonial Documents” (Submission ID: SUB-JOCCH-2019-0187).",e100
+ps6,j1,inVenue,"we progress to the final rounds of our JOCCH submission. I trust you have seen the editorial office’s decision email (12 Jan), which summarizes the minor revision requests.",e101
+s2,j3,inVenue,"submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) as of earlier today. Submission was completed through the ScholarOne system, under Submission ID: SUB-JOCCH-2019-0187.",e108
+s2,j1,inVenue,"submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) as of earlier today. Submission was completed through the ScholarOne system, under Submission ID: SUB-JOCCH-2019-0187.",e108
+s2,j3,inVenue,"submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH), under Submission ID: SUB-JOCCH-2019-0187.",e109
+s2,j3,inVenue,the editorial board at the ACM Journal on Computing and Cultural Heritage (JOCCH) has accepted the paper,e110
+ps16,j1,inVenue,Congratulations to everyone on receiving the formal acceptance (pending camera-ready files) from JOCCH—this is a significant milestone for our team!,e111
+s2,j1,inVenue,camera-ready submission to JOCCH (SUB-JOCCH-2019-0187),e114
+s2,j5,inVenue,Per your acceptance notification and the ACM JOCCH (v2020) guidelines,e116
+s2,j5,inVenue,Thank you for your diligent adherence to the ACM JOCCH camera-ready guidelines.,e117
+pa10,c6,inVenue,"a workflow/methods tutorial aimed at JCDL 2020, including a possible abstract title: “Reproducible NLP Workflows for Historical Datasets: Lessons from a Cross-Lingual Gazetteer Project.”",e126
+pa11,c6,inVenue,as assigned for the JCDL tutorial proposal.,e127
+pa12,c6,inVenue,for the JCDL reviewer audience—especially in the context of cross-lingual reproducibility challenges.,e128
+pa13,c21,inVenue,Your communication regarding both the format and the content requirements for JCDL is extremely helpful.,e132
+pa14,c6,inVenue,"With that, I wholeheartedly approve the current version for submission to JCDL 2020.",e134
+s3,c6,inVenue,"I am pleased to inform you that the JCDL 2020 tutorial proposal has now been officially submitted via the conference portal.
+...
+We have been assigned the following Submission ID for tracking and correspondence:
+SUB-JCDL-2020-0143",e136
+s3,c8,inVenue,Thank you for your submission to the ACM/IEEE Joint Conference on Digital Libraries (JCDL) 2020.,e137
+s3,c6,inVenue,"On behalf of the JCDL 2020 Tutorials Committee, we thank you for your submission:
+
+""Entity Normalization, Reproducibility, and FAIR Data Management in Historical NLP: A Workflow Tutorial""
+Submission ID: SUB-JCDL-2020-0143",e138
+pa16,c6,inVenue,Congratulations to everyone on the acceptance of our JCDL 2020 tutorial proposal!,e139
+pa17,c6,inVenue,finalizing the camera-ready submission for the JCDL 2020 tutorial.,e144
+pa19,c6,inVenue,the finalized version of the screencast for our JCDL 2020 camera-ready submission,e146
+s4,c6,inVenue,our camera-ready submission for the JCDL 2020 tutorial ... Submission ID: SUB-JCDL-2020-0718,e150
+s4,c6,inVenue,"On behalf of the JCDL 2020 committee, we extend our congratulations and confirm the official acceptance of your camera-ready materials.",e151
+c6,mg65,inVenue,yesterday’s rehearsal for our JCDL 2020 tutorial.,e156
+c6,mg66,inVenue,The conference organizers will reach out on 24 July with our official Zoom presentation link and access instructions.,e156
+pa22,j1,inVenue,I am delighted by the prospect of moving our work forward through a survey/methods article for JOCCH.,e165
+pa23,j1,inVenue,Thank you all for your active participation and thoughtful contributions during today’s planning meeting for our JOCCH submission.,e173
+tk1002,j1,inVenue,Looking forward to our collaborative discussion and the final steps ahead of JOCCH submission.,e185
+s5,j3,inVenue,has now been formally submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH). ... Our submission has been assigned the following ID ... SUB-JOCCH-2020-0047.,e189
+s5,j3,inVenue,Thank you for your submission to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e190
+s5,j3,inVenue,submitted to the ACM Journal on Computing and Cultural Heritage (Submission ID: SUB-JOCCH-2020-0047).,e191
+s5,j1,inVenue,I have carefully read the decision letter and attached reviewer feedback from the JOCCH Editorial Office (SUB-JOCCH-2020-0047),e192
+s5,j1,inVenue,reaching the minor revision stage for SUB-JOCCH-2020-0047.,e193
+s5,j1,inVenue,we finalize our minor revision for submission to JOCCH (SUB-JOCCH-2020-0047).,e197
+tk1002,j1,inVenue,so we can submit a comprehensive and polished revision to JOCCH.,e201
+tk1210,j3,inVenue,I plan to proceed with our formal submission to the ACM Journal on Computing and Cultural Heritage through their online portal.,e203
+s5,j3,inVenue,today’s submission to the ACM Journal on Computing and Cultural Heritage (SUB-JOCCH-2020-0047),e204
+s5,j3,inVenue,submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH). Your revision and all supplementary documents have been successfully uploaded,e205
+s5,j3,inVenue,"We thank you for submitting your work to JOCCH and look forward to receiving your revision.
+
+Best regards,
+
+The JOCCH Editorial Office
+ACM Journal on Computing and Cultural Heritage",e206
+s5,j1,inVenue,editorial decision email on SUB-JOCCH-2020-0047,e207
+pa28,j1,inVenue,our JOCCH manuscript,e207
+s5,j1,inVenue,final pre-submission phase of our JOCCH minor revision (SUB-JOCCH-2020-0047).,e216
+pa32,j1,inVenue,Inline citations have been aligned following JOCCH’s guidelines,e217
+s5,j3,inVenue,Submission was completed via the JOCCH ScholarOne portal. The system has assigned the following tracking ID: SUB-JOCCH-2020-0047.,e219
+s5,j3,inVenue,your revised manuscript submission to the ACM Journal on Computing and Cultural Heritage (JOCCH):,e220
+s5,j3,inVenue,your revised submission to the ACM Journal on Computing and Cultural Heritage (JOCCH):,e221
+s5,j1,inVenue,the decision from the JOCCH editorial office (SUB-JOCCH-2020-0047) requires only a minor revision,e222
+s5,j1,inVenue,our JOCCH minor revision resubmission (SUB-JOCCH-2020-0047),e225
+s5,j1,inVenue,our JOCCH minor revision tasks (SUB-JOCCH-2020-0047),e226
+s5,j1,inVenue,our JOCCH minor revision package (SUB-JOCCH-2020-0047),e227
+s5,j1,inVenue,our JOCCH minor revision (SUB-JOCCH-2020-0047),e229
+s5,j1,inVenue,"our fully revised minor revision manuscript, response letter, and all supplementary files for our JOCCH submission (Submission ID: SUB-JOCCH-2020-0047)",e232
+s5,j3,inVenue,Submission ID: SUB-JOCCH-2020-0047) to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e233
+s5,j3,inVenue,"your revised submission to the ACM Journal on Computing and Cultural Heritage (JOCCH), “Cross-Language NLP Pipelines ...” (Submission ID: SUB-JOCCH-2020-0047).",e234
+s5,j1,inVenue,conditional acceptance of our JOCCH manuscript (SUB-JOCCH-2020-0047),e235
+pa36,j11,inVenue,"""The Global Historical Press Corpus (GHPC): Multilingual Newspapers, 1850–1950."" _Language Resources and Evaluation_, 56(3), pp. 655–681.",e236
+pa37,j12,inVenue,"""HISTEXT-21: Annotated Parliamentary Debates and Legislative Documents, 1800–1930."" _Journal of Open Humanities Data_, 9(1): 24.",e236
+pa38,j1,inVenue,"I have uploaded the updated notebook as an HTML export, along with an annotated preview screenshot, to our “CameraReady_JOCCH_Revision” folder.",e239
+pa39,j1,inVenue,I have now reviewed all files in the “CameraReady_JOCCH_Revision” folder.,e240
+pa40,j1,inVenue,final ScholarOne submission of our JOCCH camera-ready manuscript,e243
+s6,j3,inVenue,"uploaded to ScholarOne for the ACM Journal on Computing and Cultural Heritage (JOCCH).
+
+**Submission ID for your reference:**  
+SUB-JOCCH-2021-0612",e244
+s6,j3,inVenue,Thank you for choosing the ACM Journal on Computing and Cultural Heritage.,e245
+s6,j3,inVenue,your article will be scheduled for online publication in the forthcoming issue of the ACM Journal on Computing and Cultural Heritage.,e246
+s6,j1,inVenue,"our JOCCH submission (“HistocrNLP: A Reproducible NLP Pipeline for Historical Texts across Domains,” SUB-JOCCH-2021-0612)",e247
+s6,j1,inVenue,"Dear JOCCH Editorial Office,",e250
+s6,j3,inVenue,we will proceed to schedule your article for publication in the upcoming issue of the ACM Journal on Computing and Cultural Heritage.,e251
+s6,j3,inVenue,"scheduled for publication in Volume 16, Issue 4 (September 2021) of the ACM Journal on Computing and Cultural Heritage.",e253
+pa42,j1,inVenue,"the forthcoming publication of our article, ""HistocrNLP: A Reproducible NLP Pipeline for Historical Texts across Domains,"" in JOCCH.",e254
+pa45,j3,inVenue,"the recent publication of ""HistocrNLP: An Open and Reproducible NLP Pipeline for Historical Corpora"" in the ACM Journal on Computing and Cultural Heritage.",e262
+pa51,c14,inVenue,our ACL 2022 resource track manuscript,e302
+s8,c17,inVenue,has now been formally submitted to the ACL 2021 resource track.,e318
+s8,c10,inVenue,We are pleased to confirm receipt of your manuscript submission to the ACL 2021 Resource Track:,e319
+s8,c17,inVenue,"your submission to the ACL 2021 Resource Track:
+
+- Title: Deploying Synthetic Preview and Embargo Protocols for Multilingual Historical NLP Resources
+- Submission ID: SUB-ACL-2021-0842",e320
+pa53,c17,inVenue,your submission has been **accepted for presentation** at the ACL 2021 Resource Track,e320
+s8,c10,inVenue,the official acceptance notification from ACL 2021 for our resource track paper (SUB-ACL-2021-0842),e321
+pa55,c1,inVenue,acceptance of our ACL resource track paper,e323
+pa58,c10,inVenue,Thank you for clarifying the harmonization stage progress and outlining the immediate next steps for the ACL 2021 camera-ready submission.,e334
+pa59,c10,inVenue,the final template and macro checks for our ACL 2021 manuscript are complete.,e335
+s9,c10,inVenue,"We are writing to acknowledge receipt of your camera-ready manuscript and supplementary files submitted to ACL 2021. Your submission, titled ... has been recorded under Submission ID: SUB-ACL-2021-0471.",e337
+s9,c10,inVenue,has been officially accepted for publication in the ACL 2021 conference proceedings.,e338
+s9,c10,inVenue,We are delighted to share the next phase of the process for ACL 2021.,e341
+s9,c10,inVenue,"regarding session scheduling and registration for ACL 2021 ... our accepted paper, ""Provenance-Aware NLP for Historical Texts..."" (Submission ID: SUB-ACL-2021-0471)",e342
+s9,c10,inVenue,following the outlined registration steps for ACL 2021.,e343
+s10,c10,inVenue,Thank you for your prompt submission of the registration details and the proceedings release form for ACL 2021. - Presenting Author Registration: Your registration under reference number ACL2021-REG-18542 has been verified in our system.,e345
+pa61,c10,inVenue,We are delighted to have your contribution as part of the ACL 2021 proceedings,e345
+s9,c10,inVenue,"We are pleased to announce that the final program for ACL 2021 has now been released. Your oral presentation, ""Provenance-Aware NLP for Historical Texts: Annotation, Compliance, and Synthetic Instance Protocols"" (Submission ID: SUB-ACL-2021-0471), is scheduled as follows:",e346
+s9,c10,inVenue,"Dear ACL 2021 Program Coordination Team, ... our accepted paper, ""Provenance-Aware NLP for Historical Texts: Annotation, Compliance, and Synthetic Instance Protocols"" (Submission ID: SUB-ACL-2021-0471).",e347
+s9,c10,inVenue,I look forward to your confirmation and to presenting our work at ACL 2021.,e349
+s9,c10,inVenue,in accordance with ACL 2021’s publication guidelines and character limits.,e350
+s9,c10,inVenue,officially incorporated into the ACL 2021 online proceedings and printed program,e351
+pa62,c10,inVenue,the abstract revision process and its successful integration into the ACL 2021 proceedings.,e352
+s11,c10,inVenue,I have successfully submitted our oral presentation materials ... to the ACL 2021 submission portal,e365
+s11,c10,inVenue,"On behalf of the ACL 2021 Program Committee, we would like to thank you for your submission entitled",e366
+ps16,c10,inVenue,the acceptance of our oral presentation at ACL 2021,e367
+s12,c14,inVenue,our camera-ready package for ACL 2022 has been officially submitted,e378
+s12,c14,inVenue,"your paper submitted to ACL 2022: 
+
+**Submission ID:** SUB-ACL-2022-0047",e379
+s12,c14,inVenue,"your camera-ready submission for ACL 2022 (Submission ID: SUB-ACL-2022-0047, “NLP Methods for Historical Data: Provenance and Bias Mitigation”)",e380
+pa66,c14,inVenue,"your paper has been ACCEPTED for presentation at the main conference, and will appear in the official proceedings.
+
+**Key Acceptance Details:**
+- Your submission is now formally included in the ACL 2022 program.",e380
+s12,c14,inVenue,our paper “NLP Methods for Historical Data: Provenance and Bias Mitigation” has been officially ACCEPTED for presentation at ACL 2022 (SUB-ACL-2022-0047).,e381
+mg189,c14,inVenue,"the ACL 2022 organizing committee has just notified us of our oral presentation slot: we have been assigned to the “Historical Data & Societal NLP” session on 30th January 2020, 11:00–11:20 AM (UTC+2).",e385
+pa67,c1,inVenue,The deck has been uploaded to our shared Google Drive folder under “ACL_2022_Presentation_FINAL.pptx”.,e389
+mg197,c14,inVenue,"confirm your readiness for the conference session on 25 July. We are well-positioned to deliver an impactful presentation, showcasing the strength of our interdisciplinary efforts.",e391
+mg201,c14,inVenue,Checklist for 25 July ACL 2022 Session,e397
+pa68,j1,inVenue,"“Transformer-Based Sequence Correction for Historical OCR Errors.” JOCCH, 16(2), 105-128.",e406
+pa69,j2,inVenue,"“Domain Adaptation for OCR in Multilingual Historical Archives.” Journal of Documentation, 79(1), 48-71.",e406
+pa70,j14,inVenue,"“Post-Correction Pipelines for Historical Manuscript OCR: A Comprehensive Survey.” ACM Computing Surveys, 56(4), Article 78.",e406
+tk1002,j1,inVenue,in preparation for our JOCCH submission.,e419
+s13,j3,inVenue,"has been successfully submitted this afternoon to the ACM Journal on Computing and Cultural Heritage (JOCCH).
+
+The JOCCH editorial system has acknowledged receipt and assigned the following Submission ID for our reference: SUB-JOCCH-2022-0362.",e426
+s13,j1,inVenue,I have now verified the JOCCH Editorial Manager confirmation ... as we await the editorial decision for SUB-JOCCH-2022-0362,e427
+s13,j1,inVenue,our JOCCH submission (SUB-JOCCH-2022-0362) proceeds through review.,e431
+s13,j1,inVenue,Planning for follow-up communications pending reviewer decision on SUB-JOCCH-2022-0362.,e436
+s13,j1,inVenue,"Prof. Bhatia, your compliance and institutional language suggestions have ensured both alignment with JOCCH and our home institutions.",e437
+s13,j1,inVenue,continue monitoring the status of our JOCCH submission (SUB-JOCCH-2022-0362).,e438
+s13,j1,inVenue,I have just received a brief note from the JOCCH editorial office indicating that our submission (SUB-JOCCH-2022-0362) has passed initial technical checks,e439
+s13,j1,inVenue,our JOCCH submission (SUB-JOCCH-2022-0362),e443
+pa23,j1,inVenue,our JOCCH submission (SUB-JOCCH-2022-0362),e443
+s13,j1,inVenue,"Status update on JOCCH submission (SUB-JOCCH-2022-0362), including any recent communication from the editorial office.",e444
+s13,j1,inVenue,JOCCH Submission Status (SUB-JOCCH-2022-0362):,e446
+tk2687,j1,inVenue,approval and joint sign-off of the harmonized embargo log as version-locked for the JOCCH workflow,e449
+s13,j1,inVenue,as we await the editorial outcome from JOCCH (SUB-JOCCH-2022-0362).,e450
+pa75,c19,inVenue,This document will be a vital part of our press engagement for JCDL 2022.,e468
+pa76,c19,inVenue,I look forward to reviewing your insert and believe its practical framing will be invaluable for our JCDL 2022 submission.,e470
+pa76,c19,inVenue,will be essential for a seamless JCDL 2022 submission.,e472
+pa77,c19,inVenue,post-meeting deliverables for our JCDL 2022 FAQ annex submission are documented clearly and transparently.,e474
+s14,c19,inVenue,"our formal submission has been assigned the following ID by the conference system:
+**Submission ID:** SUB-JCDL-2022-0432",e475
+s14,c20,inVenue,your paper entitled “Cross-Institutional Protocols for Metadata and Embargo: An Integrated FAQ Annex” to the ACM/IEEE Joint Conference on Digital Libraries (JCDL) 2022.,e476
+s14,c19,inVenue,your submission to JCDL 2022 entitled “Cross-Institutional Protocols for Metadata and Embargo: An Integrated FAQ Annex” (Submission ID: SUB-JCDL-2022-0432),e477
+s14,c19,inVenue,our camera-ready manuscript for JCDL 2022 (Submission ID: SUB-JCDL-2022-0432),e484
+s14,c19,inVenue,"your camera-ready submission for JCDL 2022, entitled",e485
+mg258,c19,inVenue,planning around our live project spotlight at JCDL 2022,e514
+pa86,c19,inVenue,ensuring our presentation is seamless for the JCDL live spotlight.,e520
+mg266,c19,inVenue,JCDL 2022 Project Spotlight – Internal Dry Run,e525
+s15,c19,inVenue,Thank you all for your timely sign-offs and your dedication to making our JCDL 2022 spotlight submission as impactful as possible... Please find the Submission ID for reference: SUB-JCDL-2022-0092.,e532
+s15,c19,inVenue,our submission to the JCDL 2022 spotlight session and for circulating the Submission ID (SUB-JCDL-2022-0092),e533
+pa87,c21,inVenue,our JCDL pre-recorded spotlight video,e546
+s16,c19,inVenue,our full JCDL 2022 spotlight session package,e548
+s16,c20,inVenue,This is to confirm receipt of your full submission to the ACM/IEEE Joint Conference on Digital Libraries (JCDL) 2022.,e549
+s16,c19,inVenue,Now that JCDL 2022 has officially acknowledged receipt of our submission (SUB-JCDL-2022-1189),e550
+pa90,c21,inVenue,Thank you all for your proactive ideas and commitment to thoughtfully extending the impact of our JCDL submission.,e553
+pa91,c19,inVenue,I have just created a folder titled “Historical NLP Dissemination & Outreach (JCDL 2022)”,e558
+pa92,c19,inVenue,All members agreed to upload new working documents and datasets to the “Historical NLP Dissemination & Outreach (JCDL 2022)” folder,e560
+pa94,j7,inVenue,our manuscript for potential submission to JCDL or JOCCH.,e590
+pa94,j1,inVenue,our manuscript for potential submission to JCDL or JOCCH.,e590
+pa94,c19,inVenue,either as workshop proceedings (JCDL 2022) or to JOCCH as a full-length reflective article,e590
+tk1002,j1,inVenue,within the scope of our JOCCH submission.,e601
+pa96,j1,inVenue,"All names, affiliations, and acknowledgment sections are now accurate and consistent with the required JOCCH formatting.",e609
+pa96,j1,inVenue,"Thank you for joining the internal walkthrough earlier today, and for your comprehensive preparation on all final components of our JOCCH submission.",e610
+s17,j3,inVenue,- Journal: ACM Journal on Computing and Cultural Heritage,e611
+s17,j3,inVenue,registered under the submission identification number SUB-JOCCH-2022-0421 in the ACM Journal on Computing and Cultural Heritage (JOCCH) editorial system.,e612
+s17,j1,inVenue,"we move into the editorial screening phase for our JOCCH submission (SUB-JOCCH-2022-0421), following the journal office’s acknowledgement.",e613
+s17,j1,inVenue,for our manuscript SUB-JOCCH-2022-0421... Let’s remain alert for the next update from JOCCH or any reviewer requests.,e614
+s17,j1,inVenue,I am writing to confirm that I have now successfully completed the ACM copyright agreement for our submission (SUB-JOCCH-2022-0421) following the journal’s instructions.,e615
+s17,j5,inVenue,I am writing to provide everyone with an update on the status of our JOCCH submission (SUB-JOCCH-2022-0421).,e616
+s17,j1,inVenue,our JOCCH submission (SUB-JOCCH-2022-0421),e617
+pa100,j1,inVenue,shared Google Doc titled “JOCCH2022_Reviewer_Response_Preparation”,e618
+s17,j1,inVenue,as we advance towards the peer review phase of our JOCCH submission (SUB-JOCCH-2022-0421).,e621
+s17,j3,inVenue,our manuscript submission to the ACM Journal on Computing and Cultural Heritage (SUB-JOCCH-2022-0421),e624
+s17,j1,inVenue,"Thank you, Ananya, for keeping us updated on the JOCCH submission status (SUB-JOCCH-2022-0421)",e625
+s17,j1,inVenue,we await the reviewer feedback from JOCCH (SUB-JOCCH-2022-0421),e626
+pa102,j2,inVenue,the announcement for the “Digital Methods in Historical Linguistics” special issue in JDoc,e627
+j21,j2,inVenue,the “Digital Methods in Historical Linguistics” special issue in JDoc,e627
+pa105,c21,inVenue,"Ananya, would you be able to circulate an initial outline or targeted bullet points for the JCDL abstract by the end of this week?",e636
+pa105,c21,inVenue,I have prepared a preliminary outline with section bullet points for the JCDL abstract,e637
+pa105,c21,inVenue,preliminary JCDL abstract outline,e638
+pa105,c21,inVenue,I am writing to confirm that I have completed a detailed draft for the “Evaluation/Metrics” segment of our JCDL abstract,e639
+pa106,j7,inVenue,the cross-disciplinary contribution to both the JCDL submission and the concurrent grant proposal.,e640
+tk3907,c28,inVenue,I propose that we submit to JCDL 2023 by end of that week,e641
+tk1002,j1,inVenue,tailor our parallel JOCCH submission.,e641
+pa108,c28,inVenue,so we can coordinate official submission to JCDL 2023 tomorrow.,e644
+s18,c28,inVenue,We are pleased to confirm the receipt of your abstract titled “Multilingual Historical Corpora for Semantic Drift Detection: A Hybrid Evaluation Approach” submitted to JCDL 2023. Your official submission number is SUB-JCDL-2023-0417.,e646
+s18,c28,inVenue,has been ACCEPTED for presentation at JCDL 2023.,e647
+ps16,c28,inVenue,I am delighted to share the news of our ACCEPTANCE at JCDL 2023,e648
+s19,c28,inVenue,"our camera-ready manuscript, along with all supplementary files, has been successfully submitted to the JCDL 2023 portal",e659
+s19,c28,inVenue,"we have received formal acknowledgment from the JCDL 2023 organizing committee regarding our submission, “Cross-Lingual Semantic Drift Detection and Digital Humanities Applications in Historical Corpora” (Submission ID: SUB-JCDL-2023-1174).",e663
+s19,c28,inVenue,"your submission to JCDL 2023, entitled “Cross-Lingual Semantic Drift Detection and Digital Humanities Applications in Historical Corpora” (Submission ID: SUB-JCDL-2023-1174)",e664
+ps16,j7,inVenue,Congratulations to all on our acceptance to JCDL 2023!,e665
+ps16,c28,inVenue,Congratulations to all on our acceptance to JCDL 2023!,e665
+pa112,j14,inVenue,"I selected the 2022 ACM Computing Surveys article by Liang et al., “Interoperability Models for Digital Archival Systems: A Review of Standards and Implementations,”",e669
+pa113,c21,inVenue,"our appendix figure captions in the “JCDL_CameraReady2023” draft, as per the latest JCDL formatting guidelines",e670
+pa113,c21,inVenue,"the captions are clear, fully consistent with the JCDL requirements",e671
+c28,pa114,inVenue,All figure captions and legend markers now comply fully with the JCDL 2023 requirements.,e674
+s20,c28,inVenue,submitted to the JCDL 2023 portal. ... **Submission ID:** SUB-JCDL-2023-0147,e675
+s20,c29,inVenue,We are pleased to confirm the receipt of your camera-ready submission to the 2023 Joint Conference on Digital Libraries (JCDL),e676
+s20,c28,inVenue,"Thank you once again for your timely and thorough camera-ready submission to JCDL 2023, titled “Semantic Drift Detection...",e677
+s20,c28,inVenue,we can now assert with confidence that all administrative obligations have been met for SUB-JCDL-2023-0147.,e681
+s20,c28,inVenue,"Dear JCDL 2023 Proceedings Committee, On behalf of our author team for submission ID SUB-JCDL-2023-0147",e682
+s20,c28,inVenue,for inclusion in the JCDL 2023 proceedings.,e683
+mg352,c28,inVenue,we prepare for our JCDL 2023 rehearsal.,e695
+s21,c29,inVenue,This is to acknowledge receipt of your camera-ready submission to the 2023 ACM/IEEE Joint Conference on Digital Libraries (JCDL 2023).,e699
+s21,c28,inVenue,We encourage you to retain this Submission ID for all future correspondence concerning your JCDL 2023 contribution.,e699
+s21,c28,inVenue,I want to formally acknowledge receipt of the JCDL 2023 camera-ready submission acknowledgment (SUB-JCDL-2023-0427),e700
+c28,mg354,inVenue,Looking forward to seeing you all during the rehearsal and continuing our preparations for a successful JCDL 2023 session.,e703
+mg364,c28,inVenue,Meeting Minutes – JCDL 2023 Debrief (2nd August 2021):,e717
+pa116,j5,inVenue,"our proposed ACM JOCCH manuscript, focusing on integrating key audience feedback",e718
+pa117,j5,inVenue,such a comprehensive draft outline for our ACM JOCCH manuscript.,e719
+pa118,j5,inVenue,Sunita’s outline and the thoughtful follow-ups by Ananya and Michael have provided the structure and momentum we need for an impactful ACM JOCCH submission.,e721
+pa121,c21,inVenue,your integration of recent citation updates (including the 2022 JCDL proceedings) is seamless,e730
+s22,j3,inVenue,the manuscript has been assigned Submission ID: SUB-JOCCH-2023-0193 by the JOCCH editorial system.,e734
+s22,j5,inVenue,I have received the official submission acknowledgment from the ACM JOCCH editorial system for our manuscript (Submission ID: SUB-JOCCH-2023-0193),e735
+s22,j1,inVenue,we have received an initial editorial response for our JOCCH submission (Submission ID: SUB-JOCCH-2023-0193).,e739
+s22,j1,inVenue,as per the editorial feedback for SUB-JOCCH-2023-0193.,e741
+s22,j1,inVenue,Thank you for your collaborative efforts in addressing all the editorial comments for our JOCCH submission (SUB-JOCCH-2023-0193).,e742
+s22,j1,inVenue,I have now formally resubmitted our revised manuscript for JOCCH (Submission ID: SUB-JOCCH-2023-0193) via the ACM Editorial Manager portal.,e743
+s22,j3,inVenue,"for review to the ACM Journal on Computing and Cultural Heritage, under Submission ID: SUB-JOCCH-2023-0193.",e744
+s22,j3,inVenue,has been formally accepted for publication in the ACM Journal on Computing and Cultural Heritage.,e745
+s22,j13,inVenue,achieving publication in ACM’s Journal on Computing and Cultural Heritage!,e746
+pa28,j1,inVenue,organizing the final proof review for our JOCCH manuscript.,e749
+s22,j1,inVenue,"our JOCCH article, “Semantic Adjudication and Entity Agreement Protocols for Historical South Asian Legal Texts” (SUB-JOCCH-2023-0193).",e750
+s22,j10,inVenue,preparing the final correction form for submission to ACM Production for our article (SUB-JOCCH-2023-0193).,e754
+s22,j3,inVenue,submitting the finalized correction form and annotated manuscript to ACM Production for article SUB-JOCCH-2023-0193.,e755
+s22,j3,inVenue,Your article remains scheduled for online publication in the August 2023 issue of JOCCH.,e756
+pa125,j5,inVenue,These appendices are formatted according to ACM JOCCH requirements.,e775
+s23,j3,inVenue,our manuscript ... has been officially submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) this afternoon. ... **Submission ID:** SUB-JOCCH-2023-0782,e778
+pa126,j3,inVenue,"our manuscript, “Transparent Documentation Pipelines for Multilingual NLP on Historical Data: Compliance and Workflow Reflections,” has been officially submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH)",e778
+s23,j3,inVenue,Thank you for submitting to the ACM Journal on Computing and Cultural Heritage.,e779
+s23,j3,inVenue,to the ACM Journal on Computing and Cultural Heritage.,e780
+pa28,j1,inVenue,our revision strategy for the JOCCH manuscript.,e785
+pa127,j1,inVenue,"Once I receive your sign-off, I will coordinate submission to JOCCH by 27 October as per our original plan.",e791
+pa128,j1,inVenue,"Once I receive your sign-off, I will coordinate submission to JOCCH by 27 October as per our original plan.",e791
+s24,j1,inVenue,"Please do confirm with us and circulate the final submitted files and submission details (including confirmation ID) once the process is complete, for our records.",e793
+s25,j3,inVenue,"has been successfully submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) this afternoon. Please find the official submission details below:
+
+**Submission ID:** SUB-JOCCH-2023-0843",e794
+pa131,j1,inVenue,4. Keeping in sync with anticipated JOCCH editorial feedback,e800
+pa134,c32,inVenue,"We should be able to initiate our submission to the ACL conference by 22 November, adhering to our planned timeline.",e814
+s26,c1,inVenue,has been officially submitted to ACL for review.,e817
+s26,c33,inVenue,"Thank you for your submission to the 2023 Annual Meeting of the Association for Computational Linguistics (ACL).
+...
+Submission ID: SUB-ACL-2023-0321",e818
+s26,c33,inVenue,"your submission to the 2023 Annual Meeting of the Association for Computational Linguistics (ACL):
+
+Title: ""Transnational NLP Reflection Memo: Protocol Harmonization and Compliance Lessons from Multinational Historical NLP Consortia""
+Submission ID: SUB-ACL-2023-0321",e819
+pa137,c34,inVenue,regarding our ACL 2023 revision,e825
+pa138,j2,inVenue,We have annotated our section with citations to the JDoc and ACM JOCCH studies as indicated.,e830
+pa138,j5,inVenue,We have annotated our section with citations to the JDoc and ACM JOCCH studies as indicated.,e830
+pa140,j2,inVenue,"“Digitizing Heritage: Protocol Challenges in Southeast Asian Archives,” Journal of Documentation, 2021.",e831
+pa141,j5,inVenue,"“Frameworks for Data Reuse in African Cultural Heritage Projects,” ACM JOCCH, 2022.",e831
+s27,c35,inVenue,submitted to the 2024 Annual Meeting of the Association for Computational Linguistics (ACL 2024).,e836
+s27,c35,inVenue,"your submission to the 2024 Annual Meeting of the Association for Computational Linguistics (ACL 2024), titled",e837
+ps16,c36,inVenue,"First, a heartfelt congratulations to the entire team for our acceptance at ACL 2024!",e838
+s28,c37,inVenue,"I have now submitted our complete camera-ready package via the ACL2024 submission system.
+
+Submission ID: SUB-ACL-2024-0193",e855
+s28,c37,inVenue,"your submission to ACL2024, entitled ‘‘Annotation Strategies and Workflow Transparency for 19th-Century Bengali-English Historical Texts’’ (Submission ID: SUB-ACL-2024-0193)",e856
+s28,c37,inVenue,"your submission, “Annotation Strategies and Workflow Transparency for 19th-Century Bengali-English Historical Texts” (Submission ID: SUB-ACL-2024-0193), to ACL2024.",e857
+pa145,c36,inVenue,"Thank you, Sunita, for mapping out such a thorough and actionable plan for our ACL2024 camera-ready preparation.",e859
+s29,c37,inVenue,"your accepted paper, submitted under Submission ID: SUB-ACL-2024-2386 ... through the ACL2024 camera-ready portal",e866
+s29,c37,inVenue,"Your submission fully adheres to ACL2024 guidelines for formatting, metadata completeness, referencing standards, and supplementary documentation.",e867
+pa148,j1,inVenue,both JOCCH and Journal of Documentation would be excellent targets,e869
+pa148,j2,inVenue,both JOCCH and Journal of Documentation would be excellent targets,e869
+pa149,j1,inVenue,"I am writing to document the key discussion points, consensus decisions, and action items agreed upon for our JOCCH resource note and dataset dissemination efforts.",e880
+pa149,c36,inVenue,"The team confirmed JOCCH (dataset note) as the primary target, with ACL 2024 as potential venue for a more technical/benchmarking version.",e880
+tk1002,j1,inVenue,eventual JOCCH submission.,e884
+tk1002,j1,inVenue,a draft of our intended cover letter for the JOCCH submission,e890
+s30,j3,inVenue,has been formally submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e895
+s30,j3,inVenue,"Thank you for submitting your manuscript entitled “Meta-Annotated Historical Texts: A Multi-Institutional Resource and Legal Protocol for South Asian Colonial Newspapers” to the ACM Journal on Computing and Cultural Heritage (JOCCH). We are pleased to confirm receipt of your submission, which has been assigned the following tracking number:
+
+**Submission ID:** SUB-JOCCH-2024-0421",e896
+s30,j3,inVenue,to the ACM Journal on Computing and Cultural Heritage (JOCCH) (Submission ID: SUB-JOCCH-2024-0421).,e897
+s30,j1,inVenue,our JOCCH resource note (SUB-JOCCH-2024-0421) has been accepted pending minor revisions,e898
+s30,j1,inVenue,our comprehensive revision package for the JOCCH resource note (SUB-JOCCH-2024-0421) has now been successfully submitted via the ACM ScholarOne system.,e904
+s30,j1,inVenue,submission of our revised resource note to JOCCH (SUB-JOCCH-2024-0421),e905
+pa154,j1,inVenue,how we might leverage our recent JOCCH submission for greater impact.,e906
+pa156,j1,inVenue,annotated examples taken from our JOCCH revision,e907
+pa155,j1,inVenue,Once our JOCCH article is formally accepted,e907
+pa159,j5,inVenue,"whether to target the ACM JOCCH or an upcoming conference call (e.g., JCDL/EMNLP) for submission",e920
+pa159,c21,inVenue,"whether to target the ACM JOCCH or an upcoming conference call (e.g., JCDL/EMNLP) for submission",e920
+pa159,c2,inVenue,"whether to target the ACM JOCCH or an upcoming conference call (e.g., JCDL/EMNLP) for submission",e920
+s30,j3,inVenue,"has been formally submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) today.
+
+**Submission details:**
+- Submission ID: SUB-JOCCH-2024-0421",e932
+s30,j3,inVenue,submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) on 22nd October 2022.,e933
+s30,j3,inVenue,"We look forward to your resubmission and appreciate your continued interest in publishing with JOCCH.
+
+Sincerely,
+
+JOCCH Editorial Office  
+ACM Journal on Computing and Cultural Heritage",e934
+tk5723,j1,inVenue,"5. Consolidation of supplementary material formats (editable diagrams, raw tables, extended annotation rationale), and confirming upload strategy for the JOCCH portal.",e940
+tk5737,j1,inVenue,Final revision upload to JOCCH portal by the 28th at latest.,e941
+tk5794,j1,inVenue,I will proceed with the actual online JOCCH submission on 11 November,e950
+s31,j3,inVenue,"has been successfully submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) as of this morning. The editorial system has acknowledged receipt, and our assigned Submission ID is: SUB-JOCCH-2024-1143.",e951
+s31,j3,inVenue,"Thank you for your recent resubmission to the ACM Journal on Computing and Cultural Heritage (JOCCH), manuscript ID SUB-JOCCH-2024-1143",e952
+s31,j3,inVenue,submitted to the ACM Journal on Computing and Cultural Heritage.,e953
+s31,j1,inVenue,our JOCCH submission (SUB-JOCCH-2024-1143),e954
+pa164,j1,inVenue,to guarantee alignment with the evolving JOCCH editorial guidelines.,e965
+pa164,j1,inVenue,"JOCCH Editorial Alignment: Your integration work ensures that all case studies (India, UK/EU, Israel, Japan, Chile) now explicitly respond to JOCCH’s updated compliance guidance on cross-jurisdictional annotation.",e967
+pa165,j1,inVenue,"I will coordinate the corresponding author submission to JOCCH on our collective behalf, targeting 25 January as our formal submission date.",e969
+s32,j3,inVenue,the manuscript titled “Cross-Jurisdictional Compliance in NLP Applications for Historical Data: A Comparative Analysis” has been formally submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH),e971
+s32,j3,inVenue,Thank you for your recent submission to the ACM Journal on Computing and Cultural Heritage (JOCCH).,e972
+s32,j3,inVenue,"On behalf of the editorial team at the ACM Journal on Computing and Cultural Heritage (JOCCH), we are writing regarding your manuscript ... (Submission ID: SUB-JOCCH-2025-0472).",e973
+s32,j1,inVenue,Thank you all for your diligent work leading up to our JOCCH submission and for your continued support as we enter the revision phase.,e974
+tk5958,j1,inVenue,"prior to portal resubmission.
+
+...
+
+coordination of final submission to JOCCH by 29 March.",e978
+tk5962,j1,inVenue,Sunita to maintain shared document and ensure version control; coordination of final submission to JOCCH by 29 March.,e978
+ps71,j1,inVenue,As we approach the final stretch for our JOCCH major revision,e985
+s33,j3,inVenue,submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH) portal ... Submission ID: SUB-JOCCH-2025-0194,e988
+s33,j3,inVenue,We are writing to formally acknowledge receipt of your major revision submission to the ACM Journal on Computing and Cultural Heritage (JOCCH):,e989
+s33,j1,inVenue,Now that we have received formal acknowledgment from JOCCH regarding our submission (SUB-JOCCH-2025-0194),e990
+pa172,c42,inVenue,"I suggest we start outlining such a piece post-colloquium, potentially targeting EMNLP System Demonstrations or the JDoc Technical Communication section as strong options.",e1000
+pa172,j26,inVenue,"I suggest we start outlining such a piece post-colloquium, potentially targeting EMNLP System Demonstrations or the JDoc Technical Communication section as strong options.",e1000
+c42,pa174,inVenue,which makes both EMNLP System Demonstrations and JDoc Technical Communication competitive potential venues.,e1003
+j26,pa174,inVenue,which makes both EMNLP System Demonstrations and JDoc Technical Communication competitive potential venues.,e1003

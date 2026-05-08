@@ -1,0 +1,306 @@
+:START_ID,:END_ID,:TYPE,context,source
+mt1,tk1,evaluates,"We can measure our progress using metrics such as accuracy, F1-score, and a new temporal consistency score that we could propose.",e1
+mt13,tk1,evaluates,"We can measure our progress using metrics such as accuracy, F1-score, and a new temporal consistency score that we could propose.",e1
+mt3,tk1,evaluates,"We can measure our progress using metrics such as accuracy, F1-score, and a new temporal consistency score that we could propose.",e1
+mt100,me15,evaluates,"delve deeper into the metrics we've discussed, and potentially refine the evaluation framework for our models.",e3
+mt5,me15,evaluates,"delve deeper into the metrics we've discussed, and potentially refine the evaluation framework for our models.",e3
+mt1,tk1,evaluates,"Metrics for evaluation include accuracy, F1-score, temporal consistency score, and methods for interpretability.",e6
+mt13,tk1,evaluates,"Metrics for evaluation include accuracy, F1-score, temporal consistency score, and methods for interpretability.",e6
+mt3,tk1,evaluates,"Metrics for evaluation include accuracy, F1-score, temporal consistency score, and methods for interpretability.",e6
+mt1,tk100,evaluates,"preferred performance indicators (e.g., task-appropriate accuracy, F1, historical lexicon recall)",e17
+mt13,tk100,evaluates,"preferred performance indicators (e.g., task-appropriate accuracy, F1, historical lexicon recall)",e17
+mt14,tk100,evaluates,"preferred performance indicators (e.g., task-appropriate accuracy, F1, historical lexicon recall)",e17
+mt8,tk100,evaluates,Are there particular intrinsic/extrinsic evaluation protocols from previous projects we should consider for benchmarking?,e17
+mt9,tk100,evaluates,Are there particular intrinsic/extrinsic evaluation protocols from previous projects we should consider for benchmarking?,e17
+mt10,tk100,evaluates,"For intrinsic, character/error rates (CER and WER) would provide a transparent assessment of any remaining OCR noise.",e18
+mt11,tk100,evaluates,"For intrinsic, character/error rates (CER and WER) would provide a transparent assessment of any remaining OCR noise.",e18
+mt12,tk100,evaluates,"On the extrinsic side, standard token-level accuracy, F1 score, and, for our context, an adjusted historical vocabulary recall (as you noted) will map well to both classification and retrieval subtasks.",e18
+mt13,tk100,evaluates,"On the extrinsic side, standard token-level accuracy, F1 score, and, for our context, an adjusted historical vocabulary recall (as you noted) will map well to both classification and retrieval subtasks.",e18
+mt14,tk100,evaluates,"On the extrinsic side, standard token-level accuracy, F1 score, and, for our context, an adjusted historical vocabulary recall (as you noted) will map well to both classification and retrieval subtasks.",e18
+mt12,tk101,evaluates,will map well to both classification and retrieval subtasks.,e18
+mt13,tk101,evaluates,will map well to both classification and retrieval subtasks.,e18
+mt14,tk101,evaluates,will map well to both classification and retrieval subtasks.,e18
+mt12,tk102,evaluates,will map well to both classification and retrieval subtasks.,e18
+mt13,tk102,evaluates,will map well to both classification and retrieval subtasks.,e18
+mt14,tk102,evaluates,will map well to both classification and retrieval subtasks.,e18
+mt101,tk1006,evaluates,"provenance-based metrics—measuring fidelity of date/location extraction from noisy versus cleaned text—could be useful, particularly since we intend for the models to support historical analysis pipelines.",e18
+mt154,tk1002,evaluates,"additional diagnostic metrics, particularly for post-hoc model explanations and case study selection.",e18
+mt154,tk106,evaluates,"additional diagnostic metrics, particularly for post-hoc model explanations and case study selection.",e18
+mt10,tk107,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt11,tk107,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt12,tk107,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt13,tk107,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt14,tk107,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt101,tk107,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt10,tk108,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt11,tk108,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt12,tk108,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt13,tk108,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt14,tk108,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt101,tk108,evaluates,whose evaluation would require tailoring our metric selection further.,e18
+mt104,tk100,evaluates,Michael’s suggestions for incorporating both intrinsic (CER/WER) and extrinsic (token- and provenance-based) metrics are well taken.,e19
+mt104,tk100,evaluates,intrinsic (CER/WER) and extrinsic (token- and provenance-based) metrics,e19
+mt101,tk100,evaluates,intrinsic (CER/WER) and extrinsic (token- and provenance-based) metrics,e19
+mt20,me18,evaluates,"will offer both quantitative metrics (e.g., explanation consistency scores, faithfulness indices)",e20
+mt20,me19,evaluates,"will offer both quantitative metrics (e.g., explanation consistency scores, faithfulness indices)",e20
+mt21,me18,evaluates,"will offer both quantitative metrics (e.g., explanation consistency scores, faithfulness indices)",e20
+mt21,me19,evaluates,"will offer both quantitative metrics (e.g., explanation consistency scores, faithfulness indices)",e20
+mt22,me18,evaluates,indicate clear differences in both stability and quality of explanations,e20
+mt22,me19,evaluates,indicate clear differences in both stability and quality of explanations,e20
+mt23,me18,evaluates,indicate clear differences in both stability and quality of explanations,e20
+mt23,me19,evaluates,indicate clear differences in both stability and quality of explanations,e20
+mt26,tk132,evaluates,could indicate the degree of actionability and trustworthiness of our model outputs,e21
+mt27,tk132,evaluates,could indicate the degree of actionability and trustworthiness of our model outputs,e21
+mt28,tk107,evaluates,Michael’s notes on stretch evaluation goals and agree that operationalizing chronology prediction and cross-dataset transfer will help position our work,e21
+mt28,tk124,evaluates,Michael’s notes on stretch evaluation goals and agree that operationalizing chronology prediction and cross-dataset transfer will help position our work,e21
+mt100,tk100,evaluates,Agree on the final set of evaluation metrics and protocols (incl. stretch goals),e22
+mt30,tk156,evaluates,Proposed usability and faithfulness metrics,e23
+mt31,tk156,evaluates,Proposed usability and faithfulness metrics,e23
+mt20,me18,evaluates,Group discussed explanation consistency scores and faithfulness metrics.,e25
+mt20,me19,evaluates,Group discussed explanation consistency scores and faithfulness metrics.,e25
+mt31,me18,evaluates,Group discussed explanation consistency scores and faithfulness metrics.,e25
+mt31,me19,evaluates,Group discussed explanation consistency scores and faithfulness metrics.,e25
+mt104,tk171,evaluates,"Consensus on using both standard (CER, WER, token accuracy, F1) and proposed provenance-based metrics, as well as chronology prediction and cross-dataset transfer as stretch goals.",e25
+mt13,tk171,evaluates,"Consensus on using both standard (CER, WER, token accuracy, F1) and proposed provenance-based metrics, as well as chronology prediction and cross-dataset transfer as stretch goals.",e25
+mt101,tk171,evaluates,"Consensus on using both standard (CER, WER, token accuracy, F1) and proposed provenance-based metrics, as well as chronology prediction and cross-dataset transfer as stretch goals.",e25
+mt33,tk1002,evaluates,"Group finalized the inclusion of both quantitative (consistency, faithfulness) and qualitative (vignettes, annotator feedback) interpretability analyses.",e25
+mt34,tk1002,evaluates,"Group finalized the inclusion of both quantitative (consistency, faithfulness) and qualitative (vignettes, annotator feedback) interpretability analyses.",e25
+mt26,tk1002,evaluates,Agreed to pilot the “actionability” rating by human experts.,e25
+mt104,tk177,evaluates,"Early results for CER, WER, and token-level F1",e26
+mt1,tk179,evaluates,"we are seeing moderate accuracy, but signal above chance even in the presence of OCR artifacts",e26
+mt37,tk126,evaluates,"Structured Likert-scale questions (1-5) on clarity, faithfulness, and trustworthiness, with free-text fields for qualitative comments;",e27
+mt31,me66,evaluates,side-by-side faithfulness/clarity ratings might make these trends more salient,e32
+mt40,me66,evaluates,side-by-side faithfulness/clarity ratings might make these trends more salient,e32
+mt38,me70,evaluates,"a quick tally of “willingness to use” scores, cross-referenced with the presence of noise or error in input documents, could form a strong supplemental figure for our evaluation section.",e32
+mt41,tk224,evaluates,"Design choices for integrating visualizations:
+    - Faithfulness/clarity heatmaps",e33
+mt38,tk224,evaluates,"Design choices for integrating visualizations:
+    - “Willingness to use” score breakdowns, perhaps stratified by document noise level",e33
+mt43,me10,evaluates,Both Dr. Liu’s and Dr. Patel’s Likert-scale responses indicate moderate-to-high trust in model explanations,e35
+mt44,me10,evaluates,Likert-scale responses indicate moderate-to-high trust in model explanations on relatively clean historical documents,e35
+mt38,me10,evaluates,"“Willingness to use” scores, cross-referenced in the live notes, consistently track with faithfulness ratings rather than mere clarity",e35
+mt38,mt31,evaluates,“Willingness to use” scores ... consistently track with faithfulness ratings rather than mere clarity,e35
+mt38,mt45,evaluates,“Willingness to use” scores ... rather than mere clarity,e35
+mt38,me70,evaluates,For the bar chart breakdown of willingness scores by OCR artifact severity,e36
+mt21,d30,evaluates,"for the “edge case” from Document F, it would be beneficial to visually annotate the section where the faithfulness rating notably dropped",e38
+mt154,d30,evaluates,This could help reviewers quickly grasp the impact of document noise on our model’s interpretability metrics.,e38
+me82,mt10,evaluates,"artifact severity bins (e.g., “low,” “medium,” “high”) correspond to a quantitative threshold (e.g., OCR error rate) or a qualitative ranking from annotator notes?",e41
+mt34,d31,evaluates,I suggest emphasizing in the heatmap caption that ratings are normalized per annotator and that tick labels correspond precisely to anonymized participant IDs (as detailed in the supplementary table).,e41
+mt49,d32,evaluates,"artifact severity bins (e.g., “low,” “medium,” “high”) correspond to a quantitative threshold (e.g., OCR error rate) or a qualitative ranking from annotator notes?",e41
+mt100,tk332,evaluates,Brainstorming and prioritizing supplementary analyses (including annotator disagreement metrics and cross-lingual results).,e52
+mt52,tk332,evaluates,Brainstorming and prioritizing supplementary analyses (including annotator disagreement metrics and cross-lingual results).,e52
+mt100,tk2398,evaluates,Michael will adapt scripts for disagreement metrics;,e54
+mt100,d33,evaluates,pipeline scripts (with version numbers) you are developing for annotator disagreement metrics,e56
+mt100,tk2398,evaluates,"The initial notebook now outputs both overall Cohen’s kappa and per-class F1 scores, and logs annotator-level confusion matrices for deeper inspection.",e58
+mt55,tk2398,evaluates,"The initial notebook now outputs both overall Cohen’s kappa and per-class F1 scores, and logs annotator-level confusion matrices for deeper inspection.",e58
+mt56,d229,evaluates,"- Descriptive statistics for class distribution (substitution, insertion, deletion, segmentation errors), both by document and aggregated corpus level.",e59
+mt57,d229,evaluates,"- Annotator-wise confusion matrices for each error type, in both CSV and heatmap formats.",e59
+mt100,tk2398,evaluates,"Additionally, I have prepared a 300-word summary paragraph for the “Technical Validation” section that outlines our evaluation metrics (Cohen’s kappa, F1 per class), cross-annotator agreement methodology, and the logging of pipeline version numbers and dependencies for full reproducibility.",e64
+mt55,tk2398,evaluates,"Additionally, I have prepared a 300-word summary paragraph for the “Technical Validation” section that outlines our evaluation metrics (Cohen’s kappa, F1 per class), cross-annotator agreement methodology, and the logging of pipeline version numbers and dependencies for full reproducibility.",e64
+mt100,tk2398,evaluates,"The logs include extended annotator-level confusion matrices, kappa calculations for all error types, and breakdowns by document source.",e64
+mt100,d61,evaluates,It provides genre-wise Cohen’s kappa and Krippendorff’s alpha statistics for our NER and topical annotation sets,e79
+mt60,d61,evaluates,It provides genre-wise Cohen’s kappa and Krippendorff’s alpha statistics for our NER and topical annotation sets,e79
+mt100,d62,evaluates,It provides genre-wise Cohen’s kappa and Krippendorff’s alpha statistics for our NER and topical annotation sets,e79
+mt60,d62,evaluates,It provides genre-wise Cohen’s kappa and Krippendorff’s alpha statistics for our NER and topical annotation sets,e79
+mt100,me133,evaluates,after preliminary inter-annotator agreement analysis.,e92
+mt100,me158,evaluates,but preliminary results already indicate significantly improved accessibility scores.,e104
+mt100,tk612,evaluates,but preliminary results already indicate significantly improved accessibility scores.,e104
+mt63,d86,evaluates,recommendations for FAIR data practice in our context,e125
+me195,mt64,evaluates,Including visual reference to the ACM reproducibility principles at a later stage is a great idea.,e135
+mt12,tk1012,evaluates,evaluation metrics for normalization—perhaps we can briefly report on token-level accuracy,e166
+mt65,tk1012,evaluates,"evaluation metrics for normalization—perhaps we can briefly report on token-level accuracy, edit distance",e166
+mt100,tk1012,evaluates,"evaluation metrics for normalization—perhaps we can briefly report on token-level accuracy, edit distance, and inter-annotator agreement metrics",e166
+mt100,tk1002,evaluates,Michael’s suggestion to discuss evaluation metrics and repository documentation is especially important,e168
+mt66,d110,evaluates,"- Attribution standards for multi-institutional datasets, with explicit references to each contributing institution and the relevant Creative Commons licenses.",e175
+mt67,tk1121,evaluates,our hybrid metrics—especially the balance between precision in named entity recognition and recall across temporal strata,e183
+mt68,tk1121,evaluates,our hybrid metrics—especially the balance between precision in named entity recognition and recall across temporal strata,e183
+mt100,tk187,evaluates,linking “Profiling” conclusions with our inter-annotator agreement statistics,e183
+mt70,pa24,evaluates,"Michael, thank you for your comments on hybrid metrics; I believe a joint walk-through of the results tables, as you recommended, will be helpful for ensuring clarity.",e185
+mt71,d112,evaluates,Statistically significant results for low-resource language benchmarks were approved for concise inclusion in both Results and Abstract.,e186
+mt72,tk100,evaluates,including new confusion matrices and error categories,e193
+mt153,tk100,evaluates,including new confusion matrices and error categories,e193
+mt72,tk100,evaluates,tweak the graphical abstract to reflect key confusion matrix or error categories.,e196
+mt153,tk100,evaluates,tweak the graphical abstract to reflect key confusion matrix or error categories.,e196
+mt13,tk100,evaluates,"Sunita to confirm if new evaluation metrics (macro-averaged F1, per reviewer suggestions) fit journal word limits.",e197
+mt72,tk100,evaluates,"The expanded section features new confusion matrices for the Bengali–Gujarati and French–English scenarios, accompanied by categorized error breakdowns",e198
+mt78,tk100,evaluates,Section 4.2.2: Confusion matrices with category-specific error rates and examples where low-resource lexicons contributed to transfer errors.,e198
+mt13,tk100,evaluates,"New Table 4: Macro- and micro-averaged F1 scores, as recommended by Reviewer 1, included with a brief rationale for metric selection.",e198
+mt13,tk100,evaluates,"The inclusion of macro- and micro-averaged F1, as well as annotated confusion matrices, aligns perfectly with Reviewer 1’s suggestions.",e199
+mt72,tk100,evaluates,"The inclusion of macro- and micro-averaged F1, as well as annotated confusion matrices, aligns perfectly with Reviewer 1’s suggestions.",e199
+mt13,tk1002,evaluates,I have started integrating the summary F1 scores from Table 4 as visual callouts in the graphical abstract,e200
+mt82,d122,evaluates,A mini-bar-plot inset comparing macro-F1 across the Bengali–Gujarati and French–English scenarios,e200
+mt82,d123,evaluates,A mini-bar-plot inset comparing macro-F1 across the Bengali–Gujarati and French–English scenarios,e200
+mt13,tk1224,evaluates,"focusing on variance in F1-score, precision, and recall as the Gujarati-trained model is applied to the French historical corpus.",e211
+mt13,tk117,evaluates,"Adjusting the y-axis annotation to underscore the critical points where transferability degrades (e.g., below F1=0.6) may make the narrative more compelling.",e212
+mt63,me142,evaluates,"importance of FAIR (Findable, Accessible, Interoperable, Reusable) data principles in our framework",e260
+mt89,me279,evaluates,we will catch any environment-specific edge cases before public documentation.,e288
+mt90,tk1882,evaluates,- Methodological justifications—especially balancing quantitative and qualitative evaluation metrics.,e304
+mt91,tk1882,evaluates,- Methodological justifications—especially balancing quantitative and qualitative evaluation metrics.,e304
+mt100,tk1188,evaluates,Suggested key points from my side include (1) finalizing the evaluation metrics narrative,e306
+mt70,tk100,evaluates,the clear suggestions surrounding hybrid evaluation metrics and data release documentation.,e307
+mt100,tk100,evaluates,Final review and harmonization of evaluation metrics—balancing quantitative and qualitative methodologies for historical NLP resource validation.,e307
+mt13,tk100,evaluates,"We reached consensus on a hybrid evaluation approach, integrating F1 and precision/recall-based metrics for annotated corpora alongside qualitative expert reviews",e308
+mt13,d100,evaluates,integrating F1 and precision/recall-based metrics for annotated corpora,e308
+mt13,tk100,evaluates,"with particular emphasis on our dual use of quantitative metrics (F1, precision, recall) and qualitative expert assessments",e309
+mt94,tk100,evaluates,and qualitative expert assessments of ambiguous or context-dependent historical language phenomena.,e309
+me282,mt13,evaluates,"your synthesis of the quantitative reasoning (F1, precision/recall) with qualitative expert assessment",e310
+mt95,tk1917,evaluates,pre-empt reviewer concerns around evaluative transparency and historical representativeness.,e310
+mt96,tk1917,evaluates,pre-empt reviewer concerns around evaluative transparency and historical representativeness.,e310
+mt100,pa60,evaluates,a minor update to the abstract to reflect recent enhancements to the evaluation metrics section.,e347
+mt100,tk2088,evaluates,update the abstract to incorporate enhanced details on the evaluation metrics,e348
+mt101,tk2095,evaluates,the use of provenance-aware precision and recall metrics to assess annotation alignment,e349
+mt101,tk2096,evaluates,we now specify our protocol for cross-institutional dataset benchmarking.,e349
+mt100,tk2101,evaluates,"Given the increased focus on evaluation metrics and cross-institutional benchmarking in our updated abstract, it would be prudent to ensure the slides provide clear visualizations and concise explanations for these aspects.",e352
+mt101,tk2101,evaluates,"Michael and Ananya, your feedback on the provenance-aware metric illustrations and on the clarity of the synthetic instance protocols would be particularly valuable.",e352
+mt100,tk2105,evaluates,"particularly in the areas we have recently enhanced—namely, the evaluation metrics and cross-institutional benchmarking.",e353
+mt101,tk2105,evaluates,The slides will highlight the provenance-aware precision and recall metrics with explanatory diagrams,e353
+mt100,tk1006,evaluates,especially for attendees less experienced with historical NLP tasks.,e353
+mt100,tk1006,evaluates,"Regarding the visual representation of the evaluation metrics, I’d suggest including a side-by-side comparison between traditional precision/recall and our provenance-aware adaptations—perhaps using a sample annotated passage. This will help demystify why and how our new framework yields more meaningful insights for historical data tasks.",e354
+mt13,tk1006,evaluates,"Regarding the visual representation of the evaluation metrics, I’d suggest including a side-by-side comparison between traditional precision/recall and our provenance-aware adaptations—perhaps using a sample annotated passage. This will help demystify why and how our new framework yields more meaningful insights for historical data tasks.",e354
+mt101,tk1006,evaluates,"Regarding the visual representation of the evaluation metrics, I’d suggest including a side-by-side comparison between traditional precision/recall and our provenance-aware adaptations—perhaps using a sample annotated passage. This will help demystify why and how our new framework yields more meaningful insights for historical data tasks.",e354
+mt103,tk2105,evaluates,"I agree with the approach of balancing quantitative metrics with a summary slide on qualitative findings, especially any domain expert feedback (if available).",e354
+mt104,pa63,evaluates,"Side-by-side comparisons of traditional vs. provenance-aware metrics, using our annotated examples as Michael and Ananya suggested.",e357
+mt101,pa63,evaluates,"Side-by-side comparisons of traditional vs. provenance-aware metrics, using our annotated examples as Michael and Ananya suggested.",e357
+mt104,d181,evaluates,"Expanded visualizations and concise captions for each benchmark dataset, clearly outlining the rationale behind each experiment.",e357
+mt101,d181,evaluates,"Expanded visualizations and concise captions for each benchmark dataset, clearly outlining the rationale behind each experiment.",e357
+mt105,d100,evaluates,sections visualizing metric comparisons and the explicit rationale for our dataset selections.,e358
+mt105,tk100,evaluates,Michael—metric comparisons,e361
+mt106,d186,evaluates,"This slide briefly summarizes our dataset balancing efforts, provides corpus demographic statistics, and explicitly states where further mitigation remains an open research direction.",e363
+mt107,tk2306,evaluates,explicit metrics for bias quantification,e393
+mt100,me317,evaluates,including points raised about evaluation metrics for historical language models,e401
+mt100,me318,evaluates,including points raised about evaluation metrics for historical language models,e401
+mt100,tk2375,evaluates,"main points raised around (a) clarity and transparency of our corpus creation protocols, (b) the efficacy of evaluation metrics for noisy historical data",e405
+mt100,tk1331,evaluates,"the efficacy of evaluation metrics for noisy historical data, and (c) requests for expanded discussion of OCR post-processing",e405
+mt100,tk2398,evaluates,Evaluation of annotation consistency and inter-annotator agreement;,e407
+j1,tk1002,evaluates,"Scrutinizing the resource transparency, compliance statements, and checklist tables, as per the latest JOCCH guideline document.",e422
+mt111,tk1006,evaluates,an infographic summarizing joint publication and media impact metrics.,e509
+mt112,tk3054,evaluates,Sunita’s summary of newsletter traffic and regional uptake will be condensed into two visual slides for potential insertion into our live session.,e518
+mt113,tk3054,evaluates,Sunita’s summary of newsletter traffic and regional uptake will be condensed into two visual slides for potential insertion into our live session.,e518
+mt1,me372,evaluates,"a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+mt1,tk3122,evaluates,"a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+mt114,tk1002,evaluates,"I have now completed a detailed accessibility audit of the slide deck as featured in the current video draft, cross-referencing both JCDL and WCAG 2.1 criteria.",e544
+mt115,tk1002,evaluates,"I have now completed a detailed accessibility audit of the slide deck as featured in the current video draft, cross-referencing both JCDL and WCAG 2.1 criteria.",e544
+mt10,tk3230,evaluates,"- I have started populating a folder in the shared Drive with tabulated OCR error metrics and draft notes on annotation challenges, structured for integration into the research note.",e559
+mt10,tk3327,evaluates,review the current tabulated OCR error metrics and annotation notes to ensure consistency and completeness,e561
+mt119,tk1002,evaluates,The form will incorporate both quantitative (Likert-scale) and qualitative sections to support future reporting and improvement.,e566
+mt120,tk1002,evaluates,The form will incorporate both quantitative (Likert-scale) and qualitative sections to support future reporting and improvement.,e566
+mt121,tk3402,evaluates,Let’s continue tracking registration numbers and initial participant queries; all feedback and issues should be logged in the shared Drive doc.,e573
+mt122,tk3402,evaluates,Let’s continue tracking registration numbers and initial participant queries; all feedback and issues should be logged in the shared Drive doc.,e573
+j18,tk3546,evaluates,I suggest we first gather up-to-date submission deadlines and formatting guidelines for both JCDL 2022 and JOCCH before our 10 June check-in,e591
+j1,tk3546,evaluates,I suggest we first gather up-to-date submission deadlines and formatting guidelines for both JCDL 2022 and JOCCH before our 10 June check-in,e591
+mt100,tk1002,evaluates,another suggesting a brief description of our accessibility evaluation metrics.,e605
+mt100,pa96,evaluates,Minor clarifications on the dialect classification methodology (Table 2) and the evaluation metrics footnote in Section 4.2 were resolved during the call.,e610
+mt1,tk3716,evaluates,"our hybrid accuracy/recall/F1 scheme, especially as applied to ambiguous or context-dependent queries in historical texts.",e617
+mt13,tk3716,evaluates,"our hybrid accuracy/recall/F1 scheme, especially as applied to ambiguous or context-dependent queries in historical texts.",e617
+mt13,tk3719,evaluates,adaptation of standard F1/accuracy-based metrics to handle ambiguous annotations,e618
+mt1,tk3719,evaluates,adaptation of standard F1/accuracy-based metrics to handle ambiguous annotations,e618
+mt100,tk3716,evaluates,inter-annotator agreement (Cohen’s kappa values),e618
+mt100,tk3728,evaluates,- Prepare a brief outline of how evaluation metrics generalize to novel dialectal input (perhaps referencing our codebase modularity or pipeline diagrams).,e619
+mt124,tk3802,evaluates,recent EMNLP and ACL contributions—particularly those that touch on evaluation metrics for historical corpus adaptations,e629
+mt124,tk1414,evaluates,those that touch on evaluation metrics for historical corpus adaptations and the interplay between semantic drift and named entity recognition.,e629
+mt125,tk3852,evaluates,"Discussed strengths and limitations flagged in the annotated bibliography, especially semantic drift benchmarks and context reconstruction as points of novelty.",e635
+mt126,d277,evaluates,leveraging recent EMNLP evaluation metrics within low-resource historical settings,e638
+mt126,me421,evaluates,leveraging recent EMNLP evaluation metrics within low-resource historical settings,e638
+mt128,tk1414,evaluates,proposes a hybrid evaluation suite that couples both intrinsic (temporal word embedding shift) and extrinsic (NLP downstream performance) metrics,e639
+mt129,tk1414,evaluates,proposes a hybrid evaluation suite that couples both intrinsic (temporal word embedding shift) and extrinsic (NLP downstream performance) metrics,e639
+mt126,tk1414,evaluates,outlined how we plan to pilot the EMNLP-derived low-resource benchmarks as part of our broader methodology.,e639
+mt128,d277,evaluates,metrics specifically validated for multilingual historical newspaper corpora.,e639
+me425,mt132,evaluates,The hybrid evaluation suite you have outlined aligns substantively with the EMNLP recommendations,e640
+mt132,tk3911,evaluates,between the “Context Reconstruction” and “Evaluation/Metrics” segments,e641
+mt100,d114,evaluates,"specifying our annotation inter-rater reliability score, as this will strengthen our claims about data quality",e642
+mt134,me425,evaluates,explicitly cite the newest EMNLP 2022 benchmark paper (Smith et al.),e642
+mt100,tk3925,evaluates,the constructive queries regarding the annotation inter-rater reliability and the citation of the new EMNLP 2022 benchmark,e643
+mt100,tk3925,evaluates,"average Cohen’s Kappa = 0.86 across language subsets), which should reinforce the rigor of our dataset construction.",e643
+mt100,tk3934,evaluates,"Ramesh, your inclusion of the additional annotation metric details was succinct and relevant.",e645
+mt140,tk3943,evaluates,"If there are any additional points you feel should be emphasized in the revision (e.g., expanded discussion on evaluation metric transferability), please let us know before then.",e649
+mt100,tk1414,evaluates,These examples demonstrate how our metrics could drive the discovery of semantic change across time and language,e650
+mt100,tk3955,evaluates,"facilitating new research in sociolinguistics, cross-lingual literary analysis, as well as supporting digital curation",e650
+mt100,tk3956,evaluates,"facilitating new research in sociolinguistics, cross-lingual literary analysis, as well as supporting digital curation",e650
+mt100,tk3957,evaluates,"facilitating new research in sociolinguistics, cross-lingual literary analysis, as well as supporting digital curation",e650
+mt100,tk100,evaluates,"I can begin assembling slides on the evaluation methodology—including metric selection, baselines, and error analysis—by this weekend.",e685
+mt100,tk1006,evaluates,"genuine community interest, not only in our evaluation metrics for historical NLP, but also the ethical stewardship of cultural archives.",e712
+mt146,tk4304,evaluates,linking our semantic similarity metrics to the ALMA archive project,e715
+mt147,tk4305,evaluates,precision-recall tradeoff tables and qualitative error analyses. Some comments urge us to detail our annotation workflow further,e715
+mt146,d298,evaluates,linking our semantic similarity metrics to the ALMA archive project,e715
+mt146,me446,evaluates,ALMA’s archival integration is well-aligned with our semantic metrics work.,e716
+mt103,tk1002,evaluates,"Given the enthusiastic response to our quantitative metrics as well as the questions around annotation protocols, my view is that ACM JOCCH would welcome our extended empirical/qualitative narrative.",e716
+mt146,tk4304,evaluates,Ananya will connect with Dr. Rodriguez regarding semantic metrics and the ALMA project.,e717
+mt147,tk4325,evaluates,"Separate quantitative (precision-recall, F1, subset agreement) and qualitative (case studies, interpretability) result presentations",e718
+mt13,tk4325,evaluates,"Separate quantitative (precision-recall, F1, subset agreement) and qualitative (case studies, interpretability) result presentations",e718
+mt151,tk4325,evaluates,"Separate quantitative (precision-recall, F1, subset agreement) and qualitative (case studies, interpretability) result presentations",e718
+mt146,tk4335,evaluates,I am happy to take the lead on the “Semantic Metrics Alignment” subsection within Methodology,e719
+mt153,tk100,evaluates,"Michael, if you confirm your lead on the error analysis and overall evaluative methodology",e719
+mt154,tk100,evaluates,and overall evaluative methodology,e719
+mt103,me454,evaluates,Supplement quantitative metrics with a narrative on interpretability and use case-driven model diagnostics.,e720
+mt146,me453,evaluates,"- Ananya: Related Work (with focus on participatory annotation), Methodology – Semantic Metrics Alignment, and contributions to Discussion & Future Work",e721
+mt72,d308,evaluates,links from the appendix to the confusion matrices and error distributions could bolster transparency and navigation for reviewers.,e727
+mt155,d308,evaluates,links from the appendix to the confusion matrices and error distributions could bolster transparency and navigation for reviewers.,e727
+mt100,d308,evaluates,"including an “annotator agreement table” summary, as Sunita mentioned—this could be appended after the main schema.",e727
+mt146,d308,evaluates,I will finalize my “Related Work” (with new citations from April 2023) and “Semantic Metrics Alignment” sections and upload to Overleaf and Drive by 10 May as promised.,e727
+mt157,tk4406,evaluates,"Noting your preliminary figures in the main manuscript, I believe short “see also” links from the appendix to the confusion matrices and error distributions could bolster transparency and navigation for reviewers.",e727
+mt158,tk1002,evaluates,could you confirm any diagrammatic cross-links and highlight if any legend/terminology needs further harmonizing across documents?,e727
+mt159,tk1002,evaluates,"Sunita, thank you for volunteering to review section integration—once the main manuscript and supplementary materials are in place, your coordination will be invaluable heading into peer review.",e727
+mt160,tk4413,evaluates,concerns regarding the balance between methodological detail and practical guidance in the appendix,e727
+mt161,tk1002,evaluates,Thank you all for sustaining such professional momentum!,e727
+j5,d308,evaluates,I have cross-checked the appendix draft for compliance with ACM JOCCH’s supplementary documentation standards,e727
+c21,d308,evaluates,"adding several examples aligned with 19th-century handwriting variants, which audiences highlighted post-JCDL.",e727
+mt100,tk4408,evaluates,annotator agreement summary table ... using our existing inter-annotator agreement statistics (Cohen’s kappa values by entity type,e728
+mt100,tk4408,evaluates,annotator agreement summary table (including Cohen’s kappa values and scope breakdowns),e729
+mt100,tk4429,evaluates,"The table’s structure (per-entity Cohen’s kappa values, annotated sample sizes, and adjudication coverage) aligns well with JOCCH’s transparency guidelines.",e730
+mt162,tk4429,evaluates,"The table’s structure (per-entity Cohen’s kappa values, annotated sample sizes, and adjudication coverage) aligns well with JOCCH’s transparency guidelines.",e730
+mt163,tk4429,evaluates,"The table’s structure (per-entity Cohen’s kappa values, annotated sample sizes, and adjudication coverage) aligns well with JOCCH’s transparency guidelines.",e730
+mt100,j1,evaluates,"The table’s structure (per-entity Cohen’s kappa values, annotated sample sizes, and adjudication coverage) aligns well with JOCCH’s transparency guidelines.",e730
+mt162,j1,evaluates,"The table’s structure (per-entity Cohen’s kappa values, annotated sample sizes, and adjudication coverage) aligns well with JOCCH’s transparency guidelines.",e730
+mt163,j1,evaluates,"The table’s structure (per-entity Cohen’s kappa values, annotated sample sizes, and adjudication coverage) aligns well with JOCCH’s transparency guidelines.",e730
+mt72,tk1389,evaluates,"including the confusion matrix, entity overlap correction table, and expanded dataset reference list) have now been uploaded to our shared Drive in the “Final Integration” folder.",e733
+mt165,d194,evaluates,the precise phrasings of “CC BY-NC 4.0 for corpus”,e748
+mt166,me492,evaluates,"and “MIT for code” are present (with correct hyperlinks, if permitted).",e748
+mt167,me494,evaluates,"the in-text reference to the open-access policy may require explicit citation of the DOI upon assignment, depending on ACM’s production workflow.",e752
+mt168,me494,evaluates,"the in-text reference to the open-access policy may require explicit citation of the DOI upon assignment, depending on ACM’s production workflow.",e752
+mt100,tk4767,evaluates,delivery of the new inter-annotator agreement tables by 17 October.,e786
+mt170,tk4768,evaluates,"Once I receive your summary statistics and plots, I will rerun our meta-analysis scripts...",e786
+mt13,tk187,evaluates,"Includes Cohen’s kappa, F1, and Krippendorff’s alpha across annotation batches",e787
+mt100,tk4776,evaluates,"Thank you, Sunita, for promptly sharing the detailed inter-annotator agreement metrics and the draft addendum clarifying regional licensing constraints.",e788
+d128,j1,evaluates,"Sunita, your licensing addendum for the Indian regional corpora is effective—would you consider adding a sentence indicating timelines or points of contact for ongoing access negotiations (NDLI, WBSA), for maximum transparency to future JOCCH readers?",e790
+d327,j1,evaluates,For the US Immigration Letters corpus: I’ve added a line clarifying Stanford’s IRB conditions as an extra note in the table. Please confirm that phrasing is satisfactory.,e790
+mt176,d175,evaluates,I do not anticipate any issues regarding DOI accessibility or repository permissions,e843
+mt100,me142,evaluates,"I can compile a draft section on normalization workflows and the annotator agreement statistics, including the inter-annotator reliability results that were left out of the ACL version due to space.",e870
+mt178,tk1002,evaluates,"Please also let me know if any of you plan to incorporate recent external corpus releases or relevant benchmark results, as I can prepare further citations and explanatory notes.",e881
+mt179,d400,evaluates,I believe this would enhance traceability for readers and satisfy both transparency and accessibility goals.,e901
+mt180,d400,evaluates,I believe this would enhance traceability for readers and satisfy both transparency and accessibility goals.,e901
+mt181,d400,evaluates,I believe this would enhance traceability for readers and satisfy both transparency and accessibility goals.,e901
+mt13,pa161,evaluates,a discussion contextualizing F1 score variance in relation to OCR noise and archival source inconsistencies.,e934
+mt182,tk5670,evaluates,"Reviewers seek a more disaggregated results presentation (by language/time period), as well as further discussion on F1 score variance. Can you draft a new subsection and generate supplementary visualizations by next week?",e935
+mt13,tk5670,evaluates,drafting the new subsection addressing the variance in F1 scores across different languages and historical periods.,e936
+mt13,tk5679,evaluates,including per-language precision/recall bar charts and a timeline-based error distribution figure,e936
+mt100,tk2398,evaluates,"For annotation reliability, I am redrafting the section to clarify inter-annotator agreement calculation",e938
+mt100,tk2398,evaluates,"clarify inter-annotator agreement calculation (Cohen’s Kappa per language, with underlying confusion matrices ready for supplementary inclusion).",e938
+mt100,tk5716,evaluates,"supplementary materials (uploaded as appendices) can host corpus tables, extended annotation rationales, and additional reliability metrics.",e939
+mt170,tk5716,evaluates,I suggest highlighting key findings and summary statistics in the body,e939
+mt13,tk5730,evaluates,Per-language F1 and precision/recall charts will be available...,e941
+mt186,tk272,evaluates,The color-coded matrix and flagged consent conditions make it very straightforward to identify regional sensitivities and researcher obligations,e946
+mt187,tk272,evaluates,The color-coded matrix and flagged consent conditions make it very straightforward to identify regional sensitivities and researcher obligations,e946
+mt200,tk272,evaluates,identify regional sensitivities and researcher obligations,e946
+mt201,tk272,evaluates,particularly around third-party archival material and anonymization protocols,e946
+mt196,tk272,evaluates,using your references to sections 37B and 45C,e946
+mt197,tk272,evaluates,Extended legal citations and context will be included in the supplementary appendix.,e946
+mt190,tk272,evaluates,"The red-outline legend in Michael’s figures will be referenced with a footnote, cross-linked to the matrix for reviewer transparency",e946
+mt204,tk272,evaluates,cross-linked to the matrix for reviewer transparency,e946
+mt184,tk5768,evaluates,confirm placement of the comparative legal table,e946
+mt198,tk5768,evaluates,to finalize the appendix formatting ahead of our internal review deadline,e946
+mt188,d414,evaluates,flagged clauses on “heritage dataset export” (GDPR/UK section D3b),e946
+mt188,me578,evaluates,"are applicable to international collaborative annotation, or only to public data release?",e946
+mt188,me579,evaluates,"are applicable to international collaborative annotation, or only to public data release?",e946
+mt189,tk272,evaluates,the data points highlighted with an asterisk—do you require additional annotation metadata from me to clarify consent-specific logic for the figure captions?,e946
+mt199,tk272,evaluates,additional annotation metadata from me to clarify consent-specific logic for the figure captions,e946
+mt193,tk5769,evaluates,Please all review the main integration draft I’ve uploaded to the drive ... and provide feedback or inline edits by tomorrow evening.,e946
+mt194,tk272,evaluates,narrative summary in the shared appendix folder,e946
+mt195,tk272,evaluates,move the more technical compliance commentary to the appendix,e946
+mt202,tk272,evaluates,this will help us manage word count while still demonstrating our attention to regulatory nuance.,e946
+mt203,tk272,evaluates,while still demonstrating our attention to regulatory nuance.,e946
+mt205,tk272,evaluates,"Let us keep the pace high so we can seamlessly align supplementary, methodological, and visual elements for our group check-in.",e946
+mt206,tk3897,evaluates,"so we can seamlessly align supplementary, methodological, and visual elements for our group check-in.",e946
+mt207,tk272,evaluates,this thorough alignment will undoubtedly strengthen our revision.,e946
+mt208,tk1002,evaluates,The approach emphasizes transparency and meets reviewer requests for regulatory cross-referencing without exceeding page limits.,e948
+mt100,d421,evaluates,Sunita: Methodology for compiling quantitative annotation metrics and timeline for first dataset summaries.,e957
+mt210,d419,evaluates,with first-pass statistics from project logs due by 12 January for review.,e958

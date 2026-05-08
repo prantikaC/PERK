@@ -1,0 +1,1207 @@
+:START_ID,:END_ID,:TYPE,context,source
+d1,tk1,usedFor,"I suggest we use datasets like the ""Chronicling America"" newspaper archives ... for this project",e1
+d2,tk1,usedFor,"I suggest we use datasets like the ""Chronicling America"" newspaper archives and the ""British Library Digital Collections.""",e1
+d3,tk1,usedFor,"We could also consider using annotated corpora like the ""Corpus of Historical American English (COHA)"" to fine-tune our models.",e1
+me1,tk1,usedFor,- Developing temporal embeddings to capture sentiment shifts.,e1
+me2,tk1414,usedFor,- Exploring historical lexicons to address diachronic language changes.,e1
+me15,tk5,usedFor,"- Comparing Transformer-based models (e.g., BERT, GPT) with traditional techniques like LSTM and CRFs.",e1
+me5,tk5,usedFor,"- Comparing Transformer-based models (e.g., BERT, GPT) with traditional techniques like LSTM and CRFs.",e1
+me6,tk5,usedFor,"- Comparing Transformer-based models (e.g., BERT, GPT) with traditional techniques like LSTM and CRFs.",e1
+me7,tk5,usedFor,"- Comparing Transformer-based models (e.g., BERT, GPT) with traditional techniques like LSTM and CRFs.",e1
+tk1,pa1,usedFor,Sunita proposes that we do a Temporal Sentiment Analysis in Historical Archives. The idea is to develop models that can not only detect sentiment but also understand how sentiment evolves over time in archival texts.,e2
+d1,tk1,usedFor,"she suggests we use datasets like the ""Chronicling America"" newspaper archives",e2
+d2,tk1,usedFor,"and the ""British Library Digital Collections.""",e2
+me1,tk1,usedFor,Developing temporal embeddings to capture sentiment shifts.,e2
+me2,tk1414,usedFor,Exploring historical lexicons to address diachronic language changes.,e2
+me15,tk5,usedFor,"Comparing Transformer-based models (e.g., BERT, GPT) with traditional techniques like LSTM and CRFs.",e2
+me5,tk5,usedFor,"Comparing Transformer-based models (e.g., BERT, GPT) with traditional techniques like LSTM and CRFs.",e2
+me6,tk5,usedFor,traditional techniques like LSTM and CRFs.,e2
+me7,tk5,usedFor,traditional techniques like LSTM and CRFs.,e2
+me15,tk1,usedFor,"I appreciate the enthusiasm surrounding the Temporal Sentiment Analysis project. I find the proposed methodologies, especially the use of Transformer-based models, particularly compelling.",e3
+d4,tk1,usedFor,I'll ensure I am ready with some initial findings I can share regarding the datasets.,e3
+me10,tk1,usedFor,"evaluation methods that focus on interpretability, given the historical context we are analyzing.",e4
+d1,tk10,usedFor,Agreement on using the “Chronicling America” and “British Library Digital Collections” datasets for sentiment analysis.,e6
+d2,tk10,usedFor,Agreement on using the “Chronicling America” and “British Library Digital Collections” datasets for sentiment analysis.,e6
+d1,tk1,usedFor,"Thank you for the productive meeting yesterday regarding the Temporal Sentiment Analysis project.
+
+1. Agreement on using the “Chronicling America” and “British Library Digital Collections” datasets for sentiment analysis.",e6
+d2,tk1,usedFor,"Thank you for the productive meeting yesterday regarding the Temporal Sentiment Analysis project.
+
+1. Agreement on using the “Chronicling America” and “British Library Digital Collections” datasets for sentiment analysis.",e6
+me1,tk1,usedFor,The team will explore the development of temporal embeddings and investigate historical lexicons for language change.,e6
+me2,tk1,usedFor,The team will explore the development of temporal embeddings and investigate historical lexicons for language change.,e6
+me10,tk1,usedFor,"Metrics for evaluation include accuracy, F1-score, temporal consistency score, and methods for interpretability.",e6
+d1,tk1,usedFor,My preliminary analyses reveal substantial variance in sentiment lexicon usage across decades,e7
+d2,tk1,usedFor,My preliminary analyses reveal substantial variance in sentiment lexicon usage across decades,e7
+me1,tk1,usedFor,underscoring the need for robust temporal embeddings and alignment methods.,e7
+me11,tk1,usedFor,underscoring the need for robust temporal embeddings and alignment methods.,e7
+me12,tk19,usedFor,"we implement a chronological split (by decade) rather than a random split, to better evaluate the temporal consistency of our models.",e7
+me13,tk19,usedFor,"we implement a chronological split (by decade) rather than a random split, to better evaluate the temporal consistency of our models.",e7
+me6,tk20,usedFor,establish a baseline with LSTM and traditional lexicon-based approaches,e7
+me14,tk20,usedFor,establish a baseline with LSTM and traditional lexicon-based approaches,e7
+me15,tk21,usedFor,before benchmarking Transformer models like BERT and its diachronic variants.,e7
+me16,tk21,usedFor,before benchmarking Transformer models like BERT and its diachronic variants.,e7
+me17,tk1,usedFor,perhaps we can discuss model-agnostic methods such as LIME or SHAP?,e7
+me18,tk1,usedFor,perhaps we can discuss model-agnostic methods such as LIME or SHAP?,e7
+me19,tk1,usedFor,perhaps we can discuss model-agnostic methods such as LIME or SHAP?,e7
+me12,tk1,usedFor,"implementing a chronological split makes strategic sense, especially since it will allow us to systematically model and analyze temporal drift in sentiment.",e8
+me6,tk1,usedFor,Establishing a baseline with LSTM and lexicon-based methods before moving to Transformer-based models is a solid plan.,e8
+me14,tk1,usedFor,Establishing a baseline with LSTM and lexicon-based methods before moving to Transformer-based models is a solid plan.,e8
+me15,tk1,usedFor,before moving to Transformer-based models is a solid plan.,e8
+me18,tk25,usedFor,"reviewing LIME, SHAP, and any additional approaches specifically tailored to diachronic analysis",e8
+me19,tk25,usedFor,"reviewing LIME, SHAP, and any additional approaches specifically tailored to diachronic analysis",e8
+d431,tk26,usedFor,ensuring consistency in preprocessing across both datasets.,e8
+d100,tk155,usedFor,focusing on their adaptability to models trained on diachronic (historically shifting) text data.,e9
+me21,tk31,usedFor,such as temporal saliency mapping and attention visualization techniques in Transformer architectures.,e9
+me22,tk31,usedFor,such as temporal saliency mapping and attention visualization techniques in Transformer architectures.,e9
+me12,tk1,usedFor,"your suggestion to use a decade-based split rather than a random one is well justified, especially in the context of tracking historical semantic shift and sentiment drift.",e9
+me12,tk19,usedFor,I concur that this method offers a more realistic evaluation of our models’ longitudinal generalizability.,e9
+d11,tk1331,usedFor,There might be preprocessing or post-hoc interpretability approaches we can apply to mitigate these issues without losing valuable historical nuance.,e9
+d1,tk13,usedFor,initial data processing for both the “Chronicling America” and “British Library Digital Collections” datasets.,e10
+d2,tk13,usedFor,initial data processing for both the “Chronicling America” and “British Library Digital Collections” datasets.,e10
+d1,tk1007,usedFor,which complicates extraction of clean sentences for analysis.,e10
+d2,tk1007,usedFor,which complicates extraction of clean sentences for analysis.,e10
+me142,tk1007,usedFor,I have begun by standardizing metadata fields,e10
+me27,tk1007,usedFor,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me28,tk1007,usedFor,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me142,tk1007,usedFor,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me144,tk39,usedFor,I am considering integrating an OCR correction tool,e10
+me31,tk47,usedFor,"tools like Tesseract in combination with post-correction frameworks such as ‘ocropy’ or the recent deep learning–based approaches (e.g., Project LaVa) have shown decent improvement in text recovery.",e11
+me32,tk47,usedFor,"tools like Tesseract in combination with post-correction frameworks such as ‘ocropy’ or the recent deep learning–based approaches (e.g., Project LaVa) have shown decent improvement in text recovery.",e11
+me33,tk47,usedFor,"tools like Tesseract in combination with post-correction frameworks such as ‘ocropy’ or the recent deep learning–based approaches (e.g., Project LaVa) have shown decent improvement in text recovery.",e11
+me144,tk1331,usedFor,"Michael, your suggestions regarding OCR correction tools and metadata mapping are extremely insightful.",e12
+me36,tk1007,usedFor,"Michael, your suggestions regarding OCR correction tools and metadata mapping are extremely insightful.",e12
+me35,tk1007,usedFor,The demonstration of your correction workflow in our upcoming meeting sounds excellent—this could provide clarity on the extent of cleaning needed for our specific datasets.,e12
+d11,tk1002,usedFor,"Reviewing these will help me adapt interpretability analyses; for example, I can test whether post-OCR tokens introduce artifact-driven explanations in LIME/SHAP output.",e12
+me18,tk1002,usedFor,"for example, I can test whether post-OCR tokens introduce artifact-driven explanations in LIME/SHAP output.",e12
+me19,tk1002,usedFor,"for example, I can test whether post-OCR tokens introduce artifact-driven explanations in LIME/SHAP output.",e12
+tk1002,tk19,usedFor,Establishing where our models may be ‘over-interpreting’ residual noise will be critical for robust longitudinal analysis.,e12
+me36,tk1007,usedFor,a unified versus dual mapping system for metadata standardization,e12
+me38,tk1007,usedFor,a unified versus dual mapping system for metadata standardization,e12
+me142,tk61,usedFor,leveraging recent case studies from similar large-scale historical NLP efforts.,e12
+tk61,tk62,usedFor,This should assist us in choosing the optimal approach for downstream harmonization and documentation.,e12
+me18,tk64,usedFor,analyze the impact of post-OCR artifacts on interpretability tools like LIME and SHAP,e13
+me19,tk64,usedFor,analyze the impact of post-OCR artifacts on interpretability tools like LIME and SHAP,e13
+me144,tk1331,usedFor,Michael's demonstration of OCR/post-processing pipeline (using shared Chronicling America samples),e14
+me44,tk74,usedFor,your initiative to contrast the interpretability outputs on raw versus post-OCR-corrected text,e14
+d1,tk1331,usedFor,Michael's demonstration of OCR/post-processing pipeline (using shared Chronicling America samples),e14
+me18,tk1002,usedFor,comparative review of LIME and SHAP on raw and OCR-corrected samples.,e16
+me19,tk1002,usedFor,comparative review of LIME and SHAP on raw and OCR-corrected samples.,e16
+d1,tk94,usedFor,a carefully curated “clean” subset of the corpus from both Chronicling America and British Library collections. This subset has been processed using Michael’s latest OCR correction pipeline and manually verified to ensure high textual fidelity and alignment with our dual metadata mapping policies.,e17
+d14,tk94,usedFor,a carefully curated “clean” subset of the corpus from both Chronicling America and British Library collections. This subset has been processed using Michael’s latest OCR correction pipeline and manually verified to ensure high textual fidelity and alignment with our dual metadata mapping policies.,e17
+me144,tk94,usedFor,This subset has been processed using Michael’s latest OCR correction pipeline and manually verified to ensure high textual fidelity and alignment with our dual metadata mapping policies.,e17
+d15,tk96,usedFor,as our next steps involve finalizing decade-based splits,e17
+d17,tk96,usedFor,as our next steps involve finalizing decade-based splits,e17
+d1,tk117,usedFor,"a model trained on one archive (e.g., Chronicling America) is tested on another (e.g., British Library), to assess robustness and transferability of learned linguistic patterns.",e19
+d13,tk117,usedFor,"a model trained on one archive (e.g., Chronicling America) is tested on another (e.g., British Library), to assess robustness and transferability of learned linguistic patterns.",e19
+tk107,tk119,usedFor,"Chronology Prediction: Evaluating models’ capacity to infer publication years or date ranges based on contextual signals, which could be crucial for downstream historiographical analysis.",e19
+tk1002,c1,usedFor,including author responsibilities for a potential ACL/EMNLP submission draft,e19
+tk1002,c2,usedFor,including author responsibilities for a potential ACL/EMNLP submission draft,e19
+me51,tk107,usedFor,both chronology prediction and transfer evaluation between datasets would showcase the broader impact of our methods,e20
+me52,tk124,usedFor,both chronology prediction and transfer evaluation between datasets would showcase the broader impact of our methods,e20
+me18,tk1002,usedFor,my preliminary experiments using both LIME and SHAP indicate clear differences in both stability and quality of explanations,e20
+me19,tk1002,usedFor,my preliminary experiments using both LIME and SHAP indicate clear differences in both stability and quality of explanations,e20
+d11,tk132,usedFor,especially in data segments with residual OCR errors,e21
+me51,tk107,usedFor,operationalizing chronology prediction,e21
+me52,tk124,usedFor,and cross-dataset transfer will help position our work for a top-tier venue.,e21
+me55,tk100,usedFor,Confirm baseline model configuration and initial results,e22
+c1,tk1002,usedFor,outline a preliminary authorship and responsibilities map for the planned ACL/EMNLP submission,e22
+c2,tk1002,usedFor,outline a preliminary authorship and responsibilities map for the planned ACL/EMNLP submission,e22
+me18,tk155,usedFor,Comparative quantitative evaluation of LIME vs. SHAP on our current corpus subset,e23
+me19,tk155,usedFor,Comparative quantitative evaluation of LIME vs. SHAP on our current corpus subset,e23
+d15,tk155,usedFor,Comparative quantitative evaluation of LIME vs. SHAP on our current corpus subset,e23
+me18,tk160,usedFor,"The side-by-side LIME vs. SHAP comparisons, especially in segments with persistent OCR artifacts, will be highly persuasive for reviewers at top NLP venues.",e24
+me19,tk160,usedFor,"The side-by-side LIME vs. SHAP comparisons, especially in segments with persistent OCR artifacts, will be highly persuasive for reviewers at top NLP venues.",e24
+me18,tk164,usedFor,Ananya presented the findings from her comparative evaluation of LIME and SHAP on our clean corpus subset.,e25
+me19,tk164,usedFor,Ananya presented the findings from her comparative evaluation of LIME and SHAP on our clean corpus subset.,e25
+d15,tk164,usedFor,Ananya presented the findings from her comparative evaluation of LIME and SHAP on our clean corpus subset.,e25
+c1,tk176,usedFor,planned ACL/EMNLP submission,e25
+c2,tk176,usedFor,planned ACL/EMNLP submission,e25
+me52,tk124,usedFor,data splits aligning with our cross-dataset transfer protocol,e26
+d100,tk177,usedFor,"Training and validation setups, including details on data splits aligning with our cross-dataset transfer protocol",e26
+d100,tk178,usedFor,"Training and validation setups, including details on data splits aligning with our cross-dataset transfer protocol",e26
+d24,tk177,usedFor,provenance-mismatch analyses on the pilot test sets,e26
+d25,tk100,usedFor,performance breakdown per data type (clean/Gaussian noise/OCR error subgroups),e26
+d26,tk100,usedFor,performance breakdown per data type (clean/Gaussian noise/OCR error subgroups),e26
+d11,tk100,usedFor,performance breakdown per data type (clean/Gaussian noise/OCR error subgroups),e26
+me19,tk1002,usedFor,interpretability side-outputs (alignment with Ananya’s SHAP/LIME findings),e26
+me18,tk1002,usedFor,interpretability side-outputs (alignment with Ananya’s SHAP/LIME findings),e26
+me60,tk183,usedFor,whether further regularization or alternative transfer settings should be prioritized for the next round of experiments,e26
+me63,tk183,usedFor,whether further regularization or alternative transfer settings should be prioritized for the next round of experiments,e26
+me10,tk182,usedFor,format of model explanations to share with annotators,e26
+d28,tk187,usedFor,Google Drive subfolder (`/stanford_annotations_may2019/`) for external collaborators to upload completed feedback forms and annotated samples.,e30
+me18,tk212,usedFor,she has provided detailed input on both the strengths and ambiguities of our LIME/SHAP explanations,e31
+me19,tk212,usedFor,she has provided detailed input on both the strengths and ambiguities of our LIME/SHAP explanations,e31
+me18,tk176,usedFor,points most likely to impact our ACL/EMNLP submission,e31
+me19,tk176,usedFor,points most likely to impact our ACL/EMNLP submission,e31
+me67,tk1002,usedFor,heatmaps overlaid with representative vignette quotes and side-by-side faithfulness/clarity ratings might make these trends more salient,e32
+me68,tk1002,usedFor,heatmaps overlaid with representative vignette quotes and side-by-side faithfulness/clarity ratings might make these trends more salient,e32
+c1,tk1002,usedFor,especially given the focus of this year’s ACL and EMNLP tracks on explainable NLP.,e32
+c2,tk1002,usedFor,especially given the focus of this year’s ACL and EMNLP tracks on explainable NLP.,e32
+me69,tk219,usedFor,flag data for potential exemplar visualizations,e32
+me70,tk220,usedFor,could form a strong supplemental figure for our evaluation section.,e32
+d100,tk216,usedFor,Recommendations to simplify or better contextualize explanations for historical data specialists.,e32
+c1,tk1917,usedFor,"reviewer guidelines from the latest ACL/EMNLP CFPs, focusing particularly on explainability, historical context awareness, and diversity of source types.",e33
+c2,tk1917,usedFor,"reviewer guidelines from the latest ACL/EMNLP CFPs, focusing particularly on explainability, historical context awareness, and diversity of source types.",e33
+me71,tk1917,usedFor,The team agreed on using faithfulness/clarity heatmaps for the main results,e35
+me72,tk1917,usedFor,paired with representative vignettes for both “best case” and “edge case” explanations.,e35
+me70,tk1917,usedFor,Ananya suggested a supplementary figure: bar charts showing breakdowns of willingness scores by document artifact severity.,e35
+me71,tk248,usedFor,I have begun assembling the faithfulness/clarity heatmaps using annotation highlights from both Dr. Liu and Dr. Patel,e36
+me70,tk249,usedFor,For the bar chart breakdown of willingness scores by OCR artifact severity,e36
+me75,tk250,usedFor,highlighting in the vignette figure? Please send your recommendations by the 17th so they can be incorporated.,e36
+me76,tk1002,usedFor,"Regarding the color palette, I am supportive of your proposal to employ a colorblind-friendly scheme for both heatmaps and bar charts (e.g., the “viridis” palette in matplotlib or equivalent).",e37
+me76,tk1002,usedFor,I would indeed endorse the use of a colorblind-friendly palette such as “viridis” or “plasma” (both available in matplotlib). These palettes not only improve interpretability for reviewers with color vision deficiencies but also generally yield figures with cleaner contrasts for publication.,e38
+me78,tk1002,usedFor,I would indeed endorse the use of a colorblind-friendly palette such as “viridis” or “plasma” (both available in matplotlib). These palettes not only improve interpretability for reviewers with color vision deficiencies but also generally yield figures with cleaner contrasts for publication.,e38
+me79,tk1002,usedFor,I would indeed endorse the use of a colorblind-friendly palette such as “viridis” or “plasma” (both available in matplotlib).,e38
+d30,mt21,usedFor,"for the “edge case” from Document F, it would be beneficial to visually annotate the section where the faithfulness rating notably dropped",e38
+tk1002,c1,usedFor,so that we can collectively review and finalize before submission to ACL.,e42
+tk298,c1,usedFor,we should be well on track for pre-submission administrative checks and a timely ACL submission.,e45
+tk308,c1,usedFor,I plan to initiate the submission to ACL by 28th May at the latest.,e47
+d33,tk326,usedFor,"On dataset releases: I propose that we discuss a phased release plan, since some portions (such as annotated OCR error corpora) may require additional documentation or clearance.",e51
+j1,tk1002,usedFor,lay groundwork for a journal submission to JOCCH or JDoc.,e51
+j2,tk1002,usedFor,lay groundwork for a journal submission to JOCCH or JDoc.,e51
+d34,tk326,usedFor,2. Phased Dataset Release: Review of required institutional clearances and documentation needs for each component.,e53
+d33,tk344,usedFor,Aim for initial phase (annotated OCR error corpus) to be ready for internal review by 16 June.,e54
+d33,tk354,usedFor,I will also begin compiling relevant descriptive statistics and example cases from our annotated OCR error corpus to include in the dataset documentation and for use in the seminar poster visualizations.,e55
+d33,tk355,usedFor,to include in the dataset documentation and for use in the seminar poster visualizations.,e55
+d100,tk366,usedFor,datasets containing annotated historical materials undergo a compliance check for copyright and consent,e57
+d229,tk354,usedFor,OCR error cases extracted from the annotated corpus (currently focusing on the late-19th-century Bengali and English periodicals segment).,e59
+d38,tk2398,usedFor,these materials provide exactly the level of granularity we need for both rigorous technical validation and clear institutional reporting. I have reviewed the uploaded appendix and datasets in the shared folder,e60
+d38,tk393,usedFor,these materials provide exactly the level of granularity we need for both rigorous technical validation and clear institutional reporting. I have reviewed the uploaded appendix and datasets in the shared folder,e60
+d39,tk398,usedFor,would be to list explicit publisher/source notes for each major dataset segment,e60
+d33,tk401,usedFor,1. Review of the current dataset documentation (section-by-section walkthrough),e61
+d33,tk402,usedFor,- Summary statistics and representative cases (Sunita/Ananya),e61
+d33,tk2398,usedFor,- Integration of technical validation pipeline (Michael),e61
+d194,tk415,usedFor,Next Steps Toward Data Release and Submission,e62
+tk420,d194,usedFor,the documentation is on track for finalization by 22 June.,e62
+d194,tk412,usedFor,Dataset Documentation Review,e62
+d194,tk2398,usedFor,Technical Validation Pipeline,e62
+d194,tk1002,usedFor,Compliance Issues,e62
+d43,tk2398,usedFor,The annotated validation logs (v0.2.1) are now available in our shared Drive directory under `/dataset_release_June2019/validation_logs/`.,e64
+me133,tk2398,usedFor,"Additionally, I have prepared a 300-word summary paragraph for the “Technical Validation” section that outlines our evaluation metrics (Cohen’s kappa, F1 per class), cross-annotator agreement methodology, and the logging of pipeline version numbers and dependencies for full reproducibility.",e64
+d194,tk435,usedFor,as we approach the deadline for the dataset release package.,e65
+d194,tk1002,usedFor,regarding the “Sensitive Data & Risk Assessment” note and related compliance documentation,e65
+d194,tk1002,usedFor,formal external attestation will not be required for the JOCCH submission at this stage.,e65
+j1,tk1002,usedFor,"2. Consensus on submission of the package to JOCCH, subject to any last-moment comments.",e66
+d175,tk1002,usedFor,your documentation and supporting datasets have met our compliance criteria,e70
+me92,tk457,usedFor,"technical validation procedures, or your risk & compliance documentation",e70
+d100,tk478,usedFor,I will draft revised language for these points by Sunday evening (29 August) and circulate for feedback.,e74
+d54,tk478,usedFor,the open data licenses governing digitized materials from both Indian and European sources,e74
+d55,tk478,usedFor,while parental scans (where indicated) remain governed by respective archive licenses.,e74
+d100,j1,usedFor,"annotator-generated resources and NLP outputs are released under the CC BY 4.0 license, while raw scans remain subject to original archive restrictions.",e78
+d100,j1,usedFor,"annotations and pre-processed datasets may be freely reused, but proper source attribution and non-infringement of parental scan licenses is mandatory.",e78
+d175,j1,usedFor,"annotations and pre-processed datasets may be freely reused, but proper source attribution and non-infringement of parental scan licenses is mandatory.",e78
+me99,tk518,usedFor,evaluation approaches for NLP in digital heritage.,e84
+d114,tk517,usedFor,historical language resources and evaluation approaches for NLP in digital heritage.,e84
+me103,tk525,usedFor,emphasizing genre split procedures along with the subtleties of Bengali and English annotations ... Please highlight any NER and topic annotation edge cases,e86
+me101,tk525,usedFor,emphasizing genre split procedures along with the subtleties of Bengali and English annotations ... Please highlight any NER and topic annotation edge cases,e86
+me102,tk1002,usedFor,drafting a version that incorporates a more prominent description of the genre segmentation protocol,e87
+me103,tk1002,usedFor,includes explicit references to the specific NER and topic annotation nuances,e87
+me101,tk1002,usedFor,includes explicit references to the specific NER and topic annotation nuances,e87
+d68,tk1002,usedFor,I intend to cross-reference the relevant points in our supplementary “Annotator_Agreement_ByGenre” tables to ensure completeness,e87
+me104,tk526,usedFor,"elaborate on responsible downstream use, referencing recent open-heritage data management standards",e88
+me105,tk526,usedFor,specifically CLARIN’s ... recommendations for digital cultural heritage,e88
+me106,tk526,usedFor,specifically ... Europeana’s recommendations for digital cultural heritage,e88
+d100,tk526,usedFor,detail how our annotated corpora adhere to both licensing and ethical reuse mandates,e88
+j1,tk550,usedFor,ahead of the 27th November 2019 journal deadline.,e91
+me102,tk525,usedFor,The revised version more explicitly delineates the genre segmentation methodology,e92
+d66,tk525,usedFor,with clear demarcation of workflow across the Bengali and English corpora,e92
+d67,tk525,usedFor,with clear demarcation of workflow across the Bengali and English corpora,e92
+d68,tk525,usedFor,and clarifies the edge cases noted in the supplementary “Annotator_Agreement_ByGenre” tables.,e92
+me132,tk556,usedFor,a brief cross-reference statement to direct readers to specific examples of NER ambiguity,e92
+me133,tk557,usedFor,annotation policy adjustments undertaken after preliminary inter-annotator agreement analysis.,e92
+me134,tk557,usedFor,annotation policy adjustments undertaken after preliminary inter-annotator agreement analysis.,e92
+me135,tk526,usedFor,The revised text now directly references the data stewardship and responsible use guidelines from both CLARIN and Europeana,e93
+me104,tk526,usedFor,The revised text now directly references the data stewardship and responsible use guidelines from both CLARIN and Europeana,e93
+me139,tk526,usedFor,as well as our compliance with licensing mandates stated by the Bengali and English source archives.,e93
+me140,tk526,usedFor,and appended a short note on post-publication access and archival preservation in line with JOCCH’s open heritage standards.,e93
+d74,tk526,usedFor,our compliance with licensing mandates stated by the Bengali and English source archives.,e93
+me141,tk570,usedFor,it might be helpful to run a final pass with the built-in “Accessibility Checker” (Adobe Acrobat) on the combined PDF to ensure that all links are readable for screen readers,e94
+j13,tk576,usedFor,"Once everyone approves, I will upload the final version and accompanying response letter to JOCCH as scheduled, ahead of the 23 December target.",e95
+tk1002,j1,usedFor,I see no further revisions needed before formal upload to JOCCH.,e97
+me142,tk1006,usedFor,"to deliver a rigorous, open, and reusable NLP resource for historical text analysis.",e98
+d76,tk1002,usedFor,These can be based on ambiguous named entities from our “Bengali-English Colonial Gazetteers”,e101
+me144,tk593,usedFor,"If you could draft a brief summary that integrates seamlessly in Appendix B (2–3 sentences), it would address this explicitly.",e101
+me146,tk603,usedFor,further clarification of the annotation guidelines for entity disambiguation (Section 4.2),e102
+d77,tk1002,usedFor,I am extracting these from our annotated set (“EntityAmbiguity_Examples_SSen_14Jan2020.docx”) for seamless integration into Section 4.2.,e102
+me146,tk1002,usedFor,I will also ensure both examples are aligned with the entity disambiguation protocol we established and cross-reference the supplementary guidelines.,e102
+d78,me144,usedFor,variational orthographies—common in colonial-era newspapers and census records—against a reference list,e103
+d81,me144,usedFor,draws on examples from the shared “NormalizationPipeline_MBradley_2020.xlsx” document,e103
+d181,me144,usedFor,whether it would be valuable to point to a concrete example from the benchmark set.,e103
+me159,tk612,usedFor,and I have used both the PAC 2019 and Adobe Acrobat checker tools for early validation.,e104
+me141,tk612,usedFor,and I have used both the PAC 2019 and Adobe Acrobat checker tools for early validation.,e104
+tk1008,tk1006,usedFor,dataset normalization ... for historical NLP tasks.,e118
+tk612,tk1006,usedFor,accessibility in tabular annotations ... for historical NLP tasks.,e118
+d83,tk695,usedFor,cross-lingual ambiguity patterns in historical place names,e119
+d84,tk695,usedFor,issues in standardizing metadata across colonial gazetteer sources.,e119
+c1,tk701,usedFor,short workshop proposals at ACL or JCDL,e119
+c21,tk701,usedFor,short workshop proposals at ACL or JCDL,e119
+me165,tk1006,usedFor,particularly in the context of historical NLP.,e120
+d100,tk1006,usedFor,evolving historical corpora ... particularly in the context of historical NLP.,e120
+me168,tk1006,usedFor,Comprehensive metadata capture and version control for evolving historical corpora ... in the context of historical NLP.,e120
+me169,tk4796,usedFor,merit special treatment in a methods appendix for future submissions.,e120
+tk721,c21,usedFor,turn our retrospective into a methods or workflow paper for JCDL,e123
+me142,tk1007,usedFor,"Sunita, your offer to assist with the corpus normalization section will surely add value.",e124
+me172,tk737,usedFor,version control scripts that could supplement a future methods appendix or workflow tutorial.,e125
+me144,tk740,usedFor,such as aligning multilingual OCR output,e125
+me174,tk4458,usedFor,or mitigating annotation drift,e125
+tk739,tk742,usedFor,which I believe warrant further community discussion and could be of high interest for future ACL or JCDL proposals.,e125
+d86,tk743,usedFor,"submitting a minimal, reusable dataset sample alongside our documented workflows",e125
+c1,tk742,usedFor,could be of high interest for future ACL or JCDL proposals.,e125
+c21,tk742,usedFor,could be of high interest for future ACL or JCDL proposals.,e125
+d87,tk753,usedFor,"publication of a small, representative corpus sample with detailed annotation and normalization guidelines",e126
+me184,tk771,usedFor,A comparative evaluation of rule-based vs. neural string matching approaches,e127
+me186,tk771,usedFor,"A comparative evaluation of rule-based vs. neural string matching approaches (Levenshtein distance, BERT-based alignment, and FastText embeddings).",e127
+me184,tk771,usedFor,"A comparative evaluation of rule-based vs. neural string matching approaches (Levenshtein distance, BERT-based alignment, and FastText embeddings).",e127
+me188,tk771,usedFor,"A comparative evaluation of rule-based vs. neural string matching approaches (Levenshtein distance, BERT-based alignment, and FastText embeddings).",e127
+d76,tk1627,usedFor,The focus is on the workflow we adopted for handling Bengali-English place names in our historical corpus,e127
+d89,tk772,usedFor,Strategies for leveraging Wikidata and domain-specific gazetteers to increase normalization accuracy and recall.,e127
+d90,tk772,usedFor,Strategies for leveraging Wikidata and domain-specific gazetteers to increase normalization accuracy and recall.,e127
+me14,tk1627,usedFor,the comparative approach to both rule-based and neural methods,e128
+me190,tk1627,usedFor,the comparative approach to both rule-based and neural methods,e128
+me188,tk1627,usedFor,your inclusion of FastText embedding strategies and observations on ambiguous orthographies,e128
+d100,tk687,usedFor,Preliminary recommendations for reviewers on evaluating reproducible historical NLP workflows.,e128
+me184,tk790,usedFor,your comparative table of string matching methods is exceptionally clear,e129
+j7,tk791,usedFor,highly instructive for the sort of best practice documentation JCDL reviewers seek.,e129
+tk1002,c6,usedFor,requirements for the JCDL tutorial submission.,e131
+me142,tk1627,usedFor,"how our workflow can serve as a template for other multi-script, low-resource historical NLP projects.",e131
+me142,tk819,usedFor,"how our workflow can serve as a template for other multi-script, low-resource historical NLP projects.",e131
+me195,tk1534,usedFor,"Michael, I saw your FAIR pipeline summary visual in the shared drive and think it will complement these case studies well.",e131
+d92,tk1627,usedFor,an edge case from our colonial-era corpus where ground-truth verification was challenging,e131
+d92,tk819,usedFor,"our workflow can serve as a template for other multi-script, low-resource historical NLP projects.",e131
+me195,tk823,usedFor,"This visual lays out the end-to-end process, including data sensitivity triage, metadata capture, and Zenodo record creation.",e132
+me195,tk824,usedFor,"This visual lays out the end-to-end process, including data sensitivity triage, metadata capture, and Zenodo record creation.",e132
+me195,tk781,usedFor,"This visual lays out the end-to-end process, including data sensitivity triage, metadata capture, and Zenodo record creation.",e132
+tk1002,c6,usedFor,approve submission to JCDL 2020.,e135
+d93,tk3280,usedFor,"I suggest briefly touching on two common annotation edge cases (perhaps with an example from the Bengali-English corpus section), to demonstrate the workflow’s adaptability.",e141
+d94,tk865,usedFor,"“(Data sample drawn from the Bengali-English parallel corpus, 1857–1947; mapping ambiguities primarily reflect shifting lexical conventions pre- and post-colonial administrative transitions.)”",e142
+d95,tk1002,usedFor,"Please review the current drafts and files in the shared ‘Revision_Materials’ folder, noting any issues needing group input.",e143
+c21,tk899,usedFor,which should leave ample buffer ahead of the 15 July conference deadline.,e147
+d96,tk923,usedFor,"It may be prudent to prepare local copies of all demo materials and datasets, in case of connectivity interruptions during the live session.",e152
+d248,tk923,usedFor,"For the backup plan, I fully agree—preparing local copies of all critical demo files and dataset samples is prudent.",e153
+c6,tk955,usedFor,deliver an insightful and technically robust tutorial at JCDL 2020.,e156
+mg67,tk963,usedFor,"**Session Schedule:**  
+- 13:30–13:40 UTC: Opening remarks, speaker introductions",e158
+mg67,tk964,usedFor,- 13:40–15:30 UTC: Tutorial presentations and live demonstrations (per your submitted agenda),e158
+mg67,tk965,usedFor,- 15:30–16:00 UTC: Audience Q&A and closing discussion,e158
+d100,tk1683,usedFor,our annotated datasets and normalization strategies would be novel contributions. I also support the idea of maintaining momentum through a resource repository,e161
+me142,tk1683,usedFor,our annotated datasets and normalization strategies would be novel contributions. I also support the idea of maintaining momentum through a resource repository,e161
+d100,tk1002,usedFor,"a survey/methods piece for JOCCH based on our annotated historical corpora, normalization framework, and lessons from reproducible workflows.",e162
+me142,tk1002,usedFor,"a survey/methods piece for JOCCH based on our annotated historical corpora, normalization framework, and lessons from reproducible workflows.",e162
+me165,tk1002,usedFor,"a survey/methods piece for JOCCH based on our annotated historical corpora, normalization framework, and lessons from reproducible workflows.",e162
+d101,tk1683,usedFor,"Next steps for creating an open repository of our demo scripts, annotation templates, and perhaps sample data, ensuring compliance with both copyright and institutional policies.",e162
+c21,tk972,usedFor,Review of any official feedback or survey results from JCDL organizers (if available by then).,e162
+j1,tk1002,usedFor,"Outlining publication prospects, specifically a survey/methods piece for JOCCH based on our annotated historical corpora...",e162
+c1,tk3384,usedFor,Brainstorming opportunities for future workshops or tutorials at venues like ACL or EMNLP.,e162
+c2,tk3384,usedFor,Brainstorming opportunities for future workshops or tutorials at venues like ACL or EMNLP.,e162
+mg72,tk986,usedFor,"Thank you for the prompt replies and thoughtful suggestions regarding our debrief meeting. Based on everyone’s stated preferences and availability, I am pleased to confirm our meeting for **22nd May 2019 at 15:30 UTC**.",e163
+mg72,tk972,usedFor,"**Provisional Agenda (as suggested by Ananya):**
+1. Discussion of official feedback/survey results from JCDL organizers (pending receipt).",e163
+mg72,tk973,usedFor,"2. Review of the tutorial presentation process—strengths, challenges, and lessons learned.",e163
+mg72,tk989,usedFor,3. Outlining the structure and scope of a potential survey/methods paper for submission to JOCCH.,e163
+mg72,tk1683,usedFor,"4. Next steps for launching an open repository of our demo scripts, annotation materials, and (if permissible) selected historical data samples.",e163
+mg72,tk3384,usedFor,"5. Planning future workshops/tutorials (e.g., ACL or EMNLP) and community engagement ideas.",e163
+j1,tk1018,usedFor,review JOCCH’s open-data and reproducibility guidelines as Michael suggested.,e167
+j1,tk1018,usedFor,"Review latest JOCCH author guidelines, especially requirements for data/code sharing and manuscript structure.",e167
+j1,tk1025,usedFor,review the most recent JOCCH guidelines,e168
+d102,tk1002,usedFor,"Procedures for handling sensitive or restricted content, including any embargoed datasets or scripts that would require additional requests for access.",e171
+me203,tk1002,usedFor,"Procedures for handling sensitive or restricted content, including any embargoed datasets or scripts that would require additional requests for access.",e171
+d103,tk1002,usedFor,Strategies for ensuring the repository remains accessible and maintained,e171
+me204,tk1002,usedFor,"Strategies for ensuring the repository remains accessible and maintained (e.g., assignment of a maintenance lead",e171
+me205,tk1002,usedFor,or integration with platforms like Zenodo/OSF).,e171
+d104,tk1002,usedFor,deposit in institutional archives,e171
+d105,tk1002,usedFor,integration with platforms like Zenodo/OSF,e171
+d106,tk1002,usedFor,integration with platforms like Zenodo/OSF,e171
+me206,tk1002,usedFor,Which Creative Commons (or comparable) license would best accommodate both the restrictions from our source archives and the permissive reuse we hope to enable for the larger research community.,e171
+tk1002,j1,usedFor,addressing these aspects now will ease the submission and review process for JOCCH,e172
+me207,d103,usedFor,I propose defaulting to CC BY for the bulk of our repository,e172
+me208,d108,usedFor,with CC BY-NC applied selectively for sensitive/embargoed components,e172
+d109,tk1049,usedFor,with clear instructions for periodic review,e172
+me142,tk1002,usedFor,"The abstract focuses on making our work accessible to a broad audience, emphasizing the societal value and potential impact of our NLP tools in unlocking historical textual data.",e178
+me212,tk1108,usedFor,particularly on the detailed explanation of our token normalization approach and evaluation set selection logic.,e181
+me213,tk1108,usedFor,particularly on the detailed explanation of our token normalization approach and evaluation set selection logic.,e181
+d100,tk1002,usedFor,"a particular file (e.g., annotated corpus samples or workshop artifacts) requires additional context before integration",e181
+me214,tk100,usedFor,linking these methods to Michael’s “Evaluation & Benchmarks”,e182
+me214,tk1095,usedFor,and Ramesh’s “Historical Corpus Profiling” sections for a seamless transition.,e182
+tk1002,mg81,usedFor,"Agenda:
+- ...
+- Timeline for submission of the camera-ready internal draft",e184
+me214,tk1126,usedFor,We have agreed on the specific anchors for linking the “Transfer Learning in Low-Resource Historical Texts” subsection to the “Evaluation & Benchmarks” section.,e186
+me215,tk1126,usedFor,We have agreed on the specific anchors for linking the “Transfer Learning in Low-Resource Historical Texts” subsection to the “Evaluation & Benchmarks” section.,e186
+d112,tk1126,usedFor,Statistically significant results for low-resource language benchmarks were approved for concise inclusion in both Results and Abstract.,e186
+me216,tk1151,usedFor,expanded discussion on cross-lingual model generalizability,e193
+d114,tk100,usedFor,error analysis using our most recent experiments on the Bengali–Gujarati and French–English historical corpora.,e193
+me142,tk1159,usedFor,visual concepts that succinctly convey our cross-lingual model transfer workflow and dataset harmonization protocol.,e194
+d116,tk1159,usedFor,visual concepts that succinctly convey our cross-lingual model transfer workflow and dataset harmonization protocol.,e194
+d116,tk1177,usedFor,"Option A: Highlights the cross-lingual model transfer and dataset harmonization pipeline, using distinct colors for each dataset and arrows to emphasize transfer directions.",e196
+me142,tk1177,usedFor,"Option A: Highlights the cross-lingual model transfer and dataset harmonization pipeline, using distinct colors for each dataset and arrows to emphasize transfer directions.",e196
+me221,tk1177,usedFor,"Option B: Focuses more on the data privacy and compliance process, including iconography for anonymization and audit mechanisms.",e196
+me222,tk1177,usedFor,"Option B: Focuses more on the data privacy and compliance process, including iconography for anonymization and audit mechanisms.",e196
+me219,tk1177,usedFor,"Option B: Focuses more on the data privacy and compliance process, including iconography for anonymization and audit mechanisms.",e196
+d118,tk100,usedFor,confusion matrices for Bengali–Gujarati and French–English test datasets.,e197
+d119,tk100,usedFor,confusion matrices for Bengali–Gujarati and French–English test datasets.,e197
+d120,tk100,usedFor,"error propagation, particularly with low-resource dataset domains.",e197
+d121,tk100,usedFor,examples where low-resource lexicons contributed to transfer errors.,e198
+d124,tk1216,usedFor,domain shift experiments between Gujarati and French datasets,e206
+d125,tk1216,usedFor,domain shift experiments between Gujarati and French datasets,e206
+me224,tk1218,usedFor,Reviewer 2 appreciates the code anchor system but requests a short methodological section on how anchors facilitate code transparency and reviewer navigation.,e206
+d124,tk1006,usedFor,cross-lingual transfer for NLP applications on historical corpora,e206
+d125,tk1006,usedFor,cross-lingual transfer for NLP applications on historical corpora,e206
+me224,tk1223,usedFor,your attention to data privacy and reproducibility via anchored code appendices,e206
+d124,tk1224,usedFor,Domain Shift Analysis ... as the model is applied across Gujarati and French datasets.,e207
+d125,tk1224,usedFor,Domain Shift Analysis ... as the model is applied across Gujarati and French datasets.,e207
+me224,tk1218,usedFor,draft a short methods subsection highlighting how the anchor system enhances transparency and reviewer navigation,e207
+me224,tk1218,usedFor,"since you coordinated the integration of the cell anchors, would you be able to draft a short methods subsection",e207
+me216,tk1224,usedFor,"This draft details the observed boundary conditions of our cross-lingual transfer approach, focusing on variance in F1-score, precision, and recall as the Gujarati-trained model is applied to the French historical corpus.",e211
+d126,tk1224,usedFor,as the Gujarati-trained model is applied to the French historical corpus.,e211
+d127,tk1224,usedFor,as the Gujarati-trained model is applied to the French historical corpus.,e211
+d128,pa31,usedFor,datasets included in our study,e214
+d129,pa31,usedFor,datasets included in our study,e214
+d130,tk1272,usedFor,"compliance protocols governing both the Indian (IT Act, 2019 and the 2019 guidelines)",e214
+d129,tk1272,usedFor,"European (GDPR Article 89, Recital 156) datasets included in our study.",e214
+d134,tk1298,usedFor,Reviewer 3’s jurisdictional question on Indian archival compliance can use the additional supporting document I placed in the Drive (“IACS_ApprovalLetter.pdf”).,e217
+tk1304,j1,usedFor,"If no major issues arise, we will proceed to formal submission to JOCCH on 15 February as planned.",e218
+me240,tk1331,usedFor,clarification on the “historical OCR noise threshold” cases from our earlier error analyses,e223
+me239,tk1329,usedFor,"If any LaTeX-to-Word conversion challenges arise, I will reach out for technical assistance as suggested.",e223
+me243,tk1314,usedFor,I have transitioned the relevant LaTeX table environments to utilize the `tabu` package,e227
+me241,tk1314,usedFor,I have transitioned the relevant LaTeX table environments to utilize the `tabu` package,e227
+me242,tk1314,usedFor,and integrated the most recent ACM style recommendations for multi-line cells.,e227
+d136,tk1321,usedFor,so that I can implement necessary tweaks prior to the internal 2 April draft deadline.,e227
+me244,tk1371,usedFor,"code cells explaining our handling of edge case scenarios during anchor-based domain adaptation, as highlighted by Reviewer 1.",e228
+d138,tk1371,usedFor,Thank you to Sunita for uploading the sample OCR noise outputs—these have been referenced in the markdown blocks and code outputs directly,e228
+j1,tk1394,usedFor,"3. **Formatting Consistency**: Verify that our LaTeX-generated figures, tables, and cross-references are stable across PDF viewers and adhere to JOCCH’s latest formatting guidelines.",e231
+d139,tk1412,usedFor,"explicit split annotation for NLP benchmarking in entity linking, extraction, and semantic drift studies.",e236
+d139,tk1413,usedFor,"explicit split annotation for NLP benchmarking in entity linking, extraction, and semantic drift studies.",e236
+d139,tk1414,usedFor,"explicit split annotation for NLP benchmarking in entity linking, extraction, and semantic drift studies.",e236
+d141,tk1415,usedFor,emphasizing noisy text normalization and historical entity mapping.,e236
+d141,tk1416,usedFor,emphasizing noisy text normalization and historical entity mapping.,e236
+d139,tk1417,usedFor,"emerging multilingual historical NLP benchmarks, as typified by the Global Historical Press Corpus (Johnson et al., 2020)",e236
+d141,tk1417,usedFor,"emerging multilingual historical NLP benchmarks, as typified by the Global Historical Press Corpus (Johnson et al., 2020) and HISTEXT-21 (Sánchez-Gijón et al., 2021)",e236
+d140,tk1418,usedFor,Recent corpora such as GHPC and HISTEXT-21 have enabled direct comparative evaluation in cross-domain settings,e236
+d141,tk1418,usedFor,Recent corpora such as GHPC and HISTEXT-21 have enabled direct comparative evaluation in cross-domain settings,e236
+d140,tk1423,usedFor,"Michael, the two recent cross-domain corpora recommendations—GHPC (Johnson et al., 2020) and HISTEXT-21 (Sánchez-Gijón et al., 2021)—align perfectly with our dataset section’s intended benchmarking",e237
+d141,tk1423,usedFor,"Michael, the two recent cross-domain corpora recommendations—GHPC (Johnson et al., 2020) and HISTEXT-21 (Sánchez-Gijón et al., 2021)—align perfectly with our dataset section’s intended benchmarking",e237
+d140,tk1002,usedFor,the new GHPC and HISTEXT-21 entries are currently listed before an earlier 2019 dataset citation; might need minor reordering as per JOCCH style,e240
+d141,tk1002,usedFor,the new GHPC and HISTEXT-21 entries are currently listed before an earlier 2019 dataset citation; might need minor reordering as per JOCCH style,e240
+d142,tk1002,usedFor,the new GHPC and HISTEXT-21 entries are currently listed before an earlier 2019 dataset citation; might need minor reordering as per JOCCH style,e240
+me165,pa39,usedFor,confirming the updated reproducibility workflow.,e240
+me142,tk1482,usedFor,students and colleagues interested in applying HistocrNLP to regional corpora.,e254
+me247,tk1523,usedFor,I have started adding a brief section on the significance of our pipeline for South Asian historical language corpora,e259
+d114,tk1523,usedFor,"our pipeline for South Asian historical language corpora, with examples referencing regional digitization initiatives and the challenges of multilingual resource integration.",e259
+me142,tk1006,usedFor,open and reproducible NLP for historical texts,e260
+me142,tk1006,usedFor,"a flexible, scalable approach to processing multilingual, historic texts",e262
+me142,tk1547,usedFor,"with applications for digital heritage, historical linguistics, and data-driven humanities.",e262
+me142,tk1548,usedFor,"with applications for digital heritage, historical linguistics, and data-driven humanities.",e262
+me142,tk1549,usedFor,"with applications for digital heritage, historical linguistics, and data-driven humanities.",e262
+d147,tk1006,usedFor,"a flexible, scalable approach to processing multilingual, historic texts",e262
+me251,tk1619,usedFor,I am working on incorporating comparative NLP analysis points from the South Asian corpus segment,e269
+me144,tk1331,usedFor,focusing on the challenges of OCR post-processing and named entity recognition in low-resource historical datasets.,e269
+me253,tk1621,usedFor,focusing on the challenges of OCR post-processing and named entity recognition in low-resource historical datasets.,e269
+d114,tk1619,usedFor,comparative NLP analysis points from the South Asian corpus segment,e269
+d149,tk1622,usedFor,complementary European corpus applications,e269
+d100,tk1331,usedFor,OCR post-processing and named entity recognition in low-resource historical datasets.,e269
+d100,tk1621,usedFor,OCR post-processing and named entity recognition in low-resource historical datasets.,e269
+d151,tk1627,usedFor,"I have collated the key datasets and annotation guidelines from the Oxford European corpus initiative, particularly focusing on the extraction and normalisation of historical place names across multi-language corpora.",e270
+j5,tk1659,usedFor,"Ramesh will circulate a draft press release for cross-institutional review by 8 September, ensuring ACM JOCCH metadata aligns in all communications.",e274
+d152,tk1650,usedFor,"I have only suggested minimal bullet point tweaks on slide 17 regarding dataset interoperability, which I have marked in the comments.",e275
+me142,tk1626,usedFor,"""NLP Methods for Historical Data: Global Challenges, Local Contexts.""",e278
+d100,tk1626,usedFor,"""NLP Methods for Historical Data: Global Challenges, Local Contexts.""",e278
+d154,tk1696,usedFor,"I will prepare a concise best practices guide for section 5, focusing especially on cross-border dataset usage, metadata anonymization, and user consent documentation",e280
+me255,tk1696,usedFor,"I will prepare a concise best practices guide for section 5, focusing especially on cross-border dataset usage, metadata anonymization, and user consent documentation",e280
+me256,tk1696,usedFor,"I will prepare a concise best practices guide for section 5, focusing especially on cross-border dataset usage, metadata anonymization, and user consent documentation",e280
+d114,tk1719,usedFor,"This will include both primary dataset characteristics (size, temporal scope, digitization protocols)",e282
+me257,tk1002,usedFor,"and detailed annotation guidelines, including schema hierarchies and license restrictions specific to IACS and its national partners.",e282
+d157,tk1730,usedFor,"add any additional discussion points (e.g., content vetting process, technical barriers for public release, or desired templates for dataset summaries)",e284
+d194,tk1735,usedFor,"Timeline check for all upcoming milestones (esp. dataset & code doc uploads by 27 September, GDPR/licensing notes, and pre-vetting ahead of the 2 October deadline)",e284
+me258,tk1732,usedFor,Quick status updates (incl. any hurdles in data compilation or toolchain documentation),e284
+me259,tk1733,usedFor,Agreement on public vs. internal repository structure within our new GitHub Organization,e284
+me260,tk1734,usedFor,Review of folder access and permission issues on both IACS-drive and GitHub,e284
+me261,tk1734,usedFor,Review of folder access and permission issues on both IACS-drive and GitHub,e284
+me262,tk1738,usedFor,"Open issues: technical standards (e.g., metadata formats or Jupyter/Python package versions)",e284
+me263,tk1738,usedFor,"Open issues: technical standards (e.g., metadata formats or Jupyter/Python package versions)",e284
+me264,tk1738,usedFor,"For the annotated Jupyter notebooks, do we want to standardize on Python 3.10 and require participants to use conda environments, or provide Docker images for full reproducibility?",e285
+me265,tk1738,usedFor,"For the annotated Jupyter notebooks, do we want to standardize on Python 3.10 and require participants to use conda environments, or provide Docker images for full reproducibility?",e285
+me266,tk1738,usedFor,"For the annotated Jupyter notebooks, do we want to standardize on Python 3.10 and require participants to use conda environments, or provide Docker images for full reproducibility?",e285
+me267,tk1738,usedFor,or provide Docker images for full reproducibility?,e285
+me268,tk1738,usedFor,I have experience assembling Dockerfiles and can prepare a draft if we decide to go that route,e285
+d158,tk1742,usedFor,for public datasets included in the knowledge base? This will help ensure our sample repository README is fully compliant.,e285
+me269,tk1743,usedFor,The sequence labeling demo relies on a Stanford-backed annotation toolkit that may need a site-specific install,e285
+me270,tk1743,usedFor,The sequence labeling demo relies on a Stanford-backed annotation toolkit that may need a site-specific install,e285
+me271,tk1743,usedFor,or streamline to cloud-based deployment for maximum accessibility?,e285
+me272,tk1742,usedFor,This will help ensure our sample repository README is fully compliant.,e285
+me279,tk1769,usedFor,"This document includes specifications for Python 3.10 environment setup with conda, detailed package lists, and guidance on installing optional dependencies for legacy data parsing.",e288
+d160,me278,usedFor,featuring annotated code blocks and output sample cells relevant to our South Asian corpus.,e288
+d100,tk1686,usedFor,"The GDPR document provides a concise framework specifically for cross-institutional research involving historical datasets, addressing issues of identifiable data, archival exceptions, and requirements for joint controller arrangements.",e289
+d159,tk1779,usedFor,code lists for our primary sequence labeling tasks,e290
+d161,tk1787,usedFor,"compiling and reviewing the documentation, technical materials, and compliance components for our historical NLP knowledge base.",e291
+d162,tk1002,usedFor,"publishing in JOCCH could offer enduring scholarly impact and aligns well with our extensive dataset, legal, and compliance documentation",e294
+c1,tk1807,usedFor,if we believe the resource paper at ACL can later be expanded for journal publication,e294
+j1,tk1002,usedFor,publishing in JOCCH could offer enduring scholarly impact,e294
+tk1806,tk1805,usedFor,this would fulfill one of the recommended milestones for PhD progression reviews,e294
+c15,tk1837,usedFor,"Michael presented the draft with comparative columns for ACL 2022 (Resource Track) and JOCCH, highlighting scope/audience, manuscript length, timelines (6–12 weeks for ACL, up to 4 months for JOCCH), and transparency requirements.",e298
+j1,tk1837,usedFor,"Michael presented the draft with comparative columns for ACL 2022 (Resource Track) and JOCCH, highlighting scope/audience, manuscript length, timelines (6–12 weeks for ACL, up to 4 months for JOCCH), and transparency requirements.",e298
+c15,tk1838,usedFor,"Unanimous consensus to proceed first with an ACL 2022 Resource Track submission, targeting the late-November deadline.",e298
+tk1844,c14,usedFor,the rationale behind prioritizing the ACL 2022 Resource Track submission,e299
+me280,tk1849,usedFor,"I would also suggest referring to the latest ACL reproducibility guidelines, which were recently updated and could further strengthen our compliance section.",e299
+me281,tk100,usedFor,I'll continue developing the Introduction and Evaluation Method sections through the weekend and would welcome early feedback on clarity and scope.,e300
+d105,tk1870,usedFor,"planned release strategy (leveraging dual repositories, with primary datasets on Zenodo and institutional back-up at IACS)",e303
+d164,tk1870,usedFor,"planned release strategy (leveraging dual repositories, with primary datasets on Zenodo and institutional back-up at IACS)",e303
+d100,tk1886,usedFor,especially given the unique ethical and representational issues of historical text datasets—will fortify our case for reproducibility and reuse.,e306
+tk1002,c1,usedFor,"an updated timeline for internal review and pre-submission checks, in light of recent adjustments to ACL deadlines.",e306
+d102,tk1894,usedFor,"Resolution of reviewer access to embargoed datasets, including possible generation of synthetic “preview samples.”",e308
+d166,tk1894,usedFor,including possible generation of synthetic “preview samples.”,e308
+d167,tk1917,usedFor,cross-referenced to the ACL resource track reproducibility standards. The explicit mapping to the ACL checklist,e310
+d167,tk1917,usedFor,"The explicit mapping to the ACL checklist should, I agree, pre-empt reviewer concerns",e310
+d169,tk1921,usedFor,incorporating Ananya’s references to previous ACL artifact review feedback.,e310
+d166,tk1944,usedFor,I am writing to confirm that I have completed the revisions to the “synthetic preview sample” section in the Supplementary Materials.,e314
+me284,tk1945,usedFor,"The updated language now explicitly details the reviewer-access workflow, drawing directly on recent UKRI/Stanford resource-sharing models",e314
+me280,tk1945,usedFor,ensuring full alignment with both institutional and ACL reproducibility guidelines.,e314
+me285,tk1002,usedFor,"supplementary material formatted per ACL resource track requirements, I believe we are positioned for on-time submission.",e314
+me286,tk1959,usedFor,The “synthetic preview sample” workflow is unambiguous and effectively positions our protocol under recent resource-sharing models.,e315
+c1,tk1002,usedFor,before formal upload to the ACL system.,e315
+tk1936,c10,usedFor,the finalized ACL resource track submission package ... all meet both ACL 2021 standards and our collective institutional requirements.,e317
+c10,tk1987,usedFor,particularly ensuring adherence to updated section numbering and all template specifics mandated by ACL 2021.,e324
+c10,tk1002,usedFor,"If there are any additional compliance documents or author forms required by the conference (copyright, checklist revisions, etc.), let's flag those during our upcoming call so that nothing is overlooked before upload.",e324
+c1,tk1995,usedFor,Quick recapitulation of revision feedback from the ACL reviewers.,e325
+tk1994,mg163,usedFor,1. **Action Item Review**,e325
+tk1995,mg163,usedFor,- Quick recapitulation of revision feedback from the ACL reviewers.,e325
+tk1002,mg163,usedFor,"- Confirmation of individual responsibilities (Section 4 rewrite, compliance appendix, formatting and cross-referencing).",e325
+tk1002,mg163,usedFor,2. **Revision Deadlines & Internal Milestones**,e325
+tk1998,mg163,usedFor,- Agreeing on timeframes for section drafts and internal feedback cycles (targeting completion by 7 February).,e325
+tk1999,mg163,usedFor,- Planning for final Overleaf integration and pre-submission checks in the week of 8–14 February.,e325
+tk2000,mg163,usedFor,3. **Outstanding Compliance & Administrative Tasks**,e325
+tk1464,mg163,usedFor,"- Checklist for copyright, updated co-author metadata, and any new conference forms.",e325
+tk1002,mg163,usedFor,- Assignment of who will monitor and upload these via Softconf.,e325
+tk1002,mg163,usedFor,4. **Discussion of Possible Bottlenecks or Additional Edits**,e325
+tk2004,mg163,usedFor,"- Flagging any aspects requiring deeper discussion or group review (e.g., aligning annotation provenance with compliance notes).",e325
+tk1002,mg163,usedFor,5. **Next Steps and Wrap-Up**,e325
+tk2006,mg163,usedFor,- Confirming communication channel (email/Slack) for interim queries.,e325
+tk2007,mg163,usedFor,- Scheduling a short follow-up check-in before camera-ready submission.,e325
+tk648,tk2007,usedFor,- Scheduling a short follow-up check-in before camera-ready submission.,e325
+d173,tk1002,usedFor,referencing both primary and synthetic data flows.,e329
+d174,tk1002,usedFor,referencing both primary and synthetic data flows.,e329
+me288,tk1002,usedFor,from manual expert vetting to protocol-driven crowdsourced validation,e329
+me287,tk1002,usedFor,from manual expert vetting to protocol-driven crowdsourced validation,e329
+me290,tk1002,usedFor,"Justifications for our sampling approach and annotation schema, now explicitly tied to both ethical approvals and resource constraints",e329
+me257,tk1002,usedFor,"Justifications for our sampling approach and annotation schema, now explicitly tied to both ethical approvals and resource constraints",e329
+c1,tk2044,usedFor,"We are on track to upload the camera-ready manuscript and all supplementary materials by 12 February, giving us a small buffer before the ACL official deadline (15 February).",e332
+c10,tk1002,usedFor,I wanted to confirm that the harmonization phase for our ACL 2021 camera-ready submission is progressing on schedule.,e333
+d102,tk1894,usedFor,"Sunita, I have verified the embargoed data resource URLs and synthetic preview datasets—please confirm once more that the latest repository DOIs you provided are the final versions to appear in both the main text and supplementary materials.",e334
+d166,tk1894,usedFor,"Sunita, I have verified the embargoed data resource URLs and synthetic preview datasets—please confirm once more that the latest repository DOIs you provided are the final versions to appear in both the main text and supplementary materials.",e334
+pa61,tk2078,usedFor,"timing and logistics for the oral presentation ""NLP for Historical Data and Digital Heritage,"" in the final program announcement",e345
+d100,tk2101,usedFor,some of whom may have limited familiarity with historical NLP datasets.,e352
+mt101,tk1006,usedFor,This will help demystify why and how our new framework yields more meaningful insights for historical data tasks.,e354
+d179,tk2105,usedFor,"For the cross-institutional benchmarking results, clear labeling of datasets, and perhaps a concise caption explaining the “why” behind each experiment setup, will help guide attendees through the narrative.",e354
+d4,tk2105,usedFor,"For the cross-institutional benchmarking results, clear labeling of datasets, and perhaps a concise caption explaining the “why” behind each experiment setup, will help guide attendees through the narrative.",e354
+me295,tk2119,usedFor,a clear visual comparison between the traditional and provenance-aware metrics.,e356
+me296,tk2119,usedFor,a clear visual comparison between the traditional and provenance-aware metrics.,e356
+d100,tk1002,usedFor,annotated historical samples illustrating how our annotation protocol adapts across datasets,e356
+me287,tk1002,usedFor,annotated historical samples illustrating how our annotation protocol adapts across datasets,e356
+me298,tk2106,usedFor,questions regarding generalizability of our synthetic instance protocol,e356
+d181,pa63,usedFor,"Expanded visualizations and concise captions for each benchmark dataset, clearly outlining the rationale behind each experiment.",e357
+me287,tk2129,usedFor,"On slide 7, a small clarification about the baseline annotation protocol may help preempt audience questions.",e358
+me298,tk2129,usedFor,which further contextualizes the relevance of our synthetic instance protocol.,e358
+d100,tk117,usedFor,particularly around the scalability of our annotation approach and cross-dataset generalizability.,e358
+me298,tk2106,usedFor,Q&A talking points focusing on the generalizability and scalability of our synthetic instance protocol,e359
+me298,tk2126,usedFor,Q&A talking points focusing on the generalizability and scalability of our synthetic instance protocol,e359
+me298,tk100,usedFor,Q&A talking points focusing on ... the rationale behind our choice of benchmark datasets.,e359
+d183,tk2126,usedFor,The protocol’s modularity was a key factor in efficiently scaling from pilot datasets (~50 docs) to our current corpus (>1000 docs).,e359
+d184,tk2126,usedFor,The protocol’s modularity was a key factor in efficiently scaling from pilot datasets (~50 docs) to our current corpus (>1000 docs).,e359
+c1,tk2138,usedFor,Final slide deck submission timeline for ACL upload (including any last-minute revisions),e360
+c1,tk2140,usedFor,before the ACL submission portal closes.,e360
+d181,tk2144,usedFor,"For slide 13, I’ll add a visual legend for the benchmark dataset color coding.",e361
+tk2128,c1,usedFor,Kudos to everyone for keeping us on track toward a confident and polished ACL presentation.,e362
+me301,d186,usedFor,"The provenance-aware annotation protocol substantially clarifies ambiguous archival records, especially within Sanskrit corpus segments",e363
+d186,tk2154,usedFor,"This slide briefly summarizes our dataset balancing efforts, provides corpus demographic statistics, and explicitly states where further mitigation remains an open research direction.",e363
+me304,tk2176,usedFor,double-check the credentials in the backup slide on model bias.,e368
+c1,tk2186,usedFor,Walk through the newly issued ACL camera-ready guidelines,e370
+mg182,tk2195,usedFor,"Agenda for 11 June Meeting (proposed):
+1. Confirm compliance with ACL guidelines and discuss flagged edits",e371
+mg182,tk2196,usedFor,"2. Slide-by-slide review for content, format, and clarity",e371
+mg182,tk2197,usedFor,3. Update and approve supplementary materials,e371
+mg182,tk2198,usedFor,4. Final assignment of action items and submission timeline,e371
+me287,tk2199,usedFor,"Several slide figures (specifically, those depicting annotation workflow and provenance metadata) may benefit from increasing resolution and enhancing contrast for better accessibility, per ACL’s stipulations.",e372
+me306,tk2199,usedFor,"Several slide figures (specifically, those depicting annotation workflow and provenance metadata) may benefit from increasing resolution and enhancing contrast for better accessibility, per ACL’s stipulations.",e372
+tk2154,tk2200,usedFor,"In the Q&A document, I suggest we expand the model bias coverage slightly—perhaps two sentences clarifying steps we took to control for source corpus diversity.",e372
+tk2209,c1,usedFor,"Sunita, thank you for maintaining the master checklist and preparing the crosswalk between our materials and ACL’s formatting guidelines.",e373
+tk2217,c1,usedFor,"Targeted submission to ACL is set for 19 June, ensuring we are clear of the 21 June (23:59 AoE) deadline.",e374
+d110,tk1002,usedFor,a short (2–3 slide) demo regarding the cross-institutional dataset integration,e382
+d100,tk2258,usedFor,"I can also help draft responses to anticipated audience queries, given the strong historical component of our dataset.",e384
+d188,tk1002,usedFor,Michael (datasets/demo segment),e385
+d188,tk2265,usedFor,sync the dataset demo transitions.,e385
+d189,tk2258,usedFor,"Roadmap for integrating our bias-mitigated datasets with ongoing digitization projects (e.g., national archives or libraries).",e388
+d188,tk2128,usedFor,Michael’s visual sequence for the dataset demo.,e389
+d190,tk2306,usedFor,updated external references to support our dataset licensing approach.,e393
+me313,tk2306,usedFor,"Key refinements include more precise phrasing about the provenance analysis, explicit metrics for bias quantification",e393
+me314,tk2306,usedFor,updated external references to support our dataset licensing approach.,e393
+d100,tk1006,usedFor,evaluation methods for NLP on historical data.,e399
+d192,tk1002,usedFor,I believe our dataset curation and intrinsic/extrinsic evaluation strategies would be of strong interest to both journals,e401
+me317,tk1002,usedFor,I believe our dataset curation and intrinsic/extrinsic evaluation strategies would be of strong interest to both journals,e401
+me318,tk1002,usedFor,I believe our dataset curation and intrinsic/extrinsic evaluation strategies would be of strong interest to both journals,e401
+d193,tk2351,usedFor,which could most benefit from expansion in a journal-length manuscript... for our corpus creation protocols,e402
+me142,tk2356,usedFor,"especially regarding dataset transparency, annotation reproducibility, and the evaluation of Latin-script OCR errors",e402
+me142,tk2357,usedFor,"especially regarding dataset transparency, annotation reproducibility, and the evaluation of Latin-script OCR errors",e402
+me142,tk2358,usedFor,"especially regarding dataset transparency, annotation reproducibility, and the evaluation of Latin-script OCR errors",e402
+d193,tk2356,usedFor,especially regarding dataset transparency,e402
+d193,tk2357,usedFor,annotation reproducibility,e402
+d193,tk2358,usedFor,and the evaluation of Latin-script OCR errors,e402
+me144,tk1331,usedFor,outline strategies for integrating the latest developments in OCR post-processing (including recent advances in historical typeface adaptation),e403
+me321,tk1331,usedFor,outline strategies for integrating the latest developments in OCR post-processing (including recent advances in historical typeface adaptation),e403
+j1,tk1002,usedFor,"2. Debate and decide on target journal (JOCCH vs. JDoc), considering editorial focus and recent special issues.",e404
+j2,tk1002,usedFor,"2. Debate and decide on target journal (JOCCH vs. JDoc), considering editorial focus and recent special issues.",e404
+me144,tk1002,usedFor,"4. Plan timeline and delegate initial writing assignments, including sections on OCR post-processing updates.",e404
+c1,tk2368,usedFor,"As Ananya suggested, if anyone is able to reach out to the ACL session chair for additional feedback, kindly share any notes you receive during the meeting.",e404
+me322,tk1331,usedFor,including the application of transformer-based post-correction approaches,e405
+tk1331,pa68,usedFor,three key recent articles focused on OCR post-processing,e406
+tk1331,pa69,usedFor,three key recent articles focused on OCR post-processing,e406
+tk1331,pa70,usedFor,three key recent articles focused on OCR post-processing,e406
+tk1331,pa68,usedFor,Transformer-Based Sequence Correction for Historical OCR Errors.,e406
+tk1331,pa69,usedFor,Domain Adaptation for OCR in Multilingual Historical Archives.,e406
+tk1331,pa70,usedFor,Post-Correction Pipelines for Historical Manuscript OCR: A Comprehensive Survey.,e406
+d194,tk2375,usedFor,"Corpus curation transparency (requests for open-access protocols, dataset versioning, etc.);",e407
+me144,tk1331,usedFor,"Efficacy and adaptability of OCR post-processing methods, especially regarding regional typefaces and script variants;",e407
+me325,tk2411,usedFor,the Smith et al. (2021) approach to case study documentation could inform the structure of our examples,e408
+me144,tk2411,usedFor,other best practices from the OCR post-correction literature that should be cited.,e408
+tk2404,tk1006,usedFor,comparative analysis of annotation protocols in related historical NLP projects,e408
+me327,d100,usedFor,a table mapping features from other major historical NLP corpora ... against ours would be illuminating.,e410
+d100,tk2404,usedFor,a table mapping features from other major historical NLP corpora ... against ours would be illuminating.,e410
+me165,tk2404,usedFor,cross-referencing our documentation with recent reproducibility checklists,e410
+me181,d196,usedFor,incorporating “FAIR principles” language in our resource sharing description.,e410
+me331,tk2444,usedFor,especially in illustrating guideline-driven adjudication and “lessons learned.”,e414
+me332,tk2446,usedFor,cross-verification for consistency with JOCCH’s latest reproducibility checklist.,e414
+me333,tk2448,usedFor,double-check alignment with the Smith et al. template and ensure all sample texts are anonymized as required.,e414
+me181,tk1002,usedFor,Your initial draft of the manuscript’s “Resource Transparency” section (including FAIR principles summary) will be valuable for early comments.,e414
+j1,tk2451,usedFor,as we approach the JOCCH September submission target.,e415
+mg214,tk2451,usedFor,"Thank you for the engaging and productive discussion during yesterday’s Zoom call. As agreed, I am circulating the minutes and a summary of action points to ensure we remain aligned as we approach the JOCCH September submission target.",e415
+j1,tk2504,usedFor,"3. **Submission Timeline:** If no major revisions arise, we target JOCCH online submission by 28 August.",e420
+tk2519,tk1002,usedFor,it will leave us a buffer for typographical and minor formatting adjustments before final submission prep.,e422
+me142,tk1006,usedFor,"our manuscript, “Leveraging Multilingual NLP for Historical Data: Case Studies Across South Asian Texts,”",e426
+d175,tk2533,usedFor,"embargo ... on public access to the supplementary dataset DOI, while allowing reviewer-only private links",e427
+d105,tk2533,usedFor,confirming the embargo status on our Zenodo and GitHub resources.,e429
+d206,tk2533,usedFor,confirming the embargo status on our Zenodo and GitHub resources.,e429
+d105,tk2552,usedFor,"Thank you, Sunita, for organizing Thursday’s Google Meet and for setting our collaborative draft environment. I can confirm that the embargo on both the Zenodo archive and the GitHub supplementary corpus link has been activated as of today.",e430
+d206,tk2552,usedFor,"Thank you, Sunita, for organizing Thursday’s Google Meet and for setting our collaborative draft environment. I can confirm that the embargo on both the Zenodo archive and the GitHub supplementary corpus link has been activated as of today.",e430
+d209,j1,usedFor,“The supplementary dataset and corpus resources supporting this manuscript are deposited under a temporary embargo until formal publication in JOCCH...,e430
+d102,tk2584,usedFor,"I have incorporated recent milestones, including our “reviewer-only” embargo procedures for the dataset, and aimed to succinctly convey both the technical challenges and broader heritage implications of our multilingual NLP framework.",e433
+me142,tk2584,usedFor,"I have incorporated recent milestones, including our “reviewer-only” embargo procedures for the dataset, and aimed to succinctly convey both the technical challenges and broader heritage implications of our multilingual NLP framework.",e433
+d102,tk1002,usedFor,"Brief “Looking Ahead” section, anticipating post-publication resource release and collaboration opportunities.",e433
+d214,tk2593,usedFor,committing to advertise the full dataset/public access link via all mentioned institutional channels upon embargo expiry.,e435
+d214,tk2594,usedFor,I look forward to our synthesis review and planning for external dissemination.,e435
+d100,tk1002,usedFor,Thank you all for your timely and thoughtful input on the outreach summaries... the societal impact of historical corpus NLP,e437
+c19,tk2632,usedFor,"For the agenda, I propose we add a brief segment to discuss future joint presentations—perhaps at JCDL 2022—now that our JOCCH procedures are well-documented.",e441
+j1,tk2632,usedFor,"For the agenda, I propose we add a brief segment to discuss future joint presentations—perhaps at JCDL 2022—now that our JOCCH procedures are well-documented.",e441
+c19,tk2632,usedFor,I agree with adding a short discussion segment on possible joint presentations for JCDL 2022,e442
+j1,tk1002,usedFor,"If we receive any editorial communications from JOCCH before our call, I will notify everyone immediately so it can be added to the agenda.",e442
+c19,mg229,usedFor,I support Ananya’s proposal to add a forward-looking item on joint JCDL 2022 presentations to the agenda.,e443
+d216,tk2696,usedFor,Scenario: Media Query Regarding Joint Dataset Release – Recommended coordination steps when a journalist requests embargoed dataset access prior to notice of journal acceptance,e451
+c19,tk2715,usedFor,"As we look toward proactive communications for our JCDL 2022 and future submissions, this harmonized template ... will provide a robust framework",e454
+me340,tk2719,usedFor,including the direct referencing of U.S. Data Governance guidelines and the scenario-specific workflow for embargoed joint releases.,e455
+me339,tk2718,usedFor,This unified document should greatly facilitate seamless onboarding for all institutional communications teams,e455
+me339,tk2719,usedFor,enhancing confidence in managing public and media queries for our upcoming JCDL 2022 and future collaborations.,e455
+me343,tk1002,usedFor,I look forward to deploying this robust framework as we continue advancing both our research and public engagement objectives.,e455
+c19,tk2747,usedFor,our joint efforts will lead to an FAQ annex that genuinely strengthens our communications infrastructure for JCDL 2022 and other forthcoming collaborations.,e460
+d217,tk1894,usedFor,procedures around embargo timing (especially for co-authored datasets involving international partners),e461
+d218,tk2764,usedFor,"nearly all institutions face recurrent queries about the permissible dissemination of dataset metadata prior to full article acceptance. I recommend we devote a segment of Friday’s agenda to consolidating a clear, consortium-appropriate default policy for metadata sharing.",e464
+me347,d219,usedFor,FERPA Compliance Disclaimer (to be appended to all references to US student records or personal data),e466
+me347,d102,usedFor,Stanford Data Use/Embargo Protocol (for US-origin datasets not yet public),e466
+d219,tk2778,usedFor,Release of any personally identifiable information from student records for research or press purposes,e466
+me347,tk2778,usedFor,Release of any personally identifiable information from student records for research or press purposes must comply with the Family Educational Rights and Privacy Act (FERPA) and Stanford University’s institutional policies.,e466
+d102,tk1894,usedFor,Any pre-publication sharing must conform both to the originating dataset’s embargo protocol and applicable international co-authorship agreements.,e466
+me347,tk1894,usedFor,Stanford-origin data are subject to internal embargo periods and inter-institutional co-publication agreements. Any pre-publication sharing must conform both to the originating dataset’s embargo protocol and applicable international co-authorship agreements.,e466
+me347,d222,usedFor,sections covering US datasets clearly specify FERPA and institutional points of contact,e467
+d222,tk2789,usedFor,sections covering US datasets clearly specify FERPA and institutional points of contact,e467
+me350,tk2787,usedFor,Ananya’s drafted bullet-point protocols around metadata dissemination (pre- and post-publication),e467
+me351,tk2770,usedFor,Prof. Bhatia’s initial framework for the FAQ version changelog and update protocol post-JCDL 2022,e467
+me352,tk2789,usedFor,"‘Embargo Policy’ and ‘Citation Permissions’ are unified as one section, with granular sub-entries for region-specific nuances (India, UK, US).",e467
+tk2790,tk1002,usedFor,"Outstanding discrepancies (such as RTI processing timelines and UKRI mandates) are now annotated with “To be confirmed” markers, per our agreement to harmonize these asynchronously.",e467
+tk2791,tk1002,usedFor,"Outstanding discrepancies (such as RTI processing timelines and UKRI mandates) are now annotated with “To be confirmed” markers, per our agreement to harmonize these asynchronously.",e467
+tk2802,mg243,usedFor,I am happy to draft an agenda and will compile open items—principally the pending confirmation of RTI contacts and legal sign-off from each institution—to streamline our check-in.,e470
+tk1002,mg243,usedFor,I am happy to draft an agenda and will compile open items—principally the pending confirmation of RTI contacts and legal sign-off from each institution—to streamline our check-in.,e470
+tk1002,c19,usedFor,finalizing our submission for JCDL 2022.,e471
+tk2823,c19,usedFor,"4. **Submission Logistics**: Designation of corresponding author for JCDL 2022 portal upload (I propose Sunita, given her central role), and confirmation of author order as previously agreed.",e473
+me142,tk1006,usedFor,our multilingual historical NLP methods and protocol innovation for legal compliance.,e491
+me359,tk2889,usedFor,our multilingual historical NLP methods and protocol innovation for legal compliance.,e491
+c21,tk1002,usedFor,"a synchronized, embargo-respecting release, targeting the JCDL program publication window in alignment with the committee’s timetable.",e492
+c19,tk1002,usedFor,so we can synchronize the release according to the JCDL program schedule.,e493
+pa84,tk2899,usedFor,I am happy to report that the finalized draft (“JCDL2022_Press_Release_Final.docx”) has now been formally submitted to the University of Oxford’s Public Affairs Directorate this morning.,e494
+c21,tk1002,usedFor,"Once all three press offices have approved the final text, I suggest we reconvene (virtually or via a brief email thread) to confirm our coordinated release date, aligned with the JCDL program’s official announcement schedule.",e494
+c21,tk2910,usedFor,This would ensure our institutional outreach aligns with the conference program’s timeline.,e495
+c19,tk2912,usedFor,I am pleased to share that I have received official written approval from the IACS Press and Public Relations Office for our JCDL 2022 press release.,e496
+c19,tk2920,usedFor,Stanford University’s Office of Communications has officially approved our JCDL 2022 press release.,e497
+c19,tk2927,usedFor,I will also prepare a draft “all-clear” notification for the JCDL 2022 communications liaison,e497
+tk2910,c19,usedFor,I will dispatch the “all-clear” notification to the JCDL communications liaison,e498
+c21,tk2944,usedFor,"Ananya will send the unified “all-clear” to the JCDL program communications liaison by 18th August 2020, copying all partners.",e501
+c19,tk2912,usedFor,all requisite institutional approvals for our JCDL 2022-related press release have now been secured,e502
+c19,tk1002,usedFor,we have coordinated a simultaneous international media announcement,e502
+c19,tk2953,usedFor,"will be publicly disseminated by our three institutional press offices, strictly embargoed until 19th August 2020",e502
+me142,tk1006,usedFor,this milestone achievement in advancing NLP research on historical data.,e503
+c19,tk2964,usedFor,"Please log all significant media mentions, citations, or press coverage of our JCDL 2022 announcement on the sheet.",e505
+me360,tk2982,usedFor,Our NLP-based framework bridges the academic and public history divide,e507
+me360,tk2982,usedFor,"Our NLP-based framework bridges the academic and public history divide, enabling digitized archives in regional languages to be more broadly searchable and accessible.",e507
+d114,tk2982,usedFor,enabling digitized archives in regional languages to be more broadly searchable and accessible.,e507
+me361,tk2982,usedFor,"By combining domain-specific language modeling with scalable digitization pipelines, our project lays vital groundwork not only for academic historians but also for educators, librarians, and policy-makers concerned with heritage preservation.",e507
+me142,tk2982,usedFor,"By combining domain-specific language modeling with scalable digitization pipelines, our project lays vital groundwork not only for academic historians but also for educators, librarians, and policy-makers concerned with heritage preservation.",e507
+me361,tk2984,usedFor,especially toward building multilingual tools for less-resourced cultural datasets.,e507
+me142,tk2984,usedFor,especially toward building multilingual tools for less-resourced cultural datasets.,e507
+d226,tk2984,usedFor,building multilingual tools for less-resourced cultural datasets.,e507
+c21,tk2987,usedFor,Thank you all for your prompt and thorough contributions to the JCDL bulletin preparations.,e508
+me363,tk1006,usedFor,a schematic of our language model domain adaptation workflow,e509
+me142,tk1006,usedFor,amplify our research on NLP for historical data,e513
+me142,tk3011,usedFor,and to field questions from the broader digital library and computational linguistics communities.,e513
+c19,tk3009,usedFor,we have been specifically invited to participate in upcoming live project spotlights and thematic media sessions,e513
+me142,tk1006,usedFor,"highlighting our advances in multilingual NLP for historical datasets, and refining key messages for broad relevance.",e515
+d100,tk1006,usedFor,"highlighting our advances in multilingual NLP for historical datasets, and refining key messages for broad relevance.",e515
+c19,mg259,usedFor,strategy call for the JCDL 2022 live project spotlight.,e515
+d227,tk1002,usedFor,This should help anchor our outreach discussion with up-to-date analytics.,e516
+me365,tk3046,usedFor,The NDAI has begun integrating our metadata extraction tools (described in our JCDL feature) in their processing pipeline for several Bengali and Odia periodical collections.,e517
+d229,tk3046,usedFor,in their processing pipeline for several Bengali and Odia periodical collections.,e517
+d230,tk3046,usedFor,in their processing pipeline for several Bengali and Odia periodical collections.,e517
+me365,tk2096,usedFor,multilingual benchmarking and cross-institutional data sharing protocols we developed with Oxford and Stanford.,e517
+me142,tk1006,usedFor,"We agreed to foreground our cross-continental NLP collaborations, emphasizing multilingual heritage model adaptation, successful use cases (especially NDAI partnerships), and our new cross-institution protocol.",e518
+me367,tk1006,usedFor,"We agreed to foreground our cross-continental NLP collaborations, emphasizing multilingual heritage model adaptation, successful use cases (especially NDAI partnerships), and our new cross-institution protocol.",e518
+d231,tk1002,usedFor,"Michael will finalize the live session slide deck by 04 April, incorporating Ramesh's NDAI impact example and the Oxford annotated corpus visualizations.",e518
+me368,tk3068,usedFor,"visualization updates, including the early benchmark comparisons tailored for diverse JCDL audience backgrounds.",e519
+c19,tk1002,usedFor,an impactful live spotlight at JCDL 2022.,e519
+c19,tk3076,usedFor,during the live session? Please share any preferences around timing.,e519
+d233,tk3090,usedFor,I will provide the finalized summary of NDAI user feedback and the press mention round-up from IACS no later than 6 April,e521
+me367,tk3093,usedFor,The draft draws on the key themes we discussed: the significance of cross-institution protocols for multilingual NLP,e522
+me370,tk3093,usedFor,The draft draws on the key themes we discussed: ... the NDAI integration use case,e522
+me371,tk3093,usedFor,and our broader impact on responsible model development for cultural heritage applications.,e522
+d233,tk3095,usedFor,"If there are any outstanding slide updates (including the NDAI user feedback summary or late-stage infographics), please upload them to the shared drive by end of day on 6 April.",e522
+d235,tk3122,usedFor,"cross-platform benchmarking results, including a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+d236,tk3122,usedFor,"cross-platform benchmarking results, including a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+d237,tk3122,usedFor,"cross-platform benchmarking results, including a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+me372,tk3122,usedFor,"cross-platform benchmarking results, including a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+me142,tk1006,usedFor,Our work sets a high standard for cross-institutional research on NLP for historical data,e532
+tk3148,c21,usedFor,"I also support proactively reaching out to the JCDL organizers—Ananya, if you have a contact, perhaps we can request clarification on any new tech requirements in advance.",e535
+c21,tk3158,usedFor,"Ramesh, your insights from IACS’s previous JCDL involvement are especially helpful; I will draft a brief message to the conference organizers today, inquiring about any new technical or accessibility guidelines for spotlight sessions in 2022.",e536
+c19,tk3171,usedFor,"The JCDL technical team will distribute more detailed instructions closer to the event date, including the link for mandatory tech-check registration.",e539
+tk3172,c21,usedFor,your efficient communication with the JCDL organizing team,e540
+tk3183,c19,usedFor,Each document follows the structure and style recommended in the latest JCDL guidelines,e541
+tk1002,c19,usedFor,These files are now fully prepared for direct upload to the conference submission portal as soon as the official acceptance notice and asset request arrive.,e541
+d114,tk1002,usedFor,This contextual detail will assist colleagues working with similar multilingual datasets.,e545
+d239,tk3211,usedFor,"have been added to the ""JCDL2022_WebAssets"" shared folder as suggested.",e546
+me287,tk3198,usedFor,The collaborative annotation workflow section now includes a succinct explanation and supporting visual,e546
+me142,tk3198,usedFor,emphasizing our cross-lingual approach.,e546
+me376,tk3211,usedFor,"A light audio denoise filter was applied to clean up background sounds, particularly on slide 9.",e546
+d100,tk1002,usedFor,"If any unexpected technical hurdles arise as you upload to the conference portal, feel free to notify us for immediate support.",e547
+me144,tk3230,usedFor,"drafting an error analysis note, especially highlighting challenges with historical OCR and multi-script alignment.",e551
+me378,tk3230,usedFor,"drafting an error analysis note, especially highlighting challenges with historical OCR and multi-script alignment.",e551
+me379,tk3233,usedFor,we could demonstrate our accessibility workflow as a template for other projects.,e551
+d240,tk3230,usedFor,the community has shown keen interest in hybrid historical dataset pipelines.,e551
+me142,tk3261,usedFor,"It will include a succinct overview of our cross-lingual historical NLP pipeline, highlight key findings, and feature a “researcher perspective” section",e554
+tk3264,c23,usedFor,co-develop a concise research note for the ACL System Demonstrations track,e554
+me144,tk3273,usedFor,our OCR and alignment evaluation experiments,e555
+me381,tk3273,usedFor,our OCR and alignment evaluation experiments,e555
+d100,tk3284,usedFor,"to start identifying resources (code walkthroughs, demo datasets, accessibility checklists).",e556
+c21,tk3277,usedFor,each element of our post-JCDL submission plans.,e556
+tk3296,c1,usedFor,"Ananya, your guidance on highlighting interoperability/multilinguality will be invaluable as we tailor for ACL’s Demo Track.",e558
+d242,tk3320,usedFor,"All members agreed to upload new working documents and datasets to the “Historical NLP Dissemination & Outreach (JCDL 2022)” folder, naming files clearly by task and date.",e560
+me383,tk3335,usedFor,I would recommend considering breakout sessions for small-group problem-solving (perhaps using sample OCR challenges),e562
+me384,tk3336,usedFor,and incorporating a brief “lightning talks” format for audience contributions,e562
+me385,tk3337,usedFor,a short segment on ethical data handling in historical NLP workflows,e562
+me144,tk1331,usedFor,"Live Demonstration (25 min) – Step-by-step walkthrough: OCR error correction on historical text corpora using our developed toolkit, followed by annotation pipeline insights.",e563
+me287,tk1331,usedFor,"Live Demonstration (25 min) – Step-by-step walkthrough: OCR error correction on historical text corpora using our developed toolkit, followed by annotation pipeline insights.",e563
+d243,tk3335,usedFor,Breakout Sessions (20 min) – Small groups tackle pre-selected OCR/NER challenges; guided by facilitators with sample data and annotation tasks.,e563
+tk3358,tk3335,usedFor,Breakout Sessions (20 min) – Small groups tackle pre-selected OCR/NER challenges; guided by facilitators with sample data and annotation tasks.,e563
+d4,tk3360,usedFor,"group work may run slightly long, especially when participants are new to the dataset or annotation processes.",e564
+me144,tk1002,usedFor,you might consider adding a short “FAQ” on frequent OCR/NER troubleshooting issues (based on our prior work),e568
+me103,tk1002,usedFor,you might consider adding a short “FAQ” on frequent OCR/NER troubleshooting issues (based on our prior work),e568
+me144,tk3407,usedFor,"2. Live demonstration of OCR error correction and NER modules (Sunita, Ramesh)",e572
+me389,tk3407,usedFor,"2. Live demonstration of OCR error correction and NER modules (Sunita, Ramesh)",e572
+d245,tk3416,usedFor,"The breakout room allocation and distribution of annotation packets was seamless, with all materials readily accessible.",e573
+d246,tk1002,usedFor,We successfully simulated participant FAQ handling by referencing the recently expanded session packet.,e573
+d114,tk3421,usedFor,I will edit the breakout packet to reflect Michael’s suggestion regarding multi-lingual dataset annotation by 21 May.,e573
+d248,tk3423,usedFor,we will prepare a troubleshooting email template and backup dataset links ahead of the live event.,e573
+d248,tk3427,usedFor,"our contingency email template and backup dataset links are in progress, and will be shared by 23 May.",e574
+d114,tk3428,usedFor,"Michael and Ramesh, thank you both for contributing annotations for multi-lingual samples",e574
+d248,tk3431,usedFor,participant queries (mainly regarding dataset citation and demo session timing),e574
+d248,tk3432,usedFor,participant queries (mainly regarding dataset citation and demo session timing),e574
+d248,tk1002,usedFor,"Regarding contingency preparations, Sunita’s progress on the emergency email template and backup datasets is much appreciated.",e575
+d248,tk3450,usedFor,backup dataset links are nearing completion ... ensuring every last detail is ready for a seamless and inclusive workshop experience.,e576
+d100,tk3460,usedFor,"All attachments (browser troubleshooting checklist, annotated dataset access instructions, session agenda PDF) were delivered successfully with no download or permission issues.",e578
+d100,tk3485,usedFor,"Two detailed inquiries about best practices for citing the annotated historical datasets, specifically referencing NER and OCR preprocessing steps.",e582
+me393,tk3485,usedFor,"Two detailed inquiries about best practices for citing the annotated historical datasets, specifically referencing NER and OCR preprocessing steps.",e582
+me144,tk3485,usedFor,"Two detailed inquiries about best practices for citing the annotated historical datasets, specifically referencing NER and OCR preprocessing steps.",e582
+d255,tk3517,usedFor,"with especially frequent inquiries related to dataset access, institutional login workflows, and OCR pipeline recommendations.",e587
+me395,tk3517,usedFor,"with especially frequent inquiries related to dataset access, institutional login workflows, and OCR pipeline recommendations.",e587
+me144,tk3517,usedFor,"with especially frequent inquiries related to dataset access, institutional login workflows, and OCR pipeline recommendations.",e587
+d257,tk3411,usedFor,"Ahead of our meeting, I am uploading the technical troubleshooting logs from our moderation account",e588
+d258,tk3411,usedFor,"and chat transcript highlights, including anonymized examples of complex participant queries and their successful resolutions.",e588
+d258,tk3411,usedFor,including anonymized examples of complex participant queries and their successful resolutions.,e588
+d260,tk3411,usedFor,"These materials, along with observations on the most commonly requested datasets and reported pain points, should further inform our discussion on both strengths and improvement areas.",e588
+d256,tk1002,usedFor,"Ramesh, I second your suggestion to map our next steps for documentation and collaborative writing, drawing on these detailed records.",e588
+d256,tk3531,usedFor,"Our resource mirror alternatives eliminated nearly all regional download issues, suggesting a model for scalable open dataset dissemination in future events.",e589
+me103,tk3532,usedFor,"Since the annotated NER and OCR pipeline citation queries were so frequent, I propose synthesizing a formal citation protocol...",e589
+me144,tk3532,usedFor,"Since the annotated NER and OCR pipeline citation queries were so frequent, I propose synthesizing a formal citation protocol...",e589
+d256,pa94,usedFor,"After reviewing all the analytics, feedback, and resource materials uploaded to “Workshop2022_Analytics,” I am writing to propose the next steps for collaboratively developing our manuscript",e590
+tk3549,c19,usedFor,JCDL’s proceedings submission deadline is projected for 23rd November 2020,e592
+tk3550,j1,usedFor,JOCCH’s next special issue on “Digital Methods for Historical Collections” ... recommends submissions before early September for 2022 inclusion.,e592
+me399,c21,usedFor,Michael’s comparative table on JCDL and JOCCH deadlines is especially helpful.,e593
+me399,j1,usedFor,Michael’s comparative table on JCDL and JOCCH deadlines is especially helpful.,e593
+j19,tk1002,usedFor,"Deliberation on submission venue: 
+   - Comparative discussion of JCDL proceedings vs. JOCCH",e595
+j1,tk1002,usedFor,"Deliberation on submission venue: 
+   - Comparative discussion of JCDL proceedings vs. JOCCH",e595
+tk1002,tk3577,usedFor,"so that Ramesh’s upcoming “Q&A/Moderation” section visuals, as well as any tables in Ananya’s literature review and Sunita’s accessibility protocol summaries, are already aligned",e596
+tk1002,tk3578,usedFor,"so that Ramesh’s upcoming “Q&A/Moderation” section visuals, as well as any tables in Ananya’s literature review and Sunita’s accessibility protocol summaries, are already aligned",e596
+tk1002,tk3579,usedFor,"so that Ramesh’s upcoming “Q&A/Moderation” section visuals, as well as any tables in Ananya’s literature review and Sunita’s accessibility protocol summaries, are already aligned",e596
+tk3605,j3,usedFor,"we tentatively agreed to target the ACM Journal on Computing and Cultural Heritage (JOCCH), aiming for submission by 6th January 2021.",e599
+c14,tk3616,usedFor,I appreciate your offer to share references from the ACL 2022 Diversity & Inclusion initiative—those would be extremely helpful.,e601
+j20,tk3618,usedFor,"including relevant guides from ACM SIGACCESS, JCDL 2020-2022 proceedings, and the World Wide Web Consortium’s updated standards",e601
+c25,tk3618,usedFor,"including relevant guides from ACM SIGACCESS, JCDL 2020-2022 proceedings, and the World Wide Web Consortium’s updated standards",e601
+me142,tk3647,usedFor,strategies for multi-dialectal QA and normalization—especially relevant for our cross-lingual workshop scenarios.,e603
+d264,tk1389,usedFor,The annotated bibliography (in “Accessibility_Resources”) and the summary note on historical dialect normalization (in “Supplementary_Literature”) should now be easily accessible for your final integration.,e605
+d265,tk1389,usedFor,The annotated bibliography (in “Accessibility_Resources”) and the summary note on historical dialect normalization (in “Supplementary_Literature”) should now be easily accessible for your final integration.,e605
+me142,tk3661,usedFor,"one elaborating on our methodological integration of dialect normalization strategies, and another suggesting a brief description of our accessibility evaluation metrics.",e605
+me403,tk3662,usedFor,"the links between the Q&A Moderation Framework and dialectal diversity are now explicitly referenced in my updated section, as requested.",e605
+me403,tk3661,usedFor,"The connections between the Q&A Moderation Framework and dialect diversity are clearly articulated—thank you, Sunita, for your recent refinements and for linking relevant empirical studies.",e606
+j1,tk1002,usedFor,"Barring unforeseen issues, we remain well on schedule for JOCCH submission before 28 August.",e606
+tk2007,j1,usedFor,"Once these steps are complete, I will coordinate a short Zoom meeting for an internal walkthrough and final checklist validation before uploading to JOCCH.",e607
+tk1002,tk3683,usedFor,ensuring compliance checklist completion will be critical for a seamless submission process.,e609
+tk3681,tk3683,usedFor,reviewing the author order and ensuring compliance checklist completion will be critical for a seamless submission process.,e609
+tk3689,pa98,usedFor,NLP Methods for Historical Question Answering with Cross-Dialectal Data,e611
+me406,tk3694,usedFor,"anonymized supplementary files such as code snippets, sample queries for historical Q&A, and illustrative data subsets",e613
+me407,tk3694,usedFor,"anonymized supplementary files such as code snippets, sample queries for historical Q&A, and illustrative data subsets",e613
+d100,tk3694,usedFor,"anonymized supplementary files such as code snippets, sample queries for historical Q&A, and illustrative data subsets",e613
+me142,tk1006,usedFor,similar submissions on NLP methods and historical data,e617
+d267,tk1006,usedFor,"selection of cross-dialectal datasets—reviewers may ask for granularity on data curation, source variability, and representativeness.",e617
+me411,tk3716,usedFor,Validity of the dialect classification approach—some may probe our handling of low-frequency lexical phenomena and manual annotation reliability.,e617
+d269,tk3726,usedFor,"Cross-link the dataset description points to our supplementary table references for ease of reviewer verification,",e619
+tk3777,c21,usedFor,"for potential conference presentation (e.g., JCDL or EMNLP satellite workshops)",e625
+tk3777,c26,usedFor,"for potential conference presentation (e.g., JCDL or EMNLP satellite workshops)",e625
+c21,tk3777,usedFor,drafting a concise version of our methodology for future venues such as JCDL or EMNLP workshops.,e626
+c26,tk3777,usedFor,drafting a concise version of our methodology for future venues such as JCDL or EMNLP workshops.,e626
+mg315,tk3774,usedFor,a 75-minute Zoom or Google Meet call focused first on grant proposal ideation and then on outlining the draft for a potential conference abstract.,e627
+mg315,tk3792,usedFor,a 75-minute Zoom or Google Meet call focused first on grant proposal ideation and then on outlining the draft for a potential conference abstract.,e627
+tk1414,tk3852,usedFor,"Address flagged issues, particularly those on diachronic benchmarking and semantic drift evaluation",e634
+d274,tk3852,usedFor,Resolved to incorporate Sunita’s flagged evaluation benchmark (EMNLP dataset) in the methods section.,e635
+me413,tk3852,usedFor,"Discussed strengths and limitations flagged in the annotated bibliography, especially semantic drift benchmarks and context reconstruction as points of novelty.",e635
+me414,tk3852,usedFor,Michael to suggest revised approaches for context expansion across temporal boundaries based on recent ACL findings.,e635
+me415,tk3852,usedFor,Michael to suggest revised approaches for context expansion across temporal boundaries based on recent ACL findings.,e635
+c28,tk1006,usedFor,"Consensus to prioritize submitting a conference abstract to JCDL 2023, given its alignment with our NLP on historical data focus.",e635
+j1,tk1002,usedFor,"Parallel submission of a full-length article to JOCCH remains a high-priority fallback, with a view to the JDoc special issue if scope shifts.",e635
+j2,tk1002,usedFor,"Parallel submission of a full-length article to JOCCH remains a high-priority fallback, with a view to the JDoc special issue if scope shifts.",e635
+d188,pa105,usedFor,I will coordinate its integration with the datasets segment.,e636
+me417,pa105,usedFor,"Ramesh, please also flag when you have a draft of the semantic drift evaluation portion ready for review.",e636
+d277,tk3888,usedFor,now tailored and extended for multilingual newspaper corpora spanning 1850–1950.,e638
+mt127,tk3895,usedFor,our intent to pilot these evaluation tools as part of our objectives for the UKRI/DST-India calls,e638
+d277,tk1414,usedFor,recent ACL and EMNLP literature on semantic drift detection and proposes a hybrid evaluation suite ... specifically validated for multilingual historical newspaper corpora.,e639
+me287,tk1007,usedFor,the linkage between our annotation protocols and the metadata-driven structuring of benchmark datasets.,e640
+me424,tk1007,usedFor,the linkage between our annotation protocols and the metadata-driven structuring of benchmark datasets.,e640
+d114,tk3901,usedFor,"further mention of our multilingual corpus diversity (e.g., Hindi, Bengali, and English newspaper samples) can help foreground our methodological generalizability.",e640
+me413,mt132,usedFor,"Michael, your context reconstruction adaptation section flows well into Ramesh’s metrics discussion",e640
+me425,tk290,usedFor,our hybrid evaluation suite and multilingual historical corpus address key gaps,e641
+d114,tk290,usedFor,our hybrid evaluation suite and multilingual historical corpus address key gaps,e641
+me425,tk3922,usedFor,I accepted all in-line suggestions pertaining to temporal context reconstruction,e642
+d114,tk3922,usedFor,anchor our hybrid evaluation suite and multilingual corpus as filling critical research gaps,e642
+d283,tk3925,usedFor,our adaptation extends their method to non-Latin script datasets.,e643
+me429,tk100,usedFor,our benchmark protocol directly builds on their low-resource metrics.,e643
+me430,tk100,usedFor,our benchmark protocol directly builds on their low-resource metrics.,e643
+me432,tk1006,usedFor,"The adaptation of the Smith et al. metrics is now clearly communicated and will, I believe, signal to reviewers our responsiveness to the evolving state-of-the-art in historical NLP.",e644
+me433,tk1006,usedFor,"As for the inclusion of the recent EMNLP benchmark, I appreciate the clarification provided regarding its applicability to non-Latin corpora. The adaptation of the Smith et al. metrics is now clearly communicated and will, I believe, signal to reviewers our responsiveness to the evolving state-of-the-art in historical NLP.",e644
+d284,tk1006,usedFor,"its applicability to non-Latin corpora. The adaptation of the Smith et al. metrics is now clearly communicated and will, I believe, signal to reviewers our responsiveness to the evolving state-of-the-art in historical NLP.",e644
+d175,tk3936,usedFor,"All contribution statements and supporting datasets information have been submitted as supplementary files, per the latest guidelines.",e645
+me434,tk3953,usedFor,our multilingual semantic drift detection framework informs tool development for large-scale archival digitization projects,e650
+d285,tk1414,usedFor,These examples demonstrate how our metrics could drive the discovery of semantic change across time and language,e650
+d286,tk1414,usedFor,These examples demonstrate how our metrics could drive the discovery of semantic change across time and language,e650
+me2,tk1414,usedFor,key studies on diachronic semantic change across diverse language families,e653
+me434,tk1414,usedFor,Our multilingual semantic drift detection framework enables scalable and systematic tracking of lexical change within digitized archival corpora,e654
+me434,tk1006,usedFor,have resulted in new pipelines for mapping semantic evolution in literary genres and historical newspapers,e654
+me434,tk3978,usedFor,supporting the curation of interactive digital exhibits,e654
+me434,tk3979,usedFor,bolstering research in cultural analytics,e654
+me434,tk3980,usedFor,informing public scholarship platforms,e654
+me434,tk100,usedFor,our benchmark-driven evaluation protocols position this methodology for adoption by large-scale digital repositories worldwide,e654
+mg336,tk4013,usedFor,"I am pleased to confirm our JCDL 2023 submission review and coordination meeting for today, 4 December, at 14:30 GMT as scheduled.",e661
+mg336,tk1002,usedFor,"Additionally, for the compliance checklist discussion:",e661
+d288,tk4015,usedFor,- Please review the filled author contributions and updated dataset licensing info in the shared Google Sheet prior to the meeting.,e661
+me437,tk4017,usedFor,"- I will quickly outline options for preprint archiving (arXiv, departmental repository) once we are assured our conference compliance is complete.",e661
+c28,tk4013,usedFor,"I am pleased to confirm our JCDL 2023 submission review and coordination meeting for today, 4 December, at 14:30 GMT as scheduled.",e661
+c28,tk1002,usedFor,"Additionally, for the compliance checklist discussion:",e661
+d289,tk4058,usedFor,All: Please upload your assigned materials to the “JCDL_CameraReady2023” shared folder for review before the meeting.,e668
+d100,pa115,usedFor,"All attachments, including your annotated benchmark dataset and response-to-reviewers sheet, have been accepted without revision.",e677
+d291,tk1002,usedFor,I can coordinate benchmarking dataset visuals. We can harmonize style and flow during our team rehearsals.,e684
+d292,tk4172,usedFor,ethical aspects of handling sensitive historical texts.,e692
+me440,tk4172,usedFor,generalizability of our NLP pipeline and ethical aspects of handling sensitive historical texts.,e692
+d291,tk4115,usedFor,I have uploaded my finalized slides for the benchmarking dataset visualizations,e693
+d291,tk1122,usedFor,"questions on dataset curation, inter-annotator reliability, and the ethical implications of digitizing culturally sensitive historical materials.",e693
+me142,tk4201,usedFor,we could further polish responses around the scalability and multilingual facets of historical corpus NLP—Michael and Ananya agreed to revisit this before submission.,e696
+me142,tk4257,usedFor,"Key Takeaways: Reiterate two to three main conclusions at the end, underscoring both methodological novelty and the societal relevance of NLP for historical data.",e705
+d295,tk4266,usedFor,Confirmed upload to “JCDL2023_PresentationAssets” shared folder (checked and accessible as of this morning).,e710
+j5,tk1002,usedFor,Revisit decision on targeting ACM JOCCH vs. Journal of Documentation—review abstract drafts and note needed enhancements based on feedback.,e713
+j2,tk1002,usedFor,Revisit decision on targeting ACM JOCCH vs. Journal of Documentation—review abstract drafts and note needed enhancements based on feedback.,e713
+me443,tk4302,usedFor,adapting our neural models to morphologically rich languages.,e715
+me444,tk4303,usedFor,interested in semi-supervised labeling for 19th-century Scottish Gaelic texts,e715
+d114,tk4302,usedFor,collaborating on digitized heritage collections and adapting our neural models to morphologically rich languages.,e715
+d297,tk4303,usedFor,semi-supervised labeling for 19th-century Scottish Gaelic texts,e715
+j5,tk1002,usedFor,my view is that ACM JOCCH would welcome our extended empirical/qualitative narrative.,e716
+j2,tk1002,usedFor,"However, should we wish to focus on workflow generalizability, the Journal of Documentation also presents a compelling option.",e716
+c21,tk1002,usedFor,"drawing from the feedback and JCDL session insights, to expedite our decision.",e716
+me287,tk4308,usedFor,Enhancement of Annotation Workflow Documentation,e716
+me447,tk4308,usedFor,The interest in our “expert-curated subsets” and transparent process for annotation should be directly reflected in our next manuscript draft.,e716
+me287,tk4308,usedFor,The interest in our “expert-curated subsets” and transparent process for annotation should be directly reflected in our next manuscript draft.,e716
+me449,tk326,usedFor,"if we proceed with open-sourcing our models, as highlighted by several attendees.",e716
+tk4321,j5,usedFor,"I suggest we confirm our manuscript outline by 5 May, enabling us to keep to a submission window before the next ACM JOCCH cycle.",e717
+d299,tk187,usedFor,"detailing our expert-curated subsets, workflow diagrams, quality assurance measures, and annotation transparency protocols",e718
+me451,tk187,usedFor,a new subsection referencing participatory annotation methods.,e718
+me287,tk187,usedFor,annotation transparency protocols—this addresses multiple reviewer and audience queries,e718
+me450,tk1006,usedFor,"technical specifics on our hybrid model, supplemented with the error analysis and reproducibility framework we discussed.",e718
+me450,tk4324,usedFor,recent initiatives in multi-modal heritage NLP and a new subsection referencing participatory annotation methods.,e718
+me165,tk1009,usedFor,supplemented with the error analysis and reproducibility framework we discussed.,e718
+d300,tk326,usedFor,"Dedicated section outlining open-sourcing plans, dataset availability, and interaction with ongoing archival projects such as ALMA.",e718
+d298,tk326,usedFor,"dataset availability, and interaction with ongoing archival projects such as ALMA.",e718
+me453,tk4347,usedFor,to jointly outline the interface between semantic metrics and error taxonomy.,e720
+me459,tk4347,usedFor,to jointly outline the interface between semantic metrics and error taxonomy.,e720
+d303,tk4365,usedFor,"To facilitate our collaborative workflow and keep us on schedule, I have created and shared a dedicated Google Drive folder, “ACM_JOCCH_Draft2023,”",e722
+d304,tk4364,usedFor,with subfolders for each major section as per the assignments outlined by Ramesh.,e722
+d305,tk4363,usedFor,"and consolidate supplementary materials such as code links (planned for Zenodo), high-resolution figures, and the updated bibliography.",e722
+me464,tk4363,usedFor,I propose we use Overleaf for our LaTeX manuscript integration,e722
+me465,tk4363,usedFor,using the official ACM JOCCH template as recommended.,e722
+d306,tk1002,usedFor,and will coordinate with Ananya to finalize these for the appendix.,e722
+d307,tk100,usedFor,there is now a dedicated subfolder in Drive for draft diagrams and tables.,e722
+me451,tk1002,usedFor,"Ananya, thank you for your annotated bibliography and participatory annotation references, which I have integrated into the introductory rationale for the appendix.",e726
+me459,me287,usedFor,"Michael, your feedback on whether the error taxonomy section requires any cross-reference to annotation protocols would be particularly valuable.",e726
+me287,tk185,usedFor,- Annotator onboarding instructions.,e726
+me287,tk4401,usedFor,- Adjudication protocol on ambiguous cases.,e726
+d308,me287,usedFor,"The file, titled “HistoricData_AnnotationGuidelines_v1.pdf,” has been uploaded to the designated “Appendix & Supplementary” subfolder in our shared Google Drive.",e726
+d308,tk4404,usedFor,the “HistoricData_AnnotationGuidelines_v1.pdf” appendix draft and for so thoroughly synthesizing both the onboarding/annotation schema and our evolving adjudication protocols.,e727
+d308,tk4401,usedFor,the “HistoricData_AnnotationGuidelines_v1.pdf” appendix draft and for so thoroughly synthesizing both the onboarding/annotation schema and our evolving adjudication protocols.,e727
+tk4442,j5,usedFor,"Provided our meeting leads to consensus confirmation, my plan is to initiate the ACM JOCCH submission process on 17 May.",e732
+j5,tk1002,usedFor,in preparation for the ACM JOCCH submission.,e733
+d309,tk1389,usedFor,expanded dataset reference list) have now been uploaded to our shared Drive in the “Final Integration” folder.,e733
+me469,tk4446,usedFor,NLP Pipelines for Semantic Analysis of 19th-century South Asian Legal Documents,e734
+d310,tk4446,usedFor,Semantic Analysis of 19th-century South Asian Legal Documents,e734
+tk1002,j5,usedFor,An initial editorial review is expected to occur within the next 3–4 weeks.,e735
+d100,tk4401,usedFor,aligns closely with our schema and adjudication processes.,e736
+d114,tk187,usedFor,multilingual heritage corpora and error propagation in annotation,e736
+d314,tk187,usedFor,particularly to our treatment of Bengali legal documents.,e736
+d100,tk4458,usedFor,her recent publications address issues of annotation consistency and adjudication,e736
+d100,tk4401,usedFor,her recent publications address issues of annotation consistency and adjudication,e736
+d100,tk4461,usedFor,align well with both our methods and the historical context of our annotated dataset.,e737
+d100,tk187,usedFor,align well with both our methods and the historical context of our annotated dataset.,e737
+d100,tk1122,usedFor,align well with both our methods and the historical context of our annotated dataset.,e737
+d100,tk1002,usedFor,align well with both our methods and the historical context of our annotated dataset.,e737
+d100,me477,usedFor,"Sunita, your summary under “Data Curation” and “Investigation” seamlessly connects the historical dataset annotation with our semantic evaluation pipeline",e738
+me477,tk1122,usedFor,"Sunita, your summary under “Data Curation” and “Investigation” seamlessly connects the historical dataset annotation with our semantic evaluation pipeline",e738
+me477,tk4470,usedFor,"Sunita, your summary under “Data Curation” and “Investigation” seamlessly connects the historical dataset annotation with our semantic evaluation pipeline",e738
+me478,tk100,usedFor,and Michael’s extension in “Methodology” captures his significant input in designing the agreement protocol and statistical metrics.,e738
+me282,tk100,usedFor,and Michael’s extension in “Methodology” captures his significant input in designing the agreement protocol and statistical metrics.,e738
+d316,tk1002,usedFor,"Sunita, could you please double-check the Data Availability and licensing sections when the proofs arrive",e747
+me328,tk4510,usedFor,"Michael, your expertise on the methodology visuals and figure legends will be invaluable for catching any inadvertent errors in graphics or captions.",e747
+me484,tk4510,usedFor,"Michael, your expertise on the methodology visuals and figure legends will be invaluable for catching any inadvertent errors in graphics or captions.",e747
+me485,tk4511,usedFor,"I will focus on institutional affiliations, citation formatting, and coordinate any archiving requirements",e747
+me486,tk4511,usedFor,"I will focus on institutional affiliations, citation formatting, and coordinate any archiving requirements",e747
+me487,tk4512,usedFor,including repository submission to IACS once ACM approves the final version,e747
+me488,tk4515,usedFor,keep us posted on any copyright/license forms you receive so we can sign or provide input promptly.,e747
+d194,tk1002,usedFor,"The Data Availability Statement is typeset correctly, and both the “CC BY-NC 4.0 for corpus” and “MIT for code” license references are present with the required hyperlinks.",e752
+me492,tk1002,usedFor,"The Data Availability Statement is typeset correctly, and both the “CC BY-NC 4.0 for corpus” and “MIT for code” license references are present with the required hyperlinks.",e752
+me494,tk4553,usedFor,depending on ACM’s production workflow.,e752
+me497,j10,usedFor,how we coordinated with ACM Production to maintain visual integrity.,e759
+j1,tk4576,usedFor,"generic templates and checklists for both journal (like JOCCH) and conference (ACL, EMNLP) submissions",e760
+c1,tk4576,usedFor,"generic templates and checklists for both journal (like JOCCH) and conference (ACL, EMNLP) submissions",e760
+c2,tk4576,usedFor,"generic templates and checklists for both journal (like JOCCH) and conference (ACL, EMNLP) submissions",e760
+d318,tk4707,usedFor,"cross-jurisdictional NLP research (especially for readers of ACM JOCCH unfamiliar with IRB differences between EU, India, and US research environments)",e775
+me287,tk4707,usedFor,annotation workflow notes; these are now consolidated under Q5.,e775
+me287,tk1002,usedFor,"All suggested clarifications on compliance, dataset licensing, and annotation workflow documentation from Ananya and Michael are included—please review pp. 18-24 in particular for final confirmation.",e776
+d100,tk1006,usedFor,"multi-institutional, multilingual NLP projects involving historical data.",e776
+d276,tk1006,usedFor,"The full package (main article, all appendices, datasets index, and cover letter) was uploaded via the ACM submission portal",e778
+d102,tk1006,usedFor,"- All supplementary documents (figures, appendices, compliance FAQs, dataset links) were uploaded without error.",e778
+d280,tk4741,usedFor,"Per the reviewer’s request, I propose to expand Appendix I as follows: - Explicitly state the licensing type ... for each corpus entry, using a new column in the index table.",e783
+d322,tk4752,usedFor,"Sunita, kindly prepare a list of datasets that may pose specific issues.",e784
+d128,tk1002,usedFor,Some datasets from regional archives in India present uncertain licensing conditions. Action: Sunita and Ramesh to collectively draft an addendum clarifying ongoing negotiations and compliance constraints.,e785
+me504,tk1002,usedFor,"Decision to offer a “Worked Example” of a GDPR compliance workflow within the main text and in supplementary material, for reproducibility.",e785
+me133,tk187,usedFor,Inter-Annotator Agreement (IAA) Metrics and Pilot Study Statistics,e787
+me133,tk187,usedFor,"Includes Cohen’s kappa, F1, and Krippendorff’s alpha across annotation batches",e787
+me507,tk187,usedFor,"Includes Cohen’s kappa, F1, and Krippendorff’s alpha across annotation batches",e787
+d325,tk187,usedFor,"across annotation batches (Indian Newspapers corpus, British Colonial Proceedings, US Immigration Letters)",e787
+d326,tk187,usedFor,"across annotation batches (Indian Newspapers corpus, British Colonial Proceedings, US Immigration Letters)",e787
+d327,tk187,usedFor,"across annotation batches (Indian Newspapers corpus, British Colonial Proceedings, US Immigration Letters)",e787
+d128,tk1002,usedFor,clarifies the status of datasets from Indian regional archives,e787
+d329,tk1002,usedFor,"The section emphasizes datasets presently under negotiation, and the specific institutional review steps we are taking at IACS to ensure compliance.",e787
+d128,tk4793,usedFor,"Sunita, your licensing addendum for the Indian regional corpora is effective—would you consider adding a sentence indicating timelines or points of contact for ongoing access negotiations (NDLI, WBSA), for maximum transparency to future JOCCH readers?",e790
+d327,tk1002,usedFor,"Data licensing transparency, including source, legal, and negotiating details.",e791
+d280,tk1002,usedFor,"The submission package included:
+- The final dataset index with comprehensive licensing annotations
+...
+The JOCCH system indicates that the editorial pre-review process will take approximately 2–3 weeks.",e794
+d280,tk1002,usedFor,"Thank you, Ananya, for handling the manuscript upload to JOCCH and for your detailed summary regarding the submission package.",e795
+d338,tk1002,usedFor,"NDLI Access Negotiation: Our process with NDLI’s legal and data stewardship team highlighted the need for clear, persistent communication channels.",e797
+d339,tk4825,usedFor,"summarize the evolving licensing conditions with the West Bengal State Archives, particularly in contexts where future data access is subject to annual review.",e797
+j1,tk1049,usedFor,"Ananya, I appreciate your offer to continue monitoring the JOCCH editorial portal.",e799
+d338,tk4851,usedFor,"Sunita (myself): Details of the NDLI access workflow, annual data licensing, and drafting recommendations on multi-year data sharing agreements",e802
+d340,tk1002,usedFor,integrating the NDLI workflow documents,e807
+d338,tk4875,usedFor,include a brief note in your NDLI materials explaining the implications of the 2022 regulatory changes,e807
+d338,tk4876,usedFor,"post-2022 archival protocols (NDLI vs. West Bengal State Archives and Stanford IRB, for instance)",e807
+d339,tk4876,usedFor,"post-2022 archival protocols (NDLI vs. West Bengal State Archives and Stanford IRB, for instance)",e807
+d342,tk4876,usedFor,"post-2022 archival protocols (NDLI vs. West Bengal State Archives and Stanford IRB, for instance)",e807
+me142,tk1006,usedFor,NLP research on historical data across international borders.,e807
+d343,tk1002,usedFor,integrating the revised “Appendix Navigation Table” into the consolidated draft,e811
+d344,tk4896,usedFor,Ananya’s proposed “Notable Institutional Divergence/Convergence” column,e811
+d345,tk4898,usedFor,flag in the annotation for the Stanford “ContinuingReview_Sample.pdf” that our most recent IRB update now recommends direct reference,e811
+me510,tk4897,usedFor,I have reviewed the table in Section C as well as the harmonized annotation framework,e811
+me512,tk4897,usedFor,The summary notes on cross-institutional lessons learned add precisely the operational perspective,e811
+me513,tk1002,usedFor,before the internal quality review phase begins.,e811
+me513,tk1002,usedFor,as we prepare for pre-submission quality review.,e811
+d338,tk4911,usedFor,the updated NDLI annual review protocol,e813
+d338,tk4913,usedFor,in the NDLI section—perhaps we could standardize this to “annual compliance summary” throughout for clarity.,e813
+d348,tk4931,usedFor,sample error cases from the NDLI and Europeana sub-corpora,e821
+d349,tk4931,usedFor,sample error cases from the NDLI and Europeana sub-corpora,e821
+d338,tk4931,usedFor,Michael’s annotation validation/error analysis (NDLI and Europeana datasets),e824
+d349,tk4931,usedFor,Michael’s annotation validation/error analysis (NDLI and Europeana datasets),e824
+tk1002,c1,usedFor,Thank you all for your structured follow-up and clear allocation of responsibilities during the revision phase of our ACL submission.,e827
+me519,tk4990,usedFor,"how the protocol harmonization strategies (originally discussed in the context of India, the UK, and the US) could extend to digital heritage or archival NLP projects in settings with limited legal infrastructure or capacity",e827
+me520,c34,usedFor,"To align with ACL requirements, I suggest we adhere to the official ACL 2023 template and use ACL-style BibTeX formatting throughout",e828
+me485,c34,usedFor,"To align with ACL requirements, I suggest we adhere to the official ACL 2023 template and use ACL-style BibTeX formatting throughout",e828
+d348,tk100,usedFor,"For data-source attributions in my figures and tables, the current plan is to include (1) dataset DOIs in the captions where relevant (for NDLI and Europeana corpora), and (2) explicit textual references in the main body of the error analysis section.",e828
+d349,tk100,usedFor,"For data-source attributions in my figures and tables, the current plan is to include (1) dataset DOIs in the captions where relevant (for NDLI and Europeana corpora), and (2) explicit textual references in the main body of the error analysis section.",e828
+d175,tk1002,usedFor,ensuring all supplemental materials (including the ZIP appendix and DOI-linked datasets) are accurately referenced throughout both the manuscript and the submission form.,e835
+c1,tk1002,usedFor,monitor for the final ACL camera-ready instructions.,e842
+d175,tk1002,usedFor,All files and folders now adhere to the nomenclature we agreed upon in the last round of manuscript revisions.,e843
+tk1002,c36,usedFor,we move forward with the final camera-ready preparations for ACL 2024.,e844
+d175,tk1002,usedFor,"I will access the repository today and provide additional feedback regarding any potential ambiguity, particularly from a user-experience standpoint, as discussed.",e845
+c37,tk5087,usedFor,as now required by the updated ACL2024 presenter policy.,e851
+tk1002,c37,usedFor,camera-ready coordination call ... as we move toward our internal submission deadline and final camera-ready upload for ACL2024.,e853
+mg422,tk1002,usedFor,for the 25 March meeting. Once everyone confirms their preferred time for the final internal review,e860
+c37,tk1002,usedFor,time-sensitive steps through the conference portal.,e860
+tk5189,tk1002,usedFor,so we have ample buffer before our internal review and the final submission deadline.,e860
+tk5189,tk1002,usedFor,so we have ample buffer before ... the final submission deadline.,e860
+d361,tk5196,usedFor,The “Source Language” and “Script Tag” fields have been cross-checked for mixed Bengali-English tokens per the meta-review suggestions.,e861
+me524,tk5196,usedFor,"Please accept my update on the metadata validation, especially concerning mixed-script tagging, as per your request.",e861
+me525,tk2398,usedFor,"Michael, your repository audit thus far has matched the metadata structure, so I anticipate no further obstacles from my side.",e861
+me526,tk1002,usedFor,"Cross-check for formatting, references, and metadata completeness using the ACL validation script;",e864
+tk1002,c37,usedFor,Final upload of the full camera-ready package to the ACL2024 portal.,e864
+j1,tk1002,usedFor,preparing an extended journal version targeting either JOCCH or Journal of Documentation.,e868
+j2,tk1002,usedFor,preparing an extended journal version targeting either JOCCH or Journal of Documentation.,e868
+d100,tk5235,usedFor,the release of our annotated historical corpora and scripts as a resource paper or dataset note,e868
+d363,tk353,usedFor,a formal resource paper to accompany the dataset release is timely,e869
+d105,tk5244,usedFor,maybe via Zenodo and the LDC catalog,e869
+d364,tk5244,usedFor,maybe via Zenodo and the LDC catalog,e869
+mg426,tk5238,usedFor,"The agenda could include:
+- Journal extension structure & division of new writing tasks",e869
+mg426,tk1002,usedFor,"The agenda could include:
+- Dataset/resource paper logistics and timeline",e869
+mg426,tk5240,usedFor,"The agenda could include:
+- Outreach to the broader historical NLP community",e869
+mg426,tk5241,usedFor,"The agenda could include:
+- Preliminary organization of our upcoming ACL2024 presentation",e869
+me527,tk5248,usedFor,our deeper technical analyses (the sub-dialectal code-switching and the longitudinal modeling components) in a more expansive format.,e870
+me531,tk5248,usedFor,our deeper technical analyses (the sub-dialectal code-switching and the longitudinal modeling components) in a more expansive format.,e870
+me142,tk2129,usedFor,"Expanding the annotation guidelines and language normalization methodology, as you suggested, would also greatly enhance the value for archival and digital humanities audiences.",e870
+me142,tk5252,usedFor,"I can compile a draft section on normalization workflows and the annotator agreement statistics, including the inter-annotator reliability results that were left out of the ACL version due to space.",e870
+d365,tk1002,usedFor,"recent developments in digital resource hosting (e.g., CLARIN and LDC repositories), and possibly designate outreach liaisons for those specific platforms.",e870
+d366,tk1002,usedFor,"recent developments in digital resource hosting (e.g., CLARIN and LDC repositories), and possibly designate outreach liaisons for those specific platforms.",e870
+d367,tk1002,usedFor,"Michael, your outline regarding dataset publication venues (including CLARIN and Zenodo) is timely; perhaps you could circulate a preliminary comparison table in advance of the meeting?",e871
+d105,tk1002,usedFor,"Michael, your outline regarding dataset publication venues (including CLARIN and Zenodo) is timely; perhaps you could circulate a preliminary comparison table in advance of the meeting?",e871
+d105,tk5274,usedFor,"a preliminary comparison table of potential dataset hosting venues: Zenodo, CLARIN, and LDC.",e873
+d367,tk5274,usedFor,"a preliminary comparison table of potential dataset hosting venues: Zenodo, CLARIN, and LDC.",e873
+d368,tk5274,usedFor,"a preliminary comparison table of potential dataset hosting venues: Zenodo, CLARIN, and LDC.",e873
+d369,tk5274,usedFor,"if there are additional platforms of interest (e.g., institutional repositories, HuggingFace Datasets), let me know so I can expand the survey.",e873
+d370,tk5274,usedFor,"if there are additional platforms of interest (e.g., institutional repositories, HuggingFace Datasets), let me know so I can expand the survey.",e873
+j1,tk5276,usedFor,a draft structure that aligns with both JOCCH dataset notes and LREC resource papers.,e873
+c38,tk5276,usedFor,a draft structure that aligns with both JOCCH dataset notes and LREC resource papers.,e873
+d105,tk5293,usedFor,"The tabulated comparison of Zenodo, CLARIN, and LDC is both thorough and insightful, and will undoubtedly aid us in making a strategic decision",e874
+d367,tk5293,usedFor,"The tabulated comparison of Zenodo, CLARIN, and LDC is both thorough and insightful, and will undoubtedly aid us in making a strategic decision",e874
+d368,tk5293,usedFor,"The tabulated comparison of Zenodo, CLARIN, and LDC is both thorough and insightful, and will undoubtedly aid us in making a strategic decision",e874
+d370,tk5293,usedFor,incorporating additional venues such as HuggingFace Datasets and relevant institutional repositories could provide a more holistic view,e874
+d369,tk5293,usedFor,incorporating additional venues such as HuggingFace Datasets and relevant institutional repositories could provide a more holistic view,e874
+d371,tk1979,usedFor,"curating the supplementary annotation logs, edge cases, and inter-annotator metadata.",e874
+d372,tk1979,usedFor,"curating the supplementary annotation logs, edge cases, and inter-annotator metadata.",e874
+d373,tk1979,usedFor,"curating the supplementary annotation logs, edge cases, and inter-annotator metadata.",e874
+d374,tk5295,usedFor,"On the user study survey: the preliminary draft is well structured, Michael. I suggest we consider adding a few items",e874
+d175,tk5292,usedFor,"If there are additional datasets, analyses, or hosting platforms for comparison, please flag them soon so I can integrate the details.",e874
+me142,tk5252,usedFor,lead the normalization guidelines and agreement statistics section,e875
+me133,tk5252,usedFor,lead the normalization guidelines and agreement statistics section,e875
+me542,tk5295,usedFor,challenges faced during multi-script retrievals and language normalization protocols,e875
+me142,tk5295,usedFor,challenges faced during multi-script retrievals and language normalization protocols,e875
+me544,tk5304,usedFor,prepare a comparative licensing table segment and cross-reference both LDC and CLARIN requirements,e875
+d370,tk5299,usedFor,add comparative insights for HuggingFace Datasets and institutional repositories,e875
+d369,tk5299,usedFor,add comparative insights for HuggingFace Datasets and institutional repositories,e875
+d100,tk1002,usedFor,data privacy stipulations relevant to historical corpus distribution.,e875
+d368,tk5304,usedFor,cross-reference both LDC and CLARIN requirements for inclusion in the appendix.,e875
+d367,tk5304,usedFor,cross-reference both LDC and CLARIN requirements for inclusion in the appendix.,e875
+me537,tk3944,usedFor,"This section contextualizes our aims (evaluating real-world usability, capturing challenges in processing multi-script and historical texts, and understanding community needs for normalization)",e876
+me537,tk5295,usedFor,"This section contextualizes our aims (evaluating real-world usability, capturing challenges in processing multi-script and historical texts, and understanding community needs for normalization)",e876
+me537,tk5313,usedFor,"This section contextualizes our aims (evaluating real-world usability, capturing challenges in processing multi-script and historical texts, and understanding community needs for normalization)",e876
+me545,tk5314,usedFor,"provides two sample use scenarios: 1) academic research on code-switching in colonial records, and 2) digital humanities platforms integrating machine-readable annotated corpora.",e876
+me546,tk1002,usedFor,expanded comparison to include HuggingFace and institutional repositories—these platforms are increasingly recognized in both NLP and digital heritage circles.,e876
+me547,tk1002,usedFor,expanded comparison to include HuggingFace and institutional repositories—these platforms are increasingly recognized in both NLP and digital heritage circles.,e876
+d18,tk5326,usedFor,"Sunita: If able, supplement the dataset documentation with any outstanding meta-annotations or edge-case illustrations.",e877
+d382,j1,usedFor,"I am writing to document the key discussion points, consensus decisions, and action items agreed upon for our JOCCH resource note and dataset dissemination efforts.",e880
+d100,tk5344,usedFor,"I am pleased to confirm that I have initiated the creation of the Zenodo project page for our historical NLP dataset and have started the DOI request process per our agreed plan. Draft metadata, descriptions, and contact information have been uploaded; Ananya, if you have specific phrasing requests or need to update affiliations, please send them by 30 April so I can finalize the project entry.",e881
+d384,tk1002,usedFor,"Please also let me know if any of you plan to incorporate recent external corpus releases or relevant benchmark results, as I can prepare further citations and explanatory notes.",e881
+me225,tk5342,usedFor,"if you or Michael identify additional edge cases prior to the 5 May deadline, we can append an addendum for transparency.",e882
+me549,tk5342,usedFor,The latest meta-annotation review (version “MetaAnnoLog_v5May.docx”) is now integrated with minor clarifying comments,e882
+d105,tk5355,usedFor,co-authoring conventions required by JOCCH for dataset notes.,e882
+d386,tk5355,usedFor,upload as a supplementary PDF to the primary Zenodo record.,e882
+d190,tk5365,usedFor,"These remarks specifically address two ambiguous token-classification instances flagged in recent cross-validation, and I believe they will add valuable clarity for future users of our dataset.",e884
+d190,tk5366,usedFor,"These remarks specifically address two ambiguous token-classification instances flagged in recent cross-validation, and I believe they will add valuable clarity for future users of our dataset.",e884
+j1,tk1002,usedFor,we will be on track for a smooth and timely JOCCH submission.,e885
+d389,tk1002,usedFor,"I will bring a couple of minor clarification questions regarding the embargo status of a dataset subset, but these are easily resolved during the call.",e888
+me551,tk5397,usedFor,cover letter template with emphasis on legal compliance and the meta-annotation methodology,e889
+d391,tk5402,usedFor,the embargo status clarification for the relevant subset of our historical corpus has now been finalized,e890
+me287,d392,usedFor,particularly the guidance on transparency in dataset creation and multi-institutional compliance.,e890
+me553,d392,usedFor,particularly the guidance on transparency in dataset creation and multi-institutional compliance.,e890
+d190,tk1894,usedFor,The explicit reference to the 10th December 2022 embargo lift date serves as a clear and transparent benchmark for prospective users of our dataset.,e891
+j1,tk1002,usedFor,drafting the JOCCH cover letter.,e891
+j1,tk1002,usedFor,we will remain perfectly on schedule for the JOCCH submission.,e891
+d393,tk5416,usedFor,"your attention to legal notices across all dataset components. Following Ananya’s excellent suggestion, I recommend including a brief acknowledgement of the data use statements from our external corpus providers (notably, the “Bengal Gazette” and “Madras Chronicle” collections)",e892
+d394,tk5416,usedFor,"your attention to legal notices across all dataset components. Following Ananya’s excellent suggestion, I recommend including a brief acknowledgement of the data use statements from our external corpus providers (notably, the “Bengal Gazette” and “Madras Chronicle” collections)",e892
+d393,tk1002,usedFor,"data usage terms negotiated with our key external corpus providers, namely the “Bengal Gazette” and “Madras Chronicle” collections.",e893
+d394,tk1002,usedFor,"data usage terms negotiated with our key external corpus providers, namely the “Bengal Gazette” and “Madras Chronicle” collections.",e893
+d175,tk1894,usedFor,Clarify the “rolling embargo” mechanism and signal our intention to update supplementary datasets as embargoes are lifted.,e898
+d397,tk1894,usedFor,drafting a supplementary sentence about future post-embargo dataset availability,e898
+me554,tk1894,usedFor,Clarify the “rolling embargo” mechanism and signal our intention to update supplementary datasets as embargoes are lifted.,e898
+me287,tk5425,usedFor,"Enhance Figures 2 and 3 for clearer representation of the annotation workflow—specifically, sharper labeling of stages.",e898
+me554,d398,usedFor,"the ""rolling embargo"" mechanism ... under which supplementary datasets—specifically, Part II of the “Bengal Gazette” ...—will be released post-embargo.",e899
+me554,d399,usedFor,"the ""rolling embargo"" mechanism ... under which supplementary datasets—specifically, ... Part III of the “Madras Chronicle”—will be released post-embargo.",e899
+d105,tk326,usedFor,Zenodo’s guidelines on phased dataset disclosure.,e900
+d105,tk5453,usedFor,Ramesh’s Zenodo citation block and annotation workflow suggestions,e902
+me554,tk1686,usedFor,Given the successful integration of “rolling embargo” mechanisms and Zenodo citation best practices ... on compliance management for historical NLP resources,e905
+me556,tk1686,usedFor,Given the successful integration of “rolling embargo” mechanisms and Zenodo citation best practices ... on compliance management for historical NLP resources,e905
+d190,tk1686,usedFor,This could increase uptake and interest in our dataset by both NLP researchers and historians.,e905
+me557,tk1686,usedFor,the structured “rolling embargo” model and Zenodo-linked workflows.,e906
+me558,tk1686,usedFor,the structured “rolling embargo” model and Zenodo-linked workflows.,e906
+me557,tk5474,usedFor,best practices for colleagues navigating similar data-sharing challenges,e906
+me558,tk5474,usedFor,best practices for colleagues navigating similar data-sharing challenges,e906
+me559,tk5479,usedFor,draft an annotated slide deck around the embargo mechanics and Zenodo integration,e906
+me560,tk5479,usedFor,draft an annotated slide deck around the embargo mechanics and Zenodo integration,e906
+me554,tk1686,usedFor,"Staged sections on our rolling embargo model, Zenodo pipeline, and template-driven MOU/legal correspondence",e911
+me562,tk1686,usedFor,"Staged sections on our rolling embargo model, Zenodo pipeline, and template-driven MOU/legal correspondence",e911
+me563,tk1686,usedFor,"Staged sections on our rolling embargo model, Zenodo pipeline, and template-driven MOU/legal correspondence",e911
+me564,tk1686,usedFor,Brief “Automation & Future Directions” sidebar highlighting manual scripting solutions and open reference lists for workflow extensions.,e911
+d100,tk1686,usedFor,our technical note (“Compliance Management for Historical NLP Data Releases: A Stepwise Guide”),e911
+me562,tk1846,usedFor,"foreground the Zenodo pipeline as a prominent example, and I have annotated your .docx with a proposed sentence to this effect that should increase the appeal for those working on open access and data stewardship issues.",e917
+me562,tk5593,usedFor,"All versions of the event flyer, incorporating the Zenodo pipeline as a case study, have been posted to IACS...",e919
+j1,tk1002,usedFor,discussion weighing JOCCH versus conference options,e921
+d403,tk5633,usedFor,the necessity of modular compliance workflows (as seen with the Zenodo pipeline),e925
+me566,tk1002,usedFor,"The lessons learned, as so well organized by Michael, will aid not just awareness but also practitioner adoption of our workflow innovations.",e927
+j1,tk1002,usedFor,"proceed with a JOCCH journal submission to maximize impact, depth, and visibility",e929
+j1,tk1061,usedFor,Target JOCCH submission: by 22nd October 2022.,e929
+j1,tk5654,usedFor,"Preprint option: to be decided post-JOCCH submission, factoring in the journal’s open-access policy.",e929
+j1,tk1002,usedFor,Final submission package to be prepared jointly (Sunita lead) for JOCCH.,e929
+tk5663,j1,usedFor,I support Sunita proceeding with the official submission to JOCCH on 3 October as per our agreed timeline.,e931
+d404,tk5667,usedFor,"Over the past two days, I have collated source documentation to enumerate the lesser-resourced language subcorpora.",e938
+j1,tk4796,usedFor,if reviewer-requested detail exceeds JOCCH’s main text limits,e938
+me567,tk5716,usedFor,"the editorial office exhibits flexibility for the inclusion of extended methodological appendices, especially when such detail supports reproducibility and transparency in data-centric submissions.",e939
+me568,tk5709,usedFor,"unless you have identified any interpretability issues with our previous color schema, my recommendation is to maintain consistency for cross-comparability.",e939
+me569,tk5709,usedFor,If you do make significant updates for improved clarity (particularly for temporal analyses),e939
+d409,tk5709,usedFor,"Sunita, sharing a working draft and corpus tables by Monday evening will be perfect",e939
+d410,tk5665,usedFor,while relegating exhaustive details and raw data breakdowns to the appendix.,e939
+d411,tk5717,usedFor,archival data annotation—especially references to researcher obligations for cross-regional data and subject consent,e939
+d412,tk5717,usedFor,researcher obligations for cross-regional data and subject consent,e939
+mg467,tk1002,usedFor,Looking forward to our revision sprint meeting scheduled for today at 17:00 IST / 12:30 BST / 04:30 PDT.,e940
+me454,tk5738,usedFor,linking evaluation error analysis to annotation policy discussion.,e941
+d404,tk5728,usedFor,representation of lesser-resourced language subcorpora and inter-annotator reliability.,e941
+tk5727,j1,usedFor,today’s JOCCH revision planning call.,e941
+me571,d413,usedFor,which pertain to explicit subject consent and retention for cultural datasets.,e942
+me572,d413,usedFor,which pertain to explicit subject consent and retention for cultural datasets.,e942
+me576,tk1002,usedFor,comparison of the latest amendments to the India Data Protection Bill (2022) with those from the EU and UK,e942
+me345,tk1002,usedFor,with those from the EU and UK (esp. GDPR and local heritage exceptions).,e942
+d100,tk375,usedFor,Looking forward to your input so we remain on schedule for our internal review next week.,e945
+me577,tk272,usedFor,"In the methodology section, I will incorporate in-text footnotes for each instance where linguistic corpora intersect with flagged legal constraints",e946
+me578,d414,usedFor,applicable to international collaborative annotation,e946
+me579,d414,usedFor,or only to public data release?,e946
+d414,tk5773,usedFor,"On the “heritage dataset export” clause (GDPR/UK section D3b), could you please clarify specifically for our methods section whether international annotation ... triggers the same consent requirements as public release?",e947
+me578,tk5773,usedFor,whether international annotation (as conducted in our project) triggers the same consent requirements as public release? This will help us frame the annotation workflow footnotes precisely.,e947
+me287,tk5773,usedFor,This will help us frame the annotation workflow footnotes precisely.,e947
+me581,tk5774,usedFor,if you need further annotation metadata or explanatory details for the starred (‘special consent’) data points in your figures,e947
+me574,tk5775,usedFor,"the placement of the comparative legal table and appendix formatting draft looks strong. During our meeting, let us also finalize the flow for transitioning legally nuanced content",e947
+me583,tk5775,usedFor,"the placement of the comparative legal table and appendix formatting draft looks strong. During our meeting, let us also finalize the flow for transitioning legally nuanced content",e947
+me574,tk1002,usedFor,"We confirmed placement of the comparative legal matrix: main methods section will feature succinct, in-text footnotes marking all legal inflection points, with extended discussion and complete matrix residing in the appendix.",e948
+me585,tk1002,usedFor,"We confirmed placement of the comparative legal matrix: main methods section will feature succinct, in-text footnotes marking all legal inflection points, with extended discussion and complete matrix residing in the appendix.",e948
+d416,tk1002,usedFor,"Sunita (myself) will supply a compact set of 3–4 anonymized annotation examples and explanatory captions by midday tomorrow, highlighting cases governed by section 37B and corresponding GDPR provisions.",e948
+d417,tk5801,usedFor,target archival data precedents from East Asia or Latin America to enrich our comparative legal discussion,e954
+d418,tk5801,usedFor,identify suitable archival partners or open datasets we can reference,e954
+d419,tk14,usedFor,extraction and analysis of statistical data from our project logs,e954
+d420,tk5812,usedFor,to reference anonymized elements from their open-access YIVO collection as a fresh cross-border use case.,e956
+me592,d426,usedFor,"The library enforces:
+- Project-level Data Protection Impact Assessments (DPIAs) for transnational annotation projects.",e959
+me593,d426,usedFor,- Mandated bilingual disclosure for any data to be processed by non-resident partners.,e959
+me594,d428,usedFor,- Specific annotation consent forms distinguishing between archival record usage and personal cultural testimony.,e959
+me594,d429,usedFor,- Specific annotation consent forms distinguishing between archival record usage and personal cultural testimony.,e959
+d430,tk5842,usedFor,"Ananya: Once your Israel data is approved, we can further augment the jurisdiction matrix.",e959
+d420,tk5845,usedFor,to reference anonymized details from their open-access YIVO collection in our revised manuscript.,e960
+d431,tk5848,usedFor,"cross-reference any similar workflows in our primary datasets, which would strengthen comparative insights for the revised section.",e960
+me595,tk5846,usedFor,"The NLI’s tiered consent protocol for handling culturally sensitive narratives,",e960
+me222,tk5846,usedFor,"Robust anonymization standards in their digital annotation platforms,",e960
+me597,tk5846,usedFor,"Procedures for data sharing with research partners across the EU, US, and Australia, which are notably distinct from UK/EU/India protocols.",e960
+d432,tk5858,usedFor,"Thank you, Ananya, for securing the National Library of Israel (NLI) approval and for outlining the key features relevant to Section 4.2’s expansion. The inclusion of the NLI case, alongside Michael’s detailed legal matrix, positions our revision as both geographically comprehensive and methodologically robust.",e961
+me574,tk5858,usedFor,"Michael, your comparative legal matrix captures the regulatory nuances well and clearly addresses the reviewer’s feedback on non-Western and cross-jurisdictional compliance.",e961
+d128,tk5860,usedFor,Rapid review of comparative outlines (Ananya’s and Michael’s inputs; my cross-referenced annotations for Indian and UK/EU datasets).,e962
+d435,tk5860,usedFor,Rapid review of comparative outlines (Ananya’s and Michael’s inputs; my cross-referenced annotations for Indian and UK/EU datasets).,e962
+d436,tk5862,usedFor,"Detailed mapping of NLI-specific considerations (tiered consent, anonymization, cross-border sharing) and any regulatory divergences noted from Japan/Chile.",e962
+d437,tk5862,usedFor,any regulatory divergences noted from Japan/Chile.,e962
+d438,tk5862,usedFor,any regulatory divergences noted from Japan/Chile.,e962
+d440,tk5842,usedFor,annotated the comparative legal matrix with newly integrated rows corresponding to the National Library of Israel's protocols,e963
+d441,tk5866,usedFor,These comments should help us structure the “contrast and synthesis” subsection efficiently during the live drafting.,e963
+me595,tk5842,usedFor,protocols—especially those concerning tiered consent structures,e963
+me222,tk5842,usedFor,protocols—especially those concerning tiered consent structures and anonymization standards.,e963
+d432,tk5858,usedFor,We successfully integrated the primary elements from the National Library of Israel (NLI) case into our main manuscript,e964
+me574,tk5879,usedFor,"The comparative legal matrix, now featuring annotated highlight rows for the Israel, Japan, and Chile contexts, was updated in real-time.",e964
+me604,tk5884,usedFor,Ramesh: Conduct a final policy compliance audit on the NLI and Chilean sections,e964
+me605,tk5885,usedFor,Begin harmonizing bibliography entries and citation styles; target first draft by 22 January.,e964
+j13,tk5884,usedFor,focusing on alignment with the latest JOCCH guidelines; feedback due 20 January.,e964
+d444,tk5893,usedFor,The inclusion of cross-references to our Indian/EU datasets substantially strengthens the discussion on inter-regional data transmission.,e967
+d445,tk1002,usedFor,comparative regulatory analysis between non-European (specifically Chilean and Japanese) datasets,e973
+d446,tk1002,usedFor,comparative regulatory analysis between non-European (specifically Chilean and Japanese) datasets,e973
+d447,tk1002,usedFor,Expanded discussion is needed for non-European datasets,e974
+d445,tk1002,usedFor,with explicit Chilean and Japanese data management examples.,e974
+d446,tk1002,usedFor,with explicit Chilean and Japanese data management examples.,e974
+d445,tk5929,usedFor,strengthening the comparative regulatory analysis for the Chilean and Japanese datasets,e975
+d446,tk5929,usedFor,strengthening the comparative regulatory analysis for the Chilean and Japanese datasets,e975
+d445,tk1002,usedFor,Ananya’s expanded workflow diagrams and compliance scenarios for Chilean and Japanese datasets,e977
+d446,tk1002,usedFor,Ananya’s expanded workflow diagrams and compliance scenarios for Chilean and Japanese datasets,e977
+d445,tk5959,usedFor,Ananya will finalize compliance section revisions and diagrams by 13 March.,e978
+d446,tk5959,usedFor,Ananya will finalize compliance section revisions and diagrams by 13 March.,e978
+me606,tk1002,usedFor,Should you require further adaptation of the diagrams or supporting text for the response letter,e980
+me609,tk5974,usedFor,"Michael, perhaps you can propose a unified glossary for recurring metadata and compliance terms once your expansion draft is ready?",e980
+d452,tk1002,usedFor,revised Chilean and Japanese compliance subsections,e980
+d453,tk1002,usedFor,revised Chilean and Japanese compliance subsections,e980
+d454,tk5985,usedFor,"examples from both East Asian and European datasets to illustrate diverse approaches to retention, anonymization, and auditibility.",e981
+d129,tk5985,usedFor,"examples from both East Asian and European datasets to illustrate diverse approaches to retention, anonymization, and auditibility.",e981
+d445,tk5994,usedFor,the need to clarify archival authority within the Chilean dataset workflow.,e982
+me611,tk5995,usedFor,the provenance tables you are restructuring.,e982
+me581,tk1002,usedFor,aligning the ongoing drafts for the consolidated manuscript structure.,e982
+me609,tk5991,usedFor,review the latest tracked changes and glossary entries by the evening of March 16,e982
+me614,tk5994,usedFor,feedback regarding “consent revalidation” and the need to clarify archival authority within the Chilean dataset workflow.,e982
+me615,tk5994,usedFor,the need to clarify archival authority within the Chilean dataset workflow.,e982
+tk3760,j1,usedFor,our final action steps ahead of the JOCCH major revision submission deadline,e986
+me616,tk1006,usedFor,"the “provenance checkpoint” mechanism, could indeed set a benchmark for reproducibility across multi-national historical NLP projects",e991
+me617,tk1006,usedFor,The systematic cross-referencing of glossary terms ... appeared especially effective.,e991
+me328,tk1006,usedFor,and the embedding of workflow diagrams appeared especially effective.,e991
+me619,tk4308,usedFor,developing a practical methods note on our annotation toolkit,e991
+me516,tk1002,usedFor,"document our experience for internal knowledge transfer and consider a short-form publication, particularly given the innovative compliance protocols and metadata harmonization strategies we piloted.",e992
+me36,tk1002,usedFor,"document our experience for internal knowledge transfer and consider a short-form publication, particularly given the innovative compliance protocols and metadata harmonization strategies we piloted.",e992
+me625,tk6050,usedFor,the role that shared live logs and “lock-down” periods played during manuscript synchronization.,e992
+me626,tk6050,usedFor,the role that shared live logs and “lock-down” periods played during manuscript synchronization.,e992
+me627,tk1002,usedFor,"develop a reproducible template for ‘multi-author version management’ as part of the memo, which could serve as a useful tool or appendix for others.",e992
+me628,tk1006,usedFor,highlighting how our annotation and provenance toolkit generalizes beyond strictly historical data tasks.,e992
+me629,tk6058,usedFor,"a “do’s and don’ts” checklist, distilled from our experiences, to the final memo—particularly issues around time-zone coordination and rapid integration cycles.",e992
+me629,tk6059,usedFor,"a “do’s and don’ts” checklist, distilled from our experiences, to the final memo—particularly issues around time-zone coordination and rapid integration cycles.",e992
+tk6054,c39,usedFor,submitting an abstract for the April departmental colloquium.,e992
+tk5558,c40,usedFor,"For the methods note, I can explore alignment with the EMNLP System Demonstrations track",e992
+tk6057,j1,usedFor,"Let’s revisit this once we receive reviewer feedback from JOCCH, as suggested.",e992
+me627,tk6061,usedFor,Ramesh’s idea to identify replicable process elements is especially timely—not only could our compliance harmonization and provenance checkpoint strategies aid other teams,e993
+me630,tk6061,usedFor,Ramesh’s idea to identify replicable process elements is especially timely—not only could our compliance harmonization and provenance checkpoint strategies aid other teams,e993
+me516,tk1002,usedFor,our compliance harmonization and provenance checkpoint strategies aid other teams,e993
+me616,tk6063,usedFor,our compliance harmonization and provenance checkpoint strategies aid other teams,e993
+me516,tk1006,usedFor,they also help articulate the distinct requirements of historical data NLP as opposed to other domains.,e993
+me616,tk1006,usedFor,they also help articulate the distinct requirements of historical data NLP as opposed to other domains.,e993
+me287,pa169,usedFor,our annotation and workflow approaches might be suitable for a “methods note” or similar format.,e993
+j1,tk6101,usedFor,"I am happy to draft an opening framing paragraph, contextualizing our JOCCH project within the wider challenges of NLP on historical data and compliance-driven international collaborations.",e995
+c42,tk6122,usedFor,"For the methods note/short-form dissemination proposal, Ramesh, I have tentatively linked EMNLP System Demo and JDoc Technical Communication tracks.",e998
+j26,tk6122,usedFor,"For the methods note/short-form dissemination proposal, Ramesh, I have tentatively linked EMNLP System Demo and JDoc Technical Communication tracks.",e998
+me627,tk1002,usedFor,especially our version management template—could have significant impact in community “best practice” discussions,e999
+c2,tk6133,usedFor,Ananya’s suggestion to align our short-form dissemination with forthcoming EMNLP or JDoc technical forums aligns well with the project’s objectives and practical impact.,e1001
+j2,tk6133,usedFor,Ananya’s suggestion to align our short-form dissemination with forthcoming EMNLP or JDoc technical forums aligns well with the project’s objectives and practical impact.,e1001
+c42,tk1002,usedFor,"Since we are weighing both EMNLP System Demonstrations and JDoc Technical Communication, I recommend we draft a two-paragraph rationale/motivation for each",e1002
+j26,tk1002,usedFor,"Since we are weighing both EMNLP System Demonstrations and JDoc Technical Communication, I recommend we draft a two-paragraph rationale/motivation for each",e1002
+mg492,tk6158,usedFor,let’s confirm this as our discussion slot for the finalization of the methods note/short-form paper outline and venue selection.,e1006
+mg492,tk1002,usedFor,"**Agenda:**  
+1. Brief review of shared outline and section drafts (Google Doc)",e1006
+mg492,tk1002,usedFor,"2. Discussion of compliance, workflow schema, and supplemental visual materials",e1006
+mg492,tk6161,usedFor,3. Michael’s comparative assessment of EMNLP Demo vs. JDoc Technical Communication,e1006
+mg492,tk6162,usedFor,"4. Decision on target venue, next writing assignments, and identification of any data/graphics still needed",e1006
+mg492,tk1002,usedFor,5. Timeline for initial draft completion and possible review checkpoints,e1006
+c42,tk6161,usedFor,Michael’s comparative assessment of EMNLP Demo vs. JDoc Technical Communication,e1006
+j26,tk6161,usedFor,Michael’s comparative assessment of EMNLP Demo vs. JDoc Technical Communication,e1006

@@ -1,0 +1,161 @@
+:START_ID,:END_ID,:TYPE,context,source
+me18,d100,uses,"Specifically, I will conduct a comparative analysis of LIME and SHAP, focusing on their adaptability to models trained on diachronic (historically shifting) text data.",e9
+me19,d100,uses,"Specifically, I will conduct a comparative analysis of LIME and SHAP, focusing on their adaptability to models trained on diachronic (historically shifting) text data.",e9
+me24,d11,uses,There might be preprocessing or post-hoc interpretability approaches we can apply to mitigate these issues without losing valuable historical nuance.,e9
+me10,d11,uses,There might be preprocessing or post-hoc interpretability approaches we can apply to mitigate these issues without losing valuable historical nuance.,e9
+me142,d1,uses,I have begun by standardizing metadata fields and applying basic preprocessing steps,e10
+me142,d2,uses,I have begun by standardizing metadata fields and applying basic preprocessing steps,e10
+me27,d1,uses,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me27,d2,uses,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me28,d1,uses,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me28,d2,uses,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me142,d1,uses,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me142,d2,uses,"such as deduplication, lowercasing, and removal of extraneous symbols.",e10
+me144,d1,uses,I am considering integrating an OCR correction tool,e10
+me144,d2,uses,I am considering integrating an OCR correction tool,e10
+me18,d11,uses,"for example, I can test whether post-OCR tokens introduce artifact-driven explanations in LIME/SHAP output.",e12
+me19,d11,uses,"for example, I can test whether post-OCR tokens introduce artifact-driven explanations in LIME/SHAP output.",e12
+me144,d11,uses,OCR-challenged text segments from the Chronicling America subset (1890–1900),e13
+me144,d1,uses,Michael's demonstration of OCR/post-processing pipeline (using shared Chronicling America samples),e14
+me45,d1,uses,metadata mapping for both Chronicling America and British Library datasets.,e16
+me45,d13,uses,metadata mapping for both Chronicling America and British Library datasets.,e16
+me46,d1,uses,"The group agreed to implement a dual mapping schema for now, with the option to standardize if downstream complications arise.",e16
+me46,d13,uses,"The group agreed to implement a dual mapping schema for now, with the option to standardize if downstream complications arise.",e16
+me144,me48,uses,The workflow incorporating post-processing and manual verification noticeably reduced segmentation errors in the provided sample.,e16
+me144,me49,uses,The workflow incorporating post-processing and manual verification noticeably reduced segmentation errors in the provided sample.,e16
+me144,d15,uses,This subset has been processed using Michael’s latest OCR correction pipeline and manually verified to ensure high textual fidelity and alignment with our dual metadata mapping policies.,e17
+me18,d15,uses,my preliminary experiments using both LIME and SHAP indicate clear differences in both stability and quality of explanations,e20
+me19,d15,uses,my preliminary experiments using both LIME and SHAP indicate clear differences in both stability and quality of explanations,e20
+me18,d15,uses,Comparative quantitative evaluation of LIME vs. SHAP on our current corpus subset,e23
+me19,d15,uses,Comparative quantitative evaluation of LIME vs. SHAP on our current corpus subset,e23
+me18,d15,uses,Ananya presented the findings from her comparative evaluation of LIME and SHAP on our clean corpus subset.,e25
+me19,d15,uses,Ananya presented the findings from her comparative evaluation of LIME and SHAP on our clean corpus subset.,e25
+me56,d100,uses,fine-tuned transformer on our preprocessed historical corpus,e26
+me56,me57,uses,"fine-tuned transformer on our preprocessed historical corpus, with token-level and page-level encoders",e26
+me56,me58,uses,"fine-tuned transformer on our preprocessed historical corpus, with token-level and page-level encoders",e26
+me66,d100,uses,Recommendations to simplify or better contextualize explanations for historical data specialists.,e32
+me82,d32,uses,"artifact severity bins (e.g., “low,” “medium,” “high”) correspond to a quantitative threshold (e.g., OCR error rate) or a qualitative ranking from annotator notes?",e41
+me83,d32,uses,"If a hybrid approach was used, a brief mention in the caption would be helpful.",e41
+me85,d229,uses,"- Descriptive statistics for class distribution (substitution, insertion, deletion, segmentation errors), both by document and aggregated corpus level.",e59
+me86,d229,uses,"- Annotator-wise confusion matrices for each error type, in both CSV and heatmap formats.",e59
+me87,d229,uses,"- A short appendix with five illustrative cases per error class, including full original line image references and associated archival metadata.",e59
+me88,d229,uses,"- Source archive and permission metadata, extracted from IACS and British Library records, as a draft for the “Provenance” documentation section.",e59
+me89,d38,uses,"Michael, if your pipeline scripts integrate smoothly with the new inputs",e60
+me90,d43,uses,The annotated validation logs (v0.2.1) are now available in our shared Drive directory under `/dataset_release_June2019/validation_logs/`.,e64
+me144,d100,uses,focusing on the OCR domain shift in non-English historical texts.,e73
+me94,d50,uses,corpus diversity statistics and language identification error rates,e73
+me97,d100,uses,How our dataset’s annotations and NLP processing outputs are distributed under the agreed Creative Commons terms,e74
+me103,d61,uses,It provides genre-wise Cohen’s kappa and Krippendorff’s alpha statistics for our NER and topical annotation sets,e79
+me96,d62,uses,- Two summary tables (NER and Topic Modeling) with genre and language breakdowns,e79
+me98,d114,uses,Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives,e84
+me100,d114,uses,Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives,e84
+me96,d114,uses,Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives,e84
+me103,d66,uses,NER and topic annotation nuances for both the Bengali and English data slices.,e87
+me103,d67,uses,NER and topic annotation nuances for both the Bengali and English data slices.,e87
+me101,d66,uses,NER and topic annotation nuances for both the Bengali and English data slices.,e87
+me101,d67,uses,NER and topic annotation nuances for both the Bengali and English data slices.,e87
+me102,d66,uses,"The revised version more explicitly delineates the genre segmentation methodology, with clear demarcation of workflow across the Bengali and English corpora",e92
+me102,d67,uses,"The revised version more explicitly delineates the genre segmentation methodology, with clear demarcation of workflow across the Bengali and English corpora",e92
+me139,d74,uses,our compliance with licensing mandates stated by the Bengali and English source archives.,e93
+me144,me151,uses,This involved token-level standardization and the mapping of variational orthographies,e103
+me144,d79,uses,against a reference list assembled during preliminary OCR correction.,e103
+me144,d78,uses,variational orthographies—common in colonial-era newspapers and census records—against a reference list,e103
+me158,d82,uses,"I have now begun the iterative re-tagging of Tables 3 and 5 in the source LaTeX files, aligning headers, associations, and scope definitions for assistive technology compatibility.",e104
+me163,d83,uses,cross-lingual ambiguity patterns in historical place names,e119
+me142,d84,uses,issues in standardizing metadata across colonial gazetteer sources.,e119
+me168,d100,uses,- Comprehensive metadata capture and version control for evolving historical corpora.,e120
+pa10,d100,uses,Reproducible NLP Workflows for Historical Datasets: Lessons from a Cross-Lingual Gazetteer Project.,e126
+me184,d76,uses,A comparative evaluation of rule-based vs. neural string matching approaches ... on the workflow we adopted for handling Bengali-English place names in our historical corpus,e127
+me207,d103,uses,I propose defaulting to CC BY for the bulk of our repository,e172
+me208,d108,uses,with CC BY-NC applied selectively for sensitive/embargoed components,e172
+me209,d109,uses,IACS supports depositing final versions of all datasets and code to both a global repository (such as Zenodo),e172
+me216,d114,uses,using our most recent experiments on the Bengali–Gujarati ... historical corpora.,e193
+me216,d114,uses,using our most recent experiments on the ... French–English historical corpora.,e193
+me218,d194,uses,data privacy routines (data de-identification using named entity masking and character scrambling),e195
+me219,d194,uses,followed by the dataset access audit function we integrated for compliance documentation.,e195
+me142,d116,uses,"Option A: Highlights the cross-lingual model transfer and dataset harmonization pipeline, using distinct colors for each dataset and arrows to emphasize transfer directions.",e196
+me225,d124,uses,ensure consistency with our earlier cross-validation setup ... as the model is applied across Gujarati and French datasets.,e207
+me225,d125,uses,ensure consistency with our earlier cross-validation setup ... as the model is applied across Gujarati and French datasets.,e207
+me216,d126,uses,as the Gujarati-trained model is applied to the French historical corpus.,e211
+me216,d127,uses,as the Gujarati-trained model is applied to the French historical corpus.,e211
+me231,d128,uses,"Detailed our anonymization pipeline, including data hashing procedures, exclusion of personally identifiable information at the source, and our approach to managing regional digital archival consent.",e214
+me231,d129,uses,"Detailed our anonymization pipeline, including data hashing procedures, exclusion of personally identifiable information at the source, and our approach to managing regional digital archival consent.",e214
+me232,d128,uses,including data hashing procedures,e214
+me232,d129,uses,including data hashing procedures,e214
+me233,d128,uses,exclusion of personally identifiable information at the source,e214
+me233,d129,uses,exclusion of personally identifiable information at the source,e214
+me234,d128,uses,our approach to managing regional digital archival consent,e214
+me234,d129,uses,our approach to managing regional digital archival consent,e214
+me241,d136,uses,The preview PDF and the latest `.tex` and `.pdf` source files have been uploaded to the group drive,e227
+me247,d114,uses,our pipeline for South Asian historical language corpora,e259
+me142,d147,uses,The pipeline and datasets are fully open-sourced and reflect principles of broad accessibility and research reproducibility.,e262
+me251,d114,uses,incorporating comparative NLP analysis points from the South Asian corpus segment,e269
+me144,d100,uses,challenges of OCR post-processing and named entity recognition in low-resource historical datasets.,e269
+me253,d100,uses,challenges of OCR post-processing and named entity recognition in low-resource historical datasets.,e269
+me142,d100,uses,"""NLP Methods for Historical Data: Global Challenges, Local Contexts.""",e278
+me278,d160,uses,"Additionally, the sample Jupyter notebook (""sequence_labeling_demo.ipynb"") is now live in the “notebooks/” directory, featuring annotated code blocks and output sample cells relevant to our South Asian corpus.",e288
+me287,d173,uses,"Clearer explanation of our annotation process, from manual expert vetting to protocol-driven crowdsourced validation, referencing both primary and synthetic data flows.",e329
+me287,d174,uses,"Clearer explanation of our annotation process, from manual expert vetting to protocol-driven crowdsourced validation, referencing both primary and synthetic data flows.",e329
+me287,d100,uses,how our annotation protocol adapts across datasets,e356
+me287,d100,uses,a small clarification about the baseline annotation protocol may help preempt audience questions.,e358
+me298,d100,uses,which further contextualizes the relevance of our synthetic instance protocol.,e358
+me298,d183,uses,The protocol’s modularity was a key factor in efficiently scaling from pilot datasets (~50 docs) to our current corpus (>1000 docs).,e359
+me298,d184,uses,The protocol’s modularity was a key factor in efficiently scaling from pilot datasets (~50 docs) to our current corpus (>1000 docs).,e359
+me314,d190,uses,updated external references to support our dataset licensing approach.,e393
+me315,d190,uses,Michael’s additions regarding tokenization stability and Sunita’s clarifications on OCR error contextualization are directly included.,e393
+me144,d190,uses,Michael’s additions regarding tokenization stability and Sunita’s clarifications on OCR error contextualization are directly included.,e393
+me142,d193,uses,"given JOCCH’s explicit intersection of computational methods with heritage materials, it might offer us a slightly more receptive audience for our corpus creation protocols",e402
+me350,d223,uses,It includes scenarios ranging from provisional dataset titles shared with media under embargo,e471
+me350,d224,uses,to sample metadata snapshots circulated for internal working groups ahead of formal article acceptance.,e471
+me350,d223,uses,drafting the metadata use-case box ... It includes scenarios ranging from provisional dataset titles shared with media under embargo,e471
+me350,d224,uses,drafting the metadata use-case box ... to sample metadata snapshots circulated for internal working groups ahead of formal article acceptance.,e471
+me357,me350,uses,the draft insert (highlighted in Section 4 of the shared FINAL_Integrated_FAQ_Annex_v1.1),e471
+me360,d114,uses,enabling digitized archives in regional languages to be more broadly searchable and accessible.,e507
+me142,d114,uses,"By combining domain-specific language modeling with scalable digitization pipelines, our project lays vital groundwork",e507
+me361,d114,uses,"By combining domain-specific language modeling with scalable digitization pipelines, our project lays vital groundwork",e507
+me361,d226,uses,building multilingual tools for less-resourced cultural datasets.,e507
+me142,d226,uses,building multilingual tools for less-resourced cultural datasets.,e507
+me142,d100,uses,highlighting our advances in multilingual NLP for historical datasets,e515
+me365,d229,uses,The NDAI has begun integrating our metadata extraction tools (described in our JCDL feature) in their processing pipeline for several Bengali ... periodical collections.,e517
+me365,d230,uses,The NDAI has begun integrating our metadata extraction tools (described in our JCDL feature) in their processing pipeline for several ... Odia periodical collections.,e517
+me372,d235,uses,"a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+me372,d236,uses,"a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+me372,d237,uses,"a comparative table summarizing language model accuracy across the NDAI, IACS, and Stanford datasets.",e528
+me373,d114,uses,This contextual detail will assist colleagues working with similar multilingual datasets.,e545
+me144,d100,uses,OCR error correction on historical text corpora using our developed toolkit,e563
+me393,d100,uses,"Two detailed inquiries about best practices for citing the annotated historical datasets, specifically referencing NER and OCR preprocessing steps.",e582
+me144,d100,uses,"Two detailed inquiries about best practices for citing the annotated historical datasets, specifically referencing NER and OCR preprocessing steps.",e582
+me412,d267,uses,and described the semi-automated pre-processing pipeline.,e618
+me416,d188,uses,I will coordinate its integration with the datasets segment.,e636
+me421,d277,uses,now tailored and extended for multilingual newspaper corpora spanning 1850–1950.,e638
+me413,d277,uses,proposes a hybrid evaluation suite that couples both intrinsic (temporal word embedding shift) and extrinsic (NLP downstream performance) metrics specifically validated for multilingual historical newspaper corpora.,e639
+me425,d114,uses,our hybrid evaluation suite and multilingual historical corpus address key gaps,e641
+me425,d114,uses,anchor our hybrid evaluation suite and multilingual corpus as filling critical research gaps,e642
+me429,d283,uses,our adaptation extends their method to non-Latin script datasets.,e643
+me434,d285,uses,especially in projects like the Stanford Literary Lab’s “Global Genres” series and the Stanford Library’s digital exhibits.,e650
+me434,d286,uses,especially in projects like the Stanford Literary Lab’s “Global Genres” series and the Stanford Library’s digital exhibits.,e650
+me440,d292,uses,our NLP pipeline and ethical aspects of handling sensitive historical texts.,e692
+me443,d114,uses,collaborating on digitized heritage collections and adapting our neural models to morphologically rich languages.,e715
+me466,d303,uses,"I have created and shared a dedicated Google Drive folder, “ACM_JOCCH_Draft2023,”",e722
+me209,d305,uses,"supplementary materials such as code links (planned for Zenodo), high-resolution figures, and the updated bibliography.",e722
+me469,d310,uses,NLP Pipelines for Semantic Analysis of 19th-century South Asian Legal Documents,e734
+me211,d100,uses,entity linking methods for digitized archival texts,e736
+me142,d100,uses,computational methods for historical legal corpora,e736
+me142,d100,uses,Dr. Nguyen’s expertise in archival NLP and Prof. Narayanan’s recent analysis of multilingual heritage corpora align well with both our methods and the historical context of our annotated dataset.,e737
+me518,d348,uses,annotation tool validation and error analysis (NDLI and Europeana sub-corpora).,e823
+me518,d349,uses,annotation tool validation and error analysis (NDLI and Europeana sub-corpora).,e823
+me454,d348,uses,annotation tool validation and error analysis (NDLI and Europeana sub-corpora).,e823
+me454,d349,uses,annotation tool validation and error analysis (NDLI and Europeana sub-corpora).,e823
+me492,d175,uses,"In preparation for our call, I have double-checked the supplementary dataset archives and the code repository.",e843
+me524,d361,uses,The “Source Language” and “Script Tag” fields have been cross-checked for mixed Bengali-English tokens per the meta-review suggestions.,e861
+me549,d387,uses,The latest meta-annotation review (version “MetaAnnoLog_v5May.docx”) is now integrated,e882
+me554,d175,uses,Clarify the “rolling embargo” mechanism and signal our intention to update supplementary datasets as embargoes are lifted.,e898
+me287,d175,uses,"Enhance Figures 2 and 3 for clearer representation of the annotation workflow—specifically, sharper labeling of stages.",e898
+me554,d100,uses,our rolling embargo model ... for historical NLP data releases,e911
+me562,d100,uses,Zenodo pipeline ... for historical NLP data releases,e911
+me563,d100,uses,template-driven MOU/legal correspondence ... for historical NLP data releases,e911
+me578,d414,uses,whether international annotation (as conducted in our project) triggers the same consent requirements as public release,e947
+me586,mt210,uses,Outlined the methodology for extracting cross-border annotation metrics,e958
+me287,d420,uses,their publicly documented annotation workflow,e960
+me610,d454,uses,I have incorporated examples from both East Asian and European datasets to illustrate diverse approaches,e981
+me610,d129,uses,I have incorporated examples from both East Asian and European datasets to illustrate diverse approaches,e981
