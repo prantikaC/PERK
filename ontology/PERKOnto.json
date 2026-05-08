@@ -1,0 +1,34 @@
+{
+  "nodes": {
+    "Email": {"file": "entities/Email.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["mailNum", "mailDate"]},
+    "MailThread": {"file": "entities/MailThread.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["threadID", "subject"]},
+    "Person": {"file": "entities/Person.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["personName", "personEmail", "affiliation"]},
+    "Paper": {"file": "entities/Paper.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["paperTitle"]},
+    "Conference": {"file": "entities/Conference.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["confTitle", "confDate", "confVenue"]},
+    "Journal": {"file": "entities/Journal.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["journalTitle"]},
+    "SubmissionID": {"file": "entities/SubmissionID.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["identifier"]},
+    "PaperStatus": {"file": "entities/PaperStatus.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["statusType", "statusDate"]},
+    "Meeting": {"file": "entities/Meeting.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["meetDate", "meetTime", "meetAgenda", "meetLink"]},
+    "Dataset": {"file": "entities/Dataset.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["datasetName"]},
+    "Method": {"file": "entities/Method.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["methodName"]},
+    "Task": {"file": "entities/Task.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["taskName", "taskDate"]},
+    "Metric": {"file": "entities/Metric.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["metricName"]},
+    "PaperBib": {"file": "entities/PaperBib.csv", "id_col": ":ID", "label_col": ":LABEL", "properties": ["doi", "arxivID", "url", "volume", "issue", "pages", "year", "publisher"]}
+  },
+  "relationships": {
+    "sentBy": {"file": "relations/sentBy.csv", "type": "sentBy", "properties": ["context", "source"], "valid_pairs": [["Email", "Person"]]},
+    "receivedBy": {"file": "relations/receivedBy.csv", "type": "receivedBy", "properties": ["context", "source"], "valid_pairs": [["Email", "Person"]]},
+    "partOf": {"file": "relations/partOf.csv", "type": "partOf", "properties": ["context", "source"], "valid_pairs": [["Email", "MailThread"]]},
+    "hasAuthor": {"file": "relations/hasAuthor.csv", "type": "hasAuthor", "properties": ["context", "source"], "valid_pairs": [["Paper", "Person"]]},
+    "identifies": {"file": "relations/identifies.csv", "type": "identifies", "properties": ["context", "source"], "valid_pairs": [["SubmissionID", "Paper"]]},
+    "inVenue": {"file": "relations/inVenue.csv", "type": "inVenue", "properties": ["context", "source"], "valid_pairs": [["SubmissionID", "Conference"], ["SubmissionID", "Journal"]]},
+    "movesTo": {"file": "relations/movesTo.csv", "type": "movesTo", "properties": ["context", "source"], "valid_pairs": [["PaperStatus", "PaperStatus"], ["SubmissionID", "PaperStatus"]]},
+    "hasPaperInfo": {"file": "relations/hasPaperInfo.csv", "type": "hasPaperInfo", "properties": ["context", "source"], "valid_pairs": [["Paper", "PaperBib"]]},
+    "worksWith": {"file": "relations/worksWith.csv", "type": "worksWith", "properties": ["context", "source"], "valid_pairs": [["Person", "Method"], ["Person", "Dataset"], ["Person", "Metric"]]},
+    "worksOn": {"file": "relations/worksOn.csv", "type": "worksOn", "properties": ["context", "source"], "valid_pairs": [["Person", "Task"]]},
+    "usedFor": {"file": "relations/usedFor.csv", "type": "usedFor", "properties": ["context", "source"], "valid_pairs": [["Dataset", "Task"], ["Method", "Task"]]},
+    "evaluates": {"file": "relations/evaluates.csv", "type": "evaluates", "properties": ["context", "source"], "valid_pairs": [["Metric", "Task"], ["Metric", "Method"], ["Metric", "Dataset"]]},
+    "uses": {"file": "relations/uses.csv", "type": "uses", "properties": ["context", "source"], "valid_pairs": [["Method", "Dataset"]]},
+    "attends": {"file": "relations/attends.csv", "type": "attends", "properties": ["context", "source"], "valid_pairs": [["Person", "Meeting"], ["Person", "Conference"]]}
+  }
+}
