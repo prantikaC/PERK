@@ -228,5 +228,6 @@ Full ontology files (OWL, Turtle) are in `ontology/`.
 ![PERKOnto](ontology/PERKOnto.png)
 
 ---
-
+### Citation
+Prantika Chakraborty. (2026). prantikaC/PERK: PERK (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20542115
 
