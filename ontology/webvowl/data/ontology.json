@@ -1,0 +1,2959 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/ns/prov", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://purl.org/ontology/bibo", "https://w3id.org/perkonto" ],
+    "title" : {
+      "en" : "PERKOnto: Personal Email Research Knowledge Ontology"
+    },
+    "iri" : "https://w3id.org/perkonto",
+    "version" : "1.0.0",
+    "author" : [ "Srijoni Majumdar", "Prantika Chakraborty", "Debarshi Kumar Sanyal", "Partha Pratim Das" ],
+    "description" : {
+      "en" : "A domain-specific ontology for representing the professional  knowledge of a researcher as extractable from personal email  communications. PERKOnto models communication infrastructure, researchers and venues, the publication lifecycle, and research content,  anchoring every assertion to its provenance email."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Prantika Chakraborty",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Srijoni Majumdar",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Debarshi Kumar Sanyal",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Partha Pratim Das",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "PERKOnto: Personal Email Research Knowledge Ontology",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/prantikaC/PERK",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "203",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "220",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "156",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "218",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "188",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#time",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "time"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "1",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/AcademicArticle",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcademicArticle"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/perkonto#Email",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Email",
+      "en" : "Email"
+    },
+    "comment" : {
+      "en" : "An individual email message exchanged between researchers.  Serves as the provenance anchor for all knowledge triples extracted into  PERK. Every relationship carries a source property referencing one or  more Email instances."
+    },
+    "id" : "9",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "10" ],
+    "attributes" : [ "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/perkonto#PaperBib",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaperBib",
+      "en" : "Paper Bibliographic Record"
+    },
+    "comment" : {
+      "en" : "A bibliographic metadata record for a published paper,  capturing identifiers, venue, and publication details."
+    },
+    "id" : "46",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/perkonto#Method",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Method",
+      "en" : "Method"
+    },
+    "comment" : {
+      "en" : "A computational or analytical method, model, or algorithm  discussed in the email corpus."
+    },
+    "id" : "36",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/Journal",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Journal"
+    },
+    "subClasses" : [ "72" ],
+    "attributes" : [ "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/perkonto#SubmissionID",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubmissionID",
+      "en" : "Submission ID"
+    },
+    "comment" : {
+      "en" : "A composite identifier linking a specific paper to a  specific submission instance at a target venue, enabling tracking of  multiple parallel or sequential submissions."
+    },
+    "id" : "85"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/perkonto#MailThread",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MailThread",
+      "en" : "Mail Thread"
+    },
+    "comment" : {
+      "en" : "An ordered chain of email messages sharing a common subject  and thread identifier."
+    },
+    "id" : "97",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "13",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://schema.org/Event",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "55", "61" ],
+    "attributes" : [ "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "52" ],
+    "attributes" : [ "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/perkonto#PaperStatus",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaperStatus",
+      "en" : "Paper Status"
+    },
+    "comment" : {
+      "en" : "A node representing a single state in the submission  lifecycle of a paper (e.g. Submitted, Under Review, Revision Required,  Accepted, Rejected). Status nodes are chained via movesTo to encode  the full submission history."
+    },
+    "id" : "52",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "37" ],
+    "attributes" : [ "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/Conference",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Conference"
+    },
+    "subClasses" : [ "61" ],
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://schema.org/Action",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "subClasses" : [ "58" ],
+    "attributes" : [ "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/perkonto#Meeting",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Meeting",
+      "en" : "Meeting"
+    },
+    "comment" : {
+      "en" : "A scheduled meeting between researchers, including virtual  meetings, with an associated agenda and link."
+    },
+    "id" : "55",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "https://w3id.org/perkonto#Paper",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Paper",
+      "en" : "Paper"
+    },
+    "comment" : {
+      "en" : "A research paper authored or co-authored by one or more  Persons in the email corpus."
+    },
+    "id" : "16",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "https://schema.org/CreativeWork",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "subClasses" : [ "97" ],
+    "attributes" : [ "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/perkonto#Metric",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metric",
+      "en" : "Metric"
+    },
+    "comment" : {
+      "en" : "An evaluation metric used to assess the performance of a  method on a task or dataset."
+    },
+    "id" : "130"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "10" ],
+    "attributes" : [ "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://schema.org/Message",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Message"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://schema.org/Periodical",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Periodical"
+    },
+    "subClasses" : [ "72" ],
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://schema.org/ScholarlyArticle",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScholarlyArticle"
+    },
+    "subClasses" : [ "46" ],
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/perkonto#Dataset",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset",
+      "en" : "Dataset"
+    },
+    "comment" : {
+      "en" : "A dataset used or discussed in the research activities  documented in the email corpus."
+    },
+    "id" : "37",
+    "superClasses" : [ "91", "188" ]
+  }, {
+    "iri" : "https://schema.org/SoftwareApplication",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareApplication"
+    },
+    "subClasses" : [ "36" ],
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/perkonto#Conference",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Conference",
+      "en" : "Conference"
+    },
+    "comment" : {
+      "en" : "An academic conference to which a paper has been submitted  or which a researcher attends."
+    },
+    "id" : "61",
+    "superClasses" : [ "93", "87" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "52", "85" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "143"
+  }, {
+    "instances" : 0,
+    "union" : [ "72", "61" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "203"
+  }, {
+    "instances" : 0,
+    "union" : [ "37", "130", "36" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "220"
+  }, {
+    "instances" : 0,
+    "union" : [ "37", "36" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "156"
+  }, {
+    "instances" : 0,
+    "union" : [ "58", "37", "36" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "218"
+  }, {
+    "iri" : "https://schema.org/Dataset",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "37" ],
+    "attributes" : [ "external" ],
+    "id" : "188"
+  }, {
+    "instances" : 0,
+    "union" : [ "55", "61" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://w3id.org/perkonto#Journal",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Journal",
+      "en" : "Journal"
+    },
+    "comment" : {
+      "en" : "An academic journal to which a paper has been submitted  or published."
+    },
+    "id" : "72",
+    "superClasses" : [ "73", "80" ]
+  }, {
+    "iri" : "https://w3id.org/perkonto#Task",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Task",
+      "en" : "Task"
+    },
+    "comment" : {
+      "en" : "A research task or problem formulation that datasets,  methods, or metrics are applied to."
+    },
+    "id" : "58",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "https://w3id.org/perkonto#Person",
+    "baseIri" : "https://w3id.org/perkonto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "comment" : {
+      "en" : "A researcher or collaborator appearing as sender, recipient,  or named entity in the email corpus."
+    },
+    "id" : "10",
+    "superClasses" : [ "39", "69" ]
+  } ],
+  "property" : [ {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "201",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "216",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "217",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "219",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "233",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "234",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "235",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "236",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "237",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "238",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "239",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "240",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "242",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "243",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "244",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "245",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "246",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "247",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "248",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "249",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "250",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "251",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "252",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "254",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "256",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "257",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "258",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "259",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "260",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "261",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "241",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "262",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "263",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/perkonto#receivedBy",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "receivedBy",
+      "en" : "received by"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "Links an Email to the Person(s) who received it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://schema.org/dateCreated",
+    "baseIri" : "https://schema.org",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "dateCreated"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/perkonto#hasAuthor",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasAuthor",
+      "en" : "has author"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "Links a Paper to one of its author Persons."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://schema.org/description",
+    "baseIri" : "https://schema.org",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#generatedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "generatedAtTime"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/perkonto#uses",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "uses",
+      "en" : "uses"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "36",
+    "comment" : {
+      "en" : "Links a Method to a Dataset it is trained or evaluated  on."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/perkonto#pages",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "pages",
+      "en" : "pages"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/perkonto#url",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "url",
+      "en" : "URL"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/perkonto#statusType",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "statusType",
+      "en" : "status type"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "The submission state label, e.g. 'Submitted',  'Under Review', 'Revision Required', 'Accepted', 'Rejected'."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/perkonto#meetDate",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "meetDate",
+      "en" : "meeting date"
+    },
+    "domain" : "55",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/perkonto#meetAgenda",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "meetAgenda",
+      "en" : "meeting agenda"
+    },
+    "domain" : "55",
+    "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/perkonto#taskDate",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "taskDate",
+      "en" : "task date"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "The date on which the task was assigned or initiated."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/perkonto#confDate",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "confDate",
+      "en" : "conference date"
+    },
+    "domain" : "61",
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://schema.org/recipient",
+    "baseIri" : "https://schema.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "recipient"
+    },
+    "domain" : "13",
+    "subproperty" : [ "8" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/authorList",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "authorList"
+    },
+    "domain" : "13",
+    "subproperty" : [ "15" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/perkonto#publisher",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "publisher"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/perkonto#taskName",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "taskName",
+      "en" : "task name"
+    },
+    "domain" : "58",
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/perkonto#journalTitle",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "journalTitle"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/perkonto#doi",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "doi",
+      "en" : "DOI"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Digital Object Identifier for a published paper."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "range" : "69",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "32",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "73",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://schema.org/knowsAbout",
+    "baseIri" : "https://schema.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "knowsAbout"
+    },
+    "domain" : "13",
+    "subproperty" : [ "76", "77" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://schema.org/location",
+    "baseIri" : "https://schema.org",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "location"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://schema.org/name",
+    "baseIri" : "https://schema.org",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/pages",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "pages"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "83"
+  }, {
+    "range" : "87",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "89",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "91",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "93",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "95",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "98",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "26",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "39",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "80",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "87",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/perkonto#personEmail",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "personEmail"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/perkonto#arxivID",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "arxivID",
+      "en" : "arXiv ID"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://w3id.org/perkonto#volume",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "volume",
+      "en" : "volume"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/perkonto#paperTitle",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "paperTitle"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://w3id.org/perkonto#issue",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "issue",
+      "en" : "issue"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://w3id.org/perkonto#attends",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "attends",
+      "en" : "attends"
+    },
+    "superproperty" : [ "120" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "Links a Person to a Meeting or Conference they attend."
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://w3id.org/perkonto#source",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://w3id.org/perkonto#confTitle",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "confTitle"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "126"
+  }, {
+    "range" : "16",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://w3id.org/perkonto#confVenue",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "confVenue",
+      "en" : "conference venue"
+    },
+    "domain" : "61",
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "range" : "130",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "36",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "72",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "58",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "55",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "97",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "52",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "46",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://w3id.org/perkonto#mailDate",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "mailDate",
+      "en" : "mail date"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "The date on which the Email was sent."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "range" : "85",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "10",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://w3id.org/perkonto#threadID",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "threadID",
+      "en" : "thread ID"
+    },
+    "domain" : "97",
+    "comment" : {
+      "en" : "A unique string identifier for a MailThread."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://w3id.org/perkonto#movesTo",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "movesTo",
+      "en" : "moves to"
+    },
+    "superproperty" : [ "144" ],
+    "domain" : "143",
+    "comment" : {
+      "en" : "Links a SubmissionID to its initial PaperStatus, or one  PaperStatus to the next, encoding the submission lifecycle as a directed  state machine."
+    },
+    "attributes" : [ "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "https://w3id.org/perkonto#metricName",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "metricName",
+      "en" : "metric name"
+    },
+    "domain" : "130",
+    "attributes" : [ "datatype" ],
+    "id" : "145"
+  }, {
+    "range" : "130",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "36",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "16",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "72",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "9",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "55",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "97",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "10",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "58",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://w3id.org/perkonto#usedFor",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "usedFor",
+      "en" : "used for"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "156",
+    "comment" : {
+      "en" : "Links a Dataset or Method to the Task it is applied to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "155"
+  }, {
+    "range" : "85",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "46",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "10",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "52",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "iri" : "https://schema.org/startDate",
+    "baseIri" : "https://schema.org",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "startDate"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://schema.org/sender",
+    "baseIri" : "https://schema.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "sender"
+    },
+    "domain" : "13",
+    "subproperty" : [ "163" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "162"
+  }, {
+    "range" : "36",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "55",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "16",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "130",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "10",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://purl.org/dc/terms/isPartOf",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "13",
+    "subproperty" : [ "170" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "169"
+  }, {
+    "range" : "52",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "58",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "85",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "46",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "16",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "iri" : "https://w3id.org/perkonto#affiliation",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "affiliation",
+      "en" : "affiliation"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "The institutional affiliation of a Person."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://w3id.org/perkonto#meetTime",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "meetTime",
+      "en" : "meeting time"
+    },
+    "domain" : "55",
+    "attributes" : [ "datatype" ],
+    "id" : "177"
+  }, {
+    "iri" : "https://w3id.org/perkonto#identifier",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "85",
+    "attributes" : [ "datatype" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://w3id.org/perkonto#identifies",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "identifies",
+      "en" : "identifies"
+    },
+    "superproperty" : [ "180" ],
+    "domain" : "85",
+    "comment" : {
+      "en" : "Links a SubmissionID to the Paper it identifies."
+    },
+    "attributes" : [ "object" ],
+    "id" : "179"
+  }, {
+    "range" : "130",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "97",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "58",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "62",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/doi",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "doi"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "185"
+  }, {
+    "range" : "36",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "188",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "55",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "52",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "46",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "85",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "52",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://schema.org/attendee",
+    "baseIri" : "https://schema.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "attendee"
+    },
+    "domain" : "13",
+    "subproperty" : [ "118" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://schema.org/author",
+    "baseIri" : "https://schema.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "author"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "external" ],
+    "id" : "195"
+  }, {
+    "range" : "46",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "85",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "10",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "16",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://w3id.org/perkonto#methodName",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "methodName",
+      "en" : "method name"
+    },
+    "domain" : "36",
+    "attributes" : [ "datatype" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://schema.org/url",
+    "baseIri" : "https://schema.org",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "url"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "201"
+  }, {
+    "iri" : "https://w3id.org/perkonto#inVenue",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "203",
+    "label" : {
+      "IRI-based" : "inVenue",
+      "en" : "in venue"
+    },
+    "domain" : "85",
+    "comment" : {
+      "en" : "Links a SubmissionID to its target Conference or Journal."
+    },
+    "attributes" : [ "object" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://purl.org/dc/terms/references",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "references"
+    },
+    "domain" : "13",
+    "subproperty" : [ "179" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://w3id.org/perkonto#worksOn",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "worksOn",
+      "en" : "works on"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "Links a Person to a Task they are working on."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "range" : "58",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "85",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "46",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "16",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "10",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "52",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://w3id.org/perkonto#personName",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "personName",
+      "en" : "person name"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "210"
+  }, {
+    "iri" : "https://w3id.org/perkonto#sentBy",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "sentBy",
+      "en" : "sent by"
+    },
+    "superproperty" : [ "162" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "Links an Email to the Person who sent it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "163"
+  }, {
+    "range" : "85",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "10",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "130",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "58",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "iri" : "https://w3id.org/perkonto#meetLink",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "meetLink",
+      "en" : "meeting link"
+    },
+    "domain" : "55",
+    "attributes" : [ "datatype" ],
+    "id" : "215"
+  }, {
+    "iri" : "https://w3id.org/perkonto#datasetName",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "datasetName",
+      "en" : "dataset name"
+    },
+    "domain" : "37",
+    "attributes" : [ "datatype" ],
+    "id" : "216"
+  }, {
+    "iri" : "https://w3id.org/perkonto#evaluates",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "218",
+    "label" : {
+      "IRI-based" : "evaluates",
+      "en" : "evaluates"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "130",
+    "comment" : {
+      "en" : "Links a Metric to the Task, Method, or Dataset it  evaluates."
+    },
+    "attributes" : [ "object" ],
+    "id" : "217"
+  }, {
+    "iri" : "https://schema.org/isRelatedTo",
+    "baseIri" : "https://schema.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isRelatedTo"
+    },
+    "domain" : "13",
+    "subproperty" : [ "217", "35", "155" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasInformedBy",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "wasInformedBy"
+    },
+    "domain" : "13",
+    "subproperty" : [ "142" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://w3id.org/perkonto#statusDate",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "statusDate",
+      "en" : "status date"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "The date on which this status was recorded."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "219"
+  }, {
+    "iri" : "https://w3id.org/perkonto#worksWith",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "220",
+    "label" : {
+      "IRI-based" : "worksWith",
+      "en" : "works with"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "Links a Person to a Method, Dataset, or Metric they use  in their research."
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://schema.org/affiliation",
+    "baseIri" : "https://schema.org",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "affiliation"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "221"
+  }, {
+    "range" : "46",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "16",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "52",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "58",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "85",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "130",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "36",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "range" : "58",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "range" : "72",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "97",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "231"
+  }, {
+    "range" : "55",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "232"
+  }, {
+    "range" : "36",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
+  }, {
+    "iri" : "https://w3id.org/perkonto#version",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "version",
+      "en" : "version"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Version string of the manuscript (e.g. arXiv v2)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "234"
+  }, {
+    "range" : "130",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
+  }, {
+    "range" : "16",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "236"
+  }, {
+    "range" : "46",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "237"
+  }, {
+    "range" : "52",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "238"
+  }, {
+    "iri" : "https://w3id.org/perkonto#date",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "date"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype" ],
+    "id" : "239"
+  }, {
+    "iri" : "https://w3id.org/perkonto#partOf",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of"
+    },
+    "superproperty" : [ "169" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "Links an Email to the MailThread it belongs to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://w3id.org/perkonto#hasPaperInfo",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasPaperInfo",
+      "en" : "has paper info"
+    },
+    "superproperty" : [ "241" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "Links a Paper to its bibliographic record."
+    },
+    "attributes" : [ "object" ],
+    "id" : "240"
+  }, {
+    "iri" : "https://schema.org/datePublished",
+    "baseIri" : "https://schema.org",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "datePublished"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "242"
+  }, {
+    "iri" : "https://w3id.org/perkonto#subject",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "subject"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "243"
+  }, {
+    "range" : "37",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "range" : "9",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
+  }, {
+    "range" : "58",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "246"
+  }, {
+    "range" : "85",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "58",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
+  }, {
+    "range" : "85",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "range" : "85",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "range" : "10",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "range" : "10",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "range" : "58",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "range" : "52",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  }, {
+    "range" : "58",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "iri" : "https://w3id.org/perkonto#mailNum",
+    "baseIri" : "https://w3id.org/perkonto",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "mailNum",
+      "en" : "mail number"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "A unique integer identifier for an Email."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "256"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/issue",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "issue"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "257"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/volume",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "volume"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "258"
+  }, {
+    "range" : "85",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "259"
+  }, {
+    "range" : "46",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "260"
+  }, {
+    "range" : "58",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
+  }, {
+    "iri" : "https://schema.org/subjectOf",
+    "baseIri" : "https://schema.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "subjectOf"
+    },
+    "domain" : "13",
+    "subproperty" : [ "240" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "241"
+  }, {
+    "range" : "10",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "52",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "263"
+  } ]
+}
