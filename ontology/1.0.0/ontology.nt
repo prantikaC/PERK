@@ -1,0 +1,718 @@
+<https://w3id.org/perkonto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/perkonto> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/perkonto/1.0.0> .
+<https://w3id.org/perkonto> <http://purl.org/dc/terms/creator> "Debarshi Kumar Sanyal" .
+<https://w3id.org/perkonto> <http://purl.org/dc/terms/creator> "Partha Pratim Das" .
+<https://w3id.org/perkonto> <http://purl.org/dc/terms/creator> "Prantika Chakraborty" .
+<https://w3id.org/perkonto> <http://purl.org/dc/terms/creator> "Srijoni Majumdar" .
+<https://w3id.org/perkonto> <http://purl.org/dc/terms/description> "A domain-specific ontology for representing the professional  knowledge of a researcher as extractable from personal email  communications. PERKOnto models communication infrastructure, researchers and venues, the publication lifecycle, and research content,  anchoring every assertion to its provenance email."@en .
+<https://w3id.org/perkonto> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/perkonto> <http://purl.org/dc/terms/title> "PERKOnto: Personal Email Research Knowledge Ontology"@en .
+<https://w3id.org/perkonto> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/prantikaC/PERK> .
+<https://w3id.org/perkonto> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#time
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/references
+<http://purl.org/dc/terms/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/ontology/bibo/authorList
+<http://purl.org/ontology/bibo/authorList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasInformedBy
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://schema.org/attendee
+<https://schema.org/attendee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://schema.org/author
+<https://schema.org/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://schema.org/isRelatedTo
+<https://schema.org/isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://schema.org/knowsAbout
+<https://schema.org/knowsAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://schema.org/recipient
+<https://schema.org/recipient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://schema.org/sender
+<https://schema.org/sender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://schema.org/subjectOf
+<https://schema.org/subjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#attends
+<https://w3id.org/perkonto#attends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#attends> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/attendee> .
+<https://w3id.org/perkonto#attends> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto#attends> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Meeting> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Conference> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#attends> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a Meeting or Conference they attend."@en .
+<https://w3id.org/perkonto#attends> <http://www.w3.org/2000/01/rdf-schema#label> "attends"@en .
+# 
+# https://w3id.org/perkonto#evaluates
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/isRelatedTo> .
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Metric> .
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Task> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Method> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Dataset> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Metric to the Task, Method, or Dataset it  evaluates."@en .
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates"@en .
+# 
+# https://w3id.org/perkonto#hasAuthor
+<https://w3id.org/perkonto#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/authorList> .
+<https://w3id.org/perkonto#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Paper> .
+<https://w3id.org/perkonto#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Paper to one of its author Persons."@en .
+<https://w3id.org/perkonto#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has author"@en .
+# 
+# https://w3id.org/perkonto#hasPaperInfo
+<https://w3id.org/perkonto#hasPaperInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#hasPaperInfo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/subjectOf> .
+<https://w3id.org/perkonto#hasPaperInfo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Paper> .
+<https://w3id.org/perkonto#hasPaperInfo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#hasPaperInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Paper to its bibliographic record."@en .
+<https://w3id.org/perkonto#hasPaperInfo> <http://www.w3.org/2000/01/rdf-schema#label> "has paper info"@en .
+# 
+# https://w3id.org/perkonto#identifies
+<https://w3id.org/perkonto#identifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#identifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/references> .
+<https://w3id.org/perkonto#identifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#SubmissionID> .
+<https://w3id.org/perkonto#identifies> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#Paper> .
+<https://w3id.org/perkonto#identifies> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a SubmissionID to the Paper it identifies."@en .
+<https://w3id.org/perkonto#identifies> <http://www.w3.org/2000/01/rdf-schema#label> "identifies"@en .
+# 
+# https://w3id.org/perkonto#inVenue
+<https://w3id.org/perkonto#inVenue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#inVenue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#SubmissionID> .
+<https://w3id.org/perkonto#inVenue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Journal> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Conference> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#inVenue> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a SubmissionID to its target Conference or Journal."@en .
+<https://w3id.org/perkonto#inVenue> <http://www.w3.org/2000/01/rdf-schema#label> "in venue"@en .
+# 
+# https://w3id.org/perkonto#movesTo
+<https://w3id.org/perkonto#movesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#movesTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInformedBy> .
+<https://w3id.org/perkonto#movesTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#SubmissionID> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#PaperStatus> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#movesTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#PaperStatus> .
+<https://w3id.org/perkonto#movesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a SubmissionID to its initial PaperStatus, or one  PaperStatus to the next, encoding the submission lifecycle as a directed  state machine."@en .
+<https://w3id.org/perkonto#movesTo> <http://www.w3.org/2000/01/rdf-schema#label> "moves to"@en .
+# 
+# https://w3id.org/perkonto#partOf
+<https://w3id.org/perkonto#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#partOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/isPartOf> .
+<https://w3id.org/perkonto#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Email> .
+<https://w3id.org/perkonto#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#MailThread> .
+<https://w3id.org/perkonto#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an Email to the MailThread it belongs to."@en .
+<https://w3id.org/perkonto#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "part of"@en .
+# 
+# https://w3id.org/perkonto#receivedBy
+<https://w3id.org/perkonto#receivedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#receivedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/recipient> .
+<https://w3id.org/perkonto#receivedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Email> .
+<https://w3id.org/perkonto#receivedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto#receivedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an Email to the Person(s) who received it."@en .
+<https://w3id.org/perkonto#receivedBy> <http://www.w3.org/2000/01/rdf-schema#label> "received by"@en .
+# 
+# https://w3id.org/perkonto#sentBy
+<https://w3id.org/perkonto#sentBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#sentBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/sender> .
+<https://w3id.org/perkonto#sentBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Email> .
+<https://w3id.org/perkonto#sentBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto#sentBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an Email to the Person who sent it."@en .
+<https://w3id.org/perkonto#sentBy> <http://www.w3.org/2000/01/rdf-schema#label> "sent by"@en .
+# 
+# https://w3id.org/perkonto#usedFor
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/isRelatedTo> .
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Method> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Dataset> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#Task> .
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Dataset or Method to the Task it is applied to."@en .
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/2000/01/rdf-schema#label> "used for"@en .
+# 
+# https://w3id.org/perkonto#uses
+<https://w3id.org/perkonto#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#uses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/isRelatedTo> .
+<https://w3id.org/perkonto#uses> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Method> .
+<https://w3id.org/perkonto#uses> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#Dataset> .
+<https://w3id.org/perkonto#uses> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Method to a Dataset it is trained or evaluated  on."@en .
+<https://w3id.org/perkonto#uses> <http://www.w3.org/2000/01/rdf-schema#label> "uses"@en .
+# 
+# https://w3id.org/perkonto#worksOn
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/knowsAbout> .
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto#Task> .
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a Task they are working on."@en .
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/2000/01/rdf-schema#label> "works on"@en .
+# 
+# https://w3id.org/perkonto#worksWith
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/knowsAbout> .
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Metric> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Method> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Dataset> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a Method, Dataset, or Metric they use  in their research."@en .
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/2000/01/rdf-schema#label> "works with"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/ontology/bibo/issue
+<http://purl.org/ontology/bibo/issue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/ontology/bibo/pages
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/ontology/bibo/volume
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/ns/prov#generatedAtTime
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/affiliation
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/dateCreated
+<https://schema.org/dateCreated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/datePublished
+<https://schema.org/datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/description
+<https://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/location
+<https://schema.org/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/startDate
+<https://schema.org/startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/url
+<https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#affiliation
+<https://w3id.org/perkonto#affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#affiliation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/affiliation> .
+<https://w3id.org/perkonto#affiliation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto#affiliation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#affiliation> <http://www.w3.org/2000/01/rdf-schema#comment> "The institutional affiliation of a Person."@en .
+<https://w3id.org/perkonto#affiliation> <http://www.w3.org/2000/01/rdf-schema#label> "affiliation"@en .
+# 
+# https://w3id.org/perkonto#arxivID
+<https://w3id.org/perkonto#arxivID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#arxivID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#arxivID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#arxivID> <http://www.w3.org/2000/01/rdf-schema#label> "arXiv ID"@en .
+# 
+# https://w3id.org/perkonto#confDate
+<https://w3id.org/perkonto#confDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#confDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/startDate> .
+<https://w3id.org/perkonto#confDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Conference> .
+<https://w3id.org/perkonto#confDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/perkonto#confDate> <http://www.w3.org/2000/01/rdf-schema#label> "conference date"@en .
+# 
+# https://w3id.org/perkonto#confTitle
+<https://w3id.org/perkonto#confTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#confTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/perkonto#confVenue
+<https://w3id.org/perkonto#confVenue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#confVenue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/location> .
+<https://w3id.org/perkonto#confVenue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Conference> .
+<https://w3id.org/perkonto#confVenue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#confVenue> <http://www.w3.org/2000/01/rdf-schema#label> "conference venue"@en .
+# 
+# https://w3id.org/perkonto#datasetName
+<https://w3id.org/perkonto#datasetName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#datasetName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/name> .
+<https://w3id.org/perkonto#datasetName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Dataset> .
+<https://w3id.org/perkonto#datasetName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#datasetName> <http://www.w3.org/2000/01/rdf-schema#label> "dataset name"@en .
+# 
+# https://w3id.org/perkonto#date
+<https://w3id.org/perkonto#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/datePublished> .
+<https://w3id.org/perkonto#date> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://w3id.org/perkonto#doi
+<https://w3id.org/perkonto#doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#doi> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/doi> .
+<https://w3id.org/perkonto#doi> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#doi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/perkonto#doi> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital Object Identifier for a published paper."@en .
+<https://w3id.org/perkonto#doi> <http://www.w3.org/2000/01/rdf-schema#label> "DOI"@en .
+# 
+# https://w3id.org/perkonto#identifier
+<https://w3id.org/perkonto#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#SubmissionID> .
+# 
+# https://w3id.org/perkonto#issue
+<https://w3id.org/perkonto#issue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#issue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/issue> .
+<https://w3id.org/perkonto#issue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#issue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#issue> <http://www.w3.org/2000/01/rdf-schema#label> "issue"@en .
+# 
+# https://w3id.org/perkonto#journalTitle
+<https://w3id.org/perkonto#journalTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#journalTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/perkonto#mailDate
+<https://w3id.org/perkonto#mailDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#mailDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/dateCreated> .
+<https://w3id.org/perkonto#mailDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Email> .
+<https://w3id.org/perkonto#mailDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/perkonto#mailDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the Email was sent."@en .
+<https://w3id.org/perkonto#mailDate> <http://www.w3.org/2000/01/rdf-schema#label> "mail date"@en .
+# 
+# https://w3id.org/perkonto#mailNum
+<https://w3id.org/perkonto#mailNum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#mailNum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Email> .
+<https://w3id.org/perkonto#mailNum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/perkonto#mailNum> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique integer identifier for an Email."@en .
+<https://w3id.org/perkonto#mailNum> <http://www.w3.org/2000/01/rdf-schema#label> "mail number"@en .
+# 
+# https://w3id.org/perkonto#meetAgenda
+<https://w3id.org/perkonto#meetAgenda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#meetAgenda> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/description> .
+<https://w3id.org/perkonto#meetAgenda> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Meeting> .
+<https://w3id.org/perkonto#meetAgenda> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#meetAgenda> <http://www.w3.org/2000/01/rdf-schema#label> "meeting agenda"@en .
+# 
+# https://w3id.org/perkonto#meetDate
+<https://w3id.org/perkonto#meetDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#meetDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/startDate> .
+<https://w3id.org/perkonto#meetDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Meeting> .
+<https://w3id.org/perkonto#meetDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/perkonto#meetDate> <http://www.w3.org/2000/01/rdf-schema#label> "meeting date"@en .
+# 
+# https://w3id.org/perkonto#meetLink
+<https://w3id.org/perkonto#meetLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#meetLink> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/url> .
+<https://w3id.org/perkonto#meetLink> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Meeting> .
+<https://w3id.org/perkonto#meetLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/perkonto#meetLink> <http://www.w3.org/2000/01/rdf-schema#label> "meeting link"@en .
+# 
+# https://w3id.org/perkonto#meetTime
+<https://w3id.org/perkonto#meetTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#meetTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Meeting> .
+<https://w3id.org/perkonto#meetTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#time> .
+<https://w3id.org/perkonto#meetTime> <http://www.w3.org/2000/01/rdf-schema#label> "meeting time"@en .
+# 
+# https://w3id.org/perkonto#methodName
+<https://w3id.org/perkonto#methodName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#methodName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/name> .
+<https://w3id.org/perkonto#methodName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Method> .
+<https://w3id.org/perkonto#methodName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#methodName> <http://www.w3.org/2000/01/rdf-schema#label> "method name"@en .
+# 
+# https://w3id.org/perkonto#metricName
+<https://w3id.org/perkonto#metricName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#metricName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/name> .
+<https://w3id.org/perkonto#metricName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Metric> .
+<https://w3id.org/perkonto#metricName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#metricName> <http://www.w3.org/2000/01/rdf-schema#label> "metric name"@en .
+# 
+# https://w3id.org/perkonto#pages
+<https://w3id.org/perkonto#pages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#pages> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/pages> .
+<https://w3id.org/perkonto#pages> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#pages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#pages> <http://www.w3.org/2000/01/rdf-schema#label> "pages"@en .
+# 
+# https://w3id.org/perkonto#paperTitle
+<https://w3id.org/perkonto#paperTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#paperTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/perkonto#personEmail
+<https://w3id.org/perkonto#personEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#personEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/perkonto#personName
+<https://w3id.org/perkonto#personName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#personName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/name> .
+<https://w3id.org/perkonto#personName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto#personName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#personName> <http://www.w3.org/2000/01/rdf-schema#label> "person name"@en .
+# 
+# https://w3id.org/perkonto#publisher
+<https://w3id.org/perkonto#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#publisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/perkonto#source
+<https://w3id.org/perkonto#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#statusDate
+<https://w3id.org/perkonto#statusDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#statusDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#generatedAtTime> .
+<https://w3id.org/perkonto#statusDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperStatus> .
+<https://w3id.org/perkonto#statusDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/perkonto#statusDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which this status was recorded."@en .
+<https://w3id.org/perkonto#statusDate> <http://www.w3.org/2000/01/rdf-schema#label> "status date"@en .
+# 
+# https://w3id.org/perkonto#statusType
+<https://w3id.org/perkonto#statusType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#statusType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperStatus> .
+<https://w3id.org/perkonto#statusType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#statusType> <http://www.w3.org/2000/01/rdf-schema#comment> "The submission state label, e.g. 'Submitted',  'Under Review', 'Revision Required', 'Accepted', 'Rejected'."@en .
+<https://w3id.org/perkonto#statusType> <http://www.w3.org/2000/01/rdf-schema#label> "status type"@en .
+# 
+# https://w3id.org/perkonto#subject
+<https://w3id.org/perkonto#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#subject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/perkonto#taskDate
+<https://w3id.org/perkonto#taskDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#taskDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/startDate> .
+<https://w3id.org/perkonto#taskDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Task> .
+<https://w3id.org/perkonto#taskDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/perkonto#taskDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the task was assigned or initiated."@en .
+<https://w3id.org/perkonto#taskDate> <http://www.w3.org/2000/01/rdf-schema#label> "task date"@en .
+# 
+# https://w3id.org/perkonto#taskName
+<https://w3id.org/perkonto#taskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#taskName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/name> .
+<https://w3id.org/perkonto#taskName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Task> .
+<https://w3id.org/perkonto#taskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#taskName> <http://www.w3.org/2000/01/rdf-schema#label> "task name"@en .
+# 
+# https://w3id.org/perkonto#threadID
+<https://w3id.org/perkonto#threadID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#threadID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#MailThread> .
+<https://w3id.org/perkonto#threadID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#threadID> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique string identifier for a MailThread."@en .
+<https://w3id.org/perkonto#threadID> <http://www.w3.org/2000/01/rdf-schema#label> "thread ID"@en .
+# 
+# https://w3id.org/perkonto#url
+<https://w3id.org/perkonto#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#url> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/url> .
+<https://w3id.org/perkonto#url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/perkonto#url> <http://www.w3.org/2000/01/rdf-schema#label> "URL"@en .
+# 
+# https://w3id.org/perkonto#version
+<https://w3id.org/perkonto#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#version> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#version> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#version> <http://www.w3.org/2000/01/rdf-schema#comment> "Version string of the manuscript (e.g. arXiv v2)."@en .
+<https://w3id.org/perkonto#version> <http://www.w3.org/2000/01/rdf-schema#label> "version"@en .
+# 
+# https://w3id.org/perkonto#volume
+<https://w3id.org/perkonto#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto#volume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/volume> .
+<https://w3id.org/perkonto#volume> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#PaperBib> .
+<https://w3id.org/perkonto#volume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto#volume> <http://www.w3.org/2000/01/rdf-schema#label> "volume"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/bibo/AcademicArticle
+<http://purl.org/ontology/bibo/AcademicArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/bibo/Conference
+<http://purl.org/ontology/bibo/Conference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/bibo/Journal
+<http://purl.org/ontology/bibo/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Action
+<https://schema.org/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/CreativeWork
+<https://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Dataset
+<https://schema.org/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Event
+<https://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Message
+<https://schema.org/Message> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Periodical
+<https://schema.org/Periodical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/ScholarlyArticle
+<https://schema.org/ScholarlyArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/SoftwareApplication
+<https://schema.org/SoftwareApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Conference
+<https://w3id.org/perkonto#Conference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Conference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/bibo/Conference> .
+<https://w3id.org/perkonto#Conference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Event> .
+<https://w3id.org/perkonto#Conference> <http://www.w3.org/2000/01/rdf-schema#comment> "An academic conference to which a paper has been submitted  or which a researcher attends."@en .
+<https://w3id.org/perkonto#Conference> <http://www.w3.org/2000/01/rdf-schema#label> "Conference"@en .
+# 
+# https://w3id.org/perkonto#Dataset
+<https://w3id.org/perkonto#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/perkonto#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Dataset> .
+<https://w3id.org/perkonto#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset used or discussed in the research activities  documented in the email corpus."@en .
+<https://w3id.org/perkonto#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+# 
+# https://w3id.org/perkonto#Email
+<https://w3id.org/perkonto#Email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Email> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Message> .
+<https://w3id.org/perkonto#Email> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual email message exchanged between researchers.  Serves as the provenance anchor for all knowledge triples extracted into  PERK. Every relationship carries a source property referencing one or  more Email instances."@en .
+<https://w3id.org/perkonto#Email> <http://www.w3.org/2000/01/rdf-schema#label> "Email"@en .
+# 
+# https://w3id.org/perkonto#Journal
+<https://w3id.org/perkonto#Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Journal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/bibo/Journal> .
+<https://w3id.org/perkonto#Journal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Periodical> .
+<https://w3id.org/perkonto#Journal> <http://www.w3.org/2000/01/rdf-schema#comment> "An academic journal to which a paper has been submitted  or published."@en .
+<https://w3id.org/perkonto#Journal> <http://www.w3.org/2000/01/rdf-schema#label> "Journal"@en .
+# 
+# https://w3id.org/perkonto#MailThread
+<https://w3id.org/perkonto#MailThread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#MailThread> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/CreativeWork> .
+<https://w3id.org/perkonto#MailThread> <http://www.w3.org/2000/01/rdf-schema#comment> "An ordered chain of email messages sharing a common subject  and thread identifier."@en .
+<https://w3id.org/perkonto#MailThread> <http://www.w3.org/2000/01/rdf-schema#label> "Mail Thread"@en .
+# 
+# https://w3id.org/perkonto#Meeting
+<https://w3id.org/perkonto#Meeting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Meeting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Event> .
+<https://w3id.org/perkonto#Meeting> <http://www.w3.org/2000/01/rdf-schema#comment> "A scheduled meeting between researchers, including virtual  meetings, with an associated agenda and link."@en .
+<https://w3id.org/perkonto#Meeting> <http://www.w3.org/2000/01/rdf-schema#label> "Meeting"@en .
+# 
+# https://w3id.org/perkonto#Method
+<https://w3id.org/perkonto#Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Method> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/SoftwareApplication> .
+<https://w3id.org/perkonto#Method> <http://www.w3.org/2000/01/rdf-schema#comment> "A computational or analytical method, model, or algorithm  discussed in the email corpus."@en .
+<https://w3id.org/perkonto#Method> <http://www.w3.org/2000/01/rdf-schema#label> "Method"@en .
+# 
+# https://w3id.org/perkonto#Metric
+<https://w3id.org/perkonto#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "An evaluation metric used to assess the performance of a  method on a task or dataset."@en .
+<https://w3id.org/perkonto#Metric> <http://www.w3.org/2000/01/rdf-schema#label> "Metric"@en .
+# 
+# https://w3id.org/perkonto#Paper
+<https://w3id.org/perkonto#Paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Paper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/bibo/AcademicArticle> .
+<https://w3id.org/perkonto#Paper> <http://www.w3.org/2000/01/rdf-schema#comment> "A research paper authored or co-authored by one or more  Persons in the email corpus."@en .
+<https://w3id.org/perkonto#Paper> <http://www.w3.org/2000/01/rdf-schema#label> "Paper"@en .
+# 
+# https://w3id.org/perkonto#PaperBib
+<https://w3id.org/perkonto#PaperBib> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#PaperBib> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/ScholarlyArticle> .
+<https://w3id.org/perkonto#PaperBib> <http://www.w3.org/2000/01/rdf-schema#comment> "A bibliographic metadata record for a published paper,  capturing identifiers, venue, and publication details."@en .
+<https://w3id.org/perkonto#PaperBib> <http://www.w3.org/2000/01/rdf-schema#label> "Paper Bibliographic Record"@en .
+# 
+# https://w3id.org/perkonto#PaperStatus
+<https://w3id.org/perkonto#PaperStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#PaperStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/perkonto#PaperStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "A node representing a single state in the submission  lifecycle of a paper (e.g. Submitted, Under Review, Revision Required,  Accepted, Rejected). Status nodes are chained via movesTo to encode  the full submission history."@en .
+<https://w3id.org/perkonto#PaperStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Paper Status"@en .
+# 
+# https://w3id.org/perkonto#Person
+<https://w3id.org/perkonto#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/perkonto#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/perkonto#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A researcher or collaborator appearing as sender, recipient,  or named entity in the email corpus."@en .
+<https://w3id.org/perkonto#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# https://w3id.org/perkonto#SubmissionID
+<https://w3id.org/perkonto#SubmissionID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#SubmissionID> <http://www.w3.org/2000/01/rdf-schema#comment> "A composite identifier linking a specific paper to a  specific submission instance at a target venue, enabling tracking of  multiple parallel or sequential submissions."@en .
+<https://w3id.org/perkonto#SubmissionID> <http://www.w3.org/2000/01/rdf-schema#label> "Submission ID"@en .
+# 
+# https://w3id.org/perkonto#Task
+<https://w3id.org/perkonto#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Action> .
+<https://w3id.org/perkonto#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A research task or problem formulation that datasets,  methods, or metrics are applied to."@en .
+<https://w3id.org/perkonto#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid21 <http://www.w3.org/2002/07/owl#members> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Task> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#SubmissionID> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Person> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#PaperStatus> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#PaperBib> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Paper> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Metric> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Method> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Meeting> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#MailThread> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Journal> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Email> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Dataset> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto#Conference> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1420 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/perkonto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/perkonto"
+     versionIRI="https://w3id.org/perkonto/1.0.0">
+    <Prefix name="" IRI="https://w3id.org/perkonto#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="schema" IRI="https://schema.org/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Debarshi Kumar Sanyal</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Partha Pratim Das</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Prantika Chakraborty</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Srijoni Majumdar</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal xml:lang="en">A domain-specific ontology for representing the professional  knowledge of a researcher as extractable from personal email  communications. PERKOnto models communication infrastructure, researchers and venues, the publication lifecycle, and research content,  anchoring every assertion to its provenance email.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">PERKOnto: Personal Email Research Knowledge Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/prantikaC/PERK</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Action"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Message"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Periodical"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:ScholarlyArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MailThread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaperBib"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaperStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubmissionID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:attendee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:author"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:isRelatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:knowsAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:recipient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:sender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:subjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#attends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evaluates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPaperInfo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#identifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inVenue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#movesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#receivedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sentBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:affiliation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:dateCreated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:startDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#affiliation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#arxivID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confVenue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#doi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#issue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#journalTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mailDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mailNum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#meetAgenda"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#meetDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#meetLink"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#meetTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#methodName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#metricName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pages"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#paperTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#personEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#personName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#publisher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statusDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statusType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#subject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#taskDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#taskName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#threadID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#version"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#volume"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:issue"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:Conference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="bibo:authorList"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:AcademicArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:Journal"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Activity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="foaf:name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:pages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dcterms:references"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:doi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dcterms:isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:volume"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="prov:generatedAtTime"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Conference"/>
+        <Class abbreviatedIRI="bibo:Conference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conference"/>
+        <Class abbreviatedIRI="schema:Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset"/>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset"/>
+        <Class abbreviatedIRI="schema:Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Email"/>
+        <Class abbreviatedIRI="schema:Message"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journal"/>
+        <Class abbreviatedIRI="bibo:Journal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journal"/>
+        <Class abbreviatedIRI="schema:Periodical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MailThread"/>
+        <Class abbreviatedIRI="schema:CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meeting"/>
+        <Class abbreviatedIRI="schema:Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Method"/>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paper"/>
+        <Class abbreviatedIRI="bibo:AcademicArticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaperBib"/>
+        <Class abbreviatedIRI="schema:ScholarlyArticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaperStatus"/>
+        <Class abbreviatedIRI="prov:Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Task"/>
+        <Class abbreviatedIRI="schema:Action"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Conference"/>
+        <Class IRI="#Dataset"/>
+        <Class IRI="#Email"/>
+        <Class IRI="#Journal"/>
+        <Class IRI="#MailThread"/>
+        <Class IRI="#Meeting"/>
+        <Class IRI="#Method"/>
+        <Class IRI="#Metric"/>
+        <Class IRI="#Paper"/>
+        <Class IRI="#PaperBib"/>
+        <Class IRI="#PaperStatus"/>
+        <Class IRI="#Person"/>
+        <Class IRI="#SubmissionID"/>
+        <Class IRI="#Task"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#attends"/>
+        <ObjectProperty abbreviatedIRI="schema:attendee"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#evaluates"/>
+        <ObjectProperty abbreviatedIRI="schema:isRelatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="bibo:authorList"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPaperInfo"/>
+        <ObjectProperty abbreviatedIRI="schema:subjectOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#identifies"/>
+        <ObjectProperty abbreviatedIRI="dcterms:references"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#movesTo"/>
+        <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#partOf"/>
+        <ObjectProperty abbreviatedIRI="dcterms:isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#receivedBy"/>
+        <ObjectProperty abbreviatedIRI="schema:recipient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sentBy"/>
+        <ObjectProperty abbreviatedIRI="schema:sender"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedFor"/>
+        <ObjectProperty abbreviatedIRI="schema:isRelatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#uses"/>
+        <ObjectProperty abbreviatedIRI="schema:isRelatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksOn"/>
+        <ObjectProperty abbreviatedIRI="schema:knowsAbout"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksWith"/>
+        <ObjectProperty abbreviatedIRI="schema:knowsAbout"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#attends"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evaluates"/>
+        <Class IRI="#Metric"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPaperInfo"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#identifies"/>
+        <Class IRI="#SubmissionID"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inVenue"/>
+        <Class IRI="#SubmissionID"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#movesTo"/>
+        <ObjectUnionOf>
+            <Class IRI="#PaperStatus"/>
+            <Class IRI="#SubmissionID"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOf"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#receivedBy"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sentBy"/>
+        <Class IRI="#Email"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedFor"/>
+        <ObjectUnionOf>
+            <Class IRI="#Dataset"/>
+            <Class IRI="#Method"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Method"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksOn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#attends"/>
+        <ObjectUnionOf>
+            <Class IRI="#Conference"/>
+            <Class IRI="#Meeting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evaluates"/>
+        <ObjectUnionOf>
+            <Class IRI="#Dataset"/>
+            <Class IRI="#Method"/>
+            <Class IRI="#Task"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPaperInfo"/>
+        <Class IRI="#PaperBib"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#identifies"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inVenue"/>
+        <ObjectUnionOf>
+            <Class IRI="#Conference"/>
+            <Class IRI="#Journal"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#movesTo"/>
+        <Class IRI="#PaperStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOf"/>
+        <Class IRI="#MailThread"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#receivedBy"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sentBy"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedFor"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksOn"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksWith"/>
+        <ObjectUnionOf>
+            <Class IRI="#Dataset"/>
+            <Class IRI="#Method"/>
+            <Class IRI="#Metric"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#affiliation"/>
+        <DataProperty abbreviatedIRI="schema:affiliation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#confDate"/>
+        <DataProperty abbreviatedIRI="schema:startDate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#confVenue"/>
+        <DataProperty abbreviatedIRI="schema:location"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#datasetName"/>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#date"/>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#doi"/>
+        <DataProperty abbreviatedIRI="bibo:doi"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#issue"/>
+        <DataProperty abbreviatedIRI="bibo:issue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mailDate"/>
+        <DataProperty abbreviatedIRI="schema:dateCreated"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#meetAgenda"/>
+        <DataProperty abbreviatedIRI="schema:description"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#meetDate"/>
+        <DataProperty abbreviatedIRI="schema:startDate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#meetLink"/>
+        <DataProperty abbreviatedIRI="schema:url"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#methodName"/>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#metricName"/>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pages"/>
+        <DataProperty abbreviatedIRI="bibo:pages"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#personName"/>
+        <DataProperty abbreviatedIRI="foaf:name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#statusDate"/>
+        <DataProperty abbreviatedIRI="prov:generatedAtTime"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#taskDate"/>
+        <DataProperty abbreviatedIRI="schema:startDate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#taskName"/>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#url"/>
+        <DataProperty abbreviatedIRI="schema:url"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#volume"/>
+        <DataProperty abbreviatedIRI="bibo:volume"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#affiliation"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#arxivID"/>
+        <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#confDate"/>
+        <Class IRI="#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#confVenue"/>
+        <Class IRI="#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetName"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date"/>
+        <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#doi"/>
+        <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#identifier"/>
+        <Class IRI="#SubmissionID"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#issue"/>
+        <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mailDate"/>
+        <Class IRI="#Email"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mailNum"/>
+        <Class IRI="#Email"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#meetAgenda"/>
+        <Class IRI="#Meeting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#meetDate"/>
+        <Class IRI="#Meeting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#meetLink"/>
+        <Class IRI="#Meeting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#meetTime"/>
+        <Class IRI="#Meeting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#methodName"/>
+        <Class IRI="#Method"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#metricName"/>
+        <Class IRI="#Metric"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pages"/>
+        <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#personName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#statusDate"/>
+        <Class IRI="#PaperStatus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#statusType"/>
+        <Class IRI="#PaperStatus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#taskDate"/>
+        <Class IRI="#Task"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#taskName"/>
+        <Class IRI="#Task"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#threadID"/>
+        <Class IRI="#MailThread"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#version"/>
+        <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#volume"/>
+        <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#affiliation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#arxivID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#confDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#confTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#confVenue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#datasetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#doi"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#issue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#journalTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mailDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mailNum"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#meetAgenda"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#meetDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#meetLink"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#meetTime"/>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#methodName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metricName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pages"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#paperTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#personEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#personName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#publisher"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#statusDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#statusType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#subject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#taskDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#taskName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#threadID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#version"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#volume"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Conference</IRI>
+        <Literal xml:lang="en">An academic conference to which a paper has been submitted  or which a researcher attends.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Conference</IRI>
+        <Literal xml:lang="en">Conference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dataset</IRI>
+        <Literal xml:lang="en">A dataset used or discussed in the research activities  documented in the email corpus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dataset</IRI>
+        <Literal xml:lang="en">Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Email</IRI>
+        <Literal xml:lang="en">An individual email message exchanged between researchers.  Serves as the provenance anchor for all knowledge triples extracted into  PERK. Every relationship carries a source property referencing one or  more Email instances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Email</IRI>
+        <Literal xml:lang="en">Email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Journal</IRI>
+        <Literal xml:lang="en">An academic journal to which a paper has been submitted  or published.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Journal</IRI>
+        <Literal xml:lang="en">Journal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MailThread</IRI>
+        <Literal xml:lang="en">An ordered chain of email messages sharing a common subject  and thread identifier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MailThread</IRI>
+        <Literal xml:lang="en">Mail Thread</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Meeting</IRI>
+        <Literal xml:lang="en">A scheduled meeting between researchers, including virtual  meetings, with an associated agenda and link.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Meeting</IRI>
+        <Literal xml:lang="en">Meeting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Method</IRI>
+        <Literal xml:lang="en">A computational or analytical method, model, or algorithm  discussed in the email corpus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Method</IRI>
+        <Literal xml:lang="en">Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Metric</IRI>
+        <Literal xml:lang="en">An evaluation metric used to assess the performance of a  method on a task or dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Metric</IRI>
+        <Literal xml:lang="en">Metric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paper</IRI>
+        <Literal xml:lang="en">A research paper authored or co-authored by one or more  Persons in the email corpus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Paper</IRI>
+        <Literal xml:lang="en">Paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PaperBib</IRI>
+        <Literal xml:lang="en">A bibliographic metadata record for a published paper,  capturing identifiers, venue, and publication details.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PaperBib</IRI>
+        <Literal xml:lang="en">Paper Bibliographic Record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PaperStatus</IRI>
+        <Literal xml:lang="en">A node representing a single state in the submission  lifecycle of a paper (e.g. Submitted, Under Review, Revision Required,  Accepted, Rejected). Status nodes are chained via movesTo to encode  the full submission history.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PaperStatus</IRI>
+        <Literal xml:lang="en">Paper Status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">A researcher or collaborator appearing as sender, recipient,  or named entity in the email corpus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SubmissionID</IRI>
+        <Literal xml:lang="en">A composite identifier linking a specific paper to a  specific submission instance at a target venue, enabling tracking of  multiple parallel or sequential submissions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SubmissionID</IRI>
+        <Literal xml:lang="en">Submission ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Task</IRI>
+        <Literal xml:lang="en">A research task or problem formulation that datasets,  methods, or metrics are applied to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Task</IRI>
+        <Literal xml:lang="en">Task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#affiliation</IRI>
+        <Literal xml:lang="en">The institutional affiliation of a Person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#affiliation</IRI>
+        <Literal xml:lang="en">affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#arxivID</IRI>
+        <Literal xml:lang="en">arXiv ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#attends</IRI>
+        <Literal xml:lang="en">Links a Person to a Meeting or Conference they attend.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#attends</IRI>
+        <Literal xml:lang="en">attends</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#confDate</IRI>
+        <Literal xml:lang="en">conference date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#confVenue</IRI>
+        <Literal xml:lang="en">conference venue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#datasetName</IRI>
+        <Literal xml:lang="en">dataset name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#doi</IRI>
+        <Literal xml:lang="en">Digital Object Identifier for a published paper.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#doi</IRI>
+        <Literal xml:lang="en">DOI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evaluates</IRI>
+        <Literal xml:lang="en">Links a Metric to the Task, Method, or Dataset it  evaluates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#evaluates</IRI>
+        <Literal xml:lang="en">evaluates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAuthor</IRI>
+        <Literal xml:lang="en">Links a Paper to one of its author Persons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAuthor</IRI>
+        <Literal xml:lang="en">has author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPaperInfo</IRI>
+        <Literal xml:lang="en">Links a Paper to its bibliographic record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPaperInfo</IRI>
+        <Literal xml:lang="en">has paper info</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#identifies</IRI>
+        <Literal xml:lang="en">Links a SubmissionID to the Paper it identifies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#identifies</IRI>
+        <Literal xml:lang="en">identifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inVenue</IRI>
+        <Literal xml:lang="en">Links a SubmissionID to its target Conference or Journal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inVenue</IRI>
+        <Literal xml:lang="en">in venue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#issue</IRI>
+        <Literal xml:lang="en">issue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mailDate</IRI>
+        <Literal xml:lang="en">The date on which the Email was sent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mailDate</IRI>
+        <Literal xml:lang="en">mail date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mailNum</IRI>
+        <Literal xml:lang="en">A unique integer identifier for an Email.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mailNum</IRI>
+        <Literal xml:lang="en">mail number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#meetAgenda</IRI>
+        <Literal xml:lang="en">meeting agenda</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#meetDate</IRI>
+        <Literal xml:lang="en">meeting date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#meetLink</IRI>
+        <Literal xml:lang="en">meeting link</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#meetTime</IRI>
+        <Literal xml:lang="en">meeting time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#methodName</IRI>
+        <Literal xml:lang="en">method name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metricName</IRI>
+        <Literal xml:lang="en">metric name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#movesTo</IRI>
+        <Literal xml:lang="en">Links a SubmissionID to its initial PaperStatus, or one  PaperStatus to the next, encoding the submission lifecycle as a directed  state machine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#movesTo</IRI>
+        <Literal xml:lang="en">moves to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pages</IRI>
+        <Literal xml:lang="en">pages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOf</IRI>
+        <Literal xml:lang="en">Links an Email to the MailThread it belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#partOf</IRI>
+        <Literal xml:lang="en">part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#personName</IRI>
+        <Literal xml:lang="en">person name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#receivedBy</IRI>
+        <Literal xml:lang="en">Links an Email to the Person(s) who received it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#receivedBy</IRI>
+        <Literal xml:lang="en">received by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sentBy</IRI>
+        <Literal xml:lang="en">Links an Email to the Person who sent it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sentBy</IRI>
+        <Literal xml:lang="en">sent by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#statusDate</IRI>
+        <Literal xml:lang="en">The date on which this status was recorded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#statusDate</IRI>
+        <Literal xml:lang="en">status date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#statusType</IRI>
+        <Literal xml:lang="en">The submission state label, e.g. &apos;Submitted&apos;,  &apos;Under Review&apos;, &apos;Revision Required&apos;, &apos;Accepted&apos;, &apos;Rejected&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#statusType</IRI>
+        <Literal xml:lang="en">status type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#taskDate</IRI>
+        <Literal xml:lang="en">The date on which the task was assigned or initiated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#taskDate</IRI>
+        <Literal xml:lang="en">task date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#taskName</IRI>
+        <Literal xml:lang="en">task name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#threadID</IRI>
+        <Literal xml:lang="en">A unique string identifier for a MailThread.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#threadID</IRI>
+        <Literal xml:lang="en">thread ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#url</IRI>
+        <Literal xml:lang="en">URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedFor</IRI>
+        <Literal xml:lang="en">Links a Dataset or Method to the Task it is applied to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedFor</IRI>
+        <Literal xml:lang="en">used for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uses</IRI>
+        <Literal xml:lang="en">Links a Method to a Dataset it is trained or evaluated  on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#uses</IRI>
+        <Literal xml:lang="en">uses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#version</IRI>
+        <Literal xml:lang="en">Version string of the manuscript (e.g. arXiv v2).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#version</IRI>
+        <Literal xml:lang="en">version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#volume</IRI>
+        <Literal xml:lang="en">volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#worksOn</IRI>
+        <Literal xml:lang="en">Links a Person to a Task they are working on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#worksOn</IRI>
+        <Literal xml:lang="en">works on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#worksWith</IRI>
+        <Literal xml:lang="en">Links a Person to a Method, Dataset, or Metric they use  in their research.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#worksWith</IRI>
+        <Literal xml:lang="en">works with</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
