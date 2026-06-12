@@ -24,19 +24,19 @@
     <Import>http://xmlns.com/foaf/0.1/</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Debarshi Kumar Sanyal</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Partha Pratim Das</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
         <Literal>Prantika Chakraborty</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Debarshi Kumar Sanyal</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
         <Literal>Srijoni Majumdar</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Partha Pratim Das</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:description"/>
@@ -52,7 +52,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>https://github.com/prantikachakraborty/PERK</IRI>
+        <IRI>https://github.com/prantikaC/PERK</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>

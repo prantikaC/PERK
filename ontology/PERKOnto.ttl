@@ -17,14 +17,14 @@
                              owl:imports bibo: ,
                                          <http://www.w3.org/ns/prov-o#> ,
                                          foaf: ;
-                             dcterms:creator "Debarshi Kumar Sanyal" ,
-                                             "Partha Pratim Das" ,
-                                             "Prantika Chakraborty" ,
-                                             "Srijoni Majumdar" ;
+                             dcterms:creator "Prantika Chakraborty" ,
+                                             "Debarshi Kumar Sanyal" ,
+                                             "Srijoni Majumdar",
+                                             "Partha Pratim Das";
                              dcterms:description "A domain-specific ontology for representing the professional  knowledge of a researcher as extractable from personal email  communications. PERKOnto models communication infrastructure, researchers and venues, the publication lifecycle, and research content,  anchoring every assertion to its provenance email."@en ;
                              dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                              dcterms:title "PERKOnto: Personal Email Research Knowledge Ontology"@en ;
-                             rdfs:seeAlso <https://github.com/prantikachakraborty/PERK> ;
+                             rdfs:seeAlso <https://github.com/prantikaC/PERK> ;
                              owl:versionInfo "1.0.0" .
 
 #################################################################
