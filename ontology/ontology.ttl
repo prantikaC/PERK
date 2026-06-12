@@ -1,0 +1,752 @@
+@prefix : <https://w3id.org/perkonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/perkonto#> .
+
+<https://w3id.org/perkonto> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://w3id.org/perkonto/1.0.0> ;
+                             <http://purl.org/dc/terms/creator> "Debarshi Kumar Sanyal" ,
+                                                                "Partha Pratim Das" ,
+                                                                "Prantika Chakraborty" ,
+                                                                "Srijoni Majumdar" ;
+                             <http://purl.org/dc/terms/description> "A domain-specific ontology for representing the professional  knowledge of a researcher as extractable from personal email  communications. PERKOnto models communication infrastructure, researchers and venues, the publication lifecycle, and research content,  anchoring every assertion to its provenance email."@en ;
+                             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                             <http://purl.org/dc/terms/title> "PERKOnto: Personal Email Research Knowledge Ontology"@en ;
+                             rdfs:seeAlso <https://github.com/prantikaC/PERK> ;
+                             owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/references
+<http://purl.org/dc/terms/references> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/ontology/bibo/authorList
+<http://purl.org/ontology/bibo/authorList> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInformedBy
+<http://www.w3.org/ns/prov#wasInformedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/attendee
+<https://schema.org/attendee> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/author
+<https://schema.org/author> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/isRelatedTo
+<https://schema.org/isRelatedTo> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/knowsAbout
+<https://schema.org/knowsAbout> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/recipient
+<https://schema.org/recipient> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/sender
+<https://schema.org/sender> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/subjectOf
+<https://schema.org/subjectOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/perkonto#attends
+:attends rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <https://schema.org/attendee> ;
+         rdfs:domain :Person ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( :Conference
+                                    :Meeting
+                                  )
+                    ] ;
+         rdfs:comment "Links a Person to a Meeting or Conference they attend."@en ;
+         rdfs:label "attends"@en .
+
+
+###  https://w3id.org/perkonto#evaluates
+:evaluates rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://schema.org/isRelatedTo> ;
+           rdfs:domain :Metric ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :Dataset
+                                      :Method
+                                      :Task
+                                    )
+                      ] ;
+           rdfs:comment "Links a Metric to the Task, Method, or Dataset it  evaluates."@en ;
+           rdfs:label "evaluates"@en .
+
+
+###  https://w3id.org/perkonto#hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://purl.org/ontology/bibo/authorList> ;
+           rdfs:domain :Paper ;
+           rdfs:range :Person ;
+           rdfs:comment "Links a Paper to one of its author Persons."@en ;
+           rdfs:label "has author"@en .
+
+
+###  https://w3id.org/perkonto#hasPaperInfo
+:hasPaperInfo rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <https://schema.org/subjectOf> ;
+              rdfs:domain :Paper ;
+              rdfs:range :PaperBib ;
+              rdfs:comment "Links a Paper to its bibliographic record."@en ;
+              rdfs:label "has paper info"@en .
+
+
+###  https://w3id.org/perkonto#identifies
+:identifies rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://purl.org/dc/terms/references> ;
+            rdfs:domain :SubmissionID ;
+            rdfs:range :Paper ;
+            rdfs:comment "Links a SubmissionID to the Paper it identifies."@en ;
+            rdfs:label "identifies"@en .
+
+
+###  https://w3id.org/perkonto#inVenue
+:inVenue rdf:type owl:ObjectProperty ;
+         rdfs:domain :SubmissionID ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( :Conference
+                                    :Journal
+                                  )
+                    ] ;
+         rdfs:comment "Links a SubmissionID to its target Conference or Journal."@en ;
+         rdfs:label "in venue"@en .
+
+
+###  https://w3id.org/perkonto#movesTo
+:movesTo rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInformedBy> ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :PaperStatus
+                                     :SubmissionID
+                                   )
+                     ] ;
+         rdfs:range :PaperStatus ;
+         rdfs:comment "Links a SubmissionID to its initial PaperStatus, or one  PaperStatus to the next, encoding the submission lifecycle as a directed  state machine."@en ;
+         rdfs:label "moves to"@en .
+
+
+###  https://w3id.org/perkonto#partOf
+:partOf rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ;
+        rdfs:domain :Email ;
+        rdfs:range :MailThread ;
+        rdfs:comment "Links an Email to the MailThread it belongs to."@en ;
+        rdfs:label "part of"@en .
+
+
+###  https://w3id.org/perkonto#receivedBy
+:receivedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <https://schema.org/recipient> ;
+            rdfs:domain :Email ;
+            rdfs:range :Person ;
+            rdfs:comment "Links an Email to the Person(s) who received it."@en ;
+            rdfs:label "received by"@en .
+
+
+###  https://w3id.org/perkonto#sentBy
+:sentBy rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <https://schema.org/sender> ;
+        rdfs:domain :Email ;
+        rdfs:range :Person ;
+        rdfs:comment "Links an Email to the Person who sent it."@en ;
+        rdfs:label "sent by"@en .
+
+
+###  https://w3id.org/perkonto#usedFor
+:usedFor rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <https://schema.org/isRelatedTo> ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Dataset
+                                     :Method
+                                   )
+                     ] ;
+         rdfs:range :Task ;
+         rdfs:comment "Links a Dataset or Method to the Task it is applied to."@en ;
+         rdfs:label "used for"@en .
+
+
+###  https://w3id.org/perkonto#uses
+:uses rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://schema.org/isRelatedTo> ;
+      rdfs:domain :Method ;
+      rdfs:range :Dataset ;
+      rdfs:comment "Links a Method to a Dataset it is trained or evaluated  on."@en ;
+      rdfs:label "uses"@en .
+
+
+###  https://w3id.org/perkonto#worksOn
+:worksOn rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <https://schema.org/knowsAbout> ;
+         rdfs:domain :Person ;
+         rdfs:range :Task ;
+         rdfs:comment "Links a Person to a Task they are working on."@en ;
+         rdfs:label "works on"@en .
+
+
+###  https://w3id.org/perkonto#worksWith
+:worksWith rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://schema.org/knowsAbout> ;
+           rdfs:domain :Person ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :Dataset
+                                      :Method
+                                      :Metric
+                                    )
+                      ] ;
+           rdfs:comment "Links a Person to a Method, Dataset, or Metric they use  in their research."@en ;
+           rdfs:label "works with"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/ontology/bibo/issue
+<http://purl.org/ontology/bibo/issue> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/ontology/bibo/pages
+<http://purl.org/ontology/bibo/pages> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/ontology/bibo/volume
+<http://purl.org/ontology/bibo/volume> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/ns/prov#generatedAtTime
+<http://www.w3.org/ns/prov#generatedAtTime> rdf:type owl:DatatypeProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/affiliation
+<https://schema.org/affiliation> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/dateCreated
+<https://schema.org/dateCreated> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/datePublished
+<https://schema.org/datePublished> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/description
+<https://schema.org/description> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/location
+<https://schema.org/location> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/startDate
+<https://schema.org/startDate> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/url
+<https://schema.org/url> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/perkonto#affiliation
+:affiliation rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <https://schema.org/affiliation> ;
+             rdfs:domain :Person ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The institutional affiliation of a Person."@en ;
+             rdfs:label "affiliation"@en .
+
+
+###  https://w3id.org/perkonto#arxivID
+:arxivID rdf:type owl:DatatypeProperty ;
+         rdfs:domain :PaperBib ;
+         rdfs:range xsd:string ;
+         rdfs:label "arXiv ID"@en .
+
+
+###  https://w3id.org/perkonto#confDate
+:confDate rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <https://schema.org/startDate> ;
+          rdfs:domain :Conference ;
+          rdfs:range xsd:date ;
+          rdfs:label "conference date"@en .
+
+
+###  https://w3id.org/perkonto#confTitle
+:confTitle rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  https://w3id.org/perkonto#confVenue
+:confVenue rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <https://schema.org/location> ;
+           rdfs:domain :Conference ;
+           rdfs:range xsd:string ;
+           rdfs:label "conference venue"@en .
+
+
+###  https://w3id.org/perkonto#datasetName
+:datasetName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <https://schema.org/name> ;
+             rdfs:domain :Dataset ;
+             rdfs:range xsd:string ;
+             rdfs:label "dataset name"@en .
+
+
+###  https://w3id.org/perkonto#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf <https://schema.org/datePublished> ;
+      rdfs:domain :PaperBib ;
+      rdfs:range xsd:date .
+
+
+###  https://w3id.org/perkonto#doi
+:doi rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf <http://purl.org/ontology/bibo/doi> ;
+     rdfs:domain :PaperBib ;
+     rdfs:range xsd:anyURI ;
+     rdfs:comment "Digital Object Identifier for a published paper."@en ;
+     rdfs:label "DOI"@en .
+
+
+###  https://w3id.org/perkonto#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:domain :SubmissionID .
+
+
+###  https://w3id.org/perkonto#issue
+:issue rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://purl.org/ontology/bibo/issue> ;
+       rdfs:domain :PaperBib ;
+       rdfs:range xsd:string ;
+       rdfs:label "issue"@en .
+
+
+###  https://w3id.org/perkonto#journalTitle
+:journalTitle rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string .
+
+
+###  https://w3id.org/perkonto#mailDate
+:mailDate rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <https://schema.org/dateCreated> ;
+          rdfs:domain :Email ;
+          rdfs:range xsd:date ;
+          rdfs:comment "The date on which the Email was sent."@en ;
+          rdfs:label "mail date"@en .
+
+
+###  https://w3id.org/perkonto#mailNum
+:mailNum rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Email ;
+         rdfs:range xsd:integer ;
+         rdfs:comment "A unique integer identifier for an Email."@en ;
+         rdfs:label "mail number"@en .
+
+
+###  https://w3id.org/perkonto#meetAgenda
+:meetAgenda rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <https://schema.org/description> ;
+            rdfs:domain :Meeting ;
+            rdfs:range xsd:string ;
+            rdfs:label "meeting agenda"@en .
+
+
+###  https://w3id.org/perkonto#meetDate
+:meetDate rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <https://schema.org/startDate> ;
+          rdfs:domain :Meeting ;
+          rdfs:range xsd:date ;
+          rdfs:label "meeting date"@en .
+
+
+###  https://w3id.org/perkonto#meetLink
+:meetLink rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <https://schema.org/url> ;
+          rdfs:domain :Meeting ;
+          rdfs:range xsd:anyURI ;
+          rdfs:label "meeting link"@en .
+
+
+###  https://w3id.org/perkonto#meetTime
+:meetTime rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Meeting ;
+          rdfs:range xsd:time ;
+          rdfs:label "meeting time"@en .
+
+
+###  https://w3id.org/perkonto#methodName
+:methodName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <https://schema.org/name> ;
+            rdfs:domain :Method ;
+            rdfs:range xsd:string ;
+            rdfs:label "method name"@en .
+
+
+###  https://w3id.org/perkonto#metricName
+:metricName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <https://schema.org/name> ;
+            rdfs:domain :Metric ;
+            rdfs:range xsd:string ;
+            rdfs:label "metric name"@en .
+
+
+###  https://w3id.org/perkonto#pages
+:pages rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://purl.org/ontology/bibo/pages> ;
+       rdfs:domain :PaperBib ;
+       rdfs:range xsd:string ;
+       rdfs:label "pages"@en .
+
+
+###  https://w3id.org/perkonto#paperTitle
+:paperTitle rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string .
+
+
+###  https://w3id.org/perkonto#personEmail
+:personEmail rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string .
+
+
+###  https://w3id.org/perkonto#personName
+:personName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string ;
+            rdfs:label "person name"@en .
+
+
+###  https://w3id.org/perkonto#publisher
+:publisher rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  https://w3id.org/perkonto#source
+:source rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/perkonto#statusDate
+:statusDate rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://www.w3.org/ns/prov#generatedAtTime> ;
+            rdfs:domain :PaperStatus ;
+            rdfs:range xsd:date ;
+            rdfs:comment "The date on which this status was recorded."@en ;
+            rdfs:label "status date"@en .
+
+
+###  https://w3id.org/perkonto#statusType
+:statusType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :PaperStatus ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The submission state label, e.g. 'Submitted',  'Under Review', 'Revision Required', 'Accepted', 'Rejected'."@en ;
+            rdfs:label "status type"@en .
+
+
+###  https://w3id.org/perkonto#subject
+:subject rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string .
+
+
+###  https://w3id.org/perkonto#taskDate
+:taskDate rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <https://schema.org/startDate> ;
+          rdfs:domain :Task ;
+          rdfs:range xsd:date ;
+          rdfs:comment "The date on which the task was assigned or initiated."@en ;
+          rdfs:label "task date"@en .
+
+
+###  https://w3id.org/perkonto#taskName
+:taskName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <https://schema.org/name> ;
+          rdfs:domain :Task ;
+          rdfs:range xsd:string ;
+          rdfs:label "task name"@en .
+
+
+###  https://w3id.org/perkonto#threadID
+:threadID rdf:type owl:DatatypeProperty ;
+          rdfs:domain :MailThread ;
+          rdfs:range xsd:string ;
+          rdfs:comment "A unique string identifier for a MailThread."@en ;
+          rdfs:label "thread ID"@en .
+
+
+###  https://w3id.org/perkonto#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf <https://schema.org/url> ;
+     rdfs:domain :PaperBib ;
+     rdfs:range xsd:anyURI ;
+     rdfs:label "URL"@en .
+
+
+###  https://w3id.org/perkonto#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:domain :PaperBib ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Version string of the manuscript (e.g. arXiv v2)."@en ;
+         rdfs:label "version"@en .
+
+
+###  https://w3id.org/perkonto#volume
+:volume rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf <http://purl.org/ontology/bibo/volume> ;
+        rdfs:domain :PaperBib ;
+        rdfs:range xsd:string ;
+        rdfs:label "volume"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/ontology/bibo/AcademicArticle
+<http://purl.org/ontology/bibo/AcademicArticle> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/Conference
+<http://purl.org/ontology/bibo/Conference> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/Journal
+<http://purl.org/ontology/bibo/Journal> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://schema.org/Action
+<https://schema.org/Action> rdf:type owl:Class .
+
+
+###  https://schema.org/CreativeWork
+<https://schema.org/CreativeWork> rdf:type owl:Class .
+
+
+###  https://schema.org/Dataset
+<https://schema.org/Dataset> rdf:type owl:Class .
+
+
+###  https://schema.org/Event
+<https://schema.org/Event> rdf:type owl:Class .
+
+
+###  https://schema.org/Message
+<https://schema.org/Message> rdf:type owl:Class .
+
+
+###  https://schema.org/Periodical
+<https://schema.org/Periodical> rdf:type owl:Class .
+
+
+###  https://schema.org/ScholarlyArticle
+<https://schema.org/ScholarlyArticle> rdf:type owl:Class .
+
+
+###  https://schema.org/SoftwareApplication
+<https://schema.org/SoftwareApplication> rdf:type owl:Class .
+
+
+###  https://w3id.org/perkonto#Conference
+:Conference rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/ontology/bibo/Conference> ,
+                            <https://schema.org/Event> ;
+            rdfs:comment "An academic conference to which a paper has been submitted  or which a researcher attends."@en ;
+            rdfs:label "Conference"@en .
+
+
+###  https://w3id.org/perkonto#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                         <https://schema.org/Dataset> ;
+         rdfs:comment "A dataset used or discussed in the research activities  documented in the email corpus."@en ;
+         rdfs:label "Dataset"@en .
+
+
+###  https://w3id.org/perkonto#Email
+:Email rdf:type owl:Class ;
+       rdfs:subClassOf <https://schema.org/Message> ;
+       rdfs:comment "An individual email message exchanged between researchers.  Serves as the provenance anchor for all knowledge triples extracted into  PERK. Every relationship carries a source property referencing one or  more Email instances."@en ;
+       rdfs:label "Email"@en .
+
+
+###  https://w3id.org/perkonto#Journal
+:Journal rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/ontology/bibo/Journal> ,
+                         <https://schema.org/Periodical> ;
+         rdfs:comment "An academic journal to which a paper has been submitted  or published."@en ;
+         rdfs:label "Journal"@en .
+
+
+###  https://w3id.org/perkonto#MailThread
+:MailThread rdf:type owl:Class ;
+            rdfs:subClassOf <https://schema.org/CreativeWork> ;
+            rdfs:comment "An ordered chain of email messages sharing a common subject  and thread identifier."@en ;
+            rdfs:label "Mail Thread"@en .
+
+
+###  https://w3id.org/perkonto#Meeting
+:Meeting rdf:type owl:Class ;
+         rdfs:subClassOf <https://schema.org/Event> ;
+         rdfs:comment "A scheduled meeting between researchers, including virtual  meetings, with an associated agenda and link."@en ;
+         rdfs:label "Meeting"@en .
+
+
+###  https://w3id.org/perkonto#Method
+:Method rdf:type owl:Class ;
+        rdfs:subClassOf <https://schema.org/SoftwareApplication> ;
+        rdfs:comment "A computational or analytical method, model, or algorithm  discussed in the email corpus."@en ;
+        rdfs:label "Method"@en .
+
+
+###  https://w3id.org/perkonto#Metric
+:Metric rdf:type owl:Class ;
+        rdfs:comment "An evaluation metric used to assess the performance of a  method on a task or dataset."@en ;
+        rdfs:label "Metric"@en .
+
+
+###  https://w3id.org/perkonto#Paper
+:Paper rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.org/ontology/bibo/AcademicArticle> ;
+       rdfs:comment "A research paper authored or co-authored by one or more  Persons in the email corpus."@en ;
+       rdfs:label "Paper"@en .
+
+
+###  https://w3id.org/perkonto#PaperBib
+:PaperBib rdf:type owl:Class ;
+          rdfs:subClassOf <https://schema.org/ScholarlyArticle> ;
+          rdfs:comment "A bibliographic metadata record for a published paper,  capturing identifiers, venue, and publication details."@en ;
+          rdfs:label "Paper Bibliographic Record"@en .
+
+
+###  https://w3id.org/perkonto#PaperStatus
+:PaperStatus rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+             rdfs:comment "A node representing a single state in the submission  lifecycle of a paper (e.g. Submitted, Under Review, Revision Required,  Accepted, Rejected). Status nodes are chained via movesTo to encode  the full submission history."@en ;
+             rdfs:label "Paper Status"@en .
+
+
+###  https://w3id.org/perkonto#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ,
+                        <http://xmlns.com/foaf/0.1/Person> ;
+        rdfs:comment "A researcher or collaborator appearing as sender, recipient,  or named entity in the email corpus."@en ;
+        rdfs:label "Person"@en .
+
+
+###  https://w3id.org/perkonto#SubmissionID
+:SubmissionID rdf:type owl:Class ;
+              rdfs:comment "A composite identifier linking a specific paper to a  specific submission instance at a target venue, enabling tracking of  multiple parallel or sequential submissions."@en ;
+              rdfs:label "Submission ID"@en .
+
+
+###  https://w3id.org/perkonto#Task
+:Task rdf:type owl:Class ;
+      rdfs:subClassOf <https://schema.org/Action> ;
+      rdfs:comment "A research task or problem formulation that datasets,  methods, or metrics are applied to."@en ;
+      rdfs:label "Task"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Conference
+                :Dataset
+                :Email
+                :Journal
+                :MailThread
+                :Meeting
+                :Method
+                :Metric
+                :Paper
+                :PaperBib
+                :PaperStatus
+                :Person
+                :SubmissionID
+                :Task
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
