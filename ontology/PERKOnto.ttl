@@ -14,13 +14,10 @@
 
 <https://w3id.org/perkonto> rdf:type owl:Ontology ;
                              owl:versionIRI <https://w3id.org/perkonto/1.0.0> ;
-                             owl:imports bibo: ,
-                                         <http://www.w3.org/ns/prov-o#> ,
-                                         foaf: ;
-                             dcterms:creator "Prantika Chakraborty" ,
-                                             "Debarshi Kumar Sanyal" ,
-                                             "Srijoni Majumdar",
-                                             "Partha Pratim Das";
+                             dcterms:creator "Debarshi Kumar Sanyal" ,
+                                             "Partha Pratim Das" ,
+                                             "Prantika Chakraborty" ,
+                                             "Srijoni Majumdar" ;
                              dcterms:description "A domain-specific ontology for representing the professional  knowledge of a researcher as extractable from personal email  communications. PERKOnto models communication infrastructure, researchers and venues, the publication lifecycle, and research content,  anchoring every assertion to its provenance email."@en ;
                              dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                              dcterms:title "PERKOnto: Personal Email Research Knowledge Ontology"@en ;
@@ -31,14 +28,20 @@
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/perkonto#identifier
-:identifier rdf:type owl:AnnotationProperty ;
-            rdfs:subPropertyOf dcterms:identifier ;
-            rdfs:range xsd:string .
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -60,6 +63,22 @@ xsd:time rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/references
+dcterms:references rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/ontology/bibo/authorList
+bibo:authorList rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasInformedBy
+prov:wasInformedBy rdf:type owl:ObjectProperty .
+
 
 ###  https://schema.org/attendee
 schema:attendee rdf:type owl:ObjectProperty .
@@ -243,6 +262,30 @@ schema:subjectOf rdf:type owl:ObjectProperty .
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://purl.org/ontology/bibo/doi
+bibo:doi rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/ontology/bibo/issue
+bibo:issue rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/ontology/bibo/pages
+bibo:pages rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/ontology/bibo/volume
+bibo:volume rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/ns/prov#generatedAtTime
+prov:generatedAtTime rdf:type owl:DatatypeProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:DatatypeProperty .
+
 
 ###  https://schema.org/affiliation
 schema:affiliation rdf:type owl:DatatypeProperty .
@@ -529,6 +572,34 @@ schema:url rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
+###  http://purl.org/ontology/bibo/AcademicArticle
+bibo:AcademicArticle rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/Conference
+bibo:Conference rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/Journal
+bibo:Journal rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+prov:Activity rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+prov:Agent rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+prov:Entity rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
 ###  https://schema.org/Action
 schema:Action rdf:type owl:Class .
 
@@ -659,14 +730,6 @@ schema:SoftwareApplication rdf:type owl:Class .
       rdfs:subClassOf schema:Action ;
       rdfs:comment "A research task or problem formulation that datasets,  methods, or metrics are applied to."@en ;
       rdfs:label "Task"@en .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:identifier rdfs:comment "A unique string identifying this submission instance."@en ;
-            rdfs:label "identifier"@en .
 
 
 #################################################################

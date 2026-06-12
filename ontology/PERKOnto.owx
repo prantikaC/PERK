@@ -19,24 +19,21 @@
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="schema" IRI="https://schema.org/"/>
     <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
-    <Import>http://purl.org/ontology/bibo/</Import>
-    <Import>http://www.w3.org/ns/prov-o#</Import>
-    <Import>http://xmlns.com/foaf/0.1/</Import>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Prantika Chakraborty</Literal>
-    </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
         <Literal>Debarshi Kumar Sanyal</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Srijoni Majumdar</Literal>
+        <Literal>Partha Pratim Das</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Partha Pratim Das</Literal>
+        <Literal>Prantika Chakraborty</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Srijoni Majumdar</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:description"/>
@@ -317,9 +314,6 @@
         <AnnotationProperty abbreviatedIRI="dcterms:license"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="#identifier"/>
-    </Declaration>
-    <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
     </Declaration>
     <Declaration>
@@ -327,6 +321,66 @@
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:time"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:issue"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:Conference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="bibo:authorList"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:AcademicArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:Journal"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Activity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="foaf:name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:pages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dcterms:references"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:doi"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dcterms:isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:volume"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="prov:generatedAtTime"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Conference"/>
@@ -1130,16 +1184,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#identifier</IRI>
-        <Literal xml:lang="en">A unique string identifying this submission instance.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#identifier</IRI>
-        <Literal xml:lang="en">identifier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#identifies</IRI>
         <Literal xml:lang="en">Links a SubmissionID to the Paper it identifies.</Literal>
     </AnnotationAssertion>
@@ -1368,14 +1412,6 @@
         <IRI>#worksWith</IRI>
         <Literal xml:lang="en">works with</Literal>
     </AnnotationAssertion>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="#identifier"/>
-        <AnnotationProperty abbreviatedIRI="dcterms:identifier"/>
-    </SubAnnotationPropertyOf>
-    <AnnotationPropertyRange>
-        <AnnotationProperty IRI="#identifier"/>
-        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
-    </AnnotationPropertyRange>
 </Ontology>
 
 
