@@ -1,0 +1,444 @@
+:ID,methodName,:LABEL
+me1,temporal embeddings,Method
+me2,historical lexicons,Method
+me5,GPT,Method
+me6,LSTM,Method
+me7,CRFs,Method
+me10,methods for interpretability,Method
+me11,alignment methods,Method
+me12,chronological split,Method
+me13,random split,Method
+me14,traditional lexicon-based approaches,Method
+me15,Transformer models,Method
+me16,diachronic variants of BERT,Method
+me17,model-agnostic methods,Method
+me18,LIME,Method
+me19,SHAP,Method
+me21,temporal saliency mapping,Method
+me22,attention visualization techniques in Transformer architectures,Method
+me24,preprocessing approaches,Method
+me27,deduplication,Method
+me28,lowercasing,Method
+me31,Tesseract,Method
+me32,ocropy,Method
+me33,Project LaVa,Method
+me35,correction workflow,Method
+me36,metadata mapping system,Method
+me38,dual mapping system for metadata standardization,Method
+me42,interpretability tools,Method
+me44,interpretability outputs on raw versus post-OCR-corrected text,Method
+me45,metadata mapping,Method
+me46,dual mapping schema,Method
+me48,post-processing,Method
+me49,manual verification,Method
+me51,chronology prediction,Method
+me52,transfer evaluation between datasets,Method
+me55,baseline model configuration,Method
+me56,fine-tuned transformer,Method
+me57,token-level encoder,Method
+me58,page-level encoder,Method
+me60,overfitting mitigation techniques,Method
+me62,ablation summaries,Method
+me63,alternative transfer settings,Method
+me66,visualizing qualitative themes,Method
+me67,heatmaps overlaid with representative vignette quotes,Method
+me68,side-by-side faithfulness/clarity ratings,Method
+me69,exemplar visualizations,Method
+me70,supplemental figure for evaluation section,Method
+me71,faithfulness/clarity heatmaps,Method
+me72,representative vignettes for “best case” and “edge case” explanations,Method
+me75,vignette figure,Method
+me76,viridis palette in matplotlib,Method
+me78,plasma,Method
+me79,matplotlib,Method
+me81,contrasting orange outline for the Document F edge case,Method
+me82,"artifact severity bins (low, medium, high)",Method
+me83,hybrid approach combining quantitative threshold and qualitative ranking,Method
+me85,"Descriptive statistics for class distribution (substitution, insertion, deletion, segmentation errors)",Method
+me86,Annotator-wise confusion matrices for each error type,Method
+me87,short appendix with illustrative cases per error class,Method
+me88,Source archive and permission metadata extraction from IACS and British Library records,Method
+me89,pipeline scripts,Method
+me90,technical validation scripts,Method
+me92,technical validation procedures,Method
+me94,language identification,Method
+me96,topic modeling,Method
+me97,NLP processing,Method
+me98,Domain Adaptation,Method
+me99,Evaluation Metrics,Method
+me100,Historical NER,Method
+me101,topic annotation,Method
+me102,genre segmentation protocol,Method
+me103,NER annotation,Method
+me104,open-heritage data management standards,Method
+me105,CLARIN’s recommendations for digital cultural heritage,Method
+me106,Europeana’s recommendations for digital cultural heritage,Method
+me108,annotation discrepancy table,Method
+me109,hyperlink verification in the compliance appendix,Method
+me110,annotation edge cases handling,Method
+me111,responsible downstream use guidance,Method
+me112,citing specific licensing statements,Method
+me113,collating updated sections into master camera-ready document,Method
+me114,drafting response letter addressing each reviewer point,Method
+me115,hyperlink syntax correction for DOI links,Method
+me116,annotated checklist,Method
+me117,Ethical Considerations section additions,Method
+me118,draft caption for Fig. 3,Method
+me119,camera-ready document preparation,Method
+me121,supplementary project webpage materials,Method
+me123,minor grammar tweaks to caption text,Method
+me125,uploading revised manuscript and response letter to JOCCH system,Method
+me126,circulating additional thoughts via email,Method
+me127,referencing CLARIN standards,Method
+me128,referencing Europeana standards,Method
+me129,hyperlink compliance appendix checking,Method
+me130,project webpage update,Method
+me132,NER ambiguity analysis,Method
+me133,inter-annotator agreement analysis,Method
+me134,annotation policy adjustments,Method
+me135,data stewardship guidelines from CLARIN,Method
+me139,licensing mandates stated by the Bengali and English source archives,Method
+me140,JOCCH’s open heritage standards,Method
+me141,Accessibility Checker (Adobe Acrobat),Method
+me142,NLP,Method
+me143,NER Methodology,Method
+me144,name normalization,Method
+me146,annotation guidelines for entity disambiguation,Method
+me151,token-level standardization,Method
+me153,accessibility re-tagging,Method
+me154,tagged PDF verification,Method
+me155,batch processing via Acrobat scripting,Method
+me156,ACM accessibility guidelines,Method
+me157,embedded table tagging,Method
+me158,iterative re-tagging of Tables 3 and 5 in the source LaTeX files,Method
+me159,PAC 2019,Method
+me163,Bengali-English entity alignment,Method
+me165,reproducibility guidelines,Method
+me166,project management and communication logistics,Method
+me168,Comprehensive metadata capture and version control for evolving historical corpora,Method
+me169,Standardized documentation templates,Method
+me170,automating provenance tracking across text normalization and alignment pipelines,Method
+me172,version control scripts,Method
+me174,annotation,Method
+me177,project management in distributed teams,Method
+me181,FAIR principles,Method
+me182,metadata schema harmonization,Method
+me183,overall slide deck integration,Method
+me184,rule-based string matching,Method
+me186,Levenshtein distance,Method
+me188,FastText embeddings,Method
+me190,neural methods,Method
+me195,FAIR pipeline,Method
+me199,risk management annotation,Method
+me203,scripts that would require additional requests for access,Method
+me204,assignment of a maintenance lead,Method
+me205,integration with platforms like Zenodo/OSF,Method
+me206,Creative Commons (or comparable) license,Method
+me207,CC BY,Method
+me208,CC BY-NC,Method
+me209,Zenodo,Method
+me211,entity linking,Method
+me212,token normalization approach,Method
+me213,evaluation set selection logic,Method
+me214,Transfer Learning in Low-Resource Historical Texts,Method
+me215,Evaluation & Benchmarks,Method
+me216,cross-lingual model,Method
+me218,data de-identification using named entity masking and character scrambling,Method
+me219,dataset access audit function,Method
+me221,data privacy and compliance process,Method
+me222,anonymization,Method
+me224,code anchor system,Method
+me225,cross-validation setup,Method
+me230,Code Anchor-Based Reviewer Navigation,Method
+me231,anonymization pipeline,Method
+me232,data hashing procedures,Method
+me233,exclusion of personally identifiable information at the source,Method
+me234,approach to managing regional digital archival consent,Method
+me235,anchor methods subsection,Method
+me236,anchor indices,Method
+me237,compliance pipeline,Method
+me238,privacy error-type,Method
+me239,LaTeX-to-Word conversion,Method
+me240,historical OCR noise threshold,Method
+me241,tabu package,Method
+me242,ACM style recommendations for multi-line cells,Method
+me243,LaTeX table environments,Method
+me244,anchor-based domain adaptation,Method
+me247,pipeline for South Asian historical language corpora,Method
+me248,pipeline,Method
+me251,comparative NLP analysis,Method
+me253,named entity recognition,Method
+me255,metadata anonymization,Method
+me256,user consent documentation,Method
+me257,annotation schemas,Method
+me258,toolchain,Method
+me259,GitHub Organization,Method
+me260,IACS-drive,Method
+me261,GitHub,Method
+me262,metadata formats,Method
+me263,Jupyter/Python package versions,Method
+me264,annotated Jupyter notebooks,Method
+me265,Python 3.10,Method
+me266,conda environments,Method
+me267,Docker images,Method
+me268,Dockerfiles,Method
+me269,sequence labeling demo,Method
+me270,Stanford-backed annotation toolkit,Method
+me271,cloud-based deployment,Method
+me272,sample repository README,Method
+me273,shared drive,Method
+me274,technical setup instructions,Method
+me275,sample notebook,Method
+me276,technical documentation,Method
+me278,sequence labeling,Method
+me279,legacy data parsing,Method
+me280,ACL reproducibility guidelines,Method
+me281,Evaluation Method,Method
+me282,quantitative reasoning,Method
+me283,qualitative expert assessment,Method
+me284,UKRI/Stanford resource-sharing models,Method
+me285,ACL resource track requirements,Method
+me286,synthetic preview sample workflow,Method
+me287,annotation process,Method
+me288,manual expert vetting,Method
+me290,sampling approach,Method
+me292,embargo protocols,Method
+me293,synthetic preview protocols,Method
+me294,synthetic instance generation,Method
+me295,traditional metrics,Method
+me296,provenance-aware metrics,Method
+me298,synthetic instance protocol,Method
+me300,Protocol generalizability,Method
+me301,provenance-aware annotation protocol,Method
+me302,model bias approach,Method
+me303,provenance-aware protocols,Method
+me304,model bias,Method
+me306,provenance metadata,Method
+me307,stratified sampling methodology,Method
+me309,historical data provenance,Method
+me310,bias mitigation,Method
+me312,tokenization stability across the multi-lingual corpora,Method
+me313,provenance analysis,Method
+me314,dataset licensing approach,Method
+me315,tokenization stability,Method
+me317,intrinsic evaluation strategies,Method
+me318,extrinsic evaluation strategies,Method
+me320,computational methods applied to heritage materials,Method
+me321,historical typeface adaptation,Method
+me322,transformer-based post-correction approaches,Method
+me324,Smith et al. (2021) protocol,Method
+me325,Smith et al. (2021) approach to case study documentation,Method
+me327,comparative protocol review,Method
+me328,process diagram,Method
+me331,guideline-driven adjudication,Method
+me332,JOCCH’s latest reproducibility checklist,Method
+me333,Smith et al. template,Method
+me338,harmonized press query response protocol,Method
+me339,unified template and scenario annex,Method
+me340,scenario-specific workflow for embargoed joint releases,Method
+me341,RTI and regional translation contributions,Method
+me342,integration of GDPR and EU research citation frameworks,Method
+me343,robust framework for research and public engagement objectives,Method
+me344,U.S. Data Governance guidelines,Method
+me345,GDPR,Method
+me346,EU research citation frameworks,Method
+me347,FERPA Compliance Disclaimer,Method
+me350,Ananya’s bullet-point protocols around metadata dissemination,Method
+me351,Prof. Bhatia’s framework for the FAQ version changelog and update protocol,Method
+me352,Embargo Policy and Citation Permissions unified section with granular sub-entries for region-specific nuances,Method
+me355,bullet-point protocol,Method
+me356,FAQ annex components,Method
+me357,FINAL_Integrated_FAQ_Annex_v1.1,Method
+me359,protocol innovation for legal compliance,Method
+me360,NLP-based framework,Method
+me361,domain-specific language modeling,Method
+me363,language model domain adaptation workflow,Method
+me365,metadata extraction tools,Method
+me367,cross-institution protocol,Method
+me368,visualization updates,Method
+me370,NDAI integration use case,Method
+me371,responsible model development for cultural heritage applications,Method
+me372,language model,Method
+me373,document alignment model,Method
+me376,audio denoise filter,Method
+me378,multi-script alignment,Method
+me379,accessibility workflow,Method
+me381,alignment evaluation,Method
+me382,participant engagement methodology,Method
+me383,breakout sessions,Method
+me384,lightning talks format,Method
+me385,ethical data handling in historical NLP workflows,Method
+me386,session feedback form,Method
+me387,ACL Demo-driven recommendations,Method
+me389,NER modules,Method
+me392,real-time annotation guidance,Method
+me393,NER preprocessing,Method
+me395,institutional login workflows,Method
+me399,comparative table on JCDL and JOCCH deadlines,Method
+me401,accessibility frameworks,Method
+me403,Q&A Moderation framework,Method
+me404,technical escalation procedures,Method
+me406,code snippets,Method
+me407,sample queries for historical Q&A,Method
+me408,cross-dialectal data methodology,Method
+me411,dialect classification approach,Method
+me412,semi-automated pre-processing pipeline,Method
+me413,context reconstruction,Method
+me414,context expansion across temporal boundaries,Method
+me415,recent ACL findings,Method
+me416,context expansion,Method
+me417,semantic drift evaluation,Method
+me419,scalable benchmarking for semantic drift,Method
+me420,context reconstruction techniques for 19th-century archive analysis,Method
+me421,adaptation of context reconstruction techniques for multilingual newspaper corpora spanning 1850–1950,Method
+me424,metadata-driven structuring of benchmark datasets,Method
+me425,hybrid evaluation suite,Method
+me428,methodological blend,Method
+me429,low-resource metrics,Method
+me430,benchmark protocol,Method
+me431,annotation breakdown,Method
+me432,adaptation of the Smith et al. metrics,Method
+me433,recent EMNLP benchmark,Method
+me434,multilingual semantic drift detection framework,Method
+me436,digital tool integrations,Method
+me437,"preprint archiving (arXiv, departmental repository)",Method
+me438,corpus annotation methodology,Method
+me439,interoperability findings,Method
+me440,NLP pipeline,Method
+me442,collaborative methodologies,Method
+me443,neural models,Method
+me444,semi-supervised labeling,Method
+me446,ALMA’s archival integration,Method
+me447,expert-curated subsets,Method
+me449,open-sourcing our models,Method
+me450,hybrid model,Method
+me451,participatory annotation methods,Method
+me453,semantic metrics alignment,Method
+me454,Error Analysis,Method
+me457,adjudication protocols,Method
+me459,error taxonomy,Method
+me464,Overleaf,Method
+me465,official ACM JOCCH template,Method
+me466,Google Drive,Method
+me469,NLP Pipelines,Method
+me471,semantic evaluation frameworks,Method
+me476,adjudication work,Method
+me477,semantic evaluation pipeline,Method
+me478,agreement protocol,Method
+me480,semantic entity adjudication,Method
+me481,preprocessing scripts,Method
+me482,annotation tools,Method
+me484,figure legends,Method
+me485,citation formatting,Method
+me486,archiving requirements,Method
+me487,repository submission,Method
+me488,copyright/license forms,Method
+me489,MIT terms,Method
+me490,Data,Method
+me492,codebase,Method
+me494,ACM production workflow,Method
+me495,Image asset workflow,Method
+me496,Caption harmonization process,Method
+me497,Coordination with ACM Production to maintain visual integrity,Method
+me498,Visual pipeline using Lucidchart,Method
+me499,Visual pipeline using Google Drawings,Method
+me500,Lucidchart,Method
+me502,compliance workflow crosswalk table,Method
+me504,GDPR compliance workflow,Method
+me507,Krippendorff’s alpha,Method
+me508,meta-analysis scripts,Method
+me510,harmonized annotation framework,Method
+me511,institutional artifact annotations,Method
+me512,summary notes on cross-institutional lessons learned,Method
+me513,internal quality review phase,Method
+me515,methodological overviews,Method
+me516,compliance strategies,Method
+me517,artifact annotations,Method
+me518,annotation tool validation,Method
+me519,protocol harmonization strategies,Method
+me520,ACL 2023 template,Method
+me522,BibTeX file,Method
+me524,mixed-script tagging,Method
+me525,repository audit,Method
+me526,ACL validation script,Method
+me527,sub-dialectal code-switching pattern analysis,Method
+me528,longitudinal adaptation studies,Method
+me531,longitudinal modeling components,Method
+me534,dataset/resource note,Method
+me535,journal extension,Method
+me536,resource note,Method
+me537,user study survey,Method
+me542,multi-script retrievals,Method
+me544,comparative licensing table,Method
+me545,digital humanities platforms integrating machine-readable annotated corpora,Method
+me546,HuggingFace,Method
+me547,institutional repositories,Method
+me549,meta-annotation review,Method
+me551,meta-annotation methodology,Method
+me553,collaborative legal governance,Method
+me554,rolling embargo mechanism,Method
+me556,Zenodo citation best practices,Method
+me557,structured “rolling embargo” model,Method
+me558,Zenodo-linked workflows,Method
+me559,embargo mechanics,Method
+me560,Zenodo integration,Method
+me562,Zenodo pipeline,Method
+me563,template-driven MOU/legal correspondence,Method
+me564,manual scripting solutions,Method
+me566,workflow innovations,Method
+me567,extended methodological appendices,Method
+me568,color schema,Method
+me569,temporal analyses,Method
+me571,corpus methodology,Method
+me572,annotation guidance,Method
+me573,data-sharing and archival annotation protocols,Method
+me574,legal comparative table,Method
+me575,legal notes on compliance overlap and potential ambiguities,Method
+me576,India Data Protection Bill (2022),Method
+me577,linguistic corpora,Method
+me578,international collaborative annotation,Method
+me579,public data release,Method
+me581,annotation metadata,Method
+me583,appendix formatting,Method
+me585,main methods section with in-text footnotes marking legal inflection points and extended appendix matrix,Method
+me586,methodology for extracting cross-border annotation metrics,Method
+me587,public compliance statement,Method
+me588,bias mitigation and data minimization narrative,Method
+me589,"centralized, tracked master manuscript file on Google Drive for version control",Method
+me590,legal matrix from Japan and Chile,Method
+me591,statistical annotations,Method
+me592,Project-level Data Protection Impact Assessments (DPIAs),Method
+me593,bilingual disclosure for data processed by non-resident partners,Method
+me594,specific annotation consent forms distinguishing between archival record usage and personal cultural testimony,Method
+me595,tiered consent protocol,Method
+me597,"procedures for data sharing with research partners across the EU, US, and Australia",Method
+me598,legal matrix,Method
+me599,cross-referenced annotation workflows,Method
+me600,"shared, real-time document for coordinated writing and citation integration",Method
+me603,contrast and synthesis subsection,Method
+me604,policy compliance audit,Method
+me605,bibliography harmonization,Method
+me606,compliance diagrams,Method
+me609,unified glossary for recurring metadata and compliance terms,Method
+me610,annotation metadata limitations section,Method
+me611,provenance tables,Method
+me614,consent revalidation,Method
+me615,archival authority clarification,Method
+me616,provenance checkpoint mechanism,Method
+me617,systematic cross-referencing of glossary terms,Method
+me619,annotation toolkit,Method
+me620,stricter version-naming protocols,Method
+me621,time-boxed editing windows,Method
+me622,shared log of “pending vs. resolved” comments,Method
+me625,shared live logs,Method
+me626,lock-down periods,Method
+me627,reproducible template for multi-author version management,Method
+me628,annotation and provenance toolkit,Method
+me629,do’s and don’ts checklist,Method
+me630,method of dealing with conflicting annotations under time constraints,Method
+me634,diagram and metadata versioning,Method
+me635,institutional compliance setup from Oxford-IACS experience,Method
+me637,identification of workflow bottlenecks,Method
+me638,compliance harmonization,Method
+me639,best-practices checklist,Method
+me641,reviewer response matrix,Method

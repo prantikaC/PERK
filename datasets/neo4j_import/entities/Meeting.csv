@@ -1,0 +1,504 @@
+:ID,meetAgenda,meetDate,meetLink,meetTime,:LABEL
+mg1,discuss these ideas further and coordinate next steps,2019-04-06,,3 PM to 4 PM IST,Meeting
+mg2,meeting next week to finalize the project details,,,,Meeting
+mg3,delve deeper into the metrics and refine the evaluation framework for models,April 8,,,Meeting
+mg4,project discussion on capturing sentiment shifts over time and historical sentiment trends,April 8,,,Meeting
+mg5,"discussion of datasets, methodologies, and insights",2019-04-06,https://zoom.us/j/1234567890,3 PM to 4 PM IST,Meeting
+mg6,first progress check-in group call,2019-04-19,,3 PM IST,Meeting
+mg7,,,,,Meeting
+mg8,23rd April check-in,April 23,,,Meeting
+mg9,check-in,23rd April,,,Meeting
+mg10,tomorrow’s check-in; ambitious agenda; advancing baseline modeling; possible venues for ultimate submission,23rd April,https://meet.google.com/hjk-mnrt-xqu,3 PM IST (10:30 AM BST / 2:30 AM PDT),Meeting
+mg11,highly productive discussion for ongoing collaboration,2019-04-19,,3-4:30 PM IST,Meeting
+mg12,60–90 minute check-in; confirm the session and streamline agenda including author responsibilities for a potential ACL/EMNLP submission draft,between 3rd–7th May,,,Meeting
+mg13,next check-in,2024-05-03,,10:30 AM - 1:00 PM,Meeting
+mg14,,,,,Meeting
+mg15,"review Ananya’s interpretability memo, decide on pilot annotation logistics, confirm baseline model configuration and initial results, agree on final set of evaluation metrics and protocols, outline preliminary authorship and responsibilities map for planned ACL/EMNLP submission, set timeline for subsequent drafts and code releases",3rd May,,3 PM IST / 10:30 AM BST / 2:30 AM PDT,Meeting
+mg16,check-in meeting,"Monday, 3rd May",https://meet.google.com/vty-cqsi-bjk,3 PM IST / 10:30 AM BST / 2:30 AM PDT,Meeting
+mg17,"project discussion on interpretability memo, human annotation pilot, baseline model configuration, evaluation metrics, authorship, and timeline",2019-04-28,https://meet.google.com/vty-cqsi-bjk,3 PM IST / 10:30 AM BST / 2:30 AM PDT,Meeting
+mg18,"focused session to discuss annotation feedback trends, qualitative themes, visualization prioritization, and integration into evaluation and discussion sections",2019-05-13,,,Meeting
+mg19,synthesis session,13th May,,,Meeting
+mg20,synthesis meeting,13th May,,,Meeting
+mg21,"synthesis session; quantitative review, qualitative analysis, visualization planning, reviewer expectation matching, drafting assignments, additional discussion points, design planning segment",2019-05-06,https://meet.google.com/kzt-evwr-qiu,17:30 IST / 13:00 BST / 05:00 PDT,Meeting
+mg22,"virtual debrief meeting to discuss strategy for dissemination, next steps, and to mark submission milestone",coming week,,,Meeting
+mg23,,,,,Meeting
+mg24,"strategizing outreach, potential follow-on research, presentation/poster preparation, dataset release plan, supplementary analyses, and possible journal extension","Wednesday, 2nd June",,16:30 IST,Meeting
+mg25,Presentation/Poster Development; Phased Dataset Release; Supplementary Analyses; Journal Extension Planning,"Wednesday, 2nd June",https://meet.google.com/jxr-twth-uzc,16:30 IST,Meeting
+mg26,short check-in,2019-06-17,,same time,Meeting
+mg27,discuss flagged compliance issues and finalize phased release plan,2025-06-17,,,Meeting
+mg28,,,,,Meeting
+mg29,review meeting for robust and comprehensive data release protocol,2025-06-16,,,Meeting
+mg30,"internal review meeting regarding the annotated historical OCR error corpus, its documentation, and institutional compliance",2019-06-04,https://meet.google.com/tcu-ocbb-wjd,16:00–17:00 IST,Meeting
+mg31,quick troubleshooting session,,Google Meet,,Meeting
+mg32,sign off on the merged documentation before submission,2019-06-21,https://meet.google.com/bpu-wxry-avf,16:30-17:00 IST,Meeting
+mg33,"quick sign-off of the merged package; section-by-section confirmation of finalized documentation, technical validation, and risk/compliance text; consensus on submission of the package to JOCCH; assignment of final responsibilities for submission upload and corresponding author designation",21 June,https://meet.google.com/bpu-wxry-avf,16:30–17:00 IST,Meeting
+mg34,final stage compliance checklist review and collective approval for submission,today,Google Meet,16:30 IST,Meeting
+mg35,discuss progress and agree on a concrete timeline,early next week (Monday or Tuesday IST),,,Meeting
+mg36,coordination meeting,30 August / 31 August,Zoom or usual Google Meet link,after 14:00 IST,Meeting
+mg37,1. Quick review of draft expansions for “Limitations” and compliance clarifications  2. Walkthrough of the new annotator agreement table (I’ll circulate a preliminary spreadsheet by midday Monday)  3. Review template for the point-by-point response letter  4. Assignment of remaining drafting and review/editing responsibilities  5. Timeline check to ensure we’re on track for the 22 September revision deadline,2019-08-07,https://stanford.zoom.us/j/91738125460,15:15–16:30 IST,Meeting
+mg38,Zoom meeting to discuss point-by-point response letter and related drafts,30 August,Zoom (link not shown in text),15:15 IST,Meeting
+mg39,coordination meeting to guide minor revision of the manuscript for the ACM JOCCH,2019-08-08,Zoom,15:15–16:35 IST,Meeting
+mg40,brief status-update and address technical or stylistic challenges,2019-12-14/2019-12-17,Google Meet (to be scheduled),30-minute slot,Meeting
+mg41,coordination call,2021-12-14/2021-12-17,,11:00–11:30 IST or 15:30–16:00 IST,Meeting
+mg42,coordination meeting for camera-ready revisions,2025-12-15,,15:30–16:00 IST,Meeting
+mg43,Quick progress updates on revision tasks; discuss bottlenecks or reviewer points; coordinate timeline for integrating edits into camera-ready version and preparing response letter; final technical or compliance clarifications before resubmission.,2019-11-07,https://meet.google.com/joc-chh-minor-rev,15:30-16:00 IST,Meeting
+mg44,finalizing manuscript for the JOCCH minor revisions,2019-11-07,Google Meet,15:30–16:00 IST,Meeting
+mg45,clear any final points and validate the completed camera-ready package ahead of the editorial deadline,2026-01-20,,10:30 am GMT / 4:00 pm IST / 8:30 am PST,Meeting
+mg46,Zoom review call,20 January,,4:00 pm IST,Meeting
+mg47,review call; walkthrough of revision responses; accessibility check; review of “Response to Reviewers” letter; cross-file consistency checks; timeline confirmation for manuscript upload,20 January,https://zoom.us/j/93027450827?pwd=N2ZoMnZWdEYwUjBpU2VOQkl6ZWVpUT09,10:30 am GMT / 4:00 pm IST / 8:30 am PST,Meeting
+mg48,,,,,Meeting
+mg49,brief Zoom check-in to ensure we’re on track to compile and submit by 10 March,2025-03-02,,10:30 am GMT / 4:00 pm IST / 8:30 am PST,Meeting
+mg50,address any questions about supplementary file references and camera-ready compilation,2020-03-02,Zoom (link not specified),,Meeting
+mg51,consolidation call,2025-04-04/2025-04-08,Google Meet,,Meeting
+mg52,"consolidation call on internal retrospective; brief overview by each contributor on retrospective summaries; discussion on key transferable lessons for future journals/conferences; outline of possible workshop/tutorial proposals (JCDL, ACL, or SIG); timeline and division of tasks for drafting any external documentation/tutorial abstract",first full week of April,https://meet.google.com/xyz-pqmf-btu,between 12:00–16:00 UK,Meeting
+mg53,consolidation call; summarizing the retrospective highlights and next steps for potential workshop/tutorial proposals,2025-04-06/2025-04-07,https://meet.google.com/xyz-pqmf-btu,12:00–16:00 UK,Meeting
+mg54,"consolidation call; discuss retrospective, data sharing/archival considerations, potential methods/workflow paper or SIG tutorial, and next steps for a tutorial proposal",2025-04-07,https://meet.google.com/xyz-pqmf-btu,12:00–16:00 UK / 16:30–20:30 IST,Meeting
+mg55,"Project retrospective call with agenda on retrospective summaries, transferable lessons for historical NLP research, data sharing & archival, workshop/tutorial proposals, and next steps",2019-02-12,https://meet.google.com/xyz-pqmf-btu,12:00–13:00 UK / 16:30–17:30 IST / 4:00–5:00 US West Coast,Meeting
+mg56,consolidation call and joint discussion,Thursday,,,Meeting
+mg57,Google Meet session; summary of the meeting minutes and key action items for developing a methods/workflow paper or tutorial proposal,,,,Meeting
+mg58,brief coordination call (30–40 minutes) to finalize division of tasks and discuss the camera-ready submission plan,,,,Meeting
+mg59,Zoom call to coordinate remaining revisions,,,,Meeting
+mg60,camera-ready revision coordination call,2019-04-11,https://zoom.us/j/92713648290?pwd=JCDL_CameraReady,16:00 BST / 20:30 IST / 8:00 PDT,Meeting
+mg61,rehearsal for live tutorial delivery,2020-07-20/2020-07-21,,60 minutes,Meeting
+mg62,,,,,Meeting
+mg63,final rehearsal focusing on technical handover points and Zoom live demo features,2020-07-20/2020-07-21,,late afternoon India time / UK afternoon,Meeting
+mg64,JCDL 2020 tutorial rehearsal,2020-07-21,https://us02web.zoom.us/j/82193588451?pwd=sample1234,16:00 UK / 20:30 IST / 08:00 PDT,Meeting
+mg65,rehearsal for JCDL 2020 tutorial,,,,Meeting
+mg66,official Zoom presentation link and access instructions,2020-07-24,,,Meeting
+mg67,"Tutorial: NLP Methods for Large-Scale Historical Data: Annotation, Corpus Design, and Reproducibility",2019-05-16,https://stanford.zoom.us/j/98273651139?pwd=JCDL2020NLP,13:30–16:00 UTC,Meeting
+mg68,pre-session sound check with the conference technician,2020-07-26,official Zoom session (link provided by the committee),13:15 UTC,Meeting
+mg69,"short debrief meeting to review feedback, compile lessons learned, assess potential for publication or follow-up tutorial, and discuss broader engagement",2020-08-01/2020-08-05,Zoom or Google Meet,,Meeting
+mg70,debrief further and explore publication prospects,2020-08-02,Google Meet (preferred) or Zoom,14:00–17:00 UTC,Meeting
+mg71,"Debrief meeting to review feedback, reflect on tutorial process, discuss publication prospects, plan open repository, and brainstorm future workshops/tutorials",2025-08-02,Google Meet (to be circulated),15:30 UTC,Meeting
+mg72,"Debrief meeting; Discussion of official feedback/survey results from JCDL organizers; Review of the tutorial presentation process—strengths, challenges, and lessons learned; Outlining the structure and scope of a potential survey/methods paper for submission to JOCCH; Next steps for launching an open repository of demo scripts, annotation materials, and selected historical data samples; Planning future workshops/tutorials (e.g., ACL or EMNLP) and community engagement ideas.",2019-05-22,https://meet.google.com/xyz-jcdl-tutorial,15:30–17:00 UTC,Meeting
+mg73,JCDL 2020 Tutorial Debrief,2019-05-22,Google Meet,,Meeting
+mg74,,,,,Meeting
+mg75,"finalize writing assignments, clarify supplementary documentation requirements, and review JOCCH’s open-data and reproducibility guidelines",16 August,,15:00 UTC,Meeting
+mg76,finalizing writing assignments and submission logistics; discuss authorship order and individual contributions; brainstorm ideas for ACM Digital Library’s public-facing summary or lay abstract,16 August,,15:00 UTC,Meeting
+mg77,"upcoming meeting to discuss draft responsibilities, authorship order, section assignments, and ACM lay abstract",2026-08-16,,15:00 UTC,Meeting
+mg78,upcoming meeting is both effective and focused; fill in authorship and contribution documentation; discuss agenda additions,16 August,https://meet.google.com/hst-jocch-writing,15:00 UTC,Meeting
+mg79,"discussion on data licensing, repository sustainability, and compliance with JOCCH’s open-data policy",16 August,,,Meeting
+mg80,collectively draft a compliance and licensing statement,,,final 10 minutes,Meeting
+mg81,"address any residual comments, align on the integration of the methods/results cross-references, and make a final pass through the compliance supplement details; resolve any outstanding document comments; confirm integration points between main text, results, and supplement; consensus on the finalization of compliance documentation and figure/table formatting; timeline for submission of the camera-ready internal draft",2025-09-06,https://meet.google.com/dyn-wmpl-jow,16:30 IST / 12:00 BST / 04:00 PDT,Meeting
+mg82,manuscript finalization meeting; agenda item on main text integration; meeting’s resolution phase,6 September,,16:30 IST,Meeting
+mg83,,,,,Meeting
+mg84,review our progress and finalize contributions,2020-11-04/2020-11-08,Zoom (to be scheduled),,Meeting
+mg85,upcoming revision meeting,2020-11-05,,10:00–13:00 IST / 05:30–08:30 BST / 21:30–00:30 PDT,Meeting
+mg86,finalizing our approach and discussing revision process,2024-11-05/06,Zoom (link to be arranged),10:00–13:00 IST / 05:30–08:30 BST / 21:30–00:30 PDT,Meeting
+mg87,revision meeting,6 November,,10:00–13:00 IST / 05:30–08:30 BST / 21:30–00:30 PDT,Meeting
+mg88,discuss detailed error analysis for the cross-lingual transfer experiments,2022-11-06,,,Meeting
+mg89,check-in call to review progress and resolve overlapping issues,week of 2020-02-08,,,Meeting
+mg90,progress meeting during the week of 8 February,2026-02-08,,11:00-14:00 GMT,Meeting
+mg91,check-in for collective progress updates and resolution of cross-cutting issues,2025-02-08/2025-02-10,,11:00–17:00 IST,Meeting
+mg92,progress check-in,2026-02-09,,11:30–14:00 GMT,Meeting
+mg93,progress meeting,2021-02-09,,,Meeting
+mg94,group call to discuss revision,2021-02-09,,,Meeting
+mg95,progress call to discuss JOCCH revision components and finalize resubmission planning,2019-11-01,https://zoom.us/j/98367321478?pwd=R2N3WTh3cUFqUXRpR2VBU3BnQTlRdz09,13:30–14:30 GMT,Meeting
+mg96,progress call and pre-submission phase planning,2019-11-01,,,Meeting
+mg97,align on progress,2020-03-26,,30 minutes,Meeting
+mg98,26 March call,2025-03-26,,,Meeting
+mg99,Zoom call to discuss the project,2026-03-26,,,Meeting
+mg100,concise coordination session to assess updates and synchronize any cross-dependent tasks for our JOCCH minor revision resubmission,2019-12-09,https://zoom.us/j/93824651704?pwd=MnRpVlJzMGRzTnBhUWpKOEpFS3J4QT09,16:30 IST / 12:00 BST / 04:00 PDT,Meeting
+mg101,Zoom coordination session regarding JOCCH minor revision tasks,2020-03-26,,,Meeting
+mg102,upcoming team review,2020-04-07,,,Meeting
+mg103,quick Zoom call to sign off on the package before submission,12 June,,,Meeting
+mg104,brief Zoom sign-off meeting,2025-06-12,,,Meeting
+mg105,team sign-off,2025-06-12,Zoom meeting,,Meeting
+mg106,brief Zoom meeting to collectively sign off on the manuscript and supplementary files before ScholarOne upload,12 June,https://doodle.com/meetings/zoom-JOCCH-signoff-12June,,Meeting
+mg107,"1. Brief review of all recent document changes (camera-ready PDF, notebook update, cover letter).
+  2. Final cross-check using the internal checklist.
+  3. Confirmation of submission procedure on ScholarOne.
+  4. Open floor for any last technical or editorial adjustments.",2019-02-14,https://stanford.zoom.us/j/98347920145?pwd=JOCCHfinalsignoff,16:00 IST / 11:30 BST / 3:30 AM PDT,Meeting
+mg108,Zoom sign-off meeting and key points/action items for final ScholarOne submission of JOCCH camera-ready manuscript,2021-06-12,,,Meeting
+mg109,deadline for additional minor typographical corrections or further accessibility suggestions,2019-03-10,,16:00 IST,Meeting
+mg110,brief online presentation or webinar to highlight results and answer questions about applying HistocrNLP to regional corpora,September,,,Meeting
+mg111,plan this in greater detail,next week,Zoom,,Meeting
+mg112,webinar about the work,late-September,,,Meeting
+mg113,planning Zoom after the DOI arrives,next week,,midweek,Meeting
+mg114,"define the format and division of topics: overview, technical contributions, application demos, and live Q&A",next week,Zoom planning meeting,,Meeting
+mg115,planning session for late-September webinar via Zoom,2023-08-09,,,Meeting
+mg116,Zoom planning session for webinar,2023-08-09,,15:00 IST / 10:30 BST / 02:30 PDT,Meeting
+mg117,Zoom meeting to discuss outreach and webinar plans,2025-08-09/10,,15:00 IST / 10:30 BST / 02:30 PDT or 16:00 IST / 11:30 BST / 03:30 PDT,Meeting
+mg118,public summary finalization and dissemination; webinar structure and division of roles; registration and promotion plan; timeline alignment with the publication DOI,2025-08-09,,15:00 IST / 10:30 BST / 02:30 PDT,Meeting
+mg119,1. Review and sign-off on public summary & communications; 2. Finalising the structure and technical/demo roles for the late September webinar; 3. Confirming registration processes and cross-institutional promotion plans; 4. Scheduling and next milestones aligned with the article's official online publication,2025-08-09,,,Meeting
+mg120,1. Review and sign-off on public summary & communications; 2. Finalizing the structure and technical/demo roles for the webinar; 3. Confirming registration processes and cross-institutional promotion plan; 4. Scheduling and milestones in alignment with the publication’s online release,2021-04-05,https://us02web.zoom.us/j/85123901471?pwd=HstCrNLP2021,15:00 IST / 10:30 BST / 02:30 PDT,Meeting
+mg121,HistocrNLP outreach and webinar planning meeting,2019-04-05,,60 minutes,Meeting
+mg122,HistocrNLP webinar,2019-09-18,,week of 18–22 September,Meeting
+mg123,,,,,Meeting
+mg124,technical and content rehearsal,first week of September,,15:00–18:00 IST,Meeting
+mg125,"webinar rehearsal following the actual webinar structure, including transitions between each speaker and a test of Q&A/chat moderation workflow",5 September,main IACS Zoom webinar room,15:00–18:00 IST,Meeting
+mg126,full trial run for the webinar,2025-09-05,,,Meeting
+mg127,"trial rehearsal of main event sequence, transitions across speakers, and speaker handover",5th September,,,Meeting
+mg128,,,,,Meeting
+mg129,upcoming webinar,,,,Meeting
+mg130,,,,,Meeting
+mg131,"brief sync meeting to align deliverables, review responsibilities, and address constraints or institutional requirements before public release",2025-09-22/2025-09-23,,,Meeting
+mg132,,,,,Meeting
+mg133,sync meeting,22 September,regular Zoom link,,Meeting
+mg134,sync meeting (alternate link option),22 September,https://stanford.zoom.us/j/94123456789,,Meeting
+mg135,upcoming sync meeting,22 September,our established Zoom link,14:30 IST (10:00 BST / 2:00 PDT),Meeting
+mg136,"agenda-setting, troubleshooting, and discussion of technical or organizational challenges",22 September,Zoom link (to be circulated),14:30 IST (10:00 BST / 2:00 PDT),Meeting
+mg137,"status updates, repository structure, access and permissions, timeline check, technical standards and next steps",,our established Zoom link,14:30 IST (10:00 BST / 2:00 PDT),Meeting
+mg138,today’s meeting,,,,Meeting
+mg139,our meeting,,,,Meeting
+mg140,sync meeting; summarize the meeting minutes and enumerate the immediate action items for the knowledge base compilation,2019-05-12,,,Meeting
+mg141,,,,,Meeting
+mg142,discuss submission venue and features matrix; make final decision,2025-10-03/2025-10-05,Google Meet (proposed),14:00–17:00 IST,Meeting
+mg143,team meeting about submission pathways and features matrix,2022-10-03,Google Meet,14:00–17:00 IST,Meeting
+mg144,,,,,Meeting
+mg145,Review of the submission venue matrix; Institutional and career priority mapping; Data/code transparency strategy alignment; Open discussion of staged submission methodologies; Timelines and next steps for drafting and submission responsibilities,,https://meet.google.com/vgb-citm-tso,,Meeting
+mg146,Meeting Minutes – 22nd May 2019,2019-05-22,,,Meeting
+mg147,next check-in by which time initial manuscript sections and supporting materials will be circulated for review,2019-10-10,,,Meeting
+mg148,next check-in and feedback on the dual-publishing synthesis,2025-10-10,,,Meeting
+mg149,check-in on artifact reproducibility case,10 October,,,Meeting
+mg150,address any outstanding questions and update on action items,12 October,,17:00 CET,Meeting
+mg151,Zoom coordination to resolve open points regarding the research questions and evaluation frameworks,12 October,,17:00 CET,Meeting
+mg152,,,,,Meeting
+mg153,"1. Final review and harmonization of evaluation metrics—balancing quantitative and qualitative methodologies for historical NLP resource validation.
+2. Confirmation of author order, roles, and final wording of the funding statement and acknowledgments.
+3. Policy and process review: Embargo/restricted corpus access, compliance with IACS and UK/Stanford standards as informed by Sunita and Ananya’s updates.
+4. Timeline review: Updated milestones for the first complete draft, pre-submission checklist, and revised ACL resource track deadlines.
+5. Open discussion: Outstanding issues, next action items, assignment of drafting/editorial responsibilities ahead of internal review.","Thursday, 12 October",https://stanford.zoom.us/j/98456247018?pwd=aFphQ2xhQzc3NDI0R2xNRmtLand3UT09,17:00 CET,Meeting
+mg154,"Zoom coordination; evaluation metrics, author order, funding, compliance & embargo policy, timeline revision, outstanding issues",,Zoom,,Meeting
+mg155,review harmonized compliance language and resolve any lingering points ahead of formal manuscript circulation,19 October,,,Meeting
+mg156,"30-minute final Zoom review session to conduct an integrated read-through of the complete draft, resolve remaining editorial issues, and coordinate final author check-ins before internal circulation",19 October,https://stanford.zoom.us/j/93741259102?pwd=RzlEaWxOT0k4SFJLeW1IRkQyZWVqdz09,18:00 CET,Meeting
+mg157,final integrated manuscript review via Zoom,,,,Meeting
+mg158,ACL 2021 participation and presentation,2021,,,Meeting
+mg159,brief Zoom meeting early next week to align on responsibilities,2021-01-22,,16:00 UTC,Meeting
+mg160,synchronize on the granular distribution of tasks for camera-ready submission,2025-01-22,,16:00 UTC,Meeting
+mg161,,,,,Meeting
+mg162,discuss practical division of labor and establish a timeline for iterative reviews,22 January,Zoom,16:00 UTC,Meeting
+mg163,coordination meeting for organized revision process and agenda items 1–5,22 January,,16:00 UTC,Meeting
+mg164,"revision coordination meeting; Assignment of revisions (annotation provenance, compliance appendix, formatting/cross-referencing); Internal milestone and upload deadlines; Compliance documentation and administrative actions; Discussion of possible bottlenecks, resource needs; Next steps and communication logistics",22 January,https://us02web.zoom.us/j/88546712309?pwd=Z2VjMDNmWkZjUUpEN05HVVhiZzRXQT09,16:00 UTC,Meeting
+mg165,ACL 2021 camera-ready revision coordination meeting,2021-01-22,,,Meeting
+mg166,emergency synchronization call if there is a risk of missing the 12 February upload target,2021-02-12,,,Meeting
+mg167,"oral session ""NLP for Historical Data and Digital Heritage""",2019-01-28,,,Meeting
+mg168,Oral presentation in session 'NLP for Historical Data and Digital Heritage',2019-01-28,https://2021.aclweb.org/speakers,10:30–12:00,Meeting
+mg169,NLP for Historical Data and Digital Heritage session presentation,2019-01-28,,10:30–12:00,Meeting
+mg170,"""NLP for Historical Data and Digital Heritage"" oral session",2019-01-28,,10:30–12:00,Meeting
+mg171,virtual dry run of the presentation,2020-04-22 to 2020-04-27,Zoom (link to be circulated),,Meeting
+mg172,virtual dry run,between 22 and 27 April,Zoom,,Meeting
+mg173,virtual meeting,,,late afternoons IST,Meeting
+mg174,virtual dry run via Zoom,2019-11-12,https://stanford.zoom.us/j/94728615327,5:30–7:00 pm IST,Meeting
+mg175,dry run for ACL 2021 oral session,2021-04-24,Zoom link (not explicitly provided in text),5:30–7:00 pm IST,Meeting
+mg176,dry run session for presentation,2021-04-24,,5:30–7:00 pm IST,Meeting
+mg177,"dry run and practicing concise responses to potential audience questions, particularly around the scalability of our annotation approach and cross-dataset generalizability",24 April,previously circulated Zoom link,5:30 pm IST,Meeting
+mg178,"dry run of presentation with full walkthrough, targeted feedback, integration of edits, Q&A drill, and action items",2026-04-24,https://stanford.zoom.us/j/94728615327,5:30–7:00 pm IST,Meeting
+mg179,,,,,Meeting
+mg180,last group review of camera-ready package,2025-06-11/2025-06-12,,3–5 PM IST,Meeting
+mg181,group call for comprehensive review session; walk through ACL camera-ready guidelines; review main slide deck; cross-verify consistency and provenance details; finalize presenter bios; assign owners for outstanding action items,2025-06-11,,3–5 PM IST,Meeting
+mg182,"camera-ready review session; Confirm compliance with ACL guidelines and discuss flagged edits; Slide-by-slide review for content, format, and clarity; Update and approve supplementary materials; Final assignment of action items and submission timeline",2021-06-11,,3–5 PM IST,Meeting
+mg183,"expedite discussion; review slide figures, Q&A document, model bias coverage, presenter declaration, and presenter bios",2025-06-11,,,Meeting
+mg184,final camera-ready submission review meeting,11 June,https://meet.google.com/abc-defg-hij,3–5 PM IST,Meeting
+mg185,camera-ready review meeting,2019-12-23,,,Meeting
+mg186,brief wrap-up call,tomorrow,,noon IST,Meeting
+mg187,group rehearsal / dry run for ACL presentation,2022-07-17 to 2022-07-19,,,Meeting
+mg188,rehearsal and dry-run of presentation timing and transitions,July 18,,,Meeting
+mg189,,,,,Meeting
+mg190,final rehearsal,2024-07-18,https://stanford.zoom.us/j/9182736450,2:00 PM BST / 6:30 PM IST / 6:00 AM PDT,Meeting
+mg191,rehearsal for conference presentation,18 July,Zoom,2:00 PM BST / 6:30 PM IST / 6:00 AM PDT,Meeting
+mg192,rehearsal,18,,,Meeting
+mg193,,,,,Meeting
+mg194,,,,,Meeting
+mg195,pre-rehearsal transitions check,17 July,,4:30 PM IST / 8:00 AM PDT / 12:00 PM BST,Meeting
+mg196,,,,,Meeting
+mg197,ACL 2022 conference session presentation,2020-07-25,,,Meeting
+mg198,ACL 2022 presentation,2022-07-25,Zoom (backup host and local recording logistics mentioned),,Meeting
+mg199,scheduled ACL session and presentation technical checks,2022-07-25,Zoom room (session chair's Zoom room),1:00 PM BST / 5:30 PM IST / 5:00 AM PDT,Meeting
+mg200,ACL 2022 presentation session backup Zoom room,,https://stanford.zoom.us/j/7351826490,,Meeting
+mg201,ACL 2022 Session presentation and final checks,25 July,Zoom (primary and backup links),1:00 PM BST / 5:30 PM IST / 5:00 AM PDT,Meeting
+mg202,,,,,Meeting
+mg203,,,,,Meeting
+mg204,30-minute Zoom catch-up debrief and planning session,2024-07-30,,4:00 PM IST / 11:30 AM BST / 3:30 AM PDT,Meeting
+mg205,debrief agenda to discuss substantive feedback from ACL and pathway for a full journal article,2024-07-30,,4:00 PM IST,Meeting
+mg206,"discuss feedback from ACL session and plan journal-length manuscript, including agenda and next steps",2024-07-30,,4:00 PM IST,Meeting
+mg207,debrief and planning session; comparative discussion of journal targeting; outline strategies for integrating latest developments in OCR post-processing,"Tuesday, 30 July",,4:00 PM IST,Meeting
+mg208,"Debrief and follow-up meeting: review attendee and chair feedback, decide on target journal (JOCCH vs. JDoc), expand conference paper for journal article, plan timeline and writing assignments including OCR post-processing updates, and address other contributed points.","Tuesday, 30 July",https://stanford.zoom.us/j/9854673208?pwd=ZDh4aFpNcUpRS2JZdmtSdXdlRzByUT09,4:00 PM IST,Meeting
+mg209,,,,,Meeting
+mg210,brief sync to check progress and coordinate on integration before the first complete draft,,,,Meeting
+mg211,review all materials and finalize integration plans,mid-next week,,20-30 min check-in,Meeting
+mg212,"discuss case study contributions, comparative and cross-lingual protocol mappings, and workflow sections",15 August,https://stanford.zoom.us/j/91475638219?pwd=MnFQa2tkYVpOa2FhZHM3QWlmVEhaQT09,2:30pm BST / 7pm IST / 6:30am PDT,Meeting
+mg213,"today’s check-in; preliminary agenda for manuscript timeline, workflow diagram, case study vignettes, comparative protocol table, and next steps",,,"7pm IST (2:30pm BST, 6:30am PDT)",Meeting
+mg214,"Zoom call to discuss manuscript timeline, workflow diagram, case study vignettes, comparative protocol table, and resource transparency & data hosting",2020-02-17,,,Meeting
+mg215,last-minute objections or changes via email thread,tomorrow,,10:00 BST / 14:30 IST,Meeting
+mg216,brief discussion; synchronizing the core message and impact highlights; aligning timeline with expected journal communications; confirming embargo status on Zenodo and GitHub resources,"Thursday, 12 September",https://meet.google.com/abc-wxyz-123,15:30 IST,Meeting
+mg217,,,,,Meeting
+mg218,operational and outreach priorities while JOCCH submission proceeds through review,2020-03-13,Google Meet,15:30–16:05 IST / 11:00–11:35 BST,Meeting
+mg219,,,,,Meeting
+mg220,internal call,26 September,,,Meeting
+mg221,internal call for synthesis review and planning for external dissemination,2020-09-26,,,Meeting
+mg222,"Approval of final outreach materials, procedures for monitoring embargo compliance and managing media queries, planning follow-up communications pending reviewer decision on SUB-JOCCH-2022-0362",26 September,Google Meet (to be circulated),15:30 IST / 11:00 BST,Meeting
+mg223,"Final institutional clearance, embargo monitoring and media query protocols, and next steps for initial reviewer feedback on SUB-JOCCH-2022-0362","Thursday, 26 September",https://meet.google.com/fyk-zmkt-pvq,15:30 IST / 11:00 BST,Meeting
+mg224,"internal call to discuss press engagement, embargo monitoring, and status of JOCCH submission SUB-JOCCH-2022-0362",2020-03-25,,15:30–16:05 IST / 11:00–11:35 BST,Meeting
+mg225,progress review call; review communications or preliminary reviewer questions from JOCCH; assess press office readiness and embargo log; discuss contingency language for outreach statements; assign handover protocols,week of 14 October,same Google Meet link circulated previously,15:00-17:00 IST (10:30-12:30 BST / 02:30-04:30 PDT),Meeting
+mg226,forthcoming progress review and agenda including future joint presentations,2022-10-16,,11:00 BST,Meeting
+mg227,forthcoming progress review (availability window),2022-10-15,,10:30–12:30 BST,Meeting
+mg228,"press office preparations, embargo monitoring log, possible joint presentations for JCDL 2022, editorial communications from JOCCH",2025-10-16,,15:30 IST,Meeting
+mg229,next review call,2022-10-16,,15:30 IST / 11:00 BST / 03:00 PDT,Meeting
+mg230,"progress review coordination call with status update on JOCCH submission, press/outreach strategies, embargo monitoring log, prospects for JCDL 2022 submission or presentation, and JOCCH reviewer feedback / institutional press office coordination",2022-10-16,https://meet.google.com/bmo-vpsz-wqk,15:30 IST / 11:00 BST / 03:00 PDT,Meeting
+mg231,progress review,16 October,Google Meet,,Meeting
+mg232,progress review; JOCCH submission status; press/outreach coordination; embargo monitoring log; prospects for joint JCDL 2022 submission; other business,2020-04-11,Google Meet,15:30–16:25 IST,Meeting
+mg233,focused virtual meeting to facilitate collaboration; review early feedback; outline FAQ annex; identify additional scenario requirements,15 November,,15:00 IST / 09:30 BST / 01:30 PST,Meeting
+mg234,refinements to our press protocol and FAQ annex,2024-11-15,,15:00 IST,Meeting
+mg235,proposed consortium meeting to review FAQ annex materials,2025-11-15,,15:00 IST / 09:30 BST / 01:30 PST,Meeting
+mg236,alternative time for consortium meeting to review FAQ annex materials,2025-11-15,,15:30 IST,Meeting
+mg237,synthesizing the best cross-institutional practices and harmonizing wording for key FAQ scenarios,15 November,,15:30 IST / 10:00 BST / 02:00 PST,Meeting
+mg238,FAQ annex workshop; Brief overview of institutional FAQ workflows; Walkthrough and synthesis of draft entries; Agreement on consolidated structure and open items for the annex; Next steps for formatting and integration into the Unified Press Query Protocol by end-November,15 November,,15:30 IST / 10:00 BST / 02:00 PST,Meeting
+mg239,FAQ annex working session,2024-11-15,https://meet.google.com/yfa-jknm-wpt,15:30 IST / 10:00 BST / 02:00 PST,Meeting
+mg240,"synthesizing our ideas; consolidating a clear, consortium-appropriate default policy for metadata sharing; discuss how to version the FAQ document going forward",15 November,,,Meeting
+mg241,final 30-minute check-in to approve and submit the FAQ annex within November target,2022-11-25/26,,30-minute (time slots to be decided),Meeting
+mg242,final check-in,2024-11-25/2024-11-26,Google Meet (to be circulated),14:00–16:00 GMT,Meeting
+mg243,check-in to streamline open items including pending confirmation of RTI contacts and legal sign-off from each institution,2022-11-25,,14:30 GMT,Meeting
+mg244,,,,,Meeting
+mg245,final check-in and approve the annex for consortium submission,2022-11-25,,14:30 GMT,Meeting
+mg246,final check-in; Final Language Review; Institutional sign-offs; Submission Package Readiness; Submission Logistics; Press Protocol Integration; Any Other Business,,https://meet.google.com/faq-jcdl-checkin,14:30 GMT,Meeting
+mg247,JCDL 2022 FAQ Annex Final Check-in,2020-05-15,,14:30–15:20 GMT,Meeting
+mg248,,,,,Meeting
+mg249,adjudicate and harmonize changes to press release,,,20-minute slot,Meeting
+mg250,harmonize any residual details and fix a synchronized release date,,,,Meeting
+mg251,"finalize the announcement date, ensuring seamless coordination across international time zones and media teams",tomorrow,https://doodle.com/meet/JCDL2022-PressRelease-Coordination,,Meeting
+mg252,"final synchronization call to confirm announcement timing, embargo logistics, and institutional points of contact",tomorrow,,,Meeting
+mg253,"Final call before JCDL 2022 media launch; confirm coordinated announcement date/time, review embargo requirements, assign responsibilities for notifications and circulation, discuss backup protocols.",2020-08-16,https://stanford.zoom.us/j/82334712984,16:00 CET / 20:30 IST / 08:00 PT,Meeting
+mg254,final coordination call; coordinated announcement schedule; embargo and point persons; all-clear communications; backup protocol,2020-08-16,,,Meeting
+mg255,"program, media requests, or related conference communications coordination",,,,Meeting
+mg256,,,,,Meeting
+mg257,"45-minute strategy call focused on content/preparation for possible conference live session, outreach priorities, and task distribution ahead of the JCDL mainstage; brief review of media tracking results",2025-03-31,Zoom (to be set up),morning or afternoon GMT,Meeting
+mg258,,,,,Meeting
+mg259,strategy call for the JCDL 2022 live project spotlight; content focus for the live project spotlight; supplementary outreach; division of speaking and moderation roles; review of newsletter media analytics and press release timing; coordination on upcoming deadlines for JCDL mainstage contributions and associated communications,"Monday, 31 March",,11:30 GMT,Meeting
+mg260,JCDL live project spotlight strategy meeting,,https://iacs-in.zoom.us/j/82839145230?pwd=YXB2TkNybXZLYnQ0Rms5QkVyM2tNdz09,11:30 GMT,Meeting
+mg261,Zoom call and live spotlight session preparation,,,,Meeting
+mg262,"Zoom run-through rehearsal to practice speaker transitions, gauge session timing, and troubleshoot technical aspects with slides or internet connectivity",2022-04-07/2022-04-10,Zoom (link TBD),30–40 minute window,Meeting
+mg263,Zoom run-through rehearsal,2022-04-08,Zoom (link not specified),10:00–12:00 GMT,Meeting
+mg264,"rehearsal session to address flows, transitions, and last-minute adjustments",2022-04-08,,10:00–12:00 GMT,Meeting
+mg265,internal rehearsal for JCDL session; dry run of spotlight presentation,2022-04-08,,10:00–12:00 GMT,Meeting
+mg266,JCDL 2022 Project Spotlight – Internal Dry Run,2022-09-06,https://ox-ac-zoom.us/j/95827416200?pwd=QkNlc0tYWjB5b3YwMmdGZ1JibDI0UT09,10:00—10:45 GMT,Meeting
+mg267,short coordination call to streamline preparations for JCDL 2022 spotlight session,2022-04-15/2022-04-16,,,Meeting
+mg268,coordination call for session logistics and technical requirements,2025-04-15/2025-04-16,,"11:00–13:00 IST (06:30–08:30 BST, 22:30–00:30 PDT the previous day)",Meeting
+mg269,schedule team meeting to coordinate session summary and submission,15 April,Google Meet (to be circulated),11:30 IST,Meeting
+mg270,coordination call to review and finalize session summary and speaker bios; discuss backup procedures for presentation delivery and asset sharing; confirm outreach to JCDL organizers; synchronize on next steps once formal acceptance arrives,15 April,https://meet.google.com/qzi-nrdf-kow,11:30 IST / 07:00 BST / 23:00 PDT,Meeting
+mg271,coordination call to collectively review the session summary and asset checklist,,,11:30 IST,Meeting
+mg272,plan JCDL attendance and related outreach activities,early June,,,Meeting
+mg273,all-hands sync,2022-06-09/2022-06-13,,GMT afternoons (IST evenings/PST mornings),Meeting
+mg274,tentative meeting pending notification,2020-06-10 to 2020-06-12,,PST mornings,Meeting
+mg275,team call to discuss progress after JCDL notification,2025-06-10/2025-06-13,,IST evenings,Meeting
+mg276,brief check-in to ensure alignment and address process bottlenecks,week of 6–9 May,,,Meeting
+mg277,,,,,Meeting
+mg278,brief team check-in,2022-05-07,Google Meet (invite to be circulated),12:00 noon BST / 4:30pm IST / 7:00am PST,Meeting
+mg279,"check-in meeting to discuss blog post, error analysis research note, workshop planning, resources, and JCDL contingency planning",2022-05-01,,,Meeting
+mg280,"event with live demonstration, interaction, participant-driven activities, breakout sessions, lightning talks, networking, and ethical/data responsibility segment",,,,Meeting
+mg281,workshop/tutorial session (tentative time slot),,,4:00pm BST / 8:30pm IST / 8:00am PDT,Meeting
+mg282,internal run-through to test live captioning and screen sharing on Zoom,2026-05-19,,,Meeting
+mg283,,,,,Meeting
+mg284,internal run-through to test survey distribution and breakout flows,19 May,,,Meeting
+mg285,internal demo run-through and review initial outreach impacts and logistical concerns,2022-05-19,,,Meeting
+mg286,"internal pre-event demo run-through; final rehearsal to ensure seamless transitions, technical reliability, and clarity of roles; overview of session flow; live demonstration of OCR error correction and NER modules; breakout room scenario test; accessibility features trial run; survey distribution/collection review; open floor for questions and troubleshooting",2020-10-11,https://stanford.zoom.us/j/95462137955?pwd=demo2022,13:00 BST / 17:30 IST / 5:00 PDT,Meeting
+mg287,brief check-in call to finalize outstanding items and rehearse the contingency communications protocol together,24 May,,16:00 BST / 20:30 IST / 8:00 PDT,Meeting
+mg288,"check-in call to collectively review remaining logistics, contingency communication protocol, and preliminary participant inquiry log",2026-05-24,,16:00 BST / 20:30 IST / 8:00 PDT,Meeting
+mg289,today’s check-in call; live workshop/tutorial session preparation; internal rehearsal for the first breakout scenario,,,,Meeting
+mg290,official pre-event communication to all registered participants,2022-05-26,main Zoom link; backup Google Meet,09:00 BST / 13:30 IST / 1:00 PDT,Meeting
+mg291,,,,,Meeting
+mg292,finalize Q&A strategy and confirm moderation roles,2022-05-28,,18:00 BST / 22:30 IST / 10:00 PDT,Meeting
+mg293,"virtual huddle to group participant queries for live Q&A, finalize escalation protocol, and review overnight messages",2025-05-28,,18:00 BST / 22:30 IST / 10:00 PDT,Meeting
+mg294,"huddle to discuss participant messages, accessibility, and citation protocols",today,,18:00 BST / 22:30 IST / 10:00 PDT,Meeting
+mg295,final pre-workshop huddle and coordination call; moderation responsibilities and accessibility protocols for the upcoming event,2022-05-29,,,Meeting
+mg296,"brief debrief session to review live session analytics, collect initial feedback, and identify next steps for documentation and publication",2022-06-01,https://iacs-in.zoom.us/j/89374269201?pwd=debrief2022,17:00 BST / 21:30 IST / 09:00 PDT,Meeting
+mg297,debrief session to review workshop analytics and participant feedback,1 June,Zoom (provided link),17:00 BST / 21:30 IST / 09:00 PDT,Meeting
+mg298,,,,,Meeting
+mg299,check-in to make an informed decision regarding dual submission,2022-06-10,,afternoon (BST/IST),Meeting
+mg300,review preliminary deadline and formatting comparison tables,2022-06-10,,,Meeting
+mg301,sync call to discuss report and submission planning,2022-06-10,,evening IST / afternoon BST / late morning PDT,Meeting
+mg302,"sync call to discuss agenda, literature review, and pros and cons of JCDL and JOCCH",2022-06-10,,"after 20:00 IST (15:30 BST, 07:30 PDT)",Meeting
+mg303,10 June sync call,2024-06-10,,20:00 IST / 15:30 BST / 07:30 PDT,Meeting
+mg304,"sync call to discuss drafting progress, challenges, lessons learned & recommendations, submission venue, internal timeline, final revisions, and logistical concerns",2025-06-10,,20:00 IST / 15:30 BST / 07:30 PDT,Meeting
+mg305,upcoming sync call,10 June,,,Meeting
+mg306,,,,,Meeting
+mg307,"sync call to review agenda, section integration, submission priorities, and finalize submission venue and internal timeline",,Zoom,20:00 IST / 15:30 BST / 07:30 PDT,Meeting
+mg308,short internal Zoom walkthrough; Rapid overview of final draft and supplementary files; Confirmation of author order and compliance statements; Checklist for JOCCH online submission portal; Q&A or concerns prior to upload,2025-06-24,https://oxford.zoom.us/j/92837462743?pwd=Q2pnV3dVZ2h0N0FQQUJHSkhxeTBzQT09,17:00 IST,Meeting
+mg309,Zoom walkthrough to review author order and ensure compliance checklist completion,24 June,,17:00 IST,Meeting
+mg310,short coordination call,next Thursday,,"16:00 IST (09:30 BST, 01:30 PDT)",Meeting
+mg311,,,,,Meeting
+mg312,1. Review and refine the draft reviewer response points in the “JOCCH2022_Reviewer_Response_Preparation” document. 2. Distribute action items around supplementary table references and artifact example preparation. 3. Discuss how best to articulate metric generalizability and modular codebase components in our responses. 4. Any additional items or concerns raised by the team ahead of the call.,2020-12-01,https://meet.google.com/zrm-jkpi-wgv,"16:00–16:45 IST (09:30–10:15 BST, 01:30–02:15 PDT)",Meeting
+mg313,reviewer preparation call,2022-07-20,Google Meet,16:00–16:45 IST,Meeting
+mg314,discussion for a potential grant proposal and possibly conference outreach,week of August 12th,,,Meeting
+mg315,collaborative session focused first on grant proposal ideation and then on outlining the draft for a potential conference abstract,week of August 12,,,Meeting
+mg316,grant proposal ideation and conference abstract drafting,2025-08-13/2025-08-15,,IST afternoons/evenings preferred,Meeting
+mg317,collaborative session,2025-08-13,,afternoon IST / late morning BST / early morning PDT,Meeting
+mg318,group meeting to review bibliography and funding call sections,2025-08-13/15,,,Meeting
+mg319,collaborative session and brainstorming discussion,2022-08-13/2022-08-15,https://doodle.com/meeting/participate/Team-Session-Aug2022,,Meeting
+mg320,"group discussion of EMNLP papers, dataset paper, EU funding, and JDoc special issue / JOCCH outcome",2025-08-13,,afternoon IST,Meeting
+mg321,first half: grant proposal scoping; second half: finalizing core messages for potential conference abstract and parallel journal submission discussion,"Wednesday, August 13th",,3:30pm IST / 11:00am BST / 3:00am PDT,Meeting
+mg322,Grant proposal discussion; conference abstract & parallel submission strategy; methodological synergies & open questions,"Wednesday, August 13th",https://us02web.zoom.us/j/88271927388?pwd=collabsession,3:30pm IST / 11:00am BST / 3:00am PDT,Meeting
+mg323,Grant proposal discussion; conference & journal submission strategy; methodological synergies & open questions; action items & timeline,2020-12-24,,3:30pm IST / 11:00am BST / 3:00am PDT,Meeting
+mg324,brief (10–15 min) group check-in targeting any cross-section integration concerns,August 19th,Google Meet,,Meeting
+mg325,short Google Meet check-in,August 19,Google Meet (link not specified),3:00pm–5:00pm IST,Meeting
+mg326,final screen-share review before submission,early December,Zoom,,Meeting
+mg327,Zoom meeting to discuss paper revisions,between 2–6 December,,afternoons,Meeting
+mg328,proposed Zoom meeting to coordinate final phase and camera-ready revision,2023-12-04/2023-12-05,,after 14:00 GMT,Meeting
+mg329,live review of manuscript revisions,4 December / 5 December,https://doodle.com/meeting/participate/id/bkgd-Y9xn,after 14:00 GMT,Meeting
+mg330,live Zoom review meeting,2025-12-04,,14:30 GMT,Meeting
+mg331,submission checklist and portal walkthrough,4 December,,,Meeting
+mg332,upcoming Zoom review; submission checklist and portal demo; run through the compliance metadata fields as a team,2023-12-04,Zoom,,Meeting
+mg333,comprehensive submission review,4 December,,,Meeting
+mg334,"final live walkthrough to address compliance metadata, author contribution declarations, and dataset licensing",2023-12-04,Zoom session,,Meeting
+mg335,wrap up the submission phase and coordinate on subsequent responsibilities,2023-12-04,,14:30 GMT,Meeting
+mg336,JCDL 2023 submission review and coordination meeting; compliance checklist discussion; preprint archiving options,4 December,https://ox-ac-uk.zoom.us/j/97824613570?pwd=abcd1234EfG,14:30 GMT,Meeting
+mg337,"Zoom meeting to review JCDL submission package, compliance, contingency plan, dissemination strategy, and future research roles",,,,Meeting
+mg338,"synchronize on progress, share feedback, and confirm all revision points have been comprehensively addressed",week of 4 March,,,Meeting
+mg339,team meeting to coordinate revisions and scheduling via Doodle poll,week of 2023-03-04,,,Meeting
+mg340,forthcoming internal review meeting,"2026-03-04/2026-03-05, after 2026-03-07",,,Meeting
+mg341,focused internal review meeting,week of 4 March,https://doodle.com/meeting/participate/id/abcd1234,,Meeting
+mg342,March meeting coordinated via Doodle poll,2023-03,,,Meeting
+mg343,internal review meeting,,,,Meeting
+mg344,"internal review meeting to finalize point-by-point response sheet, final validation, compliance cross-checks, and submission logistics",2021-06-18,https://zoom.us/j/9543217890?pwd=Z2JkYXpENllnTjU3Q0VwRjBxVzF1dz09,16:30 IST / 11:00 GMT / 03:00 PST,Meeting
+mg345,,,,,Meeting
+mg346,kick off the preparation and agree on the timeline for draft review,2023-04-01/2023-04-05,,,Meeting
+mg347,virtual coordination meeting,2023-04-03,Zoom (invite to be created),20:30–22:00 IST (16:00–17:30 BST / 08:00–09:30 PDT),Meeting
+mg348,virtual team discussion to kick-start session planning,2026-04-03,,20:30–22:00 IST (16:00–17:30 BST / 08:00–09:30 PDT),Meeting
+mg349,"Coordination meeting: allocation of presentation roles, status updates on draft slides and supplementary materials, brainstorming Q&A topics, planning contingencies for session formats, and next steps for synchronizing slide design and rehearsals.",2021-07-11,https://stanford.zoom.us/j/94870123456?pwd=ZXhBTXp4UWdoWmZ0c2hNdz09,20:30–22:00 IST / 16:00–17:30 BST / 08:00–09:30 PDT,Meeting
+mg350,Zoom coordination meeting for JCDL 2023 presentation and session assignment,2021-07-11,,,Meeting
+mg351,rehearsal slot for JCDL 2023 presentation,2023-04-10,,,Meeting
+mg352,JCDL 2023 rehearsal,,,,Meeting
+mg353,"rehearsal dedicated to opening and closing remarks, as well as handling the audience Q&A",2023-04-18,,,Meeting
+mg354,upcoming rehearsal for JCDL 2023 session,20 April,,6:30 PM IST,Meeting
+mg355,"rehearsal with opening statements, session transitions, Q&A handling, closing segment, and contingency scenarios",2021-07-26,https://zoom.us/j/96837465123?pwd=LmHFhr64oyREheZV,6:30 PM IST | 2:00 PM BST | 6:00 AM California time,Meeting
+mg356,rehearsal session for the JCDL 2023 session,,Zoom (invitation sent by Sunita),6:30 PM IST,Meeting
+mg357,rehearsal for the upcoming JCDL 2023 presentation,,,,Meeting
+mg358,JCDL 2023 presentation technical preparations,,,,Meeting
+mg359,live JCDL 2023 presentation session,tomorrow,,,Meeting
+mg360,"review audience feedback, discuss possible follow-up opportunities, and finalize the next journal submission plan",2023-04-28,,5:00 PM IST / 12:30 PM BST / 4:30 AM PDT,Meeting
+mg361,"Debrief call to synthesize audience feedback, reflect on technical aspects of the presentation, explore collaboration opportunities, decide next publication steps, and confirm action items and timelines",2023-04-28,,5:00 PM IST / 12:30 PM BST / 4:30 AM PDT,Meeting
+mg362,debrief call with agenda and action items as per Ramesh’s outline; review compiled audience questions and comments; 60-minute focused session,"Friday, 28 April",https://zoom.us/j/94715312680?pwd=JCDLdebrief2023,5:00 PM IST / 12:30 PM BST / 4:30 AM PDT,Meeting
+mg363,debrief and discussion of suggested priorities and possible actionables,today,,,Meeting
+mg364,,,,,Meeting
+mg365,jointly outline the interface between semantic metrics and error taxonomy,2025-05-06,,,Meeting
+mg366,Zoom sync to pin down cross-over points between error analysis and semantic metrics and ensure cohesive evaluation framework,2026-05-06,,15:00 BST / 07:00 PDT,Meeting
+mg367,today's sync / Zoom session / syncronization call,,https://stanford.zoom.us/j/98123746715?pwd=QkNsd3FhS2FZbVh6Uk9GdWx0VktIQT09,15:00 BST/07:00 PDT,Meeting
+mg368,,,,,Meeting
+mg369,integration Zoom/Google Meet for final consolidation,2026-05-16,,14:30 IST,Meeting
+mg370,,,,,Meeting
+mg371,"consolidation meeting: rapid review of all peer-incorporated manuscript and appendix edits; resolution of flagged queries (e.g., entity overlap, dataset attributions); final ACM JOCCH compliance checklist walkthrough (including data/code statements); assignment of roles for the actual submission and metadata entry",16 May,,14:30 IST,Meeting
+mg372,consolidation meeting and to summarize our final integration checklist in preparation for the ACM JOCCH submission,16 May,https://meet.google.com/nlp-histdata-final,14:30 IST / 10:00 CEST / 01:00 PDT,Meeting
+mg373,review and refine the structure before beginning the documentation in earnest,,,,Meeting
+mg374,internal review meeting once Sunita circulates the draft outline,week of 18 July,,,Meeting
+mg375,brief internal review meeting to discuss Project Retrospective & Workflow Reference draft outline,2025-07-18/2025-07-21,Zoom (link to be circulated),45-minute (time TBD),Meeting
+mg376,review meeting,2025-07-19/20,,14:00–18:00 BST (18:30–22:30 IST / 06:00–10:00 PDT),Meeting
+mg377,upcoming review meeting,2025-07-19/2025-07-20,,06:00–09:30 PDT,Meeting
+mg378,"Review meeting for Project Retrospective & Workflow Reference; overview of draft outline and feedback, review of workflow diagram, section-by-section review, discussion of lessons learned, and next steps",2025-07-19,,18:30 IST / 14:00 BST / 06:00 PDT,Meeting
+mg379,Project Retrospective & Workflow Reference review; summary of the draft outline; visual workflow draft walkthrough; lesson highlights; oral summaries and actionable takeaways,2023-07-19,https://zoom.us/j/94763124839?pwd=bXRwQ1ZxbWw2WFZ0Y08wYVVrZzQ1QT09,18:30 IST / 14:00 BST / 06:00 PDT,Meeting
+mg380,,,,,Meeting
+mg381,,,,,Meeting
+mg382,discuss feedback and progress on Project Retrospective & Workflow Reference,2025-08-01,,,Meeting
+mg383,,,,,Meeting
+mg384,final review meeting (timing to be reconfirmed),1 August,,,Meeting
+mg385,finalize the documentation,2022-08-01,,,Meeting
+mg386,"final sign-off, bibliography checks, and task allocation for remaining appendices or supplementary materials",2023-08-01,,,Meeting
+mg387,,,,,Meeting
+mg388,As outlined by Ramesh (see your previous email for detailed breakdown),2021-10-22,https://stanford.zoom.us/j/91456783412?pwd=NLPFinalReviewAug1,16:00 IST / 11:30 BST / 03:30 PDT,Meeting
+mg389,clarify division of labor,next week,Zoom (link not specified),,Meeting
+mg390,joint call,October 10 or 11,Zoom (link to be provided),IST late afternoon / UK morning / US early AM,Meeting
+mg391,"discuss reviewers’ recommendations, dataset licensing, and priority issues",2024-10-10,,11:00 UK / 15:30 IST / 03:00 US Pacific,Meeting
+mg392,joint call to coordinate our JOCCH revision efforts,10 October,https://zoom.us/j/9876543210?pwd=JOCCHTeam2023,11:00 UK / 15:30 IST / 03:00 US Pacific,Meeting
+mg393,revision strategy for the JOCCH manuscript,2024-10-10,Zoom,,Meeting
+mg394,next check-in (as needed),2024-10-27,,,Meeting
+mg395,finalize the division of topics and clarify any institutional segments,early November,,,Meeting
+mg396,"brief (30–40 min) call to facilitate efficient topic allocation and clarify expectations for each section; agenda includes finalizing section leads, incorporating feedback on appendices and supporting documentation, agreeing on a target completion date aligning with anticipated editorial feedback window from JOCCH, and updating on any new points from the submission portal",first week of November,https://doodle.com/meeting/participate/id/1234-reflection-memo,,Meeting
+mg397,,,,,Meeting
+mg398,"planning session call with agenda items including section lead assignment, appendices discussion, data-sharing recommendations, JOCCH editorial feedback, and drafting targets",,,,Meeting
+mg399,"synchronous call to discuss reflection memo outline, section leads, responsibilities, and compliance/data access protocols",2023-11-06,https://stanford.zoom.us/j/98567354123?pwd=RefMemo2023,14:00 IST,Meeting
+mg400,progress on the draft and final team review,2024-11-21,,same time slot,Meeting
+mg401,allocate responsibilities for each major revision point and decide on a realistic timeline for draft updates,2022-03-03/2022-03-05,Zoom (link not specified),,Meeting
+mg402,discuss ACL feedback and plan revision responsibilities,2022-03-03/2022-03-04,Zoom (link not specified),14:00–18:00 GMT,Meeting
+mg403,"Zoom meeting to discuss automated annotation pipeline revisions, refine analysis on compliance and harmonization strategies, correct referencing inconsistencies, delineate tasks and deadlines",2022-03-04,,14:00–17:00 GMT,Meeting
+mg404,revision planning Zoom meeting,2022-03-03,,15:00 GMT,Meeting
+mg405,ACL revision planning session,2022-03-03,https://stanford.zoom.us/j/89521467258?pwd=Zk1hLzJvRUdBdDJURlAyR2ZwWXlGZz09,15:00 GMT,Meeting
+mg406,focused and constructive meeting regarding our ACL 2023 revision,2022-03-03,Zoom (Stanford-hosted),15:00–16:05 GMT,Meeting
+mg407,short organizational video call to align on divisions of labor,2024-03-01/2024-03-02,,,Meeting
+mg408,coordination video call to review progress and resolve questions about camera-ready guidelines,2024-03-01,,after 14:00 GMT,Meeting
+mg409,organizational call to address technical and editorial contingencies before the 9 March internal completion goal,2026-03-01,,14:30 GMT,Meeting
+mg410,organizational call to finalize camera-ready preparations and plan for smooth submission,2025-03-01,,14:30 GMT,Meeting
+mg411,organizational call and discussion of ACL camera-ready instructions,1 March,,14:30 GMT,Meeting
+mg412,"discussion of access protocols, proceedings integration, reviewer access, and final coordinated tasks",today,,14:30 GMT,Meeting
+mg413,organizational video call for final camera-ready preparations for ACL 2024,today,https://zoom.us/j/98237012654?pwd=Rmx3eHZtM2FJVU9KalRVSFpyaEhMUT09,14:30 GMT,Meeting
+mg414,brief sync call to allow Ananya time to finalize her compliance check and document any necessary edits,2026-03-06,,12:30 GMT,Meeting
+mg415,coordination call and review of compliance feedback,6 March,,12:30 GMT,Meeting
+mg416,"sync call; rapid review of any outstanding checklist items, consensus on final Overleaf edits, repository metadata validation, and last steps for submitting the camera-ready packet",2024-03-06,,12:30 GMT,Meeting
+mg417,"coordination call to finalize manuscript refinements, repository edits, and checklist sign-offs; lock in minor tweaks and review graphical abstract",,https://meet.google.com/acl-cam-ready2024,12:30 GMT,Meeting
+mg418,camera-ready coordination call; meeting minutes and action items toward internal submission deadline and final camera-ready upload for ACL2024,2022-04-24,,12:30–13:30 GMT,Meeting
+mg419,camera-ready coordination call,2026-03-06,,,Meeting
+mg420,final review and sign-off before uploading all documents to the submission portal,2024-03-25,,,Meeting
+mg421,walk through the submission packet and checklist one last time before upload,2024-03-25,,after 15:00 GMT,Meeting
+mg422,final internal review,2024-03-25,,,Meeting
+mg423,Zoom review for a quick walkthrough and final sign-off before uploading the full camera-ready package,2024-03-25,,,Meeting
+mg424,"final Zoom review to cross-check each compliance item, upload the full camera-ready package, and address any last-minute portal issues",2025-03-25,,15:30 GMT,Meeting
+mg425,"Section-by-section walkthrough of the final manuscript and supplementary files; Cross-check for formatting, references, and metadata completeness using the ACL validation script; Confirm copyright/licensing and presenter status; Final upload of the full camera-ready package to the ACL2024 portal",2024-03-25,Zoom,15:30 GMT,Meeting
+mg426,Journal extension structure & division of new writing tasks; Dataset/resource paper logistics and timeline; Outreach to the broader historical NLP community; Preliminary organization of upcoming ACL2024 presentation,2024-04-24,,16:00 GMT,Meeting
+mg427,"planning call for journal extension, resource-oriented outreach, digital resource hosting and tentative timeline",2024-04-24,,16:00 GMT,Meeting
+mg428,"planning meeting for journal extension, dataset publication venues, timelines, outreach plans, and targeted digital humanities stakeholders",2025-04-24,,16:00 GMT,Meeting
+mg429,planning call to set preliminary timeline and distribute writing and revision tasks,2025-04-24,,,Meeting
+mg430,planning session,2024-04-24,,,Meeting
+mg431,robust discussions and another round of productive collaboration,2026-04-24,,,Meeting
+mg432,synthesizing everyone’s input ahead of our call,2025-04-24,,,Meeting
+mg433,internal meeting to discuss datasets or metadata,2024-04-24,,,Meeting
+mg434,"1. Review of written section drafts (focus on normalization guidelines, annotation protocol, licensing considerations)
+2. Finalization of dataset hosting venue and DOI allocation strategy
+3. Discussion and approval of the user study/survey (survey items, introduction, and planned dissemination channels)
+4. Assignment of writing/editorial tasks for both journal extension and resource note submission
+5. Timeline confirmation for draft revisions and tentative submission windows",2024-04-24,,,Meeting
+mg435,,,,,Meeting
+mg436,planning and internal review session,,,,Meeting
+mg437,"address any final queries, discuss manuscript assembly logistics, and resolve outstanding checklist points",2026-05-11,,16:00–17:00 IST / 11:30–12:30 BST / 03:30–04:30 PDT,Meeting
+mg438,Coordination call prior to 2 June draft deadline; walkthrough of remaining checklist items and manuscript assembly steps; discussion of final document compilation workflows and point persons; clarification of author order or contribution statement nuances; confirmation of Zenodo/embargoed data release logistics; contingencies for last-minute edits or required approvals,2024-05-11,https://ox-ac-uk.zoom.us/j/98617325481?pwd=JOCCHfinal27,16:00–17:00 IST / 11:30–12:30 BST / 03:30–04:30 PDT,Meeting
+mg439,final coordination call; wrapping up residual queries before internal draft deadline,today,Zoom,16:00–17:00 IST,Meeting
+mg440,virtual seminar for a broader audience showcasing key dataset features and annotation workflow innovations,later this autumn (October/November),,,Meeting
+mg441,"finalize authorship and distribution for the preprint, and review the virtual seminar format options for October",third week of September,,,Meeting
+mg442,virtual seminar with a practical walkthrough of data compliance/embargo pipelines and a panel Q&A focused on implementation in different institutional contexts,third week of September,,"18th–22nd, 15:00–19:00 IST (10:30–14:30 BST)",Meeting
+mg443,virtual seminar and Q&A session,2024-09-18/2024-09-22,,16:00–18:00 IST,Meeting
+mg444,primary seminar,2023-09-18/2023-09-22,Stanford Zoom,18:00–20:00 IST,Meeting
+mg445,"short preparatory call to walk through structure, key talking points, and division of tasks for both outputs",2023-09-16,,,Meeting
+mg446,,,,,Meeting
+mg447,preparatory call,,,16:00–17:00 IST,Meeting
+mg448,,,,,Meeting
+mg449,,,,,Meeting
+mg450,,,,,Meeting
+mg451,,,,,Meeting
+mg452,Stanford Zoom seminar,,https://stanford.zoom.us/meeting/register/tJ0tfuqhrTPoHd8h-pZHSyXA_NLP-HIST-2024,,Meeting
+mg453,seminar on practical compliance and data release workflows for NLP on historical collections; outreach event; panel segment; moderated Q&A; soundcheck and role confirmation,,meet.google.com/abc-hist-nlp-2024,,Meeting
+mg454,technical check and coordinate last-minute adjustments before the seminar,2024,,17:45 IST,Meeting
+mg455,brief check-in to discuss whether to target ACM JOCCH or an upcoming conference call for submission,2024-09-21,,16:00 IST,Meeting
+mg456,brief check-in today,,,16:00 IST,Meeting
+mg457,,,,,Meeting
+mg458,"brief consolidation meeting to efficiently steer manuscript to completion and agree on a final submission venue; rapid consolidation of outstanding revisions; venue decision between JOCCH journal and JCDL conference; timeline confirmation for final manuscript, figures, and supplementary appendix submission; planning for a parallel blog post or public preprint",25 September,,16:30 IST / 12:00 BST / 04:00 PDT,Meeting
+mg459,"discuss final edits, venue selection, and supplementary outputs for the manuscript",2025-09-25,,16:30 IST,Meeting
+mg460,consolidation meeting for the technical note; confirm integration of latest legal clarifications and workflow diagrams; discuss and decide between JOCCH and JCDL; establish manuscript and figures finalization schedule; strategize public communication: blog post and/or preprint planning,,https://meet.google.com/kjg-tqvp-hnm,16:30 IST / 12:00 BST / 04:00 PDT,Meeting
+mg461,backup Zoom link for consolidation meeting,,https://stanford.zoom.us/j/82412390456?pwd=Wk5sTm1HZWx0bEk1,16:30 IST / 12:00 BST / 04:00 PDT,Meeting
+mg462,"focused, productive discussion; meeting outcomes and action items",2022-10-15,,16:30 IST,Meeting
+mg463,revision sprint planning call,2023-10-31,,17:00 IST / 12:30 BST / 04:30 PDT,Meeting
+mg464,,,,,Meeting
+mg465,,,,,Meeting
+mg466,scheduled meeting to prepare for targeted discussion and confirm section updates and finalize the rebuttal outline,tomorrow,,,Meeting
+mg467,revision sprint meeting; brief review of task division and progress; finalization of expanded methodological clarity subsection; review of preliminary tables and visualizations for evaluation metrics; outline and formatting options for legal framework comparative table; consolidation of supplementary material formats and upload strategy for the JOCCH portal; draft structure for point-by-point response letter; timeline review for final draft submissions and follow-up actions,today,https://stanford.zoom.us/j/96543218765?pwd=ZXNhdTdmLzBsdG93Tk1wQWpyU3EyUT09,17:00 IST / 12:30 BST / 04:30 PDT,Meeting
+mg468,"focused 30-minute call to discuss methodology section, legal protocol matrix, comparative legal table, and transitioning legally nuanced content between main text and supplementary material",7 November,Google Meet (to be sent),16:00-18:00 IST (10:30–12:30 GMT),Meeting
+mg469,focused call to discuss integration workflow for JOCCH revision,,,16:30–17:00 IST,Meeting
+mg470,virtual planning meeting to finalize responsibility assignments and deliverable deadlines,2024-01-05,,16:00–17:00 IST,Meeting
+mg471,discuss all current findings and draft materials,this Friday,,16:00–17:00 IST,Meeting
+mg472,agenda and aligning schedules on milestones and document integration,2024-01-05,,16:00–17:00 IST,Meeting
+mg473,planning meeting; task progress updates; integration strategies; workflow/deliverables; Q&A and contingency planning,2024-01-05,https://meet.google.com/rbe-ywgv-ucm,16:00–17:00 IST,Meeting
+mg474,"Project revision progress, task updates, integration plan, formatting/workflow, contingency",2022-01-10,,16:00–17:00 IST,Meeting
+mg475,collaborative drafting session for revised Section 4.2,2026-01-15/2026-01-16,,14:00–17:00 IST,Meeting
+mg476,collaborative drafting session for Section 4.2 revision; rapid review of comparative outlines; live drafting of new Section 4.2 content; mapping of NLI-specific considerations; delegation of drafting responsibilities for compliance appendices and bibliography harmonization,16 January,https://meet.google.com/nmt-ksqj-bve,14:30 IST,Meeting
+mg477,Section 4.2 collaborative drafting session; high-level alignment of terminology and structural flow; document-level revisions; assign split tasks for compliance appendix revisions and pending bibliography entries,,provisional Google Meet link,14:30 IST,Meeting
+mg478,30-minute coordination call,2025-03-08,https://meet.google.com/nlp-jocch-revision,16:00 IST / 10:30 GMT / 2:30 PST,Meeting
+mg479,Google Meet call to review progress on revision items and align integration strategies for manuscript and response letter,2026-03-08,,2:30 PST / 16:00 IST / 10:30 GMT,Meeting
+mg480,revision coordination call; progress review; sectional discussion; response letter strategy; open issues and next steps,8 March,https://meet.google.com/nlp-jocch-revision,16:00 IST / 10:30 GMT / 2:30 PST,Meeting
+mg481,"revision coordination call; progress updates, integration challenges, response letter, open issues & next steps",2022-03-05,Google Meet,,Meeting
+mg482,quick call to finalize contentious sections or labeling,,Zoom (to be coordinated),,Meeting
+mg483,Zoom call for real-time discussion to expedite final integration,2026-03-16,,,Meeting
+mg484,address any remaining cross-sectional issues and finalize our unified response letter,17 March,https://stanford.zoom.us/j/99821342516?pwd=NLPMajorRev2025,19:30 IST,Meeting
+mg485,"pre-consolidation Zoom call; agenda includes section-by-section review, redundancy and cohesion, response letter strategy, and final steps & submission timeline",,https://stanford.zoom.us/j/99821342516?pwd=NLPMajorRev2025,19:30 IST,Meeting
+mg486,Zoom meeting to discuss JOCCH major revision submission and finalize action steps,2022-03-13,,,Meeting
+mg487,final lock-in/Ramesh’s archive,tomorrow,,09:00 IST,Meeting
+mg488,finalize the outline and make a decision on the submission venue,post-2026-04-08,Zoom (to be scheduled),,Meeting
+mg489,focused one-hour discussion to finalize the outline and next steps,2026-04-10/11,Zoom (link not specified),IST evenings or UK afternoons,Meeting
+mg490,scheduling a meeting to discuss outline bullet points and venue selection,2026-04-10/11,,"17:30 IST (13:00 BST, 05:00 PST)",Meeting
+mg491,project meeting to discuss manuscript components and venue selection,2025-04-10/11,,"17:30 IST (13:00 BST, 05:00 PST)",Meeting
+mg492,"finalization of the methods note/short-form paper outline and venue selection; Brief review of shared outline and section drafts (Google Doc); Discussion of compliance, workflow schema, and supplemental visual materials; Michael’s comparative assessment of EMNLP Demo vs. JDoc Technical Communication; Decision on target venue, next writing assignments, and identification of any data/graphics still needed; Timeline for initial draft completion and possible review checkpoints",2025-04-11,https://ox-ac-uk.zoom.us/j/95416388721?pwd=L1CzvS5m8Bg,17:30 IST,Meeting

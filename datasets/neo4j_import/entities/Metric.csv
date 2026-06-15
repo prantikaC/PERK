@@ -1,0 +1,133 @@
+:ID,metricName,:LABEL
+mt1,accuracy,Metric
+mt3,temporal consistency score,Metric
+mt5,evaluation framework,Metric
+mt8,intrinsic evaluation protocols,Metric
+mt9,extrinsic evaluation protocols,Metric
+mt10,character error rate,Metric
+mt11,word error rate,Metric
+mt12,token-level accuracy,Metric
+mt13,F1 score,Metric
+mt14,adjusted historical vocabulary recall,Metric
+mt20,explanation consistency scores,Metric
+mt21,faithfulness indices,Metric
+mt22,stability of explanations,Metric
+mt23,quality of explanations,Metric
+mt25,historian usability,Metric
+mt26,actionability,Metric
+mt27,trustworthiness,Metric
+mt28,stretch evaluation goals,Metric
+mt30,usability metrics,Metric
+mt31,faithfulness metrics,Metric
+mt33,consistency,Metric
+mt34,faithfulness,Metric
+mt37,"Likert-scale (1-5) on clarity, faithfulness, and trustworthiness",Metric
+mt38,willingness to use scores,Metric
+mt40,clarity ratings,Metric
+mt41,Faithfulness/clarity heatmaps,Metric
+mt43,Likert-scale responses,Metric
+mt44,trust in model explanations,Metric
+mt45,clarity,Metric
+mt49,artifact severity,Metric
+mt52,cross-lingual results,Metric
+mt55,per-class F1 scores,Metric
+mt56,"class distribution (substitution, insertion, deletion, segmentation errors)",Metric
+mt57,annotator-wise confusion matrices,Metric
+mt60,Krippendorff’s alpha,Metric
+mt63,FAIR data practice,Metric
+mt64,ACM reproducibility principles,Metric
+mt65,edit distance,Metric
+mt66,Attribution standards,Metric
+mt67,precision in named entity recognition,Metric
+mt68,recall across temporal strata,Metric
+mt70,hybrid metrics,Metric
+mt71,Statistically significant results,Metric
+mt72,confusion matrices,Metric
+mt78,category-specific error rates,Metric
+mt82,macro-F1,Metric
+mt85,Boundary Error,Metric
+mt87,performance metrics,Metric
+mt89,environment-specific edge cases,Metric
+mt90,quantitative evaluation metrics,Metric
+mt91,qualitative evaluation metrics,Metric
+mt94,qualitative expert assessments,Metric
+mt95,evaluative transparency,Metric
+mt96,historical representativeness,Metric
+mt100,metric computations,Metric
+mt101,provenance-aware metrics,Metric
+mt103,quantitative metrics,Metric
+mt104,traditional metrics,Metric
+mt105,metric comparisons,Metric
+mt106,corpus demographic statistics,Metric
+mt107,metrics for bias quantification,Metric
+mt111,media impact metrics,Metric
+mt112,newsletter traffic,Metric
+mt113,regional uptake,Metric
+mt114,JCDL criteria,Metric
+mt115,WCAG 2.1 criteria,Metric
+mt119,quantitative (Likert-scale),Metric
+mt120,qualitative sections,Metric
+mt121,registration numbers,Metric
+mt122,participant queries,Metric
+mt124,evaluation metrics for historical corpus adaptations,Metric
+mt125,semantic drift benchmarks,Metric
+mt126,EMNLP evaluation metrics,Metric
+mt127,evaluation tools,Metric
+mt128,temporal word embedding shift,Metric
+mt129,NLP downstream performance,Metric
+mt132,Evaluation/Metrics,Metric
+mt134,EMNLP 2022 benchmark,Metric
+mt140,evaluation metric transferability,Metric
+mt145,evaluation of metrics for historical data,Metric
+mt146,semantic similarity metrics,Metric
+mt147,precision-recall tradeoff,Metric
+mt151,subset agreement,Metric
+mt153,error analysis,Metric
+mt154,interpretability measures,Metric
+mt155,error distributions,Metric
+mt157,preliminary figures,Metric
+mt158,legend/terminology harmonization,Metric
+mt159,section integration,Metric
+mt160,balance between methodological detail and practical guidance,Metric
+mt161,professional momentum,Metric
+mt162,annotated sample sizes,Metric
+mt163,adjudication coverage,Metric
+mt165,CC BY-NC 4.0 for corpus,Metric
+mt166,MIT for code,Metric
+mt167,open-access policy,Metric
+mt168,DOI,Metric
+mt170,summary statistics,Metric
+mt171,ACL 2023 BibTeX style,Metric
+mt173,dataset DOIs,Metric
+mt174,JDoc sources,Metric
+mt175,ACM JOCCH sources,Metric
+mt176,DOI accessibility,Metric
+mt178,benchmark results,Metric
+mt179,traceability,Metric
+mt180,transparency,Metric
+mt181,accessibility,Metric
+mt182,F1 score variance,Metric
+mt184,legal protocol matrix,Metric
+mt186,color-coded matrix,Metric
+mt187,flagged consent conditions,Metric
+mt188,flagged clauses on “heritage dataset export” (GDPR/UK section D3b),Metric
+mt189,data points highlighted with an asterisk,Metric
+mt190,red-outline legend in Michael’s figures,Metric
+mt192,legal protocol matrix and drafted footnotes,Metric
+mt193,main integration draft,Metric
+mt194,narrative summary in the shared appendix folder,Metric
+mt195,technical compliance commentary,Metric
+mt196,sections 37B and 45C,Metric
+mt197,extended legal citations and context,Metric
+mt198,appendix formatting,Metric
+mt199,annotation metadata to clarify consent-specific logic for the figure captions,Metric
+mt200,regional sensitivities and researcher obligations,Metric
+mt201,third-party archival material and anonymization protocols,Metric
+mt202,word count,Metric
+mt203,regulatory nuance,Metric
+mt204,reviewer transparency,Metric
+mt205,pace of work,Metric
+mt206,"alignment of supplementary, methodological, and visual elements",Metric
+mt207,strength of revision,Metric
+mt208,regulatory cross-referencing,Metric
+mt210,cross-border annotation metrics,Metric

@@ -1,0 +1,1007 @@
+:ID,mailDate,mailNum,subject,:LABEL
+e1,2019-04-01,YT6A21,Proposal for Research on Temporal Sentiment Analysis in Historical Archives,Email
+e2,2019-04-01,YT6A22,Re: Proposal for Research on Temporal Sentiment Analysis in Historical Archives,Email
+e3,2019-04-02,YT6A23,Re: Proposal for Collaborative Research on Temporal Sentiment Analysis in Historical Archives,Email
+e4,2019-04-02,YT6A24,Re: Proposal for Collaborative Research on Temporal Sentiment Analysis in Historical Archives,Email
+e5,2019-04-02,YT6A25,Re: Proposal for Collaborative Research on Temporal Sentiment Analysis in Historical Archives,Email
+e6,2019-04-07,YT6A26,"Meeting Minutes - April 6th, 2019",Email
+e7,10th April 2019,ZR71X3HB,Follow-up on Action Items and Experiment Design,Email
+e8,12th April 2019,AJ4KD52N,Re: Follow-up on Action Items and Experiment Design,Email
+e9,13th April 2019,P3V8WD4J,Re: Follow-up on Action Items and Experiment Design,Email
+e10,15th April 2019,Q9M7XZ8T,Data Processing Update and Preliminary Challenges,Email
+e11,16th April 2019,DS4L8R2V,Re: Data Processing Update and Preliminary Challenges,Email
+e12,17th April 2019,W8RSK3BQ,Re: Data Processing Update and OCR Challenges – Interpretability Considerations,Email
+e13,18th April 2019,JU4L39XZ,Sharing OCR-Affected Samples & Metadata Mappings for Interpretability Review,Email
+e14,18th April 2019,B9Z4EH5S,Confirmation of Receipt and Agenda for 23rd April Check-in,Email
+e15,18th April 2019,ZD8KL7SW,Google Meet Link and Final Preparations for 23rd April Meeting,Email
+e16,20th April 2019,AB7FQC9K,Minutes and Action Points from 23rd April Check-in,Email
+e17,21st April 2019,L72FWD19,Clean Corpus Subset and Request for Feedback,Email
+e18,22nd April 2019,F2R6YT89,Re: Clean Corpus Subset and Evaluation Metrics Discussion,Email
+e19,23rd April 2019,MN42KXHS,Stretch Evaluation Goals and Next Meeting - Availability Request,Email
+e20,24th April 2019,V9T5QK23,Interpretability Memo Update and Meeting Availability,Email
+e21,24th April 2019,X7P4ZJ13,Meeting Coordination and Initial Feedback on Interpretability Protocols,Email
+e22,25th April 2019,4GNV9SZP,Finalizing Meeting Slot and Comments on Human Annotation Pilot,Email
+e23,26th April 2019,SJ9HD3WK,Meeting Link and Pre-Meeting Materials for 3rd May,Email
+e24,27th April 2019,P8LK3QZR,Re: Meeting Link and Pre-Meeting Materials for 3rd May,Email
+e25,28th April 2019,MAIL6VM4ZB12,"Meeting Minutes: Project Check-in, 28th April 2019",Email
+e26,29th April 2019,2NR7PQKW,Baseline Model Specification and Preliminary Results Uploaded,Email
+e27,30th April 2019,MAIL3FP2JK89,Draft Annotation Instructions and Feedback Request,Email
+e28,30th April 2019,MAIL2H8QWS35,Re: Draft Annotation Instructions and Feedback Request,Email
+e29,1st May 2019,MAIL8VC1XW04,Finalization of Annotation Instructions and Next Steps,Email
+e30,2nd May 2019,MAIL0R3NPX52,Annotation Outreach Update and Early Feedback Logistics,Email
+e31,4th May 2019,MAIL2B4FDX13,Initial Annotation Returns and Planning Synthesis Session,Email
+e32,5th May 2019,MAIL4WEXSG76,Re: Initial Annotation Returns and Planning Synthesis Session,Email
+e33,6th May 2019,MAIL1VF9CZ82,"Confirmation and Agenda for Synthesis Meeting, 13th May",Email
+e34,6th May 2019,MAIL7KLWXP01,Google Meet Link and Notes Document for 13th May Synthesis Meeting,Email
+e35,7th May 2019,MAILN84PXVR5,Synthesis Meeting Minutes and Action Items,Email
+e36,8th May 2019,MAIL58PL9VCY,Re: Synthesis Meeting Minutes and Action Items – Visualization Timeline,Email
+e37,9th May 2019,MAIL2VJ4NARY,Re: Visualization Clarifications and Data Anonymization for Evaluation Figures,Email
+e38,10th May 2019,MAILK3D9PZI7,Visualization Inputs and Accessibility Notes,Email
+e39,11th May 2019,MAIL7T3QPWB1,Visualization: Additional Exemplar Segments and Review of Metadata,Email
+e40,12th May 2019,MAILGXK5T2QP,Draft Visualization Figures – Review and Feedback Requested,Email
+e41,12th May 2019,MAILF39WV12K,Re: Draft Visualization Figures – Initial Feedback and Caption Suggestions,Email
+e42,13th May 2019,MAILE5FP1LQZ,Visualization Feedback Consolidation and Next Steps for Manuscript Integration,Email
+e43,14th May 2019,MAILWTG8Q12R,Re: Visualization Feedback and Integration – Additional Notes & Readiness for Manuscript Finalization,Email
+e44,15th May 2019,MAILZTM27A6H,Re: Visualization Feedback and Integration – Finalized Figures and Manuscript Draft Uploaded,Email
+e45,16th May 2019,MAILP9T2NJ5C,Final Review of Evaluation Results Section and Figure Integration,Email
+e46,17th May 2019,MAILAB92QPV1,Final Narrative Review and Green Light for Pre-Submission Checks,Email
+e47,18th May 2019,MAILEW4VTQSZ,Pre-Submission Administrative Check and ACL Submission Preparation,Email
+e48,18th May 2019,MAILQ7HY82KP,Administrative Review Complete – Ready for ACL Submission,Email
+e49,19th May 2019,MAILFY98K3WN,ACL Submission Confirmed – Submission ID and Final Package,Email
+e50,20th May 2019,MAILKNQ41TVD,Congratulations and Next Steps Following ACL 2019 Submission,Email
+e51,21st May 2019,MAILC2R9UZ8Q,Re: Congratulations and Next Steps Following ACL 2019 Submission,Email
+e52,22nd May 2019,MAIL3HN9BKXQ,Scheduling the Post-Submission Debrief Meeting,Email
+e53,23rd May 2019,MAIL6VW84RBG,Re: Scheduling the Post-Submission Debrief Meeting,Email
+e54,24th May 2019,MAILR29JAPCS,Minutes – Post-Submission Debrief Meeting (24th May 2019),Email
+e55,25th May 2019,MAILP4F82ZNQ,Re: Minutes – Post-Submission Debrief Meeting (24th May 2019),Email
+e56,27th May 2019,MAILEU81G5VC,Dataset Documentation Template and Annotation Statistics,Email
+e57,29th May 2019,MAILTJ1Z374D,Re: Dataset Documentation Template and Annotation Statistics,Email
+e58,30th May 2019,MAILYN48XJ2B,Institutional Compliance Checklist and Pipeline Update,Email
+e59,1st June 2019,MAILDW17QPZL,"Summary Statistics, Metadata, and Next Steps for Documentation",Email
+e60,3rd June 2019,MAIL5RJ7C2FV,Feedback on Summary Statistics & Documentation; Preparation for Internal Review,Email
+e61,4th June 2019,MAILE69HJMV1,Internal Review Meeting – Dataset Documentation & Compliance (16 June),Email
+e62,5th June 2019,MAIL7KGB28HC,Minutes: Internal Review Meeting – Dataset Documentation & Compliance (4th June 2019),Email
+e63,6th June 2019,MAIL4RC8ZTWQ,Documentation Revisions and Request for Validation Log Update,Email
+e64,7th June 2019,MAILPQ61VJ8T,Re: Documentation Revisions and Request for Validation Log Update,Email
+e65,8th June 2019,MAILE73HJVS2,Final Compliance Documentation Update and Confirmation Process,Email
+e66,9th June 2019,MAILR9W3YTKV,Circulation of Finalized Compliance Checklist & Confirmation for Documentation Sign-Off,Email
+e67,9th June 2019,MAILQFZ19UMC,Re: Circulation of Finalized Compliance Checklist & Confirmation for Documentation Sign-Off,Email
+e68,10th June 2019,MAIL1NVF3JL9,Submission Confirmation: JOCCH Dataset and Documentation Package,Email
+e69,10th June 2019,MAILWF5N3R8C,Acknowledgment of Submission: SUB-JOCCH-2019-0187,Email
+e70,25th June 2019,MAILBU84WK31,Status Update: Initial Editorial Screening Complete – SUB-JOCCH-2019-0187,Email
+e71,3rd August 2019,MAILJ82D6MUV,Submission Decision Notification: SUB-JOCCH-2019-0187,Email
+e72,4th August 2019,MAILA93SVWX7,Re: Submission Decision Notification – Planning for Minor Revisions (SUB-JOCCH-2019-0187),Email
+e73,5th August 2019,MAILH2P8TBVW,Re: Submission Decision Notification – Revision Task Assignments & Coordination Meeting,Email
+e74,6th August 2019,MAIL4N2S8ZEM,Re: Submission Decision Notification – Revision Task Assignments & Compliance Clarification,Email
+e75,7th August 2019,MAILQ7W4TM1V,Coordination Meeting – Zoom Link Confirmation and Annotator Agreement Data Access,Email
+e76,8th August 2019,MAILE9T7PZD5,Re: Coordination Meeting – Final Agenda and Preparation Checklist,Email
+e77,8th August 2019,MAIL7SX1CHQ8,Coordination Meeting Minutes – Revision Planning for JOCCH Submission (SUB-JOCCH-2019-0187),Email
+e78,9th August 2019,MAIL68RT1QXS,Compliance Appendix Revision Draft and Licensing Clarification (SUB-JOCCH-2019-0187),Email
+e79,10th August 2019,MAILFE2Q7SVM,Annotator Agreement Table – Final Draft & Integration Notes (SUB-JOCCH-2019-0187),Email
+e80,11th August 2019,MAIL89WJ3NCP,"Re: Compliance Appendix Revision Review, Licensing Alignment & Next Steps (SUB-JOCCH-2019-0187)",Email
+e81,12th August 2019,MAILU51MN4AC,"Integration Status Update: Compliance Appendix, Annotator Tables & Final Review Timeline (SUB-JOCCH-2019-0187)",Email
+e82,14th August 2019,MAIL5DYH8ZQP,Final Approval for Submission – Manuscript and Supplementary Materials (SUB-JOCCH-2019-0187),Email
+e83,15th August 2019,MAILA5W4TJQ2,JOCCH Submission Confirmation & Assigned Submission ID (SUB-JOCCH-2019-0187),Email
+e84,16th September 2019,MAILM7PH2QZ8,Submission Update & Reviewer Assignment (SUB-JOCCH-2019-0187),Email
+e85,3rd November 2019,MAILVGZ74QHB,Decision on Submission “Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives” (SUB-JOCCH-2019-0187),Email
+e86,4th November 2019,MAILP4C8VJXS,Revisions Roadmap & Task Delegation – Camera-Ready Preparation (SUB-JOCCH-2019-0187),Email
+e87,5th November 2019,MAILQ5RX9KLT,Confirming Task Acceptance & Google Meet Availability (SUB-JOCCH-2019-0187),Email
+e88,6th November 2019,MAILUZ14P3SK,Confirmation: Ethical Considerations Section Update & Meeting Slot Proposal (SUB-JOCCH-2019-0187),Email
+e89,6th November 2019,MAILNST8QX3W,Hyperlink Verification Update & Confirmation of Proposed Meeting Slot (SUB-JOCCH-2019-0187),Email
+e90,6th November 2019,MAILD5RM8CYT,"Google Meet Link for Revision Coordination Meeting (15 December, 15:30 IST) – JOCCH Minor Revisions",Email
+e91,8th November 2019,MAILE9H2FXTB,Minutes: Google Meet on JOCCH Minor Revisions (7th November 2019),Email
+e92,9th November 2019,MAILHZ4F1J3G,Final Caption for Fig. 3 & Edge Case Documentation (SUB-JOCCH-2019-0187),Email
+e93,10th November 2019,MAILXHT28FQM,Finalized “Ethical Considerations” Section & Call for Last Comments (SUB-JOCCH-2019-0187),Email
+e94,10th November 2019,MAILJKW19UZP,Hyperlink Checklist & Integration Coordination for Camera-Ready Submission (SUB-JOCCH-2019-0187),Email
+e95,11th November 2019,MAIL8QH46MVT,Master Camera-Ready File Compiled & Final Review Action Items (SUB-JOCCH-2019-0187),Email
+e96,12th November 2019,MAILUFJ9P2KX,Accessibility Scan Results & Final Confirmation for Camera-Ready Submission (SUB-JOCCH-2019-0187),Email
+e97,12th November 2019,MAILBLZ3A8YQ,Final Cross-Reference Review & Manuscript Ready for Submission (SUB-JOCCH-2019-0187),Email
+e98,13th November 2019,MAIL7ZA5PNXM,JOCCH Final Submission Completed – Manuscript & Response Letter Uploaded (SUB-JOCCH-2019-0187),Email
+e99,15th November 2019,MAILGL7XP2QZ,Submission Acknowledgment – SUB-JOCCH-2019-0187,Email
+e100,1st December 2019,MAILQ8HZ2CW7,Editorial Decision – Minor Revisions Required (SUB-JOCCH-2019-0187),Email
+e101,2nd December 2019,MAILWB95TY30,Reviewer Feedback Follow-up – Coordinating Minor Revisions for JOCCH (SUB-JOCCH-2019-0187),Email
+e102,3rd December 2019,MAILT7HXQW3L,Draft Illustrative Examples for Annotation Guidelines Update (JOCCH Minor Revisions),Email
+e103,4th December 2019,MAIL4EBQ7XZF,Draft: Clarifying Name Normalization/OCR Post-Processing Link for JOCCH Revision,Email
+e104,4th December 2019,MAILE1827QZL,ACM Accessibility Update – Tables 3 & 5 Re-Tagging Progress (JOCCH Minor Revisions),Email
+e105,5th December 2019,MAILYQ7H5PRB,Integration Review & Final Checks – JOCCH Minor Revisions Phase,Email
+e106,6th December 2019,MAIL9VKH5X0M,Confirmation of Submission-Ready Drafts & Availability for Review Call – JOCCH Minor Revisions,Email
+e107,7th December 2019,MAIL2BK9Q0XZ,Zoom Link & Final Agenda: Review Call for JOCCH Minor Revisions (20 Jan),Email
+e108,9th December 2019,MAILSYZT58FG,Manuscript & Response to Reviewers Submitted – JOCCH Minor Revisions Phase (SUB-JOCCH-2019-0187),Email
+e109,15th December 2019,MAILU4RHAQ01,Acknowledgment of Submission – “NLP Approaches to Historical Entity Disambiguation” (SUB-JOCCH-2019-0187),Email
+e110,2nd January 2020,MAIL5ZWL2TCQ,"Editorial Decision – Minor Revision Accepted, Camera-Ready Required (SUB-JOCCH-2019-0187)",Email
+e111,4th January 2020,MAILGT5AL19X,Camera-Ready Preparation Coordination (JOCCH – SUB-JOCCH-2019-0187),Email
+e112,5th January 2020,MAILPR36D7VQ,Camera-Ready Manuscript Preparation: Action Items Confirmation (JOCCH – SUB-JOCCH-2019-0187),Email
+e113,10th January 2020,MAILE1Q2ZK5N,Supplementary File References Review Completed (JOCCH – SUB-JOCCH-2019-0187),Email
+e114,13th January 2020,MAIL3JVTQY8L,Acknowledgment & Next Steps: Zoom Coordination Call Follow-Up (JOCCH – SUB-JOCCH-2019-0187),Email
+e115,17th January 2020,MAIL9N35WQXP,Camera-Ready Submission Package Finalization (JOCCH – SUB-JOCCH-2019-0187),Email
+e116,18th January 2020,MAIL4Q8V73YD,Submission of Camera-Ready Files for Final Publication (SUB-JOCCH-2019-0187),Email
+e117,20th January 2020,MAILRY7F6PQ4,Confirmation of Camera-Ready Submission Receipt (SUB-JOCCH-2019-0187),Email
+e118,22nd January 2020,MAILSD8H5XP2,Next Steps After Camera-Ready Submission (JOCCH – SUB-JOCCH-2019-0187),Email
+e119,26th January 2020,MAIL89GS3JR5,Retrospective Reflections and Follow-up Coordination,Email
+e120,29th January 2020,MAILTW5X48Z1,Input on Retrospective Review & April Scheduling,Email
+e121,31st January 2020,MAILH9S43DFL,Scheduling Google Meet: April Project Retrospective Consolidation,Email
+e122,1st February 2020,MAIL4M6JD28P,Confirmation of Availability for April Google Meet Session,Email
+e123,1st February 2020,MAILVK8N1PS3,Finalizing April Meeting: Confirmation and Agenda Additions,Email
+e124,3rd February 2020,MAILE21J7KZ5,Confirmation: April 7th Google Meet & Final Agenda,Email
+e125,9th February 2020,MAILTZ58SDEQ,Materials Preparation & Suggestions for 7 April Project Retrospective,Email
+e126,13th February 2020,MAILZ8N4RTSY,Minutes and Action Points: 7 April Project Retrospective Call,Email
+e127,15th February 2020,MAILU7SR504K,Draft Section on Cross-lingual Entity Normalization for Tutorial Proposal,Email
+e128,16th February 2020,MAILQT9Z62PM,FAIR/Zenodo Guidelines Draft and Comments on Entity Normalization Section,Email
+e129,18th February 2020,MAILXR297EYM,Reviewing Draft Contributions & Extending the JCDL Proposal Outline,Email
+e130,20th February 2020,MAILAK4Z83TR,Slide Deck Integration Plan and Visuals Request for JCDL Tutorial Proposal,Email
+e131,21st February 2020,MAILH9F5M1VL,Submission of Visuals for Entity Normalization & Final Review Notes,Email
+e132,22nd February 2020,MAIL1P7X4E9N,Final Slide Deck Review & Last Checks Before JCDL Proposal Submission,Email
+e133,22nd February 2020,MAILNP84KJY2,Master Slide Deck PDF & Submission Timeline for JCDL Tutorial Proposal,Email
+e134,23rd February 2020,MAILE5R29QTM,Approval of Master Slide Deck & Go-Ahead for JCDL Tutorial Proposal Submission,Email
+e135,23rd February 2020,MAILV7FGXU19,Final Approval of Slide Deck & Gratitude for Coordination,Email
+e136,24th February 2020,MAILQ19Y6D3A,JCDL 2020 Tutorial Proposal Submission Confirmation & Tracking ID,Email
+e137,24th February 2020,MAILU16TWSQ8,JCDL 2020 Tutorial Proposal Submission Acknowledgment – SUB-JCDL-2020-0143,Email
+e138,10th April 2020,MAILRAK93ULG,JCDL 2020 Tutorial Proposal Notification – SUB-JCDL-2020-0143,Email
+e139,10th April 2020,MAILDZ5A8KQ3,Re: JCDL 2020 Tutorial Proposal Notification – SUB-JCDL-2020-0143,Email
+e140,11th April 2020,MAILG24LSKH8,Coordination Call for JCDL 2020 Camera-Ready Revisions – Doodle Poll & Screencast Update,Email
+e141,11th April 2020,MAILE7104DPS,Re: Coordination Call for JCDL 2020 Camera-Ready Revisions – Doodle Poll & Screencast Outline Feedback,Email
+e142,12th April 2020,MAILT09W1GQ5,Corpus Period Note & Mapping Ambiguity Schematic Revision,Email
+e143,13th April 2020,MAILYH7WKE32,JCDL 2020 Revision Meeting – Zoom Link & Agenda,Email
+e144,15th April 2020,MAILNF2Q6XLB,JCDL 2020 Camera-Ready Revisions – Initial Integrations & Next Steps,Email
+e145,17th April 2020,MAIL871D5QXJ,Final Asset Uploads for JCDL 2020 Camera-Ready Submission,Email
+e146,17th April 2020,MAILV39WUQ60,Screencast Final Version Uploaded & Ancillary Files Checklist,Email
+e147,18th April 2020,MAILN48MHZR3,Revision Memo Draft & Final Submission Timeline for JCDL 2020,Email
+e148,19th April 2020,MAIL29VCJUS5,Approval of Revision Memo & Confirmation for JCDL 2020 Submission,Email
+e149,20th April 2020,MAILT84JGX93,Coordinating Final JCDL 2020 Camera-Ready Submission Upload,Email
+e150,23rd April 2020,MAILE94LJAPQ,JCDL 2020 Camera-Ready Submission – Confirmation & Submission ID,Email
+e151,6th May 2020,MAILH8ZR57VQ,JCDL 2020 Camera-Ready Verification & Final Acceptance – SUB-JCDL-2020-0718,Email
+e152,7th May 2020,MAILQ28FZJ63,JCDL 2020 Final Presentation Prep – Tutorial Delivery Coordination,Email
+e153,8th May 2020,MAILU08KNBW2,Re: JCDL 2020 Final Presentation Prep – Tutorial Delivery Coordination,Email
+e154,9th May 2020,MAILYS03D2C4,Re: JCDL 2020 Final Presentation Prep – AV Setup and Handover Points,Email
+e155,10th May 2020,MAIL4AB91MPX,JCDL 2020 Final Rehearsal – Schedule Confirmation & Agenda Draft,Email
+e156,12th May 2020,MAILN2RB5GYD,JCDL 2020 Final Rehearsal – Summary & Action Points,Email
+e157,13th May 2020,MAILE7P2VTXB,Re: JCDL 2020 Final Rehearsal – Demo Script Confirmation,Email
+e158,14th May 2020,MAILN8X6QA1S,"Official Zoom Access Details for JCDL 2020 Tutorial – ""NLP Methods for Large-Scale Historical Data""",Email
+e159,15th May 2020,MAIL5KY81ALD,Final Checklist & Logistics for JCDL 2020 Tutorial Delivery,Email
+e160,17th May 2020,MAIL1ADV9ZQW,"JCDL 2020 Tutorial – Reflections, Feedback, and Next Steps",Email
+e161,17th May 2020,MAILQ2G7XBLS,"Re: JCDL 2020 Tutorial – Reflections, Feedback, and Next Steps",Email
+e162,18th May 2020,MAILU9XV7K3J,Debrief Meeting – Availability and Agenda Suggestions,Email
+e163,18th May 2020,MAIL6PV1QLR8,Scheduled Debrief – Google Meet Invitation for 2 August,Email
+e164,23rd May 2020,MAIL84MNYQZT,Debrief Meeting Minutes and Proposed Publication Plan,Email
+e165,23rd May 2020,MAIL0AKPGH6X,JOCCH Article Outline – Draft Plan and Next Steps,Email
+e166,24th May 2020,MAIL7XEF4VR1,Re: JOCCH Article Outline – Draft Plan and Next Steps,Email
+e167,26th May 2020,MAIL0M4FYWJS,Planning Meeting – Assigning Sections and Submission Logistics (JOCCH Article),Email
+e168,27th May 2020,MAILJ452GYQP,Re: Planning Meeting – Assigning Sections and Submission Logistics (JOCCH Article),Email
+e169,28th May 2020,MAILEBXQ972S,Re: Planning Meeting – Assigning Sections and Submission Logistics (JOCCH Article),Email
+e170,29th May 2020,MAILUV7NLZ5G,Google Meet Link and Reference Document for 16 August Meeting,Email
+e171,30th May 2020,MAILNM8P4S0R,Additional Agenda Item – Data Licensing & Repository Sustainability,Email
+e172,1st June 2020,MAILE7ZRH6U9,Re: Additional Agenda Item – Data Licensing & Repository Sustainability,Email
+e173,3rd June 2020,MAIL8Y4XRQJM,Minutes and Action Items: JOCCH Article Planning Meeting (16 August),Email
+e174,3rd June 2020,MAIL0Z27NQY4,Re: Minutes and Action Items: JOCCH Article Planning Meeting (16 August),Email
+e175,4th June 2020,MAIL6NS7P5XC,Re: Minutes and Action Items: JOCCH Article Planning Meeting (16 August),Email
+e176,5th June 2020,MAIL7AYB3QW4,Coordination for Section Drafts and Supplementary File Integration,Email
+e177,6th June 2020,MAILW93RFD8K,Re: Coordination for Section Drafts and Supplementary File Integration,Email
+e178,8th June 2020,MAIL3RQT7D2V,Lay Abstract Draft and Progress Update,Email
+e179,9th June 2020,MAILR8N5MX4Z,Re: Lay Abstract Draft and Progress Update,Email
+e180,11th June 2020,MAIL71FZXPQB,Status Check: Section Draft Upload and Supplement Integration,Email
+e181,13th June 2020,MAILYQ0FMSJ8,Re: Status Check: Section Draft Upload and Supplement Integration,Email
+e182,15th June 2020,MAILUR0C52AW,Compliance Supplement Review Window & Contributions on Section Drafts,Email
+e183,17th June 2020,MAILYW15QH3T,Final Remarks Prior to Full-Draft Circulation and Review,Email
+e184,19th June 2020,MAIL7DXQ2VLC,Schedule for Manuscript Finalization Meeting,Email
+e185,20th June 2020,MAIL9VL12SXM,Re: Schedule for Manuscript Finalization Meeting,Email
+e186,21st June 2020,MAIL5MFVDPOT,Minutes of Manuscript Finalization Meeting (6 September),Email
+e187,22nd June 2020,MAILTJ0CZR62,Final Camera-Ready Draft for Pre-Submission Check,Email
+e188,23rd June 2020,MAILHQ2F7PG8,Sign-Off on Camera-Ready Manuscript for JOCCH Submission,Email
+e189,24th June 2020,MAIL2A8WBZR7,JOCCH Submission Confirmation and Submission ID,Email
+e190,27th June 2020,MAILW8J6BV3A,Acknowledgment of Submission - SUB-JOCCH-2020-0047,Email
+e191,3rd August 2020,MAILF1T8ZQK9,Decision Notification for Submission SUB-JOCCH-2020-0047,Email
+e192,5th August 2020,MAIL73UPQXJ2,Coordinating Revision Strategy for SUB-JOCCH-2020-0047,Email
+e193,6th August 2020,MAIL6BZLTW81,Availability for Revision Meeting and Initial Thoughts on Section 4.2,Email
+e194,7th August 2020,MAILV85JKPN7,Re: Availability for Revision Meeting and Initial Thoughts on Section 4.2,Email
+e195,7th August 2020,MAILR93ATP1K,Confirmation for 6 November Meeting & Code Appendix Guidance,Email
+e196,8th August 2020,MAILXT21Y8SV,Zoom Link for 6 November Revision Meeting & Visual Abstract Drafts,Email
+e197,12th August 2020,MAILQ1B5ZWM9,Minutes and Action Items from 6 November Revision Meeting (JOCCH Minor Revision),Email
+e198,15th August 2020,MAIL6NF1RXZ4,Submission of Expanded Error Analysis Draft & Feedback Request,Email
+e199,17th August 2020,MAILK3FT9WPL,Feedback on Section 4.2 Draft & Updates on Response to Reviewers,Email
+e200,18th August 2020,MAILSS9BG3YR,Incorporation of Table 4 Findings in Graphical Abstract & Next Steps,Email
+e201,19th August 2020,MAILPF72QXJN,Finalizing Code Appendix and Compliance Documentation for JOCCH Submission,Email
+e202,20th August 2020,MAILGF35PDLN,Final Feedback on Code Appendix & Compliance Documents,Email
+e203,22nd August 2020,MAILUFP7YLB8,Consolidation of Final Materials & Submission Plan for JOCCH Revision,Email
+e204,23rd August 2020,MAIL7NKWPDG1,Approval for Final JOCCH Submission (SUB-JOCCH-2020-0047),Email
+e205,24th August 2020,MAILF9QB2ST6,Acknowledgment of Submission – Manuscript SUB-JOCCH-2020-0047,Email
+e206,23rd October 2020,MAIL76PKFQ2S,Decision Notification and Minor Revision Request – Manuscript SUB-JOCCH-2020-0047,Email
+e207,25th October 2020,MAIL3PA7YZXT,Planning and Task Allocation for JOCCH Minor Revision (SUB-JOCCH-2020-0047),Email
+e208,26th October 2020,MAILJM845CT7,Re: Planning and Task Allocation for JOCCH Minor Revision (SUB-JOCCH-2020-0047),Email
+e209,27th October 2020,MAILV7K6S3HF,Re: Planning and Task Allocation for JOCCH Minor Revision (SUB-JOCCH-2020-0047),Email
+e210,28th October 2020,MAIL2DFYRJU9,Re: Planning and Task Allocation for JOCCH Minor Revision (SUB-JOCCH-2020-0047),Email
+e211,29th October 2020,MAIL57JWBKXN,"Domain Shift Analysis Draft and Anchor Schematic (JOCCH, SUB-JOCCH-2020-0047)",Email
+e212,29th October 2020,MAILR5V1QSN9,Feedback on Domain Shift Analysis Draft and Anchor Schematic,Email
+e213,30th October 2020,MAILSY83LQZ1,Code Anchor Methods Section Draft and Feedback Request,Email
+e214,31st October 2020,MAIL1DXV7GFS,Compliance and Anonymization Update – Ready for Review,Email
+e215,1st November 2020,MAILUZ148JK5,Consolidated Feedback and Agenda for 9 February Progress Call,Email
+e216,2nd November 2020,MAILQ8HG2ZVC,Minutes of Progress Meeting – 9 February (JOCCH Minor Revision),Email
+e217,4th November 2020,MAILV97KTBQ2,Manuscript Consistency Review and Next Steps Before Submission,Email
+e218,4th November 2020,MAILRM384VCW,Final Proofreading Coordination and Submission Readiness Check,Email
+e219,7th November 2020,MAIL3DF92WNK,JOCCH Submission Confirmation — Manuscript and Materials Submitted,Email
+e220,9th November 2020,MAILJ8WV4LXO,Submission Acknowledgement – SUB-JOCCH-2020-0047,Email
+e221,5th December 2020,MAILPB4T9K3G,Decision Notification – SUB-JOCCH-2020-0047,Email
+e222,7th December 2020,MAILNQ572JLV,Coordination on JOCCH Minor Revision – Action Plan and Task Assignment,Email
+e223,8th December 2020,MAILE3QKTU5V,Re: Coordination on JOCCH Minor Revision – Task Confirmation and Preliminary Updates,Email
+e224,9th December 2020,MAILX7M5F8AP,Progress on Supplementary Notebook Documentation and Meeting Confirmation,Email
+e225,9th December 2020,MAILKQ9DHL7S,Zoom Link for Minor Revision Progress Meeting – 26 March,Email
+e226,11th December 2020,MAIL1DZT5XQE,Minutes: Minor Revision Progress Meeting (26 March),Email
+e227,14th December 2020,MAIL82AXJ9LT,Table 2 Formatting Update and Request for Final Review,Email
+e228,15th December 2020,MAILR873LWX6,Re: Table 2 Formatting Update and Final Supplementary Notebook Draft,Email
+e229,15th December 2020,MAILN83Z3YLS,Consolidated Draft Assembly and Response Letter Update,Email
+e230,17th December 2020,MAILD26QZPLB,Compliance Protocol Section Finalization and Flowchart Upload,Email
+e231,19th December 2020,MAILS58JG2LU,Final Review and Checklist for JOCCH Minor Revision Resubmission,Email
+e232,21st December 2020,MAILQB4E93NW,Submission Confirmation for JOCCH Minor Revision (SUB-JOCCH-2020-0047),Email
+e233,22nd December 2020,MAILE9QX1W43,Acknowledgment of Resubmission – ACM JOCCH Minor Revision (SUB-JOCCH-2020-0047),Email
+e234,24th January 2021,MAILJ92KLD7P,Decision Notification – Minor Revision Outcome (SUB-JOCCH-2020-0047),Email
+e235,25th January 2021,MAIL2XNC51SK,Next Steps for Camera-Ready Submission - Clarification Tasks (SUB-JOCCH-2020-0047),Email
+e236,27th January 2021,MAIL3TSK98RZ,Draft Additions: Cross-Domain Corpus References for Methods Section (SUB-JOCCH-2020-0047),Email
+e237,29th January 2021,MAILQ5E7DZJ2,Table 2 Footnote Draft & Next Steps for Camera-Ready Submission,Email
+e238,3rd February 2021,MAILSK3F7P0V,Internal Review Checklist & Final Merge Plan for JOCCH Camera-Ready Submission,Email
+e239,6th February 2021,MAILGB5Y21AP,Implementation Confirmation & PDF Preview – JOCCH Camera-Ready Materials,Email
+e240,8th February 2021,MAILNU1SHK7Q,Review of Integrated Materials & Final Suggestions (JOCCH Camera-Ready),Email
+e241,9th February 2021,MAILDK82RPA4,Doodle Poll: Scheduling 12 June Zoom Sign-Off for Camera-Ready Submission,Email
+e242,12th February 2021,MAILE1JV6PQ3,Confirmed Timing & Zoom Link for 12 June Camera-Ready Sign-Off,Email
+e243,15th February 2021,MAILF49J8L2H,Summary & Action Items from 12 June Camera-Ready Sign-Off (JOCCH Submission),Email
+e244,17th February 2021,MAILHL9F1QX7,JOCCH Camera-Ready Submission Uploaded – ScholarOne Confirmation & Next Steps,Email
+e245,24th February 2021,MAILK2V8RM3D,Acknowledgment of Camera-Ready Submission – ACM JOCCH (SUB-JOCCH-2021-0612),Email
+e246,5th March 2021,MAIL97YF2KSH,Galley Proofs and Camera-Ready Deadline – ACM JOCCH (SUB-JOCCH-2021-0612),Email
+e247,7th March 2021,MAIL8DPS3BVN,Galley Proof Review – Minor Corrections (JOCCH SUB-JOCCH-2021-0612),Email
+e248,9th March 2021,MAILJ4X8MQT9,Aggregated Galley Proof Corrections – Final Review Before Submission to JOCCH,Email
+e249,10th March 2021,MAILR8N5MCF2,Re: Aggregated Galley Proof Corrections – Final Review Before Submission to JOCCH,Email
+e250,10th March 2021,MAILU3CVH92B,Submission of Minor Galley Proof Corrections – SUB-JOCCH-2021-0612,Email
+e251,13th March 2021,MAILDE87S4A0,Confirmation of Correction Receipt & Article Scheduling – SUB-JOCCH-2021-0612,Email
+e252,17th March 2021,MAILX9HM7EN2,Re: Confirmation of Correction Receipt & Article Scheduling – SUB-JOCCH-2021-0612,Email
+e253,19th March 2021,MAILQ2B7SZMJ,Online Publication Date and DOI Details – SUB-JOCCH-2021-0612,Email
+e254,20th March 2021,MAIL1KDZCV2Q,"Congratulations and Post-Publication Outreach – ""HistocrNLP"" Article in JOCCH",Email
+e255,23rd March 2021,MAIL7S2DFN4J,"Re: Congratulations and Post-Publication Outreach – ""HistocrNLP"" Article in JOCCH",Email
+e256,25th March 2021,MAILU8F3B2HS,"Re: Congratulations and Post-Publication Outreach – ""HistocrNLP"" Article in JOCCH",Email
+e257,27th March 2021,MAILF7R6P1XZ,Coordinating Outreach Tasks and Webinar Planning,Email
+e258,30th March 2021,MAIL3AL8V2XQ,Initial Summary Draft and Coordination—HistocrNLP Outreach & Webinar,Email
+e259,31st March 2021,MAILJ9QL47AW,Re: Initial Summary Draft and Coordination—HistocrNLP Outreach & Webinar,Email
+e260,1st April 2021,MAILZ4R2TN6F,Re: Initial Summary Draft and Coordination—HistocrNLP Outreach & Webinar,Email
+e261,2nd April 2021,MAILR3S6BZ1P,Re: Initial Summary Draft and Coordination—HistocrNLP Outreach & Webinar,Email
+e262,4th April 2021,MAILSX28F5KL,"Outreach Email Template, Agenda, and Finalising Webinar Prep",Email
+e263,5th April 2021,MAILAWJX27YM,Zoom Invitation: HistocrNLP Outreach & Webinar Planning Meeting,Email
+e264,6th April 2021,MAILY6E8VB2S,Minutes: HistocrNLP Outreach & Webinar Planning Meeting (5th April 2019),Email
+e265,9th April 2021,MAILBG4W5KQT,Submission of Finalized Lay Summary & Update on IACS Media Coordination,Email
+e266,11th April 2021,MAILQZX58J9L,Media Release Coordination: Oxford Requirements & Next Steps for Webinar,Email
+e267,12th April 2021,MAILE8G5NZ0R,Stanford Media Office Process & Webinar Slide Deck Draft Timeline,Email
+e268,14th April 2021,MAIL44VF1S8P,Review of Webinar Slide Deck Draft & Next Steps for Event Coordination,Email
+e269,17th April 2021,MAILJ4FBX6ZT,Webinar Content Rehearsal – Availability & Coordination for Early September,Email
+e270,18th April 2021,MAIL2QZR75GS,Availability for Webinar Rehearsal & Case Study Coordination,Email
+e271,21st April 2021,MAILWY38KP1N,Webinar Registration Portal Live & Technical Checklist for Rehearsal,Email
+e272,23rd April 2021,MAIL3PNZX8RS,Confirming Registration Portal Functionality & Slide Upload Update,Email
+e273,25th April 2021,MAILC9G8PYQ3,Final Webinar Content Confirmation & Last-Minute Technical Prep,Email
+e274,29th April 2021,MAILNQ9BX47S,Webinar Rehearsal Minutes & Final Action Items Before Public Event,Email
+e275,30th April 2021,MAILE839T6Q5,Webinar Disclaimers and Final Review of Slide Deck,Email
+e276,2nd May 2021,MAILZXC943FD,Final Checklist Confirmation & Webinar Launch Logistics,Email
+e277,3rd May 2021,MAIL46DBNOQ2,Public Event Link Distribution & Day-of Logistics,Email
+e278,5th May 2021,MAIL2X93KLQP,Post-Webinar Thanks and Suggestions for Knowledge Base Compilation,Email
+e279,6th May 2021,MAILWL3UFZ84,Next Steps for Knowledge Base Compilation – Outline & Task Delegation,Email
+e280,8th May 2021,MAILGB94V1KT,Re: Next Steps for Knowledge Base Compilation – Outline & Task Delegation,Email
+e281,9th May 2021,MAIL68BNSKW3,Knowledge Base: Technical Documentation Tasks & Preferred Meeting Slot,Email
+e282,10th May 2021,MAIL2XT94GQ1,Confirming 22 Sept Meeting: Time Proposal & South Asian Datasets Update,Email
+e283,11th May 2021,MAILE94JK21Z,Re: Confirming 22 Sept Meeting: Time Proposal & Logistics,Email
+e284,12th May 2021,MAILSZ8KQPL2,Knowledge Base Sync Meeting - Agenda & Google Doc Link,Email
+e285,12th May 2021,MAILUB4J6X3K,Knowledge Base Sync Meeting – Pre-Meeting Notes & Technical Questions,Email
+e286,13th May 2021,MAIL5QK72NJS,Knowledge Base Sync Meeting – Summary Minutes & Immediate Action Items,Email
+e287,14th May 2021,MAIL84GSYMT5,Re: Knowledge Base Sync Meeting – Minutes Acknowledged & FAQ Integration,Email
+e288,15th May 2021,MAILE12CRJK9,Technical Document Uploads and Docker Test Coordination,Email
+e289,16th May 2021,MAIL3PXVZ78A,GDPR & Consent Materials Uploaded – Request for Feedback,Email
+e290,17th May 2021,MAILZX92EPC3,IACS Citation Guidelines and Annotation Schema Template – Uploaded,Email
+e291,17th May 2021,MAILXQ9821LM,Consolidated Knowledge Base – Pre-Submission Feedback Summary and Final Checklist,Email
+e292,18th May 2021,MAIL72GZFEM6,Public Draft Release Confirmed & Next Steps on Submission Venue,Email
+e293,19th May 2021,MAILE42V7BQN,Re: Public Draft Release Confirmed & Submission Venue Considerations,Email
+e294,20th May 2021,MAIL5LQ1X08B,Re: Submission Venue Matrix & Meeting Coordination,Email
+e295,21st May 2021,MAILR7Q4W2JZ,Re: Submission Venue Matrix & Coordination for Decision Meeting,Email
+e296,21st May 2021,MAIL892JSQKL,RE: Submission Matrix Draft & Confirmation of Meeting Slot,Email
+e297,22nd May 2021,MAILV2HN9P1K,"Re: Meeting Link for Submission Matrix Discussion, 3 October",Email
+e298,23rd May 2021,MAILK8L0W3XD,Minutes of Submission Matrix Meeting (3 October) & Next Steps,Email
+e299,23rd May 2021,MAILXU59T0SH,Re: Meeting Minutes Receipt & Early Planning for ACL Manuscript,Email
+e300,24th May 2021,MAILN4ZD8JQE,Overleaf ACL Template & Initial Manuscript Draft Access,Email
+e301,25th May 2021,MAIL3U8F7OCR,Re: Overleaf ACL Template & Dual-Publishing Practices Input,Email
+e302,26th May 2021,MAILJ87KC3PQ,Draft Data/Code Transparency Statement for Team Review,Email
+e303,27th May 2021,MAILEP0QZ7L2,Re: Data/Code Transparency Statement Draft & Repository Policy Feedback,Email
+e304,28th May 2021,MAIL5YXW3GVT,Check-In: Consolidated Feedback and Next Steps for Manuscript Sections,Email
+e305,28th May 2021,MAILLM21K4TF,Re: Confirmation for 12 October Zoom Coordination & Compliance Templates,Email
+e306,29th May 2021,MAILLX9T7VJ3,"Re: Overleaf Updates, Compliance Templates, and Zoom Coordination Confirmation",Email
+e307,29th May 2021,MAILE8G5JV72,Zoom Meeting Link & Agenda for 12 October Coordination,Email
+e308,30th May 2021,MAIL97FQPJ2X,Minutes and Action Points: 12 October Coordination Zoom Meeting,Email
+e309,31st May 2021,MAILT2K1X8QP,Drafted Evaluation Metrics Narrative and Overleaf Annotations,Email
+e310,2nd June 2021,MAILJNQ82SLA,Overleaf Feedback: Evaluation Metrics Narrative & Policy Review Update,Email
+e311,3rd June 2021,MAILWQ3E1F7V,IACS Policy Review: Embargo Note Finalization and Compliance Integration,Email
+e312,4th June 2021,MAILA5KP7QTB,Scheduling 19 October Final Manuscript Review – Zoom Link Enclosed,Email
+e313,5th June 2021,MAILYG5U2PDM,Minutes and Action Items: Final Integrated Manuscript Review (19 October),Email
+e314,7th June 2021,MAIL52NVGKR3,Confirmation of Action Items & Final Internal Sign-Off for ACL Submission,Email
+e315,8th June 2021,MAILK7Q3DJPA,Final Sign-Off: ACL Resource Track Manuscript and Submission Readiness,Email
+e316,9th June 2021,MAILS9CK37PB,ACL Submission Draft Ready: Request for Final Author Approval Before Upload,Email
+e317,10th June 2021,MAILE8LF9SYW,Final Approval: ACL Submission Package – Ready for Portal Upload,Email
+e318,11th June 2021,MAILBG5C29QT,ACL Resource Track Submission Confirmation and Assigned Submission ID,Email
+e319,13th June 2021,MAILU7ZT14MB,Acknowledgment of ACL 2021 Resource Track Submission (SUB-ACL-2021-0842),Email
+e320,19th August 2021,MAILG8B2MJK9,ACL 2021 Resource Track Decision Notification: Paper SUB-ACL-2021-0842,Email
+e321,20th August 2021,MAILVS849QPL,ACL 2021 Reviewer Feedback and Camera-Ready Revision Plan,Email
+e322,21st August 2021,MAIL93N5XELV,Re: ACL 2021 Reviewer Feedback and Camera-Ready Revision Plan,Email
+e323,22nd August 2021,MAILHY4QLG28,Re: ACL 2021 Reviewer Feedback and Camera-Ready Revision Plan,Email
+e324,23rd August 2021,MAILF2MN5GQ7,Re: ACL 2021 Reviewer Feedback and Camera-Ready Revision Plan,Email
+e325,24th August 2021,MAILT19GBXE3,Agenda for ACL 2021 Revision Coordination Meeting (22 Jan),Email
+e326,25th August 2021,MAIL7VGD2NHK,Zoom Link for ACL 2021 Camera-Ready Revision Meeting,Email
+e327,25th August 2021,MAILEQF9GH56,Minutes: ACL 2021 Camera-Ready Revision Coordination Meeting (22 Jan),Email
+e328,26th August 2021,MAILK1MC7PL9,Draft Compliance Appendix for ACL 2021 Camera-Ready – Ready for Review,Email
+e329,28th August 2021,MAILD7CHP416,Draft of Section 4: Annotation Provenance for Camera-Ready Submission,Email
+e330,31st August 2021,MAIL8ZHF23QX,Internal Review Phase: Final Comments on Section 4 & Compliance Appendix,Email
+e331,3rd September 2021,MAIL56RZ3N2L,Formatting & Cross-Referencing Update for ACL 2021 Submission,Email
+e332,6th September 2021,MAILJR8H24YQ,Final Internal Corrections and Camera-Ready Submission Timeline (ACL 2021),Email
+e333,7th September 2021,MAILY5U3QJ17,Harmonization Progress & Emergency Clarification Request Protocol (ACL 2021 Submission),Email
+e334,9th September 2021,MAIL3UPLKYGX,Final Compliance Appendix Confirmation & Minor Editorial Notes (ACL 2021 Camera-Ready),Email
+e335,10th September 2021,MAIL9A4SJXTB,Final Template Check and Manuscript Ready for Softconf Upload,Email
+e336,12th September 2021,MAILME2NFXQG,ACL 2021 Camera-Ready Manuscript and Supplementary Files Successfully Submitted,Email
+e337,12th September 2021,MAILEU947XCF,ACL 2021 Camera-Ready Submission Acknowledgment [Submission ID: SUB-ACL-2021-0471],Email
+e338,18th September 2021,MAILJT49DFXQ,Camera-Ready Final Acceptance and Schedule - ACL 2021 [Submission ID: SUB-ACL-2021-0471],Email
+e339,20th September 2021,MAILK57YWXQJ,Minor Author Detail Correction Request – ACL 2021 [Submission ID: SUB-ACL-2021-0471],Email
+e340,23rd September 2021,MAILLY43FSTP,Author Detail Correction Processed – ACL 2021 [Submission ID: SUB-ACL-2021-0471],Email
+e341,28th September 2021,MAILQU62SKVL,ACL 2021 Session Scheduling and Registration Instructions,Email
+e342,29th September 2021,MAILA83CFPLM,Presenting Author Confirmation and Registration Process – ACL 2021,Email
+e343,1st October 2021,MAILTF58BZQH,Confirmation of Presenting Author and Registration Record – ACL 2021,Email
+e344,5th October 2021,MAILWS8XY0NJ,Registration and Proceedings Release Form Submission – ACL 2021,Email
+e345,6th October 2021,MAILF59GHYWR,Registration and Documentation Receipt Confirmation – ACL 2021,Email
+e346,11th October 2021,MAILS91TZF2X,Final Program and Oral Presentation Guidelines – ACL 2021,Email
+e347,15th October 2021,MAILP53VHB2T,Oral Presentation Logistics – ACL 2021,Email
+e348,17th October 2021,MAILK3YQ7PV7,Abstract Modification Procedure – ACL 2021 Oral Presentations,Email
+e349,21st October 2021,MAILUX48MP20,Submission of Revised Abstract for Oral Presentation – ACL 2021,Email
+e350,23rd October 2021,MAILC49TNRF2,Confirmation of Revised Abstract Receipt – ACL 2021 Oral Presentation,Email
+e351,29th October 2021,MAILJ81N4XFR,Final Confirmation – Revised Abstract Incorporated in ACL 2021 Proceedings,Email
+e352,2nd November 2021,MAILWQ84POLN,Coordination on Final Slide Preparation & Dry Run for ACL 2021 Oral Presentation,Email
+e353,4th November 2021,MAILBGN4TZU5,Re: Coordination on Final Slide Preparation & Dry Run for ACL 2021 Oral Presentation,Email
+e354,5th November 2021,MAILT3K5NVL2,Re: Coordination on Final Slide Preparation & Dry Run for ACL 2021 Oral Presentation,Email
+e355,7th November 2021,MAIL8JN5DLQ2,Proposed Time Slots for Dry Run – ACL 2021 Oral Presentation,Email
+e356,8th November 2021,MAILVR69CHU8,Re: Proposed Time Slots for Dry Run – ACL 2021 Oral Presentation,Email
+e357,9th November 2021,MAILEF43PLXO,Re: Proposed Time Slots for Dry Run – ACL 2021 Oral Presentation,Email
+e358,10th November 2021,MAILJG8KX9VM,Feedback on Slide Deck & Final Items for ACL 2021 Dry Run,Email
+e359,11th November 2021,MAIL6LG2V91X,Re: Feedback on Slide Deck & Q&A Talking Points for ACL 2021 Dry Run,Email
+e360,11th November 2021,MAILSRK8Z10C,Final Agenda and Meeting Logistics – ACL 2021 Dry Run (24 April),Email
+e361,13th November 2021,MAILP7DS4V3K,Summary & Action Points – Dry Run for ACL 2021 Oral Presentation,Email
+e362,14th November 2021,MAILA92FDG5S,Re: Summary & Action Points – Dry Run for ACL 2021 Oral Presentation,Email
+e363,15th November 2021,MAILMKT398YD,Final Slide Deck for ACL 2021 – Last Call for Comments,Email
+e364,16th November 2021,MAIL4G8V5E2Y,Re: Final Slide Deck for ACL 2021 – Approval and Submission Logistics,Email
+e365,16th November 2021,MAILPLU9S0KM,Submission Confirmation – ACL 2021 Oral Presentation Materials,Email
+e366,14th December 2021,MAILR6QP7HD4,Decision Notification – ACL 2021 Oral Presentation (Submission ID: SUB-ACL-2022-1098),Email
+e367,15th December 2021,MAILW8F1VYQ3,Planning for Camera-Ready Submission – ACL 2021 Accepted Talk,Email
+e368,16th December 2021,MAIL7HS39AFQ,Re: Planning for Camera-Ready Submission – ACL 2021 Accepted Talk,Email
+e369,18th December 2021,MAILDSM73KXQ,Re: Camera-Ready Submission – Meeting Availability and Next Steps,Email
+e370,19th December 2021,MAILE812V3PK,Re: Camera-Ready Submission – Confirming Meeting Time and Suggestions,Email
+e371,20th December 2021,MAIL2AXY9VWR,"Re: Camera-Ready Submission – Agenda, Checklist & Preliminary Materials",Email
+e372,22nd December 2021,MAILJX5T3QPW,"Re: Camera-Ready Submission – Agenda, Checklist & Preliminary Materials",Email
+e373,23rd December 2021,MAIL4PY6JQB3,Camera-Ready Review Meeting – Join Link & Last-Minute Preparations,Email
+e374,24th December 2021,MAIL95LX4YTQ,Camera-Ready Review Meeting – Minutes and Next Steps,Email
+e375,26th December 2021,MAILNT7W4QZV,Re: Camera-Ready Review Meeting – Minutes and Next Steps,Email
+e376,27th December 2021,MAILEV5P6HJL,"Re: Camera-Ready Review – Visuals, Compliance Updates, and Final Steps",Email
+e377,29th December 2021,MAILV27FG81B,Final Checklist Review and Submission Readiness Confirmation,Email
+e378,30th December 2021,MAILJK39DPZC,Camera-Ready Submission Confirmation and Final Materials,Email
+e379,31st December 2021,MAILEU7QX13A,ACL 2022 Camera-Ready Submission – Acknowledgment (SUB-ACL-2022-0047),Email
+e380,12th January 2022,MAILT5B8WY2C,ACL 2022 Camera-Ready Acceptance Notification and Camera-Ready Deadline — SUB-ACL-2022-0047,Email
+e381,13th January 2022,MAIL4V8XZUP2,ACL 2022 Acceptance – Next Steps and Preparation Timeline,Email
+e382,15th January 2022,MAILGQZ48VLD,Re: ACL 2022 Acceptance – Next Steps and Preparation Timeline,Email
+e383,16th January 2022,MAILAH8FSWP2,"Re: ACL 2022 Acceptance – Next Steps, Rehearsal, and Presentation Plan",Email
+e384,17th January 2022,MAIL3G7BE6VP,"Re: ACL 2022 Acceptance – Next Steps, Rehearsal, and Presentation Plan",Email
+e385,19th January 2022,MAILEP7ZUKR1,ACL 2022 Presentation Slot Update & Rehearsal Confirmation (18 July),Email
+e386,19th January 2022,MAILEU72D3V1,Re: ACL 2022 Presentation Slot Update & Rehearsal Confirmation (18 July),Email
+e387,20th January 2022,MAILV6YZJ359,Final Pre-Conference Checklist & Figure Legend Confirmation,Email
+e388,21st January 2022,MAIL7S4KD9VT,Figure Legend Review & Q&A Preparation for ACL 2022 Presentation,Email
+e389,22nd January 2022,MAILFP2H8UZS,Final Slide Deck Ready & Action Items for Rehearsal (18 July),Email
+e390,23rd January 2022,MAIL9MD3K2SW,Re: Final Slide Deck Ready & Action Items for Rehearsal (18 July),Email
+e391,24th January 2022,MAILFR1B2VQ8,Rehearsal Minutes & Final Checklist for ACL 2022 Presentation,Email
+e392,24th January 2022,MAILE82NVM5K,Acknowledgment: Rehearsal Minutes & Next Steps,Email
+e393,25th January 2022,MAILU3DH46ZY,Final Q&A Sheet Circulated & Readiness for ACL 2022,Email
+e394,26th January 2022,MAILN8ZH72FS,Updated Slides with Final Citations Uploaded,Email
+e395,27th January 2022,MAIL2QGF57AM,Final Review Confirmation & ACL Session Logistics,Email
+e396,28th January 2022,MAIL7YR2QP1W,Technical Compatibility Check Complete & Final Zoom Backup Details,Email
+e397,29th January 2022,MAILP57QXJKL,ACL 2022 Session: Final Confirmation & Pre-Presentation Checklist,Email
+e398,29th January 2022,MAILES4BKP83,Re: ACL 2022 Session: Final Confirmation & Pre-Presentation Checklist,Email
+e399,30th January 2022,MAILF95BM8TZ,Congratulations on a Successful ACL 2022 Presentation,Email
+e400,31st January 2022,MAILJ39KDZ1F,Scheduling Post-ACL Debrief and Next Steps Meeting,Email
+e401,1st February 2022,MAIL1X7BKDZ3,Re: Scheduling Post-ACL Debrief and Next Steps Meeting,Email
+e402,1st February 2022,MAIL3F7NKLQ2,Re: Scheduling Post-ACL Debrief and Next Steps Meeting,Email
+e403,2nd February 2022,MAILD2V87PQM,Finalizing Debrief Meeting Time and Agenda,Email
+e404,2nd February 2022,MAIL7K29XBTL,Zoom Link and Final Details for 30 July Debrief Meeting,Email
+e405,4th February 2022,MAILP4A8B9WJ,Minutes and Action Items from 30 July Debrief Meeting,Email
+e406,6th February 2022,MAILE1R92QMB,Key References on OCR Post-Processing for Historical Texts,Email
+e407,6th February 2022,MAILX8FAQ57P,Circulating Feedback Summary & Annotation Reproducibility Template,Email
+e408,8th February 2022,MAIL4DZ7R2S9,Feedback Remarks from ACL Session Chair and Proposed Edits to Annotation Template,Email
+e409,9th February 2022,MAIL51RZDKPV,Framing Corpus Transparency and Integration of Recent Feedback,Email
+e410,11th February 2022,MAILAF90TKQP,Structuring Case Studies & Integrating Comparative Protocol Analysis,Email
+e411,12th February 2022,MAILUTQ92YXM,Re: Case Study Examples and Protocol Comparison Drafts,Email
+e412,14th February 2022,MAIL4T8N1QXR,Hindi/Urdu Case Studies and Midweek Check-in Availability,Email
+e413,15th February 2022,MAILFT3W8XZ7,Meeting Confirmation and Circulating Workflow Draft,Email
+e414,17th February 2022,MAILZ72Y1FHS,Agenda for Today’s Meeting & Pre-Read Reminders,Email
+e415,18th February 2022,MAIL12X9MJ8L,Meeting Minutes: Case Studies and Workflow Integration (17th February 2020),Email
+e416,19th February 2022,MAILU0SFZH39,Finalized Case Study Vignettes and Next Steps,Email
+e417,21st February 2022,MAIL8DFLJ3ZW,Workflow Diagram and Supplementary Material Integration—Final Review and Queries,Email
+e418,22nd February 2022,MAILE61N9ZJK,"Re: Workflow Diagram, Supplementary File Structure & Action Points",Email
+e419,23rd February 2022,MAILN6M2JQVE,Supplementary Case Studies & Caption Template Confirmation,Email
+e420,24th February 2022,MAIL2BQGJ71K,Supplementary Captions Template & Final Manuscript Circulation Plan,Email
+e421,24th February 2022,MAIL3J7YGDQF,Integrated Draft Circulation and Cross-Review Coordination,Email
+e422,24th February 2022,MAILQ74DSXP2,Re: Integrated Draft Circulation and Cross-Review Coordination,Email
+e423,25th February 2022,MAILB72PJD4M,Ethics Compliance Update and Clearance for Submission,Email
+e424,26th February 2022,MAIL24NSQZL8,Final Review Confirmation and Remaining Checklist Items before JOCCH Submission,Email
+e425,27th February 2022,MAILE8V2RZQS,"Submission-Ready Package: Synchronized Files, Hyperlink Validation & Next Steps",Email
+e426,28th February 2022,MAILQ58DZVL3,JOCCH Submission Completed – Submission ID Confirmation,Email
+e427,4th March 2022,MAILRZ58GKPW,"Post-Submission: Next Steps, Data DOI Embargo, and Outreach Strategy",Email
+e428,6th March 2022,MAILWF8Z23GJ,"Re: Post-Submission: Next Steps, Data DOI Embargo, and Outreach Strategy",Email
+e429,9th March 2022,MAILKL98XWER,Outreach Materials Coordination and Dataset Embargo Status,Email
+e430,11th March 2022,MAILPW4N2X7Q,Dataset Embargo Activation and Access Statement for Outreach,Email
+e431,13th March 2022,MAILT47G2YKS,Meeting Minutes: Outreach Coordination and Embargo Compliance Status,Email
+e432,17th March 2022,MAILAU81KTPX,Brief: Pre-Outreach Review and Next Internal Check-in,Email
+e433,18th March 2022,MAIL9W7PZVQ3,Research-Focused Outreach Draft Ready for Review,Email
+e434,19th March 2022,MAILE54MSZ19,General Audience Outreach Draft Uploaded & Next Steps,Email
+e435,19th March 2022,MAILL28CX1FD,Feedback on Outreach Drafts and Embargo Language,Email
+e436,20th March 2022,MAILQ52C8NML,Final Outreach Materials Review & Confirmation of Internal Call,Email
+e437,22nd March 2022,MAILY5JK29XM,Outreach Drafts Finalized & Google Meet Link for 26 September Call,Email
+e438,26th March 2022,MAIL4XM2QNTB,26 September Meeting Minutes – Outreach Release and Embargo Monitoring,Email
+e439,30th March 2022,MAIL27NCXUVP,Status Update: JOCCH Editorial Correspondence & Next Steps,Email
+e440,1st April 2022,MAIL1N8ZJ3KV,Re: Status Update and Availability for Mid-October Progress Call,Email
+e441,3rd April 2022,MAILJD3X7P2L,Mid-October Progress Call – Availability and Oxford Press Office Readiness,Email
+e442,4th April 2022,MAILM3WJ7S8D,Re: Mid-October Progress Call – Confirmation and IACS Press Coordination,Email
+e443,6th April 2022,MAILW9J4S1QN,Re: Confirmation for Progress Call & Standby for JOCCH Editorial Update,Email
+e444,6th April 2022,MAILH8N2S0VW,Google Meet Link and Agenda Confirmation for 16 October Progress Review,Email
+e445,9th April 2022,MAILJK29BX4L,Embargo Log Snapshot & Final Preparation for 16 October Call,Email
+e446,12th April 2022,MAILE0B2F6KD,Minutes and Action Points from 16 October Progress Review,Email
+e447,12th April 2022,MAILP8K5M3Y2,Embargo Log Harmonization – Drafted Changes and Next Steps,Email
+e448,13th April 2022,MAILG5QJ8S1W,Re: Embargo Log Harmonization – Review Feedback and Finalization Timeline,Email
+e449,14th April 2022,MAILF4Y8S2MW,Harmonized Embargo Log – Oxford Compliance Note and Final Confirmation,Email
+e450,16th April 2022,MAILJ5N8W2XF,Circulation: Draft Press Query Response Template and Finalized Embargo Log Audit Trail,Email
+e451,18th April 2022,MAILR4X2K7VM,Response Template – Stanford Review & Suggestions for Proactive Case Inclusions,Email
+e452,19th April 2022,MAILA8M5Y1ZT,Consolidated Feedback on Press Query Response Template & Next Steps for JCDL 2022 Scenario Integration,Email
+e453,21st April 2022,MAILU9F7S6PM,IACS Review and Additions to Scenario Supplement – Press Query Protocol & Consortium Adoption,Email
+e454,22nd April 2022,MAILZ2D8M1JP,Approval and Consortium Sign-off: Unified Press Query Response Template with Embedded Scenario Annex,Email
+e455,23rd April 2022,MAILH3Q4R7PL,Final Endorsement – Unified Press Query Response Template & Consortium Onboarding,Email
+e456,24th April 2022,MAILV7X6T2QD,Oxford Endorsement & Distribution Timeline – Unified Press Query Protocol,Email
+e457,25th April 2022,MAILX3S2V5NB,IACS Onboarding Update & Early Feedback – Unified Press Query Protocol,Email
+e458,27th April 2022,MAILE7U5K0TY,Coordinating Next Steps and FAQ Annex Proposal – Press Query Protocol and JCDL 2022,Email
+e459,28th April 2022,MAILP2V9K7ZW,Availability for FAQ Annex Meeting & Stanford Media FAQ Resources,Email
+e460,29th April 2022,MAILS6B5H8TJ,FAQ Template Contributions & Meeting Timing Confirmation,Email
+e461,29th April 2022,MAILF8L2W5XQ,Finalizing Meeting Time & IACS FAQ Draft Contributions,Email
+e462,1st May 2022,MAILD5T4Q9ER,Google Meet Link for FAQ Annex Working Session (15 November) and Review Timeline,Email
+e463,2nd May 2022,MAILE3V7W2ZA,Google Meet Link for FAQ Annex Session & Access to Drafts,Email
+e464,5th May 2022,MAILP3S8Q1DM,Margin Comments Completed & Final Suggestions for FAQ Annex Meeting,Email
+e465,6th May 2022,MAILF4N1C2QB,Minutes: FAQ Annex Working Session (15 November) & Consolidation Actions,Email
+e466,9th May 2022,MAILS2E7M8KL,US FERPA & Institutional Disclaimer Footnotes for FAQ Annex,Email
+e467,11th May 2022,MAILQ7U3V5NJ,Circulation of Integrated FAQ Annex Draft & Request for Final Review,Email
+e468,12th May 2022,MAILE7K9TU3B,Review Feedback on Integrated FAQ Annex Draft & Next Steps for Press Protocol Submission,Email
+e469,12th May 2022,MAILF8P4R2CW,Re: Review Feedback on Integrated FAQ Annex Draft & Final Check-in Scheduling,Email
+e470,13th May 2022,MAILX1D9E7ZP,Re: Review Feedback on Integrated FAQ Annex Draft & Check-in Availability,Email
+e471,13th May 2022,MAILH3G7V2YD,Final Use-Case Insert for Metadata Protocol Section & Confirmation of Meeting Slot,Email
+e472,14th May 2022,MAILE5W9Q4JT,Acknowledgement of Metadata Use-Case Insert & Pre-Check-in Items,Email
+e473,15th May 2022,MAILL7F8J2QP,Final Check-in Agenda & Confirmation for JCDL 2022 FAQ Annex Submission,Email
+e474,16th May 2022,MAILK4N2V7EF,Meeting Minutes & Action Summary: Final Check-in for JCDL 2022 FAQ Annex Submission,Email
+e475,17th May 2022,MAILV9J8L2FM,Submission Confirmation: JCDL 2022 FAQ Annex & Supplementary Materials,Email
+e476,18th May 2022,MAILQ9B3A7UT,Submission Acknowledgement: JCDL 2022 FAQ Annex – SUB-JCDL-2022-0432,Email
+e477,20th July 2022,MAILS3K7U1XC,Decision Notification for JCDL 2022 Submission – SUB-JCDL-2022-0432,Email
+e478,21st July 2022,MAILL8F6P2WR,JCDL 2022 Minor Revisions – Next Steps & Task Allocation,Email
+e479,22nd July 2022,MAILA7U5J2LF,Draft of Non-English Press Stakeholder Engagement – Section 4 Annotation,Email
+e480,23rd July 2022,MAILW8B7K3TE,Feedback on Section 4 Annotation & Update on Typo Revisions,Email
+e481,25th July 2022,MAILJ2D8M6YZ,Consolidated Edits for Camera-Ready – Legal References & Final Annotation,Email
+e482,27th July 2022,MAILP4V2H9MQ,Re: Consolidated Edits for Camera-Ready – Final Endorsement & Formatting Check,Email
+e483,28th July 2022,MAILU5Q8D2VS,Camera-Ready Submission Confirmation & JCDL 2022 Final Steps,Email
+e484,29th July 2022,MAILZ7B1L4NT,Camera-Ready File Uploaded – JCDL 2022 Submission Portal Confirmation,Email
+e485,1st August 2022,MAILG3S9D4XB,JCDL 2022 Camera-Ready Final Approval – SUB-JCDL-2022-0432,Email
+e486,2nd August 2022,MAILE8W5Z6QF,Planning Institutional Press Outreach for JCDL 2022,Email
+e487,3rd August 2022,MAILV2N3Q8HU,IACS Press Office Guidance & Resources for Collaborative Outreach,Email
+e488,4th August 2022,MAILX8C4S9DJ,Draft Press Release for JCDL 2022 – Initial Circulation & Collaborative Input,Email
+e489,6th August 2022,MAILB1N5E3WT,Feedback on Press Release Draft & IACS Institutional Quote,Email
+e490,7th August 2022,MAILT7H9K4ML,Stanford Quote & Suggestions for Final Press Release Draft (JCDL 2022),Email
+e491,8th August 2022,MAILY3R5B7XZ,Finalized Press Release Draft – Ready for Institutional Submission,Email
+e492,8th August 2022,MAILP4J2S6XC,IACS Press Office Submission Confirmation – Next Steps,Email
+e493,9th August 2022,MAILN7D8V6QP,Stanford Press Office Submission Confirmation & Timelines,Email
+e494,10th August 2022,MAILF9D7L2ST,Oxford Press Office Submission & Next Coordination Steps,Email
+e495,11th August 2022,MAILR8Q4Z1VM,Coordinated Press Release – Awaiting Final Institutional Approvals,Email
+e496,12th August 2022,MAILS3Y9M4QT,IACS Press Office Approval – Final All-Clear Pending Stanford & Oxford,Email
+e497,13th August 2022,MAILL7P3V2SB,Stanford Press Office Approval – Final Synchronization,Email
+e498,13th August 2022,MAILZ3K7Q1BW,Oxford Press Office Approval – Ready for Final Synchronization,Email
+e499,14th August 2022,MAILP2N8H5TR,Re: Oxford Press Office Approval – Next Steps and Coordination Call,Email
+e500,15th August 2022,MAILW1F6Z9EV,Coordination Call – Agenda and Zoom Link for Final Synchronization,Email
+e501,17th August 2022,MAILU5B3Q2HN,Meeting Minutes: Final Synchronization Call for JCDL 2022 Press Release,Email
+e502,18th August 2022,MAILH8L4Y7VB,Press Release – Unified All-Clear: JCDL 2022 Project Announcement,Email
+e503,19th August 2022,MAILY2L7X9QD,Confirmation of Press Release Receipt & Distribution – JCDL 2022,Email
+e504,19th August 2022,MAILA9J3T7LU,Post-Release Actions & Media Monitoring Sheet Access,Email
+e505,20th August 2022,MAILQ8M2VLXJ,Media Monitoring Sheet – Access Link and Instructions,Email
+e506,22nd August 2022,MAILV5P1DK3H,Follow-up: JCDL Bulletin Materials and Additional Quotes,Email
+e507,23rd August 2022,MAILF8H4SK5B,IACS Contribution—Summary Statements for JCDL Bulletin,Email
+e508,24th August 2022,MAILN4T7XBQ1,Final Review of JCDL Bulletin Materials and Visual Assets Submission,Email
+e509,25th August 2022,MAILZ8S2QMLC,Submission of Consolidated Bulletin Materials and Visual Assets,Email
+e510,25th August 2022,MAILW5D8X3NC,Bulletin Draft Available for Review & Final Approval Window,Email
+e511,26th August 2022,MAILY1P6SMUJ,Confirmation: Bulletin Draft Review & Final Approval,Email
+e512,28th August 2022,MAILM2K4Q5WN,Official Launch: JCDL 2022 Newsletter & Next Steps for Conference Promotion,Email
+e513,29th August 2022,MAILE4J8SZMY,Planning for JCDL 2022 Live Project Spotlight and Next Outreach Steps,Email
+e514,30th August 2022,MAILB9Q3DZK2,Re: Planning for JCDL 2022 Live Project Spotlight and Next Outreach Steps,Email
+e515,31st August 2022,MAILN8L2DKPS,Confirmation of Meeting Slot & Preliminary Agenda for JCDL Live Project Spotlight,Email
+e516,31st August 2022,MAILT5R2LCQ7,"Zoom Link & Final Meeting Logistics for JCDL Spotlight Prep – 31 March, 11:30 GMT",Email
+e517,31st August 2022,MAILV3T5MZ82,New Partnership Updates & Additional Talking Points for JCDL Spotlight,Email
+e518,31st August 2022,MAILSJ74QRXP,Meeting Minutes & Follow-Up Actions – JCDL 2022 Live Spotlight Strategy Call,Email
+e519,1st September 2022,MAIL8XPLT3QW,Re: Meeting Minutes & Next Steps – JCDL 2022 Strategy,Email
+e520,2nd September 2022,MAILF2DJ08UV,Internal Rehearsal Scheduling & Infographic Slide Progress – JCDL 2022,Email
+e521,3rd September 2022,MAILP39TRV1Q,Re: Internal Rehearsal Scheduling & Final Material Review for JCDL Spotlight,Email
+e522,4th September 2022,MAIL7FLQTD34,Oxford Draft Press Note & Confirming Internal Rehearsal – JCDL Live Session Prep,Email
+e523,5th September 2022,MAIL5DKP3ZYA,Confirmation of Rehearsal Slot & Final Slide Deck Upload – JCDL 2022,Email
+e524,6th September 2022,MAILK8RZ3YX0,Re: Confirmation of Rehearsal Slot & Review of Final Materials – JCDL 2022,Email
+e525,6th September 2022,MAILE1Z5X8BV,Zoom Link and Agenda for JCDL 2022 Internal Rehearsal,Email
+e526,7th September 2022,MAILJ4MDXK72,Internal Rehearsal Summary & Final Checklist for JCDL 2022 Spotlight,Email
+e527,8th September 2022,MAIL3TLVZRKY,Condensed Regional Engagement Charts & Final Checklist Confirmation – JCDL 2022,Email
+e528,8th September 2022,MAILVQ9P7L2B,Updated FAQ Slide & Final Review Coordination – JCDL 2022,Email
+e529,9th September 2022,MAIL2XMN74VC,Final Press Release Synchronization & Asynchronous Sign-Off for JCDL 2022,Email
+e530,9th September 2022,MAIL71QFVX32,Re: Final Press Release Synchronization & Asynchronous Sign-Off for JCDL 2022,Email
+e531,9th September 2022,MAIL3H7VX1LN,Re: Final Press Release Synchronization & Asynchronous Sign-Off for JCDL 2022,Email
+e532,10th September 2022,MAIL5B9ZK7QX,Submission Confirmation for JCDL 2022 Spotlight & Next Steps,Email
+e533,11th September 2022,MAILK3BX2HQN,Re: Submission Confirmation for JCDL 2022 Spotlight & Next Steps,Email
+e534,12th September 2022,MAILV8EZ1KLS,Re: Submission Confirmation for JCDL 2022 Spotlight & Next Steps,Email
+e535,12th September 2022,MAILUY97M5RT,Re: Submission Confirmation for JCDL 2022 Spotlight & Next Steps,Email
+e536,12th September 2022,MAILA2J3XLMQ,Re: Submission Confirmation for JCDL 2022 Spotlight & Next Steps,Email
+e537,12th September 2022,MAILR4K21HJ8,Finalized Session Summary & Google Meet Link for JCDL Coordination Call,Email
+e538,12th September 2022,MAILUB0HQCXZ,Secure Drive Link for JCDL 2022 Presentation Assets,Email
+e539,13th September 2022,MAILF728GQW1,JCDL 2022—Follow-Up: Technical Requirements & Conference Liaison Update,Email
+e540,14th September 2022,MAILRM2TCL89,Re: JCDL 2022—Follow-Up: Technical Requirements & Conference Liaison Update,Email
+e541,15th September 2022,MAILT4F1GDQ6,Uploaded Session Summary & Bios—Ready for Your Final Review,Email
+e542,16th September 2022,MAILEJ8TN234,Draft Pre-recorded Spotlight Video—Request for Feedback,Email
+e543,17th September 2022,MAIL5RZ74MNB,Feedback on Pre-recorded Spotlight Video & Next Steps,Email
+e544,18th September 2022,MAIL73NFOVZD,Final Accessibility Audit & Additional Suggestions for Video Revision,Email
+e545,18th September 2022,MAILGY82WLPQ,Technical Feedback on Video Draft & Ready for Final Review,Email
+e546,19th September 2022,MAILX5CG9WT2,Final Revised Spotlight Video Uploaded—Ready for Submission,Email
+e547,20th September 2022,MAILUJQ6N2YS,Final Approval—JCDL Materials Submission on 25 April,Email
+e548,21st September 2022,MAILPG2483SL,JCDL Submission Complete: Confirmation & Next Steps,Email
+e549,22nd September 2022,MAILW19Z75EN,Acknowledgment of JCDL 2022 Submission (SUB-JCDL-2022-1189),Email
+e550,23rd September 2022,MAIL6SKZ4RXV,Post-Submission Plan: Dissemination and Future Directions,Email
+e551,24th September 2022,MAILPTM68YZX,Re: Post-Submission Plan: Dissemination and Future Directions,Email
+e552,24th September 2022,MAILEM9JG842,Re: Post-Submission Plan & Coordination on Dissemination Activities,Email
+e553,25th September 2022,MAIL7BGDH5ZX,Re: Post-Submission Plan & Coordination on Dissemination Activities,Email
+e554,26th September 2022,MAILXM2F7J8Q,Next Steps: Blog Post Draft & Research Note Outline,Email
+e555,27th September 2022,MAILJ8NF54T0,Re: Next Steps: Blog Post Draft & Research Note Outline,Email
+e556,28th September 2022,MAILUK2GF1S7,Re: Next Steps: Blog Post Draft & Research Note Outline,Email
+e557,29th September 2022,MAIL7LXWQY93,Re: Next Steps: Blog Post Draft & Research Note Outline,Email
+e558,30th September 2022,MAILF52JLK87,Re: Next Steps: Blog Post Draft & Research Note Outline,Email
+e559,30th September 2022,MAIL81QKJ23X,Agenda and Documents for 7 May Check-In,Email
+e560,1st October 2022,MAILX5GM3C82,Minutes & Outcomes: 7 May Check-In,Email
+e561,2nd October 2022,MAILZ8YJQ47N,Follow-up on Action Items and Workshop Outline Draft,Email
+e562,3rd October 2022,MAILD2HFQ943,Re: Follow-up on Action Items and Workshop Outline Draft,Email
+e563,4th October 2022,MAILPK7ZC318,Workshop/Tutorial Preliminary Agenda and Request for Feedback,Email
+e564,5th October 2022,MAILV4JPK093,Re: Workshop/Tutorial Preliminary Agenda and Request for Feedback,Email
+e565,5th October 2022,MAILF382BJ9Q,Response to Workshop Agenda Feedback & Finalization Steps,Email
+e566,6th October 2022,MAILY7QBRK5C,Re: Response to Workshop Agenda Feedback & Finalization Steps,Email
+e567,7th October 2022,MAILRW2QJ0B7,Upload of Workshop Materials & Confirmation of Next Steps,Email
+e568,8th October 2022,MAIL29VQHP4S,Feedback on Workshop Materials & Next Steps for Outreach,Email
+e569,9th October 2022,MAILX3C94QBJ,"Final Materials Review, Outreach Alignment, and Demo Run-Through Invite",Email
+e570,10th October 2022,MAIL8H5JW4KS,Outreach Materials Finalization & Feedback Form Update,Email
+e571,11th October 2022,MAILW9H8T5YU,Launch of Workshop Registration & Outreach Distribution,Email
+e572,11th October 2022,MAIL5DN8G2KL,Internal Demo Run-Through: Zoom Link and Agenda,Email
+e573,12th October 2022,MAIL7ZB9PYTK,"Internal Demo Run-Through: Minutes, Insights, and Next Steps",Email
+e574,13th October 2022,MAILN3H6F2VW,Accessibility Update: Supplemental NER Guide & Workshop Logistics,Email
+e575,14th October 2022,MAIL6J5HV9QT,Accessibility Final Verification & Contingency Preparation Update,Email
+e576,15th October 2022,MAILE2PH9KLX,Check-In Call Confirmation & Final Contingency Resources,Email
+e577,16th October 2022,MAILF7PJ6ZYW,Workshop Contingency Review & Live Event Preparation - Minutes of 24 May Meeting,Email
+e578,17th October 2022,MAIL8V3QZ1LD,Pre-Event Communication Test: Results & Next Steps,Email
+e579,17th October 2022,MAILP9FQS43B,Pre-Event Communication Dissemination and Real-Time Monitoring,Email
+e580,18th October 2022,MAILQ8JK37AP,Real-Time Monitoring Update & Q&A Coordination Ahead of Workshop,Email
+e581,18th October 2022,MAILPW8X45HT,Re: Real-Time Monitoring Update & Q&A Coordination Ahead of Workshop,Email
+e582,19th October 2022,MAILR3ZQ9WLU,Q&A Preparation and Overnight Participant Feedback Summary,Email
+e583,20th October 2022,MAILV2ZD1UPR,Final Q&A Moderation Plan and Accessibility Protocols for Workshop Launch,Email
+e584,21st October 2022,MAILE239KLUF,Backup Resource Link Verification and Pre-Event Slide Deck Review,Email
+e585,21st October 2022,MAILMA9W7XEG,Resource Mirror Access Confirmation (Asia) and Final Pre-Event Checks,Email
+e586,22nd October 2022,MAILH7R2C4U5,Workshop Launch Appreciation & Real-Time Debrief Invitation,Email
+e587,23rd October 2022,MAILNQQYZX18,Confirmation for Workshop Debrief & Initial Analytics Summary,Email
+e588,23rd October 2022,MAILE6TX4Q1R,Re: Confirmation for Workshop Debrief & Initial Analytics Summary,Email
+e589,23rd October 2022,MAIL8T3FJU60,Workshop Debrief – Accessibility Notes and Next Steps for Documentation,Email
+e590,23rd October 2022,MAILTQ7PA5ZB,Workshop Report Outline Refinement and Writing Distribution,Email
+e591,24th October 2022,MAILZR8ML7J2,Confirmation of Section Assignments & Timeline for Workshop Report,Email
+e592,25th October 2022,MAIL9N2HEX0T,Re: Confirmation of Section Assignments & Timeline for Workshop Report,Email
+e593,26th October 2022,MAILE41CX7KG,"Confirmation of Lead Assignments, Google Doc Access & Next Steps",Email
+e594,27th October 2022,MAILTW19SD3L,Finalizing Section Leads & Agenda for 10 June Sync Call,Email
+e595,28th October 2022,MAIL5A8QNCXL,Draft Agenda for 10 June Sync Call & Additional Planning Notes,Email
+e596,29th October 2022,MAILQ7KLV49B,Re: Draft Agenda for 10 June Sync Call & Additional Planning Notes,Email
+e597,29th October 2022,MAILE35NQ78J,Re: Draft Agenda for 10 June Sync Call & Additional Planning Notes,Email
+e598,30th October 2022,MAILB60XNYAP,"Finalized Agenda, Access to Shared Documents & Conference Submission Points",Email
+e599,31st October 2022,MAIL4UJ9KW3R,Minutes from 10 June Sync Call & Action Points,Email
+e600,1st November 2022,MAILV35AJ6FZ,Re: Minutes from 10 June Sync Call & Action Points,Email
+e601,2nd November 2022,MAILEI7H24VB,Accessibility Supplementary Material & Framework References Update,Email
+e602,3rd November 2022,MAILHK7F49Q2,Re: Accessibility Supplementary Material & Framework References Update,Email
+e603,4th November 2022,MAILG82KDRU5,Integration of Dialect Normalization Notes & Section Coordination,Email
+e604,5th November 2022,MAIL5X3D9LQB,Unified Cover Letter Draft & Checklist Before 18 June Section Review,Email
+e605,6th November 2022,MAILPYQ7J93X,Section Revisions Uploaded & Feedback on Cover Letter Draft,Email
+e606,7th November 2022,MAIL8Q2KORLF,Final Integrated Draft: Confirmation & Next Steps Toward Submission,Email
+e607,8th November 2022,MAIL197ZNXAL,Cover Letter Finalization & Confirmation of Next Steps,Email
+e608,9th November 2022,MAILTLQWDS18,Merged Draft Circulated for Final Review & Zoom Walkthrough Scheduling,Email
+e609,10th November 2022,MAILK9JD32LM,Re: Merged Draft Circulated for Final Review & Zoom Walkthrough Scheduling,Email
+e610,11th November 2022,MAIL1FHVMW8S,Notes and Action Points from 24 June Zoom Walkthrough,Email
+e611,13th November 2022,MAILWGQ0BZ68,JOCCH Submission Confirmation & Tracking ID,Email
+e612,15th November 2022,MAIL3XME9VQD,Acknowledgment of Submission Receipt: SUB-JOCCH-2022-0421,Email
+e613,18th November 2022,MAILWRF47QLB,Copyright Agreement Sign-off & Next Steps During Editorial Screening,Email
+e614,19th November 2022,MAILJ8BKQ1XM,Re: Copyright Agreement Sign-off & Next Steps During Editorial Screening,Email
+e615,20th November 2022,MAILRG4V9ZX1,Copyright Agreements Confirmed & Reviewer Support Folder Access,Email
+e616,23rd November 2022,MAILD9A6ZN2R,Update: Editorial Screening Status & Next Steps for JOCCH Submission,Email
+e617,25th November 2022,MAILEV72RC4S,Preparing for Peer Review: Anticipated Reviewer Questions & Rehearsal,Email
+e618,27th November 2022,MAIL5PGJQ2CL,Re: Preparing for Peer Review: Anticipated Reviewer Questions & Rehearsal,Email
+e619,28th November 2022,MAIL44GJP7SA,Coordination Call Confirmation & Further Reviewer Preparation,Email
+e620,29th November 2022,MAILVK9RFT38,Google Meet Invitation: Reviewer Preparation Call,Email
+e621,2nd December 2022,MAILAXZ4U78N,Meeting Minutes: Reviewer Preparation Call (1st December 2020),Email
+e622,4th December 2022,MAILWP6D91QZ,Status Check: Finalizing Reviewer Response Materials,Email
+e623,5th December 2022,MAILE9ZL73P1,Confirmation: Reviewer Response Materials Finalized,Email
+e624,9th December 2022,MAILU7J356PH,Status Update: JOCCH Peer Review Progress (SUB-JOCCH-2022-0421),Email
+e625,13th December 2022,MAILE3N24GVH,Maintaining Momentum During Peer Review – Next Steps,Email
+e626,15th December 2022,MAIL0Z58QPLH,Re: Maintaining Momentum During Peer Review – Next Steps,Email
+e627,15th December 2022,MAILQ2X7SYDJ,Re: Annotated Bibliography & Collaborative Session Planning,Email
+e628,16th December 2022,MAIL95VBQFEL,Re: Annotated Bibliography & Collaborative Session Planning,Email
+e629,17th December 2022,MAILA3VQZ2HK,Annotated Bibliography Template Link & Meeting Slot Preferences,Email
+e630,18th December 2022,MAILY7B9HNQP,Bibliography Template Link & Organizational Notes,Email
+e631,20th December 2022,MAIL2CPJ4LQS,Doodle Poll Link for Meeting & Bibliography Progress,Email
+e632,21st December 2022,MAILQ9TX48NP,Re: Doodle Poll Link for Meeting & Bibliography Progress,Email
+e633,22nd December 2022,MAILT4Y9MBP8,Meeting Confirmation & Final Pre-Session Notes,Email
+e634,23rd December 2022,MAILHY36TQ91,Agenda for August 13th Meeting & Last-Minute Items,Email
+e635,25th December 2022,MAIL6QTU93ND,Meeting Minutes: Collaborative Session on 24th December 2020,Email
+e636,26th December 2022,MAIL89DJW2LB,Follow-up on Grant Proposal and JCDL Abstract Drafting,Email
+e637,27th December 2022,MAILA3V97WRS,JCDL Abstract Outline & UKRI Funding Coordination,Email
+e638,27th December 2022,MAIL57J2MCFX,Methods/Novelty Input for JCDL Abstract & Funding Integration,Email
+e639,28th December 2022,MAIL8AP9CTYS,Evaluation/Metrics Section Drafted – Request for Review & Next Steps,Email
+e640,29th December 2022,MAILYZ6R3JKQ,Re: Evaluation/Metrics Section Drafted – Coordination for Final Integration,Email
+e641,30th December 2022,MAILF29YHQMP,Section Transitions Reviewed & Final Steps for JCDL Abstract Submission,Email
+e642,31st December 2022,MAILLYG84X1E,Re: Section Transitions Reviewed & Final Steps for JCDL Abstract Submission,Email
+e643,1st January 2023,MAIL92TDH73A,Addressing Final Edits: Annotation Metrics & Reference Updates for JCDL Abstract,Email
+e644,2nd January 2023,MAILPD5J8VNE,Confirmation of Final Review & Coordination for JCDL Submission,Email
+e645,3rd January 2023,MAILW8952NCM,Final JCDL 2023 Abstract Submission Confirmation,Email
+e646,4th January 2023,MAILY378GHT9,JCDL 2023 Abstract Submission Acknowledgment – SUB-JCDL-2023-0417,Email
+e647,10th March 2023,MAIL7G5S23LV,JCDL 2023 Decision Notification – SUB-JCDL-2023-0417,Email
+e648,11th March 2023,MAILSB28Y9L4,JCDL 2023 Acceptance – Camera-Ready Planning & Reviewer Feedback Discussion,Email
+e649,12th March 2023,MAIL9FT2V1EK,Re: JCDL 2023 Acceptance – Coordination for Camera-Ready Revision,Email
+e650,13th March 2023,MAIL6TXUY5ZA,Re: JCDL 2023 Acceptance – Coordination for Camera-Ready Revision,Email
+e651,13th March 2023,MAILA9N73SXY,Re: JCDL 2023 Camera-Ready – Revision Coordination and Meeting Scheduling,Email
+e652,15th March 2023,MAILGH25J3X1,JCDL 2023 Camera-Ready Review – Calendar Poll and Revision Progress,Email
+e653,17th March 2023,MAIL4X81GTYS,JCDL 2023 Camera-Ready – Progress Update and Queries on Revision,Email
+e654,19th March 2023,MAILEI6Q9MPY,JCDL 2023 Camera-Ready – Digital Humanities Impact Paragraph and Editorial Suggestions,Email
+e655,20th March 2023,MAILXK27Z50S,JCDL 2023 Camera-Ready – Final Edits and Submission Workflow,Email
+e656,22nd March 2023,MAIL2DRFJPQ8,JCDL 2023 – Manuscript Finalization and Supplementary Material Queries,Email
+e657,24th March 2023,MAILPQM8YRF2,Re: JCDL 2023 – Pre-Submission Checklist and Supplementary Material Details,Email
+e658,25th March 2023,MAILX7K21VLQ,JCDL 2023 – “Ready for Submission” Sign-Off and Final Checklist,Email
+e659,27th March 2023,MAILWK92N3Q6,JCDL 2023 Submission Confirmation – Camera-Ready Manuscript and Supplementary Files,Email
+e660,30th March 2023,MAILE8F2W7CZ,Agenda for 4 December Zoom Meeting – JCDL 2023 Submission Review and Next Steps,Email
+e661,31st March 2023,MAILPTN834V5,"Zoom Meeting Link – JCDL 2023 Submission Review (4 December, 14:30 GMT)",Email
+e662,31st March 2023,MAILR5W8Q2LP,Minutes – JCDL 2023 Submission Review Meeting (4 December),Email
+e663,3rd April 2023,MAILWD9CX3N2,JCDL 2023 Submission Acknowledgement – SUB-JCDL-2023-1174,Email
+e664,1st June 2023,MAIL9ANQLZ10,JCDL 2023 Decision Notification – Submission ID: SUB-JCDL-2023-1174,Email
+e665,4th June 2023,MAIL4V7C3BH2,JCDL 2023 Acceptance – Revision Plan and Camera-Ready Workflow,Email
+e666,4th June 2023,MAILML6S7A9K,Re: JCDL 2023 Acceptance – Revision Plan and Camera-Ready Workflow,Email
+e667,5th June 2023,MAILW5Q9JMB7,Next Steps: Interoperability Reference & Doodle Poll for March Meeting,Email
+e668,6th June 2023,MAIL8KD1WZ36,Doodle Poll for March Internal Review Meeting – Please Indicate Your Availability,Email
+e669,9th June 2023,MAILC58DQ7L2,Interoperability Reference Added – Summary & Next Steps,Email
+e670,10th June 2023,MAIL76DW9PQE,Appendix Figure Caption Audit and General Compliance Update,Email
+e671,12th June 2023,MAILE5W3N2F7,Final Revisions Review and Agenda Items for March Internal Meeting,Email
+e672,13th June 2023,MAILE9U2V5XR,Confirmed Meeting Date & Final Pre-Submission Workflow,Email
+e673,19th June 2023,MAIL8NWZ52QF,Minutes of Internal Review Meeting – Final Steps to JCDL 2023 Camera-Ready Submission,Email
+e674,20th June 2023,MAIL7TJ8V6PY,Final Draft Circulated – Ready for Camera-Ready Freeze and Submission,Email
+e675,22nd June 2023,MAIL5A4LJ7WM,Camera-Ready Materials Successfully Submitted to JCDL 2023 – Submission Confirmation,Email
+e676,26th June 2023,MAIL9V4PKLWB,JCDL 2023 Camera-Ready Submission – Official Acknowledgment (SUB-JCDL-2023-0147),Email
+e677,29th June 2023,MAILP3KWLGX4,Camera-Ready Proceedings – Final Checklist and Publication Timeline (SUB-JCDL-2023-0147),Email
+e678,30th June 2023,MAIL6PLJ3XNV,Author Information and Registration Follow-Up for JCDL 2023 Proceedings,Email
+e679,1st July 2023,MAILQ63YAZXR,Confirmation of Metadata Verification and Conference Registration for JCDL 2023,Email
+e680,1st July 2023,MAILNM23ZBVP,Re: Confirmation of Metadata Verification and Conference Registration for JCDL 2023,Email
+e681,2nd July 2023,MAILYL8F5QND,JCDL 2023 – Final Author Confirmation and Metadata Check (SUB-JCDL-2023-0147),Email
+e682,3rd July 2023,MAILR7B6SWFQ,Final Confirmation of Author Details and Registration for SUB-JCDL-2023-0147,Email
+e683,3rd July 2023,MAILA23XVS9P,Acknowledgment of Final Author Confirmation and Next Steps – JCDL 2023 (SUB-JCDL-2023-0147),Email
+e684,5th July 2023,MAILH42K8XNP,Planning for JCDL 2023 Presentation Preparation and Coordination,Email
+e685,6th July 2023,MAIL98JSK54W,Re: Planning for JCDL 2023 Presentation Preparation and Coordination,Email
+e686,7th July 2023,MAILP8FW6BZH,Re: Planning for JCDL 2023 Presentation Preparation and Coordination,Email
+e687,8th July 2023,MAILE7BP4F9A,Re: Planning for JCDL 2023 Presentation Preparation and Coordination,Email
+e688,10th July 2023,MAIL3NR7YBQA,Zoom Meeting Invite: JCDL 2023 Presentation Planning – 3 April,Email
+e689,12th July 2023,MAIL9P5JN3XA,Minutes and Outcomes: JCDL 2023 Presentation Planning Meeting (3 April),Email
+e690,13th July 2023,MAILM7RW82KT,Re: Minutes and Outcomes: JCDL 2023 Presentation Planning Meeting (3 April),Email
+e691,14th July 2023,MAILRU72Y3XA,"Re: Slide Template, Q&A Progress, and Next Milestones for JCDL 2023",Email
+e692,15th July 2023,MAIL7APXD51V,"Re: Slide Template, Q&A Progress, and Next Milestones for JCDL 2023",Email
+e693,15th July 2023,MAILU3JK9YQ2,Final Q&A Review and Slide Upload Status for JCDL 2023,Email
+e694,16th July 2023,MAIL4BJ6WD92,Final Comments and Prep Checklist before Rehearsal (JCDL 2023),Email
+e695,17th July 2023,MAILCMJ9P1BX,"Rehearsal Ready: Agenda, AV Logistics, and Remaining Checks",Email
+e696,18th July 2023,MAILJM84VK1Q,Rehearsal Debrief and Final Adjustments Before JCDL 2023 Submission,Email
+e697,19th July 2023,MAILR4TB9SCM,Final Materials Review and Camera-Ready Submission Checklist (JCDL 2023),Email
+e698,20th July 2023,MAILF5Q3ZK8J,JCDL 2023 Camera-Ready Submission: Final Confirmation and Submission Details,Email
+e699,21st July 2023,MAILT9G7B2QW,JCDL 2023 Camera-Ready Submission Acknowledgment [SUB-JCDL-2023-0427],Email
+e700,21st July 2023,MAILA3G1XQ5W,Post-Submission Reflection and Session Preparation (JCDL 2023),Email
+e701,22nd July 2023,MAIL95QLTX1E,Availability for Rehearsal and Presenter Instructions Input (JCDL 2023),Email
+e702,23rd July 2023,MAIL7KZ5W4NR,Rehearsal Scheduling and Moderation Insights for JCDL 2023,Email
+e703,24th July 2023,MAILQ2SJ6APZ,Confirmation of Rehearsal Timing and Draft Introductory Statement Submission (JCDL 2023),Email
+e704,25th July 2023,MAILE8QWS31R,Zoom Invitation and Final Rehearsal Logistics (JCDL 2023),Email
+e705,26th July 2023,MAILP8J4TCYV,Presenter Checklist and Session Readiness (JCDL 2023 Rehearsal),Email
+e706,26th July 2023,MAIL3HJLQ56N,Q&A Tip-Sheet and Checklist Feedback (JCDL 2023),Email
+e707,27th July 2023,MAILTS25X8NH,Rehearsal Recap and Final Adjustments Before JCDL 2023,Email
+e708,27th July 2023,MAILV97TLKJX,Finalized Opening Script and Checklist Confirmation (JCDL 2023),Email
+e709,28th July 2023,MAILQ82JW0LN,Final Closing Remarks Script and Acknowledgment of Team Contributions (JCDL 2023),Email
+e710,29th July 2023,MAILW8JGZP21,Final Technical Checklist and Last-Minute Session Notes (JCDL 2023),Email
+e711,30th July 2023,MAILZB48MSDG,JCDL 2023 Session – Final Encouragement and Last-Minute Coordination,Email
+e712,31st July 2023,MAIL1KB2GQM7,Post-Session Gratitude and Reflections – JCDL 2023,Email
+e713,1st August 2023,MAILRQ53LPZD,Agenda Confirmation and Materials for JCDL 2023 Debrief Meeting,Email
+e714,1st August 2023,MAIL3NLVGRM2,Zoom Link and Calendar Invite for JCDL 2023 Debrief Meeting (28 April),Email
+e715,2nd August 2023,MAIL9DKQPZ1T,Compiled Audience Feedback and Additional Debrief Preparation Materials,Email
+e716,2nd August 2023,MAIL7KJQ1LZV,Proposed Priorities and Actionables for Next Steps Post-JCDL 2023,Email
+e717,2nd August 2023,MAILJ2PQ79WK,Post-Debrief Meeting Minutes and Next Steps,Email
+e718,3rd August 2023,MAIL5XK8D7QP,Circulation of Manuscript Outline Draft for ACM JOCCH Submission,Email
+e719,4th August 2023,MAILV85PBYQG,Outline Review and Section Commitments for ACM JOCCH Manuscript,Email
+e720,5th August 2023,MAILF3W9SZQK,Error Analysis Lead Confirmation and Alignment Sync – ACM JOCCH Manuscript,Email
+e721,6th August 2023,MAIL9YT7X4SB,"Section Assignments, Drafting Timeline, and Formatting Guidelines – ACM JOCCH Manuscript",Email
+e722,7th August 2023,MAILX2THR8NV,"Drafting Progress, Collaborative Tools, and Resource Sharing – ACM JOCCH Manuscript",Email
+e723,8th August 2023,MAIL84TGV1JP,Section Draft Status Update and Sync Logistics,Email
+e724,8th August 2023,MAILK7B9R2XZ,Confirmation: 6 May Zoom Sync & Draft Progress Updates,Email
+e725,9th August 2023,MAILD3NYV84K,"Referencing Style, Section Organization, and Upcoming Milestones",Email
+e726,10th August 2023,MAIL4X9KGVL7,Appendix Draft Uploaded and Feedback Request,Email
+e727,11th August 2023,MAILFT49BKVC,Feedback on Appendix Draft & Final Section Coordination,Email
+e728,12th August 2023,MAILX3Z7YQSD,Appendix Review Completed & Figures Cross-Referenced,Email
+e729,13th August 2023,MAIL71KWSZ0L,Peer Review Phase Launch & Final Integration Plan,Email
+e730,14th August 2023,MAILNC67B2TQ,Internal Review Progress & Consolidation Meeting Confirmation,Email
+e731,14th August 2023,MAILPR85GYJ1,Response to Internal Review Feedback & Next Steps,Email
+e732,15th August 2023,MAILE4UP7JQK,Supporting Materials and Agenda for Consolidation Meeting,Email
+e733,16th August 2023,MAILUW68TRMS,Google Meet Link & Final Checklist for 16 May Consolidation Meeting,Email
+e734,18th August 2023,MAILB6U8GQ5V,ACM JOCCH Submission Initiated: Confirmation & Next Steps,Email
+e735,20th August 2023,MAILEK8N2VC5,JOCCH Submission Acknowledged – Initial Editorial Review Timeline,Email
+e736,21st August 2023,MAILY2TUEXC9,Portal Access Confirmed & Suggestions for Potential Reviewers,Email
+e737,23rd August 2023,MAIL8SJ5VYR2,Confirmation of Contribution Statements & Reviewer List,Email
+e738,25th August 2023,MAILR8T4Q6WM,Author Contributions Finalized & Submission Portal Status,Email
+e739,28th August 2023,MAIL2ZRL45TY,JOCCH Editorial Update: Minor Revision Requested for SUB-JOCCH-2023-0193,Email
+e740,30th August 2023,MAIL9T83NZVC,Revised Data Licensing Segment Drafted for JOCCH Revision,Email
+e741,1st September 2023,MAILQ3X584SC,Revised Figure Legends and Manuscript Markup for JOCCH Minor Revision,Email
+e742,3rd September 2023,MAILR6N2V5TJ,Internal Review Complete – Ready for Final Resubmission to JOCCH,Email
+e743,4th September 2023,MAIL9D5LZ7HS,Finalized Resubmission of JOCCH Manuscript – Confirmation and Next Steps,Email
+e744,6th September 2023,MAILMJH8QW25,Acknowledgment of Revised Submission – SUB-JOCCH-2023-0193,Email
+e745,11th September 2023,MAIL6BKZ2SGE,Editorial Decision: Acceptance of Manuscript SUB-JOCCH-2023-0193,Email
+e746,12th September 2023,MAIL8NFP2QLK,JOCCH Acceptance – Next Steps for Production and Author Proofs,Email
+e747,14th September 2023,MAILF4G9Q3LW,Proof Review Coordination and Author Availability for JOCCH Production,Email
+e748,16th September 2023,MAIL91BZ7CKX,Availability and Checklist for JOCCH Proof Review,Email
+e749,18th September 2023,MAIL3PQ98MZS,Confirming June/July Availability & Approach for Proof Corrections,Email
+e750,20th September 2023,MAILNL85K7YZ,JOCCH Production Proofs Received – Review Access and Timeline,Email
+e751,21st September 2023,MAILE0M162KQ,Confirmation of Proof Access and Next Steps,Email
+e752,22nd September 2023,MAIL4B69XPD1,Proof Corrections Sheet Updated – Ready for Final Review,Email
+e753,23rd September 2023,MAIL56PQKLA9,Completion of Proof Review and Final Suggestions for Submission,Email
+e754,24th September 2023,MAIL1X8KF7Z0,Final Collation of Proof Corrections and Submission to JOCCH Production,Email
+e755,24th September 2023,MAILT39S5WQH,Acknowledgement of Final Proof Submission and Appreciation,Email
+e756,28th September 2023,MAIL7NM3LWH2,Confirmation of Proof Corrections and Final Publication Schedule – SUB-JOCCH-2023-0193,Email
+e757,30th September 2023,MAILEZL7P8QX,Reflection on Proofing Process & Proposal for Documentation Practice,Email
+e758,1st October 2023,MAILDQ62P5RL,Re: Reflection on Proofing Process & Proposal for Documentation Practice,Email
+e759,3rd October 2023,MAIL96JUYQW2,Re: Reflection on Proofing Process & Documentation Practice – Input and Next Steps,Email
+e760,5th October 2023,MAILVJ2S7EWP,Documentation Initiative – Suggestions on Workflow Structuring,Email
+e761,7th October 2023,MAILF2LZVA97,Project Retrospective Outline – Draft Attached & Scheduling Review Meeting,Email
+e762,8th October 2023,MAIL3QDJ12LC,Re: Project Retrospective Outline – Draft Attached & Scheduling Review Meeting,Email
+e763,9th October 2023,MAIL7A59VD13,Re: Project Retrospective Outline – Draft Feedback & Visual Workflow Update,Email
+e764,10th October 2023,MAILE4KRY8PZ,Consolidated Availability & Agenda for Documentation Review Meeting,Email
+e765,10th October 2023,MAILPLK47GFY,Zoom Details for Documentation Review Meeting – 19 July,Email
+e766,12th October 2023,MAILRS58KYFJ,Meeting Minutes – Project Retrospective & Workflow Reference Review (11th October 2021),Email
+e767,14th October 2023,MAIL8F24RXLC,Section Contributions & Final Draft Preparations – Documentation Initiative,Email
+e768,16th October 2023,MAIL81R3QK2W,Updated Workflow Diagram and Suggestions for Section Integration,Email
+e769,17th October 2023,MAILAL20CYF9,Integration Plan & Final Comments Workflow – Project Retrospective,Email
+e770,19th October 2023,MAILEJ529TR8,Final Compliance Notes Uploaded & Next Steps for Editorial Review,Email
+e771,20th October 2023,MAILK29R5J8F,Google Doc Link: Final Consolidation and Review Window Now Open,Email
+e772,21st October 2023,MAILYH42CDLQ,Synthesis of Feedback & Agenda for 1 August Final Review Meeting,Email
+e773,22nd October 2023,MAILV8T61QRP,Zoom Link & Final Review Meeting Logistics – 22nd October 2021,Email
+e774,23rd October 2023,MAILT0X9PNLU,Minutes: Final Review & Submission Strategy – Project Retrospective,Email
+e775,23rd October 2023,MAILPJ6R32YQ,Finalized Appendices & Compliance FAQ – Ready for Manuscript Assembly,Email
+e776,24th October 2023,MAIL7XYJ20PE,Editorial Review Complete & Final Checklist – JOCCH Submission,Email
+e777,25th October 2023,MAIL9Z4KRQHT,Manuscript Circulation for Final Signoff – Ready for JOCCH Submission,Email
+e778,26th October 2023,MAILC5T8RGBA,ACM JOCCH Submission Confirmation & Acknowledgment Receipt,Email
+e779,1st November 2023,MAIL5PE2ZRXH,SUB-JOCCH-2023-0782 – Initial Editorial Screening Complete,Email
+e780,14th December 2023,MAIL2SYFJ6LZ,SUB-JOCCH-2023-0782 – First-Round Decision and Reviewer Comments,Email
+e781,15th December 2023,MAILQ9M5BZT2,Reviewer Comments Analysis and Next Steps for JOCCH Revision,Email
+e782,16th December 2023,MAILF2J48YNB,Re: Reviewer Comments Analysis and Next Steps for JOCCH Revision,Email
+e783,17th December 2023,MAILEJ2XP6QW,Action Plan for Dataset Index Update & Joint Zoom Call Scheduling,Email
+e784,18th December 2023,MAILN7H3DJ5Q,Zoom Link & Agenda for 10 October Revision Strategy Meeting,Email
+e785,22nd December 2023,MAILP4S7K3YT,Minutes of 10 October Zoom Meeting – JOCCH Revision Coordination,Email
+e786,24th December 2023,MAILT6Y4NMVE,Draft Compliance Table & Integration of Pilot Study Data for JOCCH Revision,Email
+e787,27th December 2023,MAILY4L9M8CV,Delivery of Inter-Annotator Agreement Data and Regional Data Licensing Addendum,Email
+e788,27th December 2023,MAILPMJE8R2Y,Licensing Table Update and Integration Plan for JOCCH Revision,Email
+e789,29th December 2023,MAIL6K3TJDZ8,Confirmation of Integrated Draft Workflow and Final Manuscript Timeline,Email
+e790,31st December 2023,MAIL4H7KJ9LP,Final Comments on Integrated Draft & Compliance Narrative Alignment,Email
+e791,1st January 2024,MAILV8F3Q2ZM,Final Master Draft Circulation & Reviewer Response Letter (JOCCH Revision),Email
+e792,2nd January 2024,MAILM3XN8V7A,Final Review & Approval for JOCCH Submission,Email
+e793,2nd January 2024,MAILGD42HVTQ,Group Sign-off and Final Confirmation for JOCCH Submission,Email
+e794,4th January 2024,MAILW5YXB8TP,Submission Confirmation: JOCCH Manuscript (SUB-JOCCH-2023-0843),Email
+e795,5th January 2024,MAILZA3QXJ9U,Receipt of Submission Materials & Next Steps for JOCCH Manuscript,Email
+e796,6th January 2024,MAILGU23LVSQ,Monitoring JOCCH Submission Portal & Reflective Memo Planning,Email
+e797,7th January 2024,MAILE2Q9RKJT,Reflection Memo Collaboration & Institutional Contributions Outline,Email
+e798,8th January 2024,MAILLA5KXQ9C,Scheduling Reflection Memo Planning Call – Early November Doodle Link,Email
+e799,9th January 2024,MAILV49LSB1P,Confirming Availability for Reflection Memo Planning Meeting,Email
+e800,10th January 2024,MAIL8YXFUJQZ,Reflection Memo Outline Circulation & Pre-Meeting Preparation,Email
+e801,11th January 2024,MAILK57ZCBRU,Circulation of Preliminary Reflection Memo Outline & Final Meeting Details,Email
+e802,13th January 2024,MAIL3R8KYPD2,Reflection Memo Meeting Minutes & Next Steps,Email
+e803,14th January 2024,MAILGXKWPZ31,Ethics Documentation Upload & Support for Memo Appendices,Email
+e804,14th January 2024,MAILB7FWTQ8M,UK Artifacts for Memo Appendices & Annotation Format Discussion,Email
+e805,15th January 2024,MAILT39FWZ1L,Stanford Artifacts Uploaded & Affirming Annotation Standard,Email
+e806,16th January 2024,MAIL2VQX3PSL,NDLI Workflow Documentation & Cross-Linking Strategy for Memo,Email
+e807,17th January 2024,MAILEQ79YPS2,Consolidated Review Table & Query on NDLI Regulatory Shifts,Email
+e808,18th January 2024,MAIL8SYV02GJ,NDLI Artifact Uploads & Expanded Annotations on Regulatory Changes,Email
+e809,19th January 2024,MAIL0DF8VX1E,Appendix Navigation Table Review & Preparation for Draft Integration,Email
+e810,20th January 2024,MAILKRZ23VX4,Appendix Table Integration & Draft Circulation Timeline,Email
+e811,20th January 2024,MAIL37LABM0U,Final Feedback on Appendix Navigation Table & Compliance Harmonization,Email
+e812,21st January 2024,MAILEZ68KPWS,Draft Circulation & Timeline for Internal Quality Review,Email
+e813,23rd January 2024,MAILN472KX08,Points for Final Quality Review & Readiness for Submission,Email
+e814,24th January 2024,MAILRB21JUV7,Implementation of Final Revisions & Submission Preparation,Email
+e815,25th January 2024,MAILV47BPSZI,Confirmation of Final Revisions & Submission Readiness,Email
+e816,26th January 2024,MAIL2QJ5NTL9,Submission-Ready Final Paragraph & Last Review Checklist,Email
+e817,26th January 2024,MAILE89ZTQPAR,ACL Submission Completed: “Transnational NLP Reflection Memo”,Email
+e818,27th January 2024,MAIL43JMVK1S,ACL 2023 Submission Acknowledgment – SUB-ACL-2023-0321,Email
+e819,25th February 2024,MAILB56JOVP2,ACL 2023 Decision Notification – SUB-ACL-2023-0321,Email
+e820,26th February 2024,MAILZ2CRF781,Confirming Receipt of ACL Decision and Planning Revision Timeline,Email
+e821,27th February 2024,MAILTD92C4WS,Re: Confirming Receipt of ACL Decision and Planning Revision Timeline,Email
+e822,28th February 2024,MAILD8W1N37P,Re: Confirming Receipt of ACL Decision and Planning Revision Timeline,Email
+e823,28th February 2024,MAILSCYN52RQ,Coordinating Zoom Meeting and Preparation Materials for ACL Revision,Email
+e824,29th February 2024,MAIL59GYC43V,Zoom Link and Agenda for 4 Jan Revision Planning Meeting,Email
+e825,3rd March 2024,MAILM2GV65RT,Minutes: Revision Planning Meeting for ACL Submission,Email
+e826,4th March 2024,MAILE9QG712B,Re: Minutes: Revision Planning Meeting for ACL Submission,Email
+e827,6th March 2024,MAILQ59LWVBC,Section Progress and Reference Management for ACL Revision,Email
+e828,7th March 2024,MAILE5UN63XD,Reference Style Confirmation and Figure Attribution for ACL Revision,Email
+e829,7th March 2024,MAILTP7GD2RH,Confirming Reference Formatting and Upcoming Internal Check-In,Email
+e830,9th March 2024,MAILJW4QK1ZL,"11 Jan Check-in: Section Progress, Referencing Status, and Next Steps",Email
+e831,10th March 2024,MAILNQ93B7FL,Responses to 11 Jan Check-in: Legal Interoperability and Reference Clarifications,Email
+e832,11th March 2024,MAIL93WPFG2L,Consolidation Status and Final Checklist: ACL Revision,Email
+e833,12th March 2024,MAILGV2HE4JM,Internal Review: Author Response Letter Draft and Last-Minute Points,Email
+e834,13th March 2024,MAIL8HVW3T6P,Internal Review Wrap-Up and Final Submission Schedule,Email
+e835,13th March 2024,MAILL4QTKH93,Timeline Confirmation: Final Pass & Submission Logistics,Email
+e836,13th March 2024,MAILE8WPG5RV,ACL 2024 Submission Acknowledgment - Submission ID: SUB-ACL-2024-0483,Email
+e837,16th April 2024,MAILCB38Y4ZT,ACL 2024 Decision Notification - Submission ID: SUB-ACL-2024-0483,Email
+e838,18th April 2024,MAILY56H2QMV,Camera-ready Strategy and Action Points post-ACL Acceptance,Email
+e839,19th April 2024,MAILD6F4P5J3,Camera-ready Task Alignment and Availability for Coordination Call,Email
+e840,29 February 2027,MAIL94KGH2PL,Meeting Confirmation & Camera-ready Guidelines Watch,Email
+e841,29 February 2027,MAILEQ9P6T3V,Meeting Confirmation & Camera-ready Guidelines Watch,Email
+e842,20th April 2024,MAILQJ43G79D,Re: Meeting Confirmation & Camera-ready Guidelines Watch,Email
+e843,20th April 2024,MAIL9K47V2HQ,Re: Meeting Confirmation & Camera-ready Guidelines Watch,Email
+e844,20th April 2024,MAILF3X2B8GV,"Zoom Link & Agenda: ACL2024 Camera-ready Coordination Call (1 March, 14:30 GMT)",Email
+e845,21st April 2024,MAILV6R52D4A,"Re: Zoom Link & Agenda: ACL2024 Camera-ready Coordination Call (1 March, 14:30 GMT)",Email
+e846,22nd April 2024,MAIL7J5Q4L2P,Manuscript Review—Section 4.3 and Figure 2 Workflow Update,Email
+e847,22nd April 2024,MAIL6JGT2PDR,Re: Manuscript Review—Section 4.3 and Figure 2 Workflow Update,Email
+e848,23rd April 2024,MAIL9WY3K8SV,Revised Draft: Section 4.3 and Figure 2 Workflow,Email
+e849,23rd April 2024,MAILEX83T5QP,Repository Check & Sync Call Preference,Email
+e850,23rd April 2024,MAIL2LQP8HYS,Re: Repository Check & Sync Call Preference,Email
+e851,24th April 2024,MAILA36CG8YP,Confirmation: Coordination Call at 12:30 GMT & Final Manuscript Checklist,Email
+e852,24th April 2024,MAIL5KT3R8LQ,Calendar Invite & Compliance Checklist: ACL2024 Camera-Ready Coordination,Email
+e853,25th April 2024,MAIL4D2P9TQS,Meeting Minutes: ACL2024 Camera-Ready Coordination Call (6 March),Email
+e854,26th April 2024,MAIL7KZ9LCQS,Final Checklist Sign-Off and Internal Submission Confirmation,Email
+e855,27th April 2024,MAILU4VPT9XE,Compliance Sign-Off and Final Submission to ACL2024,Email
+e856,29th April 2024,MAILHV735LMB,Decision Notification for Submission ID SUB-ACL-2024-0193,Email
+e857,2nd May 2024,MAILJKL983WD,ACL2024 Final Camera-Ready Instructions and Deadline Notification (SUB-ACL-2024-0193),Email
+e858,3rd May 2024,MAILET9X6LZA,Action Plan for ACL2024 Camera-Ready Submission (Deadline: 29 March),Email
+e859,4th May 2024,MAILY8WN5H2Q,Re: Action Plan for ACL2024 Camera-Ready Submission (Deadline: 29 March),Email
+e860,5th May 2024,MAIL5G9PL1QW,Meta-Review Checklist & Formatting Coordination for Camera-Ready,Email
+e861,6th May 2024,MAILME92AT1F,Metadata Validation Status & Mixed-Script Tagging Update,Email
+e862,7th May 2024,MAIL4EB6NHQP,Mixed-Script Tagging Consensus & Presenter Confirmation Update,Email
+e863,9th May 2024,MAIL38XKWLSJ,Final Checklist: Repository Audit & Last-Minute Camera-Ready Issues,Email
+e864,10th May 2024,MAILTX5ZCY80,Final Edits on Camera-Ready: Action Items for 25 March Internal Review,Email
+e865,11th May 2024,MAILRN47DLP6,Summary & Confirmation: ACL2024 Camera-Ready Package Successfully Submitted,Email
+e866,12th May 2024,MAILR0S7HCD8,Acknowledgment of Camera-Ready Submission – ACL2024 (SUB-ACL-2024-2386),Email
+e867,17th May 2024,MAILY4K39PJL,Final Compliance Notification & Camera-Ready Inclusion – ACL2024 (SUB-ACL-2024-2386),Email
+e868,20th May 2024,MAILVQ230FGL,Post-Submission Reflection & Next Steps After ACL2024 Acceptance,Email
+e869,22nd May 2024,MAILAG52RJKT,Planning Meeting for Journal Extension & Outreach Strategy,Email
+e870,23rd May 2024,MAILWH49XZJL,Re: Planning Meeting for Journal Extension & Outreach Strategy,Email
+e871,24th May 2024,MAILRA8YZ41M,Confirmation for 24 April Planning Meeting & Pre-Meeting Suggestions,Email
+e872,25th May 2024,MAILKP3J72ZA,Re: Confirmation for 24 April Planning Meeting & Pre-Meeting Suggestions,Email
+e873,27th May 2024,MAILZ59UNGJQ,"Resource Hosting Venues Table, Dataset Note Structure & User Study Survey Draft",Email
+e874,28th May 2024,MAILEP8XJ24A,"Re: Resource Hosting Comparison, Dataset Note Outline, and Next Steps for 24 April Meeting",Email
+e875,30th May 2024,MAILS4PQW3MC,"Dataset Note Task Confirmation, Expanded Comparison Table & Licensing Appendix",Email
+e876,1st June 2024,MAILUY3M4DWS,Re: Dataset Note Task Confirmation and Survey Introduction Draft,Email
+e877,3rd June 2024,MAILFVW39PQ8,Consolidated Materials for Internal Review & Final Agenda for 24 April Meeting,Email
+e878,3rd June 2024,MAILBJG7X254,Re: Consolidated Materials for Internal Review & Section Feedback Coordination,Email
+e879,4th June 2024,MAIL3AQM2KVS,Finalized Licensing Appendix & Last-Minute Comments before 24 April Meeting,Email
+e880,5th June 2024,MAIL7ZK8QJ1A,Minutes and Action Items: 24 April Journal Extension Planning Meeting,Email
+e881,7th June 2024,MAIL9MNLQ7VY,Action Point Updates and Next Steps Toward JOCCH Submission,Email
+e882,9th June 2024,MAILE8J45LMC,Student-Led Project Legal Notice Template & Documentation Progress,Email
+e883,10th June 2024,MAIL4GJ9K7QS,Editorial Status Update & Next Milestone Preparations for JOCCH Submission,Email
+e884,13th June 2024,MAILU7HD4CFE,Minor Addendum to Meta-Annotation Review & Confirmation of Next Steps,Email
+e885,15th June 2024,MAIL1A7PV9XK,Documentation Lock Confirmed & JOCCH Submission Preparation,Email
+e886,17th June 2024,MAIL7VJ2E8MC,Approval on Submission Checklist & Scheduling a Coordination Call,Email
+e887,18th June 2024,MAIL8QX2R5LJ,Confirmation: Final Coordination Call and Submission Timeline,Email
+e888,20th June 2024,MAIL62VJZD1M,Confirmation of Attendance & Agenda Suggestions for 11 May Coordination Call,Email
+e889,21st June 2024,MAILF123TJQM,Coordination Call Summary & Next Steps Towards JOCCH Submission,Email
+e890,26th June 2024,MAILZP5D6XTK,Compliance Appendix—Embargo Status Update & Cover Letter Draft Circulation,Email
+e891,29th June 2024,MAILD7ZK29PU,Final Review Request: Compliance Appendix & Cover Letter Feedback,Email
+e892,1st July 2024,MAIL2F7JNKQ1,Endorsement of Compliance Appendix and Cover Letter—Ready for Final Compilation,Email
+e893,2nd July 2024,MAILK31XPZJ9,Final Approval & Minor Addition for External Corpus Attribution,Email
+e894,4th July 2024,MAIL4X7ZG5JQ,Circulation of Final Submission Package for JOCCH,Email
+e895,6th July 2024,MAILE8J72XRC,Submission Confirmation—JOCCH Resource Note (SUB-JOCCH-2024-0421),Email
+e896,10th July 2024,MAILTX57UJKS,Acknowledgment of Submission—SUB-JOCCH-2024-0421,Email
+e897,13th September 2024,MAILMWL5R81J,Decision Notification for Resource Note Submission (SUB-JOCCH-2024-0421),Email
+e898,14th September 2024,MAILQA9L2DCR,JOCCH Decision Received—Revision Planning for Resource Note (SUB-JOCCH-2024-0421),Email
+e899,16th September 2024,MAIL7Z6LCTYX,Revision Task Progress—Embargo Policy Update for JOCCH Resource Note,Email
+e900,17th September 2024,MAIL4FJ7RC8G,Progress on Diagram Enhancements—JOCCH Resource Note Revision,Email
+e901,17th September 2024,MAILA5B3KZJH,Reviewer #2 Citation Comment – Zenodo Reference Block,Email
+e902,19th September 2024,MAIL29NVZQSM,Consolidation and Final Review – JOCCH Resource Note Revision Package,Email
+e903,21st September 2024,MAILEJ8R2L0O,Final Confirmation—JOCCH Revision Package for Submission,Email
+e904,23rd September 2024,MAIL2Z9N6DYP,JOCCH Revision Package Submitted – Receipt and Next Steps,Email
+e905,25th September 2024,MAILU7V4L2NP,Post-Submission Reflection & Next Steps – JOCCH Resource Note,Email
+e906,28th September 2024,MAILY3SNV6RP,Re: Post-Submission Reflection & Outreach Strategies,Email
+e907,29th September 2024,MAILX4C2JKL5,Technical Note Planning & Next Steps,Email
+e908,1st October 2024,MAILEX5V7NDQ,Input Requested: Technical Note Structure & Virtual Seminar Coordination,Email
+e909,4th October 2024,MAIL1X92FCL8,Re: Input Requested: Technical Note Structure & Virtual Seminar Coordination,Email
+e910,5th October 2024,MAIL4T8N2RSA,Technical Note Initial List of Figures & Seminar Coordination,Email
+e911,7th October 2024,MAILG3F9H2L7,Confirmations for Preparatory Call & Technical Note Outline,Email
+e912,7th October 2024,MAIL3H2XPQWL,Re: Confirmations for Preparatory Call & Technical Note Outline,Email
+e913,7th October 2024,MAILH9T7SZKD,Final Confirmation & Agenda for Today's Preparatory Call,Email
+e914,8th October 2024,MAILE8X2JAG4,Minutes: 16 September Preparatory Call & Action Points,Email
+e915,9th October 2024,MAILW37HSL9P,Event Description for Institutional Cross-listing and Seminar Registration Materials,Email
+e916,9th October 2024,MAILF9V8KM32,Re: Event Description for Institutional Cross-listing and Seminar Registration Materials,Email
+e917,10th October 2024,MAIL9JQZ2M8K,Final Review: Event Materials and Flyer for 20 September Seminar,Email
+e918,11th October 2024,MAILA4YK9N6M,Seminar Day: Final Checklist & Contingency Coordination,Email
+e919,11th October 2024,MAILD89K7XY2,Re: Seminar Day: Final Checklist & Contingency Coordination,Email
+e920,11th October 2024,MAILN71P8SZM,Seminar Debrief & Next Steps: Technical Note Draft and Outreach,Email
+e921,11th October 2024,MAILY83K7PQJ,Quick Confirmation: Next Check-in & Technical Note Timeline,Email
+e922,11th October 2024,MAILU8S6JV3L,Re: Quick Confirmation: Next Check-in & Technical Note Timeline,Email
+e923,12th October 2024,MAILJ6Q3E1YZ,Circulation of Integrated Technical Note Draft & Next Steps,Email
+e924,12th October 2024,MAILW5R3X2GH,Acknowledgment of Integrated Draft & Review Plan,Email
+e925,13th October 2024,MAIL9DS4K1QM,RE: Acknowledgment of Integrated Draft & Review Plan,Email
+e926,14th October 2024,MAIL3JX7T2SA,Submission Venue Decision & Consolidated Feedback Review Meeting,Email
+e927,14th October 2024,MAIL7RZ6PWQD,Re: Submission Venue Decision & Consolidated Feedback Review Meeting,Email
+e928,15th October 2024,MAILT8E1U6PX,Final Revision Notes & Meeting Day Logistics (Link Included),Email
+e929,15th October 2024,MAIL4LD7VT9X,Meeting Minutes: Final Consolidation & Venue Decision,Email
+e930,17th October 2024,MAIL3XK4YD7P,Submission Package: Final Tracked-Changes Draft and Appendices,Email
+e931,18th October 2024,MAILE1V9B4WF,Final Approval: JOCCH Submission Package,Email
+e932,22nd October 2024,MAILG2Q9PW7M,JOCCH Submission Confirmation & Next Steps,Email
+e933,23rd October 2024,MAILT3ZN2GFM,Official Submission Acknowledgment: SUB-JOCCH-2024-0421,Email
+e934,9th November 2024,MAIL7QBL1U2Z,Decision Notification: SUB-JOCCH-2024-0421 (Major Revision Required),Email
+e935,10th November 2024,MAIL4MNF1G7P,Coordinating Major Revision Plan: JOCCH Reviews and Response Strategy,Email
+e936,11th November 2024,MAILU59T2GKL,Re: Coordinating Major Revision Plan: JOCCH Reviews and Response Strategy,Email
+e937,12th November 2024,MAILN19PG59M,Legal Framework Table & Revision Meeting Confirmation,Email
+e938,13th November 2024,MAILA94TJ7NU,Pre-Meeting: Methodology Update and Outstanding Queries,Email
+e939,14th November 2024,MAIL03VUWEN4,Re: Pre-Meeting: Methodology Update and Outstanding Queries,Email
+e940,15th November 2024,MAILE7LKQC41,Zoom Link & Agenda: JOCCH Revision Planning Meeting (31 Oct),Email
+e941,15th November 2024,MAILD5ULQ76E,Revision Meeting Minutes & Next Steps for JOCCH Major Revision,Email
+e942,16th November 2024,MAILA6V1DT3X,Data Protection Updates and Legal Table Matrix Draft,Email
+e943,17th November 2024,MAILCJ4L6TV2,Next Steps: Legal Matrix Review & Appendix Formatting,Email
+e944,18th November 2024,MAILZ8XRV31W,Progress on Evaluation Visualizations & Data Provenance Alignment,Email
+e945,19th November 2024,MAILL2QG8M5V,Legal Protocol Matrix Uploaded & Next Steps for Integration,Email
+e946,20th November 2024,MAILW4NFVZ7B,Review of Legal Matrix & Corresponding Method Section Integration,Email
+e947,21st November 2024,MAILQ7H2PLVK,Legal Table Integration Meeting: Time Confirmation & Clarifications,Email
+e948,21st November 2024,MAILV2M5CZL3,Meeting Follow-up: Final Integration Plan for Legal Content,Email
+e949,22nd November 2024,MAIL19HFSELQ,Updated Annotation Examples in Figure Legends & Final Compliance Checks,Email
+e950,23rd November 2024,MAIL01ZB5KXT,Final Review Before JOCCH Resubmission – Compliance Checklist & Internal Sign-off,Email
+e951,24th November 2024,MAILF8G1ZR25,Submission Confirmation – JOCCH Manuscript (SUB-JOCCH-2024-1143),Email
+e952,30th November 2024,MAIL82VCW3QZ,Receipt and Initial Screening Complete: SUB-JOCCH-2024-1143,Email
+e953,5th January 2025,MAILD72V98QL,Editorial Decision – Major Revision Requested: SUB-JOCCH-2024-1143,Email
+e954,7th January 2025,MAILE7FGQK51,Next Steps on JOCCH Major Revision – Action Plan and Task Allocation,Email
+e955,8th January 2025,MAILQ7BV4P3K,Re: Next Steps on JOCCH Major Revision – Action Plan and Task Allocation,Email
+e956,8th January 2025,MAILDL87T4BF,Re: Next Steps on JOCCH Major Revision – Action Plan and Task Allocation,Email
+e957,9th January 2025,MAIL9F5B72RV,Confirmation of Meeting & Agenda for JOCCH Major Revision Coordination,Email
+e958,11th January 2025,MAILQ29JMV7Y,Minutes and Action Points – JOCCH Revision Planning Meeting (10th January 2022),Email
+e959,15th January 2025,MAIL5VC3WL07,Summary of Non-Western Data Protection Case Studies & Draft Legal Matrix,Email
+e960,17th January 2025,MAIL4YX29MKV,National Library of Israel Approval & Section 4.2 Drafting Coordination,Email
+e961,18th January 2025,MAILJ8Q5MLR2,Availability for Section 4.2 Drafting & Compliance Review,Email
+e962,19th January 2025,MAILA9X6VJ3M,Confirmation: Section 4.2 Collaborative Drafting Session & Next Steps,Email
+e963,19th January 2025,MAILV7PSF4X9,Confirmation & Preparation for 16 Jan Section 4.2 Drafting Session,Email
+e964,19th January 2025,MAIL58Y6QKZ1,Section 4.2 Drafting Session – Immediate Post-Meeting Summary & Next Steps,Email
+e965,21st January 2025,MAILRF2KDS3Q,Circulation: Updated Section 4.2 Draft (“Track Changes”) for Review,Email
+e966,22nd January 2025,MAILT4SDM98Q,Footnote Insertions for Japan/Chile Compliance & Final Comments,Email
+e967,23rd January 2025,MAIL4PGU1BMC,Compliance Review Complete: Section 4.2 – Final Remarks Before Consolidation,Email
+e968,25th January 2025,MAIL6VZNM37Q,Bibliography Harmonization Complete & Clean Consolidation Request,Email
+e969,25th January 2025,MAILOK92LX8Z,Clean Version Consolidation & Path Forward for Camera-Ready Submission,Email
+e970,26th January 2025,MAILQ8BZ7LT5,Final Camera-Ready Review: Approval & Last-Minute Checklist,Email
+e971,27th January 2025,MAILTG81JX2A,Formal Submission to JOCCH – Manuscript & Cover Letter Confirmation,Email
+e972,28th January 2025,MAIL18ZN4HJV,Acknowledgment of Submission – JOCCH Manuscript SUB-JOCCH-2025-0472,Email
+e973,26th February 2025,MAILE8GV1TYL,Initial Editorial Decision – JOCCH Manuscript SUB-JOCCH-2025-0472,Email
+e974,27th February 2025,MAILLWZY5QPF,JOCCH Major Revision: Review Feedback & Initial Response Coordination,Email
+e975,28th February 2025,MAILLS8J07PK,Task Confirmation and Planning for Major Revision – JOCCH Submission SUB-JOCCH-2025-0472,Email
+e976,1st March 2025,MAILN4H2KQWX,"Re: Task Confirmation, Metadata Discussion, and Google Meet Coordination (8 March) – JOCCH Revision",Email
+e977,5th March 2025,MAIL7ZM2RKHL,Google Meet – Agenda and Preparation Materials for JOCCH Revision Coordination (8 March),Email
+e978,6th March 2025,MAIL937KWQDM,Minutes and Action Items – JOCCH Revision Meeting (8 March),Email
+e979,7th March 2025,MAILBPC46YNV,"Compliance Section Updates, Workflow Diagram Feedback, and Next Steps",Email
+e980,8th March 2025,MAIL3YQKZNPH,Feedback on Compliance Section Drafts & Alignment with Manuscript Restructuring,Email
+e981,9th March 2025,MAILEKQZN4X2,Annotation Metadata Section – Draft Submission and Glossary Proposal,Email
+e982,10th March 2025,MAILB23Q7NHF,Review of Annotation Metadata Section & Editorial Coordination,Email
+e983,11th March 2025,MAILP7QL5DN2,Addressing Compliance & Metadata Action Points and Confirmation for Group Review,Email
+e984,12th March 2025,MAILR6GJ2PQL,Joint Review Call Details & Final Pre-Consolidation Checklist,Email
+e985,13th March 2025,MAIL58ZV0QTR,Summary Agenda for 17 March Zoom Review Call,Email
+e986,13th March 2025,MAIL82NsHXJ9,Meeting Minutes: 17 March Zoom Call and Post-Consolidation Action Items,Email
+e987,13th March 2025,MAILG7Y25QBR,Re: Meeting Minutes: 17 March Zoom Call and Post-Consolidation Action Items,Email
+e988,14th March 2025,MAIL2JQ3DHZK,Confirmation of Submission: JOCCH Major Revision Package Dispatched,Email
+e989,14th March 2025,MAILE4TG9K7X,Submission Acknowledgment: “Cross-Border NLP Workflows and Metadata Provenance in Historical Dataset Annotation: Protocols and Compliance” (SUB-JOCCH-2025-0194),Email
+e990,16th March 2025,MAILA2GJ7RK0,Post-Submission Reflection and Next Steps: JOCCH Major Revision,Email
+e991,17th March 2025,MAILW4QX2NLM,Reflection Points & Preliminary Outline for ‘Lessons Learned’ Memo,Email
+e992,18th March 2025,MAILK7D2QP83,Re: Reflection Points & Preliminary Outline for ‘Lessons Learned’ Memo,Email
+e993,19th March 2025,MAILQ1XF4B7D,Re: Reflection Points & Next Steps – Lessons Learned Memo & Departmental Colloquium,Email
+e994,19th March 2025,MAILT8XP1R5V,Shared Google Doc Link: ‘Lessons Learned’ Memo Draft & Colloquium Abstract,Email
+e995,20th March 2025,MAILZX8M4TYQ,Acknowledgment of Google Doc Access & Allocation of Memo Sections,Email
+e996,21st March 2025,MAILV7L59CDA,Re: Acknowledgment of Google Doc Access & Memo Section Allocation,Email
+e997,22nd March 2025,MAILY4S9TF23,Progress Update – Drafts for Multi-Author Version Management and Reviewer Feedback Handling,Email
+e998,23rd March 2025,MAILP7K2JQXL,Memo Section Review – Feedback Requested by 31 March & Colloquium Abstract Update,Email
+e999,25th March 2025,MAILE1Z7CFU8,Final Review Synthesis & Next Steps Before Colloquium Submission,Email
+e1000,25th March 2025,MAIL9VY4MHG2,Re: Final Review Synthesis & Next Steps Before Colloquium Submission,Email
+e1001,26th March 2025,MAILWL9T3R52,Departmental Colloquium Abstract Submission Confirmation,Email
+e1002,27th March 2025,MAILDYQ4G2M7,Next Steps: Outlining for Methods Note/Short-Form Submission,Email
+e1003,28th March 2025,MAILQ52L8ASN,Re: Next Steps: Outlining for Methods Note/Short-Form Submission,Email
+e1004,29th March 2025,MAIL82ZNVC4R,Re: Next Steps – Outlining Details and Zoom Coordination,Email
+e1005,30th March 2025,MAILES87QK23,Re: Next Steps – Outlining Details and Zoom Coordination,Email
+e1006,31st March 2025,MAIL32B5JCQY,Confirmed Meeting Date & Zoom Link – Methods Note Outline Discussion,Email

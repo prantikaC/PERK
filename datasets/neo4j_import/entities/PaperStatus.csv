@@ -1,0 +1,85 @@
+:ID,statusDate,statusType,:LABEL
+ps1,,Received,PaperStatus
+ps2,,Initial checks,PaperStatus
+ps3,,Associate editor assignment and peer review,PaperStatus
+ps4,,Under review,PaperStatus
+ps5,2019-08-27,Minor Revision Required,PaperStatus
+ps6,,Minor Revision,PaperStatus
+ps7,2019-08-15,Submitted,PaperStatus
+ps8,2019-10-30,Accepted with minor revisions,PaperStatus
+ps9,2019-12-10,Minor revisions,PaperStatus
+ps10,2019-11-13,Resubmitted,PaperStatus
+ps11,,Under second-round peer review,PaperStatus
+ps12,,Revised manuscript received,PaperStatus
+ps13,,Under editorial board assessment,PaperStatus
+ps14,,Under final reviewer verification,PaperStatus
+ps15,2019-01-19,Accepted pending camera-ready,PaperStatus
+ps16,,,PaperStatus
+ps17,2019-01-18,Camera-ready submitted,PaperStatus
+ps18,2019-01-18,Camera-ready received,PaperStatus
+ps19,,Scheduled for inclusion in upcoming issue,PaperStatus
+ps20,,Ready for submission,PaperStatus
+ps21,2019-04-23,Camera-ready submission received and queued for committee verification,PaperStatus
+ps22,,Camera-ready package verified and accepted,PaperStatus
+ps23,,Preliminary technical and compliance review initiated,PaperStatus
+ps24,,Forwarded to Editorial Board for peer review,PaperStatus
+ps25,,Revision requested,PaperStatus
+ps26,2019-11-07,In queue for editorial review,PaperStatus
+ps27,,Minor Revision Submitted,PaperStatus
+ps28,,,PaperStatus
+ps29,,Conditionally accepted,PaperStatus
+ps30,,In production and editorial review,PaperStatus
+ps31,,Galley proofs to be generated,PaperStatus
+ps32,,Pre-publication checklist,PaperStatus
+ps33,,Ready for final production stage,PaperStatus
+ps34,,Ready for online publication,PaperStatus
+ps35,,Scheduled for publication,PaperStatus
+ps36,,Forthcoming publication (scheduled September issue),PaperStatus
+ps37,,Entering publication phase,PaperStatus
+ps38,,Under administrative compliance check,PaperStatus
+ps39,,accepted for presentation,PaperStatus
+ps40,,Under camera-ready compliance review,PaperStatus
+ps41,,Registration verified,PaperStatus
+ps42,,Revised abstract received,PaperStatus
+ps43,2019-10-31,Incorporated in proceedings,PaperStatus
+ps44,,In proceedings,PaperStatus
+ps45,,under editorial review,PaperStatus
+ps46,,Minor revisions required,PaperStatus
+ps47,,Camera-ready uploaded,PaperStatus
+ps48,2020-11-23,Projected submission deadline,PaperStatus
+ps49,,Copyright Agreement Completed,PaperStatus
+ps50,,Passed initial technical and scope screening,PaperStatus
+ps51,,Forwarded to Associate Editor for reviewer selection,PaperStatus
+ps52,,,PaperStatus
+ps53,,External peer review phase,PaperStatus
+ps54,2021-03-10,Accepted or minor revision decision,PaperStatus
+ps55,,Passed administrative compliance check,PaperStatus
+ps56,,,PaperStatus
+ps57,,Compliant with final administrative and procedural requirements,PaperStatus
+ps58,,Forwarded to production queue,PaperStatus
+ps59,,Provisionally accepted pending minor revisions,PaperStatus
+ps60,,Minor Revision – Materials Submitted,PaperStatus
+ps61,2021-09-04,Under final editorial assessment,PaperStatus
+ps62,,Published,PaperStatus
+ps63,,Galley proofs received,PaperStatus
+ps64,,Proof correction in production,PaperStatus
+ps65,2021-06-29,Proof corrections received,PaperStatus
+ps66,2021-10-04,Corrections execution in production,PaperStatus
+ps67,2023-08-01,Scheduled for online publication,PaperStatus
+ps68,,Under editorial checks,PaperStatus
+ps69,,Under peer review,PaperStatus
+ps70,,Passed initial editorial screening,PaperStatus
+ps71,,Major Revision,PaperStatus
+ps72,,Revise & Resubmit,PaperStatus
+ps73,2022-05-11,Under technical compliance check,PaperStatus
+ps74,2022-05-17,Technical compliance confirmation / corrections notification,PaperStatus
+ps75,,Queued for inclusion in formal conference proceedings,PaperStatus
+ps76,,Accepted pending minor revisions,PaperStatus
+ps77,,formally accepted,PaperStatus
+ps78,,awaiting response from editorial office,PaperStatus
+ps79,,Under initial technical check,PaperStatus
+ps80,,Assigned to Associate Editor for preliminary assessment,PaperStatus
+ps81,,Pending full peer review,PaperStatus
+ps82,2022-02-10,Major Revision Required,PaperStatus
+ps83,,Major/Minor Revision Requested,PaperStatus
+ps84,2022-03-14,Major Revision Submitted,PaperStatus
