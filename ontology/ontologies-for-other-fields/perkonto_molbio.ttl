@@ -1,0 +1,333 @@
+@prefix : <https://w3id.org/perkonto/molbio#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix perk: <https://w3id.org/perkonto#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix ivoa: <http://purl.org/astronomy/ont/object-types#> .
+@base <https://w3id.org/perkonto/molbio#> .
+
+<https://w3id.org/perkonto/molbio> rdf:type owl:Ontology ;
+                             dcterms:creator "Debarshi Kumar Sanyal" ,
+                                             "Partha Pratim Das" ,
+                                             "Prantika Chakraborty" ,
+                                             "Srijoni Majumdar" ;
+                             dcterms:description "A domain extension of PERKOnto for the professional knowledge of a molecular biologist as extractable from personal email communications. It reuses the PERKOnto backbone and specialises the scientific layer into experimental-biology concepts (BiologicalEntity/BiologicalSample/ExperimentalTechnique/Readout/ResearchProblem) plus supporting concepts (Reagent, Instrument, Protocol)."@en ;
+                             dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                             dcterms:title "PERKOnto-MolBio: Molecular Biology extension of PERKOnto"@en ;
+                             owl:imports <https://w3id.org/perkonto> ;
+                             owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+###  http://www.w3.org/2004/02/skos/core#note
+skos:note rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Referenced PERKOnto classes (declared for import resolution)
+#################################################################
+
+###  https://w3id.org/perkonto#Dataset
+perk:Dataset rdf:type owl:Class .
+
+###  https://w3id.org/perkonto#Method
+perk:Method rdf:type owl:Class .
+
+###  https://w3id.org/perkonto#Metric
+perk:Metric rdf:type owl:Class .
+
+###  https://w3id.org/perkonto#Task
+perk:Task rdf:type owl:Class .
+
+###  https://w3id.org/perkonto#Person
+perk:Person rdf:type owl:Class .
+
+
+#################################################################
+#    Referenced external domain-ontology classes (verified IRIs)
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdf:type owl:Class .  # BFO: material entity
+
+###  http://purl.obolibrary.org/obo/OBI_0100051
+<http://purl.obolibrary.org/obo/OBI_0100051> rdf:type owl:Class .  # OBI: specimen
+
+###  http://purl.obolibrary.org/obo/OBI_0000070
+<http://purl.obolibrary.org/obo/OBI_0000070> rdf:type owl:Class .  # OBI: assay
+
+###  http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> rdf:type owl:Class .  # QUDT: Quantity
+
+###  http://purl.obolibrary.org/obo/OBI_0000968
+<http://purl.obolibrary.org/obo/OBI_0000968> rdf:type owl:Class .  # OBI: device
+
+###  http://purl.obolibrary.org/obo/OBI_0000272
+<http://purl.obolibrary.org/obo/OBI_0000272> rdf:type owl:Class .  # OBI: protocol
+
+###  http://purl.obolibrary.org/obo/SO_0000704
+<http://purl.obolibrary.org/obo/SO_0000704> rdf:type owl:Class .  # SO: gene (instance-level grounding example)
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/perkonto/molbio#studies
+:studies rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:worksWith ;
+         rdfs:domain perk:Person ;
+         rdfs:range :BiologicalEntity ;
+         rdfs:comment "Links a Person to a BiologicalEntity they investigate. Specialises perk:worksWith."@en ;
+         rdfs:label "studies"@en .
+
+###  https://w3id.org/perkonto/molbio#appliesTechnique
+:appliesTechnique rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:worksWith ;
+         rdfs:domain perk:Person ;
+         rdfs:range :ExperimentalTechnique ;
+         rdfs:comment "Links a Person to an ExperimentalTechnique they use. Specialises perk:worksWith."@en ;
+         rdfs:label "applies technique"@en .
+
+###  https://w3id.org/perkonto/molbio#investigates
+:investigates rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:worksOn ;
+         rdfs:domain perk:Person ;
+         rdfs:range :ResearchProblem ;
+         rdfs:comment "Links a Person to a ResearchProblem they work on. Specialises perk:worksOn."@en ;
+         rdfs:label "investigates"@en .
+
+###  https://w3id.org/perkonto/molbio#assays
+:assays rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:uses ;
+         rdfs:domain :ExperimentalTechnique ;
+         rdfs:range [ rdf:type owl:Class ; owl:unionOf ( :BiologicalEntity :BiologicalSample ) ] ;
+         rdfs:comment "Links an ExperimentalTechnique to the BiologicalEntity or BiologicalSample it is applied to. Specialises perk:uses."@en ;
+         rdfs:label "assays"@en .
+
+###  https://w3id.org/perkonto/molbio#appliedToProblem
+:appliedToProblem rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:usedFor ;
+         rdfs:domain [ rdf:type owl:Class ; owl:unionOf ( :ExperimentalTechnique :BiologicalEntity ) ] ;
+         rdfs:range :ResearchProblem ;
+         rdfs:comment "Links an ExperimentalTechnique or BiologicalEntity to the ResearchProblem it addresses. Specialises perk:usedFor."@en ;
+         rdfs:label "applied to problem"@en .
+
+###  https://w3id.org/perkonto/molbio#quantifies
+:quantifies rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:evaluates ;
+         rdfs:domain :Readout ;
+         rdfs:range [ rdf:type owl:Class ; owl:unionOf ( :ExperimentalTechnique :BiologicalEntity :ResearchProblem ) ] ;
+         rdfs:comment "Links a Readout to the ExperimentalTechnique, BiologicalEntity, or ResearchProblem it characterises. Specialises perk:evaluates."@en ;
+         rdfs:label "quantifies"@en .
+
+###  https://w3id.org/perkonto/molbio#usesReagent
+:usesReagent rdf:type owl:ObjectProperty ;
+         rdfs:domain :ExperimentalTechnique ;
+         rdfs:range :Reagent ;
+         rdfs:comment "Links an ExperimentalTechnique to a Reagent it requires."@en ;
+         rdfs:label "uses reagent"@en .
+
+###  https://w3id.org/perkonto/molbio#runsOn
+:runsOn rdf:type owl:ObjectProperty ;
+         rdfs:domain :ExperimentalTechnique ;
+         rdfs:range :Instrument ;
+         rdfs:comment "Links an ExperimentalTechnique to the Instrument / platform used to perform it."@en ;
+         rdfs:label "runs on"@en .
+
+###  https://w3id.org/perkonto/molbio#followsProtocol
+:followsProtocol rdf:type owl:ObjectProperty ;
+         rdfs:domain :ExperimentalTechnique ;
+         rdfs:range :Protocol ;
+         rdfs:comment "Links an ExperimentalTechnique to the Protocol it follows."@en ;
+         rdfs:label "follows protocol"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/perkonto/molbio#entityName
+:entityName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:datasetName ;
+          rdfs:domain :BiologicalEntity ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of the biological entity, e.g. 'p53', 'E. coli K-12', 'HeLa'."@en ;
+          rdfs:label "entity name"@en .
+
+###  https://w3id.org/perkonto/molbio#entityType
+:entityType rdf:type owl:DatatypeProperty ;
+          rdfs:domain :BiologicalEntity ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Category of entity, e.g. 'gene', 'protein', 'pathway', 'cell line', 'organism'."@en ;
+          rdfs:label "entity type"@en .
+
+###  https://w3id.org/perkonto/molbio#accessionID
+:accessionID rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ rdf:type owl:Class ; owl:unionOf ( :BiologicalEntity :BiologicalSample ) ] ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Database accession identifier, e.g. a UniProt ID, GenBank accession, or SRA run ID."@en ;
+          rdfs:label "accession ID"@en .
+
+###  https://w3id.org/perkonto/molbio#sampleName
+:sampleName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:datasetName ;
+          rdfs:domain :BiologicalSample ;
+          rdfs:range xsd:string ;
+          rdfs:label "sample name"@en .
+
+###  https://w3id.org/perkonto/molbio#techniqueName
+:techniqueName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:methodName ;
+          rdfs:domain :ExperimentalTechnique ;
+          rdfs:range xsd:string ;
+          rdfs:label "technique name"@en .
+
+###  https://w3id.org/perkonto/molbio#readoutName
+:readoutName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:metricName ;
+          rdfs:domain :Readout ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of the measured quantity, e.g. 'expression level', 'cell viability', 'Kd'."@en ;
+          rdfs:label "readout name"@en .
+
+###  https://w3id.org/perkonto/molbio#readoutValue
+:readoutValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Readout ;
+          rdfs:range xsd:double ;
+          rdfs:label "readout value"@en .
+
+###  https://w3id.org/perkonto/molbio#readoutUnit
+:readoutUnit rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Readout ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Unit of the readout value, e.g. 'nM', 'fold-change', 'percent'."@en ;
+          rdfs:label "readout unit"@en .
+
+###  https://w3id.org/perkonto/molbio#reagentName
+:reagentName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Reagent ;
+          rdfs:range xsd:string ;
+          rdfs:label "reagent name"@en .
+
+###  https://w3id.org/perkonto/molbio#instrumentName
+:instrumentName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Instrument ;
+          rdfs:range xsd:string ;
+          rdfs:label "instrument name"@en .
+
+###  https://w3id.org/perkonto/molbio#protocolName
+:protocolName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Protocol ;
+          rdfs:range xsd:string ;
+          rdfs:label "protocol name"@en .
+
+###  https://w3id.org/perkonto/molbio#protocolVersion
+:protocolVersion rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:version ;
+          rdfs:domain :Protocol ;
+          rdfs:range xsd:string ;
+          rdfs:label "protocol version"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/perkonto/molbio#BiologicalEntity
+:BiologicalEntity rdf:type owl:Class ;
+        rdfs:subClassOf perk:Dataset ,
+                        obo:BFO_0000040 ;
+        rdfs:comment "The biological object of study: a gene, protein, pathway, cell line, tissue, or organism (e.g. the p53 protein, E. coli, a HeLa cell line)."@en ;
+        skos:note "Dual-grounded: perk:Dataset for the PERKOnto object-of-study role; obo:BFO_0000040 (BFO 'material entity'), the OBO upper class that genes/proteins/cells specialise. More specific groundings (e.g. obo:SO_0000704 'gene', obo:PR_* proteins) apply at the instance level."@en ;
+        rdfs:label "Biological Entity"@en .
+
+###  https://w3id.org/perkonto/molbio#BiologicalSample
+:BiologicalSample rdf:type owl:Class ;
+        rdfs:subClassOf perk:Dataset ,
+                        obo:OBI_0100051 ;
+        rdfs:comment "A concrete analysed artifact: a biological sample, a sequencing run, an image dataset, or a screen."@en ;
+        skos:note "Dual-grounded: perk:Dataset and obo:OBI_0100051 (OBI 'specimen')."@en ;
+        rdfs:label "Biological Sample / Generated Dataset"@en .
+
+###  https://w3id.org/perkonto/molbio#ExperimentalTechnique
+:ExperimentalTechnique rdf:type owl:Class ;
+        rdfs:subClassOf perk:Method ,
+                        obo:OBI_0000070 ;
+        rdfs:comment "A laboratory technique or assay applied, e.g. PCR, CRISPR-Cas9 editing, RNA sequencing, Western blot, mass spectrometry, confocal microscopy, flow cytometry."@en ;
+        skos:note "Dual-grounded: perk:Method for the PERKOnto role; obo:OBI_0000070 (OBI 'assay') for the biomedical-investigation standard."@en ;
+        rdfs:label "Experimental Technique / Assay"@en .
+
+###  https://w3id.org/perkonto/molbio#Readout
+:Readout rdf:type owl:Class ;
+        rdfs:subClassOf perk:Metric ,
+                        qudt:Quantity ;
+        rdfs:comment "A measured biological quantity or endpoint, e.g. gene-expression level, cell viability, binding affinity (Kd), fluorescence intensity, differential-expression p-value."@en ;
+        skos:note "Dual-grounded: perk:Metric and qudt:Quantity (QUDT)."@en ;
+        rdfs:label "Readout / Measured Quantity"@en .
+
+###  https://w3id.org/perkonto/molbio#ResearchProblem
+:ResearchProblem rdf:type owl:Class ;
+        rdfs:subClassOf perk:Task ;
+        rdfs:comment "A scientific question or hypothesis the group works on, e.g. 'role of gene X in apoptosis', 'mechanism of copper trafficking in cells'."@en ;
+        skos:note "Grounded in perk:Task only."@en ;
+        rdfs:label "Research Problem / Hypothesis"@en .
+
+###  https://w3id.org/perkonto/molbio#Reagent
+:Reagent rdf:type owl:Class ;
+        rdfs:subClassOf obo:BFO_0000040 ;
+        rdfs:comment "A consumable biological/chemical material used in an experiment, e.g. an antibody, primer, plasmid, enzyme, stain, or kit."@en ;
+        skos:note "Grounded in obo:BFO_0000040 (BFO 'material entity'); OBI models reagents as material entities."@en ;
+        rdfs:label "Reagent / Material"@en .
+
+###  https://w3id.org/perkonto/molbio#Instrument
+:Instrument rdf:type owl:Class ;
+        rdfs:subClassOf obo:OBI_0000968 ;
+        rdfs:comment "A laboratory instrument or platform used to run a technique, e.g. an Illumina NovaSeq sequencer, a confocal microscope, a qPCR machine, a mass spectrometer."@en ;
+        skos:note "Grounded in obo:OBI_0000968 (OBI 'device')."@en ;
+        rdfs:label "Instrument / Platform"@en .
+
+###  https://w3id.org/perkonto/molbio#Protocol
+:Protocol rdf:type owl:Class ;
+        rdfs:subClassOf obo:OBI_0000272 ;
+        rdfs:comment "A documented experimental procedure / standard operating procedure followed to perform a technique."@en ;
+        skos:note "Grounded in obo:OBI_0000272 (OBI 'protocol')."@en ;
+        rdfs:label "Protocol"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BiologicalEntity
+                :BiologicalSample
+                :ExperimentalTechnique
+                :Readout
+                :ResearchProblem
+                :Reagent
+                :Instrument
+                :Protocol
+              )
+] .
