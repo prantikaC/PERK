@@ -76,13 +76,13 @@ Extract entities and relations from each email using an LLM:
 
 ```bash
 python src/extraction/kg_extraction_pipeline.py \
-    --input   datasets/PATRA/PATRA.txt \
-    --output  results/extractions/openai/ \
-    --model   gpt-4.1 \
+    --input_file   datasets/PATRA/PATRA.txt \
+    --output_dir  results/extractions/openai/ \
+    --model   gpt-5.1 \
     --prompt  src/prompts/extraction_prompt.txt
 ```
 
-Supported models: `gpt-4.1`, `meta-llama/Llama-3.1-8B-Instruct`, `google/gemma-3-4b-it`, `Qwen/Qwen2.5-7B-Instruct`, `Qwen/Qwen2.5-32B-Instruct`.
+Supported models: `openai/gpt-5.1`, `meta-llama/Llama-3.1-8B-Instruct`, `google/gemma-3-4b-it`, `Qwen/Qwen2.5-7B-Instruct`, `Qwen/Qwen2.5-32B-Instruct`, `openai/gpt-oss-20b`
 
 ---
 
