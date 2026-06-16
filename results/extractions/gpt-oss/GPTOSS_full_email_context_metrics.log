@@ -1,0 +1,59 @@
+Model: GptOss
+Context: full_email_context
+Timestamp: 2026-06-16 12:43:54.843671
+
+Tau=0.60
+Subject      P=0.7914 R=0.9370 F1=0.8581
+Object       P=0.7340 R=0.7432 F1=0.7386
+All Entities P=0.8434 R=0.8225 F1=0.8328
+Predicate    P=0.4634 R=0.7015 F1=0.5581
+Triple       P=0.2523 R=0.2475 F1=0.2499
+
+Tau=0.65
+Subject      P=0.7914 R=0.9370 F1=0.8581
+Object       P=0.7340 R=0.7432 F1=0.7386
+All Entities P=0.8434 R=0.8225 F1=0.8328
+Predicate    P=0.4634 R=0.7015 F1=0.5581
+Triple       P=0.2523 R=0.2475 F1=0.2499
+
+Tau=0.70
+Subject      P=0.7914 R=0.9370 F1=0.8581
+Object       P=0.7326 R=0.7417 F1=0.7371
+All Entities P=0.8424 R=0.8216 F1=0.8319
+Predicate    P=0.4634 R=0.7015 F1=0.5581
+Triple       P=0.2528 R=0.2479 F1=0.2503
+
+Tau=0.75
+Subject      P=0.7906 R=0.9360 F1=0.8571
+Object       P=0.7326 R=0.7417 F1=0.7371
+All Entities P=0.8420 R=0.8211 F1=0.8314
+Predicate    P=0.4634 R=0.7015 F1=0.5581
+Triple       P=0.2528 R=0.2479 F1=0.2503
+
+Tau=0.80
+Subject      P=0.7906 R=0.9360 F1=0.8571
+Object       P=0.7304 R=0.7395 F1=0.7349
+All Entities P=0.8405 R=0.8197 F1=0.8300
+Predicate    P=0.4634 R=0.7015 F1=0.5581
+Triple       P=0.2528 R=0.2479 F1=0.2503
+
+Tau=0.85
+Subject      P=0.7906 R=0.9360 F1=0.8571
+Object       P=0.7195 R=0.7285 F1=0.7239
+All Entities P=0.8335 R=0.8128 F1=0.8230
+Predicate    P=0.4634 R=0.7015 F1=0.5581
+Triple       P=0.2523 R=0.2475 F1=0.2499
+
+Tau=0.90
+Subject      P=0.7906 R=0.9360 F1=0.8571
+Object       P=0.7013 R=0.7101 F1=0.7057
+All Entities P=0.8217 R=0.8014 F1=0.8114
+Predicate    P=0.4634 R=0.7015 F1=0.5581
+Triple       P=0.2492 R=0.2445 F1=0.2468
+
+Tau=0.95
+Subject      P=0.7775 R=0.9205 F1=0.8430
+Object       P=0.6047 R=0.6122 F1=0.6084
+All Entities P=0.7540 R=0.7353 F1=0.7445
+Predicate    P=0.4634 R=0.7015 F1=0.5581
+Triple       P=0.2242 R=0.2197 F1=0.2219
