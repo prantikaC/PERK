@@ -30,6 +30,15 @@ recommendations** over a researcher's activities (e.g. *"Which of my papers were
 review in 2019?"*, *"What meetings did I attend about the PKG project and what were the
 agendas?"*).
 
+This resource was motivated by a survey of researchers at our institute, which showed strong interest in personal research KGs (Chakraborty, Prantika, et al. "Bringing Order to Chaos: Conceptualizing a Personal Research Knowledge Graph for Scientists." IEEE Data Eng. Bull. 47.4 (2023): 43-56.). The repository provides:
+
+- **PATRA** — a corpus of synthetic academic email threads.
+- **PERKOnto** — the ontology (14 entity types, 14 relation types) grounding the graph.
+- **PRASHNA-PATRA** — a KG-QA benchmark (200 question/answer pairs with Cypher).
+- An **annotated gold set** of 2,372 triples for extraction evaluation.
+- The full **construction + evaluation pipeline**: extraction → entity resolution →
+  Neo4j graph build → triple & QA evaluation.
+  
 ## Repository Structure
 
 ```
