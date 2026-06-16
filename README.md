@@ -212,8 +212,8 @@ sentence as context, **Full-Email** = the whole email as context):
 
 |  |  |  |
 |:---:|:---:|:---:|
-| **Subject F1**<br>![Subject F1](results/figures/extractions/fig_sub.pdf) | **Object F1**<br>![Object F1](results/figures/extractions/fig_obj.pdf) | **Entity F1**<br>![Entity F1](results/figures/extractions/fig_ent.pdf) |
-| **Relation F1**<br>![Relation F1](results/figures/extractions/fig_pred.pdf) | **Triple F1**<br>![Triple F1](results/figures/extractions/fig_tri.pdf) |  |
+| **Subject F1**<br>![Subject F1](results/figures/extractions/fig_sub.png) | **Object F1**<br>![Object F1](results/figures/extractions/fig_obj.png) | **Entity F1**<br>![Entity F1](results/figures/extractions/fig_ent.png) |
+| **Relation F1**<br>![Relation F1](results/figures/extractions/fig_pred.png) | **Triple F1**<br>![Triple F1](results/figures/extractions/fig_tri.png) |  |
 
 #### KG-QA Evaluation (PRASHNA-PATRA)
 
