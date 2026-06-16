@@ -100,8 +100,11 @@ to researchers in fields beyond computer science.
 - **Supervised baselines are not applicable**: they need large amounts of
   labelled, in-domain data to adapt to a new schema, which our 2,372-triple gold set
   cannot provide. Schema-free extractors align poorly with the ontology .
+- Future work will focus on improving the accuracy of triple extraction by exploring various methods, such as simplifying the email text context, supervised fine tuning of language models, using LLM as a judge to improve the quality of the triples.
 
 ---
+ 
+
 
 ## Repository Structure
 
