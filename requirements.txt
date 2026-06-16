@@ -5,6 +5,7 @@ tqdm
 pandas
 networkx
 scikit-learn
+scipy
 matplotlib
 numpy
 
