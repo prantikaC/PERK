@@ -263,10 +263,11 @@ Qwen2.5-32B LLM judge. The precision-recall curves and the corresponding thresho
 |-------|-----------|--------|----|
 | OpenAI | 0.6538 | 0.5730 | 0.6108 |
 
-The final total number of entities is 7,207, and the number of relations is 16,814.
 ---
 
 ### 4. Neo4j Graph Construction
+
+A Neo4j graph is constructed for a total number of 7,207 entities and 16,814 relations.
 
 **Validate** entities and relations against PERKOnto:
 
