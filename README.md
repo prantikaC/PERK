@@ -232,8 +232,17 @@ floor, so it enters the LLM grey zone); the Qwen2.5-32B judge labels it **MATCH*
 `uses` / `evaluates` relation from both onto that one id. Pairs scoring below the floor are
 auto-rejected without an LLM call.
 
-The auto-reject threshold (0.6547) is calibrated from manually annotated candidate pairs —
-see [§5.2](#52-entity-resolution). To recompute it:
+The FAISS auto-reject floor is calibrated from manually annotated candidate pairs. Pairs
+below it are auto-rejected; everything above (the "grey zone") is routed to the LLM judge.
+
+| Pipeline | Annotated pairs | Auto-reject τ (≥99% recall) | Auto-match (≥98% precision) |
+|---|---|---|---|
+| OpenAI (GPT-5.1) | 497 | **0.6547** | none reaches 98% precision |
+| Qwen (32B) | 499 | **0.6627** | none reaches 98% precision |
+
+![FAISS threshold calibration](results/entity_resolution/calibration_plot.png)
+
+To recompute it:
 
 ```bash
 python src/entity_resolution/calibrate_threshold.py \
@@ -242,6 +251,7 @@ python src/entity_resolution/calibrate_threshold.py \
     --log_output  results/entity_resolution/calibration_log.txt
 ```
 
+End-to-end ER (OpenAI pipeline): Precision **0.6538**, Recall **0.5730**, F1 **0.6108**.
 ---
 
 ### 4. Neo4j Graph Construction
@@ -377,21 +387,7 @@ Open-source models perform poorly: the best open model, GPT-OSS-20B, reaches a t
 only **0.20** (source-sentence) / **0.25** (full-email). GPT-5.1 was therefore chosen for
 the final extraction.
 
-### 6.2 Entity resolution
-
-The FAISS auto-reject floor is calibrated from manually annotated candidate pairs. Pairs
-below it are auto-rejected; everything above (the "grey zone") is routed to the LLM judge.
-
-| Pipeline | Annotated pairs | Auto-reject τ (≥99% recall) | Auto-match (≥98% precision) |
-|---|---|---|---|
-| OpenAI (GPT-5.1) | 497 | **0.6547** | none reaches 98% precision |
-| Qwen (32B) | 499 | **0.6627** | none reaches 98% precision |
-
-![FAISS threshold calibration](results/entity_resolution/calibration_plot.png)
-
-End-to-end ER (OpenAI pipeline): Precision **0.6538**, Recall **0.5730**, F1 **0.6108**.
-
-### 6.3 Comparison to alternative extractors
+### 6.2 Comparison to alternative extractors
 
 | Approach | Result |
 |---|---|
@@ -401,7 +397,7 @@ End-to-end ER (OpenAI pipeline): Precision **0.6538**, Recall **0.5730**, F1 **0
 Schema-free and direct-prompting approaches confirm that **ontology constraints are
 essential**; without them the extraction task is ill-defined.
 
-### 6.4 KG-QA (PRASHNA-PATRA)
+### 6.3 KG-QA (PRASHNA-PATRA)
 
 Schema-guided KBQA over the constructed graph reaches **75.5%** accuracy (151/200), and
 stays consistent across question types — including the harder multi-hop and reasoning
