@@ -17,6 +17,14 @@ LLM-based extraction over email threads and grounded in the **PERKOnto** ontolog
 
 ![PERK resource overview](perk_overview.png)
 
+Most knowledge graphs are built from public sources such as papers or the web. PERK
+instead models a researcher's **own** scientific life as recorded in their inbox —
+including in-progress work that may never appear in any publication. The goal is a
+queryable personal graph that lets **autonomous agents answer questions and make
+recommendations** over a researcher's activities (e.g. *"Which of my papers were under
+review in 2019?"*, *"What meetings did I attend about the PKG project and what were the
+agendas?"*).
+
 ## Repository Structure
 
 ```
