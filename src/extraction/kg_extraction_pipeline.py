@@ -46,7 +46,12 @@ DEFAULT_PROMPT = Path(__file__).resolve().parent.parent / "prompts" / "extractio
 
 PIPELINE_MODELS = {"gemma", "llama"}
 DIRECT_MODELS = {"qwen", "qwen32b"}
-API_MODELS = {"openai"}
+API_MODELS = {"openai", "gptoss"}   # gptoss = gpt-oss-20b via an OpenAI-compatible server
+
+# Default model name per alias when --model_path is omitted.
+DEFAULT_MODEL_PATHS = {"gptoss": "openai/gpt-oss-20b"}
+# Default OpenAI-compatible endpoint per alias when --base_url is omitted.
+DEFAULT_BASE_URLS = {"gptoss": "http://localhost:8000/v1"}   # local vLLM default
 
 HEADER_EVIDENCE = "Header Metadata"
 
@@ -93,6 +98,12 @@ def load_model(args):
         if not OPENAI_AVAILABLE:
             raise ImportError("pip install openai python-dotenv")
         api_key = os.environ.get("OPENAI_API_KEY")
+        base_url = args.base_url or DEFAULT_BASE_URLS.get(model_type)
+        if base_url:
+            # Local OpenAI-compatible server (e.g. vLLM/Ollama serving gpt-oss-20b).
+            # The server handles harmony formatting; key may be a dummy.
+            print(f"Using OpenAI-compatible endpoint: {base_url}")
+            return None, None, OpenAI(base_url=base_url, api_key=api_key or "EMPTY")
         if not api_key:
             raise EnvironmentError("OPENAI_API_KEY environment variable is not set.")
         return None, None, OpenAI(api_key=api_key)
@@ -629,10 +640,11 @@ def merge_and_report(args, logger: logging.Logger) -> None:
 def main():
     parser = argparse.ArgumentParser(description="Unified KG extraction pipeline for PERK")
     parser.add_argument("--model", required=True,
-                        choices=["gemma", "llama", "qwen", "qwen32b", "openai"],
+                        choices=["gemma", "llama", "qwen", "qwen32b", "openai", "gptoss"],
                         help="Model backend")
-    parser.add_argument("--model_path", required=True,
-                        help="HuggingFace model ID or OpenAI model name (e.g. gpt-4.1)")
+    parser.add_argument("--model_path", default=None,
+                        help="HuggingFace model ID or OpenAI model name (e.g. gpt-4.1). "
+                             "Optional for aliases with a default (e.g. gptoss -> openai/gpt-oss-20b).")
     parser.add_argument("--input_file", required=True,
                         help="Path to preprocessed PATRA dataset")
     parser.add_argument("--output_dir", required=True,
@@ -641,6 +653,10 @@ def main():
                         help=f"Path to system prompt file (default: {DEFAULT_PROMPT})")
     parser.add_argument("--gpu", default=None,
                         help="GPU ID to use (e.g. 0 or 1)")
+    parser.add_argument("--base_url", default=None,
+                        help="OpenAI-compatible base URL for a local server "
+                             "(e.g. http://localhost:8000/v1 for vLLM serving gpt-oss-20b). "
+                             "Use with --model openai.")
     parser.add_argument("--max_new_tokens", type=int, default=2048,
                         help="Max tokens to generate (default: 2048)")
     parser.add_argument("--resume", action="store_true",
@@ -648,6 +664,12 @@ def main():
     parser.add_argument("--save_debug", action="store_true", default=True,
                         help="Save raw LLM responses per email for debugging")
     args = parser.parse_args()
+
+    # Resolve a default model name for aliases that have one (e.g. gptoss)
+    if args.model_path is None:
+        args.model_path = DEFAULT_MODEL_PATHS.get(args.model.lower())
+    if not args.model_path:
+        parser.error(f"--model_path is required for model '{args.model}'")
 
     # Derived paths
     args.entity_dir     = os.path.join(args.output_dir, "entity_extractions")
