@@ -253,7 +253,7 @@ Qwen2.5-32B LLM judge. The precision/recall curves and these thresholds are show
 ![FAISS threshold calibration](results/entity_resolution/calibration_plot.png)
 
 
-**Reported results (ISWC submission):**
+**Reported results of Entity Resolution:**
 
 | Model | Precision | Recall | F1 |
 |-------|-----------|--------|----|
