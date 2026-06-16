@@ -162,7 +162,7 @@ python src/patra_generation/generate_patra.py \
 Post-process the raw output into clean, delimited email threads:
 
 ```bash
-python src/patra_generation/preprocess_patra.py \
+python src/patra_generation/postprocess_patra.py \
     --input  datasets/PATRA/PATRA_raw.txt \
     --output datasets/PATRA/PATRA.txt
 ```
