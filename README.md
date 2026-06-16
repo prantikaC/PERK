@@ -38,7 +38,30 @@ This resource was motivated by a survey of researchers at our institute, which s
 - An **annotated gold set** of 2,372 triples for extraction evaluation.
 - The full **construction + evaluation pipeline**: extraction → entity resolution →
   Neo4j graph build → triple & QA evaluation.
-  
+
+### Ontology
+
+PERKOnto defines 14 node types and 14 relationship types covering the research collaboration domain. 
+
+Full ontology files (OWL, Turtle) are in `ontology/`.
+
+![PERKOnto](ontology/PERKOnto.png)
+
+**Generalising beyond NLP.** PERKOnto is domain-adaptable: the four NLP-specific classes
+(`Task`, `Method`, `Metric`, `Dataset`) can be swapped for domain-specific ones while the
+rest of the schema (people, emails, papers, venues, meetings, statuses) is reused. Three
+example domain ontologies are included under
+[`ontology/ontologies-for-other-fields/`](ontology/ontologies-for-other-fields/):
+
+| Domain | Replacement classes |
+|---|---|
+| Computational chemistry | ResearchProblem, ComputationalMethod, Observable, ChemicalSystem |
+| Gravitational physics | ResearchProblem, AnalysisMethod, PhysicalParameter, AstrophysicalSource, ObservationalData |
+| Molecular biology | ResearchProblem, ExperimentalTechnique, Readout, BiologicalEntity, BiologicalSample |
+
+The resource is actively maintained, with planned expansion to anonymised real emails and
+to researchers in fields beyond computer science.
+
 ## Repository Structure
 
 ```
@@ -300,23 +323,7 @@ python src/evaluation/kg_eval.py \
 The `--model` flag selects which Neo4j instance to query via the corresponding env var prefix (e.g. `--model gpt` reads `GPT_NEO4J_URI`).
 
 ---
-## Ontology
 
-PERKOnto defines 14 node types and 14 relationship types covering the research collaboration domain. The machine-readable `ontology/PERKOnto.json` is used at runtime for:
-- Ontology validation during KG cleaning (`clean_kg.py`)
-- Schema-guided Cypher generation (`kg_eval.py`)
-- Relationship ingestion during graph construction (`build_perk.py`)
-
-Full ontology files (OWL, Turtle) are in `ontology/`.
-
-### Domain extensions
-PERKOnto generalizes beyond the academic emails of an NLP scientist to other research domains.
-`ontology/ontologies-for-other-fields/` contains three illustrative extensions
-that import PERKOnto: `perkonto_chem.ttl` (chemistry), `perkonto_grav.ttl`
-(gravitational physics), and `perkonto_molbio.ttl` (molecular biology).
-
-
-![PERKOnto](ontology/PERKOnto.png)
 
 ---
 ### Citation
