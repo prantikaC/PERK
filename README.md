@@ -396,9 +396,23 @@ essential**; without them the extraction task is ill-defined.
 
 ### 6.4 KG-QA (PRASHNA-PATRA)
 
-Schema-guided KBQA over the constructed graph reaches **75.5%** accuracy. The residual
-errors are extraction/retrieval failures — queried entities or triples missing from the
-PKG, or text-to-Cypher conversion errors.
+Schema-guided KBQA over the constructed graph reaches **75.5%** accuracy (151/200), and
+stays consistent across question types — including the harder multi-hop and reasoning
+queries:
+
+<p align="center">
+  <img src="results/figures/qa/qa_accuracy_by_question_type_bar.png" alt="KG-QA accuracy by question type" width="68%">
+</p>
+<p align="center"><sub>PERK KG-QA accuracy by question type: single-hop 72.3%, multi-hop 74.6%, reasoning 75.0%, "not available" 84.6%.</sub></p>
+
+The 49 residual failures are dominated by semantic-reasoning errors (mostly text-to-Cypher
+conversion), followed by KG incompleteness (queried triples missing after extraction),
+temporal reasoning, and ontology-validation errors:
+
+<p align="center">
+  <img src="results/figures/qa/qa_failure_distribution.png" alt="KG-QA failure type distribution" width="58%">
+</p>
+<p align="center"><sub>Distribution of the 49 KG-QA failures: semantic reasoning 32 (65.3%), KG incompleteness 10 (20.4%), temporal reasoning 4 (8.2%), ontology validation 3 (6.1%).</sub></p>
 
 **Does the knowledge graph beat brute-force long context?** As a no-KG baseline, we feed
 the entire PATRA corpus (~570K tokens) to a long-context LLM (GPT-4.1) and ask each
@@ -409,7 +423,7 @@ graph's structure is decisive:
 
 | QA accuracy | Overall | single-hop | multi-hop | reasoning | not available |
 |---|:--:|:--:|:--:|:--:|:--:|
-| **PERK KG-QA** (`kg_eval.py`) | **75.5%** | — | — | — | — |
+| **PERK KG-QA** (`kg_eval.py`) | **75.5%** | 72.3% | 74.6% | 75.0% | 84.6% |
 | Long-context GPT-4.1 (no KG) | 21.0% | 10.6% | 9.0% | 33.3% | 42.3% |
 
 ![Long-context QA baseline](results/figures/qa/longcontext_qa_baseline.png)
