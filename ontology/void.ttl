@@ -202,7 +202,7 @@ perk:PERK-KG a void:Dataset, dcat:Dataset ;
     # Released graph statistics (relationship assertions; entity/literal triples additional).
     void:properties 14 ;
     void:entities 7207 ;       # typed nodes across 14 entity classes
-    void:triples 23495 ;       # relationship assertions (entity/literal triples additional)
+    void:triples 22719 ;       # relationship assertions (entity/literal triples additional)
     void:classPartition
         [ void:class perkonto:Task        ; void:entities 3530 ] ,
         [ void:class perkonto:Email       ; void:entities 1006 ] ,
@@ -219,19 +219,19 @@ perk:PERK-KG a void:Dataset, dcat:Dataset ;
         [ void:class perkonto:Journal     ; void:entities   22 ] ,
         [ void:class perkonto:PaperBib    ; void:entities    2 ] ;
     void:propertyPartition
-        [ void:property perkonto:worksOn      ; void:triples 11337 ] ,
+        [ void:property perkonto:worksOn      ; void:triples 11194 ] ,
         [ void:property perkonto:receivedBy   ; void:triples  3104 ] ,
-        [ void:property perkonto:attends      ; void:triples  2783 ] ,
-        [ void:property perkonto:worksWith    ; void:triples  1215 ] ,
-        [ void:property perkonto:usedFor      ; void:triples  1206 ] ,
+        [ void:property perkonto:attends      ; void:triples  2410 ] ,
+        [ void:property perkonto:worksWith    ; void:triples  1208 ] ,
+        [ void:property perkonto:usedFor      ; void:triples  1186 ] ,
         [ void:property perkonto:partOf       ; void:triples  1006 ] ,
         [ void:property perkonto:sentBy       ; void:triples  1006 ] ,
-        [ void:property perkonto:hasAuthor    ; void:triples   637 ] ,
-        [ void:property perkonto:inVenue      ; void:triples   353 ] ,
-        [ void:property perkonto:evaluates    ; void:triples   305 ] ,
-        [ void:property perkonto:movesTo      ; void:triples   199 ] ,
+        [ void:property perkonto:hasAuthor    ; void:triples   518 ] ,
+        [ void:property perkonto:evaluates    ; void:triples   303 ] ,
+        [ void:property perkonto:inVenue      ; void:triples   301 ] ,
+        [ void:property perkonto:movesTo      ; void:triples   171 ] ,
         [ void:property perkonto:uses         ; void:triples   160 ] ,
-        [ void:property perkonto:identifies   ; void:triples   157 ] ,
+        [ void:property perkonto:identifies   ; void:triples   125 ] ,
         [ void:property perkonto:hasPaperInfo ; void:triples    27 ] ;
     dcat:landingPage <https://github.com/prantikaC/PERK> ;
     dcat:distribution [ a dcat:Distribution ;
