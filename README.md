@@ -10,8 +10,6 @@ LLM-based extraction over email threads and grounded in the **PERKOnto** ontolog
 |---|---|
 | **Persistent ontology URI** | <https://w3id.org/perkonto> |
 | **Dataset / ontology metadata (VoID + DCAT + Dublin Core)** | [`ontology/void.ttl`](ontology/void.ttl) |
-| **Archived release (Zenodo)** | <https://doi.org/10.5281/zenodo.20542115> |
-
 ---
 ## Overview
 
