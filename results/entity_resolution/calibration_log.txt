@@ -1,0 +1,22 @@
+Calibration run: 2026-06-16 17:35:05
+
+==================================================
+DATASET: OpenAI
+==================================================
+Total annotated pairs: 497
+
+AUTO-MATCH: no threshold achieves 98% precision.
+
+AUTO-REJECT THRESHOLD: 0.6547  (>=99% recall, bypass LLM and auto-reject)
+
+
+==================================================
+DATASET: Qwen
+==================================================
+Total annotated pairs: 499
+
+AUTO-MATCH: no threshold achieves 98% precision.
+
+AUTO-REJECT THRESHOLD: 0.6627  (>=99% recall, bypass LLM and auto-reject)
+
+
