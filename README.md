@@ -164,19 +164,10 @@ Credentials are read from `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD` in `.e
 
 ### 5. Evaluation
 
-#### Extraction Evaluation (Triple-level F1)
+#### Extraction Evaluation (Sentence-BERT triple metrics)
 
-Convert extracted entities/relations to human-readable triples:
-
-```bash
-python src/evaluation/convert_to_triples.py \
-    --input_dirs results/extractions/openai \
-                 results/extractions/llama \
-                 results/extractions/gemma \
-                 results/extractions/qwen
-```
-
-Sample emails and generate annotation candidates:
+The golden set is built once by sampling emails and annotating the candidate
+triples:
 
 ```bash
 python src/evaluation/sample_for_annotation.py \
@@ -185,22 +176,36 @@ python src/evaluation/sample_for_annotation.py \
     --emails    datasets/PATRA/PATRA.txt \
     --output    datasets/extraction_gold/golden_set_candidates.csv \
     --n_emails  250
+# annotate -> datasets/extraction_gold/refined_golden_set_target.csv
 ```
 
-Evaluate against the annotated golden set:
+For each model, build its `comparison_triples.csv` (resolves entity ids to
+label + type, attaches the extracted evidence sentence, and keeps only the
+gold-annotated emails):
 
 ```bash
-python src/evaluation/evaluate_triples.py \
-    --golden     datasets/extraction_gold/refined_golden_set_target.csv \
-    --system_dir results/extractions/openai \
-    --threshold  0.85
+python src/evaluation/build_comparison_triples.py \
+    --entities  results/extractions/gptoss/final_outputs/entities_final.csv \
+    --relations results/extractions/gptoss/final_outputs/relations_final.csv \
+    --output    results/extractions/gptoss/evaluation_triples/comparison_triples.csv \
+    --source_type GptOss
 ```
 
-Generate result plots:
+Evaluate with Sentence-BERT — Subject / Object / Entity / Relation / Triple
+micro P/R/F1 at τ=0.80, for both the source-sentence and full-email context
+(per-context logs over the full τ sweep are written to `results/evaluation/`):
 
 ```bash
-cd results/figures/extractions/
-python ../../../src/evaluation/plot_results.py
+python src/evaluation/evaluate_llm_triples.py \
+    --name GptOss \
+    --pred results/extractions/gptoss/evaluation_triples/comparison_triples.csv \
+    --tau  0.80 --gpu 0
+```
+
+Generate result plots (saved to `results/figures/extractions/`):
+
+```bash
+python src/evaluation/plot_results.py
 ```
 
 #### KG-QA Evaluation (PRASHNA-PATRA)
@@ -215,7 +220,6 @@ python src/evaluation/kg_eval.py \
 The `--model` flag selects which Neo4j instance to query via the corresponding env var prefix (e.g. `--model gpt` reads `GPT_NEO4J_URI`).
 
 ---
-
 ## Ontology
 
 PERKOnto defines 14 node types and 14 relationship types covering the research collaboration domain. The machine-readable `ontology/PERKOnto.json` is used at runtime for:
