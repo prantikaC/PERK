@@ -207,6 +207,13 @@ Generate result plots (saved to `results/figures/extractions/`):
 ```bash
 python src/evaluation/plot_results.py
 ```
+Extraction quality across models (micro-F1 at τ = 0.80; **Source** = the source
+sentence as context, **Full-Email** = the whole email as context):
+
+|  |  |  |
+|:---:|:---:|:---:|
+| **Subject F1**<br>![Subject F1](results/figures/extractions/fig_sub.png) | **Object F1**<br>![Object F1](results/figures/extractions/fig_obj.png) | **Entity F1**<br>![Entity F1](results/figures/extractions/fig_ent.png) |
+| **Relation F1**<br>![Relation F1](results/figures/extractions/fig_pred.png) | **Triple F1**<br>![Triple F1](results/figures/extractions/fig_tri.png) |  |
 
 #### KG-QA Evaluation (PRASHNA-PATRA)
 
