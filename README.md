@@ -170,11 +170,12 @@ python src/patra_generation/preprocess_patra.py \
 ---
 ### 2. Triple Extraction
 
-Extract entities and relations from each email using an LLM. The pipeline supports
-OpenAI-compatible APIs and HuggingFace models (run locally).
+Extract entities and relations from each email with an LLM. Open-source models
+(Gemma, LLaMA, Qwen 7B/32B) run locally with in-process vLLM; gpt-oss-20b runs via a
+local vLLM OpenAI-compatible server; GPT-5.1 run via the OpenAI API.
 
 ```bash
-# OpenAI API (e.g. GPT-5.1 or GPT-4.1)
+# GPT-5.1
 python src/extraction/kg_extraction_pipeline.py \
     --model openai --model_path gpt-5.1 \
     --input_file datasets/PATRA/PATRA.txt \
@@ -187,18 +188,22 @@ python src/extraction/kg_extraction_pipeline.py \
 | Flag | Meaning |
 |---|---|
 | `--model` | Backend: `openai`, `gptoss`, `llama`, `gemma`, `qwen`, `qwen32b` |
-| `--model_path` |model ID **or** OpenAI model name (e.g. `gpt-5.1`, `gpt-4.1`, `Qwen/Qwen2.5-7B-Instruct`). Optional for aliases with a default (`gptoss` → `openai/gpt-oss-20b`) |
+| `--model_path` | HuggingFace model ID (local vLLM) **or** OpenAI model name (e.g. `gpt-5.1`,  `Qwen/Qwen2.5-7B-Instruct`). Optional for aliases with a default (`gptoss` → `openai/gpt-oss-20b`) |
 | `--input_file` | Input corpus in PATRA format |
 | `--output_dir` | Output root (`entity_extractions/`, `relation_extractions/`, `final_outputs/`) |
 | `--prompt_file` | System prompt (default: `src/prompts/extraction_prompt.txt`) |
-| `--gpu` | GPU id for local models |
-| `--base_url` | OpenAI-compatible endpoint for a local server (e.g. vLLM/Ollama) |
+| `--gpu` | Physical GPU id(s) to pin for local vLLM models (PCI-bus order; comma list for tensor parallelism, e.g. `0,1`) |
+| `--tensor_parallel_size` | vLLM tensor-parallel GPUs for local models (default `1`; Qwen2.5-32B fits on one A100 80 GB — only raise this to split across smaller GPUs) |
+| `--gpu_memory_utilization` | vLLM GPU memory fraction (default `0.90`) |
+| `--max_model_len` | vLLM max context length (default `8192`) |
+| `--base_url` | OpenAI-compatible endpoint for a local server (vLLM serving gpt-oss-20b) |
 | `--resume` | Skip emails already processed in `--output_dir` |
 
-The OpenAI path auto-handles the GPT-5 family (which requires the default
-temperature); other models use deterministic decoding.
-
----
+The OpenAI path auto-handles the gpt-5 family (which requires the default temperature);
+local vLLM models use greedy decoding (`temperature=0`) for reproducibility. GPT-5.1 is
+the only model accessed via API; all open-source models are served by vLLM
+(Llama-3.1-8B-Instruct, Gemma-3-4b-it, Qwen2.5-7B/32B, gpt-oss-20b), run on
+A100 (80 GB) / L40S (48 GB) GPUs.
 
 ### 3. Entity Resolution
 
