@@ -51,11 +51,12 @@ The repository provides:
 
 ### PERKOnto
 
-The current email corpus, ontology and PKG assume that the user is a computer scientist whose broad research interests lie in Natural Language Processing. Accordingly, PERKOnto defines 14 node types and 14 relationship types covering the research collaboration domain. 
-
-Full ontology files (OWL, Turtle) are in [`ontology/`](ontology/).
-
-![PERKOnto](ontology/PERKOnto.png)
+PERKOnto defines **14 entity types** and **14 relationship types** covering the research
+collaboration domain. The machine-readable [`ontology/PERKOnto.json`](ontology/PERKOnto.json)
+is used at runtime for ontology validation during KG cleaning (`clean_kg.py`),
+schema-guided Cypher generation (`kg_eval.py`), and relationship ingestion during graph
+construction (`build_perk.py`). Full serialisations (OWL, Turtle, RDF/XML, JSON-LD,
+OWL/XML, N-Triples) are in [`ontology/`](ontology/).
 
 **Generalising beyond NLP.** PERKOnto is domain-adaptable: the four NLP-specific classes
 (`Task`, `Method`, `Metric`, `Dataset`) can be swapped for domain-specific ones while the
@@ -68,6 +69,8 @@ example domain ontologies are included under
 | Computational chemistry | ResearchProblem, ComputationalMethod, Observable, ChemicalSystem |
 | Gravitational physics | ResearchProblem, AnalysisMethod, PhysicalParameter, AstrophysicalSource, ObservationalData |
 | Molecular biology | ResearchProblem, ExperimentalTechnique, Readout, BiologicalEntity, BiologicalSample |
+
+![PERKOnto](ontology/PERKOnto.png)
 
 The resource is actively maintained, with planned expansion to anonymised real emails and
 to researchers in fields beyond computer science.
