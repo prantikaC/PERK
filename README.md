@@ -44,7 +44,10 @@ The repository provides:
   Neo4j graph build → triple & QA evaluation.
 
 ### Workflow
-The corpus of emails is first constructed/curated, then an ontology is designed, and then the PKG is built by extracting triples from the email corpus conforming to ontological constraints. QA dataset is currently built using the email corpus and the ontology (to restrict to ontology-specified entities and relations).
+- The corpus of emails (PATRA) is first constructed/curated. Currently, the synthetic dataset is created by prompting an LLM. However, it requires post-processing to ensure that the corpus does not contain hallucinations and errors (e.g., temporal inconsistencies).
+- An ontology (PERKOnto) is then designed capturing the entities and relations of interest.
+- The PKG (PERK) is built by extracting triples from the email corpus conforming to ontological constraints. Currently, requires post-processing/verification to reduce noise in extraction.
+- QA dataset (PRASHNA-PATRA) is currently built using the email corpus and the ontology (to restrict to ontology-specified entities and relations).
 
 ### PERKOnto
 
