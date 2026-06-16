@@ -15,7 +15,12 @@ LLM-based extraction over email threads and grounded in the **PERKOnto** ontolog
 ---
 ## 1. Objective
 
-![PERK resource overview](perk_overview.png)
+<p align="center">
+  <img src="perk_overview.png" alt="PERK resource overview" width="46%">
+  &nbsp;&nbsp;
+  <img src="kg_sample.png" alt="Sample PERK knowledge graph" width="46%">
+</p>
+<p align="center"><sub><b>Left:</b> resource overview. &nbsp; <b>Right:</b> a sample PERK knowledge graph.</sub></p>
 
 Most knowledge graphs are built from public sources such as papers or the web. PERK
 instead models a researcher's **own** scientific life as recorded in their inbox —
