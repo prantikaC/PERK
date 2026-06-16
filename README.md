@@ -38,14 +38,14 @@ The repository provides:
 
 - **PATRA** — a corpus of synthetic academic email threads.
 - **PERKOnto** — the ontology (14 entity types, 14 relation types) grounding the graph.
-- **PRASHNA-PATRA** — a KG-QA benchmark (200 question/answer pairs with Cypher).
+- **PRASHNA-PATRA** — a KG-QA benchmark (200 questions/answer pairs with Cypher).
 - An **annotated gold set** of 2,372 triples for extraction evaluation.
 - The full **construction + evaluation pipeline**: extraction → entity resolution →
   Neo4j graph build → triple & QA evaluation.
 
 ### Workflow
 - The corpus of emails (PATRA) is first constructed/curated. Currently, the synthetic dataset is created by prompting an LLM. However, it requires post-processing to ensure that the corpus does not contain hallucinations and other errors (e.g., temporal inconsistencies).
-- An ontology (PERKOnto) is then designed capturing the entities and relations of interest.
+- An ontology (PERKOnto) is then designed, capturing the entities and relations of interest.
 - The PKG (PERK) is built by extracting triples from the email corpus conforming to ontological constraints. Currently, triples are extracted by prompting LLMs; the method does not guarantee perfect noise-free extraction.
 - QA dataset (PRASHNA-PATRA) is built using the email corpus and the ontology (to restrict to ontology-specified entities and relations).
 
@@ -170,7 +170,7 @@ python src/patra_generation/preprocess_patra.py \
 ```
 
 ---
-### 2. KG Extraction
+### 2. Triple Extraction
 
 Extract entities and relations from each email using an LLM. The pipeline supports
 OpenAI-compatible APIs and HuggingFace models (run locally).
@@ -197,12 +197,14 @@ python src/extraction/kg_extraction_pipeline.py \
 | `--base_url` | OpenAI-compatible endpoint for a local server (e.g. vLLM/Ollama) |
 | `--resume` | Skip emails already processed in `--output_dir` |
 
-The OpenAI path auto-handles the gpt-5 family (which requires the default
+The OpenAI path auto-handles the GPT-5 family (which requires the default
 temperature); other models use deterministic decoding.
 
 ---
 
 ### 3. Entity Resolution
+
+(description + 1 example)
 
 Run the full ER pipeline for a given extraction (FAISS blocking → LLM resolution → node fusion → evaluation):
 
@@ -247,7 +249,7 @@ This reproduces the thresholds used in the paper
 
 No auto-match band exists for either pipeline: no similarity cutoff is precise enough
 to safely auto-accept, so every above-floor pair (the "grey zone") is routed to the
-Qwen2.5-32B LLM judge. The precision/recall curves and these thresholds are shown below.
+Qwen2.5-32B LLM judge. The precision-recall curves and the corresponding thresholds are shown below.
 
 ![FAISS threshold calibration](results/entity_resolution/calibration_plot.png)
 
@@ -258,6 +260,7 @@ Qwen2.5-32B LLM judge. The precision/recall curves and these thresholds are show
 |-------|-----------|--------|----|
 | OpenAI | 0.6538 | 0.5730 | 0.6108 |
 
+The final total number of entities is 7,207, and the number of relations is 16,814.
 ---
 
 ### 4. Neo4j Graph Construction
@@ -330,7 +333,7 @@ python src/evaluation/build_comparison_triples.py \
     --source_type GptOss
 ```
 
-Evaluate with Sentence-BERT — Subject / Object / Entity / Relation / Triple
+Evaluate with Sentence-BERT — Subject / Object / Total Entities / Relation / Triple
 micro P/R/F1 at τ=0.80, for both the source-sentence and full-email context
 (per-context logs over the full τ sweep are written to `results/evaluation/`):
 
@@ -366,6 +369,7 @@ python src/evaluation/kg_eval.py \
 The `--model` flag selects which Neo4j instance to query via the corresponding env var prefix (e.g. `--model gpt` reads `GPT_NEO4J_URI`).
 
 ---
+
 
 
 ---
