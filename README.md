@@ -30,7 +30,11 @@ recommendations** over a researcher's activities (e.g. *"Which of my papers were
 review in 2019?"*, *"What meetings did I attend about the PKG project and what were the
 agendas?"*).
 
-This resource was motivated by a survey of researchers at our institute, which showed strong interest in personal research KGs (Chakraborty, Prantika, et al. "Bringing Order to Chaos: Conceptualizing a Personal Research Knowledge Graph for Scientists." IEEE Data Eng. Bull. 47.4 (2023): 43-56.). The repository provides:
+### Motivation
+This resource was motivated by a survey of researchers at our institute, which showed strong interest in personal research KGs (Chakraborty, Prantika, et al. "Bringing Order to Chaos: Conceptualizing a Personal Research Knowledge Graph for Scientists." IEEE Data Eng. Bull. 47.4 (2023): 43-56.). 
+
+### Resources
+The repository provides:
 
 - **PATRA** — a corpus of synthetic academic email threads.
 - **PERKOnto** — the ontology (14 entity types, 14 relation types) grounding the graph.
@@ -39,11 +43,12 @@ This resource was motivated by a survey of researchers at our institute, which s
 - The full **construction + evaluation pipeline**: extraction → entity resolution →
   Neo4j graph build → triple & QA evaluation.
 
-Note: The corpus of emails is first constructed/curated, then an ontology is designed, and then the PKG is built by extracting triples from the email corpus conforming to ontological constraints. QA dataset is currently built using the email corpus and the ontology (to restrict to ontology-specified entities and relations).
+### Workflow
+The corpus of emails is first constructed/curated, then an ontology is designed, and then the PKG is built by extracting triples from the email corpus conforming to ontological constraints. QA dataset is currently built using the email corpus and the ontology (to restrict to ontology-specified entities and relations).
 
 ### PERKOnto
 
-PERKOnto defines 14 node types and 14 relationship types covering the research collaboration domain. 
+The current email corpus, ontology and PKG assume that the user is a computer scientist whose broad research interests lie in Natural Language Processing. Accordingly, PERKOnto defines 14 node types and 14 relationship types covering the research collaboration domain. 
 
 Full ontology files (OWL, Turtle) are in `ontology/`.
 
