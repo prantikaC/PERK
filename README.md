@@ -207,8 +207,6 @@ A100 (80 GB) / L40S (48 GB) GPUs.
 
 ### 3. Entity Resolution
 
-(description + 1 example)
-
 Run the full ER pipeline (FAISS blocking → LLM resolution → node fusion → evaluation) for
 a given extraction. The third argument pins the GPU (default 0):
 
@@ -224,6 +222,15 @@ bash ../../../src/entity_resolution/run_pipeline.sh openai 0.6547 0
 | 3 | `node_fusion.py` | Transitive graph fusion + person property patching |
 | 4 | `normalize_dates.py` | Date normalisation on fused entities |
 | 5 | `evaluate_pipeline.py` | Precision / Recall / F1 against the golden set |
+
+**What it does.** The same real-world entity often surfaces under different wording across
+emails; ER collapses these duplicates into one node. For example, the extractor produced two
+separate `Method` nodes, *"OCR error correction module"* and *"OCR correction pipeline"*.
+FAISS blocking flags the pair (cosine similarity **0.74** — above the **0.6547** auto-reject
+floor, so it enters the LLM grey zone); the Qwen2.5-32B judge labels it **MATCH**; and
+`node_fusion.py` merges them into a single `Method` node, re-pointing every `usedFor` /
+`uses` / `evaluates` relation from both onto that one id. Pairs scoring below the floor are
+auto-rejected without an LLM call.
 
 The auto-reject threshold (0.6547) is calibrated from manually annotated candidate pairs —
 see [§5.2](#52-entity-resolution). To recompute it:
