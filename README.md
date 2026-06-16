@@ -50,7 +50,7 @@ The corpus of emails is first constructed/curated, then an ontology is designed,
 
 The current email corpus, ontology and PKG assume that the user is a computer scientist whose broad research interests lie in Natural Language Processing. Accordingly, PERKOnto defines 14 node types and 14 relationship types covering the research collaboration domain. 
 
-Full ontology files (OWL, Turtle) are in `ontology/`.
+Full ontology files (OWL, Turtle) are in `ontology/`(ontology/).
 
 ![PERKOnto](ontology/PERKOnto.png)
 
