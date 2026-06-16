@@ -209,31 +209,24 @@ A100 (80 GB) / L40S (48 GB) GPUs.
 
 (description + 1 example)
 
-Run the full ER pipeline for a given extraction (FAISS blocking → LLM resolution → node fusion → evaluation):
+Run the full ER pipeline (FAISS blocking → LLM resolution → node fusion → evaluation) for
+a given extraction. The third argument pins the GPU (default 0):
 
 ```bash
 cd results/extractions/openai/
 bash ../../../src/entity_resolution/run_pipeline.sh openai 0.6547 0
 ```
 
-**Pipeline steps:**
-
 | Step | Script | Description |
 |------|--------|-------------|
 | 1 | `faiss_blocking.py` | Semantic candidate blocking with FAISS |
-| 2 | `llm_judgement.py` | Qwen2.5-32B match/no-match classification |
+| 2 | `llm_judgement.py` | Match / no-match judging (Qwen2.5-32B via vLLM, or `--backend openai`) |
 | 3 | `node_fusion.py` | Transitive graph fusion + person property patching |
 | 4 | `normalize_dates.py` | Date normalisation on fused entities |
-| 5 | `evaluate_pipeline.py` | Precision / Recall / F1 against golden set |
+| 5 | `evaluate_pipeline.py` | Precision / Recall / F1 against the golden set |
 
-**Calibrating the FAISS threshold:**
-
-The auto-reject floor passed to `faiss_blocking.py` / `run_pipeline.sh` is calibrated
-from manually annotated candidate pairs (`label` ∈ {`MATCH`, `NO_MATCH`}). For each
-similarity cutoff the script sweeps precision/recall and reports the **auto-reject
-threshold** (highest score retaining ≥99% recall — pairs below it bypass the LLM and
-are auto-rejected) and an **auto-match threshold** (lowest score reaching ≥98%
-precision — auto-accepted), if one exists:
+The auto-reject threshold (0.6547) is calibrated from manually annotated candidate pairs —
+see [§5.2](#52-entity-resolution). To recompute it:
 
 ```bash
 python src/entity_resolution/calibrate_threshold.py \
@@ -241,27 +234,6 @@ python src/entity_resolution/calibrate_threshold.py \
     --plot_output results/entity_resolution/calibration_plot.png \
     --log_output  results/entity_resolution/calibration_log.txt
 ```
-
-This reproduces the thresholds used in the paper
-([`results/entity_resolution/calibration_log.txt`](results/entity_resolution/calibration_log.txt)):
-
-| Pipeline | Annotated pairs | Auto-reject τ (≥99% recall) | Auto-match (≥98% precision) |
-|---|---|---|---|
-| **OpenAI** (GPT-5.1) | 497 | **0.6547** | — none reaches 98% precision |
-| **Qwen** (32B) | 499 | **0.6627** | — none reaches 98% precision |
-
-No auto-match band exists for either pipeline: no similarity cutoff is precise enough
-to safely auto-accept, so every above-floor pair (the "grey zone") is routed to the
-Qwen2.5-32B LLM judge. The precision-recall curves and the corresponding thresholds are shown below.
-
-![FAISS threshold calibration](results/entity_resolution/calibration_plot.png)
-
-
-**Reported results of Entity Resolution:**
-
-| Model | Precision | Recall | F1 |
-|-------|-----------|--------|----|
-| OpenAI | 0.6538 | 0.5730 | 0.6108 |
 
 ---
 
@@ -310,71 +282,140 @@ Credentials are read from `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD` in `.e
 
 ### 5. Evaluation
 
-#### Extraction Evaluation (Sentence-BERT triple metrics)
-
-The golden set is built once by sampling emails and annotating the candidate
-triples:
-
-```bash
-python src/evaluation/sample_for_annotation.py \
-    --entities  results/extractions/openai/entities_final.csv \
-    --relations results/extractions/openai/relations_final.csv \
-    --emails    datasets/PATRA/PATRA.txt \
-    --output    datasets/extraction_gold/golden_set_candidates.csv \
-    --n_emails  250
-# annotate -> datasets/extraction_gold/refined_golden_set_target.csv
-```
-
-For each model, build its `comparison_triples.csv` (resolves entity ids to
-label + type, attaches the extracted evidence sentence, and keeps only the
-gold-annotated emails):
+**Extraction evaluation** is model-agnostic — set `MODEL` to any extraction run
+(`openai`, `gptoss`, `llama`, `gemma`, `qwen7b`, `qwen32b`) and `NAME` to its display
+label, then run the same three steps:
 
 ```bash
+MODEL=gpt-oss         # directory under results/extractions/
+NAME=GptOss           # label used in logs/plots and the comparison CSV
+
+# 1) Build that model's comparison triples (ids -> label+type, attach evidence)
 python src/evaluation/build_comparison_triples.py \
-    --entities  results/extractions/gptoss/final_outputs/entities_final.csv \
-    --relations results/extractions/gptoss/final_outputs/relations_final.csv \
-    --output    results/extractions/gptoss/evaluation_triples/comparison_triples.csv \
-    --source_type GptOss
-```
+    --entities  results/extractions/$MODEL/final_outputs/entities_final.csv \
+    --relations results/extractions/$MODEL/final_outputs/relations_final.csv \
+    --output    results/extractions/$MODEL/comparison_triples.csv \
+    --source_type $NAME
 
-Evaluate with Sentence-BERT — Subject / Object / Total Entities / Relation / Triple
-micro P/R/F1 at τ=0.80, for both the source-sentence and full-email context
-(per-context logs over the full τ sweep are written to `results/evaluation/`):
-
-```bash
+# 2) Score with Sentence-BERT (Subject/Object/Entity/Relation/Triple micro-P/R/F1)
 python src/evaluation/evaluate_llm_triples.py \
-    --name GptOss \
-    --pred results/extractions/gptoss/evaluation_triples/comparison_triples.csv \
+    --name $NAME \
+    --pred results/extractions/$MODEL/comparison_triples.csv \
     --tau  0.80 --gpu 0
+
+# 3) After all models are scored, generate the comparison plots
+python src/evaluation/plot_results.py        # writes results/figures/extractions/
 ```
 
-Generate result plots (saved to `results/figures/extractions/`):
+To evaluate every model, loop over the runs:
 
 ```bash
+declare -A MODELS=( [openai]=OpenAI [gpt-oss]=GptOss [llama]=Llama
+                    [gemma]=Gemma [qwen7b]=Qwen7B [qwen32b]=Qwen32B )
+for MODEL in "${!MODELS[@]}"; do
+  NAME=${MODELS[$MODEL]}
+  python src/evaluation/build_comparison_triples.py \
+      --entities  results/extractions/$MODEL/final_outputs/entities_final.csv \
+      --relations results/extractions/$MODEL/final_outputs/relations_final.csv \
+      --output    results/extractions/$MODEL/comparison_triples.csv \
+      --source_type $NAME
+  python src/evaluation/evaluate_llm_triples.py \
+      --name $NAME \
+      --pred results/extractions/$MODEL/comparison_triples.csv \
+      --tau 0.80 --gpu 0
+done
 python src/evaluation/plot_results.py
 ```
-Extraction quality across models (micro-F1 at τ = 0.80; **Source** = the source
-sentence as context, **Full-Email** = the whole email as context):
+
+**KG-QA** over PRASHNA-PATRA (`--model` selects the Neo4j instance via its env-var prefix,
+e.g. `gpt` → `GPT_NEO4J_URI`):
+
+```bash
+python src/evaluation/kg_eval.py \
+    --model gpt \
+    --input datasets/PRASHNA_PATRA/PRASHNA_PATRA.csv \
+    --ontology ontology/PERKOnto.json
+```
+
+**No-KG baseline** — feed the whole PATRA corpus to a long-context LLM and ask each
+question directly (same GPT-5.1 judge as `kg_eval.py`, so the accuracy is comparable):
+
+```bash
+python src/evaluation/llm_QA_on_PATRA.py \
+    --corpus datasets/PATRA/PATRA.txt \
+    --qa     datasets/PRASHNA_PATRA/PRASHNA_PATRA.csv \
+    --output results/qa/longcontext_qa_results.csv \
+    --fig    results/figures/qa/longcontext_qa_baseline.png
+```
+
+Extraction quality uses Sentence-BERT entity embeddings (max-pooled with context, Hungarian
+alignment at τ = 0.80) for Subject / Object / Entity / Relation / Triple micro-P/R/F1, in
+both source-sentence and full-email context modes.
+
+---
+
+## 6. Results
+
+### 6.1 Extraction quality
+
+Micro-F1 at τ = 0.80 across models (**Source** = source-sentence context, **Full-Email** =
+whole-email context):
 
 |  |  |  |
 |:---:|:---:|:---:|
 | **Subject F1**<br>![Subject F1](results/figures/extractions/fig_sub.png) | **Object F1**<br>![Object F1](results/figures/extractions/fig_obj.png) | **Entity F1**<br>![Entity F1](results/figures/extractions/fig_ent.png) |
 | **Relation F1**<br>![Relation F1](results/figures/extractions/fig_pred.png) | **Triple F1**<br>![Triple F1](results/figures/extractions/fig_tri.png) |  |
 
-#### KG-QA Evaluation (PRASHNA-PATRA)
+Open-source models perform poorly: the best open model, GPT-OSS-20B, reaches a triple F1 of
+only **0.20** (source-sentence) / **0.25** (full-email). GPT-5.1 was therefore chosen for
+the final extraction.
 
-```bash
-python src/evaluation/kg_eval.py \
-    --model   gpt \
-    --input   datasets/PRASHNA_PATRA/PRASHNA_PATRA.csv \
-    --ontology ontology/PERKOnto.json
-```
+### 6.2 Entity resolution
 
-The `--model` flag selects which Neo4j instance to query via the corresponding env var prefix (e.g. `--model gpt` reads `GPT_NEO4J_URI`).
+The FAISS auto-reject floor is calibrated from manually annotated candidate pairs. Pairs
+below it are auto-rejected; everything above (the "grey zone") is routed to the LLM judge.
 
----
+| Pipeline | Annotated pairs | Auto-reject τ (≥99% recall) | Auto-match (≥98% precision) |
+|---|---|---|---|
+| OpenAI (GPT-5.1) | 497 | **0.6547** | none reaches 98% precision |
+| Qwen (32B) | 499 | **0.6627** | none reaches 98% precision |
 
+![FAISS threshold calibration](results/entity_resolution/calibration_plot.png)
 
+End-to-end ER (OpenAI pipeline): Precision **0.6538**, Recall **0.5730**, F1 **0.6108**.
+
+### 6.3 Comparison to alternative extractors
+
+| Approach | Result |
+|---|---|
+| **Stanford OpenIE** (schema-free) | 0% of relations align with PERKOnto |
+| **KGGen** (DSPy / GPT-4o, schema-free) | 0.4% of relations align with PERKOnto |
+
+Schema-free and direct-prompting approaches confirm that **ontology constraints are
+essential**; without them the extraction task is ill-defined.
+
+### 6.4 KG-QA (PRASHNA-PATRA)
+
+Schema-guided KBQA over the constructed graph reaches **75.5%** accuracy. The residual
+errors are extraction/retrieval failures — queried entities or triples missing from the
+PKG, or text-to-Cypher conversion errors.
+
+**Does the knowledge graph beat brute-force long context?** As a no-KG baseline, we feed
+the entire PATRA corpus (~570K tokens) to a long-context LLM (GPT-4.1) and ask each
+question directly, scored by the *same* GPT-5.1 judge as `kg_eval.py`
+([`src/evaluation/llm_QA_on_PATRA.py`](src/evaluation/llm_QA_on_PATRA.py)). It manages only
+**21.0%** overall (42/200) — collapsing on multi-hop and single-hop retrieval where the
+graph's structure is decisive:
+
+| QA accuracy | Overall | single-hop | multi-hop | reasoning | not available |
+|---|:--:|:--:|:--:|:--:|:--:|
+| **PERK KG-QA** (`kg_eval.py`) | **75.5%** | — | — | — | — |
+| Long-context GPT-4.1 (no KG) | 21.0% | 10.6% | 9.0% | 33.3% | 42.3% |
+
+![Long-context QA baseline](results/figures/qa/longcontext_qa_baseline.png)
+
+The KG more than triples end-to-end QA accuracy over throwing the whole mailbox at a
+long-context model, confirming the value of explicit graph construction.
 
 ---
 ### Citation
