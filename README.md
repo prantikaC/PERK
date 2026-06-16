@@ -28,10 +28,10 @@ recommendations** over a researcher's activities (e.g. *"Which of my papers were
 review in 2019?"*, *"What meetings did I attend about the PKG project and what were the
 agendas?"*).
 
-### Motivation
+## Motivation
 This resource was motivated by a survey of researchers at our institute, which showed strong interest in personal research KGs (Chakraborty, Prantika, et al. "Bringing Order to Chaos: Conceptualizing a Personal Research Knowledge Graph for Scientists." IEEE Data Eng. Bull. 47.4 (2023): 43-56.). 
 
-### Resources
+## Resources
 The repository provides:
 
 - **PATRA** — a corpus of synthetic academic email threads.
@@ -41,13 +41,13 @@ The repository provides:
 - The full **construction + evaluation pipeline**: extraction → entity resolution →
   Neo4j graph build → triple & QA evaluation.
 
-### Workflow
+## Workflow
 - The corpus of emails (PATRA) is first constructed/curated. Currently, the synthetic dataset is created by prompting an LLM. However, it requires post-processing to ensure that the corpus does not contain hallucinations and other errors (e.g., temporal inconsistencies).
 - An ontology (PERKOnto) is then designed, capturing the entities and relations of interest.
 - The PKG (PERK) is built by extracting triples from the email corpus conforming to ontological constraints. Currently, triples are extracted by prompting LLMs; the method does not guarantee perfect noise-free extraction.
 - QA dataset (PRASHNA-PATRA) is built using the email corpus and the ontology (to restrict to ontology-specified entities and relations).
 
-### PERKOnto
+## PERKOnto
 
 PERKOnto defines **14 entity types** and **14 relationship types** covering the research
 collaboration domain. The machine-readable [`ontology/PERKOnto.json`](ontology/PERKOnto.json)
@@ -101,7 +101,7 @@ to researchers in fields beyond computer science.
 
 ---
  
-
+# Instructions for Users
 
 ## Repository Structure
 
