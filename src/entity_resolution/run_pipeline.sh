@@ -1,24 +1,26 @@
 #!/bin/bash
 # Entity Resolution Pipeline
-# Usage: bash run_pipeline.sh <prefix> <threshold>
-# Example: bash run_pipeline.sh openai 0.6547
-#          bash run_pipeline.sh qwen32b 0.6557
+# Usage: bash run_pipeline.sh <prefix> <threshold> [gpu]
+# Example: bash run_pipeline.sh openai 0.6547        # GPU 0 (default)
+#          bash run_pipeline.sh qwen32b 0.6627 1     # pin to physical GPU 1
 
 set -e
 
 if [ -z "$1" ] || [ -z "$2" ]; then
-    echo "Usage: bash run_pipeline.sh <prefix> <threshold>"
+    echo "Usage: bash run_pipeline.sh <prefix> <threshold> [gpu]"
     echo "  prefix    : dataset prefix, e.g. openai or qwen32b"
     echo "  threshold : calibrated FAISS floor, e.g. 0.6547"
+    echo "  gpu       : physical GPU id to pin (PCI-bus order, matches nvidia-smi); default 0"
     exit 1
 fi
 
 PREFIX=$1
 THRESHOLD=$2
+GPU=${3:-0}
 
 echo "====================================================="
 echo "ENTITY RESOLUTION PIPELINE: $PREFIX"
-echo "Threshold: $THRESHOLD"
+echo "Threshold: $THRESHOLD | GPU: $GPU"
 echo "====================================================="
 
 # Step 0: Normalize dates (run once after extraction, before ER)
@@ -36,6 +38,7 @@ python faiss_blocking.py \
     --output    ${PREFIX}_grey_zone.csv \
     --threshold $THRESHOLD \
     --top_k 10 \
+    --gpu $GPU \
     --log ${PREFIX}_step1_faiss.log
 
 # Step 2: LLM Resolution (Qwen2.5-32B via vLLM)
@@ -46,6 +49,7 @@ python llm_judgement.py \
     --output     ${PREFIX}_llm_resolved.csv \
     --model      Qwen/Qwen2.5-32B-Instruct \
     --chunk_size 48 \
+    --gpu $GPU \
     --log ${PREFIX}_step2_vllm.log
 
 # Step 3: Graph Node Fusion (includes person property patching)

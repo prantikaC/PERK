@@ -2,6 +2,28 @@
 import argparse
 import json
 import logging
+import os
+import sys
+
+
+# --- Pin the GPU BEFORE importing torch ------------------------------------ #
+# torch reads CUDA_VISIBLE_DEVICES exactly once, at import time; setting it
+# afterwards has no effect. We therefore parse --gpu from argv here, mask all
+# other GPUs, and force PCI-bus ordering so --gpu N is PHYSICAL GPU N (the same
+# number nvidia-smi shows). After masking, the chosen card is the only visible
+# device, so inside the program it is always cuda:0 -- no other GPU can be touched.
+def _pin_gpu_from_argv(default="0"):
+    gpu = os.environ.get("PERK_GPU", default)
+    for i, a in enumerate(sys.argv):
+        if a == "--gpu" and i + 1 < len(sys.argv):
+            gpu = sys.argv[i + 1]
+        elif a.startswith("--gpu="):
+            gpu = a.split("=", 1)[1]
+    os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+    os.environ["CUDA_VISIBLE_DEVICES"] = str(gpu)
+    return str(gpu)
+
+_PINNED_GPU = _pin_gpu_from_argv()
 
 import faiss
 import pandas as pd
@@ -38,10 +60,14 @@ def main():
                         help="Calibrated similarity floor (e.g. 0.6547)")
     parser.add_argument("--top_k",      type=int, default=10, help="FAISS neighbourhood span (default: 10)")
     parser.add_argument("--model",      default="all-mpnet-base-v2", help="SentenceTransformer model name")
+    parser.add_argument("--gpu",        default="0",
+                        help="Physical GPU id to pin (PCI-bus order; matches nvidia-smi). "
+                             "The chosen card is the only one made visible. Default: 0")
     parser.add_argument("--log",        default="pipeline_step1.log")
     args = parser.parse_args()
 
     setup_logger(args.log)
+    logging.info(f"Pinned to physical GPU {_PINNED_GPU} (visible as cuda:0)")
     logging.info(f"Starting FAISS Funnel | threshold={args.threshold} | top_k={args.top_k}")
 
     df_ent = pd.read_csv(args.entities)
