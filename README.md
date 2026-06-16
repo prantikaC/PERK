@@ -161,7 +161,7 @@ python src/patra_generation/generate_patra.py \
     --n_threads 50
 ```
 
-Preprocess the raw output into clean, delimited email threads:
+Post-process the raw output into clean, delimited email threads:
 
 ```bash
 python src/patra_generation/preprocess_patra.py \
