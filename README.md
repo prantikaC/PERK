@@ -213,7 +213,7 @@ Run the full ER pipeline for a given extraction (FAISS blocking → LLM resoluti
 
 ```bash
 cd results/extractions/openai/
-bash ../../../src/entity_resolution/run_pipeline.sh openai 0.6547
+bash ../../../src/entity_resolution/run_pipeline.sh openai 0.6547 0
 ```
 
 **Pipeline steps:**
