@@ -1,8 +1,21 @@
 # PERK: Personal Email Research Knowledge Graph
 
-This repository contains the full pipeline for constructing and evaluating **PERK**, a knowledge graph built from synthetic academic email threads. PERK captures research-centric entities and relationships — tasks, methods, datasets, papers, meetings, and collaborators — extracted from the **PATRA** dataset and grounded in the **PERKOnto** ontology.
+**PERK** is a personal knowledge graph (PKG) that captures the scientific activities of a
+researcher — the tasks they work on, the methods and datasets they use, the papers they
+write, the venues they submit to, the meetings they attend, and the people they
+collaborate with — **as discussed in their academic emails**. The graph is constructed by
+LLM-based extraction over email threads and grounded in the **PERKOnto** ontology.
+
+| Resource | Link |
+|---|---|
+| **Persistent ontology URI** | <https://w3id.org/perkonto> |
+| **Dataset / ontology metadata (VoID + DCAT + Dublin Core)** | [`ontology/void.ttl`](ontology/void.ttl) |
+| **Archived release (Zenodo)** | <https://doi.org/10.5281/zenodo.20542115> |
 
 ---
+## 1. Objective
+
+![PERK resource overview](perk_overview.png)
 
 ## Repository Structure
 
