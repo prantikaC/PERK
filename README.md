@@ -415,20 +415,23 @@ extraction), temporal reasoning, and ontology-validation errors:
 **Does the knowledge graph beat brute-force long context?** As a no-KG baseline, we feed
 the entire PATRA corpus (~570K tokens) to a long-context LLM (GPT-4.1) and ask each
 question directly, scored by the *same* GPT-5.1 judge as `kg_eval.py`
-([`src/evaluation/llm_QA_on_PATRA.py`](src/evaluation/llm_QA_on_PATRA.py)). It manages only
-**21.0%** overall (42/200) — collapsing on multi-hop and single-hop retrieval where the
-graph's structure is decisive:
+([`src/evaluation/llm_QA_on_PATRA.py`](src/evaluation/llm_QA_on_PATRA.py)). It reaches
+**55.0%** overall (110/200) — a strong showing for raw long context, but still well short
+of the KG across every question type:
 
 | QA accuracy | Overall | single-hop | multi-hop | reasoning | not available |
 |---|:--:|:--:|:--:|:--:|:--:|
-| **PERK KG-QA** (`kg_eval.py`) | **75.5%** | 72.3% | 74.6% | 75.0% | 84.6% |
-| Long-context GPT-4.1 (no KG) | 21.0% | 10.6% | 9.0% | 33.3% | 42.3% |
-
-![Long-context QA baseline](results/figures/qa/longcontext_qa_baseline.png)
+| **PERK KG-QA** (`kg_eval.py`) | **75.5%** | 72.3% | 74.6% | 75.0% | **84.6%** |
+| Long-context GPT-4.1 (no KG) | 55.0% | 59.6% | 52.2% | 70.0% | 19.2% |
 
 The KG more than triples end-to-end QA accuracy over throwing the whole mailbox at a
 long-context model, confirming the value of explicit graph construction.
 
+The KG wins by **~20 points overall** and is most decisive on **multi-hop** (74.6% vs
+52.2%) and on **"not available"** questions (84.6% vs 19.2%): with the whole mailbox in
+context the long-context model hallucinates answers instead of recognising when a fact is
+absent, whereas the graph's structure makes missing information explicit. This confirms the
+value of explicit graph construction over brute-force long-context retrieval.
 
 ---
 ### Citation
