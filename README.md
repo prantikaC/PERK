@@ -69,20 +69,35 @@ python src/patra_generation/preprocess_patra.py \
 ```
 
 ---
-
 ### 2. KG Extraction
 
-Extract entities and relations from each email using an LLM:
+Extract entities and relations from each email using an LLM. The pipeline supports
+OpenAI-compatible APIs and HuggingFace models (run locally).
 
 ```bash
+# OpenAI API (e.g. GPT-5.1 or GPT-4.1)
 python src/extraction/kg_extraction_pipeline.py \
-    --input_file   datasets/PATRA/PATRA.txt \
-    --output_dir  results/extractions/openai/ \
-    --model   gpt-5.1 \
-    --prompt  src/prompts/extraction_prompt.txt
+    --model openai --model_path gpt-5.1 \
+    --input_file datasets/PATRA/PATRA.txt \
+    --output_dir results/extractions/openai/ \
+    --prompt_file src/prompts/extraction_prompt.txt
 ```
 
-Supported models: `openai/gpt-5.1`, `meta-llama/Llama-3.1-8B-Instruct`, `google/gemma-3-4b-it`, `Qwen/Qwen2.5-7B-Instruct`, `Qwen/Qwen2.5-32B-Instruct`, `openai/gpt-oss-20b`
+**Arguments**
+
+| Flag | Meaning |
+|---|---|
+| `--model` | Backend: `openai`, `gptoss`, `llama`, `gemma`, `qwen`, `qwen32b` |
+| `--model_path` |model ID **or** OpenAI model name (e.g. `gpt-5.1`, `gpt-4.1`, `Qwen/Qwen2.5-7B-Instruct`). Optional for aliases with a default (`gptoss` → `openai/gpt-oss-20b`) |
+| `--input_file` | Input corpus in PATRA format |
+| `--output_dir` | Output root (`entity_extractions/`, `relation_extractions/`, `final_outputs/`) |
+| `--prompt_file` | System prompt (default: `src/prompts/extraction_prompt.txt`) |
+| `--gpu` | GPU id for local models |
+| `--base_url` | OpenAI-compatible endpoint for a local server (e.g. vLLM/Ollama) |
+| `--resume` | Skip emails already processed in `--output_dir` |
+
+The OpenAI path auto-handles the gpt-5 family (which requires the default
+temperature); other models use deterministic decoding.
 
 ---
 
