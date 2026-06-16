@@ -70,7 +70,10 @@ example domain ontologies are included under
 | Gravitational physics | ResearchProblem, AnalysisMethod, PhysicalParameter, AstrophysicalSource, ObservationalData |
 | Molecular biology | ResearchProblem, ExperimentalTechnique, Readout, BiologicalEntity, BiologicalSample |
 
-![PERKOnto](ontology/PERKOnto.png)
+<p align="center">
+  <img src="ontology/PERKOnto.png" alt="PERKOnto ontology schema">
+</p>
+<p align="center"><sub><b>Figure 1.</b> The PERKOnto schema — 14 entity classes (nodes) and 14 relationship types (edges) modelling research collaboration in academic email.</sub></p>
 
 The resource is actively maintained, with planned expansion to anonymised real emails and
 to researchers in fields beyond computer science.
