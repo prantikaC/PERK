@@ -69,6 +69,31 @@ example domain ontologies are included under
 The resource is actively maintained, with planned expansion to anonymised real emails and
 to researchers in fields beyond computer science.
 
+## Scope & Limitations
+
+- **Synthetic emails, by necessity.** No public corpus of academic emails (real or
+  synthetic) exists, and releasing real emails would compromise privacy. PATRA is
+  therefore LLM-generated. The simulated timeline (April 2019 – March 2025) is fixed in
+  the generation prompt and is independent of the model used.
+- **Entities are extracted only from emails** — not from referenced papers — by design,
+  so the graph reflects what the researcher actually discusses (including unpublished
+  work). `Task` is interpreted broadly (paper writing, meeting organisation, etc.), not
+  only research tasks. Enriching the graph from referenced papers is left to future work.
+- **Single-pass LLM extraction is imperfect.** Even the strongest LLMs produce triples and synthetic emails
+  that require post-processing; the non-trivial human-validation rejection rate motivates
+  the cleaning/entity-resolution stages (see the paper, Sec. 7.2). Open-source models
+  perform markedly worse than commercial ones.
+- Given the limited annotated corpus and the high cost of email
+  annotation, we adopt prompt-based in-context learning rather than supervised
+  fine-tuning, and **systematically study** LLM-based PKG construction. The annotated
+  corpus is released to support future supervised training (fine-tuning / RLHF /
+  LLM-as-a-judge filtering).
+- **Supervised baselines (REBEL, DeepKE) are not applicable**: they need large amounts of
+  labelled, in-domain data to adapt to a new schema, which our 2,372-triple gold set
+  cannot provide. Schema-free extractors align poorly with the ontology .
+
+---
+
 ## Repository Structure
 
 ```
