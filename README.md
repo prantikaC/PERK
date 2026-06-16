@@ -13,7 +13,7 @@ LLM-based extraction over email threads and grounded in the **PERKOnto** ontolog
 | **Archived release (Zenodo)** | <https://doi.org/10.5281/zenodo.20542115> |
 
 ---
-## 1. Objective
+## 1. Overview
 
 <p align="center">
   <img src="perk_overview.png" alt="PERK resource overview" width="46%">
