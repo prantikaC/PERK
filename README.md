@@ -122,11 +122,34 @@ bash ../../../src/entity_resolution/run_pipeline.sh openai 0.6547
 
 **Calibrating the FAISS threshold:**
 
+The auto-reject floor passed to `faiss_blocking.py` / `run_pipeline.sh` is calibrated
+from manually annotated candidate pairs (`label` ∈ {`MATCH`, `NO_MATCH`}). For each
+similarity cutoff the script sweeps precision/recall and reports the **auto-reject
+threshold** (highest score retaining ≥99% recall — pairs below it bypass the LLM and
+are auto-rejected) and an **auto-match threshold** (lowest score reaching ≥98%
+precision — auto-accepted), if one exists:
+
 ```bash
 python src/entity_resolution/calibrate_threshold.py \
     --datasets OpenAI=openai_annotated.csv Qwen=qwen32b_annotated.csv \
-    --plot_output threshold_plot.pdf
+    --plot_output results/entity_resolution/calibration_plot.png \
+    --log_output  results/entity_resolution/calibration_log.txt
 ```
+
+This reproduces the thresholds used in the paper
+([`results/entity_resolution/calibration_log.txt`](results/entity_resolution/calibration_log.txt)):
+
+| Pipeline | Annotated pairs | Auto-reject τ (≥99% recall) | Auto-match (≥98% precision) |
+|---|---|---|---|
+| **OpenAI** (GPT-5.1) | 497 | **0.6547** | — none reaches 98% precision |
+| **Qwen** (32B) | 499 | **0.6627** | — none reaches 98% precision |
+
+No auto-match band exists for either pipeline: no similarity cutoff is precise enough
+to safely auto-accept, so every above-floor pair (the "grey zone") is routed to the
+Qwen2.5-32B LLM judge. The precision/recall curves and these thresholds are shown below.
+
+![FAISS threshold calibration](results/entity_resolution/calibration_plot.png)
+
 
 **Reported results (ISWC submission):**
 
