@@ -20,7 +20,7 @@ LLM-based extraction over email threads and grounded in the **PERKOnto** ontolog
   &nbsp;&nbsp;
   <img src="kg_sample.png" alt="Sample PERK knowledge graph" width="46%">
 </p>
-<p align="center"><sub><b>Left:</b> resource overview. &nbsp; <b>Right:</b> a sample PERK knowledge graph.</sub></p>
+<p align="center"><sub><b>Fig 1. (Left)</b> resource overview. &nbsp; <b>Fig 2. (Right)</b> a sample PERK knowledge graph.</sub></p>
 
 Most knowledge graphs are built from public sources such as papers or the web. PERK
 instead models a researcher's **own** scientific life as recorded in their inbox —
@@ -73,7 +73,7 @@ example domain ontologies are included under
 <p align="center">
   <img src="ontology/PERKOnto.png" alt="PERKOnto ontology schema">
 </p>
-<p align="center"><sub><b>Figure 1.</b> The PERKOnto schema — 14 entity classes (nodes) and 14 relationship types (edges) modelling research collaboration in academic email.</sub></p>
+<p align="center"><sub><b>Fig 3.</b> The PERKOnto schema — 14 entity classes (nodes) and 14 relationship types (edges) modelling research collaboration in academic email.</sub></p>
 
 The resource is actively maintained, with planned expansion to anonymised real emails and
 to researchers in fields beyond computer science.
