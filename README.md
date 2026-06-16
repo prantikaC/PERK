@@ -88,7 +88,7 @@ to researchers in fields beyond computer science.
   fine-tuning, and **systematically study** LLM-based PKG construction. The annotated
   corpus is released to support future supervised training (fine-tuning / RLHF /
   LLM-as-a-judge filtering).
-- **Supervised baselines (REBEL, DeepKE) are not applicable**: they need large amounts of
+- **Supervised baselines are not applicable**: they need large amounts of
   labelled, in-domain data to adapt to a new schema, which our 2,372-triple gold set
   cannot provide. Schema-free extractors align poorly with the ontology .
 
