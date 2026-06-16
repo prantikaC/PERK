@@ -13,7 +13,7 @@ LLM-based extraction over email threads and grounded in the **PERKOnto** ontolog
 | **Archived release (Zenodo)** | <https://doi.org/10.5281/zenodo.20542115> |
 
 ---
-## 1. Overview
+## Overview
 
 <p align="center">
   <img src="perk_overview.png" alt="PERK resource overview" width="46%">
@@ -38,6 +38,8 @@ This resource was motivated by a survey of researchers at our institute, which s
 - An **annotated gold set** of 2,372 triples for extraction evaluation.
 - The full **construction + evaluation pipeline**: extraction → entity resolution →
   Neo4j graph build → triple & QA evaluation.
+
+Note: The corpus of emails is first constructed/curated, then an ontology is designed, and then the PKG is built by extracting triples from the email corpus conforming to ontological constraints. QA dataset is currently built using the email corpus and the ontology (to restrict to ontology-specified entities and relations).
 
 ### PERKOnto
 
