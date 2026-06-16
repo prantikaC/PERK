@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 Unified KG extraction pipeline for PERK.
-Supports Gemma, LLaMA (pipeline) and Qwen/Qwen32b (direct generate) via HuggingFace,
-and OpenAI API models.
+
+Open-source models (Gemma, LLaMA, Qwen 7B/32B) run locally with in-process vLLM;
+gpt-oss-20b runs via a local vLLM OpenAI-compatible server; GPT-4.1 / GPT-5.1 run
+via the OpenAI API. (GPT-5.1 is the only model that requires an API call.)
 """
 
 import os
@@ -21,13 +23,24 @@ from typing import Dict, List, Tuple
 from tqdm.auto import tqdm
 import pandas as pd
 
-try:
-    import torch
-    import transformers
-    from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline as hf_pipeline
-    HF_AVAILABLE = True
-except ImportError:
-    HF_AVAILABLE = False
+
+# Pin GPU(s) BEFORE importing torch/vLLM — both read CUDA_VISIBLE_DEVICES once, at
+# import time. We parse --gpu from argv here and force PCI-bus ordering so --gpu N is
+# physical GPU N (the number nvidia-smi shows). Accepts a comma list for tensor
+# parallelism, e.g. --gpu 0,1.
+def _pin_gpu_from_argv():
+    gpu = os.environ.get("PERK_GPU")
+    for i, a in enumerate(sys.argv):
+        if a == "--gpu" and i + 1 < len(sys.argv):
+            gpu = sys.argv[i + 1]
+        elif a.startswith("--gpu="):
+            gpu = a.split("=", 1)[1]
+    if gpu is not None:
+        os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+        os.environ["CUDA_VISIBLE_DEVICES"] = str(gpu)
+    return gpu
+
+_PINNED_GPU = _pin_gpu_from_argv()
 
 try:
     from dotenv import load_dotenv
@@ -44,14 +57,16 @@ except ImportError:
 # src/extraction/ -> src/ -> prompts/
 DEFAULT_PROMPT = Path(__file__).resolve().parent.parent / "prompts" / "extraction_prompt.txt"
 
-PIPELINE_MODELS = {"gemma", "llama"}
-DIRECT_MODELS = {"qwen", "qwen32b"}
-API_MODELS = {"openai", "gptoss"}   # gptoss = gpt-oss-20b via an OpenAI-compatible server
+# Open-source models run locally with in-process vLLM.
+VLLM_MODELS = {"gemma", "llama", "qwen", "qwen32b"}
+# OpenAI / OpenAI-compatible endpoint. gptoss = gpt-oss-20b served by a local vLLM
+# OpenAI-compatible server (vLLM handles the harmony formatting); openai = GPT-4.1/5.1.
+API_MODELS = {"openai", "gptoss"}
 
 # Default model name per alias when --model_path is omitted.
 DEFAULT_MODEL_PATHS = {"gptoss": "openai/gpt-oss-20b"}
 # Default OpenAI-compatible endpoint per alias when --base_url is omitted.
-DEFAULT_BASE_URLS = {"gptoss": "http://localhost:8000/v1"}   # local vLLM default
+DEFAULT_BASE_URLS = {"gptoss": "http://localhost:8000/v1"}   # local vLLM server
 
 HEADER_EVIDENCE = "Header Metadata"
 
@@ -87,10 +102,9 @@ def setup_logger(log_path: str) -> logging.Logger:
 
 def load_model(args):
     """
-    Load the appropriate backend.
-    Returns (model_or_pipeline, tokenizer, openai_client).
-    For API models, model and tokenizer are None.
-    For pipeline models, model is the HF pipeline object.
+    Load the inference backend. Returns (engine, sampling, client):
+      - API models        -> (None, None, OpenAI client)
+      - local vLLM models  -> (vllm.LLM, vllm.SamplingParams, None)
     """
     model_type = args.model.lower()
 
@@ -100,7 +114,7 @@ def load_model(args):
         api_key = os.environ.get("OPENAI_API_KEY")
         base_url = args.base_url or DEFAULT_BASE_URLS.get(model_type)
         if base_url:
-            # Local OpenAI-compatible server (e.g. vLLM/Ollama serving gpt-oss-20b).
+            # Local OpenAI-compatible server (e.g. vLLM serving gpt-oss-20b).
             # The server handles harmony formatting; key may be a dummy.
             print(f"Using OpenAI-compatible endpoint: {base_url}")
             return None, None, OpenAI(base_url=base_url, api_key=api_key or "EMPTY")
@@ -108,84 +122,53 @@ def load_model(args):
             raise EnvironmentError("OPENAI_API_KEY environment variable is not set.")
         return None, None, OpenAI(api_key=api_key)
 
-    if not HF_AVAILABLE:
-        raise ImportError("pip install torch transformers")
+    # Local open-source model via in-process vLLM
+    try:
+        from vllm import LLM, SamplingParams
+    except ImportError:
+        raise ImportError("pip install vllm")
 
-    if args.gpu is not None:
-        os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
-        print(f"Using GPU: {args.gpu}")
+    if _PINNED_GPU is not None:
+        print(f"Pinned to GPU(s): {_PINNED_GPU} (CUDA_DEVICE_ORDER=PCI_BUS_ID)")
+    print(f"Loading {args.model_path} with vLLM "
+          f"(tensor_parallel_size={args.tensor_parallel_size})...")
 
-    transformers.logging.set_verbosity_error()
-    print(f"Loading model: {args.model_path}...")
-
-    tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    tokenizer.pad_token = tokenizer.eos_token
-
-    if model_type in PIPELINE_MODELS:
-        model = AutoModelForCausalLM.from_pretrained(
-            args.model_path,
-            torch_dtype=torch.bfloat16,
-            device_map="auto",
-            trust_remote_code=True,
-        )
-        pipe_kwargs = dict(
-            model=model,
-            tokenizer=tokenizer,
-            max_new_tokens=args.max_new_tokens,
-            do_sample=False,
-            return_full_text=False,
-        )
-        if model_type == "llama":
-            pipe_kwargs["repetition_penalty"] = 1.15
-        print("Model loaded.")
-        return hf_pipeline("text-generation", **pipe_kwargs), tokenizer, None
-
-    elif model_type in DIRECT_MODELS:
-        model = AutoModelForCausalLM.from_pretrained(
-            args.model_path,
-            dtype="auto",
-            device_map="auto",
-        )
-        print("Model loaded.")
-        return model, tokenizer, None
+    engine = LLM(
+        model=args.model_path,
+        tensor_parallel_size=args.tensor_parallel_size,
+        gpu_memory_utilization=args.gpu_memory_utilization,
+        max_model_len=args.max_model_len,
+        dtype="bfloat16",
+        trust_remote_code=True,
+    )
+    # Greedy decoding for reproducible extraction.
+    sampling = SamplingParams(temperature=0.0, max_tokens=args.max_new_tokens)
+    print("Model loaded.")
+    return engine, sampling, None
 
 # ==============================================================================
 # INFERENCE
 # ==============================================================================
 
-def run_inference(messages: List[Dict], model, tokenizer, client, args) -> str:
+def run_inference(messages: List[Dict], engine, sampling, client, args) -> str:
     model_type = args.model.lower()
 
     if model_type in API_MODELS:
-        response = client.chat.completions.create(
+        kwargs = dict(
             model=args.model_path,
             messages=messages,
             response_format={"type": "json_object"},
-            temperature=0,
         )
+        # The gpt-5 family only accepts the default temperature (1); sending 0
+        # errors. Other models (e.g. gpt-4.1) use 0 for deterministic output.
+        if not re.search(r"gpt-5", str(args.model_path), re.IGNORECASE):
+            kwargs["temperature"] = 0
+        response = client.chat.completions.create(**kwargs)
         return response.choices[0].message.content
 
-    elif model_type in PIPELINE_MODELS:
-        # model is the HF pipeline
-        prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        outputs = model(prompt)
-        return outputs[0]['generated_text']
-
-    elif model_type in DIRECT_MODELS:
-        inputs = tokenizer.apply_chat_template(
-            messages,
-            add_generation_prompt=True,
-            tokenize=True,
-            return_dict=True,
-            return_tensors="pt",
-        ).to(model.device)
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=args.max_new_tokens,
-            temperature=0.1,
-            do_sample=True,
-        )
-        return tokenizer.decode(outputs[0][inputs.input_ids.shape[-1]:], skip_special_tokens=True)
+    # Local vLLM: chat() applies the model's chat template automatically.
+    outputs = engine.chat(messages, sampling, use_tqdm=False)
+    return outputs[0].outputs[0].text
 
 # ==============================================================================
 # REGEX HEADER PARSING
@@ -488,7 +471,7 @@ def write_csv(filepath: str, headers: List[str], rows: List[List]) -> None:
 # EMAIL PROCESSING
 # ==============================================================================
 
-def process_email(email_num: int, email_text: str, model, tokenizer, client,
+def process_email(email_num: int, email_text: str, engine, sampling, client,
                   system_prompt: str, args, logger: logging.Logger) -> Tuple[int, int]:
     header_info = extract_header_info(email_text)
     body_text = extract_body(email_text)
@@ -501,7 +484,7 @@ def process_email(email_num: int, email_text: str, model, tokenizer, client,
     ]
 
     try:
-        response_text = run_inference(messages, model, tokenizer, client, args)
+        response_text = run_inference(messages, engine, sampling, client, args)
     except Exception as e:
         logger.error(f"Inference error on Email {email_num}: {e}")
         response_text = "{}"
@@ -652,11 +635,20 @@ def main():
     parser.add_argument("--prompt_file", default=str(DEFAULT_PROMPT),
                         help=f"Path to system prompt file (default: {DEFAULT_PROMPT})")
     parser.add_argument("--gpu", default=None,
-                        help="GPU ID to use (e.g. 0 or 1)")
+                        help="Physical GPU id(s) to pin for local vLLM models "
+                             "(PCI-bus order; matches nvidia-smi). Use a comma list for "
+                             "tensor parallelism, e.g. 0,1.")
+    parser.add_argument("--tensor_parallel_size", type=int, default=1,
+                        help="vLLM tensor-parallel GPUs for local models (default: 1; "
+                             "use >1 for large models like Qwen2.5-32B).")
+    parser.add_argument("--gpu_memory_utilization", type=float, default=0.90,
+                        help="vLLM GPU memory fraction for local models (default: 0.90)")
+    parser.add_argument("--max_model_len", type=int, default=8192,
+                        help="vLLM max context length for local models (default: 8192)")
     parser.add_argument("--base_url", default=None,
                         help="OpenAI-compatible base URL for a local server "
                              "(e.g. http://localhost:8000/v1 for vLLM serving gpt-oss-20b). "
-                             "Use with --model openai.")
+                             "Use with --model openai or gptoss.")
     parser.add_argument("--max_new_tokens", type=int, default=2048,
                         help="Max tokens to generate (default: 2048)")
     parser.add_argument("--resume", action="store_true",
@@ -690,7 +682,7 @@ def main():
         system_prompt = f.read().strip()
     logger.info(f"Loaded prompt from: {args.prompt_file}")
 
-    model, tokenizer, client = load_model(args)
+    engine, sampling, client = load_model(args)
 
     with open(args.input_file, 'r', encoding='utf-8') as f:
         all_emails = [e.strip() for e in f.read().split('EMAIL_END') if e.strip()]
@@ -717,7 +709,7 @@ def main():
         pbar.set_description(f"Email {email_num}")
         try:
             n_ent, n_rel = process_email(
-                email_num, email_text, model, tokenizer, client,
+                email_num, email_text, engine, sampling, client,
                 system_prompt, args, logger
             )
             pbar.set_postfix({"Ents": n_ent, "Rels": n_rel})
