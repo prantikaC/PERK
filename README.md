@@ -39,7 +39,7 @@ This resource was motivated by a survey of researchers at our institute, which s
 - The full **construction + evaluation pipeline**: extraction → entity resolution →
   Neo4j graph build → triple & QA evaluation.
 
-### Ontology
+### PERKOnto
 
 PERKOnto defines 14 node types and 14 relationship types covering the research collaboration domain. 
 
