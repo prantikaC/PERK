@@ -1,0 +1,60 @@
+Model: QWEN
+Context: evidence_sentence
+Timestamp: 2026-04-03 20:30:48.564412
+
+
+Tau=0.60
+Subject     P=0.6320 R=0.6753 F1=0.6530
+Object      P=0.5369 R=0.5397 F1=0.5383
+All Entities P=0.6201 R=0.5993 F1=0.6095
+Predicate   P=0.4290 R=0.5775 F1=0.4923
+Triple      P=0.2830 R=0.1914 F1=0.2284
+
+Tau=0.65
+Subject     P=0.5718 R=0.6110 F1=0.5908
+Object      P=0.4919 R=0.4944 F1=0.4932
+All Entities P=0.5643 R=0.5454 F1=0.5547
+Predicate   P=0.4290 R=0.5775 F1=0.4923
+Triple      P=0.2704 R=0.1827 F1=0.2180
+
+Tau=0.70
+Subject     P=0.4913 R=0.5249 F1=0.5075
+Object      P=0.4543 R=0.4566 F1=0.4555
+All Entities P=0.5062 R=0.4892 F1=0.4975
+Predicate   P=0.4290 R=0.5775 F1=0.4923
+Triple      P=0.2610 R=0.1761 F1=0.2103
+
+Tau=0.75
+Subject     P=0.3951 R=0.4222 F1=0.4082
+Object      P=0.4122 R=0.4144 F1=0.4133
+All Entities P=0.4337 R=0.4192 F1=0.4263
+Predicate   P=0.4290 R=0.5775 F1=0.4923
+Triple      P=0.2350 R=0.1590 F1=0.1897
+
+Tau=0.80
+Subject     P=0.2913 R=0.3112 F1=0.3009
+Object      P=0.3503 R=0.3521 F1=0.3512
+All Entities P=0.3480 R=0.3363 F1=0.3420
+Predicate   P=0.4290 R=0.5775 F1=0.4923
+Triple      P=0.2025 R=0.1371 F1=0.1635
+
+Tau=0.85
+Subject     P=0.1796 R=0.1919 F1=0.1856
+Object      P=0.2795 R=0.2809 F1=0.2802
+All Entities P=0.2545 R=0.2460 F1=0.2502
+Predicate   P=0.4290 R=0.5775 F1=0.4923
+Triple      P=0.1781 R=0.1205 F1=0.1437
+
+Tau=0.90
+Subject     P=0.0922 R=0.0985 F1=0.0953
+Object      P=0.2035 R=0.2046 F1=0.2041
+All Entities P=0.1692 R=0.1635 F1=0.1663
+Predicate   P=0.4290 R=0.5775 F1=0.4923
+Triple      P=0.1419 R=0.0964 F1=0.1148
+
+Tau=0.95
+Subject     P=0.0388 R=0.0415 F1=0.0401
+Object      P=0.1114 R=0.1119 F1=0.1116
+All Entities P=0.0858 R=0.0829 F1=0.0843
+Predicate   P=0.4290 R=0.5775 F1=0.4923
+Triple      P=0.0948 R=0.0644 F1=0.0767
