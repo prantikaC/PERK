@@ -398,21 +398,16 @@ essential**; without them the extraction task is ill-defined.
 
 Schema-guided KBQA over the constructed graph reaches **75.5%** accuracy (151/200), and
 stays consistent across question types — including the harder multi-hop and reasoning
-queries:
+queries. The 49 residual failures are dominated by semantic-reasoning errors (mostly
+text-to-Cypher conversion), followed by KG incompleteness (queried triples missing after
+extraction), temporal reasoning, and ontology-validation errors:
 
 <p align="center">
-  <img src="results/figures/qa/qa_accuracy_by_question_type_bar.png" alt="KG-QA accuracy by question type" width="68%">
+  <img src="results/figures/qa/qa_accuracy_by_question_type_bar.png" alt="KG-QA accuracy by question type" width="48%">
+  &nbsp;&nbsp;
+  <img src="results/figures/qa/qa_failure_distribution.png" alt="KG-QA failure type distribution" width="48%">
 </p>
-<p align="center"><sub>PERK KG-QA accuracy by question type: single-hop 72.3%, multi-hop 74.6%, reasoning 75.0%, "not available" 84.6%.</sub></p>
-
-The 49 residual failures are dominated by semantic-reasoning errors (mostly text-to-Cypher
-conversion), followed by KG incompleteness (queried triples missing after extraction),
-temporal reasoning, and ontology-validation errors:
-
-<p align="center">
-  <img src="results/figures/qa/qa_failure_distribution.png" alt="KG-QA failure type distribution" width="58%">
-</p>
-<p align="center"><sub>Distribution of the 49 KG-QA failures: semantic reasoning 32 (65.3%), KG incompleteness 10 (20.4%), temporal reasoning 4 (8.2%), ontology validation 3 (6.1%).</sub></p>
+<p align="center"><sub><b>Left:</b> KG-QA accuracy by question type (single-hop 72.3%, multi-hop 74.6%, reasoning 75.0%, "not available" 84.6%). &nbsp; <b>Right:</b> distribution of the 49 failures — semantic reasoning 32 (65.3%), KG incompleteness 10 (20.4%), temporal reasoning 4 (8.2%), ontology validation 3 (6.1%).</sub></p>
 
 **Does the knowledge graph beat brute-force long context?** As a no-KG baseline, we feed
 the entire PATRA corpus (~570K tokens) to a long-context LLM (GPT-4.1) and ask each
@@ -430,6 +425,7 @@ graph's structure is decisive:
 
 The KG more than triples end-to-end QA accuracy over throwing the whole mailbox at a
 long-context model, confirming the value of explicit graph construction.
+
 
 ---
 ### Citation
