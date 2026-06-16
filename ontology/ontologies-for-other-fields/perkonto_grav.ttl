@@ -1,0 +1,318 @@
+@prefix : <https://w3id.org/perkonto/grav#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix perk: <https://w3id.org/perkonto#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix ivoa: <http://purl.org/astronomy/ont/object-types#> .
+@base <https://w3id.org/perkonto/grav#> .
+
+<https://w3id.org/perkonto/grav> rdf:type owl:Ontology ;
+                             dcterms:creator "Debarshi Kumar Sanyal" ,
+                                             "Partha Pratim Das" ,
+                                             "Prantika Chakraborty" ,
+                                             "Srijoni Majumdar" ;
+                             dcterms:description "A domain extension of PERKOnto for the professional knowledge of a gravitational-wave / relativity physicist as extractable from personal email communications. It reuses the PERKOnto backbone and specialises the scientific layer into gravitational-physics concepts (AstrophysicalSource/ObservationalData/AnalysisMethod/PhysicalParameter/ResearchProblem) plus supporting concepts (Detector, WaveformModel, AnalysisPipeline)."@en ;
+                             dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                             dcterms:title "PERKOnto-Grav: Gravitational Physics extension of PERKOnto"@en ;
+                             owl:imports <https://w3id.org/perkonto> ;
+                             owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+###  http://www.w3.org/2004/02/skos/core#note
+skos:note rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Referenced PERKOnto classes (declared for import resolution)
+#################################################################
+
+###  https://w3id.org/perkonto#Dataset
+perk:Dataset rdf:type owl:Class .
+
+###  https://w3id.org/perkonto#Method
+perk:Method rdf:type owl:Class .
+
+###  https://w3id.org/perkonto#Metric
+perk:Metric rdf:type owl:Class .
+
+###  https://w3id.org/perkonto#Task
+perk:Task rdf:type owl:Class .
+
+###  https://w3id.org/perkonto#Person
+perk:Person rdf:type owl:Class .
+
+
+#################################################################
+#    Referenced external domain-ontology classes (verified IRIs)
+#################################################################
+
+###  http://purl.org/astronomy/ont/object-types#AstrObject
+<http://purl.org/astronomy/ont/object-types#AstrObject> rdf:type owl:Class .  # IVOA: Astronomical Object
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class .  # IAO: information content entity
+
+###  http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> rdf:type owl:Class .  # QUDT: Quantity
+
+###  http://purl.obolibrary.org/obo/OBI_0000968
+<http://purl.obolibrary.org/obo/OBI_0000968> rdf:type owl:Class .  # OBI: device
+
+###  https://schema.org/SoftwareApplication
+<https://schema.org/SoftwareApplication> rdf:type owl:Class .  # schema.org: SoftwareApplication
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/perkonto/grav#studies
+:studies rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:worksWith ;
+         rdfs:domain perk:Person ;
+         rdfs:range :AstrophysicalSource ;
+         rdfs:comment "Links a Person to an AstrophysicalSource they investigate. Specialises perk:worksWith."@en ;
+         rdfs:label "studies"@en .
+
+###  https://w3id.org/perkonto/grav#appliesMethod
+:appliesMethod rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:worksWith ;
+         rdfs:domain perk:Person ;
+         rdfs:range :AnalysisMethod ;
+         rdfs:comment "Links a Person to an AnalysisMethod they use. Specialises perk:worksWith."@en ;
+         rdfs:label "applies method"@en .
+
+###  https://w3id.org/perkonto/grav#investigates
+:investigates rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:worksOn ;
+         rdfs:domain perk:Person ;
+         rdfs:range :ResearchProblem ;
+         rdfs:comment "Links a Person to a ResearchProblem they work on. Specialises perk:worksOn."@en ;
+         rdfs:label "investigates"@en .
+
+###  https://w3id.org/perkonto/grav#analyses
+:analyses rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:uses ;
+         rdfs:domain :AnalysisMethod ;
+         rdfs:range [ rdf:type owl:Class ; owl:unionOf ( :ObservationalData :AstrophysicalSource ) ] ;
+         rdfs:comment "Links an AnalysisMethod to the ObservationalData or AstrophysicalSource it is applied to. Specialises perk:uses."@en ;
+         rdfs:label "analyses"@en .
+
+###  https://w3id.org/perkonto/grav#appliedToProblem
+:appliedToProblem rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:usedFor ;
+         rdfs:domain [ rdf:type owl:Class ; owl:unionOf ( :AnalysisMethod :AstrophysicalSource ) ] ;
+         rdfs:range :ResearchProblem ;
+         rdfs:comment "Links an AnalysisMethod or AstrophysicalSource to the ResearchProblem it addresses. Specialises perk:usedFor."@en ;
+         rdfs:label "applied to problem"@en .
+
+###  https://w3id.org/perkonto/grav#measures
+:measures rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf perk:evaluates ;
+         rdfs:domain :PhysicalParameter ;
+         rdfs:range [ rdf:type owl:Class ; owl:unionOf ( :AstrophysicalSource :AnalysisMethod :ResearchProblem ) ] ;
+         rdfs:comment "Links a PhysicalParameter to the AstrophysicalSource, AnalysisMethod, or ResearchProblem it characterises. Specialises perk:evaluates."@en ;
+         rdfs:label "measures"@en .
+
+###  https://w3id.org/perkonto/grav#recordedBy
+:recordedBy rdf:type owl:ObjectProperty ;
+         rdfs:domain :ObservationalData ;
+         rdfs:range :Detector ;
+         rdfs:comment "Links ObservationalData to the Detector that recorded it."@en ;
+         rdfs:label "recorded by"@en .
+
+###  https://w3id.org/perkonto/grav#usesWaveformModel
+:usesWaveformModel rdf:type owl:ObjectProperty ;
+         rdfs:domain :AnalysisMethod ;
+         rdfs:range :WaveformModel ;
+         rdfs:comment "Links an AnalysisMethod to the WaveformModel / template family it uses."@en ;
+         rdfs:label "uses waveform model"@en .
+
+###  https://w3id.org/perkonto/grav#implementedIn
+:implementedIn rdf:type owl:ObjectProperty ;
+         rdfs:domain :AnalysisMethod ;
+         rdfs:range :AnalysisPipeline ;
+         rdfs:comment "Links an AnalysisMethod to the AnalysisPipeline used to run it."@en ;
+         rdfs:label "implemented in"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/perkonto/grav#sourceName
+:sourceName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:datasetName ;
+          rdfs:domain :AstrophysicalSource ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Designation of the astrophysical source / event, e.g. 'GW150914'."@en ;
+          rdfs:label "source name"@en .
+
+###  https://w3id.org/perkonto/grav#sourceType
+:sourceType rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AstrophysicalSource ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Category of source, e.g. 'BBH', 'BNS', 'NSBH', 'supernova'."@en ;
+          rdfs:label "source type"@en .
+
+###  https://w3id.org/perkonto/grav#catalogName
+:catalogName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:datasetName ;
+          rdfs:domain :ObservationalData ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of an event or waveform catalog, e.g. 'GWTC-3'."@en ;
+          rdfs:label "catalog name"@en .
+
+###  https://w3id.org/perkonto/grav#methodName
+:methodName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:methodName ;
+          rdfs:domain :AnalysisMethod ;
+          rdfs:range xsd:string ;
+          rdfs:label "method name"@en .
+
+###  https://w3id.org/perkonto/grav#parameterName
+:parameterName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:metricName ;
+          rdfs:domain :PhysicalParameter ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of the physical parameter, e.g. 'chirp mass', 'SNR'."@en ;
+          rdfs:label "parameter name"@en .
+
+###  https://w3id.org/perkonto/grav#parameterValue
+:parameterValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :PhysicalParameter ;
+          rdfs:range xsd:double ;
+          rdfs:label "parameter value"@en .
+
+###  https://w3id.org/perkonto/grav#parameterUnit
+:parameterUnit rdf:type owl:DatatypeProperty ;
+          rdfs:domain :PhysicalParameter ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Unit of the parameter, e.g. 'solar mass', 'Mpc', 'Hz'."@en ;
+          rdfs:label "parameter unit"@en .
+
+###  https://w3id.org/perkonto/grav#detectorName
+:detectorName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Detector ;
+          rdfs:range xsd:string ;
+          rdfs:label "detector name"@en .
+
+###  https://w3id.org/perkonto/grav#waveformModelName
+:waveformModelName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :WaveformModel ;
+          rdfs:range xsd:string ;
+          rdfs:label "waveform model name"@en .
+
+###  https://w3id.org/perkonto/grav#pipelineName
+:pipelineName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AnalysisPipeline ;
+          rdfs:range xsd:string ;
+          rdfs:label "pipeline name"@en .
+
+###  https://w3id.org/perkonto/grav#pipelineVersion
+:pipelineVersion rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf perk:version ;
+          rdfs:domain :AnalysisPipeline ;
+          rdfs:range xsd:string ;
+          rdfs:label "pipeline version"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/perkonto/grav#AstrophysicalSource
+:AstrophysicalSource rdf:type owl:Class ;
+        rdfs:subClassOf perk:Dataset ,
+                        ivoa:AstrObject ;
+        rdfs:comment "The physical system emitting gravitational radiation under study, e.g. a binary black hole, binary neutron star, supernova, or continuous-wave source."@en ;
+        skos:note "Dual-grounded: perk:Dataset for the PERKOnto object-of-study role; ivoa:AstrObject (IVOA Ontology of Astronomical Object Types, 'Astronomical Object') for the astronomy standard."@en ;
+        rdfs:label "Astrophysical Source"@en .
+
+###  https://w3id.org/perkonto/grav#ObservationalData
+:ObservationalData rdf:type owl:Class ;
+        rdfs:subClassOf perk:Dataset ,
+                        obo:IAO_0000030 ;
+        rdfs:comment "A concrete analysed data artifact: detector strain segments, an event catalog (e.g. GWTC), or a numerical-relativity waveform catalog."@en ;
+        skos:note "Dual-grounded: perk:Dataset and obo:IAO_0000030 (IAO 'information content entity') for the data-artifact sense."@en ;
+        rdfs:label "Observational / Simulation Data"@en .
+
+###  https://w3id.org/perkonto/grav#AnalysisMethod
+:AnalysisMethod rdf:type owl:Class ;
+        rdfs:subClassOf perk:Method ;
+        rdfs:comment "A technique applied to sources/data, e.g. matched filtering, Bayesian parameter estimation, numerical relativity simulation, unmodeled burst search."@en ;
+        skos:note "Grounded in perk:Method only; no single widely-adopted community class for a GW analysis method exists."@en ;
+        rdfs:label "Analysis Method"@en .
+
+###  https://w3id.org/perkonto/grav#PhysicalParameter
+:PhysicalParameter rdf:type owl:Class ;
+        rdfs:subClassOf perk:Metric ,
+                        qudt:Quantity ;
+        rdfs:comment "A measured or inferred physical quantity, e.g. component masses, spins, luminosity distance, signal-to-noise ratio, false-alarm rate, sky localisation."@en ;
+        skos:note "Dual-grounded: perk:Metric for the PERKOnto evaluative role; qudt:Quantity (QUDT) for the physical-quantity standard."@en ;
+        rdfs:label "Physical Parameter / Observable"@en .
+
+###  https://w3id.org/perkonto/grav#ResearchProblem
+:ResearchProblem rdf:type owl:Class ;
+        rdfs:subClassOf perk:Task ;
+        rdfs:comment "A scientific question the group works on, e.g. 'test general relativity in the strong-field regime', 'measure the Hubble constant from standard sirens'."@en ;
+        skos:note "Grounded in perk:Task only."@en ;
+        rdfs:label "Research Problem"@en .
+
+###  https://w3id.org/perkonto/grav#Detector
+:Detector rdf:type owl:Class ;
+        rdfs:subClassOf obo:OBI_0000968 ;
+        rdfs:comment "A gravitational-wave detector or observatory that records data, e.g. LIGO Hanford, LIGO Livingston, Virgo, KAGRA, LISA."@en ;
+        skos:note "Grounded in obo:OBI_0000968 (OBI 'device'): a detector is an instrument that produces data; OBI device is the closest cross-domain standard."@en ;
+        rdfs:label "Detector / Observatory"@en .
+
+###  https://w3id.org/perkonto/grav#WaveformModel
+:WaveformModel rdf:type owl:Class ;
+        rdfs:comment "A signal model / template family used in analysis, e.g. effective-one-body (EOB), phenomenological (IMRPhenom), surrogate, or numerical-relativity template banks."@en ;
+        rdfs:label "Waveform Model"@en .
+
+###  https://w3id.org/perkonto/grav#AnalysisPipeline
+:AnalysisPipeline rdf:type owl:Class ;
+        rdfs:subClassOf schema:SoftwareApplication ;
+        rdfs:comment "A software pipeline used to run an analysis method, e.g. PyCBC, gstLAL, Bilby, LALSuite."@en ;
+        skos:note "Grounded in schema:SoftwareApplication."@en ;
+        rdfs:label "Analysis Pipeline / Software"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AstrophysicalSource
+                :ObservationalData
+                :AnalysisMethod
+                :PhysicalParameter
+                :ResearchProblem
+                :Detector
+                :WaveformModel
+                :AnalysisPipeline
+              )
+] .
