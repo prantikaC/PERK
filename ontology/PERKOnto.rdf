@@ -14,6 +14,9 @@
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/perkonto">
         <owl:versionIRI rdf:resource="https://w3id.org/perkonto/1.0.0"/>
+        <owl:imports rdf:resource="http://purl.org/ontology/bibo/"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <dcterms:creator>Debarshi Kumar Sanyal</dcterms:creator>
         <dcterms:creator>Partha Pratim Das</dcterms:creator>
         <dcterms:creator>Prantika Chakraborty</dcterms:creator>

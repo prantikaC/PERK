@@ -19,6 +19,9 @@
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="schema" IRI="https://schema.org/"/>
     <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Import>http://purl.org/ontology/bibo/</Import>
+    <Import>http://www.w3.org/ns/prov-o</Import>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
         <Literal>Debarshi Kumar Sanyal</Literal>

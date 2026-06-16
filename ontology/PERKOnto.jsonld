@@ -240,6 +240,13 @@
 }, {
   "@id" : "https://w3id.org/perkonto",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/ontology/bibo/"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov-o"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Debarshi Kumar Sanyal"
   }, {
