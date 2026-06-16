@@ -236,6 +236,13 @@ PERKOnto defines 14 node types and 14 relationship types covering the research c
 
 Full ontology files (OWL, Turtle) are in `ontology/`.
 
+### Domain extensions
+PERKOnto generalizes beyond the academic emails of an NLP scientist to other research domains.
+`ontology/ontologies-for-other-fields/` contains three illustrative extensions
+that import PERKOnto: `perkonto_chem.ttl` (chemistry), `perkonto_grav.ttl`
+(gravitational physics), and `perkonto_molbio.ttl` (molecular biology).
+
+
 ![PERKOnto](ontology/PERKOnto.png)
 
 ---
