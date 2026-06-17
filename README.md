@@ -377,17 +377,9 @@ both source-sentence and full-email context modes.
 
 ### 6.1 Extraction quality
 
-Micro-F1 at τ = 0.80 across models (**Source** = source-sentence context, **Full-Email** =
-whole-email context):
+Open-source models perform poorly. GPT-5.1 was therefore chosen for the final extraction. 
 
-|  |  |  |
-|:---:|:---:|:---:|
-| **Subject F1**<br>![Subject F1](results/figures/extractions/fig_sub.png) | **Object F1**<br>![Object F1](results/figures/extractions/fig_obj.png) | **Entity F1**<br>![Entity F1](results/figures/extractions/fig_ent.png) |
-| **Relation F1**<br>![Relation F1](results/figures/extractions/fig_pred.png) | **Triple F1**<br>![Triple F1](results/figures/extractions/fig_tri.png) |  |
-
-Open-source models perform poorly. GPT-5.1 was therefore chosen for the final extraction.
-
-### 6.2 Comparison to alternative extractors
+#### Comparison to alternative extractors
 
 | Approach | Result |
 |---|---|
@@ -395,22 +387,11 @@ Open-source models perform poorly. GPT-5.1 was therefore chosen for the final ex
 | **KGGen** (DSPy / GPT-4o, schema-free) | 0.4% of relations align with PERKOnto |
 
 Schema-free and direct-prompting approaches confirm that **ontology constraints are
-essential**; without them the extraction task is ill-defined.
+essential**; without them, the extraction task is ill-defined.
 
-### 6.3 KG-QA (PRASHNA-PATRA)
+### 6.2 KG-QA (PRASHNA-PATRA)
 
-Schema-guided KBQA over the constructed graph reaches **75.5%** accuracy (151/200), and
-stays consistent across question types — including the harder multi-hop and reasoning
-queries. The 49 residual failures are dominated by semantic-reasoning errors (mostly
-text-to-Cypher conversion), followed by KG incompleteness (queried triples missing after
-extraction), temporal reasoning, and ontology-validation errors:
-
-<p align="center">
-  <img src="results/figures/qa/qa_accuracy_by_question_type_bar.png" alt="KG-QA accuracy by question type" width="48%">
-  &nbsp;&nbsp;
-  <img src="results/figures/qa/qa_failure_distribution.png" alt="KG-QA failure type distribution" width="48%">
-</p>
-<p align="center"><sub><b>Left:</b> KG-QA accuracy by question type (single-hop 72.3%, multi-hop 74.6%, reasoning 75.0%, "not available" 84.6%). &nbsp; <b>Right:</b> distribution of the 49 failures — semantic reasoning 32 (65.3%), KG incompleteness 10 (20.4%), temporal reasoning 4 (8.2%), ontology validation 3 (6.1%).</sub></p>
+Schema-guided KBQA over the constructed graph reaches **75.5%** accuracy (151/200)
 
 **Does the knowledge graph beat brute-force long context?** As a no-KG baseline, we feed
 the entire PATRA corpus (~570K tokens) to a long-context LLM (GPT-4.1) and ask each
