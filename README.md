@@ -424,8 +424,6 @@ of the KG across every question type:
 | **PERK KG-QA** (`kg_eval.py`) | **75.5%** | 72.3% | 74.6% | 75.0% | **84.6%** |
 | Long-context GPT-4.1 (no KG) | 55.0% | 59.6% | 52.2% | 70.0% | 19.2% |
 
-The KG more than triples end-to-end QA accuracy over throwing the whole mailbox at a
-long-context model, confirming the value of explicit graph construction.
 
 The KG wins by **~20 points overall** and is most decisive on **multi-hop** (74.6% vs
 52.2%) and on **"not available"** questions (84.6% vs 19.2%): with the whole mailbox in
