@@ -252,6 +252,7 @@ python src/entity_resolution/calibrate_threshold.py \
 ```
 
 End-to-end ER (OpenAI pipeline): Precision **0.6538**, Recall **0.5730**, F1 **0.6108**.
+
 ---
 
 ### 4. Neo4j Graph Construction
