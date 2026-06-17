@@ -383,9 +383,7 @@ whole-email context):
 | **Subject F1**<br>![Subject F1](results/figures/extractions/fig_sub.png) | **Object F1**<br>![Object F1](results/figures/extractions/fig_obj.png) | **Entity F1**<br>![Entity F1](results/figures/extractions/fig_ent.png) |
 | **Relation F1**<br>![Relation F1](results/figures/extractions/fig_pred.png) | **Triple F1**<br>![Triple F1](results/figures/extractions/fig_tri.png) |  |
 
-Open-source models perform poorly: the best open model, GPT-OSS-20B, reaches a triple F1 of
-only **0.20** (source-sentence) / **0.25** (full-email). GPT-5.1 was therefore chosen for
-the final extraction.
+Open-source models perform poorly. GPT-5.1 was therefore chosen for the final extraction.
 
 ### 6.2 Comparison to alternative extractors
 
