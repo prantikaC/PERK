@@ -10,6 +10,7 @@ LLM-based extraction over email threads and grounded in the **PERKOnto** ontolog
 |---|---|
 | **Persistent ontology URI** | <https://w3id.org/perkonto> |
 | **Dataset / ontology metadata (VoID + DCAT + Dublin Core)** | [`ontology/void.ttl`](ontology/void.ttl) |
+| **Archived release (Zenodo, all versions)** | <https://doi.org/10.5281/zenodo.20542114> |
 ---
 ## Overview
 
@@ -432,4 +433,5 @@ value of explicit graph construction over brute-force long-context retrieval.
 
 ---
 ### Citation
-Chakraborty, P., Sanyal, D. K., Majumdar, S., & Das, P. P. (2026). prantikaC/PERK: PERK (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20542115
+> Chakraborty, P., Sanyal, D. K., Majumdar, S., & Das, P. P. (2026). *prantikaC/PERK: PERK*.
+> Zenodo. <https://doi.org/10.5281/zenodo.20542114>
