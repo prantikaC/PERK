@@ -1,0 +1,26 @@
+{
+  "title": "PERK: Personal Email Research Knowledge Graph",
+  "description": "PERK is a personal knowledge graph (PKG) built from synthetic academic email threads (PATRA) and grounded in the PERKOnto ontology. It ships a KG-QA benchmark (PRASHNA-PATRA, 200 question/answer pairs with Cypher), an annotated gold set of extracted triples, and a full construction and evaluation pipeline (LLM extraction, FAISS + LLM entity resolution, Neo4j graph construction, Sentence-BERT triple / KG-QA evaluation). Code is released under MIT; the datasets under CC-BY-4.0.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    { "name": "Chakraborty, Prantika", "affiliation": "Indian Association for the Cultivation of Science" },
+    { "name": "Sanyal, Debarshi Kumar", "affiliation": "Indian Association for the Cultivation of Science" },
+    { "name": "Majumdar, Srijoni", "affiliation": "University of Leeds" },
+    { "name": "Das, Partha Pratim", "affiliation": "Ashoka University" }
+  ],
+  "keywords": [
+    "personal knowledge graph",
+    "knowledge graph construction",
+    "ontology",
+    "email",
+    "information extraction",
+    "large language models",
+    "question answering"
+  ],
+  "related_identifiers": [
+    { "relation": "isSupplementTo", "identifier": "https://github.com/prantikaC/PERK", "scheme": "url" },
+    { "relation": "isDerivedFrom", "identifier": "https://w3id.org/perkonto", "scheme": "url" }
+  ]
+}

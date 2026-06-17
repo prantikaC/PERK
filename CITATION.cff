@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use PERK, please cite it using the metadata below."
+title: "PERK: Personal Email Research Knowledge Graph"
+abstract: >-
+  Utilising personal information to assist us in our day-to-day
+  proceedings has become a growing avenue for research and exploration.
+  Emails provide a rich source of personal data, highlighting our daily ac-
+  tivities and offering insights into our professional world, as they are one
+  of the most pervasive forms of personal communication. Yet, it is one
+  of the least tapped knowledge resources. In this paper, we describe a
+  method for constructing a Personal Email Research Knowledge graph
+  (PERK), which is a personal research knowledge graph (PRKG) derived
+  from a researcher’s emails. PERK harvests informational entities, such
+  as collaborators, publication details, scientific terminologies, and meet-
+  ing minutes, from personal emails. We first developed PERKOnto, an
+  ontology based on the professional requirements of a researcher. To in-
+  stantiate the ontology and construct PERK, we created a synthetic email
+  dataset, PATRA, using a large language model (LLM), thereby avoiding
+  potential privacy risks associated with using personal emails to demon-
+  strate such a knowledge graph. We subsequently extracted information
+  in the form of entities, attributes, and relations from PATRA with the
+  help of an LLM to create PERK. We also evaluated the quality of the
+  synthetic corpus created and performed question-answering on PERK
+  based on our proposed QA dataset called PRASHNA-PATRA to assess
+  the overall construction and utility of the LLM-aided PERK. Code is released
+  under MIT; the datasets under CC-BY-4.0.
+type: software
+authors:
+  - family-names: Chakraborty
+    given-names: Prantika
+    affiliation: "Indian Association for the Cultivation of Science"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Sanyal
+    given-names: Debarshi Kumar
+    affiliation: "Indian Association for the Cultivation of Science"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Majumdar
+    given-names: Srijoni   
+    affiliation: "University of Leeds"        
+  - family-names: Das
+    given-names: Partha Pratim    
+    affiliation: "Ashoka University"    
+version: "1.1.0"
+date-released: "2026-06-17"
+license: MIT
+repository-code: "https://github.com/prantikaC/PERK"
+url: "https://github.com/prantikaC/PERK"
+doi: 10.5281/zenodo.20542114   # concept DOI — always resolves to the latest version
+keywords:
+  - personal knowledge graph
+  - knowledge graph construction
+  - ontology
+  - email
+  - information extraction
+  - large language models
+  - question answering
