@@ -1,0 +1,1704 @@
+<h2 id="crossreference" class="list">Cross-reference for PERKOnto: Personal Email Research Knowledge Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by PERKOnto: Personal Email Research Knowledge Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a></li>
+  <li><a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a></li>
+  <li><a href="#Email" title="https://w3id.org/perkonto#Email">Email</a></li>
+  <li><a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a></li>
+  <li><a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a></li>
+  <li><a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a></li>
+  <li><a href="#Method" title="https://w3id.org/perkonto#Method">Method</a></li>
+  <li><a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a></li>
+  <li><a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a></li>
+  <li><a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a></li>
+  <li><a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a></li>
+  <li><a href="#Person" title="https://w3id.org/perkonto#Person">Person</a></li>
+  <li><a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a></li>
+  <li><a href="#Task" title="https://w3id.org/perkonto#Task">Task</a></li>
+ </ul>
+ <div class="entity" id="Conference">
+  <h3>Conference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Conference</p>
+  <div class="comment">
+   <span class="markdown">An academic conference to which a paper has been submitted or which a researcher attends.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.org/ontology/bibo/Conference" target="_blank" title="http://purl.org/ontology/bibo/Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="https://schema.org/Event" target="_blank" title="https://schema.org/Event">Event</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#confDate" title="https://w3id.org/perkonto#confDate">conference date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#confVenue" title="https://w3id.org/perkonto#confVenue">conference venue</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#attends" title="https://w3id.org/perkonto#attends">attends</a> <sup class="type-op" title="object property">op</sup>, <a href="#inVenue" title="https://w3id.org/perkonto#inVenue">in venue</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Dataset">
+  <h3>Dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Dataset</p>
+  <div class="comment">
+   <span class="markdown">A dataset used or discussed in the research activities documented in the email corpus.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/Dataset" target="_blank" title="https://schema.org/Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#datasetName" title="https://w3id.org/perkonto#datasetName">dataset name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usedFor" title="https://w3id.org/perkonto#usedFor">used for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#evaluates" title="https://w3id.org/perkonto#evaluates">evaluates</a> <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://w3id.org/perkonto#uses">uses</a> <sup class="type-op" title="object property">op</sup>, <a href="#worksWith" title="https://w3id.org/perkonto#worksWith">works with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Email">
+  <h3>Email<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Email</p>
+  <div class="comment">
+   <span class="markdown">An individual email message exchanged between researchers. Serves as the provenance anchor for all knowledge triples extracted into PERK. Every relationship carries a source property referencing one or more Email instances.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/Message" target="_blank" title="https://schema.org/Message">Message</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#mailDate" title="https://w3id.org/perkonto#mailDate">mail date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#mailNum" title="https://w3id.org/perkonto#mailNum">mail number</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#partOf" title="https://w3id.org/perkonto#partOf">part of</a> <sup class="type-op" title="object property">op</sup>, <a href="#receivedBy" title="https://w3id.org/perkonto#receivedBy">received by</a> <sup class="type-op" title="object property">op</sup>, <a href="#sentBy" title="https://w3id.org/perkonto#sentBy">sent by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Journal">
+  <h3>Journal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Journal</p>
+  <div class="comment">
+   <span class="markdown">An academic journal to which a paper has been submitted or published.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.org/ontology/bibo/Journal" target="_blank" title="http://purl.org/ontology/bibo/Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="https://schema.org/Periodical" target="_blank" title="https://schema.org/Periodical">Periodical</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#inVenue" title="https://w3id.org/perkonto#inVenue">in venue</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MailThread">
+  <h3>Mail Thread<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#MailThread</p>
+  <div class="comment">
+   <span class="markdown">An ordered chain of email messages sharing a common subject and thread identifier.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/CreativeWork" target="_blank" title="https://schema.org/CreativeWork">Creative Work</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#threadID" title="https://w3id.org/perkonto#threadID">thread ID</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#partOf" title="https://w3id.org/perkonto#partOf">part of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Meeting">
+  <h3>Meeting<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Meeting</p>
+  <div class="comment">
+   <span class="markdown">A scheduled meeting between researchers, including virtual meetings, with an associated agenda and link.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/Event" target="_blank" title="https://schema.org/Event">Event</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#meetAgenda" title="https://w3id.org/perkonto#meetAgenda">meeting agenda</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#meetDate" title="https://w3id.org/perkonto#meetDate">meeting date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#meetLink" title="https://w3id.org/perkonto#meetLink">meeting link</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#meetTime" title="https://w3id.org/perkonto#meetTime">meeting time</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#attends" title="https://w3id.org/perkonto#attends">attends</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Method">
+  <h3>Method<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Method</p>
+  <div class="comment">
+   <span class="markdown">A computational or analytical method, model, or algorithm discussed in the email corpus.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/SoftwareApplication" target="_blank" title="https://schema.org/SoftwareApplication">Software Application</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#methodName" title="https://w3id.org/perkonto#methodName">method name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usedFor" title="https://w3id.org/perkonto#usedFor">used for</a> <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://w3id.org/perkonto#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#evaluates" title="https://w3id.org/perkonto#evaluates">evaluates</a> <sup class="type-op" title="object property">op</sup>, <a href="#worksWith" title="https://w3id.org/perkonto#worksWith">works with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Metric">
+  <h3>Metric<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Metric</p>
+  <div class="comment">
+   <span class="markdown">An evaluation metric used to assess the performance of a method on a task or dataset.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#evaluates" title="https://w3id.org/perkonto#evaluates">evaluates</a> <sup class="type-op" title="object property">op</sup>, <a href="#metricName" title="https://w3id.org/perkonto#metricName">metric name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#worksWith" title="https://w3id.org/perkonto#worksWith">works with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Paper">
+  <h3>Paper<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Paper</p>
+  <div class="comment">
+   <span class="markdown">A research paper authored or co-authored by one or more Persons in the email corpus.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.org/ontology/bibo/AcademicArticle" target="_blank" title="http://purl.org/ontology/bibo/AcademicArticle">Academic Article</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasAuthor" title="https://w3id.org/perkonto#hasAuthor">has author</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPaperInfo" title="https://w3id.org/perkonto#hasPaperInfo">has paper info</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#identifies" title="https://w3id.org/perkonto#identifies">identifies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PaperBib">
+  <h3>Paper Bibliographic Record<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#PaperBib</p>
+  <div class="comment">
+   <span class="markdown">A bibliographic metadata record for a published paper, capturing identifiers, venue, and publication details.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/ScholarlyArticle" target="_blank" title="https://schema.org/ScholarlyArticle">Scholarly Article</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#doi" title="https://w3id.org/perkonto#doi">DOI</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#url" title="https://w3id.org/perkonto#url">URL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#arxivID" title="https://w3id.org/perkonto#arxivID">arXiv ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#date" title="https://w3id.org/perkonto#date">date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#issue" title="https://w3id.org/perkonto#issue">issue</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#pages" title="https://w3id.org/perkonto#pages">pages</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#version" title="https://w3id.org/perkonto#version">version</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#volume" title="https://w3id.org/perkonto#volume">volume</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasPaperInfo" title="https://w3id.org/perkonto#hasPaperInfo">has paper info</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PaperStatus">
+  <h3>Paper Status<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#PaperStatus</p>
+  <div class="comment">
+   <span class="markdown">A node representing a single state in the submission lifecycle of a paper (e.g. Submitted, Under Review, Revision Required, Accepted, Rejected). Status nodes are chained via movesTo to encode the full submission history.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#movesTo" title="https://w3id.org/perkonto#movesTo">moves to</a> <sup class="type-op" title="object property">op</sup>, <a href="#statusDate" title="https://w3id.org/perkonto#statusDate">status date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#statusType" title="https://w3id.org/perkonto#statusType">status type</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#movesTo" title="https://w3id.org/perkonto#movesTo">moves to</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Person</p>
+  <div class="comment">
+   <span class="markdown">A researcher or collaborator appearing as sender, recipient, or named entity in the email corpus.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#affiliation" title="https://w3id.org/perkonto#affiliation">affiliation</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#attends" title="https://w3id.org/perkonto#attends">attends</a> <sup class="type-op" title="object property">op</sup>, <a href="#personName" title="https://w3id.org/perkonto#personName">person name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#worksOn" title="https://w3id.org/perkonto#worksOn">works on</a> <sup class="type-op" title="object property">op</sup>, <a href="#worksWith" title="https://w3id.org/perkonto#worksWith">works with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasAuthor" title="https://w3id.org/perkonto#hasAuthor">has author</a> <sup class="type-op" title="object property">op</sup>, <a href="#receivedBy" title="https://w3id.org/perkonto#receivedBy">received by</a> <sup class="type-op" title="object property">op</sup>, <a href="#sentBy" title="https://w3id.org/perkonto#sentBy">sent by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SubmissionID">
+  <h3>Submission ID<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#SubmissionID</p>
+  <div class="comment">
+   <span class="markdown">A composite identifier linking a specific paper to a specific submission instance at a target venue, enabling tracking of multiple parallel or sequential submissions.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#identifier" title="https://w3id.org/perkonto#identifier">identifier</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#identifies" title="https://w3id.org/perkonto#identifies">identifies</a> <sup class="type-op" title="object property">op</sup>, <a href="#inVenue" title="https://w3id.org/perkonto#inVenue">in venue</a> <sup class="type-op" title="object property">op</sup>, <a href="#movesTo" title="https://w3id.org/perkonto#movesTo">moves to</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Task">
+  <h3>Task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#Task</p>
+  <div class="comment">
+   <span class="markdown">A research task or problem formulation that datasets, methods, or metrics are applied to.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/Action" target="_blank" title="https://schema.org/Action">Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#taskDate" title="https://w3id.org/perkonto#taskDate">task date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#taskName" title="https://w3id.org/perkonto#taskName">task name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#evaluates" title="https://w3id.org/perkonto#evaluates">evaluates</a> <sup class="type-op" title="object property">op</sup>, <a href="#usedFor" title="https://w3id.org/perkonto#usedFor">used for</a> <sup class="type-op" title="object property">op</sup>, <a href="#worksOn" title="https://w3id.org/perkonto#worksOn">works on</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>, <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>, <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>, <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>, <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#attends" title="https://w3id.org/perkonto#attends">attends</a></li>
+  <li><a href="#evaluates" title="https://w3id.org/perkonto#evaluates">evaluates</a></li>
+  <li><a href="#hasAuthor" title="https://w3id.org/perkonto#hasAuthor">has author</a></li>
+  <li><a href="#hasPaperInfo" title="https://w3id.org/perkonto#hasPaperInfo">has paper info</a></li>
+  <li><a href="#identifies" title="https://w3id.org/perkonto#identifies">identifies</a></li>
+  <li><a href="#inVenue" title="https://w3id.org/perkonto#inVenue">in venue</a></li>
+  <li><a href="#movesTo" title="https://w3id.org/perkonto#movesTo">moves to</a></li>
+  <li><a href="#partOf" title="https://w3id.org/perkonto#partOf">part of</a></li>
+  <li><a href="#receivedBy" title="https://w3id.org/perkonto#receivedBy">received by</a></li>
+  <li><a href="#sentBy" title="https://w3id.org/perkonto#sentBy">sent by</a></li>
+  <li><a href="#usedFor" title="https://w3id.org/perkonto#usedFor">used for</a></li>
+  <li><a href="#uses" title="https://w3id.org/perkonto#uses">uses</a></li>
+  <li><a href="#worksOn" title="https://w3id.org/perkonto#worksOn">works on</a></li>
+  <li><a href="#worksWith" title="https://w3id.org/perkonto#worksWith">works with</a></li>
+ </ul>
+ <div class="entity" id="attends">
+  <h3>attends<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#attends</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a Meeting or Conference they attend.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/attendee" target="_blank" title="https://schema.org/attendee">attendee</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="evaluates">
+  <h3>evaluates<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#evaluates</p>
+  <div class="comment">
+   <span class="markdown">Links a Metric to the Task, Method, or Dataset it evaluates.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/isRelatedTo" target="_blank" title="https://schema.org/isRelatedTo">is Related To</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAuthor">
+  <h3>has author<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#hasAuthor</p>
+  <div class="comment">
+   <span class="markdown">Links a Paper to one of its author Persons.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/ontology/bibo/authorList" target="_blank" title="http://purl.org/ontology/bibo/authorList">author List</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPaperInfo">
+  <h3>has paper info<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#hasPaperInfo</p>
+  <div class="comment">
+   <span class="markdown">Links a Paper to its bibliographic record.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/subjectOf" target="_blank" title="https://schema.org/subjectOf">subject Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="identifies">
+  <h3>identifies<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#identifies</p>
+  <div class="comment">
+   <span class="markdown">Links a SubmissionID to the Paper it identifies.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/dc/terms/references" target="_blank" title="http://purl.org/dc/terms/references">references</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Paper" title="https://w3id.org/perkonto#Paper">Paper</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="inVenue">
+  <h3>in venue<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#inVenue</p>
+  <div class="comment">
+   <span class="markdown">Links a SubmissionID to its target Conference or Journal.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Journal" title="https://w3id.org/perkonto#Journal">Journal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="movesTo">
+  <h3>moves to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#movesTo</p>
+  <div class="comment">
+   <span class="markdown">Links a SubmissionID to its initial PaperStatus, or one PaperStatus to the next, encoding the submission lifecycle as a directed state machine.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInformedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInformedBy">was Informed By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="partOf">
+  <h3>part of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#partOf</p>
+  <div class="comment">
+   <span class="markdown">Links an Email to the MailThread it belongs to.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/dc/terms/isPartOf" target="_blank" title="http://purl.org/dc/terms/isPartOf">is Part Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="receivedBy">
+  <h3>received by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#receivedBy</p>
+  <div class="comment">
+   <span class="markdown">Links an Email to the Person(s) who received it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/recipient" target="_blank" title="https://schema.org/recipient">recipient</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="sentBy">
+  <h3>sent by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#sentBy</p>
+  <div class="comment">
+   <span class="markdown">Links an Email to the Person who sent it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/sender" target="_blank" title="https://schema.org/sender">sender</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usedFor">
+  <h3>used for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#usedFor</p>
+  <div class="comment">
+   <span class="markdown">Links a Dataset or Method to the Task it is applied to.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/isRelatedTo" target="_blank" title="https://schema.org/isRelatedTo">is Related To</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="uses">
+  <h3>uses<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#uses</p>
+  <div class="comment">
+   <span class="markdown">Links a Method to a Dataset it is trained or evaluated on.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/isRelatedTo" target="_blank" title="https://schema.org/isRelatedTo">is Related To</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="worksOn">
+  <h3>works on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#worksOn</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a Task they are working on.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/knowsAbout" target="_blank" title="https://schema.org/knowsAbout">knows About</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="worksWith">
+  <h3>works with<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#worksWith</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a Method, Dataset, or Metric they use in their research.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/knowsAbout" target="_blank" title="https://schema.org/knowsAbout">knows About</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#affiliation" title="https://w3id.org/perkonto#affiliation">affiliation</a></li>
+  <li><a href="#arxivID" title="https://w3id.org/perkonto#arxivID">arXiv ID</a></li>
+  <li><a href="#confTitle" title="https://w3id.org/perkonto#confTitle"> <span>conf Title</span> </a></li>
+  <li><a href="#confDate" title="https://w3id.org/perkonto#confDate">conference date</a></li>
+  <li><a href="#confVenue" title="https://w3id.org/perkonto#confVenue">conference venue</a></li>
+  <li><a href="#datasetName" title="https://w3id.org/perkonto#datasetName">dataset name</a></li>
+  <li><a href="#date" title="https://w3id.org/perkonto#date"> <span>date</span> </a></li>
+  <li><a href="#doi" title="https://w3id.org/perkonto#doi">DOI</a></li>
+  <li><a href="#identifier" title="https://w3id.org/perkonto#identifier"> <span>identifier</span> </a></li>
+  <li><a href="#issue" title="https://w3id.org/perkonto#issue">issue</a></li>
+  <li><a href="#journalTitle" title="https://w3id.org/perkonto#journalTitle"> <span>journal Title</span> </a></li>
+  <li><a href="#mailDate" title="https://w3id.org/perkonto#mailDate">mail date</a></li>
+  <li><a href="#mailNum" title="https://w3id.org/perkonto#mailNum">mail number</a></li>
+  <li><a href="#meetAgenda" title="https://w3id.org/perkonto#meetAgenda">meeting agenda</a></li>
+  <li><a href="#meetDate" title="https://w3id.org/perkonto#meetDate">meeting date</a></li>
+  <li><a href="#meetLink" title="https://w3id.org/perkonto#meetLink">meeting link</a></li>
+  <li><a href="#meetTime" title="https://w3id.org/perkonto#meetTime">meeting time</a></li>
+  <li><a href="#methodName" title="https://w3id.org/perkonto#methodName">method name</a></li>
+  <li><a href="#metricName" title="https://w3id.org/perkonto#metricName">metric name</a></li>
+  <li><a href="#pages" title="https://w3id.org/perkonto#pages">pages</a></li>
+  <li><a href="#paperTitle" title="https://w3id.org/perkonto#paperTitle"> <span>paper Title</span> </a></li>
+  <li><a href="#personEmail" title="https://w3id.org/perkonto#personEmail"> <span>person Email</span> </a></li>
+  <li><a href="#personName" title="https://w3id.org/perkonto#personName">person name</a></li>
+  <li><a href="#publisher" title="https://w3id.org/perkonto#publisher"> <span>publisher</span> </a></li>
+  <li><a href="#statusDate" title="https://w3id.org/perkonto#statusDate">status date</a></li>
+  <li><a href="#statusType" title="https://w3id.org/perkonto#statusType">status type</a></li>
+  <li><a href="#subject" title="https://w3id.org/perkonto#subject"> <span>subject</span> </a></li>
+  <li><a href="#taskDate" title="https://w3id.org/perkonto#taskDate">task date</a></li>
+  <li><a href="#taskName" title="https://w3id.org/perkonto#taskName">task name</a></li>
+  <li><a href="#threadID" title="https://w3id.org/perkonto#threadID">thread ID</a></li>
+  <li><a href="#url" title="https://w3id.org/perkonto#url">URL</a></li>
+  <li><a href="#version" title="https://w3id.org/perkonto#version">version</a></li>
+  <li><a href="#volume" title="https://w3id.org/perkonto#volume">volume</a></li>
+ </ul>
+ <div class="entity" id="affiliation">
+  <h3>affiliation<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#affiliation</p>
+  <div class="comment">
+   <span class="markdown">The institutional affiliation of a Person.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/affiliation" target="_blank" title="https://schema.org/affiliation">affiliation</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="arxivID">
+  <h3>arXiv ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#arxivID</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="confTitle">
+  <h3>conf Title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#confTitle</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="confDate">
+  <h3>conference date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#confDate</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/startDate" target="_blank" title="https://schema.org/startDate">start Date</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="confVenue">
+  <h3>conference venue<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#confVenue</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/location" target="_blank" title="https://schema.org/location">location</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Conference" title="https://w3id.org/perkonto#Conference">Conference</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="datasetName">
+  <h3>dataset name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#datasetName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/name" target="_blank" title="https://schema.org/name">name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="date">
+  <h3>date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#date</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/datePublished" target="_blank" title="https://schema.org/datePublished">date Published</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="doi">
+  <h3>DOI<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#doi</p>
+  <div class="comment">
+   <span class="markdown">Digital Object Identifier for a published paper.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/ontology/bibo/doi" target="_blank" title="http://purl.org/ontology/bibo/doi">doi</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="identifier">
+  <h3>identifier<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#identifier</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SubmissionID" title="https://w3id.org/perkonto#SubmissionID">Submission ID</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="issue">
+  <h3>issue<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#issue</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/ontology/bibo/issue" target="_blank" title="http://purl.org/ontology/bibo/issue">issue</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="journalTitle">
+  <h3>journal Title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#journalTitle</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="mailDate">
+  <h3>mail date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#mailDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which the Email was sent.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/dateCreated" target="_blank" title="https://schema.org/dateCreated">date Created</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="mailNum">
+  <h3>mail number<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#mailNum</p>
+  <div class="comment">
+   <span class="markdown">A unique integer identifier for an Email.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Email" title="https://w3id.org/perkonto#Email">Email</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="meetAgenda">
+  <h3>meeting agenda<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#meetAgenda</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/description" target="_blank" title="https://schema.org/description">description</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="meetDate">
+  <h3>meeting date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#meetDate</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/startDate" target="_blank" title="https://schema.org/startDate">start Date</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="meetLink">
+  <h3>meeting link<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#meetLink</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/url" target="_blank" title="https://schema.org/url">url</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="meetTime">
+  <h3>meeting time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#meetTime</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Meeting" title="https://w3id.org/perkonto#Meeting">Meeting</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#time" target="_blank" title="http://www.w3.org/2001/XMLSchema#time">time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="methodName">
+  <h3>method name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#methodName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/name" target="_blank" title="https://schema.org/name">name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Method" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="metricName">
+  <h3>metric name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#metricName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/name" target="_blank" title="https://schema.org/name">name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Metric" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="pages">
+  <h3>pages<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#pages</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/ontology/bibo/pages" target="_blank" title="http://purl.org/ontology/bibo/pages">pages</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="paperTitle">
+  <h3>paper Title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#paperTitle</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="personEmail">
+  <h3>person Email<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#personEmail</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="personName">
+  <h3>person name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#personName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Person" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="publisher">
+  <h3>publisher<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#publisher</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="statusDate">
+  <h3>status date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#statusDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which this status was recorded.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#generatedAtTime" target="_blank" title="http://www.w3.org/ns/prov#generatedAtTime">generated At Time</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="statusType">
+  <h3>status type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#statusType</p>
+  <div class="comment">
+   <span class="markdown">The submission state label, e.g. 'Submitted', 'Under Review', 'Revision Required', 'Accepted', 'Rejected'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperStatus" title="https://w3id.org/perkonto#PaperStatus">Paper Status</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="subject">
+  <h3>subject<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#subject</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="taskDate">
+  <h3>task date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#taskDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which the task was assigned or initiated.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/startDate" target="_blank" title="https://schema.org/startDate">start Date</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="taskName">
+  <h3>task name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#taskName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/name" target="_blank" title="https://schema.org/name">name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="threadID">
+  <h3>thread ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#threadID</p>
+  <div class="comment">
+   <span class="markdown">A unique string identifier for a MailThread.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MailThread" title="https://w3id.org/perkonto#MailThread">Mail Thread</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="url">
+  <h3>URL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#url</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://schema.org/url" target="_blank" title="https://schema.org/url">url</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="version">
+  <h3>version<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#version</p>
+  <div class="comment">
+   <span class="markdown">Version string of the manuscript (e.g. arXiv v2).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="volume">
+  <h3>volume<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto#volume</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/ontology/bibo/volume" target="_blank" title="http://purl.org/ontology/bibo/volume">volume</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PaperBib" title="https://w3id.org/perkonto#PaperBib">Paper Bibliographic Record</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

@@ -1,0 +1,737 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/perkonto/grav"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/perkonto/grav">
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="ivoa" IRI="http://purl.org/astronomy/ont/object-types#"/>
+    <Prefix name="perk" IRI="https://w3id.org/perkonto#"/>
+    <Prefix name="qudt" IRI="http://qudt.org/schema/qudt/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="schema" IRI="https://schema.org/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Import>https://w3id.org/perkonto</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal xml:lang="en">A domain extension of PERKOnto for the professional knowledge of a gravitational-wave / relativity physicist as extractable from personal email communications. It reuses the PERKOnto backbone and specialises the scientific layer into gravitational-physics concepts (AstrophysicalSource/ObservationalData/AnalysisMethod/PhysicalParameter/ResearchProblem) plus supporting concepts (Detector, WaveformModel, AnalysisPipeline).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">PERKOnto-Grav: Gravitational Physics extension of PERKOnto</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0000968"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ivoa:AstrObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Method"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Metric"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnalysisMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnalysisPipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AstrophysicalSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Detector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObservationalData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResearchProblem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaveformModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#analyses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliedToProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#investigates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recordedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesWaveformModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#catalogName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#detectorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#methodName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#parameterName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#parameterUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#parameterValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pipelineName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pipelineVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sourceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sourceType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#waveformModelName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AnalysisMethod"/>
+        <Class abbreviatedIRI="perk:Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnalysisPipeline"/>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AstrophysicalSource"/>
+        <Class abbreviatedIRI="ivoa:AstrObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AstrophysicalSource"/>
+        <Class abbreviatedIRI="perk:Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detector"/>
+        <Class abbreviatedIRI="obo:OBI_0000968"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservationalData"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservationalData"/>
+        <Class abbreviatedIRI="perk:Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalParameter"/>
+        <Class abbreviatedIRI="qudt:Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalParameter"/>
+        <Class abbreviatedIRI="perk:Metric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchProblem"/>
+        <Class abbreviatedIRI="perk:Task"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AnalysisMethod"/>
+        <Class IRI="#AnalysisPipeline"/>
+        <Class IRI="#AstrophysicalSource"/>
+        <Class IRI="#Detector"/>
+        <Class IRI="#ObservationalData"/>
+        <Class IRI="#PhysicalParameter"/>
+        <Class IRI="#ResearchProblem"/>
+        <Class IRI="#WaveformModel"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#analyses"/>
+        <ObjectProperty abbreviatedIRI="perk:uses"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <ObjectProperty abbreviatedIRI="perk:usedFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesMethod"/>
+        <ObjectProperty abbreviatedIRI="perk:worksWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#investigates"/>
+        <ObjectProperty abbreviatedIRI="perk:worksOn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#measures"/>
+        <ObjectProperty abbreviatedIRI="perk:evaluates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#studies"/>
+        <ObjectProperty abbreviatedIRI="perk:worksWith"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#analyses"/>
+        <Class IRI="#AnalysisMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <ObjectUnionOf>
+            <Class IRI="#AnalysisMethod"/>
+            <Class IRI="#AstrophysicalSource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesMethod"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implementedIn"/>
+        <Class IRI="#AnalysisMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#investigates"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#PhysicalParameter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#recordedBy"/>
+        <Class IRI="#ObservationalData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studies"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesWaveformModel"/>
+        <Class IRI="#AnalysisMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#analyses"/>
+        <ObjectUnionOf>
+            <Class IRI="#AstrophysicalSource"/>
+            <Class IRI="#ObservationalData"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <Class IRI="#ResearchProblem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesMethod"/>
+        <Class IRI="#AnalysisMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implementedIn"/>
+        <Class IRI="#AnalysisPipeline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#investigates"/>
+        <Class IRI="#ResearchProblem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <ObjectUnionOf>
+            <Class IRI="#AnalysisMethod"/>
+            <Class IRI="#AstrophysicalSource"/>
+            <Class IRI="#ResearchProblem"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#recordedBy"/>
+        <Class IRI="#Detector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#studies"/>
+        <Class IRI="#AstrophysicalSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesWaveformModel"/>
+        <Class IRI="#WaveformModel"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#catalogName"/>
+        <DataProperty abbreviatedIRI="perk:datasetName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#methodName"/>
+        <DataProperty abbreviatedIRI="perk:methodName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#parameterName"/>
+        <DataProperty abbreviatedIRI="perk:metricName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pipelineVersion"/>
+        <DataProperty abbreviatedIRI="perk:version"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sourceName"/>
+        <DataProperty abbreviatedIRI="perk:datasetName"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#catalogName"/>
+        <Class IRI="#ObservationalData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#detectorName"/>
+        <Class IRI="#Detector"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#methodName"/>
+        <Class IRI="#AnalysisMethod"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#parameterName"/>
+        <Class IRI="#PhysicalParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#parameterUnit"/>
+        <Class IRI="#PhysicalParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#parameterValue"/>
+        <Class IRI="#PhysicalParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pipelineName"/>
+        <Class IRI="#AnalysisPipeline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pipelineVersion"/>
+        <Class IRI="#AnalysisPipeline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sourceName"/>
+        <Class IRI="#AstrophysicalSource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sourceType"/>
+        <Class IRI="#AstrophysicalSource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#waveformModelName"/>
+        <Class IRI="#WaveformModel"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#catalogName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#detectorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#methodName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#parameterName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#parameterUnit"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#parameterValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pipelineName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pipelineVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sourceName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sourceType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#waveformModelName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnalysisMethod</IRI>
+        <Literal xml:lang="en">A technique applied to sources/data, e.g. matched filtering, Bayesian parameter estimation, numerical relativity simulation, unmodeled burst search.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnalysisMethod</IRI>
+        <Literal xml:lang="en">Analysis Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#AnalysisMethod</IRI>
+        <Literal xml:lang="en">Grounded in perk:Method only; no single widely-adopted community class for a GW analysis method exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnalysisPipeline</IRI>
+        <Literal xml:lang="en">A software pipeline used to run an analysis method, e.g. PyCBC, gstLAL, Bilby, LALSuite.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnalysisPipeline</IRI>
+        <Literal xml:lang="en">Analysis Pipeline / Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#AnalysisPipeline</IRI>
+        <Literal xml:lang="en">Grounded in schema:SoftwareApplication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AstrophysicalSource</IRI>
+        <Literal xml:lang="en">The physical system emitting gravitational radiation under study, e.g. a binary black hole, binary neutron star, supernova, or continuous-wave source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AstrophysicalSource</IRI>
+        <Literal xml:lang="en">Astrophysical Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#AstrophysicalSource</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Dataset for the PERKOnto object-of-study role; ivoa:AstrObject (IVOA Ontology of Astronomical Object Types, &apos;Astronomical Object&apos;) for the astronomy standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Detector</IRI>
+        <Literal xml:lang="en">A gravitational-wave detector or observatory that records data, e.g. LIGO Hanford, LIGO Livingston, Virgo, KAGRA, LISA.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Detector</IRI>
+        <Literal xml:lang="en">Detector / Observatory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#Detector</IRI>
+        <Literal xml:lang="en">Grounded in obo:OBI_0000968 (OBI &apos;device&apos;): a detector is an instrument that produces data; OBI device is the closest cross-domain standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ObservationalData</IRI>
+        <Literal xml:lang="en">A concrete analysed data artifact: detector strain segments, an event catalog (e.g. GWTC), or a numerical-relativity waveform catalog.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ObservationalData</IRI>
+        <Literal xml:lang="en">Observational / Simulation Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#ObservationalData</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Dataset and obo:IAO_0000030 (IAO &apos;information content entity&apos;) for the data-artifact sense.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalParameter</IRI>
+        <Literal xml:lang="en">A measured or inferred physical quantity, e.g. component masses, spins, luminosity distance, signal-to-noise ratio, false-alarm rate, sky localisation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalParameter</IRI>
+        <Literal xml:lang="en">Physical Parameter / Observable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#PhysicalParameter</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Metric for the PERKOnto evaluative role; qudt:Quantity (QUDT) for the physical-quantity standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">A scientific question the group works on, e.g. &apos;test general relativity in the strong-field regime&apos;, &apos;measure the Hubble constant from standard sirens&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">Research Problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">Grounded in perk:Task only.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WaveformModel</IRI>
+        <Literal xml:lang="en">A signal model / template family used in analysis, e.g. effective-one-body (EOB), phenomenological (IMRPhenom), surrogate, or numerical-relativity template banks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WaveformModel</IRI>
+        <Literal xml:lang="en">Waveform Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#analyses</IRI>
+        <Literal xml:lang="en">Links an AnalysisMethod to the ObservationalData or AstrophysicalSource it is applied to. Specialises perk:uses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#analyses</IRI>
+        <Literal xml:lang="en">analyses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#appliedToProblem</IRI>
+        <Literal xml:lang="en">Links an AnalysisMethod or AstrophysicalSource to the ResearchProblem it addresses. Specialises perk:usedFor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliedToProblem</IRI>
+        <Literal xml:lang="en">applied to problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#appliesMethod</IRI>
+        <Literal xml:lang="en">Links a Person to an AnalysisMethod they use. Specialises perk:worksWith.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliesMethod</IRI>
+        <Literal xml:lang="en">applies method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#catalogName</IRI>
+        <Literal xml:lang="en">Name of an event or waveform catalog, e.g. &apos;GWTC-3&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catalogName</IRI>
+        <Literal xml:lang="en">catalog name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#detectorName</IRI>
+        <Literal xml:lang="en">detector name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#implementedIn</IRI>
+        <Literal xml:lang="en">Links an AnalysisMethod to the AnalysisPipeline used to run it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#implementedIn</IRI>
+        <Literal xml:lang="en">implemented in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#investigates</IRI>
+        <Literal xml:lang="en">Links a Person to a ResearchProblem they work on. Specialises perk:worksOn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#investigates</IRI>
+        <Literal xml:lang="en">investigates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measures</IRI>
+        <Literal xml:lang="en">Links a PhysicalParameter to the AstrophysicalSource, AnalysisMethod, or ResearchProblem it characterises. Specialises perk:evaluates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measures</IRI>
+        <Literal xml:lang="en">measures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#methodName</IRI>
+        <Literal xml:lang="en">method name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#parameterName</IRI>
+        <Literal xml:lang="en">Name of the physical parameter, e.g. &apos;chirp mass&apos;, &apos;SNR&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameterName</IRI>
+        <Literal xml:lang="en">parameter name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#parameterUnit</IRI>
+        <Literal xml:lang="en">Unit of the parameter, e.g. &apos;solar mass&apos;, &apos;Mpc&apos;, &apos;Hz&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameterUnit</IRI>
+        <Literal xml:lang="en">parameter unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameterValue</IRI>
+        <Literal xml:lang="en">parameter value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pipelineName</IRI>
+        <Literal xml:lang="en">pipeline name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pipelineVersion</IRI>
+        <Literal xml:lang="en">pipeline version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#recordedBy</IRI>
+        <Literal xml:lang="en">Links ObservationalData to the Detector that recorded it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#recordedBy</IRI>
+        <Literal xml:lang="en">recorded by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sourceName</IRI>
+        <Literal xml:lang="en">Designation of the astrophysical source / event, e.g. &apos;GW150914&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sourceName</IRI>
+        <Literal xml:lang="en">source name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sourceType</IRI>
+        <Literal xml:lang="en">Category of source, e.g. &apos;BBH&apos;, &apos;BNS&apos;, &apos;NSBH&apos;, &apos;supernova&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sourceType</IRI>
+        <Literal xml:lang="en">source type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#studies</IRI>
+        <Literal xml:lang="en">Links a Person to an AstrophysicalSource they investigate. Specialises perk:worksWith.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#studies</IRI>
+        <Literal xml:lang="en">studies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesWaveformModel</IRI>
+        <Literal xml:lang="en">Links an AnalysisMethod to the WaveformModel / template family it uses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usesWaveformModel</IRI>
+        <Literal xml:lang="en">uses waveform model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#waveformModelName</IRI>
+        <Literal xml:lang="en">waveform model name</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

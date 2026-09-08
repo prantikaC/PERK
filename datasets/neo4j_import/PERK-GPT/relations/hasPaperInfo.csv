@@ -1,0 +1,17 @@
+:START_ID,:END_ID,:TYPE,context,source
+pa42,pb1,hasPaperInfo,You will receive a notification with the anticipated publication date and digital object identifier (DOI) once the online version is available.,MAILDE87S4A0
+pa42,pb1,hasPaperInfo,"scheduled for publication in Volume 16, Issue 4 (September 2021) of the ACM Journal on Computing and Cultural Heritage.",MAILQ2B7SZMJ
+pa43,pb1,hasPaperInfo,once the DOI and URL are provided,MAIL7S2DFN4J
+pa68,pb1,hasPaperInfo,"JOCCH, 16(2), 105-128.",MAILE1R92QMB
+pa69,pb1,hasPaperInfo,"Journal of Documentation, 79(1), 48-71.",MAILE1R92QMB
+pa70,pb1,hasPaperInfo,"ACM Computing Surveys, 56(4), Article 78.",MAILE1R92QMB
+pa101,pb1,hasPaperInfo,submitted to the ACM Journal on Computing and Cultural Heritage (JOCCH),MAILWGQ0BZ68
+pa118,pb1,hasPaperInfo,"Please use the ACM JOCCH LaTeX template (latest version, available at: https://dl.acm.org/journal/jocch/author-guidelines)",MAIL9YT7X4SB
+pa122,pb1,hasPaperInfo,Your article remains scheduled for online publication in the August 2023 issue of JOCCH.,MAIL7NM3LWH2
+pa140,pb1,hasPaperInfo,"“Digitizing Heritage: Protocol Challenges in Southeast Asian Archives,” Journal of Documentation, 2021.",MAILNQ93B7FL
+pa141,pb1,hasPaperInfo,"“Frameworks for Data Reuse in African Cultural Heritage Projects,” ACM JOCCH, 2022.",MAILNQ93B7FL
+pa142,pb1,hasPaperInfo,- Submission Portal: https://acl2024.org/submissions/0483,MAILE8WPG5RV
+pa142,pb1,hasPaperInfo,reviewer comments and meta-review available on your submission portal at https://acl2024.org/submissions/0483.,MAILCB38Y4ZT
+pa146,pb1,hasPaperInfo,"the newly published peer-reviewed source (“Chattopadhyay et al., JDoc 2023”)",MAILTX5ZCY80
+pa152,pb2,hasPaperInfo,"Supplementary Historical Newspapers Dataset. Zenodo. https://doi.org/10.5281/zenodo.xxxxxx [dataset, embargo until DD/MM/YYYY].",MAILA5B3KZJH
+pa166,pb1,hasPaperInfo,You may track the status of your manuscript by logging into your account on the JOCCH submission portal at https://mc.manuscriptcentral.com/jocch.,MAIL18ZN4HJV

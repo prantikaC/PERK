@@ -4,6 +4,69 @@ RULES:
 2. Acronyms matching full expansions are a MATCH.
 3. STRICT REJECTION: Contradicting dates or emails means NO_MATCH.
 4. Sub-components are NO_MATCH.
-Respond ONLY with 'MATCH' or 'NO_MATCH'.
+5. A recurring venue/series referenced with different years or editions (e.g.
+   "ACL 2023" vs "ACL 2024") refers to different instances: NO_MATCH, even
+   though the base name matches. A bare series name with no year/edition
+   (e.g. "ACL") is NOT enough by itself to match a specific dated instance
+   (e.g. "ACL 2023"): NO_MATCH unless the surrounding context confirms they
+   refer to the same edition.
+6. A title/honorific prefix (Dr., Prof., Mr., Ms., Mrs., ...) on one side is
+   NOT by itself evidence of a different person. If the remaining name
+   component (a shared surname, or a shared given+surname) matches and the
+   surrounding context is consistent (same project, institution, topic, or
+   collaborators), treat it as a likely MATCH. But a bare title+surname
+   alone, with no corroborating context, is NOT enough on its own -- the
+   corpus can contain multiple distinct people who share a surname, so look
+   for a genuine contextual anchor (an email address, a shared institution,
+   an overlapping project/topic) before concluding a match rather than
+   matching on the surname alone.
+Respond ONLY with 'MATCH <confidence>' or 'NO_MATCH <confidence>', where <confidence>
+is your own confidence in that verdict as a number between 0 and 1 (e.g. "MATCH 0.92",
+"NO_MATCH 0.7"). Use less than 1.0 whenever the evidence is incomplete, indirect, or
+you had to infer rather than directly confirm the match/mismatch.
 
 EXAMPLES:
+
+Entity 1: ACM JOCCH | Context: The camera-ready version is due next month for ACM JOCCH.
+Entity 2: ACM Journal on Computing and Cultural Heritage | Context: We are pleased to inform you that your manuscript has been accepted by the ACM Journal on Computing and Cultural Heritage.
+Output: MATCH 0.95
+
+Entity 1: ACM JOCCH | Context: Please format your paper according to the ACM JOCCH author guidelines.
+Entity 2: ACM Journal on Computing and Cultural Heritage (ACM JOCCH) | Context: This submission has been reviewed for the ACM Journal on Computing and Cultural Heritage (ACM JOCCH).
+Output: MATCH 0.97
+
+Entity 1: ACM Journal on Computing and Cultural Heritage | Context: We submitted the revised manuscript to the ACM Journal on Computing and Cultural Heritage.
+Entity 2: ACM Journal on Computing and Cultural Heritage (ACM JOCCH) | Context: The editorial board of the ACM Journal on Computing and Cultural Heritage (ACM JOCCH) has reached a decision.
+Output: MATCH 0.97
+
+Entity 1: Accepted for presentation | Context: Your paper has been accepted for presentation at the workshop.
+Entity 2: Accepted | Context: We are happy to report that the paper's status is now Accepted.
+Output: MATCH 0.85
+
+Entity 1: Conditionally accepted | Context: The submission is conditionally accepted pending the requested changes.
+Entity 2: Accepted with minor revision | Context: The paper was accepted with minor revision required before camera-ready.
+Output: MATCH 0.85
+
+Entity 1: Accepted | Context: The final decision on the manuscript is Accepted, no further changes needed.
+Entity 2: Conditionally accepted | Context: The submission is conditionally accepted pending the requested changes.
+Output: NO_MATCH 0.8
+
+Entity 1: NER | Context: We fine-tuned the model for NER on the historical corpus.
+Entity 2: Named Entity Recognition | Context: The pipeline includes a Named Entity Recognition step over the OCR output.
+Output: MATCH 0.93
+
+Entity 1: ACL 2023 | Context: The paper was submitted to ACL 2023.
+Entity 2: ACL 2024 | Context: This work extends our ACL 2024 submission with additional experiments.
+Output: NO_MATCH 0.9
+
+Entity 1: ACL | Context: The team has a strong publication record at ACL over the years.
+Entity 2: ACL 2023 | Context: The paper was submitted to ACL 2023.
+Output: NO_MATCH 0.75
+
+Entity 1: Ananya Chatterjee | Context: ananya.chatterjee@ox.ac.uk hasOwner Ananya Chatterjee. The meeting on April 8th suits my schedule as well.
+Entity 2: Dr Chatterjee | Context: On behalf of the collaborative research teams at the Indian Association for the Cultivation of Science (IACS), Stanford University, and the University of Oxford, I am pleased to confirm that all requisite institutional approvals for our JCDL 2022-related press release are in place.
+Output: MATCH 0.8
+
+Entity 1: Fiona Reyes | Context: Fiona will lead the dataset annotation effort for the new sentiment corpus starting next week.
+Entity 2: Dr. Reyes | Context: Dr. Reyes chaired the review committee for the venue's best paper award this year.
+Output: NO_MATCH 0.65

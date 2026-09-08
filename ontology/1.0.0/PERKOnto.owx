@@ -7,7 +7,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/perkonto"
      versionIRI="https://w3id.org/perkonto/1.0.0">
-    <Prefix name="" IRI="https://w3id.org/perkonto#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -24,19 +23,19 @@
     <Import>http://xmlns.com/foaf/0.1/</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Debarshi Kumar Sanyal</Literal>
+        <Literal>Anonymous Author</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Partha Pratim Das</Literal>
+        <Literal>Anonymous Author</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Prantika Chakraborty</Literal>
+        <Literal>Anonymous Author</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <Literal>Srijoni Majumdar</Literal>
+        <Literal>Anonymous Author</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:description"/>
@@ -52,12 +51,39 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>https://github.com/prantikaC/PERK</IRI>
+        <IRI>urn:withheld-for-review</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal>1.0.0</Literal>
     </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:AcademicArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="bibo:Journal"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Group"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
     <Declaration>
         <Class abbreviatedIRI="schema:Action"/>
     </Declaration>
@@ -92,6 +118,9 @@
         <Class IRI="#Email"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EmailID"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Journal"/>
     </Declaration>
     <Declaration>
@@ -105,6 +134,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Metric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Paper"/>
@@ -125,6 +157,24 @@
         <Class IRI="#Task"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dcterms:isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dcterms:references"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="bibo:authorList"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:affiliation"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="schema:attendee"/>
     </Declaration>
     <Declaration>
@@ -137,6 +187,9 @@
         <ObjectProperty abbreviatedIRI="schema:knowsAbout"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:memberOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="schema:recipient"/>
     </Declaration>
     <Declaration>
@@ -144,6 +197,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="schema:subjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affiliation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#attends"/>
@@ -155,6 +211,9 @@
         <ObjectProperty IRI="#hasAuthor"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasOwner"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasPaperInfo"/>
     </Declaration>
     <Declaration>
@@ -162,6 +221,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#inVenue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memberOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#movesTo"/>
@@ -188,7 +250,22 @@
         <ObjectProperty IRI="#worksWith"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="schema:affiliation"/>
+        <DataProperty abbreviatedIRI="bibo:doi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:issue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:pages"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="bibo:volume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="prov:generatedAtTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="foaf:name"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="schema:dateCreated"/>
@@ -212,9 +289,6 @@
         <DataProperty abbreviatedIRI="schema:url"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#affiliation"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#arxivID"/>
     </Declaration>
     <Declaration>
@@ -227,6 +301,9 @@
         <DataProperty IRI="#confVenue"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#context"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#datasetName"/>
     </Declaration>
     <Declaration>
@@ -234,6 +311,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#doi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eID"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#identifier"/>
@@ -263,10 +343,22 @@
         <DataProperty IRI="#meetTime"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#mergeConfidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mergedFrom"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#methodName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#metricName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#orgLoc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#orgName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#pages"/>
@@ -282,6 +374,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#publisher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#role"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#source"/>
@@ -302,6 +397,9 @@
         <DataProperty IRI="#taskName"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#teamName"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#threadID"/>
     </Declaration>
     <Declaration>
@@ -314,7 +412,16 @@
         <DataProperty IRI="#volume"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
@@ -324,66 +431,6 @@
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:time"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="bibo:issue"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bibo:Conference"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="bibo:authorList"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bibo:AcademicArticle"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="bibo:Journal"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="prov:Activity"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="foaf:name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="bibo:pages"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="dcterms:references"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="bibo:doi"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="prov:Entity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="dcterms:isPartOf"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="bibo:volume"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="prov:Agent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Person"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="prov:generatedAtTime"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Conference"/>
@@ -426,6 +473,14 @@
         <Class abbreviatedIRI="schema:SoftwareApplication"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Paper"/>
         <Class abbreviatedIRI="bibo:AcademicArticle"/>
     </SubClassOf>
@@ -449,22 +504,37 @@
         <Class IRI="#Task"/>
         <Class abbreviatedIRI="schema:Action"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Team"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Team"/>
+        <Class abbreviatedIRI="foaf:Group"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Conference"/>
         <Class IRI="#Dataset"/>
         <Class IRI="#Email"/>
+        <Class IRI="#EmailID"/>
         <Class IRI="#Journal"/>
         <Class IRI="#MailThread"/>
         <Class IRI="#Meeting"/>
         <Class IRI="#Method"/>
         <Class IRI="#Metric"/>
+        <Class IRI="#Organization"/>
         <Class IRI="#Paper"/>
         <Class IRI="#PaperBib"/>
         <Class IRI="#PaperStatus"/>
         <Class IRI="#Person"/>
         <Class IRI="#SubmissionID"/>
         <Class IRI="#Task"/>
+        <Class IRI="#Team"/>
     </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#affiliation"/>
+        <ObjectProperty abbreviatedIRI="schema:affiliation"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#attends"/>
         <ObjectProperty abbreviatedIRI="schema:attendee"/>
@@ -484,6 +554,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#identifies"/>
         <ObjectProperty abbreviatedIRI="dcterms:references"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#memberOf"/>
+        <ObjectProperty abbreviatedIRI="schema:memberOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#movesTo"/>
@@ -518,6 +592,13 @@
         <ObjectProperty abbreviatedIRI="schema:knowsAbout"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affiliation"/>
+        <ObjectUnionOf>
+            <Class IRI="#Person"/>
+            <Class IRI="#Team"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#attends"/>
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
@@ -530,6 +611,10 @@
         <Class IRI="#Paper"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOwner"/>
+        <Class IRI="#EmailID"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPaperInfo"/>
         <Class IRI="#Paper"/>
     </ObjectPropertyDomain>
@@ -540,6 +625,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#inVenue"/>
         <Class IRI="#SubmissionID"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memberOf"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#movesTo"/>
@@ -580,6 +669,14 @@
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#affiliation"/>
+        <ObjectUnionOf>
+            <Class IRI="#Conference"/>
+            <Class IRI="#Journal"/>
+            <Class IRI="#Organization"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#attends"/>
         <ObjectUnionOf>
             <Class IRI="#Conference"/>
@@ -599,6 +696,13 @@
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOwner"/>
+        <ObjectUnionOf>
+            <Class IRI="#Person"/>
+            <Class IRI="#Team"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPaperInfo"/>
         <Class IRI="#PaperBib"/>
     </ObjectPropertyRange>
@@ -612,6 +716,10 @@
             <Class IRI="#Conference"/>
             <Class IRI="#Journal"/>
         </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memberOf"/>
+        <Class IRI="#Team"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#movesTo"/>
@@ -649,10 +757,6 @@
             <Class IRI="#Metric"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#affiliation"/>
-        <DataProperty abbreviatedIRI="schema:affiliation"/>
-    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#confDate"/>
         <DataProperty abbreviatedIRI="schema:startDate"/>
@@ -702,6 +806,14 @@
         <DataProperty abbreviatedIRI="schema:name"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#orgLoc"/>
+        <DataProperty abbreviatedIRI="schema:location"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#orgName"/>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#pages"/>
         <DataProperty abbreviatedIRI="bibo:pages"/>
     </SubDataPropertyOf>
@@ -722,6 +834,10 @@
         <DataProperty abbreviatedIRI="schema:name"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#teamName"/>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#url"/>
         <DataProperty abbreviatedIRI="schema:url"/>
     </SubDataPropertyOf>
@@ -729,10 +845,6 @@
         <DataProperty IRI="#volume"/>
         <DataProperty abbreviatedIRI="bibo:volume"/>
     </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#affiliation"/>
-        <Class IRI="#Person"/>
-    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#arxivID"/>
         <Class IRI="#PaperBib"/>
@@ -756,6 +868,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#doi"/>
         <Class IRI="#PaperBib"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#eID"/>
+        <Class IRI="#EmailID"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#identifier"/>
@@ -798,6 +914,14 @@
         <Class IRI="#Metric"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#orgLoc"/>
+        <Class IRI="#Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#orgName"/>
+        <Class IRI="#Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#pages"/>
         <Class IRI="#PaperBib"/>
     </DataPropertyDomain>
@@ -822,6 +946,10 @@
         <Class IRI="#Task"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#teamName"/>
+        <Class IRI="#Team"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#threadID"/>
         <Class IRI="#MailThread"/>
     </DataPropertyDomain>
@@ -837,10 +965,6 @@
         <DataProperty IRI="#volume"/>
         <Class IRI="#PaperBib"/>
     </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#affiliation"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#arxivID"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -868,6 +992,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#doi"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#eID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#issue"/>
@@ -902,11 +1030,27 @@
         <Datatype abbreviatedIRI="xsd:time"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#mergeConfidence"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mergedFrom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#methodName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#metricName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#orgLoc"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#orgName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -930,6 +1074,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#role"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#statusDate"/>
         <Datatype abbreviatedIRI="xsd:date"/>
     </DataPropertyRange>
@@ -947,6 +1095,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#taskName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#teamName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -997,6 +1149,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmailID</IRI>
+        <Literal xml:lang="en">An email address/account identity, distinct from the Email  message, that sends or receives Email and is owned by a Person or Team.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EmailID</IRI>
+        <Literal xml:lang="en">Email ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Journal</IRI>
         <Literal xml:lang="en">An academic journal to which a paper has been submitted  or published.</Literal>
     </AnnotationAssertion>
@@ -1044,6 +1206,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Metric</IRI>
         <Literal xml:lang="en">Metric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en">An institution, university, or company that a Person or  Team is affiliated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en">Organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1107,8 +1279,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Team</IRI>
+        <Literal xml:lang="en">A group of Persons collaborating as a unit, e.g. a research  group or project team.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Team</IRI>
+        <Literal xml:lang="en">Team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#affiliation</IRI>
-        <Literal xml:lang="en">The institutional affiliation of a Person.</Literal>
+        <Literal xml:lang="en">Links a Person or Team to the Organization, Journal, or  Conference they are affiliated with.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1141,6 +1323,16 @@
         <Literal xml:lang="en">conference venue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#context</IRI>
+        <Literal xml:lang="en">A free-text quote or paraphrase from the source email  substantiating the relationship it is attached to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#context</IRI>
+        <Literal xml:lang="en">context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#datasetName</IRI>
         <Literal xml:lang="en">dataset name</Literal>
@@ -1154,6 +1346,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#doi</IRI>
         <Literal xml:lang="en">DOI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eID</IRI>
+        <Literal xml:lang="en">The email address string identifying this EmailID.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eID</IRI>
+        <Literal xml:lang="en">email ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1174,6 +1376,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasAuthor</IRI>
         <Literal xml:lang="en">has author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOwner</IRI>
+        <Literal xml:lang="en">Links an EmailID to the Person or Team who owns it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOwner</IRI>
+        <Literal xml:lang="en">has owner</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1251,6 +1463,36 @@
         <Literal xml:lang="en">meeting time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#memberOf</IRI>
+        <Literal xml:lang="en">Links a Person to the Team they are a member of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#memberOf</IRI>
+        <Literal xml:lang="en">member of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mergeConfidence</IRI>
+        <Literal xml:lang="en">Confidence score for an entity-resolution merge  decision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mergeConfidence</IRI>
+        <Literal xml:lang="en">merge confidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mergedFrom</IRI>
+        <Literal xml:lang="en">Record of the raw candidate node identifier(s) fused into  this canonical entity during entity resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mergedFrom</IRI>
+        <Literal xml:lang="en">merged from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#methodName</IRI>
         <Literal xml:lang="en">method name</Literal>
@@ -1269,6 +1511,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#movesTo</IRI>
         <Literal xml:lang="en">moves to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#orgLoc</IRI>
+        <Literal xml:lang="en">organization location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#orgName</IRI>
+        <Literal xml:lang="en">organization name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1299,6 +1551,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#receivedBy</IRI>
         <Literal xml:lang="en">received by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#role</IRI>
+        <Literal xml:lang="en">The role held (e.g. PhD Scholar, Professor) as attested by a  memberOf or affiliation relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#role</IRI>
+        <Literal xml:lang="en">role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1344,6 +1606,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#taskName</IRI>
         <Literal xml:lang="en">task name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#teamName</IRI>
+        <Literal xml:lang="en">team name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1419,5 +1686,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/perkonto/chem"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/perkonto/chem">
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="ivoa" IRI="http://purl.org/astronomy/ont/object-types#"/>
+    <Prefix name="perk" IRI="https://w3id.org/perkonto#"/>
+    <Prefix name="qudt" IRI="http://qudt.org/schema/qudt/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="schema" IRI="https://schema.org/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Import>https://w3id.org/perkonto</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal xml:lang="en">A domain extension of PERKOnto for the professional knowledge of a computational/theoretical chemist as extractable from personal email communications. It reuses the PERKOnto communication, actor, venue and publication-lifecycle backbone and specialises the scientific layer (Dataset/Method/Metric/Task) into chemistry concepts (ChemicalSystem/ComputationalMethod/Observable/ResearchProblem) plus supporting concepts (ForceField, Software, LevelOfTheory).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">PERKOnto-Chem: Computational Chemistry extension of PERKOnto</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:CHEBI_24431"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Method"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Metric"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputationalMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForceField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LevelOfTheory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResearchProblem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliedToProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atLevelOfTheory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#investigates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#quantifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#simulates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesForceField"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#forceFieldName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#methodName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#observableName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#observableUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#observableValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#smiles"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#softwareName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#softwareVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#systemName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ChemicalSystem"/>
+        <Class abbreviatedIRI="obo:CHEBI_24431"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalSystem"/>
+        <Class abbreviatedIRI="perk:Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputationalMethod"/>
+        <Class abbreviatedIRI="perk:Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observable"/>
+        <Class abbreviatedIRI="qudt:Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observable"/>
+        <Class abbreviatedIRI="perk:Metric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchProblem"/>
+        <Class abbreviatedIRI="perk:Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class abbreviatedIRI="schema:SoftwareApplication"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ChemicalSystem"/>
+        <Class IRI="#ComputationalMethod"/>
+        <Class IRI="#ForceField"/>
+        <Class IRI="#LevelOfTheory"/>
+        <Class IRI="#Observable"/>
+        <Class IRI="#ResearchProblem"/>
+        <Class IRI="#Software"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <ObjectProperty abbreviatedIRI="perk:usedFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesMethod"/>
+        <ObjectProperty abbreviatedIRI="perk:worksWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#investigates"/>
+        <ObjectProperty abbreviatedIRI="perk:worksOn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#quantifies"/>
+        <ObjectProperty abbreviatedIRI="perk:evaluates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#simulates"/>
+        <ObjectProperty abbreviatedIRI="perk:uses"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#studies"/>
+        <ObjectProperty abbreviatedIRI="perk:worksWith"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <ObjectUnionOf>
+            <Class IRI="#ChemicalSystem"/>
+            <Class IRI="#ComputationalMethod"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesMethod"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#atLevelOfTheory"/>
+        <Class IRI="#ComputationalMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implementedIn"/>
+        <Class IRI="#ComputationalMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#investigates"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#quantifies"/>
+        <Class IRI="#Observable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#simulates"/>
+        <Class IRI="#ComputationalMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studies"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesForceField"/>
+        <Class IRI="#ComputationalMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <Class IRI="#ResearchProblem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesMethod"/>
+        <Class IRI="#ComputationalMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atLevelOfTheory"/>
+        <Class IRI="#LevelOfTheory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implementedIn"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#investigates"/>
+        <Class IRI="#ResearchProblem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#quantifies"/>
+        <ObjectUnionOf>
+            <Class IRI="#ChemicalSystem"/>
+            <Class IRI="#ComputationalMethod"/>
+            <Class IRI="#ResearchProblem"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#simulates"/>
+        <Class IRI="#ChemicalSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#studies"/>
+        <Class IRI="#ChemicalSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesForceField"/>
+        <Class IRI="#ForceField"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#methodName"/>
+        <DataProperty abbreviatedIRI="perk:methodName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#observableName"/>
+        <DataProperty abbreviatedIRI="perk:metricName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#softwareVersion"/>
+        <DataProperty abbreviatedIRI="perk:version"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#systemName"/>
+        <DataProperty abbreviatedIRI="perk:datasetName"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#forceFieldName"/>
+        <Class IRI="#ForceField"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#methodName"/>
+        <Class IRI="#ComputationalMethod"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#observableName"/>
+        <Class IRI="#Observable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#observableUnit"/>
+        <Class IRI="#Observable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#observableValue"/>
+        <Class IRI="#Observable"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#smiles"/>
+        <Class IRI="#ChemicalSystem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#softwareName"/>
+        <Class IRI="#Software"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#softwareVersion"/>
+        <Class IRI="#Software"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#systemName"/>
+        <Class IRI="#ChemicalSystem"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#forceFieldName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#methodName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#observableName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#observableUnit"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#observableValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#smiles"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#softwareName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#softwareVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#systemName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChemicalSystem</IRI>
+        <Literal xml:lang="en">The physical/molecular system under study: a molecule, complex, material, or assembly (e.g. a copper-trafficking protein, a soft-matter aggregate, a bioinorganic active site).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChemicalSystem</IRI>
+        <Literal xml:lang="en">Chemical System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#ChemicalSystem</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Dataset gives the PERKOnto object-of-study role for cross-domain queries; obo:CHEBI_24431 (ChEBI &apos;chemical entity&apos;) gives the discipline-standard grounding.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ComputationalMethod</IRI>
+        <Literal xml:lang="en">A simulation or theoretical technique applied to a chemical system, e.g. molecular dynamics, Monte Carlo, density functional theory, enhanced sampling, coarse-grained modelling.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ComputationalMethod</IRI>
+        <Literal xml:lang="en">Computational Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#ComputationalMethod</IRI>
+        <Literal xml:lang="en">Grounded in perk:Method only: no single widely-adopted community class for a computational-chemistry method exists; perk:Method already aligns to schema:SoftwareApplication upstream.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ForceField</IRI>
+        <Literal xml:lang="en">A parameter set defining interatomic interactions used by a (classical) simulation method, e.g. CHARMM, AMBER, OPLS, or a custom coarse-grained model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ForceField</IRI>
+        <Literal xml:lang="en">Force Field</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LevelOfTheory</IRI>
+        <Literal xml:lang="en">The theoretical/basis-set specification for an electronic-structure calculation, e.g. &apos;B3LYP/6-31G*&apos;, &apos;CCSD(T)/cc-pVTZ&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LevelOfTheory</IRI>
+        <Literal xml:lang="en">Level of Theory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Observable</IRI>
+        <Literal xml:lang="en">A physical quantity computed or measured from a simulation/calculation, e.g. free energy, binding affinity, radial distribution function, diffusion coefficient, reaction barrier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Observable</IRI>
+        <Literal xml:lang="en">Observable / Computed Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#Observable</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Metric for the PERKOnto evaluative role; qudt:Quantity (QUDT) for the physical-quantity standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">A scientific question or problem formulation the group works on, e.g. &apos;mechanism of copper trafficking&apos;, &apos;self-assembly in soft matter&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">Research Problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">Grounded in perk:Task only; perk:Task aligns to schema:Action upstream.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Software</IRI>
+        <Literal xml:lang="en">A software package or code used to run a computational method, e.g. GROMACS, LAMMPS, NAMD, Gaussian, ORCA.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Software</IRI>
+        <Literal xml:lang="en">Simulation Software / Package</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#Software</IRI>
+        <Literal xml:lang="en">Grounded in schema:SoftwareApplication (the same upstream class perk:Method uses).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#appliedToProblem</IRI>
+        <Literal xml:lang="en">Links a ComputationalMethod or ChemicalSystem to the ResearchProblem it addresses. Specialises perk:usedFor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliedToProblem</IRI>
+        <Literal xml:lang="en">applied to problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#appliesMethod</IRI>
+        <Literal xml:lang="en">Links a Person to a ComputationalMethod they use. Specialises perk:worksWith.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliesMethod</IRI>
+        <Literal xml:lang="en">applies method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#atLevelOfTheory</IRI>
+        <Literal xml:lang="en">Links an electronic-structure ComputationalMethod to its LevelOfTheory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#atLevelOfTheory</IRI>
+        <Literal xml:lang="en">at level of theory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#forceFieldName</IRI>
+        <Literal xml:lang="en">force field name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#implementedIn</IRI>
+        <Literal xml:lang="en">Links a ComputationalMethod to the Software package used to run it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#implementedIn</IRI>
+        <Literal xml:lang="en">implemented in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#investigates</IRI>
+        <Literal xml:lang="en">Links a Person to a ResearchProblem they work on. Specialises perk:worksOn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#investigates</IRI>
+        <Literal xml:lang="en">investigates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#methodName</IRI>
+        <Literal xml:lang="en">Name of the computational method (e.g. &apos;molecular dynamics&apos;, &apos;DFT&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#methodName</IRI>
+        <Literal xml:lang="en">method name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#observableName</IRI>
+        <Literal xml:lang="en">Name of the physical observable (e.g. &apos;free energy&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observableName</IRI>
+        <Literal xml:lang="en">observable name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#observableUnit</IRI>
+        <Literal xml:lang="en">Physical unit of the observable value (e.g. &apos;kcal/mol&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observableUnit</IRI>
+        <Literal xml:lang="en">observable unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#observableValue</IRI>
+        <Literal xml:lang="en">Reported numeric value of an observable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observableValue</IRI>
+        <Literal xml:lang="en">observable value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quantifies</IRI>
+        <Literal xml:lang="en">Links an Observable to the ComputationalMethod, ChemicalSystem, or ResearchProblem it characterises. Specialises perk:evaluates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quantifies</IRI>
+        <Literal xml:lang="en">quantifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#simulates</IRI>
+        <Literal xml:lang="en">Links a ComputationalMethod to the ChemicalSystem it is applied to. Specialises perk:uses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#simulates</IRI>
+        <Literal xml:lang="en">simulates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#smiles</IRI>
+        <Literal xml:lang="en">SMILES string encoding the molecular structure, where applicable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#smiles</IRI>
+        <Literal xml:lang="en">SMILES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#softwareName</IRI>
+        <Literal xml:lang="en">software name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#softwareVersion</IRI>
+        <Literal xml:lang="en">software version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#studies</IRI>
+        <Literal xml:lang="en">Links a Person to a ChemicalSystem they investigate. Specialises perk:worksWith.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#studies</IRI>
+        <Literal xml:lang="en">studies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#systemName</IRI>
+        <Literal xml:lang="en">Name or identifier of the chemical system studied.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#systemName</IRI>
+        <Literal xml:lang="en">system name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesForceField</IRI>
+        <Literal xml:lang="en">Links a ComputationalMethod to the ForceField that parameterises it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usesForceField</IRI>
+        <Literal xml:lang="en">uses force field</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,804 @@
+<h2 id="crossreference" class="list">Cross-reference for PERKOnto-Grav: Gravitational Physics extension of PERKOnto classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by PERKOnto-Grav: Gravitational Physics extension of PERKOnto.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a></li>
+  <li><a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a></li>
+  <li><a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a></li>
+  <li><a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a></li>
+  <li><a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a></li>
+  <li><a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a></li>
+  <li><a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a></li>
+  <li><a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a></li>
+ </ul>
+ <div class="entity" id="AnalysisMethod">
+  <h3>Analysis Method<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#AnalysisMethod</p>
+  <div class="comment">
+   <span class="markdown">A technique applied to sources/data, e.g. matched filtering, Bayesian parameter estimation, numerical relativity simulation, unmodeled burst search.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Method" target="_blank" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#analyses" title="https://w3id.org/perkonto/grav#analyses">analyses</a> <sup class="type-op" title="object property">op</sup>, <a href="#appliedToProblem" title="https://w3id.org/perkonto/grav#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#implementedIn" title="https://w3id.org/perkonto/grav#implementedIn">implemented in</a> <sup class="type-op" title="object property">op</sup>, <a href="#methodName" title="https://w3id.org/perkonto/grav#methodName">method name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usesWaveformModel" title="https://w3id.org/perkonto/grav#usesWaveformModel">uses waveform model</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appliesMethod" title="https://w3id.org/perkonto/grav#appliesMethod">applies method</a> <sup class="type-op" title="object property">op</sup>, <a href="#measures" title="https://w3id.org/perkonto/grav#measures">measures</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>, <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>, <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>, <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>, <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AnalysisPipeline">
+  <h3>Analysis Pipeline / Software<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#AnalysisPipeline</p>
+  <div class="comment">
+   <span class="markdown">A software pipeline used to run an analysis method, e.g. PyCBC, gstLAL, Bilby, LALSuite.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/SoftwareApplication" target="_blank" title="https://schema.org/SoftwareApplication">Software Application</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#pipelineName" title="https://w3id.org/perkonto/grav#pipelineName">pipeline name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#pipelineVersion" title="https://w3id.org/perkonto/grav#pipelineVersion">pipeline version</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#implementedIn" title="https://w3id.org/perkonto/grav#implementedIn">implemented in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>, <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>, <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>, <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>, <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AstrophysicalSource">
+  <h3>Astrophysical Source<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#AstrophysicalSource</p>
+  <div class="comment">
+   <span class="markdown">The physical system emitting gravitational radiation under study, e.g. a binary black hole, binary neutron star, supernova, or continuous-wave source.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.org/astronomy/ont/object-types#AstrObject" target="_blank" title="http://purl.org/astronomy/ont/object-types#AstrObject">Astr Object</a> <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/perkonto#Dataset" target="_blank" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#appliedToProblem" title="https://w3id.org/perkonto/grav#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#sourceName" title="https://w3id.org/perkonto/grav#sourceName">source name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sourceType" title="https://w3id.org/perkonto/grav#sourceType">source type</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#analyses" title="https://w3id.org/perkonto/grav#analyses">analyses</a> <sup class="type-op" title="object property">op</sup>, <a href="#measures" title="https://w3id.org/perkonto/grav#measures">measures</a> <sup class="type-op" title="object property">op</sup>, <a href="#studies" title="https://w3id.org/perkonto/grav#studies">studies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>, <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>, <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>, <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>, <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Detector">
+  <h3>Detector / Observatory<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#Detector</p>
+  <div class="comment">
+   <span class="markdown">A gravitational-wave detector or observatory that records data, e.g. LIGO Hanford, LIGO Livingston, Virgo, KAGRA, LISA.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/OBI_0000968" target="_blank" title="http://purl.obolibrary.org/obo/OBI_0000968">O B I 0000968</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#detectorName" title="https://w3id.org/perkonto/grav#detectorName">detector name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#recordedBy" title="https://w3id.org/perkonto/grav#recordedBy">recorded by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>, <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>, <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>, <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>, <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ObservationalData">
+  <h3>Observational / Simulation Data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#ObservationalData</p>
+  <div class="comment">
+   <span class="markdown">A concrete analysed data artifact: detector strain segments, an event catalog (e.g. GWTC), or a numerical-relativity waveform catalog.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Dataset" target="_blank" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="http://purl.obolibrary.org/obo/IAO_0000030" target="_blank" title="http://purl.obolibrary.org/obo/IAO_0000030">I A O 0000030</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#catalogName" title="https://w3id.org/perkonto/grav#catalogName">catalog name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#recordedBy" title="https://w3id.org/perkonto/grav#recordedBy">recorded by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#analyses" title="https://w3id.org/perkonto/grav#analyses">analyses</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>, <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>, <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>, <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>, <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PhysicalParameter">
+  <h3>Physical Parameter / Observable<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#PhysicalParameter</p>
+  <div class="comment">
+   <span class="markdown">A measured or inferred physical quantity, e.g. component masses, spins, luminosity distance, signal-to-noise ratio, false-alarm rate, sky localisation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Metric" target="_blank" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="http://qudt.org/schema/qudt/Quantity" target="_blank" title="http://qudt.org/schema/qudt/Quantity">Quantity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#measures" title="https://w3id.org/perkonto/grav#measures">measures</a> <sup class="type-op" title="object property">op</sup>, <a href="#parameterName" title="https://w3id.org/perkonto/grav#parameterName">parameter name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#parameterUnit" title="https://w3id.org/perkonto/grav#parameterUnit">parameter unit</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#parameterValue" title="https://w3id.org/perkonto/grav#parameterValue">parameter value</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>, <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>, <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>, <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>, <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ResearchProblem">
+  <h3>Research Problem<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#ResearchProblem</p>
+  <div class="comment">
+   <span class="markdown">A scientific question the group works on, e.g. 'test general relativity in the strong-field regime', 'measure the Hubble constant from standard sirens'.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Task" target="_blank" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appliedToProblem" title="https://w3id.org/perkonto/grav#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#investigates" title="https://w3id.org/perkonto/grav#investigates">investigates</a> <sup class="type-op" title="object property">op</sup>, <a href="#measures" title="https://w3id.org/perkonto/grav#measures">measures</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>, <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>, <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>, <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>, <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>, <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>, <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="WaveformModel">
+  <h3>Waveform Model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#WaveformModel</p>
+  <div class="comment">
+   <span class="markdown">A signal model / template family used in analysis, e.g. effective-one-body (EOB), phenomenological (IMRPhenom), surrogate, or numerical-relativity template banks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#waveformModelName" title="https://w3id.org/perkonto/grav#waveformModelName">waveform model name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#usesWaveformModel" title="https://w3id.org/perkonto/grav#usesWaveformModel">uses waveform model</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>, <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>, <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>, <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>, <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>, <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#analyses" title="https://w3id.org/perkonto/grav#analyses">analyses</a></li>
+  <li><a href="#appliedToProblem" title="https://w3id.org/perkonto/grav#appliedToProblem">applied to problem</a></li>
+  <li><a href="#appliesMethod" title="https://w3id.org/perkonto/grav#appliesMethod">applies method</a></li>
+  <li><a href="#implementedIn" title="https://w3id.org/perkonto/grav#implementedIn">implemented in</a></li>
+  <li><a href="#investigates" title="https://w3id.org/perkonto/grav#investigates">investigates</a></li>
+  <li><a href="#measures" title="https://w3id.org/perkonto/grav#measures">measures</a></li>
+  <li><a href="#recordedBy" title="https://w3id.org/perkonto/grav#recordedBy">recorded by</a></li>
+  <li><a href="#studies" title="https://w3id.org/perkonto/grav#studies">studies</a></li>
+  <li><a href="#usesWaveformModel" title="https://w3id.org/perkonto/grav#usesWaveformModel">uses waveform model</a></li>
+ </ul>
+ <div class="entity" id="analyses">
+  <h3>analyses<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#analyses</p>
+  <div class="comment">
+   <span class="markdown">Links an AnalysisMethod to the ObservationalData or AstrophysicalSource it is applied to. Specialises perk:uses.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#uses" target="_blank" title="https://w3id.org/perkonto#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="appliedToProblem">
+  <h3>applied to problem<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#appliedToProblem</p>
+  <div class="comment">
+   <span class="markdown">Links an AnalysisMethod or AstrophysicalSource to the ResearchProblem it addresses. Specialises perk:usedFor.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#usedFor" target="_blank" title="https://w3id.org/perkonto#usedFor">used For</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="appliesMethod">
+  <h3>applies method<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#appliesMethod</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to an AnalysisMethod they use. Specialises perk:worksWith.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksWith" target="_blank" title="https://w3id.org/perkonto#worksWith">works With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="implementedIn">
+  <h3>implemented in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#implementedIn</p>
+  <div class="comment">
+   <span class="markdown">Links an AnalysisMethod to the AnalysisPipeline used to run it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="investigates">
+  <h3>investigates<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#investigates</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a ResearchProblem they work on. Specialises perk:worksOn.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksOn" target="_blank" title="https://w3id.org/perkonto#worksOn">works On</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="measures">
+  <h3>measures<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#measures</p>
+  <div class="comment">
+   <span class="markdown">Links a PhysicalParameter to the AstrophysicalSource, AnalysisMethod, or ResearchProblem it characterises. Specialises perk:evaluates.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#evaluates" target="_blank" title="https://w3id.org/perkonto#evaluates">evaluates</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ResearchProblem" title="https://w3id.org/perkonto/grav#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="recordedBy">
+  <h3>recorded by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#recordedBy</p>
+  <div class="comment">
+   <span class="markdown">Links ObservationalData to the Detector that recorded it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="studies">
+  <h3>studies<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#studies</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to an AstrophysicalSource they investigate. Specialises perk:worksWith.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksWith" target="_blank" title="https://w3id.org/perkonto#worksWith">works With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesWaveformModel">
+  <h3>uses waveform model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#usesWaveformModel</p>
+  <div class="comment">
+   <span class="markdown">Links an AnalysisMethod to the WaveformModel / template family it uses.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#catalogName" title="https://w3id.org/perkonto/grav#catalogName">catalog name</a></li>
+  <li><a href="#detectorName" title="https://w3id.org/perkonto/grav#detectorName">detector name</a></li>
+  <li><a href="#methodName" title="https://w3id.org/perkonto/grav#methodName">method name</a></li>
+  <li><a href="#parameterName" title="https://w3id.org/perkonto/grav#parameterName">parameter name</a></li>
+  <li><a href="#parameterUnit" title="https://w3id.org/perkonto/grav#parameterUnit">parameter unit</a></li>
+  <li><a href="#parameterValue" title="https://w3id.org/perkonto/grav#parameterValue">parameter value</a></li>
+  <li><a href="#pipelineName" title="https://w3id.org/perkonto/grav#pipelineName">pipeline name</a></li>
+  <li><a href="#pipelineVersion" title="https://w3id.org/perkonto/grav#pipelineVersion">pipeline version</a></li>
+  <li><a href="#sourceName" title="https://w3id.org/perkonto/grav#sourceName">source name</a></li>
+  <li><a href="#sourceType" title="https://w3id.org/perkonto/grav#sourceType">source type</a></li>
+  <li><a href="#waveformModelName" title="https://w3id.org/perkonto/grav#waveformModelName">waveform model name</a></li>
+ </ul>
+ <div class="entity" id="catalogName">
+  <h3>catalog name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#catalogName</p>
+  <div class="comment">
+   <span class="markdown">Name of an event or waveform catalog, e.g. 'GWTC-3'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#datasetName" target="_blank" title="https://w3id.org/perkonto#datasetName">dataset Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ObservationalData" title="https://w3id.org/perkonto/grav#ObservationalData">Observational / Simulation Data</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="detectorName">
+  <h3>detector name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#detectorName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Detector" title="https://w3id.org/perkonto/grav#Detector">Detector / Observatory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="methodName">
+  <h3>method name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#methodName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#methodName" target="_blank" title="https://w3id.org/perkonto#methodName">method Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AnalysisMethod" title="https://w3id.org/perkonto/grav#AnalysisMethod">Analysis Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="parameterName">
+  <h3>parameter name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#parameterName</p>
+  <div class="comment">
+   <span class="markdown">Name of the physical parameter, e.g. 'chirp mass', 'SNR'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#metricName" target="_blank" title="https://w3id.org/perkonto#metricName">metric Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="parameterUnit">
+  <h3>parameter unit<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#parameterUnit</p>
+  <div class="comment">
+   <span class="markdown">Unit of the parameter, e.g. 'solar mass', 'Mpc', 'Hz'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="parameterValue">
+  <h3>parameter value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#parameterValue</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalParameter" title="https://w3id.org/perkonto/grav#PhysicalParameter">Physical Parameter / Observable</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="pipelineName">
+  <h3>pipeline name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#pipelineName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="pipelineVersion">
+  <h3>pipeline version<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#pipelineVersion</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#version" target="_blank" title="https://w3id.org/perkonto#version">version</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AnalysisPipeline" title="https://w3id.org/perkonto/grav#AnalysisPipeline">Analysis Pipeline / Software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="sourceName">
+  <h3>source name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#sourceName</p>
+  <div class="comment">
+   <span class="markdown">Designation of the astrophysical source / event, e.g. 'GW150914'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#datasetName" target="_blank" title="https://w3id.org/perkonto#datasetName">dataset Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="sourceType">
+  <h3>source type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#sourceType</p>
+  <div class="comment">
+   <span class="markdown">Category of source, e.g. 'BBH', 'BNS', 'NSBH', 'supernova'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AstrophysicalSource" title="https://w3id.org/perkonto/grav#AstrophysicalSource">Astrophysical Source</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="waveformModelName">
+  <h3>waveform model name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/grav#waveformModelName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#WaveformModel" title="https://w3id.org/perkonto/grav#WaveformModel">Waveform Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

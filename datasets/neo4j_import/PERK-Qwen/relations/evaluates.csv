@@ -1,0 +1,189 @@
+:START_ID,:END_ID,:TYPE,context,source
+mt177,tk2528,evaluates,"I can verify that all links are fully accessible, downloads initiated without delay, and mirrored datasets match the original checksum values logged earlier this week.",email_584
+mt266,tk4003,evaluates,All feedback and enhancements from the past week appear to have been captured and integrated.,email_903
+mt303,tk4408,evaluates,The glossary is particularly helpful for achieving cross-sectional consistency and will be invaluable for the response letter.,email_982
+mt283,tk4235,evaluates,distills major cross-jurisdictional themes and highlights compliance convergence relevant to our historical NLP datasets.,email_945
+mt284,tk4235,evaluates,distills major cross-jurisdictional themes and highlights compliance convergence relevant to our historical NLP datasets.,email_945
+mt184,tk3468,evaluates,"Main Table: Includes Cohen’s kappa, F1, and Krippendorff’s alpha across annotation batches (Indian Newspapers corpus, British Colonial Proceedings, US Immigration Letters).",email_787
+mt2,tk3468,evaluates,"Main Table: Includes Cohen’s kappa, F1, and Krippendorff’s alpha across annotation batches (Indian Newspapers corpus, British Colonial Proceedings, US Immigration Letters).",email_787
+mt240,tk3468,evaluates,"Main Table: Includes Cohen’s kappa, F1, and Krippendorff’s alpha across annotation batches (Indian Newspapers corpus, British Colonial Proceedings, US Immigration Letters).",email_787
+mt274,d520,evaluates,This will feature: Side-by-side comparison of the latest amendments to the India Data Protection Bill (2022) with those from the EU and UK (esp. GDPR and local heritage exceptions).,email_942
+mt275,d520,evaluates,This will feature: Side-by-side comparison of the latest amendments to the India Data Protection Bill (2022) with those from the EU and UK (esp. GDPR and local heritage exceptions).,email_942
+mt276,d520,evaluates,"Annotations on researcher responsibilities, particularly regarding third-party historical data, anonymization policies, and cross-regional archival consent.",email_942
+mt277,d520,evaluates,"Annotations on researcher responsibilities, particularly regarding third-party historical data, anonymization policies, and cross-regional archival consent.",email_942
+mt278,d520,evaluates,"Annotations on researcher responsibilities, particularly regarding third-party historical data, anonymization policies, and cross-regional archival consent.",email_942
+mt279,d520,evaluates,"Highlighted subclauses on annotation, focusing on sections (Sec. 37B & Sec. 45C) recently introduced, which pertain to explicit subject consent and retention for cultural datasets.",email_942
+mt280,d520,evaluates,"Highlighted subclauses on annotation, focusing on sections (Sec. 37B & Sec. 45C) recently introduced, which pertain to explicit subject consent and retention for cultural datasets.",email_942
+mt131,tk2332,evaluates,Slide 10’s annotation overlay colours were adjusted for contrast compliance and tested in grayscale.,email_546
+mt162,tk2332,evaluates,Slide 10’s annotation overlay colours were adjusted for contrast compliance and tested in grayscale.,email_546
+mt163,tk2332,evaluates,"Captioning has been fully revised using a transcript prepared in Google Docs, ensuring that technical terminology matches our written session summary and minimizing transcription inconsistencies.",email_546
+mt182,tk1343,evaluates,"I’ve articulated our rationale for employing a hybrid approach, focusing on justifying the adaptation of standard F1/accuracy-based metrics",email_618
+mt184,tk2693,evaluates,My draft includes an explanation of inter-annotator agreement (Cohen’s kappa values),email_618
+mt1,tk59,evaluates,Are there particular intrinsic/extrinsic evaluation protocols from previous projects we should consider for benchmarking?,email_17
+mt2,tk59,evaluates,Are there particular intrinsic/extrinsic evaluation protocols from previous projects we should consider for benchmarking?,email_17
+mt6,tk59,evaluates,Are there particular intrinsic/extrinsic evaluation protocols from previous projects we should consider for benchmarking?,email_17
+mt1,tk7,evaluates,"Metrics for evaluation include accuracy, F1-score, temporal consistency score, and methods for interpretability.",email_6
+mt2,tk7,evaluates,"Metrics for evaluation include accuracy, F1-score, temporal consistency score, and methods for interpretability.",email_6
+mt3,tk7,evaluates,"Metrics for evaluation include accuracy, F1-score, temporal consistency score, and methods for interpretability.",email_6
+mt4,tk7,evaluates,"Metrics for evaluation include accuracy, F1-score, temporal consistency score, and methods for interpretability.",email_6
+mt184,tk295,evaluates,"Additionally, I have prepared a 300-word summary paragraph for the “Technical Validation” section that outlines our evaluation metrics (Cohen’s kappa, F1 per class), cross-annotator agreement methodology, and the logging of pipeline version numbers and dependencies for full reproducibility.",email_64
+mt182,tk295,evaluates,"Additionally, I have prepared a 300-word summary paragraph for the “Technical Validation” section that outlines our evaluation metrics (Cohen’s kappa, F1 per class), cross-annotator agreement methodology, and the logging of pipeline version numbers and dependencies for full reproducibility.",email_64
+mt190,tk2814,evaluates,proposes a hybrid evaluation suite that couples both intrinsic (temporal word embedding shift),email_639
+mt30,tk135,evaluates,Main quantitative trends from the Likert-scale questions across annotators,email_31
+mt195,tk368,evaluates,comprehensive evaluation metrics for annotated corpora spanning multiple archives and languages,email_85
+mt16,tk74,evaluates,"quantitative metrics (e.g., explanation consistency scores, faithfulness indices)",email_20
+mt17,tk74,evaluates,"quantitative metrics (e.g., explanation consistency scores, faithfulness indices)",email_20
+mt238,tk3411,evaluates,Internal cross-references ('see Appendix II for institutional review protocol examples') mirror the citation scheme we adopted during the editorial harmonization.,email_775
+mt238,tk3412,evaluates,Internal cross-references ('see Appendix II for institutional review protocol examples') mirror the citation scheme we adopted during the editorial harmonization.,email_775
+mt152,tk2225,evaluates,multilingual benchmarking and cross-institutional data sharing protocols,email_517
+mt153,tk2225,evaluates,multilingual benchmarking and cross-institutional data sharing protocols,email_517
+mt126,tk1680,evaluates,"On slide 7, a small clarification about the baseline annotation protocol may help preempt audience questions.",email_358
+mt127,tk1680,evaluates,"For slide 13, it would be great to add a brief visual key clarifying the benchmark color coding, enhancing immediate interpretability.",email_358
+mt128,tk1680,evaluates,"Slide 18 could benefit from an extra bullet highlighting the feedback received from domain historians, which further contextualizes the relevance of our synthetic instance protocol.",email_358
+mt89,tk791,evaluates,"Sunita, once you circulate your initial error analysis draft, I’d be happy to tweak the graphical abstract to reflect key confusion matrix or error categories",email_196
+mt90,tk791,evaluates,"Sunita, once you circulate your initial error analysis draft, I’d be happy to tweak the graphical abstract to reflect key confusion matrix or error categories",email_196
+mt112,tk1051,evaluates,Preparing a succinct summary aimed at a wider audience will both help us crystallize the broader significance of our work and make it more accessible to fellow researchers not directly involved in historical NLP.,email_255
+mt2,tk4212,evaluates,Per-language F1 and precision/recall charts will be available as appendix-ready materials,email_941
+mt118,tk4212,evaluates,Per-language F1 and precision/recall charts will be available as appendix-ready materials,email_941
+mt144,tk2034,evaluates,"Outstanding discrepancies (such as RTI processing timelines and UKRI mandates) are now annotated with “To be confirmed” markers, per our agreement to harmonize these asynchronously.",email_467
+mt145,tk2034,evaluates,"Outstanding discrepancies (such as RTI processing timelines and UKRI mandates) are now annotated with “To be confirmed” markers, per our agreement to harmonize these asynchronously.",email_467
+mt2,tk1343,evaluates,"I have gone through the updated sections and found your synthesis of the quantitative reasoning (F1, precision/recall) with qualitative expert assessment particularly effective",email_310
+mt118,tk1343,evaluates,"I have gone through the updated sections and found your synthesis of the quantitative reasoning (F1, precision/recall) with qualitative expert assessment particularly effective",email_310
+mt119,tk1343,evaluates,"I have gone through the updated sections and found your synthesis of the quantitative reasoning (F1, precision/recall) with qualitative expert assessment particularly effective",email_310
+mt231,tk3332,evaluates,the real differentiator in our workflow has been the prompt escalation of minor anomalies—such as our flagging of typesetting inconsistencies or DOI workflow ambiguities—before they could become bottlenecks at the production stage.,email_759
+mt232,tk3332,evaluates,the real differentiator in our workflow has been the prompt escalation of minor anomalies—such as our flagging of typesetting inconsistencies or DOI workflow ambiguities—before they could become bottlenecks at the production stage.,email_759
+mt233,tk3332,evaluates,the real differentiator in our workflow has been the prompt escalation of minor anomalies—such as our flagging of typesetting inconsistencies or DOI workflow ambiguities—before they could become bottlenecks at the production stage.,email_759
+mt234,tk3332,evaluates,the real differentiator in our workflow has been the prompt escalation of minor anomalies—such as our flagging of typesetting inconsistencies or DOI workflow ambiguities—before they could become bottlenecks at the production stage.,email_759
+mt235,tk3334,evaluates,"I’m happy to collaborate on the “Visuals, Data, and Production Communication” sections and will share my notes on our image asset workflow, caption harmonization process, and how we coordinated with ACM Production to maintain visual integrity.",email_759
+mt236,tk3336,evaluates,"it might also be useful to set periodic review meetings or informal check-ins, perhaps at project kickoff, proofing, and submission stages, which can be suggested in the checklist document.",email_759
+mt251,tk3776,evaluates,"I revalidated all DOIs this morning, and each link is now functional and routable from the metadata section.",email_854
+mt26,tk1456,evaluates,"Ananya and Ramesh, please pay particular attention to the alignment of terminology (e.g., “historical record class,” “synthetic instance generation”) with the rest of the manuscript and flag any issues related to clarity or technical consistency.",email_329
+mt121,tk1456,evaluates,"Ananya and Ramesh, please pay particular attention to the alignment of terminology (e.g., “historical record class,” “synthetic instance generation”) with the rest of the manuscript and flag any issues related to clarity or technical consistency.",email_329
+mt26,tk3747,evaluates,"let me know if any element requires reformatting or additional detail, especially for interdisciplinary clarity.",email_848
+mt250,tk3747,evaluates,"let me know if any element requires reformatting or additional detail, especially for interdisciplinary clarity.",email_848
+mt99,tk1530,evaluates,I’d suggest including a side-by-side comparison between traditional precision/recall and our provenance-aware adaptations,email_354
+mt76,tk1530,evaluates,I’d suggest including a side-by-side comparison between traditional precision/recall and our provenance-aware adaptations,email_354
+mt71,tk1717,evaluates,points raised about evaluation metrics for historical language models,email_401
+mt19,tk3948,evaluates,I suggest emphasizing in the heatmap caption that ratings are normalized per annotator and that tick labels correspond precisely to anonymized participant IDs (as detailed in the supplementary table).,email_41
+mt26,tk3948,evaluates,I suggest emphasizing in the heatmap caption that ratings are normalized per annotator and that tick labels correspond precisely to anonymized participant IDs (as detailed in the supplementary table).,email_41
+mt36,tk3948,evaluates,"In Figure 2, could you clarify whether the artifact severity bins (e.g., “low,” “medium,” “high”) correspond to a quantitative threshold (e.g., OCR error rate) or a qualitative ranking from annotator notes?",email_41
+mt18,tk3890,evaluates,evaluating real-world usability,email_876
+mt259,tk3890,evaluates,capturing challenges in processing multi-script and historical texts,email_876
+mt260,tk3890,evaluates,understanding community needs for normalization,email_876
+mt2,tk870,evaluates,"focusing on variance in F1-score, precision, and recall as the Gujarati-trained model is applied to the French historical corpus.",email_211
+mt99,tk870,evaluates,"focusing on variance in F1-score, precision, and recall as the Gujarati-trained model is applied to the French historical corpus.",email_211
+mt76,tk870,evaluates,"focusing on variance in F1-score, precision, and recall as the Gujarati-trained model is applied to the French historical corpus.",email_211
+mt184,d102,evaluates,your dataset construction’s high inter-rater reliability,email_647
+mt91,tk797,evaluates,"Sunita to confirm if new evaluation metrics (macro-averaged F1, per reviewer suggestions) fit journal word limits.",email_197
+mt2,tk4176,evaluates,drafting the new subsection addressing the variance in F1 scores across different languages and historical periods.,email_936
+mt99,tk4212,evaluates,per-language precision/recall bar charts,email_936
+mt76,tk4212,evaluates,per-language precision/recall bar charts,email_936
+mt2,tk4167,evaluates,There is a need for a more granular breakdown of your benchmarking (by language/time period) and a discussion contextualizing F1 score variance,email_934
+mt113,tk1139,evaluates,"Ananya, I would be pleased to coordinate with you regarding the complementary European corpus applications, ensuring our case studies present a unified methodological narrative.",email_269
+mt65,d54,evaluates,A clarification table mapping dataset components to the appropriate legal attributions (to be appended to the compliance appendix).,email_74
+mt65,d55,evaluates,A clarification table mapping dataset components to the appropriate legal attributions (to be appended to the compliance appendix).,email_74
+mt131,tk1645,evaluates,please confirm by tomorrow if the color contrast and annotation updates for Figure 3 now meet accessibility standards,email_387
+mt132,tk1645,evaluates,please confirm by tomorrow if the color contrast and annotation updates for Figure 3 now meet accessibility standards,email_387
+mt181,tk2621,evaluates,Sunita suggested a brief description of accessibility evaluation metrics.,email_605
+mt111,tk1028,evaluates,the PDF accessibility for embedded visualizations is functional across my tests on different platforms,email_247
+mt123,tk1526,evaluates,The slides will highlight the provenance-aware precision and recall metrics with explanatory diagrams,email_353
+mt76,tk1526,evaluates,The slides will highlight the provenance-aware precision and recall metrics with explanatory diagrams,email_353
+mt133,d209,evaluates,explicit metrics for bias quantification,email_393
+mt149,me377,evaluates,"Visual materials curated by Dr. Michael Bradley and the Stanford team, including (a) a schematic of our language model domain adaptation workflow and (b) an infographic summarizing joint publication and media impact metrics.",email_509
+mt71,tk1526,evaluates,"Given the increased focus on evaluation metrics and cross-institutional benchmarking in our updated abstract, it would be prudent to ensure the slides provide clear visualizations and concise explanations for these aspects.",email_352
+mt124,tk1526,evaluates,"Michael and Ananya, your feedback on the provenance-aware metric illustrations and on the clarity of the synthetic instance protocols would be particularly valuable.",email_352
+mt120,tk1452,evaluates,do flag any referencing issues or stylistic corrections,email_328
+mt101,tk900,evaluates,each reviewer’s query is addressed point by point with explicit links to manuscript line numbers,email_217
+mt102,tk900,evaluates,each reviewer’s query is addressed point by point with explicit links to anchor indices,email_217
+mt198,tk2854,evaluates,These examples demonstrate how our metrics could drive the discovery of semantic change across time and language.,email_650
+mt184,tk2823,evaluates,In the “Datasets” section: I recommend specifying our annotation inter-rater reliability score,email_642
+mt194,tk2823,evaluates,Please confirm whether we wish to explicitly cite the newest EMNLP 2022 benchmark paper (Smith et al.),email_642
+mt295,tk4343,evaluates,"Your integration work ensures that all case studies (India, UK/EU, Israel, Japan, Chile) now explicitly respond to JOCCH’s updated compliance guidance on cross-jurisdictional annotation.",email_967
+mt296,tk4343,evaluates,"Consent & Anonymization Protocols: The comparative analysis of consent stratification and anonymization approaches is rigorous and appropriately foregrounds both procedural strengths (e.g., NLI's “tiered consent”) and region-specific limitations (e.g., constraints in annotator metadata retention in Japan and Chile).",email_967
+mt277,tk4343,evaluates,"Consent & Anonymization Protocols: The comparative analysis of consent stratification and anonymization approaches is rigorous and appropriately foregrounds both procedural strengths (e.g., NLI's “tiered consent”) and region-specific limitations (e.g., constraints in annotator metadata retention in Japan and Chile).",email_967
+mt225,tk3275,evaluates,"Sunita, could you please double-check the Data Availability and licensing sections",email_747
+mt226,tk3275,evaluates,"Sunita, could you please double-check the Data Availability and licensing sections",email_747
+mt103,tk947,evaluates,tested the exported PDFs on both Adobe Reader and Mac Preview to ensure rendering consistency,email_227
+mt104,tk947,evaluates,cell boundaries now display as intended,email_227
+mt12,tk111,evaluates,"Early results for CER, WER, and token-level F1",email_26
+mt13,tk111,evaluates,"Early results for CER, WER, and token-level F1",email_26
+mt25,tk111,evaluates,"Early results for CER, WER, and token-level F1",email_26
+mt1,tk111,evaluates,"moderate accuracy, but signal above chance even in the presence of OCR artifacts",email_26
+mt200,tk2940,evaluates,"I summarized its main findings—specifically, the evaluation of cross-repository metadata harmonization, persistent identifier strategies, and its relevance for scaling semantic drift detection with multilingual datasets.",email_669
+mt70,tk362,evaluates,Please verify that all genre labelings and NER/topic modeling statistics are displayed as intended in the latest PDF output,email_81
+mt8,tk659,evaluates,"evaluation metrics for normalization—perhaps we can briefly report on token-level accuracy, edit distance, and inter-annotator agreement metrics",email_166
+mt84,tk659,evaluates,"evaluation metrics for normalization—perhaps we can briefly report on token-level accuracy, edit distance, and inter-annotator agreement metrics",email_166
+mt184,tk659,evaluates,"evaluation metrics for normalization—perhaps we can briefly report on token-level accuracy, edit distance, and inter-annotator agreement metrics",email_166
+mt85,tk1343,evaluates,I have commented in the “Evaluation & Benchmarks” and “Core Manuscript” folders regarding the introduction of our hybrid metrics,email_183
+mt86,tk1343,evaluates,I have commented in the “Evaluation & Benchmarks” and “Core Manuscript” folders regarding the introduction of our hybrid metrics,email_183
+mt287,tk4262,evaluates,highlighting “special consent” data points governed by section 37B of the India Data Protection Bill,email_949
+mt288,tk4262,evaluates,corresponding provisions in GDPR,email_949
+mt156,tk2315,evaluates,"On slide 7, there is a slight pause after the “cross-lingual evaluation” section—tightening this transition could help maintain the narrative flow.",email_543
+mt157,tk2315,evaluates,"A quick scan indicates a few minor transcription errors (“metadata harmonisation” is currently misspelled, and “OCR artifacts” appears as “OCR art facts”).",email_543
+mt158,tk2315,evaluates,"Great job integrating preliminary alt-text. Once Ramesh finalizes his audit, we should update the slides in the video accordingly.",email_543
+mt159,tk2315,evaluates,"I look forward to your feedback as well, particularly on the accuracy of technical explanations and any further accessibility enhancements.",email_543
+mt160,tk2315,evaluates,"perhaps we can briefly elaborate (10–15 seconds) on the collaborative annotation workflow used for multilingual corpora, as this distinguishes our approach in the field.",email_543
+mt96,tk807,evaluates,A mini-bar-plot inset comparing macro-F1 across the Bengali–Gujarati and French–English scenarios,email_200
+mt26,tk115,evaluates,"Structured Likert-scale questions (1-5) on clarity, faithfulness, and trustworthiness, with free-text fields for qualitative comments;",email_27
+mt19,tk115,evaluates,"Structured Likert-scale questions (1-5) on clarity, faithfulness, and trustworthiness, with free-text fields for qualitative comments;",email_27
+mt27,tk115,evaluates,"Structured Likert-scale questions (1-5) on clarity, faithfulness, and trustworthiness, with free-text fields for qualitative comments;",email_27
+mt184,tk2343,evaluates,Include inter-annotator agreement statistics and describe the rationale for any adjudication protocols used on the expert-curated subsets,email_720
+mt216,tk2343,evaluates,Supplement quantitative metrics with a narrative on interpretability and use case-driven model diagnostics,email_720
+mt217,tk2343,evaluates,Supplement quantitative metrics with a narrative on interpretability and use case-driven model diagnostics,email_720
+mt218,tk2343,evaluates,Supplement quantitative metrics with a narrative on interpretability and use case-driven model diagnostics,email_720
+mt219,tk2343,evaluates,"Explicitly map error trends across language subsets, reflecting Dr. Fiona K.’s suggestion",email_720
+mt254,tk3808,evaluates,"all remaining metadata (including DOIs, dataset links, and supplementary references) has passed the recommended validation scans",email_861
+mt242,tk3668,evaluates,Any legacy entries or non-compliant citation formats from previous drafts will be standardized by 11 January,email_829
+mt77,tk631,evaluates,"I felt that our dry-run covered the technical and logistic details comprehensively, and your preparedness was evident throughout each segment.",email_156
+mt78,tk631,evaluates,"The handoff from Sunita to Ananya, and subsequently to myself for Q&A moderation, was smooth.",email_156
+mt79,tk631,evaluates,All speaker bios are now standardized according to ACM requirements.,email_156
+mt80,tk631,evaluates,We discussed potential troubleshooting steps for audio/visual disruptions and agreed to keep WhatsApp open for any urgent back-channel communication.,email_156
+mt71,tk366,evaluates,Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives,email_83
+mt71,tk367,evaluates,Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives,email_83
+mt184,tk319,evaluates,Addition of one further illustrative table summarizing annotator agreement by document genre.,email_71
+mt122,tk1465,evaluates,"I have flagged a few instances where margin notes exceeded word count limits, and made preliminary trims in the compliance appendix footnotes.",email_331
+mt189,tk2812,evaluates,coupled with Ramesh’s semantic drift analysis,email_638
+mt206,tk3033,evaluates,mainly focusing on the generalizability of our NLP pipeline and ethical aspects of handling sensitive historical texts,email_692
+mt184,tk3034,evaluates,especially regarding dataset selection and inter-annotator reliability,email_692
+mt267,tk4010,evaluates,"A targeted preprint or institutional repository entry could help crystallize best practices for colleagues navigating similar data-sharing challenges, and align well with current trends in digital research transparency.",email_906
+mt268,tk4010,evaluates,"A targeted preprint or institutional repository entry could help crystallize best practices for colleagues navigating similar data-sharing challenges, and align well with current trends in digital research transparency.",email_906
+mt74,tk441,evaluates,preliminary results already indicate significantly improved accessibility scores.,email_104
+mt184,tk3211,evaluates,"Michael, your offer to draft the annotator agreement summary table (including Cohen’s kappa values and scope breakdowns) is very helpful.",email_729
+mt7,me29,evaluates,"I recommend adopting both intrinsic and extrinsic measures. For intrinsic, character/error rates (CER and WER) would provide a transparent assessment of any remaining OCR noise.",email_18
+mt8,me29,evaluates,"On the extrinsic side, standard token-level accuracy, F1 score, and, for our context, an adjusted historical vocabulary recall (as you noted) will map well to both classification and retrieval subtasks.",email_18
+mt2,me29,evaluates,"On the extrinsic side, standard token-level accuracy, F1 score, and, for our context, an adjusted historical vocabulary recall (as you noted) will map well to both classification and retrieval subtasks.",email_18
+mt10,me29,evaluates,"On the extrinsic side, standard token-level accuracy, F1 score, and, for our context, an adjusted historical vocabulary recall (as you noted) will map well to both classification and retrieval subtasks.",email_18
+mt11,me29,evaluates,"Additionally, provenance-based metrics—measuring fidelity of date/location extraction from noisy versus cleaned text—could be useful, particularly since we intend for the models to support historical analysis pipelines.",email_18
+mt118,tk3156,evaluates,"Separate quantitative (precision-recall, F1, subset agreement) and qualitative (case studies, interpretability) result presentations, per feedback from Dr. Fiona K.",email_718
+mt2,tk3156,evaluates,"Separate quantitative (precision-recall, F1, subset agreement) and qualitative (case studies, interpretability) result presentations, per feedback from Dr. Fiona K.",email_718
+mt214,tk3156,evaluates,"Separate quantitative (precision-recall, F1, subset agreement) and qualitative (case studies, interpretability) result presentations, per feedback from Dr. Fiona K.",email_718
+mt99,tk4212,evaluates,"The per-language precision, recall, and F1 scatterplots are now reflecting the extended period overlays as discussed in our last call.",email_944
+mt76,tk4212,evaluates,"The per-language precision, recall, and F1 scatterplots are now reflecting the extended period overlays as discussed in our last call.",email_944
+mt2,tk4212,evaluates,"The per-language precision, recall, and F1 scatterplots are now reflecting the extended period overlays as discussed in our last call.",email_944
+mt227,tk2105,evaluates,so we maximize thoroughness within the anticipated 72-hour turnaround.,email_748
+mt40,tk253,evaluates,"Michael, it would be helpful if you could include a brief summary of the pipeline scripts (with version numbers) you are developing for annotator disagreement metrics in the “Technical Validation” section",email_56
+mt37,tk202,evaluates,artifact severity groups are determined via a hybrid quantitative (OCR error rate) and qualitative (annotator note) approach.,email_44
+mt237,tk3388,evaluates,"If required, I am happy to create a summary table or Q&A appendix addressing common compliance queries in historical NLP research.",email_770
+mt182,tk1343,evaluates,explaining the rationale for our hybrid accuracy/recall/F1 scheme,email_617
+mt69,tk358,evaluates,"From the perspective of current European library practices, and following the latest guidance from the Oxford Bodleian Digital Collections Team, I can confirm that your drafted content aligns well with best practices.",email_80
+mt180,tk2627,evaluates,their practical implications for cross-linguistic Q&A protocols.,email_602
+mt302,tk4406,evaluates,confirm consistent labeling prior to the internal consolidation deadline (18 March),email_981
+mt123,tk1522,evaluates,we have expanded the section describing the use of provenance-aware precision and recall metrics to assess annotation alignment,email_349
+mt76,tk1522,evaluates,we have expanded the section describing the use of provenance-aware precision and recall metrics to assess annotation alignment,email_349
+mt18,tk102,evaluates,Proposed usability and faithfulness metrics,email_23
+mt19,tk102,evaluates,Proposed usability and faithfulness metrics,email_23
+mt81,tk652,evaluates,"Detailed methodology for historical text normalization, mapping conventions, and validation metrics",email_165
+mt82,tk652,evaluates,"Insights on audience engagement, potential for open repository expansion, and proposals for future workshops",email_165
+mt83,tk652,evaluates,"Insights on audience engagement, potential for open repository expansion, and proposals for future workshops",email_165
+mt184,tk3217,evaluates,"The table’s structure (per-entity Cohen’s kappa values, annotated sample sizes, and adjudication coverage)",email_730
+mt294,tk3070,evaluates,I believe these final insertions bring the comparative analysis and documentation up to JOCCH’s rigorous compliance standards.,email_966
+mt91,tk799,evaluates,"New Table 4: Macro- and micro-averaged F1 scores, as recommended by Reviewer 1, included with a brief rationale for metric selection.",email_198
+mt93,tk799,evaluates,"New Table 4: Macro- and micro-averaged F1 scores, as recommended by Reviewer 1, included with a brief rationale for metric selection.",email_198
+mt256,tk3885,evaluates,"As discussed, incorporating qualitative questions on challenges faced during multi-script retrievals and language normalization protocols will give us deeper user feedback",email_875
+mt257,tk3885,evaluates,"As discussed, incorporating qualitative questions on challenges faced during multi-script retrievals and language normalization protocols will give us deeper user feedback",email_875
+mt142,tk2032,evaluates,Release of any personally identifiable information from student records for research or press purposes must comply with the Family Educational Rights and Privacy Act (FERPA) and Stanford University’s institutional policies.,email_466
+mt143,tk2032,evaluates,Any pre-publication sharing must conform both to the originating dataset’s embargo protocol and applicable international co-authorship agreements.,email_466
+mt34,d24,evaluates,"An “edge case” excerpt from Document F, in which Dr. Patel’s feedback emphasized ambiguity driven by OCR artifacts and he annotated a critical decline in faithfulness rating.",email_37
+mt222,tk3259,evaluates,The updated sections exhibit strong compliance with ACM's guidelines,email_742
+mt223,tk3259,evaluates,and the added detail markedly improves both clarity and accessibility for readers unfamiliar with the technical background of our NLP adjudication pipeline.,email_742
+mt224,tk3259,evaluates,The new cross-references to relevant code modules further enhance reproducibility and transparency.,email_742

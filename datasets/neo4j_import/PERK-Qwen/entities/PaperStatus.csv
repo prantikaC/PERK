@@ -1,0 +1,44 @@
+:ID,statusDate,statusType,:LABEL
+ps1,2019-06-11,Received,PaperStatus
+ps7,2019-01-15,Accepted Pending Camera-Ready,PaperStatus
+ps9,,,PaperStatus
+ps30,2022-06-XX,External Peer Review Phase,PaperStatus
+ps12,2019-10-18,Minor Revision,PaperStatus
+ps35,2023-06-XX,Minor Revision – Materials Submitted,PaperStatus
+ps27,2019-11-09,Incorporated into Proceedings,PaperStatus
+ps31,2023-05-01,Passed Administrative Compliance Check,PaperStatus
+ps25,2019-01-28,Oral Presentation,PaperStatus
+ps19,2023-10-23,Ready for Final Review,PaperStatus
+ps11,2020-05-16,Camera-ready package verified and accepted,PaperStatus
+ps37,2025-02-29,Major Revision,PaperStatus
+ps15,2021-07-01,Ready for Final Production,PaperStatus
+ps34,2021-09-09,Provisionally Accepted,PaperStatus
+ps28,,,PaperStatus
+ps29,,,PaperStatus
+ps3,2022-09-23,Submitted,PaperStatus
+ps22,,,PaperStatus
+ps2,2019-08-01,Minor Revision Required,PaperStatus
+ps18,2023-10-01,Publication Phase,PaperStatus
+ps16,Not specified,Minor Corrections Incorporated,PaperStatus
+ps17,Not specified,Awaiting Online Publication,PaperStatus
+ps33,2023-05-15,Acknowledged,PaperStatus
+ps4,,,PaperStatus
+ps14,2023-05-15,Conditionally Accepted,PaperStatus
+ps20,TBD,Approved for submission,PaperStatus
+ps8,2019-01-19,Accepted (Pending Camera-Ready),PaperStatus
+ps32,2023-05-15,Compliant,PaperStatus
+ps5,2019-10-27,Accepted with Minor Revisions,PaperStatus
+ps41,,,PaperStatus
+ps42,,,PaperStatus
+ps36,,,PaperStatus
+ps39,2022-09-09,Accepted Pending Minor Revisions,PaperStatus
+ps13,2023-10-XX,Minor Revisions,PaperStatus
+ps10,2019-04-23,Camera-ready submission received and queued for committee verification,PaperStatus
+ps6,2019-12-10,Pending Minor Revisions,PaperStatus
+ps40,2023-08-30,Ready for submission,PaperStatus
+ps23,,,PaperStatus
+ps24,,,PaperStatus
+ps26,2019-10-31,Received Revised Abstract,PaperStatus
+ps21,2021-09-14,Accepted for Presentation,PaperStatus
+ps43,2022-01-10,Major Revision Required,PaperStatus
+ps38,2022-03-26,Revise & Resubmit,PaperStatus

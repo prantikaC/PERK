@@ -1,0 +1,7 @@
+:START_ID,:END_ID,:TYPE,context,source
+pa206,pb1,hasPaperInfo,"Smith, J. et al. (2021). “Transformer-Based Sequence Correction for Historical OCR Errors.” JOCCH, 16(2), 105-128.",email_406
+pa207,pb1,hasPaperInfo,"Zhao, L. & Müller, H. (2021). “Domain Adaptation for OCR in Multilingual Historical Archives.” Journal of Documentation, 79(1), 48-71.",email_406
+pa208,pb1,hasPaperInfo,"Vyas, N. et al. (2022). “Post-Correction Pipelines for Historical Manuscript OCR: A Comprehensive Survey.” ACM Computing Surveys, 56(4), Article 78.",email_406
+pa133,pb1,hasPaperInfo,"scheduled for publication in Volume 16, Issue 4 (September 2021) of the ACM Journal on Computing and Cultural Heritage",email_253
+pa358,pb1,hasPaperInfo,"I selected the 2022 ACM Computing Surveys article by Liang et al., “Interoperability Models for Digital Archival Systems: A Review of Standards and Implementations,” which is both highly cited and directly relevant to our methodologies.",email_669
+pa39,pb1,hasPaperInfo,I will upload tagged PDF snapshots and a checklist of adjustments (“TableAccessibility_AC_Oxford_16Jan2020.pdf”) to our shared Drive by tomorrow.,email_104

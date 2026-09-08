@@ -10,7 +10,7 @@
 	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
-:agent0 a prov:Agent; foaf:name "Debarshi Kumar Sanyal".
-:agent1 a prov:Agent; foaf:name "Partha Pratim Das".
-:agent2 a prov:Agent; foaf:name "Prantika Chakraborty".
-:agent3 a prov:Agent; foaf:name "Srijoni Majumdar".
+:agent0 a prov:Agent; foaf:name "Anonymous Author".
+:agent1 a prov:Agent; foaf:name "Anonymous Author".
+:agent2 a prov:Agent; foaf:name "Anonymous Author".
+:agent3 a prov:Agent; foaf:name "Anonymous Author".

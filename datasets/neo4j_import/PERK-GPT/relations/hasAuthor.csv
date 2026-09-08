@@ -1,0 +1,498 @@
+:START_ID,:END_ID,:TYPE,context,source
+pa1,pn1,hasAuthor,"Best regards,
+Sunita",YT6A21
+pa1,pn1,hasAuthor,Thank you for your detailed proposal on Temporal Sentiment Analysis in Historical Archives.,YT6A22
+pa1,pn2,hasAuthor,I am writing to you to discuss collaboration on a research proposed by my doctoral student Sunita,YT6A22
+pa1,pn7,hasAuthor,I will ask Dr Michael Bradly ... if they wish to collaborate in this project,YT6A22
+pa1,pn8,hasAuthor,"I will ask ... and Dr Ananya Chatterjee, a post doctoral student in the University of Oxford if they wish to collaborate in this project",YT6A22
+pa2,pn8,hasAuthor,"our manuscript, titled “Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data,”",MAILFY98K3WN
+pa2,pn7,hasAuthor,"Dear Michael, Sunita, and Prof. Bhatia,
+
+I am very pleased to inform you that our manuscript, titled “Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data,”",MAILFY98K3WN
+pa2,pn1,hasAuthor,"Dear Michael, Sunita, and Prof. Bhatia,
+
+I am very pleased to inform you that our manuscript, titled “Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data,”",MAILFY98K3WN
+pa2,pn2,hasAuthor,"Dear Michael, Sunita, and Prof. Bhatia,
+
+I am very pleased to inform you that our manuscript, titled “Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data,”",MAILFY98K3WN
+pa2,pn8,hasAuthor,- Corresponding Author: Ananya Chatterjee,MAILFY98K3WN
+pa3,pn2,hasAuthor,- **Corresponding Author**: Prof. Ramesh Bhatia (as registered),MAILA5W4TJQ2
+pa3,pn1,hasAuthor,"Best regards,
+
+Sunita",MAILA5W4TJQ2
+pa3,pn7,hasAuthor,"Dear Prof. Bhatia, Michael, and Ananya,",MAILA5W4TJQ2
+pa3,pn8,hasAuthor,"Dear Prof. Bhatia, Michael, and Ananya,",MAILA5W4TJQ2
+pa8,pn1,hasAuthor,"Dear Sunita, Michael, and Ananya, I am pleased to inform you that the revised manuscript along with the “Response to Reviewers” letter has been successfully submitted",MAILSYZT58FG
+pa8,pn7,hasAuthor,"Dear Sunita, Michael, and Ananya, I am pleased to inform you that the revised manuscript along with the “Response to Reviewers” letter has been successfully submitted",MAILSYZT58FG
+pa8,pn8,hasAuthor,"Dear Sunita, Michael, and Ananya, I am pleased to inform you that the revised manuscript along with the “Response to Reviewers” letter has been successfully submitted",MAILSYZT58FG
+pa8,pn2,hasAuthor,I have acknowledged our joint contributions appropriately per the latest authorship guidelines.,MAILSYZT58FG
+pa3,pn2,hasAuthor,"Dear Prof. Bhatia, Ms. Sen, Dr. Bradley, and Dr. Chatterjee,",MAILU4RHAQ01
+pa3,pn1,hasAuthor,"Dear Prof. Bhatia, Ms. Sen, Dr. Bradley, and Dr. Chatterjee,",MAILU4RHAQ01
+pa3,pn7,hasAuthor,"Dear Prof. Bhatia, Ms. Sen, Dr. Bradley, and Dr. Chatterjee,",MAILU4RHAQ01
+pa3,pn8,hasAuthor,"Dear Prof. Bhatia, Ms. Sen, Dr. Bradley, and Dr. Chatterjee,",MAILU4RHAQ01
+pa3,pn2,hasAuthor,your revised manuscript “NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers”,MAIL5ZWL2TCQ
+pa3,pn1,hasAuthor,your revised manuscript “NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers”,MAIL5ZWL2TCQ
+pa3,pn7,hasAuthor,your revised manuscript “NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers”,MAIL5ZWL2TCQ
+pa3,pn8,hasAuthor,your revised manuscript “NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers”,MAIL5ZWL2TCQ
+pa3,pn1,hasAuthor,"On behalf of my co-authors—Sunita Sen, Dr. Michael Bradley, and Dr. Ananya Chatterjee—I am submitting the camera-ready package for our manuscript entitled “NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers”",MAIL4Q8V73YD
+pa3,pn7,hasAuthor,"On behalf of my co-authors—Sunita Sen, Dr. Michael Bradley, and Dr. Ananya Chatterjee—I am submitting the camera-ready package for our manuscript entitled “NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers”",MAIL4Q8V73YD
+pa3,pn8,hasAuthor,"On behalf of my co-authors—Sunita Sen, Dr. Michael Bradley, and Dr. Ananya Chatterjee—I am submitting the camera-ready package for our manuscript entitled “NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers”",MAIL4Q8V73YD
+pa3,pn2,hasAuthor,"Best regards,
+
+Ramesh Bhatia
+Professor, Department of Computer Science
+Indian Association for the Cultivation of Science
+On behalf of all co-authors",MAIL4Q8V73YD
+pa10,pn1,hasAuthor,toward developing a methods/workflow paper or tutorial proposal.,MAILZ8N4RTSY
+pa10,pn2,hasAuthor,toward developing a methods/workflow paper or tutorial proposal.,MAILZ8N4RTSY
+pa10,pn7,hasAuthor,toward developing a methods/workflow paper or tutorial proposal.,MAILZ8N4RTSY
+pa10,pn8,hasAuthor,toward developing a methods/workflow paper or tutorial proposal.,MAILZ8N4RTSY
+pa14,pn8,hasAuthor,"Michael’s and Sunita’s contributions are both rigorously presented, and your editorial oversight has ensured a cohesive package.",MAILE5R29QTM
+pa14,pn7,hasAuthor,"Michael’s and Sunita’s contributions are both rigorously presented, and your editorial oversight has ensured a cohesive package.",MAILE5R29QTM
+pa14,pn1,hasAuthor,"Michael’s and Sunita’s contributions are both rigorously presented, and your editorial oversight has ensured a cohesive package.",MAILE5R29QTM
+pa14,pn2,hasAuthor,"Otherwise, Ananya, you have my go-ahead to proceed with formal submission on behalf of our team.",MAILE5R29QTM
+pa15,pn2,hasAuthor,You should each soon receive an automated acknowledgment email from the conference submission system as co-authors,MAILQ19Y6D3A
+pa15,pn1,hasAuthor,You should each soon receive an automated acknowledgment email from the conference submission system as co-authors,MAILQ19Y6D3A
+pa15,pn7,hasAuthor,You should each soon receive an automated acknowledgment email from the conference submission system as co-authors,MAILQ19Y6D3A
+pa15,pn8,hasAuthor,You should each soon receive an automated acknowledgment email from the conference submission system as co-authors,MAILQ19Y6D3A
+pa16,pn8,hasAuthor,Congratulations to everyone on the acceptance of our JCDL 2020 tutorial proposal!,MAILDZ5A8KQ3
+pa16,pn2,hasAuthor,Congratulations to everyone on the acceptance of our JCDL 2020 tutorial proposal!,MAILDZ5A8KQ3
+pa16,pn1,hasAuthor,Congratulations to everyone on the acceptance of our JCDL 2020 tutorial proposal!,MAILDZ5A8KQ3
+pa16,pn7,hasAuthor,Congratulations to everyone on the acceptance of our JCDL 2020 tutorial proposal!,MAILDZ5A8KQ3
+pa20,pn1,hasAuthor,"I am pleased to confirm that our camera-ready submission for the JCDL 2020 tutorial, ""NLP Methods for Large-Scale Historical Data: Annotation, Corpus Design, and Reproducibility,"" was successfully compiled and uploaded",MAILE94LJAPQ
+pa20,pn8,hasAuthor,"Dear Ananya, Michael, and Ramesh, I am pleased to confirm that our camera-ready submission for the JCDL 2020 tutorial, ""NLP Methods for Large-Scale Historical Data: Annotation, Corpus Design, and Reproducibility,"" was successfully compiled and uploaded",MAILE94LJAPQ
+pa20,pn7,hasAuthor,"Dear Ananya, Michael, and Ramesh, I am pleased to confirm that our camera-ready submission for the JCDL 2020 tutorial, ""NLP Methods for Large-Scale Historical Data: Annotation, Corpus Design, and Reproducibility,"" was successfully compiled and uploaded",MAILE94LJAPQ
+pa20,pn2,hasAuthor,"Dear Ananya, Michael, and Ramesh, I am pleased to confirm that our camera-ready submission for the JCDL 2020 tutorial, ""NLP Methods for Large-Scale Historical Data: Annotation, Corpus Design, and Reproducibility,"" was successfully compiled and uploaded",MAILE94LJAPQ
+pa20,pn1,hasAuthor,"Dear Sunita Sen, Dr. Michael Bradley, Dr. Ananya Chatterjee, and Prof. Ramesh Bhatia,",MAILH8ZR57VQ
+pa20,pn7,hasAuthor,"Dear Sunita Sen, Dr. Michael Bradley, Dr. Ananya Chatterjee, and Prof. Ramesh Bhatia,",MAILH8ZR57VQ
+pa20,pn8,hasAuthor,"Dear Sunita Sen, Dr. Michael Bradley, Dr. Ananya Chatterjee, and Prof. Ramesh Bhatia,",MAILH8ZR57VQ
+pa20,pn2,hasAuthor,"Dear Sunita Sen, Dr. Michael Bradley, Dr. Ananya Chatterjee, and Prof. Ramesh Bhatia,",MAILH8ZR57VQ
+pa21,pn7,hasAuthor,it was a privilege to co-present with such a dedicated team.,MAIL1ADV9ZQW
+pa21,pn8,hasAuthor,it was a privilege to co-present with such a dedicated team.,MAIL1ADV9ZQW
+pa21,pn2,hasAuthor,it was a privilege to co-present with such a dedicated team.,MAIL1ADV9ZQW
+pa21,pn1,hasAuthor,it was a privilege to co-present with such a dedicated team.,MAIL1ADV9ZQW
+pa23,pn1,hasAuthor,"Authorship order will follow the agreement discussed: Sunita (lead author), Ananya (co-lead), Michael (methodology and compliance senior lead), Ramesh (senior advisor).",MAIL8Y4XRQJM
+pa23,pn8,hasAuthor,"Authorship order will follow the agreement discussed: Sunita (lead author), Ananya (co-lead), Michael (methodology and compliance senior lead), Ramesh (senior advisor).",MAIL8Y4XRQJM
+pa23,pn7,hasAuthor,"Authorship order will follow the agreement discussed: Sunita (lead author), Ananya (co-lead), Michael (methodology and compliance senior lead), Ramesh (senior advisor).",MAIL8Y4XRQJM
+pa23,pn2,hasAuthor,"Authorship order will follow the agreement discussed: Sunita (lead author), Ananya (co-lead), Michael (methodology and compliance senior lead), Ramesh (senior advisor).",MAIL8Y4XRQJM
+pa24,pn8,hasAuthor,"Ananya, your revisions to the “Transfer Learning in Low-Resource Historical Texts” subsection are clear and well-positioned",MAILYW15QH3T
+pa25,pn1,hasAuthor,"Dear Sunita, Michael, and Ananya,",MAIL2A8WBZR7
+pa25,pn7,hasAuthor,"Dear Sunita, Michael, and Ananya,",MAIL2A8WBZR7
+pa25,pn8,hasAuthor,"Dear Sunita, Michael, and Ananya,",MAIL2A8WBZR7
+pa25,pn2,hasAuthor,"I am very happy to confirm that our manuscript, “Cross-Institutional Methods for NLP on Historical Data: Dataset Profiling, Transfer Approaches, and Compliance,” ... has now been formally submitted",MAIL2A8WBZR7
+pa25,pn8,hasAuthor,Ananya’s prompt updates to the graphical abstract and the succinct audit checklist reference in the caption,MAIL7NKWPDG1
+pa25,pn1,hasAuthor,Sunita’s mapping table and Michael’s updates to the Response to Reviewers comprehensively cover the main feedback points,MAIL7NKWPDG1
+pa25,pn7,hasAuthor,Sunita’s mapping table and Michael’s updates to the Response to Reviewers comprehensively cover the main feedback points,MAIL7NKWPDG1
+pa25,pn2,hasAuthor,Thank you all for your comprehensive and coordinated work on this revision cycle.,MAIL7NKWPDG1
+pa25,pn7,hasAuthor,"Dear Dr. Bradley, Prof. Bhatia, Ms. Sen, and Dr. Chatterjee,",MAILF9QB2ST6
+pa25,pn2,hasAuthor,"Dear Dr. Bradley, Prof. Bhatia, Ms. Sen, and Dr. Chatterjee,",MAILF9QB2ST6
+pa25,pn1,hasAuthor,"Dear Dr. Bradley, Prof. Bhatia, Ms. Sen, and Dr. Chatterjee,",MAILF9QB2ST6
+pa25,pn8,hasAuthor,"Dear Dr. Bradley, Prof. Bhatia, Ms. Sen, and Dr. Chatterjee,",MAILF9QB2ST6
+pa25,pn7,hasAuthor,"Dear Dr. Bradley, Prof. Bhatia, Ms. Sen, and Dr. Chatterjee",MAIL76PKFQ2S
+pa25,pn2,hasAuthor,"Dear Dr. Bradley, Prof. Bhatia, Ms. Sen, and Dr. Chatterjee",MAIL76PKFQ2S
+pa25,pn1,hasAuthor,"Dear Dr. Bradley, Prof. Bhatia, Ms. Sen, and Dr. Chatterjee",MAIL76PKFQ2S
+pa25,pn8,hasAuthor,"Dear Dr. Bradley, Prof. Bhatia, Ms. Sen, and Dr. Chatterjee",MAIL76PKFQ2S
+pa29,pn7,hasAuthor,Thank you for confirming timelines and your readiness to collaborate on our JOCCH revision.,MAIL57JWBKXN
+pa29,pn2,hasAuthor,Thank you for confirming timelines and your readiness to collaborate on our JOCCH revision.,MAIL57JWBKXN
+pa29,pn8,hasAuthor,Thank you for confirming timelines and your readiness to collaborate on our JOCCH revision.,MAIL57JWBKXN
+pa29,pn1,hasAuthor,Thank you for confirming timelines and your readiness to collaborate on our JOCCH revision.,MAIL57JWBKXN
+pa25,pn2,hasAuthor,"Best regards,
+
+Ramesh",MAIL3DF92WNK
+pa25,pn8,hasAuthor,"All of your individual efforts—Ananya’s cross-consistency pass, Michael’s supplementary validation, and Sunita’s integration and final packaging—were crucial in reaching this milestone",MAIL3DF92WNK
+pa25,pn7,hasAuthor,"All of your individual efforts—Ananya’s cross-consistency pass, Michael’s supplementary validation, and Sunita’s integration and final packaging—were crucial in reaching this milestone",MAIL3DF92WNK
+pa25,pn1,hasAuthor,"All of your individual efforts—Ananya’s cross-consistency pass, Michael’s supplementary validation, and Sunita’s integration and final packaging—were crucial in reaching this milestone",MAIL3DF92WNK
+pa25,pn8,hasAuthor,"Dear Dr. Chatterjee, Prof. Bhatia, Ms. Sen, and Dr. Bradley,",MAILE9QX1W43
+pa25,pn2,hasAuthor,"Dear Dr. Chatterjee, Prof. Bhatia, Ms. Sen, and Dr. Bradley,",MAILE9QX1W43
+pa25,pn1,hasAuthor,"Dear Dr. Chatterjee, Prof. Bhatia, Ms. Sen, and Dr. Bradley,",MAILE9QX1W43
+pa25,pn7,hasAuthor,"Dear Dr. Chatterjee, Prof. Bhatia, Ms. Sen, and Dr. Bradley,",MAILE9QX1W43
+pa25,pn8,hasAuthor,"Dear Dr. Chatterjee, Prof. Bhatia, Ms. Sen, and Dr. Bradley, ... your revised submission ... “Cross-Language NLP Pipelines for Noisy Historical Data: Protocols, Benchmarks, and Reproducibility Advances”",MAILJ92KLD7P
+pa25,pn2,hasAuthor,"Dear Dr. Chatterjee, Prof. Bhatia, Ms. Sen, and Dr. Bradley, ... your revised submission ... “Cross-Language NLP Pipelines for Noisy Historical Data: Protocols, Benchmarks, and Reproducibility Advances”",MAILJ92KLD7P
+pa25,pn1,hasAuthor,"Dear Dr. Chatterjee, Prof. Bhatia, Ms. Sen, and Dr. Bradley, ... your revised submission ... “Cross-Language NLP Pipelines for Noisy Historical Data: Protocols, Benchmarks, and Reproducibility Advances”",MAILJ92KLD7P
+pa25,pn7,hasAuthor,"Dear Dr. Chatterjee, Prof. Bhatia, Ms. Sen, and Dr. Bradley, ... your revised submission ... “Cross-Language NLP Pipelines for Noisy Historical Data: Protocols, Benchmarks, and Reproducibility Advances”",MAILJ92KLD7P
+pa25,pn8,hasAuthor,Congratulations to everyone on the conditional acceptance of our JOCCH manuscript,MAIL2XNC51SK
+pa25,pn7,hasAuthor,Congratulations to everyone on the conditional acceptance of our JOCCH manuscript,MAIL2XNC51SK
+pa25,pn2,hasAuthor,Congratulations to everyone on the conditional acceptance of our JOCCH manuscript,MAIL2XNC51SK
+pa25,pn1,hasAuthor,Congratulations to everyone on the conditional acceptance of our JOCCH manuscript,MAIL2XNC51SK
+pa39,pn1,hasAuthor,"Dear Sunita, Ramesh, and Ananya,",MAILNU1SHK7Q
+pa39,pn2,hasAuthor,"Dear Sunita, Ramesh, and Ananya,",MAILNU1SHK7Q
+pa39,pn8,hasAuthor,"Dear Sunita, Ramesh, and Ananya,",MAILNU1SHK7Q
+pa39,pn7,hasAuthor,"Best regards,
+
+Michael",MAILNU1SHK7Q
+pa40,pn1,hasAuthor,All authors to confirm authorship and conflict of interest declarations via ScholarOne,MAILF49J8L2H
+pa40,pn2,hasAuthor,All authors to confirm authorship and conflict of interest declarations via ScholarOne,MAILF49J8L2H
+pa40,pn7,hasAuthor,All authors to confirm authorship and conflict of interest declarations via ScholarOne,MAILF49J8L2H
+pa40,pn8,hasAuthor,All authors to confirm authorship and conflict of interest declarations via ScholarOne,MAILF49J8L2H
+pa41,pn1,hasAuthor,"our camera-ready manuscript, supplementary Jupyter notebook ... have now been successfully uploaded",MAILHL9F1QX7
+pa41,pn2,hasAuthor,"Dear Ramesh, Michael, and Ananya,
+
+I am pleased to inform you that our camera-ready manuscript...",MAILHL9F1QX7
+pa41,pn7,hasAuthor,"Dear Ramesh, Michael, and Ananya,
+
+I am pleased to inform you that our camera-ready manuscript...",MAILHL9F1QX7
+pa41,pn8,hasAuthor,"Dear Ramesh, Michael, and Ananya,
+
+I am pleased to inform you that our camera-ready manuscript...",MAILHL9F1QX7
+pa42,pn1,hasAuthor,"Dear Sunita, Ramesh, and Michael, ... our JOCCH submission (“HistocrNLP: A Reproducible NLP Pipeline for Historical Texts across Domains,” SUB-JOCCH-2021-0612).",MAIL8DPS3BVN
+pa42,pn2,hasAuthor,"Dear Sunita, Ramesh, and Michael, ... our JOCCH submission (“HistocrNLP: A Reproducible NLP Pipeline for Historical Texts across Domains,” SUB-JOCCH-2021-0612).",MAIL8DPS3BVN
+pa42,pn7,hasAuthor,"Dear Sunita, Ramesh, and Michael, ... our JOCCH submission (“HistocrNLP: A Reproducible NLP Pipeline for Historical Texts across Domains,” SUB-JOCCH-2021-0612).",MAIL8DPS3BVN
+pa42,pn8,hasAuthor,I have now completed my review of the galley proofs and supplementary materials for our JOCCH submission,MAIL8DPS3BVN
+pa42,pn1,hasAuthor,"On behalf of my co-authors, I am submitting our consolidated list of minor corrections for the galley proofs of our article",MAILU3CVH92B
+pa42,pn2,hasAuthor,"Sunita Sen  (on behalf of Prof. Ramesh Bhatia, Dr. Michael Bradley, and Dr. Ananya Chatterjee)",MAILU3CVH92B
+pa42,pn7,hasAuthor,"Sunita Sen  (on behalf of Prof. Ramesh Bhatia, Dr. Michael Bradley, and Dr. Ananya Chatterjee)",MAILU3CVH92B
+pa42,pn8,hasAuthor,"Sunita Sen  (on behalf of Prof. Ramesh Bhatia, Dr. Michael Bradley, and Dr. Ananya Chatterjee)",MAILU3CVH92B
+pa42,pn1,hasAuthor,"Dear Dr. Sen and co-authors,",MAILQ2B7SZMJ
+pa44,pn8,hasAuthor,"Thank you, Ananya, for circulating the draft lay summary and for providing a clear timeline for collaborative input.",MAILJ9QL47AW
+pa44,pn2,hasAuthor,I have reviewed the Google Doc and am impressed by how effectively the key elements of our HistocrNLP project are distilled for a general audience.,MAILJ9QL47AW
+pa44,pn7,hasAuthor,"Dear Ananya, Michael, and Sunita,",MAILJ9QL47AW
+pa44,pn1,hasAuthor,"Dear Ananya, Michael, and Sunita,",MAILJ9QL47AW
+pa48,pn1,hasAuthor,"Thank you, Sunita, for promptly confirming the folder structures and for your careful work in assembling the initial FAQ.",MAILE12CRJK9
+pa47,pn7,hasAuthor,I have uploaded the first draft of the technical setup instructions to the internal/private repository on GitHub under the folder “docs/technical_setup/.”,MAILE12CRJK9
+pa49,pn2,hasAuthor,"Ramesh, I look forward to your IACS dataset citation guidelines and annotation schema",MAILE12CRJK9
+pa50,pn8,hasAuthor,"Ananya, once your GDPR and consent materials are finalized",MAILE12CRJK9
+pa52,pn1,hasAuthor,"Following your confirmations and the comprehensive internal sign-off, I am pleased to report that the full ACL resource track submission package is now compiled.",MAILS9CK37PB
+pa52,pn2,hasAuthor,"Dear Ramesh, Ananya, and Michael,",MAILS9CK37PB
+pa52,pn8,hasAuthor,"Dear Ramesh, Ananya, and Michael,",MAILS9CK37PB
+pa52,pn7,hasAuthor,"Dear Ramesh, Ananya, and Michael,",MAILS9CK37PB
+pa53,pn1,hasAuthor,Corresponding author: Sunita Sen (IACS),MAILBG5C29QT
+pa53,pn2,hasAuthor,"Dear Ramesh, Michael, and Ananya,",MAILBG5C29QT
+pa53,pn7,hasAuthor,"Dear Ramesh, Michael, and Ananya,",MAILBG5C29QT
+pa53,pn8,hasAuthor,"Dear Ramesh, Michael, and Ananya,",MAILBG5C29QT
+pa53,pn1,hasAuthor,our resource track paper (SUB-ACL-2021-0842),MAILVS849QPL
+pa53,pn2,hasAuthor,"Dear Ramesh, Michael, and Ananya, I am delighted to share the official acceptance notification from ACL 2021 for our resource track paper",MAILVS849QPL
+pa53,pn7,hasAuthor,"Dear Ramesh, Michael, and Ananya, I am delighted to share the official acceptance notification from ACL 2021 for our resource track paper",MAILVS849QPL
+pa53,pn8,hasAuthor,"Dear Ramesh, Michael, and Ananya, I am delighted to share the official acceptance notification from ACL 2021 for our resource track paper",MAILVS849QPL
+pa60,pn1,hasAuthor,"Dear Sunita Sen and co-authors,",MAILEU947XCF
+pa60,pn1,hasAuthor,"Sunita Sen will serve as the presenting author for our accepted paper, ""Provenance-Aware NLP for Historical Texts: Annotation, Compliance, and Synthetic Instance Protocols""",MAILA83CFPLM
+pa60,pn2,hasAuthor,"On behalf of our team, I would like to confirm that Sunita Sen will serve as the presenting author for our accepted paper",MAILA83CFPLM
+pa64,pn1,hasAuthor,Corresponding author: Sunita Sen (on behalf of the team),MAILPLU9S0KM
+pa65,pn1,hasAuthor,"Dear Sunita Sen and Co-authors,",MAILEU7QX13A
+pa65,pn2,hasAuthor,"Dear Prof. Bhatia, Michael, and Ananya, ... our paper “NLP Methods for Historical Data: Provenance and Bias Mitigation” has been officially ACCEPTED",MAIL4V8XZUP2
+pa65,pn7,hasAuthor,"Dear Prof. Bhatia, Michael, and Ananya, ... our paper “NLP Methods for Historical Data: Provenance and Bias Mitigation” has been officially ACCEPTED",MAIL4V8XZUP2
+pa65,pn8,hasAuthor,"Dear Prof. Bhatia, Michael, and Ananya, ... our paper “NLP Methods for Historical Data: Provenance and Bias Mitigation” has been officially ACCEPTED",MAIL4V8XZUP2
+pa65,pn1,hasAuthor,Congratulations to each of you for your dedicated collaboration and expert contributions throughout this lengthy process.,MAIL4V8XZUP2
+pa71,pn1,hasAuthor,"Dear Sunita, Prof. Bhatia, and Ananya,
+
+I am pleased to inform you that our manuscript, “Leveraging Multilingual NLP for Historical Data: Case Studies Across South Asian Texts,”",MAILQ58DZVL3
+pa71,pn2,hasAuthor,"Dear Sunita, Prof. Bhatia, and Ananya,
+
+I am pleased to inform you that our manuscript, “Leveraging Multilingual NLP for Historical Data: Case Studies Across South Asian Texts,”",MAILQ58DZVL3
+pa71,pn8,hasAuthor,"Dear Sunita, Prof. Bhatia, and Ananya,
+
+I am pleased to inform you that our manuscript, “Leveraging Multilingual NLP for Historical Data: Case Studies Across South Asian Texts,”",MAILQ58DZVL3
+pa71,pn7,hasAuthor,"I am pleased to inform you that our manuscript, “Leveraging Multilingual NLP for Historical Data: Case Studies Across South Asian Texts,” along with the full supplementary corpus and documentation, has been successfully submitted this afternoon",MAILQ58DZVL3
+pa23,pn7,hasAuthor,our JOCCH submission (SUB-JOCCH-2022-0362),MAILW9J4S1QN
+pa73,pn1,hasAuthor,"the embargo monitoring log, focusing on the U.S.- and UK-facing outreach sections that Sunita had highlighted for revision.",MAILP8K5M3Y2
+pa73,pn8,hasAuthor,following the best practices discussed by IACS and Oxford.,MAILP8K5M3Y2
+pa73,pn2,hasAuthor,"Thank you, Prof. Bhatia, for circulating the comprehensive minutes from our 16 October review",MAILP8K5M3Y2
+pa75,pn1,hasAuthor,"Thank you, Sunita, for circulating the integrated FAQ annex draft and for your meticulous work in harmonizing our contributions.",MAILE7K9TU3B
+pa75,pn8,hasAuthor,Ananya’s bullet-point protocols are exceptionally clear.,MAILE7K9TU3B
+pa75,pn7,hasAuthor,Michael’s disclaimers are incorporated thoroughly.,MAILE7K9TU3B
+pa75,pn2,hasAuthor,I have completed a close review of the “FINAL_Integrated_FAQ_Annex_v1.0” document and wish to commend the team for achieving such depth and clarity across diverse institutional concerns.,MAILE7K9TU3B
+pa77,pn1,hasAuthor,"All institutions agreed to submit legal and press clearance statements as scanned PDFs included in the supplementary files set.
+
+3. **Submission Materials Checklist:**
+   - Confirmed presence and correct formatting of: FAQ annex...",MAILK4N2V7EF
+pa77,pn8,hasAuthor,"3. **Submission Materials Checklist:**
+   - Confirmed presence and correct formatting of: FAQ annex, metadata protocol summary, version changelog, co-authorship statement, institutional compliance letters.",MAILK4N2V7EF
+pa77,pn2,hasAuthor,"3. **Submission Materials Checklist:**
+   - Confirmed presence and correct formatting of: FAQ annex, metadata protocol summary, version changelog, co-authorship statement, institutional compliance letters.",MAILK4N2V7EF
+pa77,pn7,hasAuthor,"3. **Submission Materials Checklist:**
+   - Confirmed presence and correct formatting of: FAQ annex, metadata protocol summary, version changelog, co-authorship statement, institutional compliance letters.",MAILK4N2V7EF
+pa78,pn1,hasAuthor,Corresponding Author: Sunita Sen,MAILQ9B3A7UT
+pa78,pn8,hasAuthor,"Co-authors: Ananya Chatterjee, Ramesh Bhatia, Michael Bradley",MAILQ9B3A7UT
+pa78,pn2,hasAuthor,"Co-authors: Ananya Chatterjee, Ramesh Bhatia, Michael Bradley",MAILQ9B3A7UT
+pa78,pn7,hasAuthor,"Co-authors: Ananya Chatterjee, Ramesh Bhatia, Michael Bradley",MAILQ9B3A7UT
+pa78,pn1,hasAuthor,"Dear Sunita Sen and Research Team,
+
+We are pleased to inform you that after thorough peer review, your submission to JCDL 2022 entitled “Cross-Institutional Protocols for Metadata and Embargo: An Integrated FAQ Annex”",MAILS3K7U1XC
+pa79,pn1,hasAuthor,Many thanks to Sunita for leading the submission and to each of you for your ongoing attention to detail throughout this process.,MAILL8F6P2WR
+pa79,pn8,hasAuthor,"Dear Sunita, Ananya, and Ramesh,",MAILL8F6P2WR
+pa79,pn2,hasAuthor,"Dear Sunita, Ananya, and Ramesh,",MAILL8F6P2WR
+pa79,pn7,hasAuthor,"Best,
+Michael",MAILL8F6P2WR
+pa78,pn1,hasAuthor,"Dear Ananya, Ramesh, and Michael, I am pleased to confirm that our camera-ready manuscript for JCDL 2022 ... has been uploaded",MAILZ7B1L4NT
+pa78,pn8,hasAuthor,"Dear Ananya, Ramesh, and Michael, I am pleased to confirm that our camera-ready manuscript for JCDL 2022 ... has been uploaded",MAILZ7B1L4NT
+pa78,pn2,hasAuthor,"Dear Ananya, Ramesh, and Michael, I am pleased to confirm that our camera-ready manuscript for JCDL 2022 ... has been uploaded",MAILZ7B1L4NT
+pa78,pn7,hasAuthor,"Dear Ananya, Ramesh, and Michael, I am pleased to confirm that our camera-ready manuscript for JCDL 2022 ... has been uploaded",MAILZ7B1L4NT
+pa78,pn1,hasAuthor,"Dear Sunita Sen and co-authors,",MAILG3S9D4XB
+pa84,pn7,hasAuthor,"The file was uploaded via our communications portal and attributed to all co-authors, with explicit reference to the embargo conditions and funding statements as reflected in the version circulated by Ananya.",MAILN7D8V6QP
+pa84,pn8,hasAuthor,"The file was uploaded via our communications portal and attributed to all co-authors, with explicit reference to the embargo conditions and funding statements as reflected in the version circulated by Ananya.",MAILN7D8V6QP
+pa84,pn1,hasAuthor,"The file was uploaded via our communications portal and attributed to all co-authors, with explicit reference to the embargo conditions and funding statements as reflected in the version circulated by Ananya.",MAILN7D8V6QP
+pa84,pn2,hasAuthor,"The file was uploaded via our communications portal and attributed to all co-authors, with explicit reference to the embargo conditions and funding statements as reflected in the version circulated by Ananya.",MAILN7D8V6QP
+pa85,pn1,hasAuthor,"featuring your project, “NLP Innovations for Historical Texts: Multilingual Heritage Preservation across Continents,”",MAILM2K4Q5WN
+pa85,pn8,hasAuthor,"Dear Sunita, Dr. Chatterjee, Dr. Bradley, and Prof. Bhatia, ... featuring your project, “NLP Innovations for Historical Texts: Multilingual Heritage Preservation across Continents,”",MAILM2K4Q5WN
+pa85,pn7,hasAuthor,"Dear Sunita, Dr. Chatterjee, Dr. Bradley, and Prof. Bhatia, ... featuring your project, “NLP Innovations for Historical Texts: Multilingual Heritage Preservation across Continents,”",MAILM2K4Q5WN
+pa85,pn2,hasAuthor,"Dear Sunita, Dr. Chatterjee, Dr. Bradley, and Prof. Bhatia, ... featuring your project, “NLP Innovations for Historical Texts: Multilingual Heritage Preservation across Continents,”",MAILM2K4Q5WN
+pa88,pn7,hasAuthor,"Dear Michael, Ananya, and Ramesh,",MAILPG2483SL
+pa88,pn8,hasAuthor,"Dear Michael, Ananya, and Ramesh,",MAILPG2483SL
+pa88,pn2,hasAuthor,"Dear Michael, Ananya, and Ramesh,",MAILPG2483SL
+pa88,pn1,hasAuthor,"With gratitude and best regards,
+
+Sunita",MAILPG2483SL
+pa88,pn1,hasAuthor,"Authors: Sunita Sen, Prof. Ramesh Bhatia, Dr. Michael Bradley, Dr. Ananya Chatterjee",MAILW19Z75EN
+pa88,pn2,hasAuthor,"Authors: Sunita Sen, Prof. Ramesh Bhatia, Dr. Michael Bradley, Dr. Ananya Chatterjee",MAILW19Z75EN
+pa88,pn7,hasAuthor,"Authors: Sunita Sen, Prof. Ramesh Bhatia, Dr. Michael Bradley, Dr. Ananya Chatterjee",MAILW19Z75EN
+pa88,pn8,hasAuthor,"Authors: Sunita Sen, Prof. Ramesh Bhatia, Dr. Michael Bradley, Dr. Ananya Chatterjee",MAILW19Z75EN
+pa95,pn8,hasAuthor,"a collaborative drafting structure—with Ananya and me co-leading the “Lessons Learned & Recommendations” section, and all co-authors actively contributing—will result in a more nuanced and balanced synthesis.",MAIL9N2HEX0T
+pa95,pn7,hasAuthor,"a collaborative drafting structure—with Ananya and me co-leading the “Lessons Learned & Recommendations” section, and all co-authors actively contributing—will result in a more nuanced and balanced synthesis.",MAIL9N2HEX0T
+pa95,pn2,hasAuthor,and all co-authors actively contributing—will result in a more nuanced and balanced synthesis.,MAIL9N2HEX0T
+pa95,pn1,hasAuthor,and all co-authors actively contributing—will result in a more nuanced and balanced synthesis.,MAIL9N2HEX0T
+pa101,pn8,hasAuthor,"our manuscript, entitled “Language Variation and Accessibility: NLP Methods for Historical Question Answering with Cross-Dialectal Data,” has now been successfully submitted",MAILWGQ0BZ68
+pa101,pn2,hasAuthor,"Dear Ramesh, Sunita, and Michael,",MAILWGQ0BZ68
+pa101,pn1,hasAuthor,"Dear Ramesh, Sunita, and Michael,",MAILWGQ0BZ68
+pa101,pn7,hasAuthor,"Dear Ramesh, Sunita, and Michael,",MAILWGQ0BZ68
+pa101,pn1,hasAuthor,our manuscript submission to the ACM Journal on Computing and Cultural Heritage,MAILU7J356PH
+pa101,pn7,hasAuthor,our manuscript submission to the ACM Journal on Computing and Cultural Heritage,MAILU7J356PH
+pa101,pn2,hasAuthor,our manuscript submission to the ACM Journal on Computing and Cultural Heritage,MAILU7J356PH
+pa101,pn8,hasAuthor,our manuscript submission to the ACM Journal on Computing and Cultural Heritage,MAILU7J356PH
+pa109,pn8,hasAuthor,"Dear Dr. Chatterjee and Co-authors,",MAIL7G5S23LV
+pa110,pn1,hasAuthor,"Dear Sunita, Ramesh, and Ananya,",MAILEI6Q9MPY
+pa110,pn2,hasAuthor,"Dear Sunita, Ramesh, and Ananya,",MAILEI6Q9MPY
+pa110,pn8,hasAuthor,"Dear Sunita, Ramesh, and Ananya,",MAILEI6Q9MPY
+pa110,pn7,hasAuthor,I am sharing my draft sub-paragraph to conclude our manuscript,MAILEI6Q9MPY
+pa111,pn1,hasAuthor,"Authors (final order): Sunita Sen, Ramesh Bhatia, Michael Bradley, Ananya Chatterjee",MAILWK92N3Q6
+pa111,pn2,hasAuthor,"Authors (final order): Sunita Sen, Ramesh Bhatia, Michael Bradley, Ananya Chatterjee",MAILWK92N3Q6
+pa111,pn7,hasAuthor,"Authors (final order): Sunita Sen, Ramesh Bhatia, Michael Bradley, Ananya Chatterjee",MAILWK92N3Q6
+pa111,pn8,hasAuthor,"Authors (final order): Sunita Sen, Ramesh Bhatia, Michael Bradley, Ananya Chatterjee",MAILWK92N3Q6
+pa111,pn2,hasAuthor,"Dear Ramesh, Ananya, and Sunita,",MAILWD9CX3N2
+pa111,pn8,hasAuthor,"Dear Ramesh, Ananya, and Sunita,",MAILWD9CX3N2
+pa111,pn1,hasAuthor,"Dear Ramesh, Ananya, and Sunita,",MAILWD9CX3N2
+pa111,pn7,hasAuthor,"Best regards,
+
+Michael",MAILWD9CX3N2
+pa114,pn1,hasAuthor,Funding agency and authorship details have undergone a final check for accuracy and completeness by all contributors.,MAIL7TJ8V6PY
+pa114,pn2,hasAuthor,Funding agency and authorship details have undergone a final check for accuracy and completeness by all contributors.,MAIL7TJ8V6PY
+pa114,pn7,hasAuthor,Funding agency and authorship details have undergone a final check for accuracy and completeness by all contributors.,MAIL7TJ8V6PY
+pa114,pn8,hasAuthor,Funding agency and authorship details have undergone a final check for accuracy and completeness by all contributors.,MAIL7TJ8V6PY
+pa41,pn1,hasAuthor,"Dear Sunita, Ramesh, and Ananya,
+
+I am pleased to inform you that the camera-ready manuscript ... have now been successfully submitted",MAIL5A4LJ7WM
+pa41,pn2,hasAuthor,"Dear Sunita, Ramesh, and Ananya,
+
+I am pleased to inform you that the camera-ready manuscript ... have now been successfully submitted",MAIL5A4LJ7WM
+pa41,pn8,hasAuthor,"Dear Sunita, Ramesh, and Ananya,
+
+I am pleased to inform you that the camera-ready manuscript ... have now been successfully submitted",MAIL5A4LJ7WM
+pa41,pn7,hasAuthor,"Best regards,
+
+Michael
+
+Dr. Michael Bradley",MAIL5A4LJ7WM
+pa115,pn7,hasAuthor,"Dear Dr. Bradley, Ms. Sen, Prof. Bhatia, and Dr. Chatterjee,",MAIL9V4PKLWB
+pa115,pn1,hasAuthor,"Dear Dr. Bradley, Ms. Sen, Prof. Bhatia, and Dr. Chatterjee,",MAIL9V4PKLWB
+pa115,pn2,hasAuthor,"Dear Dr. Bradley, Ms. Sen, Prof. Bhatia, and Dr. Chatterjee,",MAIL9V4PKLWB
+pa115,pn8,hasAuthor,"Dear Dr. Bradley, Ms. Sen, Prof. Bhatia, and Dr. Chatterjee,",MAIL9V4PKLWB
+pa117,pn1,hasAuthor,"Thank you, Sunita, for your meticulous work in synthesizing the feedback and producing such a comprehensive draft outline for our ACM JOCCH manuscript.",MAILV85PBYQG
+pa117,pn7,hasAuthor,and will coordinate with Michael to ensure cohesion with the error analysis and interpretability measures.,MAILV85PBYQG
+pa117,pn2,hasAuthor,"Ramesh, once everyone has weighed in, please let us know the timeline for completing first drafts.",MAILV85PBYQG
+pa117,pn8,hasAuthor,"Best regards,
+
+Ananya",MAILV85PBYQG
+pa118,pn1,hasAuthor,Sunita’s outline and the thoughtful follow-ups by Ananya and Michael have provided the structure and momentum we need for an impactful ACM JOCCH submission.,MAIL9YT7X4SB
+pa118,pn7,hasAuthor,Sunita’s outline and the thoughtful follow-ups by Ananya and Michael have provided the structure and momentum we need for an impactful ACM JOCCH submission.,MAIL9YT7X4SB
+pa118,pn8,hasAuthor,Sunita’s outline and the thoughtful follow-ups by Ananya and Michael have provided the structure and momentum we need for an impactful ACM JOCCH submission.,MAIL9YT7X4SB
+pa118,pn2,hasAuthor,"Ramesh (myself): Final review, manuscript integration, and submission logistics",MAIL9YT7X4SB
+pa121,pn8,hasAuthor,I have completed a detailed review of Ananya’s “Semantic Metrics Alignment” section,MAILNC67B2TQ
+pa122,pn2,hasAuthor,"I am pleased to inform you that ... I have today initiated our manuscript submission ... The submission—entitled “NLP Pipelines for Semantic Analysis of 19th-century South Asian Legal Documents: Methods, Datasets, and Error Taxonomy”",MAILB6U8GQ5V
+pa122,pn8,hasAuthor,"Dear Ananya, Sunita, and Michael,",MAILB6U8GQ5V
+pa122,pn1,hasAuthor,"Dear Ananya, Sunita, and Michael,",MAILB6U8GQ5V
+pa122,pn7,hasAuthor,"Dear Ananya, Sunita, and Michael,",MAILB6U8GQ5V
+pa122,pn2,hasAuthor,"Thank you, Ramesh, for submitting our manuscript",MAILEK8N2VC5
+pa122,pn1,hasAuthor,"Dear Ramesh, Sunita, and Michael,",MAILEK8N2VC5;MAILNL85K7YZ
+pa122,pn7,hasAuthor,"Dear Ramesh, Sunita, and Michael,",MAILEK8N2VC5;MAILNL85K7YZ
+pa122,pn8,hasAuthor,Any required clarifications or minor corrections will be communicated directly to me as the corresponding author.,MAILEK8N2VC5
+pa122,pn2,hasAuthor,Congratulations to everyone involved on successfully navigating the revision process and achieving publication in ACM’s Journal on Computing and Cultural Heritage!,MAIL8NFP2QLK
+pa122,pn1,hasAuthor,Congratulations to everyone involved on successfully navigating the revision process and achieving publication in ACM’s Journal on Computing and Cultural Heritage!,MAIL8NFP2QLK
+pa122,pn7,hasAuthor,Congratulations to everyone involved on successfully navigating the revision process and achieving publication in ACM’s Journal on Computing and Cultural Heritage!,MAIL8NFP2QLK
+pa122,pn8,hasAuthor,Congratulations to everyone involved on successfully navigating the revision process and achieving publication in ACM’s Journal on Computing and Cultural Heritage!,MAIL8NFP2QLK
+pa122,pn2,hasAuthor,"Dear Ramesh, Sunita, and Michael,",MAILNL85K7YZ
+pa122,pn8,hasAuthor,"our JOCCH article, “Semantic Adjudication and Entity Agreement Protocols for Historical South Asian Legal Texts”",MAILNL85K7YZ
+pa124,pn1,hasAuthor,I wanted to express my full support for Sunita’s initiative and Ananya’s thoughtful recommendations regarding our proposed “Project Retrospective & Workflow Reference.”,MAIL96JUYQW2
+pa124,pn8,hasAuthor,I wanted to express my full support for Sunita’s initiative and Ananya’s thoughtful recommendations regarding our proposed “Project Retrospective & Workflow Reference.”,MAIL96JUYQW2
+pa124,pn7,hasAuthor,Thank you all for your dedication—working together on both the research and process front has truly set a benchmark.,MAIL96JUYQW2
+pa124,pn2,hasAuthor,Thank you all for your dedication—working together on both the research and process front has truly set a benchmark.,MAIL96JUYQW2
+pa126,pn1,hasAuthor,"our manuscript, “Transparent Documentation Pipelines for Multilingual NLP on Historical Data: Compliance and Workflow Reflections,” has been officially submitted ... I have designated myself as the corresponding author",MAILC5T8RGBA
+pa126,pn2,hasAuthor,"Dear Ramesh, Ananya, and Michael, I am delighted to inform you that our manuscript ... has been officially submitted",MAILC5T8RGBA
+pa126,pn8,hasAuthor,"Dear Ramesh, Ananya, and Michael, I am delighted to inform you that our manuscript ... has been officially submitted",MAILC5T8RGBA
+pa126,pn7,hasAuthor,"Dear Ramesh, Ananya, and Michael, I am delighted to inform you that our manuscript ... has been officially submitted",MAILC5T8RGBA
+pa126,pn1,hasAuthor,"Dear Sunita Sen and co-authors, We are pleased to inform you that your manuscript entitled “Transparent Documentation Pipelines for Multilingual NLP on Historical Data: Compliance and Workflow Reflections”",MAIL5PE2ZRXH
+pa126,pn1,hasAuthor,"Dear Sunita Sen and co-authors,",MAIL2SYFJ6LZ
+pa127,pn7,hasAuthor,"Thank you for the timely and constructive feedback on the integrated draft, as well as Michael’s helpful comments on narrative cohesion and cross-institutional compliance.",MAILV8F3Q2ZM
+pa127,pn1,hasAuthor,"these include the expanded compliance crosswalk reference, Sunita’s update to the licensing addendum",MAILV8F3Q2ZM
+pa127,pn2,hasAuthor,"All major callouts, table and appendix links, and section cross-references have been harmonized per Ramesh’s integration",MAILV8F3Q2ZM
+pa127,pn8,hasAuthor,"Best regards,
+
+Ananya",MAILV8F3Q2ZM
+pa128,pn8,hasAuthor,"Additionally, I have completed a first draft of our “Response to Reviewers” letter",MAILV8F3Q2ZM
+pa130,pn7,hasAuthor,"Thank you, Michael, for setting up the Doodle poll and for offering to circulate a preliminary outline for our reflection memo.",MAILV49LSB1P
+pa130,pn1,hasAuthor,"Dear Michael, Sunita, and Ananya,",MAILV49LSB1P
+pa130,pn8,hasAuthor,"Dear Michael, Sunita, and Ananya,",MAILV49LSB1P
+pa130,pn2,hasAuthor,"With best regards,
+
+Ramesh",MAILV49LSB1P
+pa131,pn7,hasAuthor,"Michael, I appreciate your initiative in setting up the scheduling and your commitment to preparing the preliminary outline.",MAIL8YXFUJQZ
+pa131,pn2,hasAuthor,"Ramesh, if you could upload the sample ethics committee correspondence (redacted as necessary) to our shared Drive under the new “Memo_Appendices_Working” folder",MAIL8YXFUJQZ
+pa131,pn1,hasAuthor,"Sunita, your inputs regarding NDLI negotiation and institutional compliance are already shaping up to be central pillars of the reflection memo’s methodology section.",MAIL8YXFUJQZ
+pa131,pn8,hasAuthor,"Many thanks for your ongoing collegiality and precision throughout this process.
+
+Best regards,
+
+Ananya",MAIL8YXFUJQZ
+pa132,pn8,hasAuthor,"Thank you, Ananya, for your clear agenda and logistical suggestions in advance of our upcoming call. I am pleased to share that the preliminary outline for our reflection memo (“Cross-Institutional Reflection Memo Outline”) is now uploaded...",MAILK57ZCBRU
+pa132,pn2,hasAuthor,"Ramesh, thank you for offering to supply anonymized ethics committee documents. Once uploaded, I will reference them within the appendices section...",MAILK57ZCBRU
+pa132,pn1,hasAuthor,Each team member to review and annotate the draft outline by 5 November,MAILK57ZCBRU
+pa132,pn7,hasAuthor,I am pleased to share that the preliminary outline for our reflection memo (“Cross-Institutional Reflection Memo Outline”) is now uploaded...,MAILK57ZCBRU
+pa133,pn1,hasAuthor,"Dear Sunita, Michael, and Ramesh,",MAILN472KX08
+pa133,pn7,hasAuthor,"Dear Sunita, Michael, and Ramesh,",MAILN472KX08
+pa133,pn2,hasAuthor,"Dear Sunita, Michael, and Ramesh,",MAILN472KX08
+pa133,pn8,hasAuthor,I have now had the opportunity to thoroughly review “TransnationalNLP_ReflectionMemo_v2.2.docx” in the Google Drive.,MAILN472KX08
+pa135,pn8,hasAuthor,"Dear Ananya, Sunita, and Michael,",MAILE89ZTQPAR
+pa135,pn1,hasAuthor,"Dear Ananya, Sunita, and Michael,",MAILE89ZTQPAR
+pa135,pn7,hasAuthor,"Dear Ananya, Sunita, and Michael,",MAILE89ZTQPAR
+pa135,pn2,hasAuthor,"I am pleased to inform you all that our reflection memo, titled “Transnational NLP Reflection Memo: Protocol Harmonization and Compliance Lessons from Multinational Historical NLP Consortia,” has been officially submitted to ACL for review.",MAILE89ZTQPAR
+pa136,pn1,hasAuthor,excited to move this important paper forward together.,MAILSCYN52RQ
+pa136,pn2,hasAuthor,excited to move this important paper forward together.,MAILSCYN52RQ
+pa136,pn7,hasAuthor,excited to move this important paper forward together.,MAILSCYN52RQ
+pa136,pn8,hasAuthor,excited to move this important paper forward together.,MAILSCYN52RQ
+pa138,pn8,hasAuthor,Ananya and I have uploaded our draft “Generalizing Harmonization Strategies to Under-Resourced Settings” to the shared folder this morning.,MAILJW4QK1ZL
+pa138,pn2,hasAuthor,Ananya and I have uploaded our draft “Generalizing Harmonization Strategies to Under-Resourced Settings” to the shared folder this morning.,MAILJW4QK1ZL
+pa143,pn1,hasAuthor,"Dear Sunita, Ramesh, and Ananya,
+
+First, a heartfelt congratulations to the entire team for our acceptance at ACL 2024!",MAILY56H2QMV
+pa143,pn2,hasAuthor,"Dear Sunita, Ramesh, and Ananya,
+
+First, a heartfelt congratulations to the entire team for our acceptance at ACL 2024!",MAILY56H2QMV
+pa143,pn7,hasAuthor,"First, a heartfelt congratulations to the entire team for our acceptance at ACL 2024!",MAILY56H2QMV
+pa143,pn8,hasAuthor,"Dear Sunita, Ramesh, and Ananya,
+
+First, a heartfelt congratulations to the entire team for our acceptance at ACL 2024!",MAILY56H2QMV
+pa144,pn8,hasAuthor,"Dear Dr. Chatterjee, Ms. Sen, Prof. Bhatia, and Dr. Bradley,",MAILHV735LMB
+pa144,pn1,hasAuthor,"Dear Dr. Chatterjee, Ms. Sen, Prof. Bhatia, and Dr. Bradley,",MAILHV735LMB
+pa144,pn2,hasAuthor,"Dear Dr. Chatterjee, Ms. Sen, Prof. Bhatia, and Dr. Bradley,",MAILHV735LMB
+pa144,pn7,hasAuthor,"Dear Dr. Chatterjee, Ms. Sen, Prof. Bhatia, and Dr. Bradley,",MAILHV735LMB
+pa147,pn2,hasAuthor,"Dear Prof. Bhatia, Dr. Bradley, Dr. Chatterjee, and Ms. Sen,",MAILR0S7HCD8
+pa147,pn7,hasAuthor,"Dear Prof. Bhatia, Dr. Bradley, Dr. Chatterjee, and Ms. Sen,",MAILR0S7HCD8
+pa147,pn8,hasAuthor,"Dear Prof. Bhatia, Dr. Bradley, Dr. Chatterjee, and Ms. Sen,",MAILR0S7HCD8
+pa147,pn1,hasAuthor,"Dear Prof. Bhatia, Dr. Bradley, Dr. Chatterjee, and Ms. Sen,",MAILR0S7HCD8
+pa147,pn2,hasAuthor,"Dear Prof. Bhatia, Dr. Bradley, Dr. Chatterjee, and Ms. Sen,
+
+We are pleased to inform you that your camera-ready paper entitled “Mixed-Script NLP Techniques for Historical Corpora in South Asia: Annotation, Evaluation, and Cross-Lingual Analysis”",MAILY4K39PJL
+pa147,pn7,hasAuthor,"Dear Prof. Bhatia, Dr. Bradley, Dr. Chatterjee, and Ms. Sen,
+
+We are pleased to inform you that your camera-ready paper entitled “Mixed-Script NLP Techniques for Historical Corpora in South Asia: Annotation, Evaluation, and Cross-Lingual Analysis”",MAILY4K39PJL
+pa147,pn8,hasAuthor,"Dear Prof. Bhatia, Dr. Bradley, Dr. Chatterjee, and Ms. Sen,
+
+We are pleased to inform you that your camera-ready paper entitled “Mixed-Script NLP Techniques for Historical Corpora in South Asia: Annotation, Evaluation, and Cross-Lingual Analysis”",MAILY4K39PJL
+pa147,pn1,hasAuthor,"Dear Prof. Bhatia, Dr. Bradley, Dr. Chatterjee, and Ms. Sen,
+
+We are pleased to inform you that your camera-ready paper entitled “Mixed-Script NLP Techniques for Historical Corpora in South Asia: Annotation, Evaluation, and Cross-Lingual Analysis”",MAILY4K39PJL
+pa149,pn1,hasAuthor,"Thank you, Sunita, for your meticulous documentation of the 24 April meeting, and to all for your constructive engagement as we move toward finalizing our JOCCH resource note.",MAIL9MNLQ7VY
+pa149,pn2,hasAuthor,"Thank you, Sunita, for your meticulous documentation of the 24 April meeting, and to all for your constructive engagement as we move toward finalizing our JOCCH resource note.",MAIL9MNLQ7VY
+pa149,pn7,hasAuthor,"Looking forward to continued smooth progress and a strong submission package for JOCCH.
+
+Best regards,
+
+Michael",MAIL9MNLQ7VY
+pa149,pn8,hasAuthor,"For the manuscript, Ananya’s lead on editorial refinement and coordination remains invaluable.",MAIL9MNLQ7VY
+pa149,pn8,hasAuthor,Corresponding Author: Dr. Ananya Chatterjee (University of Oxford),MAILE8J72XRC
+pa149,pn1,hasAuthor,"Dear Sunita, Ramesh, and Michael,",MAILE8J72XRC;MAIL2Z9N6DYP
+pa149,pn2,hasAuthor,"Dear Sunita, Ramesh, and Michael,",MAILE8J72XRC;MAIL2Z9N6DYP
+pa149,pn7,hasAuthor,"Dear Sunita, Ramesh, and Michael,",MAILE8J72XRC;MAIL2Z9N6DYP
+pa149,pn8,hasAuthor,our JOCCH resource note (SUB-JOCCH-2024-0421),MAILQA9L2DCR
+pa149,pn1,hasAuthor,our JOCCH resource note (SUB-JOCCH-2024-0421),MAILQA9L2DCR
+pa149,pn2,hasAuthor,our JOCCH resource note (SUB-JOCCH-2024-0421),MAILQA9L2DCR
+pa149,pn7,hasAuthor,our JOCCH resource note (SUB-JOCCH-2024-0421),MAILQA9L2DCR
+pa152,pn1,hasAuthor,"“Sen, S., Chatterjee, A., Bradley, M., and Bhatia, R. (2024). Supplementary Historical Newspapers Dataset.",MAILA5B3KZJH
+pa152,pn8,hasAuthor,"“Sen, S., Chatterjee, A., Bradley, M., and Bhatia, R. (2024). Supplementary Historical Newspapers Dataset.",MAILA5B3KZJH
+pa152,pn7,hasAuthor,"“Sen, S., Chatterjee, A., Bradley, M., and Bhatia, R. (2024). Supplementary Historical Newspapers Dataset.",MAILA5B3KZJH
+pa152,pn2,hasAuthor,"“Sen, S., Chatterjee, A., Bradley, M., and Bhatia, R. (2024). Supplementary Historical Newspapers Dataset.",MAILA5B3KZJH
+pa149,pn8,hasAuthor,I am writing to confirm that our comprehensive revision package for the JOCCH resource note (SUB-JOCCH-2024-0421) has now been successfully submitted,MAIL2Z9N6DYP
+pa158,pn7,hasAuthor,"Thank you, Michael, for your comprehensive updates regarding both the figures for our technical note",MAILG3F9H2L7
+pa158,pn8,hasAuthor,"Dear Michael, Ananya, and Ramesh,",MAILG3F9H2L7
+pa158,pn2,hasAuthor,"Dear Michael, Ananya, and Ramesh,",MAILG3F9H2L7
+pa158,pn1,hasAuthor,"Best regards,
+
+Sunita",MAILG3F9H2L7
+pa160,pn7,hasAuthor,The workflow diagrams and “pitfall node” figures from Michael are placed as indicated in the annotated legend,MAILJ6Q3E1YZ
+pa160,pn8,hasAuthor,"Ananya’s remarks regarding narrative cohesion and legal framing have been incorporated, particularly in the introduction and Section 2 transitions.",MAILJ6Q3E1YZ
+pa160,pn2,hasAuthor,I have inserted the compliance negotiation vignette from Ramesh’s redacted version provided yesterday.,MAILJ6Q3E1YZ
+pa160,pn1,hasAuthor,"I am pleased to share the integrated first full draft of our technical note, “Practical Compliance and Data Release Workflows for NLP on Historical Collections,” for your review and feedback.",MAILJ6Q3E1YZ
+pa149,pn7,hasAuthor,"Dear Michael, Ananya, and Ramesh,
+
+I am delighted to announce that our manuscript, ""Practical Workflows for NLP on International Historical Archival Data: Legal, Technical, and Community Lessons Learned,"" has been formally submitted",MAILG2Q9PW7M
+pa149,pn8,hasAuthor,"Dear Michael, Ananya, and Ramesh,
+
+I am delighted to announce that our manuscript, ""Practical Workflows for NLP on International Historical Archival Data: Legal, Technical, and Community Lessons Learned,"" has been formally submitted",MAILG2Q9PW7M
+pa149,pn2,hasAuthor,"Dear Michael, Ananya, and Ramesh,
+
+I am delighted to announce that our manuscript, ""Practical Workflows for NLP on International Historical Archival Data: Legal, Technical, and Community Lessons Learned,"" has been formally submitted",MAILG2Q9PW7M
+pa149,pn1,hasAuthor,Corresponding Author: Sunita Sen,MAILG2Q9PW7M
+pa149,pn1,hasAuthor,"Authors: Sunita Sen, Dr. Michael Bradley, Dr. Ananya Chatterjee, Prof. Ramesh Bhatia",MAILT3ZN2GFM
+pa149,pn7,hasAuthor,"Authors: Sunita Sen, Dr. Michael Bradley, Dr. Ananya Chatterjee, Prof. Ramesh Bhatia",MAILT3ZN2GFM
+pa149,pn8,hasAuthor,"Authors: Sunita Sen, Dr. Michael Bradley, Dr. Ananya Chatterjee, Prof. Ramesh Bhatia",MAILT3ZN2GFM
+pa149,pn2,hasAuthor,"Authors: Sunita Sen, Dr. Michael Bradley, Dr. Ananya Chatterjee, Prof. Ramesh Bhatia",MAILT3ZN2GFM
+pa23,pn1,hasAuthor,"our JOCCH submission (SUB-JOCCH-2024-1143)... Best regards,
+
+Sunita",MAILE7FGQK51
+pa23,pn2,hasAuthor,"Dear Prof. Bhatia, Ananya, and Michael,
+
+...our JOCCH submission (SUB-JOCCH-2024-1143).",MAILE7FGQK51
+pa23,pn8,hasAuthor,"Dear Prof. Bhatia, Ananya, and Michael,
+
+...our JOCCH submission (SUB-JOCCH-2024-1143).",MAILE7FGQK51
+pa23,pn7,hasAuthor,"Dear Prof. Bhatia, Ananya, and Michael,
+
+...our JOCCH submission (SUB-JOCCH-2024-1143).",MAILE7FGQK51
+pa165,pn1,hasAuthor,uploaded by Sunita,MAILQ8BZ7LT5
+pa165,pn8,hasAuthor,"thanks, Ananya and Michael, for your rigor in managing these details.",MAILQ8BZ7LT5
+pa165,pn7,hasAuthor,"thanks, Ananya and Michael, for your rigor in managing these details.",MAILQ8BZ7LT5
+pa165,pn2,hasAuthor,"Michael and I will stand by to provide any immediate clarifications, should there be last-minute journal queries pre-submission.",MAILQ8BZ7LT5
+pa166,pn1,hasAuthor,Corresponding Author: Sunita Sen (on behalf of all co-authors),MAILTG81JX2A
+pa166,pn2,hasAuthor,"Dear Ramesh, Ananya, and Michael,",MAILTG81JX2A
+pa166,pn8,hasAuthor,"Dear Ramesh, Ananya, and Michael,",MAILTG81JX2A
+pa166,pn7,hasAuthor,"Dear Ramesh, Ananya, and Michael,",MAILTG81JX2A
+pa166,pn1,hasAuthor,- Corresponding Author: Sunita Sen,MAIL18ZN4HJV
+pa166,pn2,hasAuthor,"- Co-authors: Prof. Ramesh Bhatia, Dr. Ananya Chatterjee, Dr. Michael Bradley",MAIL18ZN4HJV
+pa166,pn8,hasAuthor,"- Co-authors: Prof. Ramesh Bhatia, Dr. Ananya Chatterjee, Dr. Michael Bradley",MAIL18ZN4HJV
+pa166,pn7,hasAuthor,"- Co-authors: Prof. Ramesh Bhatia, Dr. Ananya Chatterjee, Dr. Michael Bradley",MAIL18ZN4HJV
+pa166,pn1,hasAuthor,"Dear Ms. Sen, ... we are writing regarding your manuscript entitled “Cross-Jurisdictional Compliance in NLP Applications for Historical Data: A Comparative Analysis”",MAILE8GV1TYL
+pa23,pn1,hasAuthor,Thank you all for your diligent work leading up to our JOCCH submission,MAILLWZY5QPF
+pa23,pn2,hasAuthor,Thank you all for your diligent work leading up to our JOCCH submission,MAILLWZY5QPF
+pa23,pn8,hasAuthor,"Dear Ramesh, Ananya, and Michael,",MAILLWZY5QPF
+pa23,pn7,hasAuthor,"Dear Ramesh, Ananya, and Michael,",MAILLWZY5QPF
+pa167,pn1,hasAuthor,Each of you is named as co-author with your preferred institutional affiliations,MAIL2JQ3DHZK
+pa167,pn8,hasAuthor,Each of you is named as co-author with your preferred institutional affiliations,MAIL2JQ3DHZK
+pa167,pn7,hasAuthor,Each of you is named as co-author with your preferred institutional affiliations,MAIL2JQ3DHZK
+pa167,pn2,hasAuthor,Corresponding Author: Ramesh Bhatia,MAIL2JQ3DHZK
+pa167,pn2,hasAuthor,Corresponding Author: Prof. Ramesh Bhatia,MAILE4TG9K7X
+pa168,pn1,hasAuthor,"Thank you, Sunita, for so promptly synthesizing our preliminary reflections and drafting a coherent outline for the ‘Lessons Learned’ memo.",MAILK7D2QP83
+pa168,pn2,hasAuthor,"Dear Sunita, Ramesh, and Ananya,",MAILK7D2QP83
+pa168,pn8,hasAuthor,"Dear Sunita, Ramesh, and Ananya,",MAILK7D2QP83
+pa168,pn1,hasAuthor,"Thank you, Sunita, for sharing the collaborative workspace and for your thoughtful structuring of both the ‘Lessons Learned’ memo and the colloquium abstract draft.",MAILZX8M4TYQ
+pa170,pn1,hasAuthor,"Thank you, Sunita, for sharing the collaborative workspace and for your thoughtful structuring of both the ‘Lessons Learned’ memo and the colloquium abstract draft.",MAILZX8M4TYQ
+pa170,pn8,hasAuthor,"Lastly, Ananya and Michael—if you wish to co-sign the colloquium abstract, please indicate your preferred order of authorship or leave comments directly in the appended draft by 29 March, as Sunita plans to submit by 2 April.",MAILZX8M4TYQ
+pa170,pn7,hasAuthor,"Lastly, Ananya and Michael—if you wish to co-sign the colloquium abstract, please indicate your preferred order of authorship or leave comments directly in the appended draft by 29 March, as Sunita plans to submit by 2 April.",MAILZX8M4TYQ
+pa171,pn7,hasAuthor,I have made significant progress on the “Multi-author Version Management Template & Reviewer Feedback Handling” section of our memo.,MAILY4S9TF23
+pa171,pn1,hasAuthor,"Sunita and Ananya, your energy in both structuring the memo and diving into the compliance/metadata sections has made the drafting process both efficient and collaborative thus far.",MAILY4S9TF23
+pa171,pn2,hasAuthor,"Thank you, Ramesh, for your thoughtful allocation of sections and for your willingness to take the lead on the Executive Summary and methods note dissemination proposal.",MAILY4S9TF23
+pa171,pn8,hasAuthor,"Sunita and Ananya, your energy in both structuring the memo and diving into the compliance/metadata sections has made the drafting process both efficient and collaborative thus far.",MAILY4S9TF23
+pa168,pn1,hasAuthor,Thank you for your remarkable efforts in collaboratively developing the ‘Lessons Learned’ memo,MAILE1Z7CFU8
+pa168,pn8,hasAuthor,Thank you for your remarkable efforts in collaboratively developing the ‘Lessons Learned’ memo,MAILE1Z7CFU8
+pa168,pn7,hasAuthor,Thank you for your remarkable efforts in collaboratively developing the ‘Lessons Learned’ memo,MAILE1Z7CFU8
+pa170,pn1,hasAuthor,"I suggest we proceed with the submission (authorship: Sunita, Ananya, Michael) on 2 April.",MAILE1Z7CFU8
+pa170,pn8,hasAuthor,"I suggest we proceed with the submission (authorship: Sunita, Ananya, Michael) on 2 April.",MAILE1Z7CFU8
+pa170,pn7,hasAuthor,"I suggest we proceed with the submission (authorship: Sunita, Ananya, Michael) on 2 April.",MAILE1Z7CFU8
+pa173,pn1,hasAuthor,I suggest we begin concretely outlining the proposed methods note or short-form paper,MAILDYQ4G2M7
+pa173,pn2,hasAuthor,I suggest we begin concretely outlining the proposed methods note or short-form paper,MAILDYQ4G2M7
+pa173,pn8,hasAuthor,I suggest we begin concretely outlining the proposed methods note or short-form paper,MAILDYQ4G2M7
+pa173,pn7,hasAuthor,I suggest we begin concretely outlining the proposed methods note or short-form paper,MAILDYQ4G2M7
+pa174,pn2,hasAuthor,"Thank you, Ramesh, for putting forward a clear and actionable plan for the next phase of our collaboration. I am fully in favor of moving ahead with outlining the methods note/short-form paper as discussed.",MAILQ52L8ASN
+pa174,pn1,hasAuthor,"Dear Ramesh, Sunita, and Ananya,",MAILQ52L8ASN
+pa174,pn8,hasAuthor,"Dear Ramesh, Sunita, and Ananya,",MAILQ52L8ASN
+pa174,pn7,hasAuthor,I am fully in favor of moving ahead with outlining the methods note/short-form paper as discussed.,MAILQ52L8ASN
+pa174,pn1,hasAuthor,our discussion slot for the finalization of the methods note/short-form paper outline and venue selection.,MAIL32B5JCQY
+pa174,pn2,hasAuthor,our discussion slot for the finalization of the methods note/short-form paper outline and venue selection.,MAIL32B5JCQY
+pa174,pn7,hasAuthor,our discussion slot for the finalization of the methods note/short-form paper outline and venue selection.,MAIL32B5JCQY
+pa174,pn8,hasAuthor,our discussion slot for the finalization of the methods note/short-form paper outline and venue selection.,MAIL32B5JCQY

@@ -8,23 +8,61 @@ You will be provided with:
 Focus on extracting:
 
 Entities to extract from body:
-- Person: personName, personEmail, affiliation (ONLY for people NOT already in the header list)
+- Person: personName, personEmail (ONLY for people NOT already in the header list)
 - Paper: paperTitle
 - Conference: confTitle, confDate, confVenue
 - Journal: journalTitle
+- PaperBib: doi, arxivID, url, volume, issue, pages, year, publisher
 - SubmissionID: identifier
-- PaperStatus: statusType, statusDate
+- PaperStatus: statusType, statusDate (the date this status was reported --
+  use the date of this email if no other date is stated for it)
 - Meeting: meetDate, meetTime, meetAgenda, meetLink
 - Dataset: datasetName
 - Method: methodName
-- Task: taskName
+- Task: taskName, taskDate (the date this task/activity is due, scheduled, or
+  reported as happening -- e.g. a deadline stated for it, or the date of the
+  email if the task is described as ongoing/current at send time; omit if no
+  date is stated or inferable anywhere in the email)
 - Metric: metricName
+
+NAMING RULE (applies to Paper, Dataset, Method, Task, Metric): the name you
+extract must be the SPECIFIC, distinguishing name/title actually available in
+the text -- never a vague, generic placeholder standing in for it. If an email
+refers to something informally (e.g. "the revised manuscript is ready", "see
+attached datasets", "our submission"), and no specific title/name is stated
+anywhere in THIS email, do NOT invent an entity for it under that generic
+phrase. A generic phrase is not a reliable name: two different emails that
+each vaguely say "revised manuscript" almost certainly refer to two DIFFERENT
+real papers, and extracting both under the literal name "revised manuscript"
+will make them look like the same paper downstream. Only create the entity
+once you can name it specifically (e.g. from its actual title, a SubmissionID,
+or a DOI mentioned nearby); otherwise, either omit it, or attach the
+informal mention as relation `context` text on an entity you can already
+identify specifically (e.g. the Person who is revising it, or the
+SubmissionID already known from this thread) rather than minting a new,
+vaguely-named node.
+
+TYPE-CHOICE RULE (Task vs Method vs Metric vs Dataset): when a phrase could
+plausibly fit more than one of these types (e.g. "faithfulness/clarity
+heatmaps" could be read as a Task -- the activity of producing them -- a
+Method -- the visualization technique -- or a Metric -- what they measure),
+pick exactly ONE type based on its role in the sentence, and be consistent:
+  - Task = the ACTIVITY/GOAL being worked on ("assembling the ... heatmaps")
+  - Method = a named TECHNIQUE/ALGORITHM/TOOL used to produce a result
+  - Metric = a MEASUREMENT/SCORE used to evaluate something
+  - Dataset = a named COLLECTION OF DATA
+A single real-world thing should not become two or three separate nodes of
+different types across different emails just because later emails phrase it
+differently -- if this same concept was already given a type in earlier
+context you can see, keep using that type and that entity, don't re-mint it
+under a different type.
 
 Relations to extract from body:
 - hasAuthor (Paper, Person)
 - identifies (SubmissionID, Paper)
 - inVenue (SubmissionID, Conference/Journal)
 - movesTo (PaperStatus/SubmissionID, PaperStatus)
+- hasPaperInfo (Paper, PaperBib)
 - worksWith (Person, Method/Dataset/Metric)
 - worksOn (Person, Task)
 - usedFor (Dataset/Method, Task)
@@ -38,11 +76,91 @@ IMPORTANT RULES:
    - Do NOT create a new Person entity for them
 2. ONLY create new Person entities (with new IDs) for people who are NOT in the header list
 3. For relations involving persons from headers, use their existing IDs
-4. Every entity must have a stable ID (like pn1, pa1, s1, d1, me1, tk1, mt1, ps1, c1, j1, mg1)
+3b. ORGANIZATIONAL EMAIL HINTS: you may also be given a list of
+    organizational sender/recipient addresses detected in this email's
+    headers (e.g. "jocch-office@acm.org", "acl2024-submissions@..."). These
+    are NOT persons and NOT a separate entity type -- do not create any
+    entity or relation for them directly.
+4. Every entity must have a stable ID (like pn1, pa1, pb1, s1, d1, me1, tk1, mt1, ps1, c1, j1, mg1)
 5. Output ONLY a valid JSON object with two keys: "entities" and "relations"
 6. Each entity must have: id, type, and properties
 7. Each relation must have: start_id, end_id, relation and context (the quote where this relation is found)
 8. Output ONLY the JSON object, NO other text, NO markdown code fences
+9. AUTHOR COMPLETENESS: when a paper's authors are listed, extract a hasAuthor
+   relation for EVERY person named, even if they are listed only in
+   abbreviated citation form (e.g. a bibliography-style line like "Sen, S.,
+   Chatterjee, A., Bradley, M., and Bhatia, R. (2024)."). Match each
+   abbreviated surname+initial back to the corresponding already-known Person
+   (from the header list or an earlier entity in this email) rather than
+   skipping them because the full name isn't restated -- a paper's authorship
+   should never be left with zero hasAuthor edges when the authors are named
+   anywhere in the text, even in shorthand.
+10. MEETING CONTENT COMPLETENESS: when an email contains meeting minutes or a
+    detailed agenda (numbered points, specific decisions, named
+    datasets/methods/metrics discussed), capture that SUBSTANTIVE content in
+    meetAgenda -- not a vague one-line paraphrase like "discuss these ideas
+    further" or "productive discussion." If the email lists concrete items
+    (e.g. "agreed on Chronicling America and British Library datasets;
+    F1-score and accuracy as metrics; next steps assigned"), meetAgenda should
+    name those specifics, since a generic summary loses information a reader
+    of the email would actually retain.
+11. PAPERSTATUS IS PRIVATE PER SUBMISSION: never point a movesTo relation
+    from more than one SubmissionID (or PaperStatus) at the same PaperStatus
+    entity. If an email reports several different submissions all reaching
+    the same status (e.g. "SUB-A, SUB-B, and SUB-C are all now Under
+    Review"), create a SEPARATE new PaperStatus entity for EACH submission's
+    own transition -- ps_a, ps_b, ps_c, each with its own movesTo edge -- even
+    though the statusType text is identical across them. Each submission's
+    status history is its own private chain; two different submissions must
+    never share a PaperStatus node, even one with matching statusType/statusDate.
+12. ATTRIBUTE TO THE NAMED PERSON, NOT A CO-RECIPIENT: on an email with
+    multiple recipients, a sentence that directly addresses or names ONE
+    specific person ("Ananya, your plan to...", "Michael, I am eager to see
+    your...", "X presented her findings on...") describes THAT named person's
+    own work -- never attribute the resulting relation (worksOn, worksWith,
+    hasAuthor, etc.) to a DIFFERENT recipient just because they're also on
+    the thread, mentioned in a neighboring sentence, or happen to be the
+    Person entity you were already tracking. Confirmed real failure case:
+    an email from Sunita to Ananya, Michael, and Ramesh contained "Ananya,
+    your plan to analyze post-OCR artifacts with LIME and SHAP is very
+    timely. Michael, I am eager to see your correction workflow demo" --
+    the LIME/SHAP analysis is Ananya's own plan (she is named and addressed
+    directly), NOT Michael's, even though he's named in the very next
+    sentence of the same email. When a sentence names person X doing/
+    planning/presenting something, the relation's owner is X -- re-read the
+    specific sentence's own named subject before creating the relation,
+    don't default to whichever person you most recently created a relation
+    for or whichever recipient feels most contextually central to the email.
+13. COLLECTIVE/POSSESSIVE LANGUAGE ("our X", "the team's X") IS NOT THE
+    SENDER'S OWN WORK. A sender summarizing or reporting on a group result
+    ("I have reviewed Dr. Liu's submissions... our LIME/SHAP explanations")
+    is not necessarily the person who produced that result -- read whether
+    the surrounding sentence names a DIFFERENT specific person as the one
+    who actually did the work being described. Confirmed real failure: an
+    email from Sunita Sen said "she has provided detailed input... on our
+    LIME/SHAP explanations" while summarizing feedback on Ananya
+    Chatterjee's interpretability analysis (Ananya's own prior email
+    explicitly says "I will conduct a comparative analysis of LIME and
+    SHAP"); the extractor still created a worksWith(Sunita, LIME/SHAP)
+    relation purely because Sunita was the sender and used the word "our."
+    When "our"/"the team's" refers to work already attributed elsewhere in
+    the thread to a specific named person, attribute the relation to that
+    person, not to whoever is speaking.
+14. HEDGED/PROPOSED USAGE IS NOT CONFIRMED USAGE: "we could also consider
+    using X" or "X might be worth exploring" describes X as a candidate
+    under consideration, not something the project actually used -- do NOT
+    create a usedFor/worksWith relation for X on this basis alone. Only
+    create the relation once a LATER email confirms X was actually
+    downloaded, processed, or reported on. Confirmed real failure: a
+    founding proposal listed "Chronicling America," "British Library
+    Digital Collections" as the datasets to use, and separately said "we
+    could also consider... Corpus of Historical American English (COHA)."
+    The reply email explicitly agreed only with the first two ("I agree
+    with your suggestions for potential datasets, especially..." naming
+    only those two) and COHA is never mentioned again in the entire
+    corpus -- yet a usedFor(COHA, Task) relation was still created from the
+    single hedged mention. If a dataset/method is only ever proposed and
+    never followed up on, do not extract a usage relation for it.
 
 Example:
 
@@ -54,7 +172,7 @@ Email body text:
 ---
 Dear Dr. Chen and Prof. Martinez,
 
-Congratulations! Your paper "Deep Learning for Sentiment Analysis" (ID: ICML2025-4523) has been ACCEPTED to ICML 2025 in Vienna, Austria (July 15-20, 2025).
+Congratulations! Your paper "Deep Learning for Sentiment Analysis" (ID: ICML2025-4523) has been ACCEPTED to ICML 2025 in Vienna, Austria (July 15-20, 2025). The camera-ready DOI is 10.1145/9999999.9999999.
 
 Authors: Alice Chen, Bob Martinez, Carol Wong
 
@@ -79,6 +197,7 @@ Output JSON:
     {"id": "c1", "type": "Conference", "properties": {"confTitle": "ICML 2025", "confDate": "2025-07-15", "confVenue": "Vienna, Austria"}},
     {"id": "s1", "type": "SubmissionID", "properties": {"identifier": "ICML2025-4523"}},
     {"id": "ps1", "type": "PaperStatus", "properties": {"statusType": "Accepted"}},
+    {"id": "pb1", "type": "PaperBib", "properties": {"doi": "10.1145/9999999.9999999"}},
     {"id": "me1", "type": "Method", "properties": {"methodName": "BERT"}},
     {"id": "me2", "type": "Method", "properties": {"methodName": "GPT-4"}},
     {"id": "me3", "type": "Method", "properties": {"methodName": "SentiWordNet"}},
@@ -96,6 +215,7 @@ Output JSON:
     {"start_id": "s1", "end_id": "pa1", "relation": "identifies", "context": "Your paper \"Deep Learning for Sentiment Analysis\" (ID: ICML2025-4523) has been ACCEPTED to ICML 2025"},
     {"start_id": "s1", "end_id": "c1", "relation": "inVenue", "context": "Your paper \"Deep Learning for Sentiment Analysis\" (ID: ICML2025-4523) has been ACCEPTED to ICML 2025"},
     {"start_id": "s1", "end_id": "ps1", "relation": "movesTo", "context": "Your paper \"Deep Learning for Sentiment Analysis\" (ID: ICML2025-4523) has been ACCEPTED to ICML 2025"},
+    {"start_id": "pa1", "end_id": "pb1", "relation": "hasPaperInfo", "context": "The camera-ready DOI is 10.1145/9999999.9999999."},
     {"start_id": "me1", "end_id": "tk1", "relation": "usedFor", "context": "Your paper employed BERT and GPT-4 models on the IMDb dataset for sentiment classification."},
     {"start_id": "me2", "end_id": "tk1", "relation": "usedFor", "context": "Your paper employed BERT and GPT-4 models on the IMDb dataset for sentiment classification."},
     {"start_id": "me1", "end_id": "d1", "relation": "uses", "context": "Your paper employed BERT and GPT-4 models on the IMDb dataset for sentiment classification."},

@@ -1,0 +1,622 @@
+:ID,mergeConfidence,mergedFrom,methodName,:LABEL
+me126,,,entity normalization,Method
+me127,0.7726,['me149'],reproducibility practices,Method
+me128,0.7553,"['me132', 'me519']",FAIR workflow visual (FAIR pipeline),Method
+me550,,,protocol adaptation for under-resourced settings,Method
+me552,,,annotation tool error mitigation approach,Method
+me568,,,sub-dialectal code-switching,Method
+me569,,,longitudinal modeling,Method
+me288,,,synthetic instance generation protocol,Method
+me114,,,FAIR principles,Method
+me526,,,annotation process,Method
+me327,,,transformer-based post-correction approaches,Method
+me225,,,cross-consistency pass,Method
+me226,,,supplementary validation,Method
+me227,,,integration and final packaging,Method
+me689,,,Compliance harmonization,Method
+me690,,,Provenance checkpoints,Method
+me693,,,Communication strategies,Method
+me694,,,Bottleneck log and mitigation strategies,Method
+me695,,,Metadata workflows,Method
+me547,,,ACL 2023 BibTeX style,Method
+me548,,,JDoc,Method
+me549,,,ACM JOCCH,Method
+me176,,,Transfer Learning in Low-Resource Historical Texts,Method
+me177,,,Evaluation & Benchmarks,Method
+me178,,,Historical Corpus Profiling,Method
+me452,0.8339,"['me461', 'me463']",context reconstruction techniques,Method
+me466,,,Evaluation/Metrics,Method
+me56,,,open-science guidelines,Method
+me230,,,LaTeX table environments,Method
+me231,,,`tabu` package,Method
+me232,,,ACM style recommendations,Method
+me95,,,PAC 2019,Method
+me96,,,Adobe Acrobat checker tools,Method
+me32,0.8118,['me79'],historical OCR,Method
+me518,,,Lucidchart,Method
+me198,,,cell anchors,Method
+me670,,,cross-referencing with compliance diagrams and provenance tables,Method
+me671,,,embedding callout suggestions,Method
+me359,,,tracked changes,Method
+me360,,,highlighted notes,Method
+me172,0.8203,"['me259', 'me354', 'me370', 'me371', 'me374', 'me380', 'me386', 'me485', 'me486', 'me516', 'me525', 'me543', 'me674']",cross-institution protocols for multilingual NLP (NLP tools),Method
+me531,,,meta-analysis scripts,Method
+me567,,,historic language normalization pipeline,Method
+me625,,,tracked-changes markup,Method
+me627,,,pitfall annotation panels,Method
+me628,,,compliance negotiation vignette,Method
+me629,,,legal template materials,Method
+me630,,,Q&A theme crowdsourcing,Method
+me676,,,harmonized compliance and metadata approach,Method
+me677,,,provenance checkpoint mechanism,Method
+me678,,,systematic cross-referencing of glossary terms,Method
+me679,,,embedding of workflow diagrams,Method
+me680,,,stricter version-naming protocols,Method
+me681,,,time-boxed editing windows,Method
+me682,,,shared log of 'pending vs. resolved' comments,Method
+me620,,,Google Apps Script,Method
+me377,0.7784,['me378'],language model domain adaptation workflow,Method
+me11,,,LIME,Method
+me12,,,SHAP,Method
+me445,,,dialect classification methodology,Method
+me477,,,evaluation framework,Method
+me478,,,corpus annotation methodology,Method
+me479,,,interoperability findings,Method
+me71,,,NLP processing,Method
+me481,,,graphical representations,Method
+me309,,,model bias,Method
+me310,,,provenance-aware protocols,Method
+me182,,,profiling methodology,Method
+me183,0.8261,"['me185', 'me193', 'me204', 'me209', 'me60', 'me62']",cross-lingual transfer error analysis,Method
+me184,,,data privacy processing routine,Method
+me672,,,consent revalidation,Method
+me673,,,archival authority,Method
+me18,0.8275,"['me23', 'me250', 'me26', 'me28', 'me333', 'me406', 'me413']",customized OCR correction pipeline (OCR correction tool),Method
+me575,,,code-switching analysis,Method
+me576,,,machine-readable annotated corpora integration,Method
+me29,,,baseline modeling,Method
+me420,,,annotated code notebooks,Method
+me421,,,OCR/NER troubleshooting,Method
+me210,,,Code Anchor Methods,Method
+me211,,,Code Cell Identification,Method
+me212,,,Anchor Assignment,Method
+me213,,,Direct Navigation Mechanism,Method
+me214,,,Color-Coding for Reviewer-Specific Cues,Method
+me646,,,legal protocol matrix,Method
+me647,,,evaluation visualizations,Method
+me311,,,stratified sampling methodology,Method
+me312,,,external audit measures,Method
+me313,,,peer historian feedback,Method
+me390,,,cross-platform benchmarking,Method
+me431,,,browser troubleshooting checklist,Method
+me432,,,session agenda PDF,Method
+me433,,,hyperlink rendering check,Method
+me434,,,sender authentication check,Method
+me343,,,meta-level reflection on annotation protocol and transparency,Method
+me344,0.8035,"['me541', 'me626']",Process Flowcharts (process diagram),Method
+me316,0.784,['me482'],collaborative methodologies (joint methodology),Method
+me398,,,Google Drive,Method
+me109,0.797,"['me129', 'me347', 'me348']",cross-lingual entity normalization methods (cross-lingual normalization),Method
+me110,0.8116,"['me152', 'me164', 'me248']",reproducibility frameworks (reproducible workflows),Method
+me111,,,metadata schema harmonization,Method
+me112,,,persistent provenance tracking,Method
+me113,,,standardized documentation,Method
+me115,,,community engagement strategy,Method
+me546,,,annotation tool validation,Method
+me561,,,internal scan,Method
+me224,,,Jupyter notebook,Method
+me268,,,Dockerfile,Method
+me199,,,anonymization workflow,Method
+me1,,,temporal embeddings,Method
+me2,,,historical lexicons,Method
+me3,,,BERT,Method
+me4,,,GPT,Method
+me5,,,LSTM,Method
+me6,,,CRFs,Method
+me116,,,rule-based string matching,Method
+me117,,,neural string matching,Method
+me118,,,Levenshtein distance,Method
+me119,,,BERT-based alignment,Method
+me120,0.8397,['me123'],FastText embedding strategies (FastText embeddings),Method
+me545,,,automated annotation pipeline,Method
+me388,,,cross-institutional protocol,Method
+me389,,,annotation review process,Method
+me345,0.8099,"['me350', 'me523', 'me608']",workflow diagram creation,Method
+me346,,,QA and adjudication process,Method
+me473,,,multilingual semantic drift detection framework,Method
+me614,,,rolling embargo documentation,Method
+me615,,,compliance reminders,Method
+me616,,,workflow tools,Method
+me617,,,manual procedures,Method
+me618,,,MOU negotiation process,Method
+me619,0.7738,['me623'],template-driven MOU/legal correspondence (legal communication templates),Method
+me606,,,citation format,Method
+me138,0.8409,['me557'],annotation workflow diagram,Method
+me607,,,integration of citation callouts,Method
+me191,,,anonymization,Method
+me192,,,audit mechanisms,Method
+me67,,,technical validation scripts,Method
+me290,,,synthetic instance protocol,Method
+me480,,,NLP pipeline,Method
+me234,,,sequence labelling evaluation,Method
+me104,,,cross-lingual ambiguity patterns,Method
+me105,,,standardizing metadata,Method
+me215,,,data hashing procedures,Method
+me216,,,exclusion of personally identifiable information,Method
+me217,,,managing regional digital archival consent,Method
+me306,,,NLP model bias,Method
+me307,,,demographic balancing,Method
+me181,,,methods flowchart,Method
+me165,0.7715,['me551'],Creative Commons data use (Creative Commons license),Method
+me166,,,Stanford's institutional data policies,Method
+me167,,,IACS's institutional data policies,Method
+me50,,,OCR error rate,Method
+me382,,,multilingual heritage model adaptation,Method
+me383,,,NDAI partnerships,Method
+me384,,,cross-institution protocol,Method
+me267,,,Python 3.10,Method
+me264,0.86,['me277'],conda environments,Method
+me265,,,Docker images,Method
+me269,,,notebook structure,Method
+me270,,,installation instructions,Method
+me271,,,checklist,Method
+me612,0.8044,"['me613', 'me622']",Zenodo-linked workflows (Zenodo pipeline),Method
+me349,,,supplementary file formatting,Method
+me351,,,cross-reference template drafting,Method
+me221,,,benchmarking,Method
+me194,,,error analysis,Method
+me442,,,Q&A Moderation Framework,Method
+me24,,,metadata mapping,Method
+me474,,,digital humanities toolchains,Method
+me249,,,HistocrNLP,Method
+me36,,,faithfulness/clarity heatmaps,Method
+me38,,,bar chart breakdown of willingness scores,Method
+me59,,,annotator disagreement,Method
+me284,,,resource-sharing models,Method
+me200,,,statistical framing,Method
+me201,,,cross-validation methodology,Method
+me202,,,anchor-description clarity,Method
+me203,,,traceability of compliance checklist items,Method
+me320,,,technical compatibility checks,Method
+me257,,,local recording,Method
+me321,,,audio/video synchronization check,Method
+me322,,,Q&A handout visibility check,Method
+me323,,,establishing a secondary Zoom room,Method
+me609,0.9369,['me611'],rolling embargo mechanism,Method
+me610,,,Zenodo citation best practices,Method
+me448,,,modular pipeline components,Method
+me385,,,NDAI,Method
+me75,,,Cohen’s kappa,Method
+me124,,,string matching methods,Method
+me125,,,selective de-identification,Method
+me562,,,mixed-script tagging,Method
+me465,,,context reconstruction adaptation,Method
+me395,,,cross-lingual historical NLP pipeline,Method
+me396,,,OCR/multi-script evaluation,Method
+me446,,,cross-dialectal data methodology,Method
+me58,,,existing codebase,Method
+me414,,,Annotation tasks,Method
+me415,,,Scenario prompts,Method
+me416,,,Live captions,Method
+me417,,,Alternate text files,Method
+me418,,,Google Form,Method
+me419,,,Internal run-through,Method
+me528,,,compliance workflow crosswalk table,Method
+me529,0.8187,"['me570', 'me638', 'me641']",inter-annotator agreement metrics (annotation reliability),Method
+me530,,,tracked-changes master draft,Method
+me30,,,fine-tuned transformer,Method
+me80,,,domain adaptation,Method
+me70,,,topic modeling,Method
+me106,0.798,['me308'],provenance-aware approach (provenance tracking),Method
+me107,,,cross-schema metadata normalization,Method
+me108,,,version control scripts,Method
+me53,,,LaTeX cross-referencing,Method
+me54,,,track changes,Method
+me55,,,final LaTeX compilation,Method
+me514,,,multilingual heritage corpora analysis,Method
+me228,,,LaTeX adjustments,Method
+me229,,,preflight PDF checks,Method
+me289,,,cross-institutional benchmarking,Method
+me500,,,Evaluative Methodology,Method
+me469,,,adaptation of Smith et al. metrics,Method
+me527,,,methodological process for obtaining license permissions,Method
+me447,,,dialect classification approach,Method
+me590,,,cross-checking for consistency,Method
+me591,,,standardized citations,Method
+me391,,,document alignment model,Method
+me170,,,compliance summary,Method
+me368,,,NLP research initiatives,Method
+me369,,,Stanford repository’s role,Method
+me660,,,consent stratification,Method
+me661,,,anonymization and data minimization,Method
+me662,,,cross-border annotation and data transfer policy,Method
+me476,,,corpus integration strategy,Method
+me326,,,historical typeface adaptation,Method
+me179,,,profiling framework,Method
+me422,,,Likert-scale,Method
+me423,,,open text questions,Method
+me555,,,multi-corpus pipeline,Method
+me121,,,rule-based,Method
+me122,,,neural methods,Method
+me39,,,viridis palette,Method
+me696,,,version management schema,Method
+me697,,,feedback cycle matrix,Method
+me84,,,CLARIN’s recommendations,Method
+me85,,,Europeana’s recommendations,Method
+me139,,,Video compression,Method
+me140,,,Font size adjustment,Method
+me141,,,Corpus note on mapping ambiguity,Method
+me244,,,table alignment,Method
+me245,,,email address update,Method
+me246,,,enhanced accessibility features,Method
+me247,,,typographical correction,Method
+me295,,,Protocol generalizability,Method
+me296,,,Historical sample illustration,Method
+me297,,,Overall narrative coherence,Method
+me298,,,Transitions,Method
+me299,,,Timing,Method
+me187,,,named entity masking,Method
+me188,,,character scrambling,Method
+me189,,,dataset access audit function,Method
+me464,,,low-resource benchmarks,Method
+me592,,,meta-annotation methodology,Method
+me437,,,real-time accessibility interventions,Method
+me636,0.757,['me639'],corpus construction (corpus composition),Method
+me637,0.7547,['me640'],preprocessing procedures (preprocessing steps),Method
+me512,,,NLP Pipelines,Method
+me583,,,cross-validation workflow,Method
+me584,,,meta-annotations,Method
+me585,,,editorial refinement,Method
+me586,,,asynchronous review,Method
+me587,,,licensing appendix,Method
+me588,,,survey instrumentation,Method
+me467,,,temporal context reconstruction,Method
+me700,,,reviewer feedback response protocols,Method
+me314,,,methodological sections,Method
+me315,,,cross-institutional dataset integration,Method
+me399,,,breakout sessions for small-group problem-solving,Method
+me400,,,lightning talks format,Method
+me401,,,sample OCR challenges,Method
+me402,,,ethical data handling in historical NLP workflows,Method
+me403,,,drafting of session feedback form,Method
+me404,,,promotional mechanisms alignment,Method
+me405,,,time slot alignment,Method
+me51,,,hybrid quantitative and qualitative approach,Method
+me52,,,scripts provided in supplementary repository,Method
+me148,0.8351,"['me324', 'me89']",annotation guidelines (annotation protocol),Method
+me491,,,ALMA project,Method
+me666,,,labeled workflow diagrams,Method
+me667,,,transition markers,Method
+me668,,,compliance checkpoint labels,Method
+me669,,,case illustrations,Method
+me98,,,dataset normalization,Method
+me99,,,tabular annotations,Method
+me100,,,entity alignment,Method
+me101,,,reproducibility guidelines,Method
+me102,,,project management,Method
+me103,,,accessibility compliance,Method
+me72,,,annotated response letter template,Method
+me73,,,new spreadsheet with genre-wise agreement statistics,Method
+me74,,,tabular mapping and attributions,Method
+me471,,,cross-lingual data integration,Method
+me472,,,evaluation metrics for non-Latin corpora,Method
+me496,,,interpretability measures,Method
+me494,,,semantic metrics alignment,Method
+me387,,,NDAI integration use case,Method
+me475,,,semantic drift detection,Method
+me278,,,Overleaf template,Method
+me394,,,OCR error handling,Method
+me483,,,historical corpus design,Method
+me534,,,Doodle poll,Method
+me535,,,ethics committee documentation,Method
+me536,,,approval correspondence,Method
+me537,,,JOCCH editorial portal,Method
+me538,,,data-sharing agreements,Method
+me578,,,Hosting Comparison,Method
+me579,,,Licensing Considerations,Method
+me596,,,meta-annotation schema,Method
+me597,,,legal compliance protocol,Method
+me598,,,multi-institutional legal coordination,Method
+me87,,,Adobe Acrobat Pro,Method
+me653,,,comparative legal matrix,Method
+me654,,,footnotes,Method
+me650,,,appendix formatting,Method
+me655,,,annotation examples,Method
+me656,,,figure legends,Method
+me291,,,provenance-aware metrics,Method
+me455,,,diachronic alignment,Method
+me456,,,evaluation metrics,Method
+me68,,,Technical validation,Method
+me556,,,code repository,Method
+me497,,,adjudication protocols,Method
+me558,,,annotated checklist,Method
+me205,,,model calibration checks,Method
+me206,,,feature ablation settings,Method
+me7,0.8951,['me9'],Transformer-based models (Transformer models),Method
+me260,,,annotation tools,Method
+me261,,,visualization tools,Method
+me235,,,corpus references implementation,Method
+me236,,,footnote updates,Method
+me237,,,cross-linking supplementary materials,Method
+me238,,,compliance protocol links,Method
+me408,,,code notebooks,Method
+me409,,,accessibility documentation,Method
+me218,,,Indian compliance framework,Method
+me219,,,EU compliance framework,Method
+me220,,,anchor-based navigation,Method
+me492,0.792,['me495'],participatory annotation methods,Method
+me493,,,hybrid model,Method
+me130,,,FAIR data management,Method
+me515,,,computational methods for historical legal corpora,Method
+me46,,,viridis color scheme,Method
+me47,,,contrasting orange outline,Method
+me48,,,side-by-side excerpts,Method
+me459,,,context expansion,Method
+me484,,,interdisciplinary methodology,Method
+me524,,,process checklists,Method
+me571,,,tabulated comparison,Method
+me572,,,curating supplementary annotation logs,Method
+me573,0.7834,['me577'],drafting normalization guidelines,Method
+me574,,,agreement statistics,Method
+me151,,,normalization framework,Method
+me507,,,methods documentation,Method
+me508,,,entity schema definitions,Method
+me509,,,citation updates,Method
+me510,,,holistic review,Method
+me520,,,suggesting mode in Google Docs,Method
+me521,,,v2 diagram and proposed navigation guide,Method
+me522,,,Captioning & Cross-Reference Protocols,Method
+me180,,,Transfer Learning,Method
+me33,,,heatmaps,Method
+me34,,,faithfulness/clarity ratings,Method
+me701,,,workflow schema,Method
+me702,,,EMNLP Demo,Method
+me703,,,JDoc Technical Communication,Method
+me449,,,modular pipeline,Method
+me439,0.8029,['me441'],multi-dialectal QA and normalization (dialect normalization strategies),Method
+me410,,,structured call for lightning talks,Method
+me411,,,informal networking slot,Method
+me412,,,ethical and hands-on engagement components,Method
+me675,,,compliance and metadata harmonization protocols,Method
+me686,0.8415,['me691'],reproducible template for multi-author version management,Method
+me687,0.8344,['me692'],method of dealing with conflicting annotations under time constraints (Handling conflicting annotations),Method
+me688,,,compliance harmonization and provenance checkpoint strategies,Method
+me397,,,workflow’s adaptability to new historical corpora,Method
+me258,,,sequence labeling,Method
+me517,,,spot-checks,Method
+me19,,,Tesseract,Method
+me20,,,ocropy,Method
+me21,,,Project LaVa,Method
+me22,,,custom OCR correction model,Method
+me451,,,cross-temporal normalization,Method
+me453,,,diachronic corpora alignment,Method
+me454,,,dataset augmentation strategies,Method
+me168,,,CC BY,Method
+me169,,,CC BY-NC,Method
+me13,,,chronological split,Method
+me14,0.8897,['me8'],lexicon-based approaches (lexicon-based methods),Method
+me186,0.8487,['me190'],dataset harmonization protocol,Method
+me35,,,Likert-scale responses,Method
+me37,,,bar charts,Method
+me361,,,translated embargo statements,Method
+me362,,,bilingual FAQ dissemination,Method
+me363,,,designate local liaison,Method
+me364,,,adapt legal documentation,Method
+me365,,,repository access testing,Method
+me366,,,tracked changes review,Method
+me367,,,typographical corrections,Method
+me222,,,compliance pipeline,Method
+me223,,,privacy error-type,Method
+me318,,,tokenization stability,Method
+me319,,,OCR error contextualization,Method
+me334,,,corpus transparency,Method
+me335,,,protocol documentation,Method
+me336,,,data versioning,Method
+me337,,,annotation meta-data release,Method
+me338,,,visual workflow chart,Method
+me339,,,meta-comparative commentary,Method
+me340,,,annotated case studies,Method
+me341,,,inter-annotator agreement,Method
+me342,,,disagreement resolution,Method
+me254,,,sequence labelling,Method
+me15,,,temporal saliency mapping,Method
+me16,,,attention visualization techniques,Method
+me17,,,decade-based split,Method
+me252,,,extraction and normalisation of historical place names,Method
+me253,,,integration of European context with South Asian material,Method
+me158,,,historical text normalization,Method
+me159,,,annotator training,Method
+me160,,,versioning strategy,Method
+me161,,,code/data sharing policy,Method
+me162,,,live tutorial implementation,Method
+me31,,,interpretability evaluation,Method
+me174,,,token normalization approach,Method
+me175,,,evaluation set selection logic,Method
+me251,,,named entity recognition,Method
+me698,,,multi-author version management schema,Method
+me699,,,reviewer feedback cycle,Method
+me539,,,uniform annotation format,Method
+me599,,,cross-referencing partner MOUs,Method
+me600,,,Zenodo’s guidelines on phased dataset disclosure,Method
+me601,,,increasing font sizes and contrast,Method
+me602,,,redrawing stage distinctions,Method
+me603,,,including brief callout boxes,Method
+me604,,,explicit Zenodo accession points,Method
+me605,,,example in-figure citations,Method
+me63,0.8364,"['me64', 'me65']",annotator disagreement analysis (analysis scripts),Method
+me501,,,onboarding protocols,Method
+me502,,,schema specificity,Method
+me503,,,error taxonomy,Method
+me504,,,adjudication protocol,Method
+me505,,,inter-annotator agreement statistics,Method
+me506,,,Cohen's kappa values,Method
+me83,,,topic annotation,Method
+me559,,,historical cases and annotation justifications,Method
+me560,,,paired numbering and color-coding,Method
+me580,,,Creative Commons 4.0,Method
+me581,,,custom research use agreements,Method
+me582,,,Material Transfer Agreement (MTA),Method
+me88,,,NER Methodology,Method
+me353,,,multilingual NLP framework,Method
+me281,,,qualitative corpus annotation,Method
+me282,,,quantitative benchmarking,Method
+me683,,,shared live logs,Method
+me684,,,lock-down periods,Method
+me685,,,annotation and provenance toolkit,Method
+me173,0.7885,['me513'],entity linking methods,Method
+me78,,,genre labeling,Method
+me134,,,stepwise provenance workflow,Method
+me135,,,parenthetical explanation on the ambiguity schematic,Method
+me136,,,ACM reproducibility visual,Method
+me643,,,extended methodological appendices,Method
+me644,,,color schema,Method
+me197,,,code anchor system,Method
+me438,,,historical dialect normalization,Method
+me440,,,Q&A escalation framework,Method
+me540,,,Annotation Standards,Method
+me542,,,Negotiation Tracking Logs,Method
+me372,,,protocol innovation for legal compliance,Method
+me239,,,"integration of all methodological, citation, and reproducibility updates",Method
+me240,,,boldface new corpus names,Method
+me241,,,rephrased sentence for citation flow,Method
+me242,,,correcting in-text citation order,Method
+me243,,,checking file names consistency,Method
+me470,,,annotation metric,Method
+me133,,,risk management annotation,Method
+me379,,,multilingual language model adaptation,Method
+me300,,,baseline annotation process,Method
+me301,,,generalizability and scalability,Method
+me302,,,metric comparisons,Method
+me303,,,dataset rationale,Method
+me304,,,annotation design and expert feedback,Method
+me435,,,troubleshooting checklist,Method
+me436,,,attached PDF,Method
+me450,,,NLP for historical data,Method
+me511,,,entity overlap correction,Method
+me631,,,Google Meet backup,Method
+me443,,,dialect normalization,Method
+me444,,,accessibility evaluation,Method
+me544,,,automated annotation tool validation,Method
+me430,,,browser/platform troubleshooting checklist,Method
+me375,,,domain-specific language modeling,Method
+me376,,,scalable digitization pipelines,Method
+me392,,,light audio denoise filter,Method
+me426,,,real-time annotation guidance,Method
+me427,,,Zoom live captions,Method
+me428,,,screen reader access,Method
+me429,,,alternate resource links,Method
+me460,,,methods/novelty,Method
+me462,,,EMNLP evaluation metrics,Method
+me305,,,provenance-aware annotation protocol,Method
+me207,,,statistical confidence intervals,Method
+me208,,,calibration drift,Method
+me163,,,normalization methodology,Method
+me565,,,sub-dialectal code-switching trends,Method
+me566,,,longitudinal model adaptation,Method
+me658,,,digital annotation platforms,Method
+me355,,,RTI,Method
+me356,,,regional translation,Method
+me357,,,GDPR,Method
+me358,,,EU research citation frameworks,Method
+me40,,,anonymized participant IDs,Method
+me41,,,colorblind-friendly palette,Method
+me42,0.8359,['me49'],viridis color palette,Method
+me43,,,plasma,Method
+me44,,,contrasting outline,Method
+me45,,,marker,Method
+me266,,,Stanford-backed annotation toolkit,Method
+me664,,,expanded workflow diagrams,Method
+me665,,,annotation metadata limitations,Method
+me195,,,confusion matrices,Method
+me196,,,code appendix,Method
+me317,0.8205,['me325'],bias mitigation strategies,Method
+me279,,,repository links via IACS and Zenodo,Method
+me280,,,compliance with ACL Artifact Review,Method
+me407,,,annotation pipeline,Method
+me90,0.8063,['me92'],name normalization steps,Method
+me91,,,historical OCR post-processing pipeline,Method
+me292,0.8194,['me293'],traditional precision/recall (traditional metrics),Method
+me589,,,cross-validation,Method
+me57,,,cross-verification,Method
+me66,,,pipeline scripts,Method
+me393,,,annotation,Method
+me137,,,live annotation screencast,Method
+me424,0.7887,"['me425', 'me69']",NER modules,Method
+me352,,,Supplementary Figure/Table Sx system,Method
+me294,,,provenance-tracking,Method
+me642,,,annotation policies,Method
+me131,,,risk management,Method
+me25,,,post-processing pipeline,Method
+me468,,,low-resource metrics,Method
+me286,,,compliance structuring,Method
+me532,,,cross-institutional strategies,Method
+me533,,,licensing-compliance protocol,Method
+me657,,,cross-border annotation metrics,Method
+me76,,,Krippendorff’s alpha,Method
+me77,,,Topical Annotation,Method
+me457,,,diachronic corpus alignment,Method
+me458,,,data augmentation techniques,Method
+me255,,,Zoom webinar,Method
+me256,,,YouTube live stream,Method
+me490,,,ALMA’s archival integration,Method
+me632,,,MOU versioning,Method
+me633,,,Zenodo pipeline integration,Method
+me553,,,protocol harmonization,Method
+me554,,,legal interoperability,Method
+me332,,,Smith et al. (2021) approach,Method
+me663,,,regulatory translation clarifications,Method
+me27,,,Transformer-based language model,Method
+me153,,,step-by-step demo format,Method
+me154,,,joint slide transitions,Method
+me155,,,backup AV plan,Method
+me156,,,audience engagement checkpoints,Method
+me157,,,standardized audience Q&A rotation,Method
+me285,,,synthetic sample protocols,Method
+me381,,,metadata extraction tools,Method
+me81,0.7833,"['me82', 'me86']",robust methodological framework (genre segmentation protocol),Method
+me373,,,media monitoring sheet,Method
+me287,,,synthetic sampling protocol,Method
+me93,,,tagged PDF verification,Method
+me94,0.8125,['me97'],batch processing via Acrobat scripting,Method
+me328,,,transformer architectures,Method
+me329,,,alignment-based methods,Method
+me330,,,domain adaptation via fine-tuning,Method
+me331,,,language models,Method
+me648,,,color-coded matrix,Method
+me649,,,footnote cross-linking,Method
+me651,,,inline edits,Method
+me652,,,group check-in,Method
+me645,,,time-period overlays,Method
+me563,,,Overleaf workflow,Method
+me564,,,ACL validation script,Method
+me621,,,rolling embargo model,Method
+me624,,,manual scripting solutions,Method
+me272,,,technical setup guide,Method
+me273,,,GDPR guidance,Method
+me274,,,sample consent statements,Method
+me275,,,repository partitioning,Method
+me276,,,citation and annotation schema templates,Method
+me594,,,structured meta-annotation workflow,Method
+me595,,,cross-institutional legal management,Method
+me233,,,anchor-based domain adaptation,Method
+me659,,,legal matrix,Method
+me487,0.8523,['me489'],semi-supervised labeling approach,Method
+me488,,,neural models,Method
+me634,,,modular compliance workflows,Method
+me635,,,embedded documentation for reproducibility,Method
+me262,,,structured folder on shared drive,Method
+me263,,,dedicated GitHub Organization,Method
+me10,,,diachronic variants,Method
+me593,,,collaborative legal governance,Method
+me61,,,disagreement metrics,Method
+me142,,,stepwise annotation,Method
+me143,,,ACM badge integration,Method
+me144,,,voiceover,Method
+me145,,,technical feedback,Method
+me146,,,chapter markers,Method
+me147,,,Google Sheet,Method
+me150,,,normalization strategies,Method
+me498,,,Overleaf,Method
+me499,,,Zenodo,Method
+me283,,,qualitative expert assessments,Method
+me171,,,demo scripts,Method

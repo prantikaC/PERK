@@ -1,0 +1,280 @@
+:ID,mergeConfidence,mergedFrom,metricName,:LABEL
+mt123,,,provenance-aware precision,Metric
+mt76,,,recall,Metric
+mt91,0.8667,['mt92'],Macro-averaged F1 scores,Metric
+mt26,,,clarity,Metric
+mt250,,,interdisciplinary clarity,Metric
+mt134,,,evaluation metrics for noisy historical data,Metric
+mt96,,,macro-F1,Metric
+mt242,,,citation compliance,Metric
+mt192,,,hybrid evaluation suite,Metric
+mt103,,,Rendering consistency,Metric
+mt104,,,Cell boundary display,Metric
+mt74,,,accessibility scores,Metric
+mt283,,,cross-jurisdictional themes,Metric
+mt284,,,compliance convergence,Metric
+mt28,,,actionability,Metric
+mt19,,,faithfulness,Metric
+mt66,,,compliance,Metric
+mt67,,,policy mismatches,Metric
+mt68,,,best practices,Metric
+mt302,,,consistent labeling,Metric
+mt144,,,RTI processing timelines,Metric
+mt145,,,UKRI mandates,Metric
+mt239,,,quantitative transparency,Metric
+mt149,,,joint publication and media impact metrics,Metric
+mt30,,,Likert-scale questions,Metric
+mt71,,,evaluation metrics,Metric
+mt139,,,reduction in ambiguity for non-technical staff,Metric
+mt65,,,legal attributions,Metric
+mt208,,,axis labels for confusion matrix plots,Metric
+mt303,,,cross-sectional consistency,Metric
+mt259,,,processing multi-script and historical texts,Metric
+mt260,,,community needs for normalization,Metric
+mt122,,,margin note word count limits,Metric
+mt150,,,house style (British English),Metric
+mt151,,,JCDL’s visual identity protocols,Metric
+mt7,,,character/error rates (CER and WER),Metric
+mt8,,,token-level accuracy,Metric
+mt10,,,adjusted historical vocabulary recall,Metric
+mt11,,,provenance-based metrics,Metric
+mt281,,,data provenance,Metric
+mt282,,,legal permissions,Metric
+mt29,,,high-quality feedback,Metric
+mt251,,,functional and routable DOIs,Metric
+mt97,,,error types and privacy strategies,Metric
+mt1,,,accuracy,Metric
+mt2,0.8365,"['mt270', 'mt5', 'mt9']",F1 scores,Metric
+mt3,,,temporal consistency score,Metric
+mt75,,,normalization accuracy,Metric
+mt198,,,semantic change across time and language,Metric
+mt4,,,methods for interpretability,Metric
+mt231,,,prompt escalation of minor anomalies,Metric
+mt232,,,typesetting inconsistencies,Metric
+mt233,,,DOI workflow ambiguities,Metric
+mt234,,,internal handovers or rapid consultations,Metric
+mt235,,,visual integrity coordination with ACM Production,Metric
+mt236,,,"project kickoff, proofing, and submission stages",Metric
+mt38,,,annotator disagreement metrics,Metric
+mt39,,,cross-lingual results,Metric
+mt89,,,confusion matrix,Metric
+mt90,,,error categories,Metric
+mt206,,,generalizability,Metric
+mt105,,,Boundary Error,Metric
+mt100,,,error-type privacy,Metric
+mt88,,,statistical significance,Metric
+mt177,,,checksum values,Metric
+mt36,,,artifact severity,Metric
+mt99,,,precision,Metric
+mt267,,,digital research transparency,Metric
+mt268,,,data-sharing challenges,Metric
+mt40,,,annotator disagreement,Metric
+mt121,,,technical consistency,Metric
+mt181,,,accessibility evaluation metrics,Metric
+mt199,,,archival metadata interoperability,Metric
+mt18,0.9123,['mt258'],real-world usability,Metric
+mt184,0.8263,"['mt193', 'mt196', 'mt197', 'mt207', 'mt215', 'mt41', 'mt59', 'mt61', 'mt73']",inter-annotator agreement statistics (Cohen's kappa),Metric
+mt98,,,figure-caption alignment,Metric
+mt111,,,PDF accessibility,Metric
+mt185,,,evaluation metric adaptation,Metric
+mt186,,,annotation reliability,Metric
+mt16,,,explanation consistency scores,Metric
+mt20,,,faithfulness metrics,Metric
+mt12,,,CER,Metric
+mt13,,,WER,Metric
+mt21,,,token accuracy,Metric
+mt22,,,chronology prediction,Metric
+mt23,,,cross-dataset transfer,Metric
+mt24,,,actionability rating,Metric
+mt255,,,transparency and reproducibility,Metric
+mt25,,,token-level F1,Metric
+mt225,,,CC BY-NC,Metric
+mt226,,,MIT terms,Metric
+mt124,,,provenance-aware metric,Metric
+mt195,0.7541,['mt72'],evaluation metrics for annotated corpora (annotation reliability metrics),Metric
+mt182,0.8249,"['mt183', 'mt42', 'mt60']",hybrid accuracy/recall/F1 scheme (F1 per class),Metric
+mt261,,,typographical consistency,Metric
+mt238,,,cross-references,Metric
+mt209,,,evaluation metrics for historical NLP,Metric
+mt210,,,ethical stewardship of cultural archives,Metric
+mt292,,,jurisdictional diversity,Metric
+mt293,,,workflow detail on consent and compliance,Metric
+mt116,,,quantitative methodologies,Metric
+mt117,,,qualitative methodologies,Metric
+mt200,,,cross-repository metadata harmonization,Metric
+mt201,,,persistent identifier strategies,Metric
+mt202,,,semantic drift detection with multilingual datasets,Metric
+mt85,,,precision in named entity recognition,Metric
+mt86,,,recall across temporal strata,Metric
+mt254,,,recommended validation scans,Metric
+mt126,,,baseline annotation protocol,Metric
+mt127,,,benchmark color coding,Metric
+mt128,,,feedback from domain historians,Metric
+mt244,,,legal interoperability discussion,Metric
+mt34,,,faithfulness rating,Metric
+mt112,,,broader significance,Metric
+mt129,,,Metric comparisons,Metric
+mt190,,,temporal word embedding shift,Metric
+mt191,,,NLP downstream performance,Metric
+mt262,,,legal compliance,Metric
+mt263,,,meta-annotation methodology,Metric
+mt203,,,evaluation framework,Metric
+mt205,,,baselines,Metric
+mt194,,,newest EMNLP 2022 benchmark,Metric
+mt37,,,OCR error rate,Metric
+mt118,0.8705,['mt213'],precision/recall,Metric
+mt119,,,qualitative expert assessment,Metric
+mt300,,,narrative flow alignment,Metric
+mt301,,,consistency with annotation metadata,Metric
+mt222,,,compliance with ACM's guidelines,Metric
+mt223,,,clarity and accessibility,Metric
+mt224,,,reproducibility and transparency,Metric
+mt142,,,compliance with FERPA and Stanford policies,Metric
+mt143,,,adherence to Stanford's embargo protocol,Metric
+mt125,,,generalizability of synthetic instance protocol,Metric
+mt216,,,quantitative metrics,Metric
+mt217,,,interpretability,Metric
+mt218,,,use case-driven model diagnostics,Metric
+mt219,,,error trends across language subsets,Metric
+mt245,,,workflow numbering,Metric
+mt246,,,graphical consistency,Metric
+mt247,,,alignment with finalized ACL metadata fields,Metric
+mt248,,,repository accessibility,Metric
+mt249,,,new DOIs,Metric
+mt214,,,subset agreement,Metric
+mt35,,,willingness-to-use ratings,Metric
+mt44,,,class distribution,Metric
+mt45,,,confusion matrices,Metric
+mt46,,,error types,Metric
+mt47,,,descriptive statistics,Metric
+mt48,,,illustrative cases,Metric
+mt49,,,source archive and permission metadata,Metric
+mt50,,,archival metadata,Metric
+mt51,,,original line image references,Metric
+mt52,,,signed attestation from data owners,Metric
+mt53,,,aggregated note in the dataset README,Metric
+mt187,,,semantic drift evaluation,Metric
+mt17,,,faithfulness indices,Metric
+mt237,,,compliance queries in historical NLP research,Metric
+mt87,,,hybrid metrics,Metric
+mt243,,,consistency with ACL BibTeX style,Metric
+mt31,,,OCR-induced ambiguity,Metric
+mt32,,,willingness to use,Metric
+mt171,,,Likert-scale,Metric
+mt172,,,qualitative feedback,Metric
+mt164,0.7817,"['mt204', 'mt271']",error evaluation (error analysis),Metric
+mt227,,,thoroughness,Metric
+mt33,,,faithfulness ratings,Metric
+mt146,,,compliance team,Metric
+mt147,,,legal documentation,Metric
+mt148,,,institutional legal advisors,Metric
+mt101,,,line numbers,Metric
+mt102,,,anchor indices,Metric
+mt133,,,bias quantification,Metric
+mt70,,,NER/topic modeling statistics,Metric
+mt81,,,validation metrics,Metric
+mt82,,,audience engagement,Metric
+mt83,,,community suggestions,Metric
+mt27,,,trustworthiness,Metric
+mt113,,,methodological narrative,Metric
+mt264,,,traceability,Metric
+mt265,,,transparency,Metric
+mt158,,,accessibility,Metric
+mt106,,,entity linking,Metric
+mt107,,,extraction,Metric
+mt108,,,semantic drift studies,Metric
+mt109,,,noisy text normalization,Metric
+mt110,,,historical entity mapping,Metric
+mt77,,,preparedness,Metric
+mt78,,,smooth transitions,Metric
+mt79,,,standardized speaker bios,Metric
+mt80,,,troubleshooting steps for audio/visual disruptions,Metric
+mt178,,,instant moderator response times,Metric
+mt179,,,satisfaction scores,Metric
+mt266,,,reviewer feedback,Metric
+mt272,,,reliability metrics,Metric
+mt273,,,temporal analyses,Metric
+mt140,,,region-specific RTI timelines,Metric
+mt141,,,citation formatting,Metric
+mt240,,,Krippendorff’s alpha,Metric
+mt131,0.7905,['mt161'],contrast compliance (color contrast),Metric
+mt132,,,annotation updates,Metric
+mt174,,,link access,Metric
+mt175,,,document rendering,Metric
+mt176,,,email sorting,Metric
+mt221,,,entity metrics,Metric
+mt294,,,compliance standards,Metric
+mt180,,,cross-linguistic Q&A protocols,Metric
+mt220,,,semantic metrics,Metric
+mt162,,,grayscale testing,Metric
+mt163,,,transcription consistency,Metric
+mt188,,,evaluation/metrics,Metric
+mt189,,,semantic drift analysis,Metric
+mt130,0.7543,['mt62'],corpus demographic statistics (corpus diversity statistics),Metric
+mt274,,,Data Protection Bill clauses,Metric
+mt275,,,GDPR and local heritage exceptions,Metric
+mt276,,,third-party historical data,Metric
+mt277,0.8889,['mt297'],anonymization approaches (anonymization policies),Metric
+mt278,,,cross-regional archival consent,Metric
+mt279,,,explicit subject consent,Metric
+mt280,,,retention for cultural datasets,Metric
+mt84,,,edit distance,Metric
+mt63,,,language identification error rates,Metric
+mt64,,,raw annotator agreement data,Metric
+mt93,,,Micro-averaged F1 scores,Metric
+mt165,,,participant feedback,Metric
+mt256,,,qualitative questions on challenges faced during multi-script retrievals,Metric
+mt257,,,language normalization protocols,Metric
+mt54,,,reproducibility,Metric
+mt55,,,error-class definitions,Metric
+mt56,,,data-versioning clarity,Metric
+mt57,,,sensitive data & risk assessment,Metric
+mt58,,,publisher/source notes,Metric
+mt295,,,cross-jurisdictional annotation,Metric
+mt296,,,consent stratification,Metric
+mt298,,,regulatory divergences,Metric
+mt299,,,JOCCH compliance,Metric
+mt14,,,token-based,Metric
+mt15,,,provenance-based,Metric
+mt94,,,micro-averaged F1,Metric
+mt95,,,annotated confusion matrices,Metric
+mt6,,,historical lexicon recall,Metric
+mt289,,,statistical data,Metric
+mt154,,,content consistency and clarity,Metric
+mt155,,,accessibility compliance,Metric
+mt152,,,multilingual benchmarking,Metric
+mt153,,,cross-institutional data sharing protocols,Metric
+mt69,,,compliance with European library practices,Metric
+mt156,,,narrative flow,Metric
+mt157,,,transcription accuracy,Metric
+mt159,,,technical explanation accuracy,Metric
+mt160,,,collaborative annotation workflow elaboration,Metric
+mt120,,,clarity and completeness,Metric
+mt252,,,transparency of annotation guidelines,Metric
+mt253,,,explicit cross-lingual error analysis,Metric
+mt135,,,comparative benchmarks,Metric
+mt136,,,evaluation protocols,Metric
+mt137,,,reproducibility best practices,Metric
+mt285,,,word count management,Metric
+mt286,,,regulatory nuance demonstration,Metric
+mt138,,,annotation consistency,Metric
+mt173,,,accessibility performance,Metric
+mt269,,,compliance negotiation,Metric
+mt287,,,compliance with section 37B of the India Data Protection Bill,Metric
+mt288,,,compliance with GDPR/UK section D3b,Metric
+mt211,,,precision-recall tradeoff,Metric
+mt212,,,semantic similarity metrics,Metric
+mt166,,,participant engagement,Metric
+mt167,,,time allocation,Metric
+mt168,,,reach maximization,Metric
+mt169,,,preparation depth,Metric
+mt170,,,ethical/data responsibility alignment,Metric
+mt114,,,"compliance with institutional, licensing, and privacy stipulations",Metric
+mt115,,,clarity and reproducibility,Metric
+mt241,,,cross-institutional lessons learned,Metric
+mt43,,,annotator-level confusion matrices,Metric
+mt228,,,unforeseen bottlenecks or challenges,Metric
+mt229,,,DOI assignment,Metric
+mt230,,,typesetting ambiguities,Metric
+mt290,,,cross-platform annotation events,Metric
+mt291,,,data transfer logs,Metric

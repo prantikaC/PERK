@@ -1,0 +1,407 @@
+<https://w3id.org/perkonto/molbio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/perkonto/molbio> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/perkonto> .
+<https://w3id.org/perkonto/molbio> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/molbio> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/molbio> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/molbio> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/molbio> <http://purl.org/dc/terms/description> "A domain extension of PERKOnto for the professional knowledge of a molecular biologist as extractable from personal email communications. It reuses the PERKOnto backbone and specialises the scientific layer into experimental-biology concepts (BiologicalEntity/BiologicalSample/ExperimentalTechnique/Readout/ResearchProblem) plus supporting concepts (Reagent, Instrument, Protocol)."@en .
+<https://w3id.org/perkonto/molbio> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/perkonto/molbio> <http://purl.org/dc/terms/title> "PERKOnto-MolBio: Molecular Biology extension of PERKOnto"@en .
+<https://w3id.org/perkonto/molbio> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/perkonto#evaluates
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#usedFor
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#uses
+<https://w3id.org/perkonto#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#worksOn
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#worksWith
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto/molbio#appliedToProblem
+<https://w3id.org/perkonto/molbio#appliedToProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#usedFor> .
+<https://w3id.org/perkonto/molbio#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#BiologicalEntity> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/molbio#ResearchProblem> .
+<https://w3id.org/perkonto/molbio#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an ExperimentalTechnique or BiologicalEntity to the ResearchProblem it addresses. Specialises perk:usedFor."@en .
+<https://w3id.org/perkonto/molbio#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#label> "applied to problem"@en .
+# 
+# https://w3id.org/perkonto/molbio#appliesTechnique
+<https://w3id.org/perkonto/molbio#appliesTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#appliesTechnique> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksWith> .
+<https://w3id.org/perkonto/molbio#appliesTechnique> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/molbio#appliesTechnique> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+<https://w3id.org/perkonto/molbio#appliesTechnique> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to an ExperimentalTechnique they use. Specialises perk:worksWith."@en .
+<https://w3id.org/perkonto/molbio#appliesTechnique> <http://www.w3.org/2000/01/rdf-schema#label> "applies technique"@en .
+# 
+# https://w3id.org/perkonto/molbio#assays
+<https://w3id.org/perkonto/molbio#assays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#assays> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#uses> .
+<https://w3id.org/perkonto/molbio#assays> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+<https://w3id.org/perkonto/molbio#assays> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#BiologicalSample> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#BiologicalEntity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#assays> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an ExperimentalTechnique to the BiologicalEntity or BiologicalSample it is applied to. Specialises perk:uses."@en .
+<https://w3id.org/perkonto/molbio#assays> <http://www.w3.org/2000/01/rdf-schema#label> "assays"@en .
+# 
+# https://w3id.org/perkonto/molbio#followsProtocol
+<https://w3id.org/perkonto/molbio#followsProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#followsProtocol> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+<https://w3id.org/perkonto/molbio#followsProtocol> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/molbio#Protocol> .
+<https://w3id.org/perkonto/molbio#followsProtocol> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an ExperimentalTechnique to the Protocol it follows."@en .
+<https://w3id.org/perkonto/molbio#followsProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "follows protocol"@en .
+# 
+# https://w3id.org/perkonto/molbio#investigates
+<https://w3id.org/perkonto/molbio#investigates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#investigates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksOn> .
+<https://w3id.org/perkonto/molbio#investigates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/molbio#investigates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/molbio#ResearchProblem> .
+<https://w3id.org/perkonto/molbio#investigates> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a ResearchProblem they work on. Specialises perk:worksOn."@en .
+<https://w3id.org/perkonto/molbio#investigates> <http://www.w3.org/2000/01/rdf-schema#label> "investigates"@en .
+# 
+# https://w3id.org/perkonto/molbio#quantifies
+<https://w3id.org/perkonto/molbio#quantifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#quantifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#evaluates> .
+<https://w3id.org/perkonto/molbio#quantifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#Readout> .
+<https://w3id.org/perkonto/molbio#quantifies> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#ResearchProblem> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#BiologicalEntity> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#quantifies> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Readout to the ExperimentalTechnique, BiologicalEntity, or ResearchProblem it characterises. Specialises perk:evaluates."@en .
+<https://w3id.org/perkonto/molbio#quantifies> <http://www.w3.org/2000/01/rdf-schema#label> "quantifies"@en .
+# 
+# https://w3id.org/perkonto/molbio#runsOn
+<https://w3id.org/perkonto/molbio#runsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#runsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+<https://w3id.org/perkonto/molbio#runsOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/molbio#Instrument> .
+<https://w3id.org/perkonto/molbio#runsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an ExperimentalTechnique to the Instrument / platform used to perform it."@en .
+<https://w3id.org/perkonto/molbio#runsOn> <http://www.w3.org/2000/01/rdf-schema#label> "runs on"@en .
+# 
+# https://w3id.org/perkonto/molbio#studies
+<https://w3id.org/perkonto/molbio#studies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#studies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksWith> .
+<https://w3id.org/perkonto/molbio#studies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/molbio#studies> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/molbio#BiologicalEntity> .
+<https://w3id.org/perkonto/molbio#studies> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a BiologicalEntity they investigate. Specialises perk:worksWith."@en .
+<https://w3id.org/perkonto/molbio#studies> <http://www.w3.org/2000/01/rdf-schema#label> "studies"@en .
+# 
+# https://w3id.org/perkonto/molbio#usesReagent
+<https://w3id.org/perkonto/molbio#usesReagent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/molbio#usesReagent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+<https://w3id.org/perkonto/molbio#usesReagent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/molbio#Reagent> .
+<https://w3id.org/perkonto/molbio#usesReagent> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an ExperimentalTechnique to a Reagent it requires."@en .
+<https://w3id.org/perkonto/molbio#usesReagent> <http://www.w3.org/2000/01/rdf-schema#label> "uses reagent"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/perkonto#datasetName
+<https://w3id.org/perkonto#datasetName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#methodName
+<https://w3id.org/perkonto#methodName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#metricName
+<https://w3id.org/perkonto#metricName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#version
+<https://w3id.org/perkonto#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto/molbio#accessionID
+<https://w3id.org/perkonto/molbio#accessionID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#accessionID> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#BiologicalSample> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#BiologicalEntity> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#accessionID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#accessionID> <http://www.w3.org/2000/01/rdf-schema#comment> "Database accession identifier, e.g. a UniProt ID, GenBank accession, or SRA run ID."@en .
+<https://w3id.org/perkonto/molbio#accessionID> <http://www.w3.org/2000/01/rdf-schema#label> "accession ID"@en .
+# 
+# https://w3id.org/perkonto/molbio#entityName
+<https://w3id.org/perkonto/molbio#entityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#entityName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#datasetName> .
+<https://w3id.org/perkonto/molbio#entityName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#BiologicalEntity> .
+<https://w3id.org/perkonto/molbio#entityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#entityName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the biological entity, e.g. 'p53', 'E. coli K-12', 'HeLa'."@en .
+<https://w3id.org/perkonto/molbio#entityName> <http://www.w3.org/2000/01/rdf-schema#label> "entity name"@en .
+# 
+# https://w3id.org/perkonto/molbio#entityType
+<https://w3id.org/perkonto/molbio#entityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#entityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#BiologicalEntity> .
+<https://w3id.org/perkonto/molbio#entityType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#entityType> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of entity, e.g. 'gene', 'protein', 'pathway', 'cell line', 'organism'."@en .
+<https://w3id.org/perkonto/molbio#entityType> <http://www.w3.org/2000/01/rdf-schema#label> "entity type"@en .
+# 
+# https://w3id.org/perkonto/molbio#instrumentName
+<https://w3id.org/perkonto/molbio#instrumentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#instrumentName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#Instrument> .
+<https://w3id.org/perkonto/molbio#instrumentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#instrumentName> <http://www.w3.org/2000/01/rdf-schema#label> "instrument name"@en .
+# 
+# https://w3id.org/perkonto/molbio#protocolName
+<https://w3id.org/perkonto/molbio#protocolName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#protocolName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#Protocol> .
+<https://w3id.org/perkonto/molbio#protocolName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#protocolName> <http://www.w3.org/2000/01/rdf-schema#label> "protocol name"@en .
+# 
+# https://w3id.org/perkonto/molbio#protocolVersion
+<https://w3id.org/perkonto/molbio#protocolVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#protocolVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#version> .
+<https://w3id.org/perkonto/molbio#protocolVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#Protocol> .
+<https://w3id.org/perkonto/molbio#protocolVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#protocolVersion> <http://www.w3.org/2000/01/rdf-schema#label> "protocol version"@en .
+# 
+# https://w3id.org/perkonto/molbio#readoutName
+<https://w3id.org/perkonto/molbio#readoutName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#readoutName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#metricName> .
+<https://w3id.org/perkonto/molbio#readoutName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#Readout> .
+<https://w3id.org/perkonto/molbio#readoutName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#readoutName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the measured quantity, e.g. 'expression level', 'cell viability', 'Kd'."@en .
+<https://w3id.org/perkonto/molbio#readoutName> <http://www.w3.org/2000/01/rdf-schema#label> "readout name"@en .
+# 
+# https://w3id.org/perkonto/molbio#readoutUnit
+<https://w3id.org/perkonto/molbio#readoutUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#readoutUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#Readout> .
+<https://w3id.org/perkonto/molbio#readoutUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#readoutUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unit of the readout value, e.g. 'nM', 'fold-change', 'percent'."@en .
+<https://w3id.org/perkonto/molbio#readoutUnit> <http://www.w3.org/2000/01/rdf-schema#label> "readout unit"@en .
+# 
+# https://w3id.org/perkonto/molbio#readoutValue
+<https://w3id.org/perkonto/molbio#readoutValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#readoutValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#Readout> .
+<https://w3id.org/perkonto/molbio#readoutValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/perkonto/molbio#readoutValue> <http://www.w3.org/2000/01/rdf-schema#label> "readout value"@en .
+# 
+# https://w3id.org/perkonto/molbio#reagentName
+<https://w3id.org/perkonto/molbio#reagentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#reagentName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#Reagent> .
+<https://w3id.org/perkonto/molbio#reagentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#reagentName> <http://www.w3.org/2000/01/rdf-schema#label> "reagent name"@en .
+# 
+# https://w3id.org/perkonto/molbio#sampleName
+<https://w3id.org/perkonto/molbio#sampleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#sampleName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#datasetName> .
+<https://w3id.org/perkonto/molbio#sampleName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#BiologicalSample> .
+<https://w3id.org/perkonto/molbio#sampleName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#sampleName> <http://www.w3.org/2000/01/rdf-schema#label> "sample name"@en .
+# 
+# https://w3id.org/perkonto/molbio#techniqueName
+<https://w3id.org/perkonto/molbio#techniqueName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/molbio#techniqueName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#methodName> .
+<https://w3id.org/perkonto/molbio#techniqueName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+<https://w3id.org/perkonto/molbio#techniqueName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/molbio#techniqueName> <http://www.w3.org/2000/01/rdf-schema#label> "technique name"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000070
+<http://purl.obolibrary.org/obo/OBI_0000070> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000272
+<http://purl.obolibrary.org/obo/OBI_0000272> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000968
+<http://purl.obolibrary.org/obo/OBI_0000968> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/OBI_0100051
+<http://purl.obolibrary.org/obo/OBI_0100051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/SO_0000704
+<http://purl.obolibrary.org/obo/SO_0000704> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Dataset
+<https://w3id.org/perkonto#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Method
+<https://w3id.org/perkonto#Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Metric
+<https://w3id.org/perkonto#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Person
+<https://w3id.org/perkonto#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Task
+<https://w3id.org/perkonto#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto/molbio#BiologicalEntity
+<https://w3id.org/perkonto/molbio#BiologicalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#BiologicalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://w3id.org/perkonto/molbio#BiologicalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Dataset> .
+<https://w3id.org/perkonto/molbio#BiologicalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The biological object of study: a gene, protein, pathway, cell line, tissue, or organism (e.g. the p53 protein, E. coli, a HeLa cell line)."@en .
+<https://w3id.org/perkonto/molbio#BiologicalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Biological Entity"@en .
+<https://w3id.org/perkonto/molbio#BiologicalEntity> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Dataset for the PERKOnto object-of-study role; obo:BFO_0000040 (BFO 'material entity'), the OBO upper class that genes/proteins/cells specialise. More specific groundings (e.g. obo:SO_0000704 'gene', obo:PR_* proteins) apply at the instance level."@en .
+# 
+# https://w3id.org/perkonto/molbio#BiologicalSample
+<https://w3id.org/perkonto/molbio#BiologicalSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#BiologicalSample> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0100051> .
+<https://w3id.org/perkonto/molbio#BiologicalSample> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Dataset> .
+<https://w3id.org/perkonto/molbio#BiologicalSample> <http://www.w3.org/2000/01/rdf-schema#comment> "A concrete analysed artifact: a biological sample, a sequencing run, an image dataset, or a screen."@en .
+<https://w3id.org/perkonto/molbio#BiologicalSample> <http://www.w3.org/2000/01/rdf-schema#label> "Biological Sample / Generated Dataset"@en .
+<https://w3id.org/perkonto/molbio#BiologicalSample> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Dataset and obo:OBI_0100051 (OBI 'specimen')."@en .
+# 
+# https://w3id.org/perkonto/molbio#ExperimentalTechnique
+<https://w3id.org/perkonto/molbio#ExperimentalTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#ExperimentalTechnique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000070> .
+<https://w3id.org/perkonto/molbio#ExperimentalTechnique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Method> .
+<https://w3id.org/perkonto/molbio#ExperimentalTechnique> <http://www.w3.org/2000/01/rdf-schema#comment> "A laboratory technique or assay applied, e.g. PCR, CRISPR-Cas9 editing, RNA sequencing, Western blot, mass spectrometry, confocal microscopy, flow cytometry."@en .
+<https://w3id.org/perkonto/molbio#ExperimentalTechnique> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental Technique / Assay"@en .
+<https://w3id.org/perkonto/molbio#ExperimentalTechnique> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Method for the PERKOnto role; obo:OBI_0000070 (OBI 'assay') for the biomedical-investigation standard."@en .
+# 
+# https://w3id.org/perkonto/molbio#Instrument
+<https://w3id.org/perkonto/molbio#Instrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#Instrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000968> .
+<https://w3id.org/perkonto/molbio#Instrument> <http://www.w3.org/2000/01/rdf-schema#comment> "A laboratory instrument or platform used to run a technique, e.g. an Illumina NovaSeq sequencer, a confocal microscope, a qPCR machine, a mass spectrometer."@en .
+<https://w3id.org/perkonto/molbio#Instrument> <http://www.w3.org/2000/01/rdf-schema#label> "Instrument / Platform"@en .
+<https://w3id.org/perkonto/molbio#Instrument> <http://www.w3.org/2004/02/skos/core#note> "Grounded in obo:OBI_0000968 (OBI 'device')."@en .
+# 
+# https://w3id.org/perkonto/molbio#Protocol
+<https://w3id.org/perkonto/molbio#Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#Protocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000272> .
+<https://w3id.org/perkonto/molbio#Protocol> <http://www.w3.org/2000/01/rdf-schema#comment> "A documented experimental procedure / standard operating procedure followed to perform a technique."@en .
+<https://w3id.org/perkonto/molbio#Protocol> <http://www.w3.org/2000/01/rdf-schema#label> "Protocol"@en .
+<https://w3id.org/perkonto/molbio#Protocol> <http://www.w3.org/2004/02/skos/core#note> "Grounded in obo:OBI_0000272 (OBI 'protocol')."@en .
+# 
+# https://w3id.org/perkonto/molbio#Readout
+<https://w3id.org/perkonto/molbio#Readout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#Readout> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/perkonto/molbio#Readout> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Metric> .
+<https://w3id.org/perkonto/molbio#Readout> <http://www.w3.org/2000/01/rdf-schema#comment> "A measured biological quantity or endpoint, e.g. gene-expression level, cell viability, binding affinity (Kd), fluorescence intensity, differential-expression p-value."@en .
+<https://w3id.org/perkonto/molbio#Readout> <http://www.w3.org/2000/01/rdf-schema#label> "Readout / Measured Quantity"@en .
+<https://w3id.org/perkonto/molbio#Readout> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Metric and qudt:Quantity (QUDT)."@en .
+# 
+# https://w3id.org/perkonto/molbio#Reagent
+<https://w3id.org/perkonto/molbio#Reagent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#Reagent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://w3id.org/perkonto/molbio#Reagent> <http://www.w3.org/2000/01/rdf-schema#comment> "A consumable biological/chemical material used in an experiment, e.g. an antibody, primer, plasmid, enzyme, stain, or kit."@en .
+<https://w3id.org/perkonto/molbio#Reagent> <http://www.w3.org/2000/01/rdf-schema#label> "Reagent / Material"@en .
+<https://w3id.org/perkonto/molbio#Reagent> <http://www.w3.org/2004/02/skos/core#note> "Grounded in obo:BFO_0000040 (BFO 'material entity'); OBI models reagents as material entities."@en .
+# 
+# https://w3id.org/perkonto/molbio#ResearchProblem
+<https://w3id.org/perkonto/molbio#ResearchProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/molbio#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Task> .
+<https://w3id.org/perkonto/molbio#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "A scientific question or hypothesis the group works on, e.g. 'role of gene X in apoptosis', 'mechanism of copper trafficking in cells'."@en .
+<https://w3id.org/perkonto/molbio#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#label> "Research Problem / Hypothesis"@en .
+<https://w3id.org/perkonto/molbio#ResearchProblem> <http://www.w3.org/2004/02/skos/core#note> "Grounded in perk:Task only."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid14 <http://www.w3.org/2002/07/owl#members> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#ResearchProblem> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#Reagent> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#Readout> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#Protocol> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#Instrument> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#ExperimentalTechnique> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#BiologicalSample> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/molbio#BiologicalEntity> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

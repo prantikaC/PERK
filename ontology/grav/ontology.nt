@@ -1,0 +1,384 @@
+<https://w3id.org/perkonto/grav> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/perkonto/grav> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/perkonto> .
+<https://w3id.org/perkonto/grav> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/grav> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/grav> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/grav> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/grav> <http://purl.org/dc/terms/description> "A domain extension of PERKOnto for the professional knowledge of a gravitational-wave / relativity physicist as extractable from personal email communications. It reuses the PERKOnto backbone and specialises the scientific layer into gravitational-physics concepts (AstrophysicalSource/ObservationalData/AnalysisMethod/PhysicalParameter/ResearchProblem) plus supporting concepts (Detector, WaveformModel, AnalysisPipeline)."@en .
+<https://w3id.org/perkonto/grav> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/perkonto/grav> <http://purl.org/dc/terms/title> "PERKOnto-Grav: Gravitational Physics extension of PERKOnto"@en .
+<https://w3id.org/perkonto/grav> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/perkonto#evaluates
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#usedFor
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#uses
+<https://w3id.org/perkonto#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#worksOn
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#worksWith
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto/grav#analyses
+<https://w3id.org/perkonto/grav#analyses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#analyses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#uses> .
+<https://w3id.org/perkonto/grav#analyses> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#AnalysisMethod> .
+<https://w3id.org/perkonto/grav#analyses> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#ObservationalData> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#AstrophysicalSource> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#analyses> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an AnalysisMethod to the ObservationalData or AstrophysicalSource it is applied to. Specialises perk:uses."@en .
+<https://w3id.org/perkonto/grav#analyses> <http://www.w3.org/2000/01/rdf-schema#label> "analyses"@en .
+# 
+# https://w3id.org/perkonto/grav#appliedToProblem
+<https://w3id.org/perkonto/grav#appliedToProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#usedFor> .
+<https://w3id.org/perkonto/grav#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#AstrophysicalSource> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#AnalysisMethod> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/grav#ResearchProblem> .
+<https://w3id.org/perkonto/grav#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an AnalysisMethod or AstrophysicalSource to the ResearchProblem it addresses. Specialises perk:usedFor."@en .
+<https://w3id.org/perkonto/grav#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#label> "applied to problem"@en .
+# 
+# https://w3id.org/perkonto/grav#appliesMethod
+<https://w3id.org/perkonto/grav#appliesMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksWith> .
+<https://w3id.org/perkonto/grav#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/grav#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/grav#AnalysisMethod> .
+<https://w3id.org/perkonto/grav#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to an AnalysisMethod they use. Specialises perk:worksWith."@en .
+<https://w3id.org/perkonto/grav#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#label> "applies method"@en .
+# 
+# https://w3id.org/perkonto/grav#implementedIn
+<https://w3id.org/perkonto/grav#implementedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#implementedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#AnalysisMethod> .
+<https://w3id.org/perkonto/grav#implementedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/grav#AnalysisPipeline> .
+<https://w3id.org/perkonto/grav#implementedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an AnalysisMethod to the AnalysisPipeline used to run it."@en .
+<https://w3id.org/perkonto/grav#implementedIn> <http://www.w3.org/2000/01/rdf-schema#label> "implemented in"@en .
+# 
+# https://w3id.org/perkonto/grav#investigates
+<https://w3id.org/perkonto/grav#investigates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#investigates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksOn> .
+<https://w3id.org/perkonto/grav#investigates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/grav#investigates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/grav#ResearchProblem> .
+<https://w3id.org/perkonto/grav#investigates> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a ResearchProblem they work on. Specialises perk:worksOn."@en .
+<https://w3id.org/perkonto/grav#investigates> <http://www.w3.org/2000/01/rdf-schema#label> "investigates"@en .
+# 
+# https://w3id.org/perkonto/grav#measures
+<https://w3id.org/perkonto/grav#measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#measures> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#evaluates> .
+<https://w3id.org/perkonto/grav#measures> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#PhysicalParameter> .
+<https://w3id.org/perkonto/grav#measures> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#ResearchProblem> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#AstrophysicalSource> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#AnalysisMethod> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#measures> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a PhysicalParameter to the AstrophysicalSource, AnalysisMethod, or ResearchProblem it characterises. Specialises perk:evaluates."@en .
+<https://w3id.org/perkonto/grav#measures> <http://www.w3.org/2000/01/rdf-schema#label> "measures"@en .
+# 
+# https://w3id.org/perkonto/grav#recordedBy
+<https://w3id.org/perkonto/grav#recordedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#recordedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#ObservationalData> .
+<https://w3id.org/perkonto/grav#recordedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/grav#Detector> .
+<https://w3id.org/perkonto/grav#recordedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links ObservationalData to the Detector that recorded it."@en .
+<https://w3id.org/perkonto/grav#recordedBy> <http://www.w3.org/2000/01/rdf-schema#label> "recorded by"@en .
+# 
+# https://w3id.org/perkonto/grav#studies
+<https://w3id.org/perkonto/grav#studies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#studies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksWith> .
+<https://w3id.org/perkonto/grav#studies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/grav#studies> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/grav#AstrophysicalSource> .
+<https://w3id.org/perkonto/grav#studies> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to an AstrophysicalSource they investigate. Specialises perk:worksWith."@en .
+<https://w3id.org/perkonto/grav#studies> <http://www.w3.org/2000/01/rdf-schema#label> "studies"@en .
+# 
+# https://w3id.org/perkonto/grav#usesWaveformModel
+<https://w3id.org/perkonto/grav#usesWaveformModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/grav#usesWaveformModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#AnalysisMethod> .
+<https://w3id.org/perkonto/grav#usesWaveformModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/grav#WaveformModel> .
+<https://w3id.org/perkonto/grav#usesWaveformModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an AnalysisMethod to the WaveformModel / template family it uses."@en .
+<https://w3id.org/perkonto/grav#usesWaveformModel> <http://www.w3.org/2000/01/rdf-schema#label> "uses waveform model"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/perkonto#datasetName
+<https://w3id.org/perkonto#datasetName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#methodName
+<https://w3id.org/perkonto#methodName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#metricName
+<https://w3id.org/perkonto#metricName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#version
+<https://w3id.org/perkonto#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto/grav#catalogName
+<https://w3id.org/perkonto/grav#catalogName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#catalogName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#datasetName> .
+<https://w3id.org/perkonto/grav#catalogName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#ObservationalData> .
+<https://w3id.org/perkonto/grav#catalogName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#catalogName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of an event or waveform catalog, e.g. 'GWTC-3'."@en .
+<https://w3id.org/perkonto/grav#catalogName> <http://www.w3.org/2000/01/rdf-schema#label> "catalog name"@en .
+# 
+# https://w3id.org/perkonto/grav#detectorName
+<https://w3id.org/perkonto/grav#detectorName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#detectorName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#Detector> .
+<https://w3id.org/perkonto/grav#detectorName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#detectorName> <http://www.w3.org/2000/01/rdf-schema#label> "detector name"@en .
+# 
+# https://w3id.org/perkonto/grav#methodName
+<https://w3id.org/perkonto/grav#methodName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#methodName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#methodName> .
+<https://w3id.org/perkonto/grav#methodName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#AnalysisMethod> .
+<https://w3id.org/perkonto/grav#methodName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#methodName> <http://www.w3.org/2000/01/rdf-schema#label> "method name"@en .
+# 
+# https://w3id.org/perkonto/grav#parameterName
+<https://w3id.org/perkonto/grav#parameterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#parameterName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#metricName> .
+<https://w3id.org/perkonto/grav#parameterName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#PhysicalParameter> .
+<https://w3id.org/perkonto/grav#parameterName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#parameterName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the physical parameter, e.g. 'chirp mass', 'SNR'."@en .
+<https://w3id.org/perkonto/grav#parameterName> <http://www.w3.org/2000/01/rdf-schema#label> "parameter name"@en .
+# 
+# https://w3id.org/perkonto/grav#parameterUnit
+<https://w3id.org/perkonto/grav#parameterUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#parameterUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#PhysicalParameter> .
+<https://w3id.org/perkonto/grav#parameterUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#parameterUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unit of the parameter, e.g. 'solar mass', 'Mpc', 'Hz'."@en .
+<https://w3id.org/perkonto/grav#parameterUnit> <http://www.w3.org/2000/01/rdf-schema#label> "parameter unit"@en .
+# 
+# https://w3id.org/perkonto/grav#parameterValue
+<https://w3id.org/perkonto/grav#parameterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#parameterValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#PhysicalParameter> .
+<https://w3id.org/perkonto/grav#parameterValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/perkonto/grav#parameterValue> <http://www.w3.org/2000/01/rdf-schema#label> "parameter value"@en .
+# 
+# https://w3id.org/perkonto/grav#pipelineName
+<https://w3id.org/perkonto/grav#pipelineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#pipelineName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#AnalysisPipeline> .
+<https://w3id.org/perkonto/grav#pipelineName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#pipelineName> <http://www.w3.org/2000/01/rdf-schema#label> "pipeline name"@en .
+# 
+# https://w3id.org/perkonto/grav#pipelineVersion
+<https://w3id.org/perkonto/grav#pipelineVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#pipelineVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#version> .
+<https://w3id.org/perkonto/grav#pipelineVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#AnalysisPipeline> .
+<https://w3id.org/perkonto/grav#pipelineVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#pipelineVersion> <http://www.w3.org/2000/01/rdf-schema#label> "pipeline version"@en .
+# 
+# https://w3id.org/perkonto/grav#sourceName
+<https://w3id.org/perkonto/grav#sourceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#sourceName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#datasetName> .
+<https://w3id.org/perkonto/grav#sourceName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#AstrophysicalSource> .
+<https://w3id.org/perkonto/grav#sourceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#sourceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Designation of the astrophysical source / event, e.g. 'GW150914'."@en .
+<https://w3id.org/perkonto/grav#sourceName> <http://www.w3.org/2000/01/rdf-schema#label> "source name"@en .
+# 
+# https://w3id.org/perkonto/grav#sourceType
+<https://w3id.org/perkonto/grav#sourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#sourceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#AstrophysicalSource> .
+<https://w3id.org/perkonto/grav#sourceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#sourceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of source, e.g. 'BBH', 'BNS', 'NSBH', 'supernova'."@en .
+<https://w3id.org/perkonto/grav#sourceType> <http://www.w3.org/2000/01/rdf-schema#label> "source type"@en .
+# 
+# https://w3id.org/perkonto/grav#waveformModelName
+<https://w3id.org/perkonto/grav#waveformModelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/grav#waveformModelName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/grav#WaveformModel> .
+<https://w3id.org/perkonto/grav#waveformModelName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/grav#waveformModelName> <http://www.w3.org/2000/01/rdf-schema#label> "waveform model name"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000968
+<http://purl.obolibrary.org/obo/OBI_0000968> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/astronomy/ont/object-types#AstrObject
+<http://purl.org/astronomy/ont/object-types#AstrObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/SoftwareApplication
+<https://schema.org/SoftwareApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Dataset
+<https://w3id.org/perkonto#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Method
+<https://w3id.org/perkonto#Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Metric
+<https://w3id.org/perkonto#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Person
+<https://w3id.org/perkonto#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Task
+<https://w3id.org/perkonto#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto/grav#AnalysisMethod
+<https://w3id.org/perkonto/grav#AnalysisMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#AnalysisMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Method> .
+<https://w3id.org/perkonto/grav#AnalysisMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "A technique applied to sources/data, e.g. matched filtering, Bayesian parameter estimation, numerical relativity simulation, unmodeled burst search."@en .
+<https://w3id.org/perkonto/grav#AnalysisMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Analysis Method"@en .
+<https://w3id.org/perkonto/grav#AnalysisMethod> <http://www.w3.org/2004/02/skos/core#note> "Grounded in perk:Method only; no single widely-adopted community class for a GW analysis method exists."@en .
+# 
+# https://w3id.org/perkonto/grav#AnalysisPipeline
+<https://w3id.org/perkonto/grav#AnalysisPipeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#AnalysisPipeline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/SoftwareApplication> .
+<https://w3id.org/perkonto/grav#AnalysisPipeline> <http://www.w3.org/2000/01/rdf-schema#comment> "A software pipeline used to run an analysis method, e.g. PyCBC, gstLAL, Bilby, LALSuite."@en .
+<https://w3id.org/perkonto/grav#AnalysisPipeline> <http://www.w3.org/2000/01/rdf-schema#label> "Analysis Pipeline / Software"@en .
+<https://w3id.org/perkonto/grav#AnalysisPipeline> <http://www.w3.org/2004/02/skos/core#note> "Grounded in schema:SoftwareApplication."@en .
+# 
+# https://w3id.org/perkonto/grav#AstrophysicalSource
+<https://w3id.org/perkonto/grav#AstrophysicalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#AstrophysicalSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/astronomy/ont/object-types#AstrObject> .
+<https://w3id.org/perkonto/grav#AstrophysicalSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Dataset> .
+<https://w3id.org/perkonto/grav#AstrophysicalSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical system emitting gravitational radiation under study, e.g. a binary black hole, binary neutron star, supernova, or continuous-wave source."@en .
+<https://w3id.org/perkonto/grav#AstrophysicalSource> <http://www.w3.org/2000/01/rdf-schema#label> "Astrophysical Source"@en .
+<https://w3id.org/perkonto/grav#AstrophysicalSource> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Dataset for the PERKOnto object-of-study role; ivoa:AstrObject (IVOA Ontology of Astronomical Object Types, 'Astronomical Object') for the astronomy standard."@en .
+# 
+# https://w3id.org/perkonto/grav#Detector
+<https://w3id.org/perkonto/grav#Detector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#Detector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000968> .
+<https://w3id.org/perkonto/grav#Detector> <http://www.w3.org/2000/01/rdf-schema#comment> "A gravitational-wave detector or observatory that records data, e.g. LIGO Hanford, LIGO Livingston, Virgo, KAGRA, LISA."@en .
+<https://w3id.org/perkonto/grav#Detector> <http://www.w3.org/2000/01/rdf-schema#label> "Detector / Observatory"@en .
+<https://w3id.org/perkonto/grav#Detector> <http://www.w3.org/2004/02/skos/core#note> "Grounded in obo:OBI_0000968 (OBI 'device'): a detector is an instrument that produces data; OBI device is the closest cross-domain standard."@en .
+# 
+# https://w3id.org/perkonto/grav#ObservationalData
+<https://w3id.org/perkonto/grav#ObservationalData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#ObservationalData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<https://w3id.org/perkonto/grav#ObservationalData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Dataset> .
+<https://w3id.org/perkonto/grav#ObservationalData> <http://www.w3.org/2000/01/rdf-schema#comment> "A concrete analysed data artifact: detector strain segments, an event catalog (e.g. GWTC), or a numerical-relativity waveform catalog."@en .
+<https://w3id.org/perkonto/grav#ObservationalData> <http://www.w3.org/2000/01/rdf-schema#label> "Observational / Simulation Data"@en .
+<https://w3id.org/perkonto/grav#ObservationalData> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Dataset and obo:IAO_0000030 (IAO 'information content entity') for the data-artifact sense."@en .
+# 
+# https://w3id.org/perkonto/grav#PhysicalParameter
+<https://w3id.org/perkonto/grav#PhysicalParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#PhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/perkonto/grav#PhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Metric> .
+<https://w3id.org/perkonto/grav#PhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A measured or inferred physical quantity, e.g. component masses, spins, luminosity distance, signal-to-noise ratio, false-alarm rate, sky localisation."@en .
+<https://w3id.org/perkonto/grav#PhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Parameter / Observable"@en .
+<https://w3id.org/perkonto/grav#PhysicalParameter> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Metric for the PERKOnto evaluative role; qudt:Quantity (QUDT) for the physical-quantity standard."@en .
+# 
+# https://w3id.org/perkonto/grav#ResearchProblem
+<https://w3id.org/perkonto/grav#ResearchProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Task> .
+<https://w3id.org/perkonto/grav#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "A scientific question the group works on, e.g. 'test general relativity in the strong-field regime', 'measure the Hubble constant from standard sirens'."@en .
+<https://w3id.org/perkonto/grav#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#label> "Research Problem"@en .
+<https://w3id.org/perkonto/grav#ResearchProblem> <http://www.w3.org/2004/02/skos/core#note> "Grounded in perk:Task only."@en .
+# 
+# https://w3id.org/perkonto/grav#WaveformModel
+<https://w3id.org/perkonto/grav#WaveformModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/grav#WaveformModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A signal model / template family used in analysis, e.g. effective-one-body (EOB), phenomenological (IMRPhenom), surrogate, or numerical-relativity template banks."@en .
+<https://w3id.org/perkonto/grav#WaveformModel> <http://www.w3.org/2000/01/rdf-schema#label> "Waveform Model"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid11 <http://www.w3.org/2002/07/owl#members> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#WaveformModel> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#ResearchProblem> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#PhysicalParameter> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#ObservationalData> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#Detector> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#AstrophysicalSource> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#AnalysisPipeline> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/grav#AnalysisMethod> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

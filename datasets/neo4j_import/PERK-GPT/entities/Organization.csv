@@ -1,0 +1,15 @@
+:ID,mergeConfidence,mergedFrom,orgName,:LABEL
+og1,,,ACM,Organization
+og2,,,Indian Association for the Cultivation of Science,Organization
+og3,,,Stanford University,Organization
+og4,,,University of Oxford,Organization
+og5,,,ACL,Organization
+og6,0.7791,['og8'],Stanford University Office of Communications,Organization
+og7,,,IACS Press and Public Relations Office,Organization
+og9,,,University of Oxford’s Public Affairs Directorate,Organization
+og10,,,IACS,Organization
+og11,,,Edinburgh,Organization
+og12,,,UCM,Organization
+og13,,,University of Washington,Organization
+og14,,,IIT Delhi,Organization
+og15,,,University of Bologna,Organization

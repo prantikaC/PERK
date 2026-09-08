@@ -123,7 +123,7 @@ def main():
     labels = ['(a)', '(b)', '(c)']
     for ax, label, name in zip(axes, labels, names):
         thresh, prec, rec, match_t, reject_t = results[name]
-        plot_axis(ax, f"{label} {name} Pipeline", thresh, prec, rec, match_t, reject_t)
+        plot_axis(ax, f"{label} {name}", thresh, prec, rec, match_t, reject_t)
 
     plt.tight_layout()
     plt.savefig(args.plot_output, format='png', bbox_inches='tight')

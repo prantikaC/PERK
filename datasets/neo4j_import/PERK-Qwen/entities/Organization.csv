@@ -1,0 +1,15 @@
+:ID,mergeConfidence,mergedFrom,orgName,:LABEL
+og1,,,ACM,Organization
+og2,,,Indian Association for the Cultivation of Science,Organization
+og4,,,University of Oxford,Organization
+og5,,,ACL,Organization
+og6,,,Prof. Ramesh Bhatia,Organization
+x2,,,,Organization
+og7,,,Media Relations Officer,Organization
+og8,,,Sunita Sen,Organization
+og9,,,IACS,Organization
+og10,0.8542,['og3'],Stanford University,Organization
+og11,,,UCM,Organization
+og12,,,University of Washington,Organization
+og13,,,IIT Delhi,Organization
+og14,,,University of Bologna,Organization

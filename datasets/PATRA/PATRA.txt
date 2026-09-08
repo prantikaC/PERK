@@ -41,12 +41,14 @@ Thank you for your detailed proposal on Temporal Sentiment Analysis in Historica
 
 I agree with your suggestions for potential datasets, especially the "Chronicling America" and "British Library Digital Collections." We can leverage these extensive archives as they provide a wealth of material for our analysis. I also appreciate your emphasis on developing temporal embeddings and exploring diachronic language changes with historical lexicons.
 
-I will ask Dr Michael Bradly, who is a very senior researcher in Stanford University and Dr Ananya Chatterjee, a post doctoral student in the University of Oxford if they wish to collaborate in this project as it is in the same field as their research,
+I will ask Dr Michael Bradley, who is a very senior researcher in Stanford University and Dr Ananya Chatterjee, a post doctoral student in the University of Oxford if they wish to collaborate in this project as it is in the same field as their research,
 
 To discuss these ideas further and to coordinate our next steps, I suggest we organize a meeting. I am available on April 6th, 2019, from 3 PM to 4 PM IST. If this works for everyone, I can set up a Zoom meeting. Alternatively, if another time is preferable, please let me know your availability.
 
 Best,
 Ramesh
+
+EMAIL_END
 
 Thread ID: RA22JN
 Mail ID: YT9B21
@@ -464,7 +466,7 @@ Dear Sunita, Ananya, and Prof. Bhatia,
 
 Thank you, Sunita, for your diligence in preparing and organizing the clean corpus subset, and for summarising the applied pipeline and remaining challenges so clearly in the README. I have begun reviewing the provided files and can confirm that the outputs are in line with the expectations of my workflow, especially regarding reduced segmentation artifacts and improved date annotation. The folder structure and documentation also make it easy to cross-reference between metadata and text.
 
-As for the evaluation metrics for our upcoming baseline modeling, I recommend adopting both intrinsic and extrinsic measures. For intrinsic, character/error rates (CER and WER) would provide a transparent assessment of any remaining OCR noise. On the extrinsic side, standard token-level accuracy, F1 score, and, for our context, an adjusted historical vocabulary recall (as you noted) will map well to both classification and retrieval subtasks. Additionally, provenance-based metrics—measuring fidelity of date/location extraction from noisy versus cleaned text—could be useful, particularly since we intend for the models to support historical analysis pipelines.
+As for the evaluation metrics for our upcoming baseline modeling, I recommend adopting both intrinsic and extrinsic measures. For intrinsic, character/error rates (Character error rate and Word erro rate) would provide a transparent assessment of any remaining OCR noise. On the extrinsic side, standard token-level accuracy, F1 score, and, for our context, an adjusted historical vocabulary recall (as you noted) will map well to both classification and retrieval subtasks. Additionally, provenance-based metrics—measuring fidelity of date/location extraction from noisy versus cleaned text—could be useful, particularly since we intend for the models to support historical analysis pipelines.
 
 Ananya, your upcoming interpretability memo should help us identify additional diagnostic metrics, particularly for post-hoc model explanations and case study selection. Prof. Bhatia, please let us know if there are other target tasks (e.g., chronology prediction, entity linking across archives) whose evaluation would require tailoring our metric selection further.
 

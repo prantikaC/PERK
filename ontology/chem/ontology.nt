@@ -1,0 +1,345 @@
+<https://w3id.org/perkonto/chem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/perkonto/chem> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/perkonto> .
+<https://w3id.org/perkonto/chem> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/chem> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/chem> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/chem> <http://purl.org/dc/terms/creator> "Anonymous Author" .
+<https://w3id.org/perkonto/chem> <http://purl.org/dc/terms/description> "A domain extension of PERKOnto for the professional knowledge of a computational/theoretical chemist as extractable from personal email communications. It reuses the PERKOnto communication, actor, venue and publication-lifecycle backbone and specialises the scientific layer (Dataset/Method/Metric/Task) into chemistry concepts (ChemicalSystem/ComputationalMethod/Observable/ResearchProblem) plus supporting concepts (ForceField, Software, LevelOfTheory)."@en .
+<https://w3id.org/perkonto/chem> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/perkonto/chem> <http://purl.org/dc/terms/title> "PERKOnto-Chem: Computational Chemistry extension of PERKOnto"@en .
+<https://w3id.org/perkonto/chem> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/perkonto#evaluates
+<https://w3id.org/perkonto#evaluates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#usedFor
+<https://w3id.org/perkonto#usedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#uses
+<https://w3id.org/perkonto#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#worksOn
+<https://w3id.org/perkonto#worksOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto#worksWith
+<https://w3id.org/perkonto#worksWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/perkonto/chem#appliedToProblem
+<https://w3id.org/perkonto/chem#appliedToProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#usedFor> .
+<https://w3id.org/perkonto/chem#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ChemicalSystem> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/chem#ResearchProblem> .
+<https://w3id.org/perkonto/chem#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a ComputationalMethod or ChemicalSystem to the ResearchProblem it addresses. Specialises perk:usedFor."@en .
+<https://w3id.org/perkonto/chem#appliedToProblem> <http://www.w3.org/2000/01/rdf-schema#label> "applied to problem"@en .
+# 
+# https://w3id.org/perkonto/chem#appliesMethod
+<https://w3id.org/perkonto/chem#appliesMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksWith> .
+<https://w3id.org/perkonto/chem#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/chem#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+<https://w3id.org/perkonto/chem#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a ComputationalMethod they use. Specialises perk:worksWith."@en .
+<https://w3id.org/perkonto/chem#appliesMethod> <http://www.w3.org/2000/01/rdf-schema#label> "applies method"@en .
+# 
+# https://w3id.org/perkonto/chem#atLevelOfTheory
+<https://w3id.org/perkonto/chem#atLevelOfTheory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#atLevelOfTheory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+<https://w3id.org/perkonto/chem#atLevelOfTheory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/chem#LevelOfTheory> .
+<https://w3id.org/perkonto/chem#atLevelOfTheory> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an electronic-structure ComputationalMethod to its LevelOfTheory."@en .
+<https://w3id.org/perkonto/chem#atLevelOfTheory> <http://www.w3.org/2000/01/rdf-schema#label> "at level of theory"@en .
+# 
+# https://w3id.org/perkonto/chem#implementedIn
+<https://w3id.org/perkonto/chem#implementedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#implementedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+<https://w3id.org/perkonto/chem#implementedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/chem#Software> .
+<https://w3id.org/perkonto/chem#implementedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a ComputationalMethod to the Software package used to run it."@en .
+<https://w3id.org/perkonto/chem#implementedIn> <http://www.w3.org/2000/01/rdf-schema#label> "implemented in"@en .
+# 
+# https://w3id.org/perkonto/chem#investigates
+<https://w3id.org/perkonto/chem#investigates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#investigates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksOn> .
+<https://w3id.org/perkonto/chem#investigates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/chem#investigates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/chem#ResearchProblem> .
+<https://w3id.org/perkonto/chem#investigates> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a ResearchProblem they work on. Specialises perk:worksOn."@en .
+<https://w3id.org/perkonto/chem#investigates> <http://www.w3.org/2000/01/rdf-schema#label> "investigates"@en .
+# 
+# https://w3id.org/perkonto/chem#quantifies
+<https://w3id.org/perkonto/chem#quantifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#quantifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#evaluates> .
+<https://w3id.org/perkonto/chem#quantifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#Observable> .
+<https://w3id.org/perkonto/chem#quantifies> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ResearchProblem> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ChemicalSystem> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#quantifies> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an Observable to the ComputationalMethod, ChemicalSystem, or ResearchProblem it characterises. Specialises perk:evaluates."@en .
+<https://w3id.org/perkonto/chem#quantifies> <http://www.w3.org/2000/01/rdf-schema#label> "quantifies"@en .
+# 
+# https://w3id.org/perkonto/chem#simulates
+<https://w3id.org/perkonto/chem#simulates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#simulates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#uses> .
+<https://w3id.org/perkonto/chem#simulates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+<https://w3id.org/perkonto/chem#simulates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/chem#ChemicalSystem> .
+<https://w3id.org/perkonto/chem#simulates> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a ComputationalMethod to the ChemicalSystem it is applied to. Specialises perk:uses."@en .
+<https://w3id.org/perkonto/chem#simulates> <http://www.w3.org/2000/01/rdf-schema#label> "simulates"@en .
+# 
+# https://w3id.org/perkonto/chem#studies
+<https://w3id.org/perkonto/chem#studies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#studies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#worksWith> .
+<https://w3id.org/perkonto/chem#studies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto#Person> .
+<https://w3id.org/perkonto/chem#studies> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/chem#ChemicalSystem> .
+<https://w3id.org/perkonto/chem#studies> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Person to a ChemicalSystem they investigate. Specialises perk:worksWith."@en .
+<https://w3id.org/perkonto/chem#studies> <http://www.w3.org/2000/01/rdf-schema#label> "studies"@en .
+# 
+# https://w3id.org/perkonto/chem#usesForceField
+<https://w3id.org/perkonto/chem#usesForceField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/perkonto/chem#usesForceField> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+<https://w3id.org/perkonto/chem#usesForceField> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/perkonto/chem#ForceField> .
+<https://w3id.org/perkonto/chem#usesForceField> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a ComputationalMethod to the ForceField that parameterises it."@en .
+<https://w3id.org/perkonto/chem#usesForceField> <http://www.w3.org/2000/01/rdf-schema#label> "uses force field"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/perkonto#datasetName
+<https://w3id.org/perkonto#datasetName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#methodName
+<https://w3id.org/perkonto#methodName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#metricName
+<https://w3id.org/perkonto#metricName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto#version
+<https://w3id.org/perkonto#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/perkonto/chem#forceFieldName
+<https://w3id.org/perkonto/chem#forceFieldName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#forceFieldName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#ForceField> .
+<https://w3id.org/perkonto/chem#forceFieldName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/chem#forceFieldName> <http://www.w3.org/2000/01/rdf-schema#label> "force field name"@en .
+# 
+# https://w3id.org/perkonto/chem#methodName
+<https://w3id.org/perkonto/chem#methodName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#methodName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#methodName> .
+<https://w3id.org/perkonto/chem#methodName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+<https://w3id.org/perkonto/chem#methodName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/chem#methodName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the computational method (e.g. 'molecular dynamics', 'DFT')."@en .
+<https://w3id.org/perkonto/chem#methodName> <http://www.w3.org/2000/01/rdf-schema#label> "method name"@en .
+# 
+# https://w3id.org/perkonto/chem#observableName
+<https://w3id.org/perkonto/chem#observableName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#observableName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#metricName> .
+<https://w3id.org/perkonto/chem#observableName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#Observable> .
+<https://w3id.org/perkonto/chem#observableName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/chem#observableName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the physical observable (e.g. 'free energy')."@en .
+<https://w3id.org/perkonto/chem#observableName> <http://www.w3.org/2000/01/rdf-schema#label> "observable name"@en .
+# 
+# https://w3id.org/perkonto/chem#observableUnit
+<https://w3id.org/perkonto/chem#observableUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#observableUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#Observable> .
+<https://w3id.org/perkonto/chem#observableUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/chem#observableUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical unit of the observable value (e.g. 'kcal/mol')."@en .
+<https://w3id.org/perkonto/chem#observableUnit> <http://www.w3.org/2000/01/rdf-schema#label> "observable unit"@en .
+# 
+# https://w3id.org/perkonto/chem#observableValue
+<https://w3id.org/perkonto/chem#observableValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#observableValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#Observable> .
+<https://w3id.org/perkonto/chem#observableValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/perkonto/chem#observableValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Reported numeric value of an observable."@en .
+<https://w3id.org/perkonto/chem#observableValue> <http://www.w3.org/2000/01/rdf-schema#label> "observable value"@en .
+# 
+# https://w3id.org/perkonto/chem#smiles
+<https://w3id.org/perkonto/chem#smiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#smiles> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#ChemicalSystem> .
+<https://w3id.org/perkonto/chem#smiles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/chem#smiles> <http://www.w3.org/2000/01/rdf-schema#comment> "SMILES string encoding the molecular structure, where applicable."@en .
+<https://w3id.org/perkonto/chem#smiles> <http://www.w3.org/2000/01/rdf-schema#label> "SMILES"@en .
+# 
+# https://w3id.org/perkonto/chem#softwareName
+<https://w3id.org/perkonto/chem#softwareName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#softwareName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#Software> .
+<https://w3id.org/perkonto/chem#softwareName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/chem#softwareName> <http://www.w3.org/2000/01/rdf-schema#label> "software name"@en .
+# 
+# https://w3id.org/perkonto/chem#softwareVersion
+<https://w3id.org/perkonto/chem#softwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#softwareVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#version> .
+<https://w3id.org/perkonto/chem#softwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#Software> .
+<https://w3id.org/perkonto/chem#softwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/chem#softwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "software version"@en .
+# 
+# https://w3id.org/perkonto/chem#systemName
+<https://w3id.org/perkonto/chem#systemName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/perkonto/chem#systemName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/perkonto#datasetName> .
+<https://w3id.org/perkonto/chem#systemName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/perkonto/chem#ChemicalSystem> .
+<https://w3id.org/perkonto/chem#systemName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/perkonto/chem#systemName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name or identifier of the chemical system studied."@en .
+<https://w3id.org/perkonto/chem#systemName> <http://www.w3.org/2000/01/rdf-schema#label> "system name"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/CHEBI_24431
+<http://purl.obolibrary.org/obo/CHEBI_24431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt/Quantity
+<http://qudt.org/schema/qudt/Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/SoftwareApplication
+<https://schema.org/SoftwareApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Dataset
+<https://w3id.org/perkonto#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Method
+<https://w3id.org/perkonto#Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Metric
+<https://w3id.org/perkonto#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Person
+<https://w3id.org/perkonto#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto#Task
+<https://w3id.org/perkonto#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/perkonto/chem#ChemicalSystem
+<https://w3id.org/perkonto/chem#ChemicalSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#ChemicalSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_24431> .
+<https://w3id.org/perkonto/chem#ChemicalSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Dataset> .
+<https://w3id.org/perkonto/chem#ChemicalSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical/molecular system under study: a molecule, complex, material, or assembly (e.g. a copper-trafficking protein, a soft-matter aggregate, a bioinorganic active site)."@en .
+<https://w3id.org/perkonto/chem#ChemicalSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical System"@en .
+<https://w3id.org/perkonto/chem#ChemicalSystem> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Dataset gives the PERKOnto object-of-study role for cross-domain queries; obo:CHEBI_24431 (ChEBI 'chemical entity') gives the discipline-standard grounding."@en .
+# 
+# https://w3id.org/perkonto/chem#ComputationalMethod
+<https://w3id.org/perkonto/chem#ComputationalMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#ComputationalMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Method> .
+<https://w3id.org/perkonto/chem#ComputationalMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulation or theoretical technique applied to a chemical system, e.g. molecular dynamics, Monte Carlo, density functional theory, enhanced sampling, coarse-grained modelling."@en .
+<https://w3id.org/perkonto/chem#ComputationalMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Computational Method"@en .
+<https://w3id.org/perkonto/chem#ComputationalMethod> <http://www.w3.org/2004/02/skos/core#note> "Grounded in perk:Method only: no single widely-adopted community class for a computational-chemistry method exists; perk:Method already aligns to schema:SoftwareApplication upstream."@en .
+# 
+# https://w3id.org/perkonto/chem#ForceField
+<https://w3id.org/perkonto/chem#ForceField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#ForceField> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter set defining interatomic interactions used by a (classical) simulation method, e.g. CHARMM, AMBER, OPLS, or a custom coarse-grained model."@en .
+<https://w3id.org/perkonto/chem#ForceField> <http://www.w3.org/2000/01/rdf-schema#label> "Force Field"@en .
+# 
+# https://w3id.org/perkonto/chem#LevelOfTheory
+<https://w3id.org/perkonto/chem#LevelOfTheory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#LevelOfTheory> <http://www.w3.org/2000/01/rdf-schema#comment> "The theoretical/basis-set specification for an electronic-structure calculation, e.g. 'B3LYP/6-31G*', 'CCSD(T)/cc-pVTZ'."@en .
+<https://w3id.org/perkonto/chem#LevelOfTheory> <http://www.w3.org/2000/01/rdf-schema#label> "Level of Theory"@en .
+# 
+# https://w3id.org/perkonto/chem#Observable
+<https://w3id.org/perkonto/chem#Observable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#Observable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantity> .
+<https://w3id.org/perkonto/chem#Observable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Metric> .
+<https://w3id.org/perkonto/chem#Observable> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical quantity computed or measured from a simulation/calculation, e.g. free energy, binding affinity, radial distribution function, diffusion coefficient, reaction barrier."@en .
+<https://w3id.org/perkonto/chem#Observable> <http://www.w3.org/2000/01/rdf-schema#label> "Observable / Computed Property"@en .
+<https://w3id.org/perkonto/chem#Observable> <http://www.w3.org/2004/02/skos/core#note> "Dual-grounded: perk:Metric for the PERKOnto evaluative role; qudt:Quantity (QUDT) for the physical-quantity standard."@en .
+# 
+# https://w3id.org/perkonto/chem#ResearchProblem
+<https://w3id.org/perkonto/chem#ResearchProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/perkonto#Task> .
+<https://w3id.org/perkonto/chem#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "A scientific question or problem formulation the group works on, e.g. 'mechanism of copper trafficking', 'self-assembly in soft matter'."@en .
+<https://w3id.org/perkonto/chem#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#label> "Research Problem"@en .
+<https://w3id.org/perkonto/chem#ResearchProblem> <http://www.w3.org/2004/02/skos/core#note> "Grounded in perk:Task only; perk:Task aligns to schema:Action upstream."@en .
+# 
+# https://w3id.org/perkonto/chem#Software
+<https://w3id.org/perkonto/chem#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/perkonto/chem#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/SoftwareApplication> .
+<https://w3id.org/perkonto/chem#Software> <http://www.w3.org/2000/01/rdf-schema#comment> "A software package or code used to run a computational method, e.g. GROMACS, LAMMPS, NAMD, Gaussian, ORCA."@en .
+<https://w3id.org/perkonto/chem#Software> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation Software / Package"@en .
+<https://w3id.org/perkonto/chem#Software> <http://www.w3.org/2004/02/skos/core#note> "Grounded in schema:SoftwareApplication (the same upstream class perk:Method uses)."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid8 <http://www.w3.org/2002/07/owl#members> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#Software> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ResearchProblem> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#Observable> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#LevelOfTheory> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ForceField> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ComputationalMethod> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/perkonto/chem#ChemicalSystem> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

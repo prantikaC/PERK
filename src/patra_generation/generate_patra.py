@@ -24,7 +24,7 @@ def generate_email(context_emails: list[str], system_prompt: str) -> str:
         model="gpt-4.1",
         messages=[
             {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"The list of the previous 5 emails are {context_emails}"}
+            {"role": "user", "content": f"The list of the previous 7 emails are {context_emails}"}
         ]
     )
     return response.choices[0].message.content

@@ -1,0 +1,512 @@
+:ID,datasetName,mergeConfidence,mergedFrom,:LABEL
+d373,annotated corpus (19th-century South Asian legal documents),,,Dataset
+d374,"codebase for semantic entity adjudication, together with preprocessing scripts and annotation tools",,,Dataset
+d95,Sunita’s anonymized mapping samples (anonymized examples),0.7785,['d99'],Dataset
+d96,sample mappings,,,Dataset
+d71,CLARIN,,,Dataset
+d458,LDC repositories,,,Dataset
+d135,Bengali–Gujarati,,,Dataset
+d136,French–English,,,Dataset
+d445,19th-century Bengali literature subset,,,Dataset
+d103,Bengali-English parallel corpus (Bengali-English corpus),0.7837,['d104'],Dataset
+d83,EntityAmbiguity_Examples_SSen_Final_18Jan2020.docx,,,Dataset
+d84,NormalizationPipeline_MBradley_2020.xlsx,,,Dataset
+d85,TableAccessibility_AC_Oxford_16Jan2020.pdf,,,Dataset
+d562,Lessons Learned Documentation,,,Dataset
+d351,Unspecified Dataset,,,Dataset
+d49,current corpus,,,Dataset
+d30,Supplementary scripts and data files,,,Dataset
+d100,Michael’s FAIR pipeline summary,,,Dataset
+d431,internal dataset,,,Dataset
+d82,Tables 3 and 5,,,Dataset
+d18,historical source text (historical documents),0.7707,['d20'],Dataset
+d137,Gujarati,,,Dataset
+d138,French,,,Dataset
+d36,documentation template,,,Dataset
+d57,annotator-generated resources,,,Dataset
+d58,NLP outputs,,,Dataset
+d55,raw scans,,,Dataset
+d559,East Asian datasets,,,Dataset
+d145,European datasets,,,Dataset
+d259,US datasets,,,Dataset
+d123,historical textual data,,,Dataset
+d391,inter-annotator agreement tables,,,Dataset
+d457,our dataset,,,Dataset
+d561,multi-national historical NLP projects,,,Dataset
+d498,historical data licensing discussions,,,Dataset
+d499,NLP and DH colleagues at IACS and Stanford,,,Dataset
+d79,Bengali-English Colonial Gazetteers,,,Dataset
+d80,EntityAmbiguity_Examples_SSen_14Jan2020.docx,,,Dataset
+d284,NDAI,,,Dataset
+d285,IACS,,,Dataset
+d286,Stanford,,,Dataset
+d332,benchmarking dataset,,,Dataset
+d54,annotated derivatives,,,Dataset
+d538,Indian dataset,,,Dataset
+d540,UK/EU dataset,,,Dataset
+d544,Israel (NLI),,,Dataset
+d545,Japan (NDL),,,Dataset
+d546,Chile (BNCh),,,Dataset
+d355,dataset accessibility,,,Dataset
+d236,full supplementary corpus,,,Dataset
+d237,supplementary figures/tables,,,Dataset
+d238,vignettes,,,Dataset
+d239,licensing documentation,,,Dataset
+d240,Persistent GitHub repository links,,,Dataset
+d241,DOIs,,,Dataset
+d127,low-resource historical datasets,,,Dataset
+d556,Chilean dataset,,,Dataset
+d1,Chronicling America,,,Dataset
+d2,British Library Digital Collections,,,Dataset
+d475,our corpus,,,Dataset
+d397,IAA data,,,Dataset
+d398,updated dataset index,,,Dataset
+d191,dataset DOIs and repository links,,,Dataset
+d206,cross-institutional dataset,,,Dataset
+d272,newsletter release page,,,Dataset
+d273,draft bulletin,,,Dataset
+d434,annotation guideline citations,,,Dataset
+d435,DOI links,,,Dataset
+d14,clean corpus subset,,,Dataset
+d376,Data Availability and Licensing section,,,Dataset
+d377,figure legends and supporting documentation,,,Dataset
+d126,sample datasets,,,Dataset
+d143,Reviewer Queries,,,Dataset
+d521,corpus workflows,,,Dataset
+d522,US-archived sources,,,Dataset
+d283,regional engagement charts,,,Dataset
+d303,annotated dataset,,,Dataset
+d226,Corpus Creation & Annotation Pipeline,,,Dataset
+d63,historical dataset,,,Dataset
+d19,completed feedback forms and annotated samples,,,Dataset
+d354,annotated benchmark dataset,,,Dataset
+d7,Chronicling America subset (1890–1900),,,Dataset
+d292,OCR error metrics,,,Dataset
+d293,draft notes on annotation challenges,,,Dataset
+d90,"small, representative corpus sample",,,Dataset
+d430,NDLI/Europeana sub-corpora,,,Dataset
+d447,supplementary PDF and tabular data files,,,Dataset
+d448,supplementary repository,,,Dataset
+d163,South Asian corpus,,,Dataset
+d139,Indian and European archives,,,Dataset
+d3,Corpus of Historical American English (COHA),,,Dataset
+d251,Joint Dataset Release,,,Dataset
+d252,JCDL 2022,,,Dataset
+d488,Bengal Gazette,,,Dataset
+d489,Madras Chronicle,,,Dataset
+d91,Wikidata,,,Dataset
+d92,domain-specific gazetteers,,,Dataset
+d281,multilingual benchmarking results,,,Dataset
+d280,NDAI user feedback summary,,,Dataset
+d282,press mention highlights,,,Dataset
+d222,Bengali subcorpus,,,Dataset
+d223,English subcorpus,,,Dataset
+d224,Hindi subcorpus,,,Dataset
+d225,Urdu subcorpus,,,Dataset
+d208,dataset demo,,,Dataset
+d347,Stanford Literary Lab’s 'Global Genres' series,,,Dataset
+d348,Stanford Library’s digital exhibits,,,Dataset
+d490,Part II of the Bengal Gazette,,,Dataset
+d491,Part III of the Madras Chronicle,,,Dataset
+d495,MOUs,,,Dataset
+d496,Zenodo conventions,,,Dataset
+d497,Zenodo Accession icons,,,Dataset
+d242,supplementary dataset,,,Dataset
+d33,Phased Dataset,,,Dataset
+d133,cross-lingual model transfer and dataset harmonization pipeline,,,Dataset
+d134,data privacy and compliance process,,,Dataset
+d47,summary statistics and representative OCR error cases,,,Dataset
+d48,annotated validation logs (v0.2.1),,,Dataset
+d500,de-identified legal correspondence,,,Dataset
+d501,template materials,,,Dataset
+d153,GHPC,,,Dataset
+d152,HISTEXT-21,,,Dataset
+d88,colonial gazetteer sources,,,Dataset
+d144,Indian datasets,,,Dataset
+d182,Oxford/UKRI transparency and data documentation templates,,,Dataset
+d183,recent resource papers with subsequent journal expansions,,,Dataset
+d116,reviewer-only embargo procedures for the dataset (embargoed dataset),0.811,"['d121', 'd248', 'd249', 'd484']",Dataset
+d117,scripts,,,Dataset
+d306,mirrored datasets,,,Dataset
+d24,Document F,,,Dataset
+d279,Oxford annotated corpus,,,Dataset
+d170,IACS-affiliated corpora,,,Dataset
+d384,datasets index,,,Dataset
+d385,compliance FAQs,,,Dataset
+d386,dataset links,,,Dataset
+d185,historical NLP resources,,,Dataset
+d230,Hindi and Urdu vignettes,,,Dataset
+d231,Bengali and English case studies,,,Dataset
+d308,participant analytics from the workshop platform,,,Dataset
+d510,lesser-resourced language subcorpora (lesser-resourced language subsets),0.7748,['d513'],Dataset
+d551,Chilean,,,Dataset
+d552,Japanese,,,Dataset
+d6,1890s datasets,,,Dataset
+d21,annotation highlights from Dr. Liu and Dr. Patel,,,Dataset
+d22,most representative document excerpts,,,Dataset
+d189,synthetic preview sample,,,Dataset
+d140,digital archives in India and Europe,,,Dataset
+d417,NDLI_MOU_Excerpt.pdf,,,Dataset
+d418,NDLI_AnnualReview_Template.pdf,,,Dataset
+d419,workflow flowchart,,,Dataset
+d420,Appendix Navigation Table (Draft),,,Dataset
+d214,ACL session feedback,,,Dataset
+d215,corpus creation protocols,,,Dataset
+d328,additional data snapshots,,,Dataset
+d404,NDLI,,,Dataset
+d432,Europeana corpora,,,Dataset
+d514,Bengali data slice (Bengali (12%)),0.7778,['d64'],Dataset
+d515,Urdu (9%),,,Dataset
+d516,Oriya,,,Dataset
+d517,Tamil,,,Dataset
+d94,challenging ambiguous mappings,,,Dataset
+d454,19th-century bilingual corpus,,,Dataset
+d287,presentation files and related assets,,,Dataset
+d227,Hindi and Urdu case study vignettes,,,Dataset
+d228,corpus release terminology,,,Dataset
+d229,revised comparative protocol matrix,,,Dataset
+d32,annotated OCR error corpora (annotated corpus),0.8739,"['d35', 'd39']",Dataset
+d297,OCR error correction module,,,Dataset
+d298,Annotated sample datasets,,,Dataset
+d387,third-party corpora,,,Dataset
+d389,expanded dataset index template,,,Dataset
+d390,regional archives in India,,,Dataset
+d305,annotated historical datasets,,,Dataset
+d16,processed historical corpus,0.7955,"['d233', 'd480']",Dataset
+d89,"minimal, reusable dataset sample",,,Dataset
+d29,Supplementary Table S1,,,Dataset
+d323,dialect annotation samples,,,Dataset
+d324,anonymized code snippets,,,Dataset
+d378,Data Availability,,,Dataset
+d439,external DOIs,,,Dataset
+d366,entity disambiguation confusion matrix,,,Dataset
+d367,subset-specific error breakdown,,,Dataset
+d344,Smith et al. (EMNLP 2022),,,Dataset
+d388,Appendix I,,,Dataset
+d325,cross-dialectal datasets,,,Dataset
+d482,external corpus citations,,,Dataset
+d483,recently integrated 2024 benchmarks,,,Dataset
+d485,Zenodo's supplementary documentation metadata,,,Dataset
+d212,historical manuscript corpora,,,Dataset
+d383,primary datasets,,,Dataset
+d395,expanded dataset index,,,Dataset
+d396,JOCCH_Dataset_Index_v3.xlsx,,,Dataset
+d120,general datasets,,,Dataset
+d524,heritage dataset,,,Dataset
+d525,special consent data points,,,Dataset
+d263,RTI use-cases,,,Dataset
+d541,National Library of Israel (NLI) case,,,Dataset
+d542,Japanese regulatory documents,,,Dataset
+d543,Chilean regulatory documents,,,Dataset
+d250,Embargo Monitoring Log,,,Dataset
+d353,multilingual datasets,,,Dataset
+d216,heritage materials,,,Dataset
+d205,Historical Document Corpora,,,Dataset
+d379,Google Drive folder,,,Dataset
+d380,Google Sheet,,,Dataset
+d299,diverse datasets,,,Dataset
+d449,main manuscript,,,Dataset
+d450,compliance checklist,,,Dataset
+d451,supplementary references,,,Dataset
+d452,repository,,,Dataset
+d453,graphical abstract,,,Dataset
+d198,synthetic instances,,,Dataset
+d93,minimal corpus,,,Dataset
+d23,Document C,,,Dataset
+d46,annotated historical OCR error corpus,,,Dataset
+d67,annotated corpora,,,Dataset
+d105,FAIR data badge criteria,,,Dataset
+d155,Not explicitly mentioned but implied,,,Dataset
+d202,dataset rationales,,,Dataset
+d274,visual schematic,,,Dataset
+d132,code appendix,,,Dataset
+d486,embargo status of one dataset subset,,,Dataset
+d313,anonymized chat logs,,,Dataset
+d314,technical notes,,,Dataset
+d370,19th-century South Asian Legal Documents,,,Dataset
+d368,19th-century Bengali legal documents,,,Dataset
+d423,IACS materials,,,Dataset
+d424,NDLI materials,,,Dataset
+d270,Stanford team's language model domain adaptation workflow schematic,,,Dataset
+d271,Stanford team's summary infographic highlighting joint publication metrics,,,Dataset
+d187,ACL resource track reproducibility standards,,,Dataset
+d188,UKRI exemplar language,,,Dataset
+d171,IACS dataset,,,Dataset
+d172,JOCCH,,,Dataset
+d173,JDoc,,,Dataset
+d68,Bengali and English corpora,,,Dataset
+d69,Annotator_Agreement_ByGenre tables,,,Dataset
+d70,NER ambiguity examples,,,Dataset
+d479,JOCCH Dataset,,,Dataset
+d558,institutional guidelines,,,Dataset
+d87,multi-source entity data,,,Dataset
+d363,Datasets & Annotation Pipeline,,,Dataset
+d175,open data,,,Dataset
+d176,code,,,Dataset
+d290,multilingual historical corpora,,,Dataset
+d288,corpus,,,Dataset
+d375,codebase,,,Dataset
+d256,PressQuery_FAQ_Drafts,,,Dataset
+d530,YIVO collection,,,Dataset
+d258,US-origin datasets,,,Dataset
+d476,User Study Dataset,,,Dataset
+d477,External Datasets,,,Dataset
+d511,raw corpus logs,,,Dataset
+d76,AltTextList_SSen_21Dec21.docx,,,Dataset
+d77,AccessibilityScanReport_SSen_21Dec21.pdf,,,Dataset
+d195,annotated historical samples (Document A),0.8014,"['d196', 'd197', 'd28']",Dataset
+d333,corpus augmentation,,,Dataset
+d51,NLP Dataset for OCR’d Historical Texts,,,Dataset
+d211,ACL_2022_QA_Final_Ananya.pdf,,,Dataset
+d156,regional corpus analysis,,,Dataset
+d157,language preservation,,,Dataset
+d207,datasets/demo segment,,,Dataset
+d161,South Asian dataset,,,Dataset
+d361,expert-curated subsets,,,Dataset
+d444,historical cases,,,Dataset
+d141,French historical corpus,,,Dataset
+d503,workflow diagrams,,,Dataset
+d504,legal annexes,,,Dataset
+d505,case vignette,,,Dataset
+d154,earlier 2019 dataset,,,Dataset
+d296,datasets,,,Dataset
+d146,ErrorPrivacyTable_v2_Feb2021.xlsx,,,Dataset
+d362,ALMA,,,Dataset
+d97,colonial-era corpus,,,Dataset
+d531,National Diet Library (Japan),,,Dataset
+d532,Biblioteca Nacional de Chile,,,Dataset
+d371,digitized archival texts,,,Dataset
+d372,Bengali legal documents,,,Dataset
+d25,Documents C and F,,,Dataset
+d26,Document F edge case,,,Dataset
+d27,Document A instance,,,Dataset
+d401,final dataset index with comprehensive licensing annotations,,,Dataset
+d402,IAA tables/plots,,,Dataset
+d403,regional licensing addendum,,,Dataset
+d40,late-19th-century Bengali and English periodicals,,,Dataset
+d307,major datasets and supporting files,,,Dataset
+d335,EMNLP dataset,,,Dataset
+d128,Bengali–Gujarati historical corpus,,,Dataset
+d129,French–English historical corpus,,,Dataset
+d382,real-world escalation case studies,,,Dataset
+d472,resource hosting venues,,,Dataset
+d459,supplementary annotation logs,,,Dataset
+d473,edge cases,,,Dataset
+d474,inter-annotator metadata,,,Dataset
+d110,annotated historical corpora,,,Dataset
+d320,code snippets,,,Dataset
+d321,sample queries for historical Q&A,,,Dataset
+d322,illustrative data subsets,,,Dataset
+d352,author contributions and updated dataset licensing info,,,Dataset
+d15,curated clean subset,,,Dataset
+d243,GitHub,,,Dataset
+d192,embargoed data resource URLs,,,Dataset
+d193,synthetic preview datasets,,,Dataset
+d381,humanities datasets,,,Dataset
+d433,Creative Commons-licensed data,,,Dataset
+d408,IACS ethics committee documents (IACS ethics documentation),0.8137,['d411'],Dataset
+d557,Japanese dataset,,,Dataset
+d412,Oxford ethics documentation,,,Dataset
+d414,NDLI workflow,,,Dataset
+d415,IACS-specific approval flowcharts,,,Dataset
+d329,anonymized data snapshots,,,Dataset
+d560,international historical datasets,,,Dataset
+d291,demo datasets,,,Dataset
+d213,historical language models,,,Dataset
+d165,transatlantic dataset,,,Dataset
+d5,Stanford Library pamphlets,,,Dataset
+d331,diachronic corpora,,,Dataset
+d118,national archives or government records,,,Dataset
+d119,institutional archive,,,Dataset
+d130,color-coded dataset interactions,,,Dataset
+d131,compliance and privacy pipeline,,,Dataset
+d260,RTI disclosures,,,Dataset
+d261,EU cultural heritage projects,,,Dataset
+d147,ErrorPrivacy summary,,,Dataset
+d148,IACS_ApprovalLetter.pdf,,,Dataset
+d209,provenance analysis dataset,,,Dataset
+d210,OCR error dataset (OCR error cases),0.8404,['d38'],Dataset
+d62,Annotator_Agreement_ByGenre_Final.xlsx,,,Dataset
+d267,press monitoring sheet,,,Dataset
+d162,European dataset,,,Dataset
+d108,Sunita’s dataset,,,Dataset
+d460,Annotation metadata,,,Dataset
+d461,annotator activity logs (annotation logs),0.8423,['d468'],Dataset
+d462,meta-annotations on language variety and script conventions,,,Dataset
+d463,inter-annotator commentaries,,,Dataset
+d464,normalization edge cases,,,Dataset
+d465,comparative statistics,,,Dataset
+d466,plots,,,Dataset
+d467,user study survey,,,Dataset
+d326,supplementary table references,,,Dataset
+d327,code artifact examples,0.779,['d330'],Dataset
+d336,datasets segment,,,Dataset
+d160,Oxford European corpus,,,Dataset
+d264,Press_Sample_RTINLP_2022.pdf,,,Dataset
+d265,IACS_Press_Release_Template_Feb2022.docx,,,Dataset
+d122,annotated corpus samples,,,Dataset
+d125,workshop artifacts,,,Dataset
+d158,South Asian corpus segment,,,Dataset
+d159,European corpus,,,Dataset
+d409,University of Oxford supporting artifacts (Oxford materials),0.796,['d421'],Dataset
+d410,Stanford supporting artifacts (Stanford artifacts),0.7675,['d413'],Dataset
+d494,Supplementary Historical Newspapers Dataset,,,Dataset
+d492,original embargo tables,,,Dataset
+d493,annotation flow mappings,,,Dataset
+d65,English data slice,,,Dataset
+d66,Annotator_Agreement_ByGenre,,,Dataset
+d8,Chronicling America samples,,,Dataset
+d446,19th-century Bengali subset,,,Dataset
+d478,online dataset splash page,,,Dataset
+d78,Bengali-English Colonial Documents,,,Dataset
+d109,annotated datasets,,,Dataset
+d455,code repositories,,,Dataset
+d456,graphical abstracts,,,Dataset
+d407,anonymized ethics committee documents,,,Dataset
+d184,historical text datasets,,,Dataset
+d151,Global Historical Press Corpus (GHPC),,,Dataset
+d311,annotated NER and OCR pipeline citation queries,,,Dataset
+d102,multilingual historical newspaper corpora (historical data),0.8016,"['d124', 'd17', 'd194', 'd221', 'd266', 'd294', 'd300', 'd301', 'd312', 'd338', 'd339', 'd340', 'd343', 'd346', 'd356', 'd4', 'd502', 'd509', 'd53', 'd56']",Dataset
+d553,Chilean data management examples,,,Dataset
+d554,Japanese data management examples,,,Dataset
+d555,Provenance tables,,,Dataset
+d518,corpus tables,,,Dataset
+d519,archival data annotation,,,Dataset
+d316,ACL D&I initiative papers,,,Dataset
+d317,recent EMNLP workshops on linguistic inclusivity,,,Dataset
+d416,Stanford Documentation (Stanford materials),0.8216,['d422'],Dataset
+d392,Indian Newspapers corpus,,,Dataset
+d393,British Colonial Proceedings,,,Dataset
+d394,US Immigration Letters corpus,0.8602,['d400'],Dataset
+d428,cross-jurisdictional data-use negotiations,,,Dataset
+d429,Europeana sub-corpora,,,Dataset
+d72,Europeana,,,Dataset
+d86,JOCCH_CameraReady_Package_08Mar2020.zip,,,Dataset
+d345,supplementary dataset archives (supporting datasets),0.7962,"['d440', 'd443']",Dataset
+d275,South Asian newspapers,,,Dataset
+d276,colonial records,,,Dataset
+d277,Oxford’s annotated corpus,,,Dataset
+d203,benchmark dataset,,,Dataset
+d52,Harmonized NLP Dataset,,,Dataset
+d441,supplementary data archives,,,Dataset
+d442,code repository,,,Dataset
+d304,participant queries or receipt confirmations,,,Dataset
+d369,expanded dataset,,,Dataset
+d75,HyperlinkChecklist_SSen_19Dec21.xlsx,,,Dataset
+d506,Q&A survey responses,,,Dataset
+d507,Zenodo pipeline,,,Dataset
+d318,empirical studies,,,Dataset
+d547,archival data workflows,,,Dataset
+d548,personal narrative annotation protections,,,Dataset
+d315,contemporary work on historical dialect normalization,,,Dataset
+d406,ethics committee correspondence,,,Dataset
+d427,data agreement negotiations,,,Dataset
+d302,backup dataset,,,Dataset
+d269,regional languages digitized archives,,,Dataset
+d255,co-authored datasets involving international partners,,,Dataset
+d44,metadata,,,Dataset
+d469,LDC,,,Dataset
+d470,institutional repositories,,,Dataset
+d471,HuggingFace Datasets,,,Dataset
+d337,multilingual newspaper corpora spanning 1850–1950,,,Dataset
+d204,underrepresented language corpora,,,Dataset
+d520,corpus methodology and annotation guidance,,,Dataset
+d142,outlier cases,,,Dataset
+d169,public datasets,,,Dataset
+d177,data access provisions,,,Dataset
+d178,code release,,,Dataset
+d179,ethics and privacy considerations,,,Dataset
+d180,primary datasets on Zenodo,0.8091,"['d244', 'd246', 'd98']",Dataset
+d181,institutional back-up at IACS,,,Dataset
+d73,Bengali source archives,,,Dataset
+d74,English source archives,,,Dataset
+d481,2023–27 benchmarks,,,Dataset
+d31,administrative checklist,,,Dataset
+d41,uploaded appendix and datasets,,,Dataset
+d42,confusion matrices,,,Dataset
+d43,error-class samples,,,Dataset
+d45,IACS and the British Library permissions,,,Dataset
+d289,cohort-based or multilingual historical datasets,,,Dataset
+d164,dataset interoperability,,,Dataset
+d549,Indian/EU datasets,,,Dataset
+d349,Stanford Literary Lab’s 'Global Genres' analysis,,,Dataset
+d350,university library digital collections,,,Dataset
+d11,British Library,,,Dataset
+d50,full dataset release package,,,Dataset
+d232,case study corpus,,,Dataset
+d199,"English, Sanskrit, and early modern Bengali records",,,Dataset
+d200,pilot datasets (~50 docs),,,Dataset
+d201,current corpus (>1000 docs),,,Dataset
+d174,knowledge base,,,Dataset
+d512,regional data-sharing protocols,,,Dataset
+d257,PressQuery_FAQ_Drafts/IACS_Draft_Entries,,,Dataset
+d245,GitHub supplementary corpus,0.7882,['d247'],Dataset
+d399,Indian regional corpora,,,Dataset
+d101,multilingual historical NLP,,,Dataset
+d167,South Asian corpora,,,Dataset
+d168,annotation schemas,,,Dataset
+d9,sample sets,,,Dataset
+d10,mapping schemas,,,Dataset
+d341,annotation inter-rater reliability figures,,,Dataset
+d342,pilot runs,,,Dataset
+d12,Cleaned text corpora for both archives,,,Dataset
+d13,British Library collections,,,Dataset
+d405,West Bengal State Archives,,,Dataset
+d526,archival data precedents from East Asia or Latin America,,,Dataset
+d527,project logs,,,Dataset
+d59,Historical Bengali Serials,,,Dataset
+d60,English Colonial Periodicals,,,Dataset
+d334,low-resource historical corpora,,,Dataset
+d360,Scottish Gaelic texts,,,Dataset
+d508,historical NLP,,,Dataset
+d536,Japanese framework,,,Dataset
+d537,Chilean framework,,,Dataset
+d533,NLI case,,,Dataset
+d539,UK/EU datasets,,,Dataset
+d319,dialect classification scheme,,,Dataset
+d436,under-resourced settings,,,Dataset
+d219,corpus creation,,,Dataset
+d220,annotation case studies,,,Dataset
+d437,DOI-linked datasets,,,Dataset
+d438,ZIP appendix,,,Dataset
+d550,"consent, anonymization, and data transmission protocols",,,Dataset
+d111,curated historical corpus,,,Dataset
+d112,annotation pipeline,,,Dataset
+d113,normalization procedures,,,Dataset
+d114,reproducibility case study,,,Dataset
+d115,community feedback,,,Dataset
+d309,technical troubleshooting logs,,,Dataset
+d310,chat transcript highlights,,,Dataset
+d253,sample questions and responses from recent FAQ cycle,,,Dataset
+d254,IACS or India-specific FAQ materials,,,Dataset
+d278,Bengali and Odia periodical collections,,,Dataset
+d61,annotated or processed derivative,,,Dataset
+d268,final materials,,,Dataset
+d190,sensitive historical records,,,Dataset
+d81,shared “NormalizationPipeline_MBradley_2020.xlsx” document,,,Dataset
+d234,annotation protocols,,,Dataset
+d235,supplementary case study vignettes,,,Dataset
+d523,linguistic corpora,,,Dataset
+d107,historical corpus annotation walkthrough,,,Dataset
+d217,ACL audience feedback,,,Dataset
+d218,Smith et al. (2021) protocol,,,Dataset
+d37,annotated historical materials,,,Dataset
+d149,OCR noise outputs,,,Dataset
+d150,cross-domain historical corpora,,,Dataset
+d534,Japan case,,,Dataset
+d535,Chile case,,,Dataset
+d357,digitized heritage collections,,,Dataset
+d358,19th-century Scottish Gaelic texts,,,Dataset
+d359,ALMA archive project,,,Dataset
+d295,annotation processes,,,Dataset
+d166,European source datasets,,,Dataset
+d487,structured meta-annotation protocol,,,Dataset
+d34,OCR error corpus,,,Dataset
+d262,repository materials,,,Dataset
+d425,Stanford 'ContinuingReview_Sample.pdf' (Stanford_ContinuingReview_Sample.pdf),0.8467,['d426'],Dataset
+d106,Ramesh’s corpus,,,Dataset
+d528,National Diet Library of Japan's published policies and case studies,,,Dataset
+d529,Biblioteca Nacional de Chile’s digital collections,,,Dataset
+d364,sample annotation guidelines,,,Dataset
+d365,error analysis visualizations,,,Dataset
+d186,restricted access corpora,,,Dataset

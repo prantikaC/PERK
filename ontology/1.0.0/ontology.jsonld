@@ -3,13 +3,45 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/perkonto#Conference"
+      "@id" : "https://w3id.org/perkonto#Person"
     }, {
-      "@id" : "https://w3id.org/perkonto#Meeting"
+      "@id" : "https://w3id.org/perkonto#Team"
     } ]
   } ]
 }, {
   "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/perkonto#Dataset"
+    }, {
+      "@id" : "https://w3id.org/perkonto#Method"
+    }, {
+      "@id" : "https://w3id.org/perkonto#Task"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/perkonto#Person"
+    }, {
+      "@id" : "https://w3id.org/perkonto#Team"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/perkonto#Conference"
+    }, {
+      "@id" : "https://w3id.org/perkonto#Journal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -19,7 +51,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -29,7 +61,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -41,7 +73,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -50,6 +82,8 @@
       "@id" : "https://w3id.org/perkonto#Dataset"
     }, {
       "@id" : "https://w3id.org/perkonto#Email"
+    }, {
+      "@id" : "https://w3id.org/perkonto#EmailID"
     }, {
       "@id" : "https://w3id.org/perkonto#Journal"
     }, {
@@ -60,6 +94,8 @@
       "@id" : "https://w3id.org/perkonto#Method"
     }, {
       "@id" : "https://w3id.org/perkonto#Metric"
+    }, {
+      "@id" : "https://w3id.org/perkonto#Organization"
     }, {
       "@id" : "https://w3id.org/perkonto#Paper"
     }, {
@@ -72,6 +108,8 @@
       "@id" : "https://w3id.org/perkonto#SubmissionID"
     }, {
       "@id" : "https://w3id.org/perkonto#Task"
+    }, {
+      "@id" : "https://w3id.org/perkonto#Team"
     } ]
   } ]
 }, {
@@ -79,11 +117,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/perkonto#Dataset"
+      "@id" : "https://w3id.org/perkonto#Conference"
     }, {
-      "@id" : "https://w3id.org/perkonto#Method"
+      "@id" : "https://w3id.org/perkonto#Journal"
     }, {
-      "@id" : "https://w3id.org/perkonto#Task"
+      "@id" : "https://w3id.org/perkonto#Organization"
     } ]
   } ]
 }, {
@@ -93,7 +131,7 @@
     "@list" : [ {
       "@id" : "https://w3id.org/perkonto#Conference"
     }, {
-      "@id" : "https://w3id.org/perkonto#Journal"
+      "@id" : "https://w3id.org/perkonto#Meeting"
     } ]
   } ]
 }, {
@@ -163,6 +201,12 @@
   "@id" : "http://www.w3.org/ns/prov#wasInformedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -194,7 +238,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://schema.org/affiliation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://schema.org/attendee",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
@@ -220,6 +264,9 @@
   "@id" : "https://schema.org/location",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
+  "@id" : "https://schema.org/memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "https://schema.org/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
@@ -240,21 +287,14 @@
 }, {
   "@id" : "https://w3id.org/perkonto",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.org/ontology/bibo/"
-  }, {
-    "@id" : "http://www.w3.org/ns/prov-o"
-  }, {
-    "@id" : "http://xmlns.com/foaf/0.1/"
-  } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Debarshi Kumar Sanyal"
+    "@value" : "Anonymous Author"
   }, {
-    "@value" : "Partha Pratim Das"
+    "@value" : "Anonymous Author"
   }, {
-    "@value" : "Prantika Chakraborty"
+    "@value" : "Anonymous Author"
   }, {
-    "@value" : "Srijoni Majumdar"
+    "@value" : "Anonymous Author"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -268,7 +308,14 @@
     "@value" : "PERKOnto: Personal Email Research Knowledge Ontology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://github.com/prantikaC/PERK"
+    "@id" : "urn:withheld-for-review"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/ontology/bibo/"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov-o"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/perkonto/1.0.0"
@@ -321,6 +368,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://schema.org/Message"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#EmailID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An email address/account identity, distinct from the Email  message, that sends or receives Email and is owned by a Person or Team."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Email ID"
   } ]
 }, {
   "@id" : "https://w3id.org/perkonto#Journal",
@@ -390,6 +448,22 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Metric"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An institution, university, or company that a Person or  Team is affiliated with."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ]
 }, {
   "@id" : "https://w3id.org/perkonto#Paper",
@@ -475,21 +549,37 @@
     "@id" : "https://schema.org/Action"
   } ]
 }, {
-  "@id" : "https://w3id.org/perkonto#affiliation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "https://w3id.org/perkonto#Team",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The institutional affiliation of a Person."
+    "@value" : "A group of Persons collaborating as a unit, e.g. a research  group or project team."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Team"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Group"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a Person or Team to the Organization, Journal, or  Conference they are affiliated with."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/perkonto#Person"
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "affiliation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/affiliation"
@@ -522,7 +612,7 @@
     "@value" : "attends"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid8"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/attendee"
@@ -564,6 +654,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A free-text quote or paraphrase from the source email  substantiating the relationship it is attached to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "context"
   } ]
 }, {
   "@id" : "https://w3id.org/perkonto#datasetName",
@@ -614,6 +715,23 @@
     "@id" : "http://purl.org/ontology/bibo/doi"
   } ]
 }, {
+  "@id" : "https://w3id.org/perkonto#eID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The email address string identifying this EmailID."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/perkonto#EmailID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "email ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "https://w3id.org/perkonto#evaluates",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -628,7 +746,7 @@
     "@value" : "evaluates"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid4"
+    "@id" : "_:genid11"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/isRelatedTo"
@@ -652,6 +770,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/ontology/bibo/authorList"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#hasOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links an EmailID to the Person or Team who owns it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/perkonto#EmailID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid15"
   } ]
 }, {
   "@id" : "https://w3id.org/perkonto#hasPaperInfo",
@@ -714,7 +849,7 @@
     "@value" : "in venue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid8"
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "https://w3id.org/perkonto#issue",
@@ -837,6 +972,54 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#time"
   } ]
 }, {
+  "@id" : "https://w3id.org/perkonto#memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a Person to the Team they are a member of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/perkonto#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "member of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/perkonto#Team"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/memberOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#mergeConfidence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Confidence score for an entity-resolution merge  decision."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "merge confidence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#mergedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Record of the raw candidate node identifier(s) fused into  this canonical entity during entity resolution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "merged from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "https://w3id.org/perkonto#methodName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -876,7 +1059,7 @@
     "@value" : "Links a SubmissionID to its initial PaperStatus, or one  PaperStatus to the next, encoding the submission lifecycle as a directed  state machine."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid11"
+    "@id" : "_:genid21"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -887,6 +1070,38 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#wasInformedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#orgLoc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/perkonto#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "organization location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#orgName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/perkonto#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "organization name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/name"
   } ]
 }, {
   "@id" : "https://w3id.org/perkonto#pages",
@@ -977,6 +1192,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/recipient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/perkonto#role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The role held (e.g. PhD Scholar, Professor) as attested by a  memberOf or affiliation relationship."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://w3id.org/perkonto#sentBy",
@@ -1081,6 +1310,22 @@
     "@id" : "https://schema.org/name"
   } ]
 }, {
+  "@id" : "https://w3id.org/perkonto#teamName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/perkonto#Team"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "team name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/name"
+  } ]
+}, {
   "@id" : "https://w3id.org/perkonto#threadID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1121,7 +1366,7 @@
     "@value" : "Links a Dataset or Method to the Task it is applied to."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid14"
+    "@id" : "_:genid24"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1221,7 +1466,7 @@
     "@value" : "works with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid17"
+    "@id" : "_:genid27"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://schema.org/knowsAbout"

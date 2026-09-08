@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/perkonto/molbio"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/perkonto/molbio">
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="ivoa" IRI="http://purl.org/astronomy/ont/object-types#"/>
+    <Prefix name="perk" IRI="https://w3id.org/perkonto#"/>
+    <Prefix name="qudt" IRI="http://qudt.org/schema/qudt/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="schema" IRI="https://schema.org/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Import>https://w3id.org/perkonto</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Anonymous Author</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal xml:lang="en">A domain extension of PERKOnto for the professional knowledge of a molecular biologist as extractable from personal email communications. It reuses the PERKOnto backbone and specialises the scientific layer into experimental-biology concepts (BiologicalEntity/BiologicalSample/ExperimentalTechnique/Readout/ResearchProblem) plus supporting concepts (Reagent, Instrument, Protocol).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">PERKOnto-MolBio: Molecular Biology extension of PERKOnto</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0000968"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:OBI_0100051"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SO_0000704"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="qudt:Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Method"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Metric"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="perk:Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalSample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExperimentalTechnique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Readout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reagent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResearchProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliedToProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesTechnique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#followsProtocol"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#investigates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#quantifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runsOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesReagent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#accessionID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#entityName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#entityType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#instrumentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#protocolName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#protocolVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#readoutName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#readoutUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#readoutValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reagentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sampleName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#techniqueName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BiologicalEntity"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalEntity"/>
+        <Class abbreviatedIRI="perk:Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalSample"/>
+        <Class abbreviatedIRI="obo:OBI_0100051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalSample"/>
+        <Class abbreviatedIRI="perk:Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentalTechnique"/>
+        <Class abbreviatedIRI="obo:OBI_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentalTechnique"/>
+        <Class abbreviatedIRI="perk:Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrument"/>
+        <Class abbreviatedIRI="obo:OBI_0000968"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protocol"/>
+        <Class abbreviatedIRI="obo:OBI_0000272"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Readout"/>
+        <Class abbreviatedIRI="qudt:Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Readout"/>
+        <Class abbreviatedIRI="perk:Metric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reagent"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchProblem"/>
+        <Class abbreviatedIRI="perk:Task"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BiologicalEntity"/>
+        <Class IRI="#BiologicalSample"/>
+        <Class IRI="#ExperimentalTechnique"/>
+        <Class IRI="#Instrument"/>
+        <Class IRI="#Protocol"/>
+        <Class IRI="#Readout"/>
+        <Class IRI="#Reagent"/>
+        <Class IRI="#ResearchProblem"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <ObjectProperty abbreviatedIRI="perk:usedFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesTechnique"/>
+        <ObjectProperty abbreviatedIRI="perk:worksWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assays"/>
+        <ObjectProperty abbreviatedIRI="perk:uses"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#investigates"/>
+        <ObjectProperty abbreviatedIRI="perk:worksOn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#quantifies"/>
+        <ObjectProperty abbreviatedIRI="perk:evaluates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#studies"/>
+        <ObjectProperty abbreviatedIRI="perk:worksWith"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <ObjectUnionOf>
+            <Class IRI="#BiologicalEntity"/>
+            <Class IRI="#ExperimentalTechnique"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesTechnique"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assays"/>
+        <Class IRI="#ExperimentalTechnique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#followsProtocol"/>
+        <Class IRI="#ExperimentalTechnique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#investigates"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#quantifies"/>
+        <Class IRI="#Readout"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#runsOn"/>
+        <Class IRI="#ExperimentalTechnique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studies"/>
+        <Class abbreviatedIRI="perk:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesReagent"/>
+        <Class IRI="#ExperimentalTechnique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliedToProblem"/>
+        <Class IRI="#ResearchProblem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesTechnique"/>
+        <Class IRI="#ExperimentalTechnique"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assays"/>
+        <ObjectUnionOf>
+            <Class IRI="#BiologicalEntity"/>
+            <Class IRI="#BiologicalSample"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#followsProtocol"/>
+        <Class IRI="#Protocol"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#investigates"/>
+        <Class IRI="#ResearchProblem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#quantifies"/>
+        <ObjectUnionOf>
+            <Class IRI="#BiologicalEntity"/>
+            <Class IRI="#ExperimentalTechnique"/>
+            <Class IRI="#ResearchProblem"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#runsOn"/>
+        <Class IRI="#Instrument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#studies"/>
+        <Class IRI="#BiologicalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesReagent"/>
+        <Class IRI="#Reagent"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#entityName"/>
+        <DataProperty abbreviatedIRI="perk:datasetName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#protocolVersion"/>
+        <DataProperty abbreviatedIRI="perk:version"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#readoutName"/>
+        <DataProperty abbreviatedIRI="perk:metricName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sampleName"/>
+        <DataProperty abbreviatedIRI="perk:datasetName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#techniqueName"/>
+        <DataProperty abbreviatedIRI="perk:methodName"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accessionID"/>
+        <ObjectUnionOf>
+            <Class IRI="#BiologicalEntity"/>
+            <Class IRI="#BiologicalSample"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#entityName"/>
+        <Class IRI="#BiologicalEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#entityType"/>
+        <Class IRI="#BiologicalEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#instrumentName"/>
+        <Class IRI="#Instrument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#protocolName"/>
+        <Class IRI="#Protocol"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#protocolVersion"/>
+        <Class IRI="#Protocol"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#readoutName"/>
+        <Class IRI="#Readout"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#readoutUnit"/>
+        <Class IRI="#Readout"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#readoutValue"/>
+        <Class IRI="#Readout"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reagentName"/>
+        <Class IRI="#Reagent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sampleName"/>
+        <Class IRI="#BiologicalSample"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#techniqueName"/>
+        <Class IRI="#ExperimentalTechnique"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#accessionID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#entityName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#entityType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#instrumentName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#protocolName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#protocolVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#readoutName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#readoutUnit"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#readoutValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#reagentName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sampleName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#techniqueName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiologicalEntity</IRI>
+        <Literal xml:lang="en">The biological object of study: a gene, protein, pathway, cell line, tissue, or organism (e.g. the p53 protein, E. coli, a HeLa cell line).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiologicalEntity</IRI>
+        <Literal xml:lang="en">Biological Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#BiologicalEntity</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Dataset for the PERKOnto object-of-study role; obo:BFO_0000040 (BFO &apos;material entity&apos;), the OBO upper class that genes/proteins/cells specialise. More specific groundings (e.g. obo:SO_0000704 &apos;gene&apos;, obo:PR_* proteins) apply at the instance level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiologicalSample</IRI>
+        <Literal xml:lang="en">A concrete analysed artifact: a biological sample, a sequencing run, an image dataset, or a screen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiologicalSample</IRI>
+        <Literal xml:lang="en">Biological Sample / Generated Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#BiologicalSample</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Dataset and obo:OBI_0100051 (OBI &apos;specimen&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExperimentalTechnique</IRI>
+        <Literal xml:lang="en">A laboratory technique or assay applied, e.g. PCR, CRISPR-Cas9 editing, RNA sequencing, Western blot, mass spectrometry, confocal microscopy, flow cytometry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExperimentalTechnique</IRI>
+        <Literal xml:lang="en">Experimental Technique / Assay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#ExperimentalTechnique</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Method for the PERKOnto role; obo:OBI_0000070 (OBI &apos;assay&apos;) for the biomedical-investigation standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Instrument</IRI>
+        <Literal xml:lang="en">A laboratory instrument or platform used to run a technique, e.g. an Illumina NovaSeq sequencer, a confocal microscope, a qPCR machine, a mass spectrometer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Instrument</IRI>
+        <Literal xml:lang="en">Instrument / Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#Instrument</IRI>
+        <Literal xml:lang="en">Grounded in obo:OBI_0000968 (OBI &apos;device&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Protocol</IRI>
+        <Literal xml:lang="en">A documented experimental procedure / standard operating procedure followed to perform a technique.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Protocol</IRI>
+        <Literal xml:lang="en">Protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#Protocol</IRI>
+        <Literal xml:lang="en">Grounded in obo:OBI_0000272 (OBI &apos;protocol&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Readout</IRI>
+        <Literal xml:lang="en">A measured biological quantity or endpoint, e.g. gene-expression level, cell viability, binding affinity (Kd), fluorescence intensity, differential-expression p-value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Readout</IRI>
+        <Literal xml:lang="en">Readout / Measured Quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#Readout</IRI>
+        <Literal xml:lang="en">Dual-grounded: perk:Metric and qudt:Quantity (QUDT).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reagent</IRI>
+        <Literal xml:lang="en">A consumable biological/chemical material used in an experiment, e.g. an antibody, primer, plasmid, enzyme, stain, or kit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Reagent</IRI>
+        <Literal xml:lang="en">Reagent / Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#Reagent</IRI>
+        <Literal xml:lang="en">Grounded in obo:BFO_0000040 (BFO &apos;material entity&apos;); OBI models reagents as material entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">A scientific question or hypothesis the group works on, e.g. &apos;role of gene X in apoptosis&apos;, &apos;mechanism of copper trafficking in cells&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">Research Problem / Hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#ResearchProblem</IRI>
+        <Literal xml:lang="en">Grounded in perk:Task only.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accessionID</IRI>
+        <Literal xml:lang="en">Database accession identifier, e.g. a UniProt ID, GenBank accession, or SRA run ID.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#accessionID</IRI>
+        <Literal xml:lang="en">accession ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#appliedToProblem</IRI>
+        <Literal xml:lang="en">Links an ExperimentalTechnique or BiologicalEntity to the ResearchProblem it addresses. Specialises perk:usedFor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliedToProblem</IRI>
+        <Literal xml:lang="en">applied to problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#appliesTechnique</IRI>
+        <Literal xml:lang="en">Links a Person to an ExperimentalTechnique they use. Specialises perk:worksWith.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#appliesTechnique</IRI>
+        <Literal xml:lang="en">applies technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#assays</IRI>
+        <Literal xml:lang="en">Links an ExperimentalTechnique to the BiologicalEntity or BiologicalSample it is applied to. Specialises perk:uses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#assays</IRI>
+        <Literal xml:lang="en">assays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entityName</IRI>
+        <Literal xml:lang="en">Name of the biological entity, e.g. &apos;p53&apos;, &apos;E. coli K-12&apos;, &apos;HeLa&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#entityName</IRI>
+        <Literal xml:lang="en">entity name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entityType</IRI>
+        <Literal xml:lang="en">Category of entity, e.g. &apos;gene&apos;, &apos;protein&apos;, &apos;pathway&apos;, &apos;cell line&apos;, &apos;organism&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#entityType</IRI>
+        <Literal xml:lang="en">entity type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#followsProtocol</IRI>
+        <Literal xml:lang="en">Links an ExperimentalTechnique to the Protocol it follows.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#followsProtocol</IRI>
+        <Literal xml:lang="en">follows protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#instrumentName</IRI>
+        <Literal xml:lang="en">instrument name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#investigates</IRI>
+        <Literal xml:lang="en">Links a Person to a ResearchProblem they work on. Specialises perk:worksOn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#investigates</IRI>
+        <Literal xml:lang="en">investigates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#protocolName</IRI>
+        <Literal xml:lang="en">protocol name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#protocolVersion</IRI>
+        <Literal xml:lang="en">protocol version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quantifies</IRI>
+        <Literal xml:lang="en">Links a Readout to the ExperimentalTechnique, BiologicalEntity, or ResearchProblem it characterises. Specialises perk:evaluates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quantifies</IRI>
+        <Literal xml:lang="en">quantifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#readoutName</IRI>
+        <Literal xml:lang="en">Name of the measured quantity, e.g. &apos;expression level&apos;, &apos;cell viability&apos;, &apos;Kd&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#readoutName</IRI>
+        <Literal xml:lang="en">readout name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#readoutUnit</IRI>
+        <Literal xml:lang="en">Unit of the readout value, e.g. &apos;nM&apos;, &apos;fold-change&apos;, &apos;percent&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#readoutUnit</IRI>
+        <Literal xml:lang="en">readout unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#readoutValue</IRI>
+        <Literal xml:lang="en">readout value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#reagentName</IRI>
+        <Literal xml:lang="en">reagent name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#runsOn</IRI>
+        <Literal xml:lang="en">Links an ExperimentalTechnique to the Instrument / platform used to perform it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#runsOn</IRI>
+        <Literal xml:lang="en">runs on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sampleName</IRI>
+        <Literal xml:lang="en">sample name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#studies</IRI>
+        <Literal xml:lang="en">Links a Person to a BiologicalEntity they investigate. Specialises perk:worksWith.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#studies</IRI>
+        <Literal xml:lang="en">studies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#techniqueName</IRI>
+        <Literal xml:lang="en">technique name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesReagent</IRI>
+        <Literal xml:lang="en">Links an ExperimentalTechnique to a Reagent it requires.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usesReagent</IRI>
+        <Literal xml:lang="en">uses reagent</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

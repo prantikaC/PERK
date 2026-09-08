@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#investigates">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#worksOn"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto#Person"/>
+    <rdfs:range rdf:resource="https://w3id.org/perkonto/chem#ResearchProblem"/>
+    <rdfs:comment xml:lang="en">Links a Person to a ResearchProblem they work on. Specialises perk:worksOn.</rdfs:comment>
+    <rdfs:label xml:lang="en">investigates</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#simulates">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#uses"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+    <rdfs:range rdf:resource="https://w3id.org/perkonto/chem#ChemicalSystem"/>
+    <rdfs:comment xml:lang="en">Links a ComputationalMethod to the ChemicalSystem it is applied to. Specialises perk:uses.</rdfs:comment>
+    <rdfs:label xml:lang="en">simulates</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#observableName">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#metricName"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#Observable"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Name of the physical observable (e.g. 'free energy').</rdfs:comment>
+    <rdfs:label xml:lang="en">observable name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#methodName">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#methodName"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Name of the computational method (e.g. 'molecular dynamics', 'DFT').</rdfs:comment>
+    <rdfs:label xml:lang="en">method name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:Ontology rdf:about="https://w3id.org/perkonto/chem">
+    <dcterms:creator>Anonymous Authors</dcterms:creator>
+    <dcterms:description xml:lang="en">A domain extension of PERKOnto for the professional knowledge of a computational/theoretical chemist as extractable from personal email communications. It reuses the PERKOnto communication, actor, venue and publication-lifecycle backbone and specialises the scientific layer (Dataset/Method/Metric/Task) into chemistry concepts (ChemicalSystem/ComputationalMethod/Observable/ResearchProblem) plus supporting concepts (ForceField, Software, LevelOfTheory).</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:title xml:lang="en">PERKOnto-Chem: Computational Chemistry extension of PERKOnto</dcterms:title>
+    <owl:imports rdf:resource="https://w3id.org/perkonto"/>
+    <owl:versionInfo>1.0.0</owl:versionInfo>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#quantifies">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#evaluates"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#Observable"/>
+    <rdfs:range>
+      <owl:Class rdf:nodeID="nd7d9270931f84a1fa9bc2f418653b267b4">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+          <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ChemicalSystem"/>
+          <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ResearchProblem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment xml:lang="en">Links an Observable to the ComputationalMethod, ChemicalSystem, or ResearchProblem it characterises. Specialises perk:evaluates.</rdfs:comment>
+    <rdfs:label xml:lang="en">quantifies</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#systemName">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#datasetName"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#ChemicalSystem"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Name or identifier of the chemical system studied.</rdfs:comment>
+    <rdfs:label xml:lang="en">system name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#observableValue">
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#Observable"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:comment xml:lang="en">Reported numeric value of an observable.</rdfs:comment>
+    <rdfs:label xml:lang="en">observable value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#appliesMethod">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#worksWith"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto#Person"/>
+    <rdfs:range rdf:resource="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+    <rdfs:comment xml:lang="en">Links a Person to a ComputationalMethod they use. Specialises perk:worksWith.</rdfs:comment>
+    <rdfs:label xml:lang="en">applies method</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#atLevelOfTheory">
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+    <rdfs:range rdf:resource="https://w3id.org/perkonto/chem#LevelOfTheory"/>
+    <rdfs:comment xml:lang="en">Links an electronic-structure ComputationalMethod to its LevelOfTheory.</rdfs:comment>
+    <rdfs:label xml:lang="en">at level of theory</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#observableUnit">
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#Observable"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Physical unit of the observable value (e.g. 'kcal/mol').</rdfs:comment>
+    <rdfs:label xml:lang="en">observable unit</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#softwareName">
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#Software"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">software name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#appliedToProblem">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#usedFor"/>
+    <rdfs:domain>
+      <owl:Class rdf:nodeID="nd7d9270931f84a1fa9bc2f418653b267b1">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+          <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ChemicalSystem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="https://w3id.org/perkonto/chem#ResearchProblem"/>
+    <rdfs:comment xml:lang="en">Links a ComputationalMethod or ChemicalSystem to the ResearchProblem it addresses. Specialises perk:usedFor.</rdfs:comment>
+    <rdfs:label xml:lang="en">applied to problem</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#implementedIn">
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+    <rdfs:range rdf:resource="https://w3id.org/perkonto/chem#Software"/>
+    <rdfs:comment xml:lang="en">Links a ComputationalMethod to the Software package used to run it.</rdfs:comment>
+    <rdfs:label xml:lang="en">implemented in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#studies">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#worksWith"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto#Person"/>
+    <rdfs:range rdf:resource="https://w3id.org/perkonto/chem#ChemicalSystem"/>
+    <rdfs:comment xml:lang="en">Links a Person to a ChemicalSystem they investigate. Specialises perk:worksWith.</rdfs:comment>
+    <rdfs:label xml:lang="en">studies</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/perkonto/chem#usesForceField">
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+    <rdfs:range rdf:resource="https://w3id.org/perkonto/chem#ForceField"/>
+    <rdfs:comment xml:lang="en">Links a ComputationalMethod to the ForceField that parameterises it.</rdfs:comment>
+    <rdfs:label xml:lang="en">uses force field</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#softwareVersion">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/perkonto#version"/>
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#Software"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">software version</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#forceFieldName">
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#ForceField"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">force field name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/perkonto/chem#smiles">
+    <rdfs:domain rdf:resource="https://w3id.org/perkonto/chem#ChemicalSystem"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">SMILES string encoding the molecular structure, where applicable.</rdfs:comment>
+    <rdfs:label xml:lang="en">SMILES</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+  <owl:AllDisjointClasses rdf:nodeID="nd7d9270931f84a1fa9bc2f418653b267b8">
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ChemicalSystem"/>
+      <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ComputationalMethod"/>
+      <rdf:Description rdf:about="https://w3id.org/perkonto/chem#Observable"/>
+      <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ResearchProblem"/>
+      <rdf:Description rdf:about="https://w3id.org/perkonto/chem#ForceField"/>
+      <rdf:Description rdf:about="https://w3id.org/perkonto/chem#Software"/>
+      <rdf:Description rdf:about="https://w3id.org/perkonto/chem#LevelOfTheory"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+  <owl:Class rdf:about="https://w3id.org/perkonto/chem#ChemicalSystem">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/perkonto#Dataset"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+    <rdfs:comment xml:lang="en">The physical/molecular system under study: a molecule, complex, material, or assembly (e.g. a copper-trafficking protein, a soft-matter aggregate, a bioinorganic active site).</rdfs:comment>
+    <skos:note xml:lang="en">Dual-grounded: perk:Dataset gives the PERKOnto object-of-study role for cross-domain queries; obo:CHEBI_24431 (ChEBI 'chemical entity') gives the discipline-standard grounding.</skos:note>
+    <rdfs:label xml:lang="en">Chemical System</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/perkonto/chem#ResearchProblem">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/perkonto#Task"/>
+    <rdfs:comment xml:lang="en">A scientific question or problem formulation the group works on, e.g. 'mechanism of copper trafficking', 'self-assembly in soft matter'.</rdfs:comment>
+    <skos:note xml:lang="en">Grounded in perk:Task only; perk:Task aligns to schema:Action upstream.</skos:note>
+    <rdfs:label xml:lang="en">Research Problem</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/perkonto/chem#ComputationalMethod">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/perkonto#Method"/>
+    <rdfs:comment xml:lang="en">A simulation or theoretical technique applied to a chemical system, e.g. molecular dynamics, Monte Carlo, density functional theory, enhanced sampling, coarse-grained modelling.</rdfs:comment>
+    <skos:note xml:lang="en">Grounded in perk:Method only: no single widely-adopted community class for a computational-chemistry method exists; perk:Method already aligns to schema:SoftwareApplication upstream.</skos:note>
+    <rdfs:label xml:lang="en">Computational Method</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/perkonto/chem#Observable">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/perkonto#Metric"/>
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+    <rdfs:comment xml:lang="en">A physical quantity computed or measured from a simulation/calculation, e.g. free energy, binding affinity, radial distribution function, diffusion coefficient, reaction barrier.</rdfs:comment>
+    <skos:note xml:lang="en">Dual-grounded: perk:Metric for the PERKOnto evaluative role; qudt:Quantity (QUDT) for the physical-quantity standard.</skos:note>
+    <rdfs:label xml:lang="en">Observable / Computed Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/perkonto/chem#ForceField">
+    <rdfs:comment xml:lang="en">A parameter set defining interatomic interactions used by a (classical) simulation method, e.g. CHARMM, AMBER, OPLS, or a custom coarse-grained model.</rdfs:comment>
+    <rdfs:label xml:lang="en">Force Field</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/perkonto/chem#Software">
+    <rdfs:subClassOf rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:comment xml:lang="en">A software package or code used to run a computational method, e.g. GROMACS, LAMMPS, NAMD, Gaussian, ORCA.</rdfs:comment>
+    <skos:note xml:lang="en">Grounded in schema:SoftwareApplication (the same upstream class perk:Method uses).</skos:note>
+    <rdfs:label xml:lang="en">Simulation Software / Package</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/perkonto#Person"/>
+  <owl:Class rdf:about="https://w3id.org/perkonto/chem#LevelOfTheory">
+    <rdfs:comment xml:lang="en">The theoretical/basis-set specification for an electronic-structure calculation, e.g. 'B3LYP/6-31G*', 'CCSD(T)/cc-pVTZ'.</rdfs:comment>
+    <rdfs:label xml:lang="en">Level of Theory</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/perkonto#Method"/>
+  <owl:Class rdf:about="https://w3id.org/perkonto#Metric"/>
+  <owl:Class rdf:about="https://w3id.org/perkonto#Task"/>
+  <owl:Class rdf:about="https://schema.org/SoftwareApplication"/>
+  <owl:Class rdf:about="https://w3id.org/perkonto#Dataset"/>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+  <owl:Class rdf:about="http://qudt.org/schema/qudt/Quantity"/>
+</rdf:RDF>

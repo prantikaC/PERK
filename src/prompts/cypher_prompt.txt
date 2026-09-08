@@ -19,29 +19,591 @@ CRITICAL INSTRUCTIONS:
    d) Before/after: `WHERE date(m.meetDate) < date("2019-04-08")`
    e) YYYY-MM partial fields: use CONTAINS, e.g. `WHERE m.confDate CONTAINS "2019-04"`
    f) Guard nulls: `WHERE m.meetDate IS NOT NULL AND date(m.meetDate).year = 2019`
-   g) CRITICAL — When the question gives only month+day (e.g. "3rd May", "April 6th") WITHOUT a year, do NOT hardcode a year. Use: `date(m.meetDate).month = 5 AND date(m.meetDate).day = 3`
+   g) CRITICAL — When the question gives only month+day (e.g. "3rd May") WITHOUT a year, do NOT hardcode a year. Use: `date(m.meetDate).month = 5 AND date(m.meetDate).day = 3`
+   h) Some date properties hold non-ISO placeholder text ("coming week", "TBD")
+      from imperfect extraction; calling date(x) on these throws and fails the
+      WHOLE query. Guard it: `WHERE m.meetDate =~ '^\\d{{4}}-\\d{{2}}-\\d{{2}}$'
+      AND date(m.meetDate).year = 2019`. Skip the guard only if certain every
+      value in that property is valid ISO.
+   i) When relaxing a date filter, NEVER drop the YEAR (only day/month
+      precision may loosen) -- this corpus reuses similarly-named events
+      across many years (e.g. an annual "coordination call"), so dropping
+      the year matches an unrelated year's event and produces a confidently
+      wrong answer. Relax the AGENDA/keyword filter instead (Rule 15). This
+      applies equally when the year is a SUBSTRING (Rule 22's convention,
+      e.g. s.identifier CONTAINS "2019") -- dropping just the year substring
+      while keeping a venue name (e.g. "JCDL") matches ANY year that person
+      submitted there, not the specific year asked about.
 6. Make sure to include DISTINCT if there is any possibility of duplicate results.
-7. YES/NO QUESTIONS: Use the `count() > 0` aggregation to force a TRUE/FALSE output. For availability/attendance questions where a match means TRUE, use `count(m) > 0 AS result`.
+7. YES/NO QUESTIONS: Use `count() > 0 AS result` to force TRUE/FALSE. The
+   graph only stores POSITIVE facts (e.g. a scheduled meeting), never
+   negative ones ("person X declined") -- so count(x) = 0 means "not in the
+   schema," NOT proof the opposite is true (absence ≠ unavailability). If a
+   matching record DOES exist, that's usually itself the positive answer
+   (e.g. the meeting was scheduled) -- prefer querying for direct positive
+   evidence over its absence.
 8. COMPOUND QUESTIONS (multiple people/entities): Use OR in WHERE — NEVER use UNION. UNION causes variable scope crashes.
    WRONG: MATCH (p1:Person) WHERE ... RETURN p1.name  UNION  RETURN p2.name  ← CRASH
-   CORRECT: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS "A" OR toLower(p.personName) CONTAINS "B" RETURN p.affiliation
+   CORRECT: MATCH (p:Person) WHERE toLower(p.personName) CONTAINS "A" OR toLower(p.personName) CONTAINS "B" RETURN p.personName
 9. Do NOT query Email nodes — they have no useful properties for answering questions.
 10. TASK VS. METRIC/METHOD: If a question describes an active action (e.g., "compiling", "preparing", "working on"), map it to a Task node.
-11. MISSING ONTOLOGY PATHS: If no valid path exists between nodes, output: RETURN 'No valid path in schema' AS Error
-12. ALWAYS declare variables with their specific labels (e.g., `(p:Person)` instead of `()`) so the ontology checker can parse them.
-13. Do NOT use PaperBib. Use Paper, SubmissionID, PaperStatus for paper lifecycle; Journal and Conference for venues.
-14. MEETING PROPERTIES: meetAgenda, meetLink, meetTime, meetDate are TEXT PROPERTIES on Meeting nodes — not relationship types.
-15. RELATIONSHIP DIRECTIONS (always follow these exactly):
+    A NAMED TECHNIQUE/ALGORITHM CAN LEGITIMATELY BE EXTRACTED AS EITHER A
+    Method OR A Metric NODE, DEPENDING ON HOW IT WAS USED IN CONTEXT --
+    don't assume based on what the term "sounds like" in general ML
+    vocabulary. Confirmed real failure: "Levenshtein distance" sounds like
+    a measure/metric, but in this graph it was extracted as a Method node
+    (`m:Method`), not `m:Metric` -- a query hardcoded to `(m:Metric)`
+    silently returned nothing. This applies to any named technique that
+    could plausibly serve either role (edit-distance measures, kappa-style
+    agreement scores, etc.): when uncertain which label was used, match
+    both rather than guessing one -- `MATCH (p)-[:worksWith]->(m) WHERE
+    (m:Method OR m:Metric) AND toLower(...) CONTAINS toLower("...")`.
+11. ALWAYS declare variables with their specific labels (e.g., `(p:Person)` instead of `()`) so the ontology checker can parse them.
+12. PAPERBIB: Do NOT use PaperBib for lifecycle/status (use Paper,
+    SubmissionID, PaperStatus; Journal/Conference for venues). DO use
+    PaperBib (Paper -[:hasPaperInfo]-> PaperBib: doi, publisher, url, year)
+    for "full citation"/"DOI"/"bibliographic record" questions -- don't
+    say UNANSWERABLE without checking this path first. A paper matched by
+    title may itself describe a dataset release (e.g. titled after a
+    dataset, published via Zenodo) -- also try matching Paper.paperTitle
+    against the dataset/release name before concluding no path exists.
+13. MEETING PROPERTIES: meetAgenda, meetLink, meetTime, meetDate are TEXT PROPERTIES on Meeting nodes — not relationship types.
+14. RELATIONSHIP DIRECTIONS (always follow these exactly):
     (Person)-[:worksOn]->(Task)
-    (Person)-[:worksWith]->(Method|Dataset)
-    (Person)-[:attends]->(Meeting)
+    (Person)-[:worksWith]->(Method|Dataset|Metric)
+    (Person)-[:attends]->(Meeting|Conference)
     (Paper)-[:hasAuthor]->(Person)
     (SubmissionID)-[:identifies]->(Paper)
     (SubmissionID)-[:movesTo]->(PaperStatus)
     (SubmissionID)-[:inVenue]->(Journal|Conference)
     (Dataset)-[:usedFor]->(Task)
     (Method)-[:usedFor]->(Task)
-    (Metric)-[:evaluates]->(Method)
+    (Method)-[:uses]->(Dataset)
+    (Metric)-[:evaluates]->(Method|Task|Dataset)
     (Email)-[:partOf]->(MailThread)
-16. KEYWORD SEARCH on Task: use broad OR terms rather than all-AND, since task names vary in phrasing.
+15. ENTITY NAME MATCHING -- choosing the right specificity for a CONTAINS
+    filter, and on which entity's own name. The single most common source
+    of errors.
+    a) On Task specifically, use broad OR terms rather than all-AND, since
+       task names vary in phrasing across emails.
+    b) Qualifier words ("baseline", "final", "proposed") usually describe
+       the ROLE of the CENTRAL entity (typically a Task/Paper), NOT the
+       LEAF entity's own name. "metrics for the BASELINE MODEL" means the
+       Metric is reached via a Task/Method named "baseline", not a Metric
+       literally named "baseline". WRONG:
+         MATCH (m:Metric) WHERE toLower(m.metricName) CONTAINS "baseline"
+       CORRECT:
+         MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS "baseline"
+         MATCH (t)<-[:worksOn]-(:Person)-[:worksWith]->(m:Metric) RETURN DISTINCT m.metricName
+       Do not AND together 3+ phrase-fragments onto one property (e.g. a
+       Task name containing "temporal drift" AND "sentiment" AND
+       "baseline") -- real names rarely restate every qualifier. Match the
+       one or two most distinctive terms; let the rest guide which
+       relationship/anchor you traverse through instead.
+    c) Flip side of (b): when the descriptive language IS about the target
+       node itself (e.g. "Likert-scale metrics for interpretability trust"
+       describing a Metric's own name), match it directly against the
+       target's own name first (toLower(m.metricName) CONTAINS "likert")
+       rather than routing through a Task filtered by multiple ANDed
+       keywords that the Task's name likely doesn't restate.
+    d) Do NOT OR together individually-generic single words as
+       alternatives, even just one or two (e.g. taskName CONTAINS "nlp" --
+       in this single-domain historical-NLP corpus, generic words like
+       "nlp", "sentiment", "baseline", "historical" appear on MOST nodes of
+       that type, so ORing them in matches far more than the question
+       describes). This is the OR-side counterpart to (b): just as likely
+       to produce a false TRUE or fabricated match as an AND-overreach is
+       to return zero rows. Prefer one distinctive multi-word phrase, or
+       AND only the terms that must co-occur.
+    e) Affiliation/institution CONTAINS checks: `affiliation` is a
+       RELATIONSHIP (Person|Team)-[:affiliation]->(Organization|Journal|
+       Conference), NOT a property -- there is no p.affiliation. Traverse
+       to the target node (one OPTIONAL MATCH per possible label, per Rule
+       26) and match ITS OWN name property. Do NOT require the full
+       multi-word phrase ("Stanford University") -- values are often
+       stored abbreviated ("Stanford"), and CONTAINS only matches when the
+       property is the LONGER string. Match the single most distinctive
+       core word instead.
+       CRITICAL -- a Person's affiliation reaches the Organization/Journal/
+       Conference via TWO DIFFERENT possible paths depending on how it was
+       extracted, and a real person may have ONLY ONE of the two populated:
+         (p:Person)-[:affiliation]->(o:Organization)                  -- direct (1 hop)
+         (p:Person)-[:memberOf]->(t:Team)-[:affiliation]->(o:Organization)  -- via Team (2 hops)
+       Check BOTH, don't stop after the direct edge returns nothing:
+         MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("...")
+         OPTIONAL MATCH (p)-[:affiliation]->(o1:Organization)
+         OPTIONAL MATCH (p)-[:memberOf]->(:Team)-[:affiliation]->(o2:Organization)
+         RETURN coalesce(o1.orgName, o2.orgName) AS organization
+       (substitute Journal/journalTitle or Conference/confTitle the same way
+       when the target label isn't known in advance.)
+       If you ALSO need to filter by a specific org/journal/conference name
+       (e.g. "who is affiliated with Oxford," reversing the direction above
+       to search FROM the org name back to matching people), you MUST add
+       `WITH p, o1, o2` before that filtering WHERE clause -- otherwise it
+       would silently filter nothing and return every Person in the graph.
+       See Rule 30 for the general form of this bug.
+       ROLE/DATE LIVE ON THE EDGE THE QUESTION IS ACTUALLY ABOUT -- affiliation
+       and memberOf each carry their OWN role/date, and "Department of X" /
+       "Team Y" is a TEAM name, never an Organization name. Don't filter a
+       department/team name against o1.orgName/o2.orgName (it will never
+       match -- Organization holds the parent institution's name, e.g.
+       "Stanford University", not the department) and don't pull role/date
+       from the wrong edge. Confirmed real failure: asking for a person's
+       role "in the Department of Computer Science" generated a query that
+       filtered the ORGANIZATION for "computer science" (always empty,
+       since the org is named "Stanford University") and read role from the
+       Team's OWN affiliation-to-org edge (which has no role on it) instead
+       of the person's memberOf edge (which does). Two separate questions,
+       two separate edges:
+         "What is X's role AT [Organization/Journal/Conference] Y" -- role
+         lives on (p:Person)-[r:affiliation]->(o) where o's OWN name matches Y:
+           MATCH (p:Person)-[r:affiliation]->(o:Organization)
+           WHERE toLower(p.personName) CONTAINS toLower("...") AND toLower(o.orgName) CONTAINS toLower("Y")
+           RETURN r.role
+         "What is X's role IN/WITHIN Team/Department Y" -- role lives on
+         (p:Person)-[r:memberOf]->(t:Team) where t's OWN name matches Y, NOT
+         on the team's own affiliation edge to its parent org:
+           MATCH (p:Person)-[r:memberOf]->(t:Team)
+           WHERE toLower(p.personName) CONTAINS toLower("...") AND toLower(t.teamName) CONTAINS toLower("Y")
+           RETURN r.role
+       For a temporal filter ("as of DATE", "in MONTH YEAR"), apply the same
+       r.date =~ ISO-check-then-compare pattern from Rule 5, on WHICHEVER
+       edge (affiliation or memberOf) actually matches the question.
+    f) RETRY PROCEDURE: Task names are usually SHORTER than the question's
+       own wording and rarely restate a full descriptive phrase (e.g.
+       "analyzing temporal drift in sentiment" may just be Task "baseline
+       model", with no "temporal drift" substring anywhere). Before
+       concluding a Task-anchored query is empty/unanswerable, widen it
+       once: drop to the single most distinctive word (not a phrase) and
+       check whether a broader/parent Task already covers it. If `taskName
+       CONTAINS "temporal drift" AND taskName CONTAINS "baseline"` returns
+       nothing, retry with just `CONTAINS "baseline"` before giving up.
+    g) PERSON NAME MATCHING -- a person can appear in the graph under a
+       SHORTER form than their full name (title+surname only like "Dr
+       Chatterjee", or occasionally a bare first name), because different
+       emails describe the same person differently and not every mention
+       has been consolidated onto one node. Requiring the FULL "First Last"
+       string as one contiguous CONTAINS filter misses these shorter forms
+       entirely. Default to matching on the SURNAME alone (the more
+       distinctive token) rather than the full name:
+         MATCH (p:Person) WHERE toLower(p.personName) CONTAINS toLower("Chatterjee")
+       instead of requiring `CONTAINS toLower("Ananya Chatterjee")` outright.
+       If the surname alone is a common word that risks matching an
+       unrelated person, OR it with the full name instead of replacing it:
+         WHERE toLower(p.personName) CONTAINS toLower("Chatterjee")
+            OR toLower(p.personName) CONTAINS toLower("Ananya Chatterjee")
+       This does not fix a person split across multiple nodes (that still
+       requires each node to be found and its facts combined, e.g. via
+       collect()/coalesce() the same way Rule 15(e) handles affiliation) --
+       it only ensures a shorter-form node isn't invisible to the query
+       just because it lacks the full name string.
+       CRITICAL -- if this OR-based name match needs to be ANDed with
+       anything else (a method/task/dataset filter, another condition),
+       WRAP THE NAME-MATCH OR IN ITS OWN PARENTHESES per Rule 18. Cypher's
+       AND binds tighter than OR, so an unparenthesized combination silently
+       drops the other condition for one branch. Confirmed real failure:
+         WRONG:
+           WHERE toLower(p.personName) CONTAINS toLower("Sen") OR toLower(p.personName) CONTAINS toLower("Sunita Sen")
+             AND (toLower(m.methodName) CONTAINS "ocr" OR toLower(m.methodName) CONTAINS "correction")
+         This parses as `(name CONTAINS "Sen") OR (name CONTAINS "Sunita Sen" AND method-filter)` --
+         the first branch has NO method constraint at all, so it matched
+         every Method Sunita Sen ever worked with, completely ignoring "ocr"/
+         "correction" (confirmed: returned 100+ unrelated methods).
+         CORRECT:
+           WHERE (toLower(p.personName) CONTAINS toLower("Sen") OR toLower(p.personName) CONTAINS toLower("Sunita Sen"))
+             AND (toLower(m.methodName) CONTAINS "ocr" OR toLower(m.methodName) CONTAINS "correction")
+    h) AN ACRONYM IN THE QUESTION IS NOT A LITERAL SUBSTRING OF THE
+       SPELLED-OUT NAME STORED IN THE GRAPH -- CONTAINS is pure substring
+       matching, it does not expand initialisms. "CS" is not a substring
+       of "Department of Computer Science" (no adjacent "c"+"s" occurs in
+       the spelled-out phrase); "IACS" is not a substring of "Indian
+       Association for the Cultivation of Science" either. Confirmed real
+       failure: filtering `t.teamName CONTAINS "cs"` against a Team
+       actually named "Department of Computer Science" returned nothing,
+       silently killing the whole downstream query even though the
+       team/edge existed. When the question uses an acronym for an
+       org/team/journal/conference, either (i) expand it to the
+       distinctive spelled-out word(s) yourself before filtering (e.g. "CS
+       department" -> CONTAINS "computer science"; "IACS" -> CONTAINS
+       "cultivation of science"), or (ii) if genuinely unsure which form
+       is stored, OR both forms rather than betting on the acronym alone.
 {feedback}
+
+
+ADDITIONAL RULES (read carefully -- these prevent common errors):
+16. Relationship arrows: either "-[:REL]->" or "<-[:REL]-". NEVER mix a
+   plain dash with an arrow on the same side ("-[:REL]<-" is INVALID). To
+   reverse (Paper)-[:hasAuthor]->(Person) when finding papers by a person:
+       (p:Person)-[:hasAuthor]<-(pa:Paper)      -- WRONG: invalid syntax
+       (p:Person)<-[:hasAuthor]-(pa:Paper)      -- CORRECT
+       (pa:Paper)-[:hasAuthor]->(p:Person)      -- CORRECT, often clearer
+17. ONLY use relationship types and node labels explicitly in the ontology.
+   Never invent or paraphrase one. If nothing connects the concepts in the
+   question, say so -- don't fabricate a path.
+18. If a WHERE clause needs both AND and OR, use explicit parentheses:
+   "WHERE a AND (b OR c)". Never write "WHERE a AND b OR c" unparenthesized.
+19. Every variable carried via WITH into a new MATCH clause MUST be
+   connected to the newly matched entities through an explicit relationship
+   in that SAME clause. Do NOT carry a variable via WITH and then match
+   unrelated entities in a disconnected pattern -- that's an unintended
+   Cartesian product. Prefer one connected MATCH:
+     MATCH (p:Person)-[:worksOn]->(t:Task) WHERE ...
+   instead of:
+     MATCH (m:Meeting) WITH m MATCH (p:Person)-[:worksOn]->(t:Task) ...
+20. If no relationship path connects the entities in the question, respond
+   with exactly:
+     UNANSWERABLE: no valid schema path connects the required entities.
+   Never use a Cypher literal like RETURN 'No valid path in schema' AS
+   Error as a substitute -- always this exact sentinel line.
+21. Never use alphabetical/lexicographic ordering ("ORDER BY x.name DESC")
+   as a substitute for temporal recency -- it has no relationship to which
+   entity is "latest." For latest/most-recent questions, order by an actual
+   date/timestamp property (or one reachable via provenance). If none is
+   reachable, say recency can't be determined -- don't guess via name sort.
+22. Conference/Journal `confDate` is essentially NEVER populated (every
+   node has confDate = NULL) -- don't filter/require date(c.confDate) for a
+   venue year. The year is reliably available instead via:
+     a) SubmissionID's own identifier string (e.g. "SUB-ACL-2019-0374" ->
+        2019): toLower(s.identifier) CONTAINS "2019". Prefer this when a
+        SubmissionID is already in the query path.
+     b) The venue's title (e.g. "JCDL 2022"): toLower(c.confTitle) CONTAINS "2022".
+23. For a paper's SUBMISSION date/deadline/status to a venue, prefer the
+   formal lifecycle chain (SubmissionID -[:movesTo]-> PaperStatus,
+   PaperStatus.statusDate) over a generic Task node, even if a Task name
+   superficially matches. Generic Tasks capture informal, evolving mentions
+   across emails (multiple dates for the same submission), whereas the
+   SubmissionID/PaperStatus chain is the authoritative record. Fall back to
+   Task only if no SubmissionID/PaperStatus path connects paper to venue.
+   Warning sign you've picked the wrong path: `MATCH (t:Task) WHERE
+   taskName CONTAINS "acl" AND taskName CONTAINS "submission" RETURN
+   DISTINCT t.taskDate` returning many dates across unrelated years -- this
+   corpus reuses generic task names ("<venue> submission") across many
+   unrelated projects, so a bare keyword match doesn't uniquely identify
+   "the" submission. Several dates/entities for a question expecting ONE
+   answer is the signal to switch to SubmissionID (year embeds per Rule 22)
+   + PaperStatus instead.
+24. PAPERSTATUS CHAIN -- forms a MULTI-HOP chain: SubmissionID -[:movesTo]->
+   PaperStatus -[:movesTo]-> PaperStatus -> ... Each submission's chain is
+   private (shares no nodes with other submissions).
+    a) FINAL/CURRENT/LATEST STATUS: a single-hop match from SubmissionID
+       only reaches the FIRST status ever recorded, never the final one.
+       statusDate is often NULL, so ORDER BY statusDate DESC LIMIT 1 is
+       unreliable too. Traverse the FULL chain and take the TERMINAL node
+       (no further outgoing movesTo) -- correct regardless of dates:
+         MATCH (s:SubmissionID) WHERE toLower(s.identifier) CONTAINS toLower("...")
+         MATCH (s)-[:movesTo*]->(ps:PaperStatus)
+         WHERE NOT (ps)-[:movesTo]->(:PaperStatus)
+         RETURN ps.statusType
+    b) "Was this submission EVER in status X" / "papers in status X during
+       year Y" (vs. current/final status in (a)): search the ENTIRE status
+       history via variable-length traversal, not a single hop (which only
+       reaches the first-ever status and misses later ones):
+         MATCH (s:SubmissionID) WHERE <year filter per Rule 22>
+         MATCH (s)-[:movesTo*]->(ps:PaperStatus)
+         WHERE toLower(ps.statusType) CONTAINS "review"
+         RETURN DISTINCT s.identifier
+25. Meeting nodes have NO "venue"/"location" property. For virtual meetings
+   (the norm here), the location IS meetLink (a Google Meet-style URL).
+   Don't respond UNANSWERABLE for a venue/location question -- query
+   meetLink instead.
+26. A relationship whose target can be MORE THAN ONE label (e.g. SubmissionID
+   -[:inVenue]-> Conference OR Journal) can NOT use a single untyped node
+   plus a runtime label check -- every node MUST declare a label, so
+   "(s)-[:inVenue]->(v)" with later "CASE WHEN v:Conference" is INVALID.
+   Use one OPTIONAL MATCH per possible label instead:
+     MATCH (s:SubmissionID) WHERE <match the submission/paper>
+     OPTIONAL MATCH (s)-[:inVenue]->(c:Conference)
+     OPTIONAL MATCH (s)-[:inVenue]->(j:Journal)
+     RETURN c.confTitle AS conference, j.journalTitle AS journal
+27. PaperStatus.statusType values are lifecycle labels ("Received", "Under
+   Review", "Accepted") -- there is no status literally named
+   "Published"/"Publish". Don't filter ps.statusType CONTAINS "publish".
+   "Published in <venue>" is established just by the SubmissionID existing
+   with [:inVenue] to that venue and [:identifies] to the Paper -- no
+   status-label filter needed (add an Accepted/Camera-ready check per Rule
+   24(a) only if acceptance specifically is asked about). This generalizes
+   to any TRUE/FALSE question phrased around a specific word from the
+   question itself ("confirmed", "verified", "finalized", etc.) -- do NOT
+   require that exact word as a CONTAINS filter on statusType. The actual
+   stored text is free-form ("Registration verified", "In proceedings",
+   etc.) and rarely echoes the question's own wording. Instead, walk the
+   chain (Rule 24) to its LATEST status via the [:movesTo*] chain and judge
+   from that terminal statusType/context whether the semantic condition
+   holds, rather than pattern-matching the question's literal adjective.
+28. PERSON-HUB AVOIDANCE -- Person nodes are HUBS (hasAuthor on many
+    Papers, worksOn many Tasks, worksWith many Methods/Datasets/Metrics).
+    Do not connect two OTHER entities merely because they share a
+    neighboring Person, unless the ontology defines a direct relationship
+    for what's asked. (t:Task)<-[:worksOn]-(p:Person)-[hasAuthor]-(pa:Paper)
+    does NOT mean "pa is THE paper related to t" -- only that p works on t
+    AND wrote pa, possibly unrelated. If no direct relation connects the
+    two entities and the only path is a Person hub, find a more direct path
+    (e.g. shared MailThread) or answer UNANSWERABLE rather than return one
+    arbitrary hub member.
+    EXCEPTIONS -- routing through a Person IS correct here:
+    a) COLLABORATION: no direct Person-Person edge exists ("(p1:Person)
+       -[:worksWith]->(p2:Person)" is always rejected). Infer collaboration
+       via a shared entity instead:
+         MATCH (p1:Person)-[:worksOn]->(t:Task)<-[:worksOn]-(p2:Person)
+       or, for co-authorship:
+         MATCH (p1:Person)<-[:hasAuthor]-(pa:Paper)-[:hasAuthor]->(p2:Person)
+    b) TASK-PAPER BRIDGING WHEN ≥2 CO-AUTHORS SHARE THE TASK: no edge
+       connects Task/Method to Paper/SubmissionID at all. By default this
+       means "methods used in paper X", "was task X part of submission Y",
+       etc. can't be answered -- the only naive route (a single shared
+       Person) only proves that person works on a vaguely-matching task
+       AND wrote some paper, not that the task belongs to THIS paper
+       (confirmed empirically: narrowing the task-name keyword doesn't fix
+       this -- the edge is simply missing). Reply UNANSWERABLE for this
+       class of question -- UNLESS the SAME Task is worksOn by TWO OR MORE
+       of the paper's own co-authors, which IS reliable evidence (multiple
+       co-authors independently sharing an unrelated task by chance is
+       implausible, unlike the single-co-author case). Then:
+         MATCH (pa:Paper) WHERE <match paper by title/submission ONLY>
+         MATCH (pa)-[:hasAuthor]->(auth:Person)
+         WITH pa, collect(auth) AS authors
+         MATCH (t:Task)
+         WHERE size([a IN authors WHERE (a)-[:worksOn]->(t)]) >= 2
+         MATCH (m:Method)-[:usedFor]->(t)
+         RETURN DISTINCT m.methodName
+       CRITICAL: `authors` MUST be ALL the paper's hasAuthor persons with NO
+       name filter -- even if the question ALSO names one author (e.g.
+       "...paper Ananya Chatterjee submitted to ACL 2019"). Filtering the
+       hasAuthor MATCH by that name before collecting `authors` collects
+       only that one person's own fragments, so the ">= 2" check compares
+       them against themselves and wrongly finds nothing. The named person
+       is only for finding the right PAPER, never for restricting which
+       authors get collected. Fall back to UNANSWERABLE only when NO Task
+       is shared by ≥2 of the FULL author list.
+    OTHER PERSON-HUB PATTERNS TO AVOID:
+    c) "Who ELSE is involved with X" excludes X (the anchor) from the
+       result. A self-join like `MATCH (p1:Person)-[:worksOn]->(t:Task)
+       <-[:worksOn]-(p2:Person) WHERE p1.personName CONTAINS "X" RETURN
+       p2.personName` will bind p2 to the SAME node as p1, including X in
+       her own collaborator list. Always add `AND p1 <> p2`. Applies to any
+       same-label self-join (co-authors, co-attendees), not just this case.
+    d) No Meeting-Task edge exists ('meetAgenda' is text, not a
+       relationship). For "which task is X planning to demonstrate AT the
+       meeting," do NOT hop Person->attends->Meeting and back OUT to other
+       attendees' tasks -- that's the Person-hub problem again, returning
+       ANY attendee's task, not X's own. WRONG:
+         MATCH (p:Person)-[:attends]->(m:Meeting) WHERE person=X
+         WITH DISTINCT m
+         MATCH (p2:Person)-[:attends]->(m)
+         MATCH (p2)-[:worksOn]->(t:Task) WHERE taskName CONTAINS "demonstrat"
+         RETURN DISTINCT t.taskName
+       CORRECT -- the meeting doesn't constrain the task; anchor directly
+       on X's own worksOn edge:
+         MATCH (p:Person)-[:worksOn]->(t:Task) WHERE person=X AND taskName CONTAINS "demonstrat"
+         RETURN DISTINCT t.taskName
+       A meeting mention is often just context, not a graph constraint --
+       drop it when no direct edge enforces it.
+    e) Don't add an extra MATCH hop through an unrelated entity type (e.g.
+       Task) filtered by the SAME literal title text already anchoring the
+       primary entity (e.g. Paper) -- redundant, returns zero rows, since a
+       Task's name won't restate a Paper's full title. Match the Paper
+       directly, then go straight to Person/SubmissionID without an
+       intermediate Task constraint:
+         MATCH (pa:Paper) WHERE toLower(pa.paperTitle) CONTAINS toLower("<title>")
+         MATCH (pa)-[:hasAuthor]->(p:Person) WHERE person=X
+         MATCH (s:SubmissionID)-[:identifies]->(pa)
+         OPTIONAL MATCH (s)-[:inVenue]->(c:Conference)
+         OPTIONAL MATCH (s)-[:inVenue]->(j:Journal)
+         RETURN c.confTitle AS conference, j.journalTitle AS journal
+    f) For "did/what did PERSON use/propose/suggest METHOD-OR-TOOL", check
+       the DIRECT edge (p:Person)-[:worksWith]->(m:Method) FIRST, filtering
+       the Method's OWN name by the tool keyword -- do NOT route through
+       (p:Person)-[:worksOn]->(t:Task)<-[:usedFor]-(m:Method) unless the
+       direct edge genuinely returns nothing. A Task is named after the
+       ACTIVITY (e.g. "OCR error correction"), not the tool used for it
+       (e.g. Tesseract, ocropy) -- those are separate Methods reached
+       directly via worksWith. WRONG:
+         MATCH (p:Person)-[:worksOn]->(t:Task)
+         WHERE person=X AND (taskName CONTAINS "ocr" OR taskName CONTAINS "correction")
+         MATCH (m:Method)-[:usedFor]->(t)
+         RETURN DISTINCT m.methodName
+       CORRECT:
+         MATCH (p:Person)-[:worksWith]->(m:Method)
+         WHERE person=X AND (toLower(m.methodName) CONTAINS "tesseract"
+           OR toLower(m.methodName) CONTAINS "ocr" OR toLower(m.methodName) CONTAINS "correction")
+         RETURN DISTINCT m.methodName
+       Only use the Task-mediated path for "which methods/datasets are used
+       FOR a task" (see (g)), not what a person personally uses.
+    g) "Which datasets/methods are used for/proposed for/a baseline for a
+       TASK" -- regardless of whether a person is also named -- MUST use
+       the direct edge (d:Dataset)-[:usedFor]->(t:Task) or
+       (m:Method)-[:usedFor]->(t:Task). Do NOT substitute a Person-hub
+       route (e.g. (d:Dataset)<-[:worksWith]-(p:Person)-[:worksOn]->(t)) --
+       that pulls in EVERY dataset/method anyone on that task has EVER
+       worked with, on any project, even when the named person IS confirmed
+       to work with it (once X worksWith Y is confirmed, traverse Y's own
+       usedFor edge to find the task, don't fetch ALL of X's tasks and
+       assume relevance). Same in reverse when the TASK is described and a
+       person anchors it: require the method usedFor THAT task node, person
+       only confirms involvement.
+       Harder variant: a dataset "planned for release"/"discussed with" a
+       PAPER/SUBMISSION (no direct Dataset<->Paper edge exists at all) --
+       still do NOT bridge through a Person. Confirmed empirically that a
+       direct, person-free path exists: search a Task's name for
+       release-related words ("release", "phased release") and go straight
+       Dataset-[:usedFor]->Task:
+         MATCH (t:Task) WHERE toLower(t.taskName) CONTAINS "release"
+         MATCH (d:Dataset)-[:usedFor]->(t)
+         RETURN DISTINCT d.datasetName
+       Fall back to a Meeting's meetAgenda (still no Person hop) only if no
+       Task matches. A direct usedFor edge always wins when it exists.
+    h) A well-known, SPECIFIC Method/Metric name mentioned in the question
+       (LIME, SHAP, BERT, GPT, Tesseract, F1-score, accuracy, ...) refers to
+       an actual Method/Metric NODE in the graph -- do NOT treat it as a
+       keyword to search for inside a Task's own taskName text. A Task
+       named "contrast the interpretability outputs on raw versus post-OCR-
+       corrected text" never restates "LIME" or "SHAP" verbatim even though
+       it's precisely the task LIME/SHAP were used for -- filtering
+       t.taskName CONTAINS "lime" AND CONTAINS "shap" finds nothing, while
+       the real chain (Method)-[:usedFor]->(Task)<-[:usedFor]-(Dataset) is
+       sitting right there. WRONG:
+         MATCH (p:Person)-[:worksOn]->(t:Task)
+         WHERE toLower(t.taskName) CONTAINS "lime" AND toLower(t.taskName) CONTAINS "shap"
+         MATCH (d:Dataset)-[:usedFor]->(t)
+         RETURN DISTINCT d.datasetName
+       CORRECT -- match the named Method(s) by their OWN name, traverse to
+       whichever Task they're usedFor, then to the Dataset usedFor that SAME
+       task (person, if named, only needs to confirm involvement via
+       worksOn/worksWith on that task/method -- see (f)/(g) above):
+         MATCH (m:Method) WHERE toLower(m.methodName) CONTAINS "lime" OR toLower(m.methodName) CONTAINS "shap"
+         MATCH (m)-[:usedFor]->(t:Task)
+         MATCH (d:Dataset)-[:usedFor]->(t)
+         RETURN DISTINCT d.datasetName
+       CRITICAL CAVEAT: a Method is frequently usedFor MANY different Tasks
+       (LIME/SHAP alone are usedFor 5+ distinct tasks in this corpus) -- the
+       query above with NO task-name filter returns datasets from EVERY one
+       of those tasks, not just the one the question describes. If the
+       question names a specific angle on the method's use (e.g. "evaluating
+       LIME/SHAP OUTPUT", "comparing X on Y"), ALSO filter t.taskName for
+       that distinguishing word/phrase, the same broad-OR way Rule 15(a)
+       handles Task names generally:
+         MATCH (m:Method) WHERE toLower(m.methodName) CONTAINS "lime" OR toLower(m.methodName) CONTAINS "shap"
+         MATCH (m)-[:usedFor]->(t:Task)
+         WHERE toLower(t.taskName) CONTAINS "output" OR toLower(t.taskName) CONTAINS "evaluat" OR toLower(t.taskName) CONTAINS "interpretab"
+         MATCH (d:Dataset)-[:usedFor]->(t)
+         RETURN DISTINCT d.datasetName
+       Only skip the task-name filter if the question asks generically
+       "which datasets are used with Method X" across all its uses.
+29. RETURN only the property that directly answers the question -- not
+    every property of the node, and not its internal `id` (pipeline-
+    internal, e.g. "e1", never a real answer). WRONG:
+      MATCH (e:Email)-... RETURN e.id, e.mailNum, e.mailDate ORDER BY e.mailDate ASC LIMIT 1
+    CORRECT -- filtering/sorting properties belong in WHERE/ORDER BY, not RETURN:
+      MATCH (e:Email)-... WHERE e.mailDate =~ '^\\d{{4}}-\\d{{2}}-\\d{{2}}$'
+      RETURN e.mailNum ORDER BY e.mailDate ASC LIMIT 1
+    Extra returned properties count as unsupported/extra content against
+    the gold answer even when the query logic is correct.
+30. WHERE AFTER OPTIONAL MATCH FILTERS ONLY THAT OPTIONAL PATTERN -- IT DOES
+    NOT REMOVE THE ROW. A `WHERE` clause placed immediately after an
+    `OPTIONAL MATCH` (with no `WITH` in between) only decides whether that
+    optional pattern's variables end up NULL -- since OPTIONAL MATCH never
+    drops the outer row by definition, the row survives regardless, making
+    the filter silently do nothing. Confirmed real failure case: a query
+    intended to find "who is affiliated with Oxford" filtered this way
+    returned EVERY Person in the graph (~25 unrelated people), because the
+    WHERE never actually excluded anyone. WRONG:
+      MATCH (p:Person)
+      OPTIONAL MATCH (p)-[:affiliation]->(o1:Organization)
+      OPTIONAL MATCH (p)-[:memberOf]->(:Team)-[:affiliation]->(o2:Organization)
+      WHERE (o1.orgName IS NOT NULL AND toLower(o1.orgName) CONTAINS toLower("oxford"))
+         OR (o2.orgName IS NOT NULL AND toLower(o2.orgName) CONTAINS toLower("oxford"))
+      RETURN DISTINCT p.personName
+    CORRECT -- insert `WITH <every variable you still need>` between the
+    last OPTIONAL MATCH and the WHERE. This forces the WHERE to act as a
+    genuine row-level filter over the whole pattern instead of a scoped
+    filter on just the preceding OPTIONAL MATCH:
+      MATCH (p:Person)
+      OPTIONAL MATCH (p)-[:affiliation]->(o1:Organization)
+      OPTIONAL MATCH (p)-[:memberOf]->(:Team)-[:affiliation]->(o2:Organization)
+      WITH p, o1, o2
+      WHERE (o1.orgName IS NOT NULL AND toLower(o1.orgName) CONTAINS toLower("oxford"))
+         OR (o2.orgName IS NOT NULL AND toLower(o2.orgName) CONTAINS toLower("oxford"))
+      RETURN DISTINCT p.personName
+    This applies any time a WHERE needs to filter on a value that came from
+    an OPTIONAL MATCH, regardless of entity types involved -- not just
+    affiliation/Person.
+31. ORGANIZATION <-> JOURNAL/CONFERENCE: NO PATH IS ACTUALLY POPULATED IN
+    THIS GRAPH -- do not invent a Team-bridging query for it. The ontology
+    schema permits Team-[:affiliation]->Journal and Team-[:affiliation]->
+    Conference in principle, but extraction never produced ANY edge of
+    either kind in this graph (confirmed by direct inspection: zero
+    Team-[:affiliation]->Journal and zero Team-[:affiliation]->Conference
+    edges exist anywhere). A query built on that bridge (e.g. "what
+    organization runs/publishes JOURNAL X") will always silently return
+    empty, not because the person/org doesn't exist, but because the edge
+    type was never extracted for this pair. Any "ACM"-style publisher
+    prefix that appears is only present INSIDE the Journal/Conference
+    node's own title string (e.g. "ACM Journal on Computing and Cultural
+    Heritage (JOCCH)"), never as a separate relationship. If the question
+    asks which organization runs/publishes a journal or conference, treat
+    it the same as any other no-valid-path case (see Rule 20): do not
+    fabricate a Team-bridging MATCH, since it is guaranteed to return
+    nothing on this graph.
+32. EmailID's REAL CONTENT PROPERTY IS `.eID`, NOT `.id`. Every node also
+    carries a pipeline-internal `.id` (e.g. "eid2") from graph construction
+    -- see Rule 29, which already warns against returning `.id` as an
+    answer. EmailID is a specific, confirmed trap: `RETURN eID.id` returns
+    the internal identifier ("eid2"), not the address. The actual email
+    address string lives in `EmailID.eID` (yes, same name as the node
+    label/variable -- easy to conflate). For any "what's X's email"
+    question:
+      MATCH (e:EmailID)-[:hasOwner]->(p:Person) WHERE ... RETURN e.eID
+33. DO NOT FILTER THE ANSWER ENTITY'S OWN NAME BY DESCRIPTIVE/TOPIC WORDS
+    FROM THE QUESTION UNLESS THE QUESTION IS QUOTING A SPECIFIC TERM. A
+    question like "which datasets has Sunita Sen worked with for the
+    historical NLP project" or "what OCR correction tools did Michael
+    Bradley suggest" is using "historical NLP project" / "OCR correction"
+    as narrative framing (the whole project IS historical NLP; that's not
+    a filter), not as a literal substring that must appear in the target
+    node's own name property. Confirmed real failures from doing this:
+      - `(p)-[:worksWith]->(d:Dataset) WHERE ... AND (d.datasetName CONTAINS
+        "historical" OR d.datasetName CONTAINS "nlp")` silently dropped
+        "Chronicling America" and "British Library Digital Collections"
+        (real, correct answers whose names don't contain those words) while
+        pulling in loosely-related noise whose name happened to.
+      - `(p)-[:worksWith]->(m:Method) WHERE ... AND (m.methodName CONTAINS
+        "ocr" OR m.methodName CONTAINS "correction")` dropped "Tesseract"
+        and "Project LaVa" (proper-noun tool names with neither substring)
+        while returning unrelated Method noise that happened to match.
+      - SAME ANTI-PATTERN, SubmissionID.identifier specifically: a question
+        like "who chaired the ISWC 2026 Resource Track" or "what is the
+        status of the paper submitted to ISWC 2026 Resource Track" names
+        the VENUE/TRACK/YEAR, not the submission's own identifier string --
+        `s.identifier` is very often just a bare code ("443", "DMKD-00644")
+        with NO venue name, track name, or year embedded in it at all.
+        `WHERE toLower(s.identifier) CONTAINS toLower("iswc") AND
+        toLower(s.identifier) CONTAINS toLower("resource")` confirmed
+        returns zero rows against a real identifier of "443". Anchor via
+        the RELATIONSHIP instead: find the Conference/Journal matching the
+        venue/track/year description first (or the Paper by title, if
+        named), then traverse to its SubmissionID --
+        `MATCH (c:Conference) WHERE toLower(c.confTitle) CONTAINS
+        toLower("iswc") MATCH (s:SubmissionID)-[:inVenue]->(c)` -- rather
+        than guessing what the identifier string itself might contain.
+    The (Person)-[:relation]->(Entity) traversal anchored on the named
+    person is ALREADY the scope -- trust it. Only add a CONTAINS filter on
+    the target entity's own name when the question explicitly names or
+    quotes that entity (e.g. "did X work with LIME" -- "LIME" is a specific
+    proper noun to search for, not a topic word). When genuinely unsure
+    whether a word is a proper-noun target or just topic framing, omit the
+    filter and return the full unfiltered relation set rather than risk
+    silently dropping correct answers.
+
+QUERY SCOPING — be precise, but do NOT over-constrain:
+  - ANCHOR on the specific entity the question names (person, paper, meeting,
+    dataset, conference). Traverse OUT from it. Never return all entities of
+    a type and hope one matches — confidently wrong, over-complete answers.
+  - Include ONLY the constraints the question explicitly requires. Don't add
+    extra MATCH joins/WHERE filters scoping to a meeting, thread, or date
+    unless actually asked about — over-scoping returns zero rows even when
+    the fact is present on the entity itself.
+  - For an attribute of a named entity (affiliation, email, title, date),
+    match that entity directly and return the attribute — don't route
+    through unrelated relationships.
+  - See Rule 28 for full Person-hub-avoidance guidance (with its two
+    sanctioned exceptions).

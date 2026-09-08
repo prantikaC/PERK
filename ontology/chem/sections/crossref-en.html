@@ -1,0 +1,713 @@
+<h2 id="crossreference" class="list">Cross-reference for PERKOnto-Chem: Computational Chemistry extension of PERKOnto classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by PERKOnto-Chem: Computational Chemistry extension of PERKOnto.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a></li>
+  <li><a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a></li>
+  <li><a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a></li>
+  <li><a href="#LevelOfTheory" title="https://w3id.org/perkonto/chem#LevelOfTheory">Level of Theory</a></li>
+  <li><a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a></li>
+  <li><a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a></li>
+  <li><a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a></li>
+ </ul>
+ <div class="entity" id="ChemicalSystem">
+  <h3>Chemical System<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#ChemicalSystem</p>
+  <div class="comment">
+   <span class="markdown">The physical/molecular system under study: a molecule, complex, material, or assembly (e.g. a copper-trafficking protein, a soft-matter aggregate, a bioinorganic active site).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/CHEBI_24431" target="_blank" title="http://purl.obolibrary.org/obo/CHEBI_24431">C H E B I 24431</a> <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/perkonto#Dataset" target="_blank" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#smiles" title="https://w3id.org/perkonto/chem#smiles">SMILES</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#appliedToProblem" title="https://w3id.org/perkonto/chem#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#systemName" title="https://w3id.org/perkonto/chem#systemName">system name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#quantifies" title="https://w3id.org/perkonto/chem#quantifies">quantifies</a> <sup class="type-op" title="object property">op</sup>, <a href="#simulates" title="https://w3id.org/perkonto/chem#simulates">simulates</a> <sup class="type-op" title="object property">op</sup>, <a href="#studies" title="https://w3id.org/perkonto/chem#studies">studies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>, <a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a> <sup class="type-c" title="class">c</sup>, <a href="#LevelOfTheory" title="https://w3id.org/perkonto/chem#LevelOfTheory">Level of Theory</a> <sup class="type-c" title="class">c</sup>, <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ComputationalMethod">
+  <h3>Computational Method<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#ComputationalMethod</p>
+  <div class="comment">
+   <span class="markdown">A simulation or theoretical technique applied to a chemical system, e.g. molecular dynamics, Monte Carlo, density functional theory, enhanced sampling, coarse-grained modelling.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Method" target="_blank" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#appliedToProblem" title="https://w3id.org/perkonto/chem#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#atLevelOfTheory" title="https://w3id.org/perkonto/chem#atLevelOfTheory">at level of theory</a> <sup class="type-op" title="object property">op</sup>, <a href="#implementedIn" title="https://w3id.org/perkonto/chem#implementedIn">implemented in</a> <sup class="type-op" title="object property">op</sup>, <a href="#methodName" title="https://w3id.org/perkonto/chem#methodName">method name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#simulates" title="https://w3id.org/perkonto/chem#simulates">simulates</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesForceField" title="https://w3id.org/perkonto/chem#usesForceField">uses force field</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appliesMethod" title="https://w3id.org/perkonto/chem#appliesMethod">applies method</a> <sup class="type-op" title="object property">op</sup>, <a href="#quantifies" title="https://w3id.org/perkonto/chem#quantifies">quantifies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>, <a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a> <sup class="type-c" title="class">c</sup>, <a href="#LevelOfTheory" title="https://w3id.org/perkonto/chem#LevelOfTheory">Level of Theory</a> <sup class="type-c" title="class">c</sup>, <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ForceField">
+  <h3>Force Field<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#ForceField</p>
+  <div class="comment">
+   <span class="markdown">A parameter set defining interatomic interactions used by a (classical) simulation method, e.g. CHARMM, AMBER, OPLS, or a custom coarse-grained model.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#forceFieldName" title="https://w3id.org/perkonto/chem#forceFieldName">force field name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#usesForceField" title="https://w3id.org/perkonto/chem#usesForceField">uses force field</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>, <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>, <a href="#LevelOfTheory" title="https://w3id.org/perkonto/chem#LevelOfTheory">Level of Theory</a> <sup class="type-c" title="class">c</sup>, <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="LevelOfTheory">
+  <h3>Level of Theory<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#LevelOfTheory</p>
+  <div class="comment">
+   <span class="markdown">The theoretical/basis-set specification for an electronic-structure calculation, e.g. 'B3LYP/6-31G*', 'CCSD(T)/cc-pVTZ'.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#atLevelOfTheory" title="https://w3id.org/perkonto/chem#atLevelOfTheory">at level of theory</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>, <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>, <a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a> <sup class="type-c" title="class">c</sup>, <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Observable">
+  <h3>Observable / Computed Property<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#Observable</p>
+  <div class="comment">
+   <span class="markdown">A physical quantity computed or measured from a simulation/calculation, e.g. free energy, binding affinity, radial distribution function, diffusion coefficient, reaction barrier.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Metric" target="_blank" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="http://qudt.org/schema/qudt/Quantity" target="_blank" title="http://qudt.org/schema/qudt/Quantity">Quantity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#observableName" title="https://w3id.org/perkonto/chem#observableName">observable name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#observableUnit" title="https://w3id.org/perkonto/chem#observableUnit">observable unit</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#observableValue" title="https://w3id.org/perkonto/chem#observableValue">observable value</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#quantifies" title="https://w3id.org/perkonto/chem#quantifies">quantifies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>, <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>, <a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a> <sup class="type-c" title="class">c</sup>, <a href="#LevelOfTheory" title="https://w3id.org/perkonto/chem#LevelOfTheory">Level of Theory</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>, <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ResearchProblem">
+  <h3>Research Problem<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#ResearchProblem</p>
+  <div class="comment">
+   <span class="markdown">A scientific question or problem formulation the group works on, e.g. 'mechanism of copper trafficking', 'self-assembly in soft matter'.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Task" target="_blank" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appliedToProblem" title="https://w3id.org/perkonto/chem#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#investigates" title="https://w3id.org/perkonto/chem#investigates">investigates</a> <sup class="type-op" title="object property">op</sup>, <a href="#quantifies" title="https://w3id.org/perkonto/chem#quantifies">quantifies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>, <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>, <a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a> <sup class="type-c" title="class">c</sup>, <a href="#LevelOfTheory" title="https://w3id.org/perkonto/chem#LevelOfTheory">Level of Theory</a> <sup class="type-c" title="class">c</sup>, <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>, <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Software">
+  <h3>Simulation Software / Package<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#Software</p>
+  <div class="comment">
+   <span class="markdown">A software package or code used to run a computational method, e.g. GROMACS, LAMMPS, NAMD, Gaussian, ORCA.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://schema.org/SoftwareApplication" target="_blank" title="https://schema.org/SoftwareApplication">Software Application</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#softwareName" title="https://w3id.org/perkonto/chem#softwareName">software name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#softwareVersion" title="https://w3id.org/perkonto/chem#softwareVersion">software version</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#implementedIn" title="https://w3id.org/perkonto/chem#implementedIn">implemented in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>, <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>, <a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a> <sup class="type-c" title="class">c</sup>, <a href="#LevelOfTheory" title="https://w3id.org/perkonto/chem#LevelOfTheory">Level of Theory</a> <sup class="type-c" title="class">c</sup>, <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#appliedToProblem" title="https://w3id.org/perkonto/chem#appliedToProblem">applied to problem</a></li>
+  <li><a href="#appliesMethod" title="https://w3id.org/perkonto/chem#appliesMethod">applies method</a></li>
+  <li><a href="#atLevelOfTheory" title="https://w3id.org/perkonto/chem#atLevelOfTheory">at level of theory</a></li>
+  <li><a href="#implementedIn" title="https://w3id.org/perkonto/chem#implementedIn">implemented in</a></li>
+  <li><a href="#investigates" title="https://w3id.org/perkonto/chem#investigates">investigates</a></li>
+  <li><a href="#quantifies" title="https://w3id.org/perkonto/chem#quantifies">quantifies</a></li>
+  <li><a href="#simulates" title="https://w3id.org/perkonto/chem#simulates">simulates</a></li>
+  <li><a href="#studies" title="https://w3id.org/perkonto/chem#studies">studies</a></li>
+  <li><a href="#usesForceField" title="https://w3id.org/perkonto/chem#usesForceField">uses force field</a></li>
+ </ul>
+ <div class="entity" id="appliedToProblem">
+  <h3>applied to problem<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#appliedToProblem</p>
+  <div class="comment">
+   <span class="markdown">Links a ComputationalMethod or ChemicalSystem to the ResearchProblem it addresses. Specialises perk:usedFor.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#usedFor" target="_blank" title="https://w3id.org/perkonto#usedFor">used For</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="appliesMethod">
+  <h3>applies method<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#appliesMethod</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a ComputationalMethod they use. Specialises perk:worksWith.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksWith" target="_blank" title="https://w3id.org/perkonto#worksWith">works With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="atLevelOfTheory">
+  <h3>at level of theory<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#atLevelOfTheory</p>
+  <div class="comment">
+   <span class="markdown">Links an electronic-structure ComputationalMethod to its LevelOfTheory.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#LevelOfTheory" title="https://w3id.org/perkonto/chem#LevelOfTheory">Level of Theory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="implementedIn">
+  <h3>implemented in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#implementedIn</p>
+  <div class="comment">
+   <span class="markdown">Links a ComputationalMethod to the Software package used to run it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="investigates">
+  <h3>investigates<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#investigates</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a ResearchProblem they work on. Specialises perk:worksOn.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksOn" target="_blank" title="https://w3id.org/perkonto#worksOn">works On</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="quantifies">
+  <h3>quantifies<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#quantifies</p>
+  <div class="comment">
+   <span class="markdown">Links an Observable to the ComputationalMethod, ChemicalSystem, or ResearchProblem it characterises. Specialises perk:evaluates.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#evaluates" target="_blank" title="https://w3id.org/perkonto#evaluates">evaluates</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ResearchProblem" title="https://w3id.org/perkonto/chem#ResearchProblem">Research Problem</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="simulates">
+  <h3>simulates<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#simulates</p>
+  <div class="comment">
+   <span class="markdown">Links a ComputationalMethod to the ChemicalSystem it is applied to. Specialises perk:uses.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#uses" target="_blank" title="https://w3id.org/perkonto#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="studies">
+  <h3>studies<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#studies</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a ChemicalSystem they investigate. Specialises perk:worksWith.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksWith" target="_blank" title="https://w3id.org/perkonto#worksWith">works With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesForceField">
+  <h3>uses force field<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#usesForceField</p>
+  <div class="comment">
+   <span class="markdown">Links a ComputationalMethod to the ForceField that parameterises it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#forceFieldName" title="https://w3id.org/perkonto/chem#forceFieldName">force field name</a></li>
+  <li><a href="#methodName" title="https://w3id.org/perkonto/chem#methodName">method name</a></li>
+  <li><a href="#observableName" title="https://w3id.org/perkonto/chem#observableName">observable name</a></li>
+  <li><a href="#observableUnit" title="https://w3id.org/perkonto/chem#observableUnit">observable unit</a></li>
+  <li><a href="#observableValue" title="https://w3id.org/perkonto/chem#observableValue">observable value</a></li>
+  <li><a href="#smiles" title="https://w3id.org/perkonto/chem#smiles">SMILES</a></li>
+  <li><a href="#softwareName" title="https://w3id.org/perkonto/chem#softwareName">software name</a></li>
+  <li><a href="#softwareVersion" title="https://w3id.org/perkonto/chem#softwareVersion">software version</a></li>
+  <li><a href="#systemName" title="https://w3id.org/perkonto/chem#systemName">system name</a></li>
+ </ul>
+ <div class="entity" id="forceFieldName">
+  <h3>force field name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#forceFieldName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ForceField" title="https://w3id.org/perkonto/chem#ForceField">Force Field</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="methodName">
+  <h3>method name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#methodName</p>
+  <div class="comment">
+   <span class="markdown">Name of the computational method (e.g. 'molecular dynamics', 'DFT').</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#methodName" target="_blank" title="https://w3id.org/perkonto#methodName">method Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ComputationalMethod" title="https://w3id.org/perkonto/chem#ComputationalMethod">Computational Method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="observableName">
+  <h3>observable name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#observableName</p>
+  <div class="comment">
+   <span class="markdown">Name of the physical observable (e.g. 'free energy').</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#metricName" target="_blank" title="https://w3id.org/perkonto#metricName">metric Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="observableUnit">
+  <h3>observable unit<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#observableUnit</p>
+  <div class="comment">
+   <span class="markdown">Physical unit of the observable value (e.g. 'kcal/mol').</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="observableValue">
+  <h3>observable value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#observableValue</p>
+  <div class="comment">
+   <span class="markdown">Reported numeric value of an observable.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Observable" title="https://w3id.org/perkonto/chem#Observable">Observable / Computed Property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="smiles">
+  <h3>SMILES<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#smiles</p>
+  <div class="comment">
+   <span class="markdown">SMILES string encoding the molecular structure, where applicable.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="softwareName">
+  <h3>software name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#softwareName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="softwareVersion">
+  <h3>software version<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#softwareVersion</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#version" target="_blank" title="https://w3id.org/perkonto#version">version</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Software" title="https://w3id.org/perkonto/chem#Software">Simulation Software / Package</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="systemName">
+  <h3>system name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/chem#systemName</p>
+  <div class="comment">
+   <span class="markdown">Name or identifier of the chemical system studied.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#datasetName" target="_blank" title="https://w3id.org/perkonto#datasetName">dataset Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ChemicalSystem" title="https://w3id.org/perkonto/chem#ChemicalSystem">Chemical System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

@@ -8,7 +8,7 @@
     },
     "iri" : "https://w3id.org/perkonto",
     "version" : "1.0.0",
-    "author" : [ "Srijoni Majumdar", "Prantika Chakraborty", "Debarshi Kumar Sanyal", "Partha Pratim Das" ],
+    "author" : [ "Anonymous Authors" ],
     "description" : {
       "en" : "A domain-specific ontology for representing the professional  knowledge of a researcher as extractable from personal email  communications. PERKOnto models communication infrastructure, researchers and venues, the publication lifecycle, and research content,  anchoring every assertion to its provenance email."
     },
@@ -22,22 +22,22 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Prantika Chakraborty",
+        "value" : "Anonymous Author",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Srijoni Majumdar",
+        "value" : "Anonymous Author",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Debarshi Kumar Sanyal",
+        "value" : "Anonymous Author",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Partha Pratim Das",
+        "value" : "Anonymous Author",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -55,7 +55,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://github.com/prantikaC/PERK",
+        "value" : "urn:withheld-for-review",
         "type" : "iri"
       } ]
     }

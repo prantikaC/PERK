@@ -83,7 +83,7 @@ def main():
 
         print("\n--- Ingesting Nodes ---")
         for entity_name, config in ontology["nodes"].items():
-            file_path = os.path.join(entities_dir, config["file"])
+            file_path = os.path.join(args.data_dir, config["file"])
             if not os.path.exists(file_path):
                 print(f"  Skipping {entity_name}: {file_path} not found.")
                 continue
@@ -108,7 +108,7 @@ def main():
 
         print("\n--- Ingesting Relationships ---")
         for rel_name, config in ontology["relationships"].items():
-            file_path = os.path.join(relations_dir, config["file"])
+            file_path = os.path.join(args.data_dir, config["file"])
             if not os.path.exists(file_path):
                 print(f"  Skipping {rel_name}: {file_path} not found.")
                 continue

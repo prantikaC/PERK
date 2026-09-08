@@ -1,0 +1,525 @@
+:ID,mergeConfidence,mergedFrom,paperTitle,:LABEL
+pa387,,,Manuscript Draft with Revised Data Availability Section,Paper
+pa62,,,JCDL Tutorial Proposal,Paper
+pa437,,,ACL revision,Paper
+pa172,,,"Provenance-Aware NLP for Historical Texts: Annotation, Compliance, and Synthetic Instance Protocols",Paper
+pa191,,,Consolidated Camera-Ready Package for ACL,Paper
+pa39,,,JOCCH minor revisions,Paper
+pa100,1.0,"['pa104', 'pa120', 'pa121', 'pa122']",JOCCH_Revision/FinalManuscript_18Nov22,Paper
+pa167,,,ACL 2021 camera-ready submission,Paper
+pa394,,,Project Retrospective & Workflow Reference,Paper
+pa416,,,NDLI Workflow Documents,Paper
+pa447,,,Revised Section 4.3 and Updated Figure 2 Workflow Diagram,Paper
+pa87,,,Lay Abstract Draft,Paper
+pa88,,,Compliance Appendices (Stanford and Joint),Paper
+pa89,,,Preliminary Section Materials,Paper
+pa90,,,Historical Corpus Profiling,Paper
+pa91,,,Evaluation & Benchmarks,Paper
+pa92,,,Methods Section,Paper
+pa186,,,Final Submission,Paper
+pa26,,,Unspecified Paper Title,Paper
+pa46,,,Revised manuscript,Paper
+pa231,,,JCDL 2022 submission,Paper
+pa117,,,Domain Transfer Limits and Anchor-Based Reviewer Navigation for NLP on Historical Data,Paper
+pa50,,,Manuscript under review,Paper
+pa487,,,Technical Note on Practical Compliance and Data Release Workflows for NLP on Historical Collections,Paper
+pa425,,,TransnationalNLP_ReflectionMemo_v2.3,Paper
+pa305,,,Workshop Report,Paper
+pa276,,,JCDL 2022 spotlight submission,Paper
+pa524,,,Lessons Learned Documentation,Paper
+pa48,,,JOCCH Submission,Paper
+pa18,,,Evaluation Pipelines and Visualization Methodologies for NLP on Noisy Historical Data,Paper
+pa63,,,FAIR Pipeline Summary,Paper
+pa243,,,JCDL 2022 FAQ Annex,Paper
+pa94,,,Manuscript with Transfer Learning in Low-Resource Historical Texts,Paper
+pa342,,,JCDL abstract draft,Paper
+pa137,,,Our article,Paper
+pa17,,,Manuscript for ACL 2019,Paper
+pa64,,,Master Slide Deck for JCDL 2020 Tutorial Proposal,Paper
+pa53,,,NLP Approaches to Historical Entity Disambiguation: Lessons from Bengali-English Colonial Gazetteers,Paper
+pa189,,,ACL Submission,Paper
+pa488,,,Practical Compliance and Data Release Workflows for NLP on Historical Collections,Paper
+pa395,,,Retrospective Document Outline,Paper
+pa30,,,JOCCH manuscript,Paper
+pa365,,,JCDL 2023 Presentation,Paper
+pa253,,,Cross-Jurisdictional Protocols in NLP: FAQ Annexation for Multilingual Historical Media,Paper
+pa85,,,JOCCH Submission Preparation – Aug/Sep 2020,Paper
+pa499,,,JOCCH major revision,Paper
+pa239,,,PressQuery_FAQ_Drafts/FINAL_Integrated_FAQ_Annex_v1.0,Paper
+pa275,,,JCDL2022_FinalSpotlightDeck_v4.pptx,Paper
+pa86,,,NLP Tools for Unlocking Historical Textual Data,Paper
+pa403,,,Compliance Crosswalk Table,Paper
+pa404,,,Pilot Study Data Integration,Paper
+pa233,,,draft press query response template,Paper
+pa461,,,Our ACL2024 paper,Paper
+pa192,,,ACL 2022 submission,Paper
+pa163,,,ACL Paper,Paper
+pa106,,,JOCCH revision,Paper
+pa480,,,technical note,Paper
+pa482,,,MOU negotiation summary,Paper
+pa483,,,Zenodo release case study,Paper
+pa484,,,Compliance automation script,Paper
+pa445,,,In-progress draft,Paper
+pa49,,,Bengali-English Colonial Gazetteers,Paper
+pa263,,,NLP on Historical Data Project,Paper
+pa380,,,ACM JOCCH submission,Paper
+pa4,,,ACL/EMNLP Submission,Paper
+pa318,,,Full_Draft_JOCCH,Paper
+pa410,,,Manuscript uploaded to JOCCH,Paper
+pa532,,,Manuscript on Historical-Corpus NLP Context,Paper
+pa258,,,JCDL 2022 press release,Paper
+pa22,,,Sensitive Data & Risk Assessment,Paper
+pa237,,,Unified Press Query Response Template and Scenario Annex,Paper
+pa52,,,NLPHistory Manuscript,Paper
+pa226,,,SUB-JOCCH-2022-0362,Paper
+pa184,,,A Provenance-Aware Annotation Protocol for NLP on Historical Document Corpora,Paper
+pa27,,,Compliance Appendix,Paper
+pa509,,,Section_4.2_JOCCH_Revision_18Jan2025.docx,Paper
+pa308,,,Q&A Moderation & Technical Escalation Framework,Paper
+pa369,,,Latest Document Version,Paper
+pa185,,,Oral Presentation at ACL 2021,Paper
+pa361,,,JCDL_CameraReady2023_FINAL,Paper
+pa218,,,Leveraging Multilingual NLP for Historical Data: Case Studies Across South Asian Texts,Paper
+pa97,,,"Cross-Institutional Methods for NLP on Historical Data: Dataset Profiling, Transfer Approaches, and Compliance",Paper
+pa519,,,Consolidated Manuscript Structure,Paper
+pa259,,,JCDL2022_PressRelease_Final.pdf,Paper
+pa354,,,Cross-Lingual Semantic Drift Detection and Digital Humanities Applications in Historical Corpora,Paper
+pa347,,,Multilingual Historical Corpora for Semantic Drift Detection: A Hybrid Evaluation Approach,Paper
+pa355,,,JCDL 2023 Accepted Paper,Paper
+pa170,,,ACL 2021 camera-ready manuscript,Paper
+pa194,,,accepted manuscript,Paper
+pa264,,,Consolidated Content and Visual Assets for JCDL 2022 Newsletter,Paper
+pa434,,,Main Overleaf Draft,Paper
+pa435,,,Digitizing Heritage...,Paper
+pa436,,,Frameworks for Data Reuse...,Paper
+pa201,,,ACL 2022 Presentation,Paper
+pa390,,,Revised Manuscript for JOCCH,Paper
+pa299,,,Workshop Materials,Paper
+pa108,,,Domain Shift Analysis Draft,Paper
+pa109,,,Code Anchor-Based Reviewer Navigation,Paper
+pa31,,,JOCCH minor revision,Paper
+pa190,,,Q_and_A_ModelBias_v2.docx,Paper
+pa274,,,Regional Engagement Simplified,Paper
+pa303,,,Simulated Pre-Event Communication Send-Through Report,Paper
+pa211,,,Supplementary submission materials,Paper
+pa210,,,Annotation Case Studies and Comparative Analysis,Paper
+pa196,,,accepted PDF,Paper
+pa363,,,Semantic Drift Detection and Interoperability in Low-Resource Historical Corpora: An Annotated Benchmark and Evaluation Framework,Paper
+pa412,,,Cross-Institutional Reflection Memo,Paper
+pa291,,,Error analysis research note,Paper
+pa129,,,Main LaTeX Manuscript,Paper
+pa116,,,supplementary Jupyter notebook,Paper
+pa57,,,Reproducible NLP Workflows for Historical Datasets: Lessons from a Cross-Lingual Gazetteer Project,Paper
+pa430,,,ACL 2023 revision,Paper
+pa37,,,Manuscript,Paper
+pa145,,,"NLP Methods for Historical Data: Global Challenges, Local Contexts",Paper
+pa105,,,Cross-Lingual Transfer and Error Analysis in Privacy-Preserved Historical Data: Methodological and Compliance Supplement with Code Anchors,Paper
+pa147,,,Technical Setup Instructions,Paper
+pa148,,,sequence_labeling_demo.ipynb,Paper
+pa149,,,Dockerfile_histoNLP,Paper
+pa302,,,NER Guide with Updated Accessibility Features,Paper
+pa1,,,Temporal Sentiment Analysis in Historical Archives,Paper
+pa232,,,Consortium_PressQuery_ResponseTemplate_v1_StanfordReview.docx,Paper
+pa32,,,Main Manuscript,Paper
+pa473,,,Cover Letter,Paper
+pa475,,,Supplementary Zenodo metadata and citation PDF,Paper
+pa58,,,Cross-lingual Entity Normalization Methods for Historical Corpus,Paper
+pa169,,,Draft Document,Paper
+pa367,,,Cohesive and Impactful Presentation for JCDL 2023,Paper
+pa272,,,Oxford press note draft,Paper
+pa209,,,Draft Manuscript,Paper
+pa279,,,Session Summary_JCDL2022,Paper
+pa280,,,Speaker_Bios_JCDL2022,Paper
+pa349,,,Multilingual Semantic Drift Detection Framework,Paper
+pa384,,,Semantic Metrics Alignment,Paper
+pa481,,,"Technical Note on Compliance Methodology, Zenodo Workflows, and Rolling Embargo Documentation",Paper
+pa478,,,JOCCH revisions,Paper
+pa330,,,Evaluation Metrics for Historical Corpus Adaptations,Paper
+pa331,,,Interplay Between Semantic Drift and Named Entity Recognition,Paper
+pa489,,,Integrated Technical Note Draft,Paper
+pa248,,,Draft Annotation Regarding Stakeholder Engagement with Non-English-Speaking Press Offices,Paper
+pa176,,,ACL 2021 Presentation Draft,Paper
+pa485,,,Seminar,Paper
+pa368,,,NLP Pipeline Generalizability and Ethical Handling of Historical Texts,Paper
+pa127,,,Camera-ready revision,Paper
+pa110,,,Compliance_Anonymization_v1_Feb2021,Paper
+pa217,,,Manuscript and Supplementary Package,Paper
+pa155,,,Manuscript on dual-publishing practices in the UK/EU context,Paper
+pa426,,,TransnationalNLP_ReflectionMemo_v2.3.docx,Paper
+pa307,,,Workshop2022_Report,Paper
+pa183,,,Historical Data NLP,Paper
+pa96,,,compiled “camera-ready” version of our manuscript,Paper
+pa316,,,JOCCH Draft,Paper
+pa11,,,Visualization Drafts,Paper
+pa267,,,Cross-Continental NLP Collaborations,Paper
+pa146,,,Knowledge Base Compilation,Paper
+pa180,,,ACL Presentation,Paper
+pa500,,,major revision manuscript,Paper
+pa159,,,resource paper,Paper
+pa402,,,Transparent Documentation Pipelines for Multilingual NLP on Historical Data: Compliance and Workflow Reflections,Paper
+pa75,,,"NLP Methods for Large-Scale Historical Data: Annotation, Corpus Design, and Reproducibility",Paper
+pa455,,,Manuscript for ACL2024,Paper
+pa496,,,Cross-Jurisdictional Legal Workflow Study,Paper
+pa515,,,Cross-Jurisdictional Compliance in NLP Applications for Historical Data: A Comparative Analysis,Paper
+pa168,,,Section4_AnnotationProvenance_Jan26,Paper
+pa314,,,Unified Style Guide and Accessibility Evaluation Metrics for Cross-Linguistic Q&A,Paper
+pa494,,,Annotated Main Manuscript,Paper
+pa140,,,HistocrNLP: An Open and Reproducible NLP Pipeline for Historical Corpora,Paper
+pa285,,,Historical NLP Datasets,Paper
+pa322,1.0,['pa323'],JOCCH2022_Reviewer_Response_Preparation,Paper
+pa202,,,ACL_2022_Presentation_FINAL_v2.pptx,Paper
+pa479,,,revised resource note,Paper
+pa133,,,HistocrNLP: A Reproducible NLP Pipeline for Historical Texts across Domains,Paper
+pa431,,,Generalization Section with Recent Case Studies,Paper
+pa268,,,NDAI User Feedback and Visualization Updates,Paper
+pa252,,,Our camera-ready manuscript for JCDL 2022,Paper
+pa3,,,Interpretability Memo,Paper
+pa60,,,Entity Normalization Draft,Paper
+pa61,,,FAIR/Zenodo Draft,Paper
+pa457,,,Mixed-Script Decisions,Paper
+pa288,,,Blog Post,Paper
+pa289,,,Error Analysis Note,Paper
+pa341,,,Evaluation/Metrics section,Paper
+pa151,,,ACL 2022 Resource Track Paper,Paper
+pa36,,,Our manuscript,Paper
+pa19,,,Submitted Package,Paper
+pa293,,,Supporting Slides,Paper
+pa294,,,Live Demo Resources,Paper
+pa295,,,Breakout Session Packets,Paper
+pa296,,,Accessibility Information,Paper
+pa297,,,Lightning Talk & Networking Info Sheet,Paper
+pa298,,,Draft Feedback & Resource Assessment Form,Paper
+pa261,,,JCDL 2022 program newsletter,Paper
+pa5,,,Baseline Model Configuration and Preliminary Results,Paper
+pa35,,,Domain Adaptation and Evaluation Metrics for Historical NER and Topic Modeling across Multilingual Archives,Paper
+pa15,,,Finalized Manuscript Draft,Paper
+pa320,,,Not explicitly mentioned but implied by the context,Paper
+pa281,,,NLP on Historical Archives,Paper
+pa513,,,JOCCH_NLPHistoricalData_Final_23Jan2025,Paper
+pa392,,,Our manuscript in JOCCH,Paper
+pa350,,,Revised Related Work Section,Paper
+pa175,,,Seamless Handling of Abstract Revision Process,Paper
+pa76,,,JCDL 2020 camera-ready materials,Paper
+pa441,,,"Generalizing Protocol Harmonization in Under-Resourced Historical NLP: Methods, Legal Interoperability, and Error Analysis",Paper
+pa78,,,Tutorial Presentation: Historical Corpus Annotation Workflow and Normalization Demo Scripts,Paper
+pa345,,,Datasets,Paper
+pa325,,,Recent NLP Advances Relevant to Historical Data Analysis,Paper
+pa25,,,JOCCH Paper,Paper
+pa321,,,Manuscript submitted to JOCCH,Paper
+pa215,,,Integrated Manuscript,Paper
+pa469,,,Resource Note,Paper
+pa205,,,NLP on Historical Data,Paper
+pa283,,,Document Alignment Model,Paper
+pa399,,,JOCCH Submission 2023,Paper
+pa199,,,Interdisciplinary Collaboration Presentation,Paper
+pa257,,,JCDL2022_Press_Release_Final.docx,Paper
+pa357,,,JCDL_CameraReady2023,Paper
+pa72,,,JCDL2020_Revision_Memo_Michael_24Jun2020.pdf,Paper
+pa502,,,Method_Section_Draft_Nov6,Paper
+pa204,,,Our Research,Paper
+pa254,,,Our Successful JCDL 2022 Paper,Paper
+pa156,,,Collaborative Manuscript Updates,Paper
+pa358,,,Interoperability Models for Digital Archival Systems: A Review of Standards and Implementations,Paper
+pa124,,,"Cross-Language NLP Pipelines for Noisy Historical Data: Protocols, Benchmarks, and Reproducibility Advances",Paper
+pa362,,,Camera-ready manuscript,Paper
+pa229,,,JCDL 2022 presentations,Paper
+pa300,,,Feedback and Resource Assessment Form,Paper
+pa450,,,ACL2024 Manuscript,Paper
+pa371,,,Final Deck v3.4,Paper
+pa456,,,ACL2024 Camera-Ready Package,Paper
+pa442,,,Harmonization and Legal-Operational Flexibility in Historical NLP,Paper
+pa59,,,cross-lingual entity normalization,Paper
+pa8,,,Visualization Plan,Paper
+pa132,,,HistocrNLP,Paper
+pa490,,,Lessons Learned,Paper
+pa526,,,Colloquium Abstract,Paper
+pa529,,,Workflow Solutions Paper,Paper
+pa38,,,Our Paper Title,Paper
+pa69,,,JCDL 2020 Tutorial,Paper
+pa247,,,JCDL Submission,Paper
+pa136,,,Not explicitly mentioned but implied,Paper
+pa265,,,NLP Innovations for Historical Texts: Multilingual Heritage Preservation across Continents,Paper
+pa340,,,Evaluation/Metrics segment of JCDL abstract,Paper
+pa465,,,JOCCH resource note,Paper
+pa173,,,N/A,Paper
+pa495,,,"Practical Workflows for NLP on International Historical Archival Data: Legal, Technical, and Community Lessons Learned",Paper
+pa385,,,"NLP Pipelines for Semantic Analysis of 19th-century South Asian Legal Documents: Methods, Datasets, and Error Taxonomy",Paper
+pa343,,,Hybrid Evaluation Suite and Multilingual Corpus,Paper
+pa504,,,Revised Submission for JOCCH,Paper
+pa531,,,Methods Note/Short-Form Paper,Paper
+pa212,,,Supplementary Materials,Paper
+pa195,,,Our final PDF,Paper
+pa338,,,Evaluation Metrics for Semantic Drift in Diachronic NER,Paper
+pa14,,,Updated Integrated Manuscript Draft,Paper
+pa452,,,Annotation Strategies and Workflow Transparency for 19th-Century Bengali-English Historical Texts,Paper
+pa421,,,Appendix Navigation Table,Paper
+pa391,,,Semantic Adjudication and Entity Agreement Protocols for Historical South Asian Legal Texts,Paper
+pa160,,,ACL resource track submission,Paper
+pa262,,,JCDL bulletin,Paper
+pa188,,,Preliminary Version of the Slide Deck,Paper
+pa245,,,Cross-Institutional Protocols for Metadata and Embargo: An Integrated FAQ Annex,Paper
+pa157,,,Internal Manuscript,Paper
+pa236,,,Unified_PressQuery_ResponseTemplate_with_ScenarioAnnex.docx,Paper
+pa193,,,NLP Methods for Historical Data: Provenance and Bias Mitigation,Paper
+pa41,,,Figure 3 Caption Revision,Paper
+pa476,,,Meta-Annotated Historical Texts: A Multi-Institutional Resource and Legal Protocol for South Asian Colonial Newspapers,Paper
+pa55,,,Camera-ready submission,Paper
+pa333,,,ACL paper on cross-temporal normalization,Paper
+pa334,,,EMNLP paper on context reconstruction,Paper
+pa382,,,HistoricData_AnnotationGuidelines_v1.pdf,Paper
+pa29,,,minor revision of the manuscript for the ACM JOCCH,Paper
+pa451,,,Not explicitly mentioned but implied by context,Paper
+pa348,,,Our collaborative project,Paper
+pa378,,,ACM JOCCH Manuscript,Paper
+pa271,,,JCDL2022_SpotlightPrep,Paper
+pa54,,,Pending Paper Title,Paper
+pa493,,,Final Manuscript Draft,Paper
+pa150,,,ACL 2022 Resource Track submission,Paper
+pa466,,,Student-Led Project Legal Notice,Paper
+pa372,1.0,['pa373'],Camera-ready submission to the 2023 ACM/IEEE Joint Conference on Digital Libraries,Paper
+pa516,,,JOCCH revision process,Paper
+pa463,,,Journal Extension and Resource Efforts,Paper
+pa497,,,Manuscript for JOCCH,Paper
+pa44,,,Integrated Camera-Ready PDF,Paper
+pa178,,,ACL 2021 Oral Session Presentation,Paper
+pa332,,,ACL/EMNLP articles,Paper
+pa24,,,A Harmonized NLP Dataset and Documentation Protocol for OCR’d Historical Texts,Paper
+pa28,,,SUB-JOCCH-2019-0187,Paper
+pa203,,,Our Work,Paper
+pa198,,,ACL_2022_Presentation_FINAL.pptx,Paper
+pa458,,,ACL2024 camera-ready manuscript,Paper
+pa197,,,ACL 2022 Oral Presentation,Paper
+pa179,,,Draft Slides for ACL 2021 Presentation,Paper
+pa152,,,Overview of Oxford and UK Digital Humanities Experiences with Staged Submissions and Dual-Publishing Strategies,Paper
+pa366,,,Semantic Interoperability and Practical Implications for Digital Humanities Integration,Paper
+pa370,,,Multilingual Generalizability and Parallel Annotation Results,Paper
+pa379,,,Manuscript preparatory process,Paper
+pa446,,,Sunita’s outline,Paper
+pa2,,,Temporal Sentiment Analysis,Paper
+pa521,,,Cross-Border NLP Workflows and Metadata Provenance in Historical Dataset Annotation: Protocols and Compliance,Paper
+pa128,,,CameraReady_JOCCH_Revision,Paper
+pa166,,,ACL 2021 Camera-Ready Revision,Paper
+pa111,,,JOCCH revision components,Paper
+pa377,,,Proposed ACM JOCCH Manuscript,Paper
+pa507,,,Comparative Legal Matrix for Incorporating Non-Western Data Protection Precedents into JOCCH Revision,Paper
+pa386,,,Manuscript submitted to ACM JOCCH,Paper
+pa409,,,Cross-Institutional Protocols for Licensing and Harmonization in Historical NLP: An Annotated Case Study,Paper
+pa374,,,Presenter Instructions,Paper
+pa286,1.0,['pa287'],Cross-lingual NLP Pipelines for Historical Document Archives: A Data-driven & Inclusive Approach,Paper
+pa99,,,SUB-JOCCH-2020-0047,Paper
+pa444,,,ACL 2024 Paper,Paper
+pa397,,,Master Draft Document,Paper
+pa506,,,Cross-Jurisdictional Compliance and Annotation Protocols for NLP on Historical Corpora,Paper
+pa244,,,Finalized FAQ Annex and Supplementary Materials,Paper
+pa214,,,Joint Manuscript,Paper
+pa56,,,Reproducibility Framework for Historical NLP,Paper
+pa359,,,shared manuscript,Paper
+pa319,,,Language Variation and Accessibility: NLP Methods for Historical Question Answering with Cross-Dialectal Data,Paper
+pa383,,,Main Manuscript Sections and Comprehensive Appendix,Paper
+pa443,,,Joint Work Recognized in ACL 2024,Paper
+pa396,,,Compliance & Data Alignment – Final.docx,Paper
+pa95,,,Transfer Learning in Low-Resource Historical Texts,Paper
+pa433,,,Legal Interoperability with Creative Commons Archives,Paper
+pa6,,,Interpretability Analyses and Draft Narrative,Paper
+pa161,,,Deploying Synthetic Preview and Embargo Protocols for Multilingual Historical NLP Resources,Paper
+pa423,,,TransnationalNLP_ReflectionMemo_v2.2,Paper
+pa517,,,Manuscript and response to JOCCH reviewers,Paper
+pa250,,,Unified Scenario for Non-English Press Engagement,Paper
+pa525,,,Lessons Learned memo and colloquium abstract draft,Paper
+pa398,,,Consolidated Google Doc,Paper
+pa311,,,Recent Advances in Historical Dialect Normalization,Paper
+pa312,,,Accessibility Frameworks Annotated Bibliography,Paper
+pa388,1.0,['pa389'],JOCCH submission (SUB-JOCCH-2023-0193),Paper
+pa98,,,Unspecified Title,Paper
+pa165,,,ACL acceptance,Paper
+pa522,,,Compliance and Metadata Harmonization Protocols for International Historical Datasets,Paper
+pa523,,,JOCCH project,Paper
+pa290,,,Research Note,Paper
+pa518,,,Compliance Draft,Paper
+pa83,,,Comprehensive Paper on NLP Tools for Historical Corpora,Paper
+pa326,,,Cross-temporal normalization,Paper
+pa327,,,Context reconstruction,Paper
+pa328,,,Evaluating diachronic corpora alignment,Paper
+pa329,,,Benchmarking dataset augmentation strategies,Paper
+pa424,,,TransnationalNLP_ReflectionMemo_v2.2.docx,Paper
+pa492,,,Manuscript Finalization,Paper
+pa269,,,Media Analytics Infographic Slides,Paper
+pa67,,,JCDL 2020 Tutorial Proposal,Paper
+pa7,,,Human Evaluation of Model Explanations on Historical Documents,Paper
+pa527,,,Multi-author Version Management Template & Reviewer Feedback Handling,Paper
+pa249,,,Unified Annotation for Press Engagement,Paper
+pa112,,,JOCCH_MinorRevision_Merged_Draft_Feb2021,Paper
+pa200,,,ACL 2022 Presentation Document,Paper
+pa33,,,Compliance Appendix and Annotator Agreement Tables,Paper
+pa260,,,JCDL 2022 announcement,Paper
+pa141,,,Sequence Labelling for Noisy Historical OCR,Paper
+pa472,,,Compliance Appendix and Cover Letter,Paper
+pa364,,,JCDL 2023 Paper,Paper
+pa339,,,JCDL abstract,Paper
+pa81,,,Survey/Methods Article for JOCCH,Paper
+pa66,,,"Entity Normalization, Reproducibility, and FAIR Data Management in Historical NLP: A Workflow Tutorial",Paper
+pa162,,,Resource Track Paper,Paper
+pa400,,,Manuscript for ACM JOCCH,Paper
+pa93,,,Consolidation of Compliance Appendices,Paper
+pa530,,,Multi-Author Version Management Schema and Reviewer Feedback Cycle,Paper
+pa135,,,Untitled Paper,Paper
+pa414,,,Drafting Timeline Document,Paper
+pa270,,,JCDL 2022 project spotlight,Paper
+pa477,,,Supplementary Historical Newspapers Dataset,Paper
+pa505,,,Our revised manuscript,Paper
+pa317,,,Full_Draft_JOCCH.docx,Paper
+pa448,,,Revised Section 4.3 and Figure 2 workflow,Paper
+pa381,,,Manuscript Draft,Paper
+pa464,,,Resource Note for JOCCH or LREC,Paper
+pa47,,,NER Methodology and Heritage Data: A Multilingual Benchmark for Bengali-English Colonial Documents,Paper
+pa459,,,"Mixed-Script NLP Techniques for Historical Corpora in South Asia: Annotation, Evaluation, and Cross-Lingual Analysis",Paper
+pa220,,,research-focused outreach summary for the Oxford and Stanford departmental channels,Paper
+pa413,,,Cross-Institutional Reflection Memo Outline,Paper
+pa154,,,Draft data/code transparency statement,Paper
+pa528,,,Internal Review Document,Paper
+pa125,,,"The Global Historical Press Corpus (GHPC): Multilingual Newspapers, 1850–1950",Paper
+pa126,,,"HISTEXT-21: Annotated Parliamentary Debates and Legislative Documents, 1800–1930",Paper
+pa304,,,Workshop Report on Accessibility Interventions,Paper
+pa34,,,Manuscript_Draft_Full_v3.pdf,Paper
+pa224,,,Outreach Draft 1,Paper
+pa225,,,Outreach Draft 2,Paper
+pa103,,,JOCCH_Revision,Paper
+pa238,,,Press Protocol Document,Paper
+pa356,,,Our Contribution to JCDL 2023,Paper
+pa313,,,Unified Cover Letter for JOCCH Submission,Paper
+pa415,,,Integration of NDLI Workflow Materials,Paper
+pa277,,,Spotlight Session Abstract,Paper
+pa187,,,ACL Camera-Ready Guidelines,Paper
+pa256,,,Multilingual Historical NLP Methods and Protocol Innovation for Legal Compliance,Paper
+pa429,,,TransnationalNLP_ACL2023,Paper
+pa255,,,JCDL2022_Press_Release_Draft_v1.docx,Paper
+pa131,,,JOCCH camera-ready manuscript,Paper
+pa306,,,Workshop Report Outline,Paper
+pa241,,,Illustrative Metadata Disclosure Use-Cases,Paper
+pa346,,,Consolidated Abstract for JCDL 2023,Paper
+pa65,,,Master_Slide_Deck_JCDL2020_Final_19Apr2020.pdf,Paper
+pa181,,,ACL 2021 presentation,Paper
+pa118,,,Initial Revision and Submission Process,Paper
+pa315,,,Manuscript for JOCCH's special issue,Paper
+pa510,,,Section_4.2_JOCCH_Revision_MB_Footnotes_19Jan2025.docx,Paper
+pa310,,,Accessibility Framework References Compilation,Paper
+pa213,,,NLP-historical data study,Paper
+pa491,,,draft blog post,Paper
+pa324,,,Our existing work,Paper
+pa428,,,Reflection Memo,Paper
+pa139,,,Draft lay summary of HistocrNLP project,Paper
+pa407,,,final manuscript,Paper
+pa408,,,Response to Reviewers,Paper
+pa284,,,JCDL pre-recorded spotlight video,Paper
+pa462,,,extended paper,Paper
+pa182,,,Updated Slide Deck,Paper
+pa107,,,DomainTransfer_Limits_v1_Feb2021.docx,Paper
+pa82,,,Proposed JOCCH article,Paper
+pa460,,,Our paper in the ACL2024 proceedings,Paper
+pa16,,,Integrated Manuscript Draft,Paper
+pa12,,,Evaluation Pipeline Visualization,Paper
+pa9,,,Draft Visualizations,Paper
+pa352,,,Manuscript (title not explicitly stated),Paper
+pa468,,,MetaAnnoLog_v5May.docx,Paper
+pa242,,,FINAL_Integrated_FAQ_Annex_v1.1,Paper
+pa235,,,Unified_PressQuery_ResponseTemplate_with_ScenarioAnnex,Paper
+pa119,,,supplementary anchor-mapping Jupyter notebook,Paper
+pa101,,,Revised Draft of Section 4.2,Paper
+pa453,,,Untitled Paper (ACL2024),Paper
+pa153,,,ACL 2022 resource track manuscript,Paper
+pa449,,,Supplementary Materials for ACL2024,Paper
+pa292,,,Modern NLP Techniques for Historical Data: Practical Approaches and Collaborative Workflows,Paper
+pa42,,,Ethical Considerations,Paper
+pa177,,,Provenance-Aware Metrics for Historical Data Tasks,Paper
+pa467,,,Normalized Guidelines,Paper
+pa51,,,Entity Ambiguity Resolution,Paper
+pa74,,,JCDL 2020 camera-ready submission package,Paper
+pa511,,,Revised Section 4.2 Draft,Paper
+pa351,,,Related Work,Paper
+pa134,,,Domain Adaptation Results,Paper
+pa130,,,Integrated Camera-Ready Materials,Paper
+pa227,,,Not explicitly mentioned but implied by SUB-JOCCH-2022-0362,Paper
+pa68,,,Mapping Ambiguity Schematic,Paper
+pa228,,,JOCCH editorial team's progress,Paper
+pa158,,,Overleaf Manuscript,Paper
+pa171,,,ACL 2021 manuscript,Paper
+pa23,,,Full dataset release package,Paper
+pa406,,,JOCCH_Revised_Manuscript_Final_23Oct2023,Paper
+pa40,,,Manuscript for JOCCH minor revisions,Paper
+pa102,,,Draft with expanded Section 4.2,Paper
+pa222,,,General Audience Outreach Summary,Paper
+pa223,,,Research-Focused Outreach Summary,Paper
+pa138,,,Reproducible NLP Pipeline for Historical Corpora,Paper
+pa219,,,Collaborative Draft Environment Manuscript,Paper
+pa405,,,Master Draft,Paper
+pa174,,,NLP for Historical Data and Digital Heritage,Paper
+pa123,,,Our Workflow,Paper
+pa344,,,Abstract under review,Paper
+pa73,,,High-Impact Tutorial Submission,Paper
+pa474,,,Zenodo Metadata PDF,Paper
+pa164,,,ACL resource track paper,Paper
+pa411,,,Internal Reflection Memo,Paper
+pa240,,,FINAL_Integrated_FAQ_Annex_v1.0,Paper
+pa335,,,diachronic corpus alignment,Paper
+pa336,,,data augmentation techniques,Paper
+pa337,,,evaluation benchmarks for low-resource historical corpora,Paper
+pa142,,,Technical Demo,Paper
+pa143,,,Comparative European Annotation Schemas,Paper
+pa144,,,Finalized South Asian Corpus Case Study Slides,Paper
+pa376,,,Our quantitative metrics,Paper
+pa113,,,JOCCH_MinorRevision_Merged_Draft_Feb2021_reviewed.docx,Paper
+pa114,,,FiguresTables_FinalPackage_Feb2021.pdf,Paper
+pa115,,,IACS_ApprovalLetter.pdf,Paper
+pa401,,,"Full, finalized manuscript",Paper
+pa417,,,NDLI_MOU_Excerpt.pdf,Paper
+pa418,,,NDLI_AnnualReview_Template.pdf,Paper
+pa419,,,updated NDLI workflow flowchart,Paper
+pa420,,,Appendix Navigation Table (Draft),Paper
+pa427,,,Transnational NLP Reflection Memo: Protocol Harmonization and Compliance Lessons from Multinational Historical NLP Consortia,Paper
+pa221,,,"Outreach Summary for IACS News, University Press Offices, and Social Platforms",Paper
+pa514,,,JOCCH_NLPHistoricalData_Final_23Jan2025.docx,Paper
+pa508,,,Manuscript for final submission,Paper
+pa230,,,Embargo Monitoring Log (ver. 18Oct2022),Paper
+pa84,,,Project Lay Abstract,Paper
+pa438,,,Protocol Harmonization for Under-Resourced Settings,Paper
+pa439,,,consolidated manuscript,Paper
+pa440,,,draft author response letter,Paper
+pa10,,,Submission,Paper
+pa512,,,Section 4.2 Revision,Paper
+pa80,,,Survey/Methods Paper for ACM Journal on Computing and Cultural Heritage (JOCCH),Paper
+pa278,,,Session Summary and Compiled Bios,Paper
+pa266,,,JCDL feature,Paper
+pa70,,,JCDL2020 Tutorial,Paper
+pa282,,,Pre-recorded Spotlight Video Presentation,Paper
+pa454,,,ACL2024_CameraReady,Paper
+pa206,,,Transformer-Based Sequence Correction for Historical OCR Errors,Paper
+pa207,,,Domain Adaptation for OCR in Multilingual Historical Archives,Paper
+pa208,,,Post-Correction Pipelines for Historical Manuscript OCR: A Comprehensive Survey,Paper
+pa216,,,Manuscript to JOCCH,Paper
+pa432,,,Generalizing Harmonization Strategies to Under-Resourced Settings,Paper
+pa45,,,full camera-ready manuscript,Paper
+pa501,,,Manuscript Integration Draft,Paper
+pa77,,,Our Tutorial,Paper
+pa498,,,JOCCH Revision Manuscript,Paper
+pa246,,,integrated FAQ annex,Paper
+pa301,,,NER guide,Paper
+pa309,,,Lessons Learned & Recommendations,Paper
+pa486,,,Compliance Management for Historical NLP Data Releases: A Stepwise Guide,Paper
+pa273,,,JCDL2022_FinalSpotlightDeck_v3.pptx,Paper
+pa503,,,Manuscript revision for JOCCH,Paper
+pa471,,,Compliance Appendix and JOCCH Cover Letter,Paper
+pa360,,,JCDL 2023 Submission,Paper
+pa43,,,Master Camera-Ready Manuscript,Paper
+pa375,,,Final_Closing_Remarks_v2,Paper
+pa520,,,Compliance Sections – Ananya Drafts v4,Paper
+pa470,,,Final Draft Manuscript,Paper
+pa20,,,Digital Poster for Departmental Seminars,Paper
+pa251,,,JCDL 2022 camera-ready submission,Paper
+pa422,,,Consolidated Draft with Appendix Navigation Table and Notable Institutional Divergence/Convergence Column,Paper
+pa21,,,IACS Research Data Office Requirements,Paper
+pa393,,,Unnamed Paper,Paper
+pa71,,,JCDL 2020 camera-ready submission,Paper
+pa234,,,Working_Draft_Scenarios,Paper
+pa13,,,Upcoming Manuscript Integration,Paper
+pa353,,,Digital Tool Integration and Annotation Pipeline,Paper
+pa79,,,NLP Methods for Large-Scale Historical Data,Paper

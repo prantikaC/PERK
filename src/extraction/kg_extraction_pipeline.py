@@ -78,6 +78,120 @@ PREFIX_MAP = {
     "SubmissionID": "s", "PaperStatus": "ps",
 }
 
+# Entity identity category, per type (see PERK_v2/README.md / data/ledger.json
+# entity_type_policy for the full rationale). This governs how
+# get_canonical_key/create_unique_entity_id decide whether a newly-extracted
+# mention refers to an EXISTING entity (reuse its ID) or is a genuinely NEW
+# one (mint a fresh ID):
+#   fixed           - one immutable record, minted once, referenced forever.
+#                     Dedup by a stable identifying field (name/email/title/...).
+#   series_instance - a recurring template (e.g. "JCDL") spawns independent,
+#                      parallel instances distinguished by edition/date.
+#                      Dedup by identifying field + edition-distinguishing
+#                      field where available, so different editions never
+#                      collide onto one node.
+#   snapshot_chain   - an append-only sequence of immutable snapshots
+#                       (PaperStatus). Every mention is a NEW node by
+#                       definition -- there is no lookup-by-key at all.
+# Root cause this fixes: get_canonical_key previously keyed PaperStatus on
+# `statusType` alone (e.g. "Submitted"), so every "Submitted" status across
+# every unrelated submission in the whole corpus resolved to the SAME
+# canonical key and got fused into one entangled node at extraction time,
+# before entity resolution ever ran.
+ENTITY_TYPE_POLICY = {
+    "Person": "fixed", "Dataset": "fixed", "Method": "fixed", "Metric": "fixed",
+    "Paper": "fixed", "SubmissionID": "fixed", "PaperBib": "fixed",
+    "Task": "fixed", "Journal": "fixed",
+    "Conference": "series_instance", "Meeting": "series_instance",
+    "PaperStatus": "snapshot_chain",
+    "Email": "output_layer", "MailThread": "output_layer",
+}
+
+# For series_instance types, the field (if present on this mention) that
+# distinguishes one edition/occurrence from another with the same name.
+SERIES_EDITION_FIELD = {
+    "Conference": "confDate",
+    "Meeting": "meetDate",
+}
+
+# Vague, non-distinguishing names that sometimes get extracted for a "fixed"
+# entity when an email refers to it informally instead of using its real,
+# specific title/name -- e.g. an email saying "the revised manuscript is
+# ready" produces paperTitle="revised manuscript" instead of the paper's
+# actual title. Confirmed live-graph audit evidence for why treating these as
+# a stable dedup key is actively harmful, not just imprecise: a single Paper
+# node titled "JOCCH minor revision" ended up `identifies`'d by SubmissionIDs
+# from two different years -- i.e. two genuinely different real papers, each
+# vaguely described this way in some email, were silently merged into one.
+# Likewise a Dataset node literally named "datasets" existed as its own
+# entity. For names on this list, never dedupe by string match -- mint a
+# fresh ID every time (same mechanism as snapshot_chain types), since an
+# unmerged duplicate is far easier to catch and fix than a false merge.
+# Exact-match only: bare generic nouns that are never themselves a real,
+# specific Paper/Dataset/etc. name.
+GENERIC_NAME_DENYLIST_EXACT = {
+    "dataset", "datasets", "document", "documents", "method", "methods",
+    "metric", "metrics", "task", "tasks", "paper", "papers", "manuscript",
+}
+
+# Substring match: vague informal REFERENCE phrases that stay generic no
+# matter what venue/context name gets prefixed onto them -- e.g. an email's
+# ad hoc "JOCCH minor revision" is exactly as unreliable an identity signal
+# as bare "minor revision" would be; the venue name doesn't make it specific
+# to one paper (confirmed: this exact phrase collided two different papers).
+# "submission" bare (not just "our submission"/"the submission") is required
+# to catch "<venue> submission" phrasing (e.g. "JOCCH submission") -- confirmed
+# via live-graph audit that this exact phrase, extracted verbatim across four
+# different real submissions spanning 2022-2025, collapsed all four onto one
+# Paper node (pa23) despite each having a distinct, non-colliding SubmissionID.
+GENERIC_NAME_DENYLIST_SUBSTRING = {
+    "the paper", "the manuscript", "the dataset", "the task", "the method",
+    "submission", "revised manuscript",
+    "camera-ready manuscript", "minor revision",
+}
+
+
+def _is_generic_placeholder_name(name: str) -> bool:
+    """True if `name` is a vague placeholder rather than a real, specific
+    identifying name (see GENERIC_NAME_DENYLIST_EXACT/_SUBSTRING)."""
+    normalized = name.lower().strip()
+    if normalized in GENERIC_NAME_DENYLIST_EXACT:
+        return True
+    return any(phrase in normalized for phrase in GENERIC_NAME_DENYLIST_SUBSTRING)
+
+
+# Targeted Rule 2 (Appendix B.1): a person merely mentioned near a paper --
+# most often in an email salutation or sign-off -- must not be misattributed
+# as an author. Applied here, on the merged raw hasAuthor edges, before
+# entity resolution: 98.8% of raw hasAuthor edges pointed to just the small
+# set of participants who appear most often across the whole corpus,
+# regardless of whether a given email actually said anything about
+# authorship, which is exactly why every extracted triple carries an
+# evidence sentence in the first place -- so this check can run on it.
+HASAUTHOR_POSITIVE_PATTERNS = [
+    re.compile(r"\bco-?authors?\b", re.I),
+    re.compile(r"\bour\b[^.]{0,40}\b(manuscript|paper|submission|proposal)\b", re.I),
+    re.compile(r"\bcorresponding author\b", re.I),
+    re.compile(r"\bauthored by\b", re.I),
+    re.compile(r"\bauthor of\b", re.I),
+    re.compile(r"\bsubmitted by\b", re.I),
+    re.compile(r"\bon behalf of my co-authors\b", re.I),
+    re.compile(r"\bjoint contributions?\b", re.I),
+    re.compile(r"\bauthorship\b", re.I),
+    re.compile(r"\bauthors?:\s", re.I),
+    re.compile(r"-(?:Lead|Equal|Supporting)\b"),
+]
+
+
+def _has_hasauthor_evidence(context: str) -> bool:
+    """True if `context` (the evidence text captured for a hasAuthor triple)
+    contains real authorship-supporting language, not just a person mentioned
+    nearby (e.g. an email salutation or sign-off). CONTAINMENT check: an edge
+    whose context is a salutation FOLLOWED BY "our manuscript..." in the same
+    captured snippet is correctly kept."""
+    text = str(context or "")
+    return any(p.search(text) for p in HASAUTHOR_POSITIVE_PATTERNS)
+
 # ==============================================================================
 # LOGGING
 # ==============================================================================
@@ -158,6 +272,12 @@ def run_inference(messages: List[Dict], engine, sampling, client, args) -> str:
             model=args.model_path,
             messages=messages,
             response_format={"type": "json_object"},
+            # seed works across all chat-completions models (unlike temperature,
+            # which the gpt-5 family rejects at anything but its default of 1) --
+            # doesn't guarantee determinism, but meaningfully reduces run-to-run
+            # variance for the same reason it was added to the Cypher-generation
+            # LLM calls in kg_eval_v4.py.
+            seed=42,
         )
         # The gpt-5 family only accepts the default temperature (1); sending 0
         # errors. Other models (e.g. gpt-4.1) use 0 for deterministic output.
@@ -174,8 +294,38 @@ def run_inference(messages: List[Dict], engine, sampling, client, args) -> str:
 # REGEX HEADER PARSING
 # ==============================================================================
 
-def parse_email_person(text: str) -> List[Dict[str, str]]:
-    persons = []
+# Matches display names like "ACM", "ACM 2019", "ACL2024", "JOCCH" -- a
+# short all-caps acronym optionally followed by a 4-digit year, with no
+# lowercase anywhere. Real human names never fit this shape (they always
+# have lowercase letters), so this catches organizational senders that DO
+# carry a display name (e.g. "ACM 2019 <acm2019@acm.com>"), which a bare-
+# email check alone would miss (that only fires when there is NO name).
+ORG_DISPLAY_NAME_PATTERN = re.compile(r'^[A-Z]{2,8}\s*\d{0,4}$')
+
+
+def parse_email_participants(text: str) -> Tuple[List[Dict[str, str]], List[str]]:
+    """
+    Parse a From/To/Cc header field. Returns (persons, org_email_hints).
+
+    A header address is treated as ORGANIZATIONAL, not a Person, when either:
+      - there is NO accompanying display name at all (a bare
+        "acl2024-submissions@aclconference.org" in a To: line, as opposed to
+        "Name <email>"), or
+      - the display name matches ORG_DISPLAY_NAME_PATTERN (e.g. "ACM 2019").
+    Conference/journal submission systems and editorial-office mailboxes
+    show up in headers exactly one of these two ways. Root cause this
+    avoids: such addresses were previously always minted as Person nodes
+    with only a personEmail property (or a nonsensical "personName" like
+    "ACM 2019") -- silently polluting the Person type with non-human
+    entities.
+
+    These organizational addresses are NOT extracted as any entity here --
+    there is no Organization node type. They are returned as plain email
+    strings (org_email_hints) so the caller can surface them to the
+    body-extraction LLM as candidate journalMail/confMail values for
+    whatever Journal/Conference it independently extracts from the body.
+    """
+    persons, org_email_hints = [], []
     for part in re.split(r'[,;]', text.strip()):
         part = part.strip()
         if not part:
@@ -198,13 +348,22 @@ def parse_email_person(text: str) -> List[Dict[str, str]]:
                     email = part
                 else:
                     name = part
+
+        if email and not name:
+            org_email_hints.append(email)
+            continue
+
+        if email and name and ORG_DISPLAY_NAME_PATTERN.match(name.strip()):
+            org_email_hints.append(email)
+            continue
+
         person = {}
         if name: person['personName'] = name.replace('"', '').strip()
         if email: person['personEmail'] = email
         if affiliation: person['affiliation'] = affiliation
         if person:
             persons.append(person)
-    return persons
+    return persons, org_email_hints
 
 
 def parse_date(date_str: str) -> str:
@@ -221,29 +380,44 @@ def parse_date(date_str: str) -> str:
 
 
 def extract_header_info(email_text: str) -> Dict:
+    """
+    All keyword patterns below are anchored with ^ (used with re.MULTILINE)
+    so the keyword must be the FIRST thing on its own line -- see
+    header_signature_parser.py's identical fix for why: an unanchored
+    r'To:\\s*...' matches "To:" wherever it first occurs, including inside a
+    "reply-To:" header line (real in Gmail-exported mail, never present in
+    synthetic PATRA.txt), which cascades into garbled to/cc/date/subject
+    values for that whole email.
+    """
     header_info = {}
     for field, pattern in [
-        ('thread_id', r'Thread ID:\s*(.+)'),
-        ('mail_id',   r'Mail ID:\s*(.+)'),
+        ('thread_id', r'^Thread ID:\s*(.+)'),
+        ('mail_id',   r'^Mail ID:\s*(.+)'),
     ]:
-        match = re.search(pattern, email_text, re.IGNORECASE)
+        match = re.search(pattern, email_text, re.IGNORECASE | re.MULTILINE)
         if match:
             header_info[field] = match.group(1).strip()
 
-    match = re.search(r'Date:\s*(.+)', email_text, re.IGNORECASE)
+    match = re.search(r'^Date:\s*(.+)', email_text, re.IGNORECASE | re.MULTILINE)
     if match:
         header_info['date'] = parse_date(match.group(1).strip())
 
+    # Generic "looks like a header label" stop-boundary, not a hardcoded
+    # From->To->Cc->Subject order -- see header_signature_parser.py's
+    # identical fix for why (e.g. "reply-To:" between From and To, "Date:"
+    # between CC and Subject; a fixed field-name enumeration would miss
+    # whatever a real email client adds that PATRA.txt never anticipated).
+    _header_labels = r'(?:[A-Za-z][A-Za-z \-]*:)'
     for field, pattern in [
-        ('from',    r'From:\s*(.+?)(?=\n(?:To:|Cc:|Subject:|$))'),
-        ('to',      r'To:\s*(.+?)(?=\n(?:Cc:|Subject:|$))'),
-        ('cc',      r'Cc:\s*(.+?)(?=\n(?:Subject:|$))'),
+        ('from',    r'^From:\s*(.+?)(?=\n' + _header_labels + r'|\Z)'),
+        ('to',      r'^To:\s*(.+?)(?=\n' + _header_labels + r'|\Z)'),
+        ('cc',      r'^Cc:\s*(.+?)(?=\n' + _header_labels + r'|\Z)'),
     ]:
-        match = re.search(pattern, email_text, re.IGNORECASE | re.DOTALL)
+        match = re.search(pattern, email_text, re.IGNORECASE | re.DOTALL | re.MULTILINE)
         if match:
             header_info[field] = match.group(1).strip()
 
-    match = re.search(r'Subject:\s*(.+)', email_text, re.IGNORECASE)
+    match = re.search(r'^Subject:\s*(.+)', email_text, re.IGNORECASE | re.MULTILINE)
     if match:
         header_info['subject'] = match.group(1).strip()
 
@@ -289,6 +463,13 @@ def get_canonical_key(entity_type: str, properties: dict) -> str:
     if entity_type == "Person":
         email = properties.get("personEmail", "").lower().strip()
         return f"person_email_{email}" if email else f"person_name_{properties.get('personName', '').lower().strip()}"
+
+    # snapshot_chain: never look up by key -- every mention is a new node.
+    # (See ENTITY_TYPE_POLICY above; this is what stops e.g. every unrelated
+    # submission's "Submitted" status from colliding onto one PaperStatus node.)
+    if ENTITY_TYPE_POLICY.get(entity_type) == "snapshot_chain":
+        return f"{entity_type.lower()}_{id(properties)}_{time.time_ns()}"
+
     field_map = {
         "Paper": "paperTitle", "PaperBib": "doi", "Dataset": "datasetName",
         "Method": "methodName", "Task": "taskName", "Metric": "metricName",
@@ -297,7 +478,20 @@ def get_canonical_key(entity_type: str, properties: dict) -> str:
         "PaperStatus": "statusType", "Meeting": "meetAgenda",
     }
     if entity_type in field_map:
-        return f"{entity_type.lower()}_{properties.get(field_map[entity_type], '').lower().strip()}"
+        name_value = str(properties.get(field_map[entity_type], '')).strip()
+        if _is_generic_placeholder_name(name_value):
+            # Never dedupe on a vague placeholder name -- see
+            # GENERIC_NAME_DENYLIST for the confirmed false-merge cases this
+            # prevents. Mint a fresh ID every time, same as snapshot_chain.
+            return f"{entity_type.lower()}_{id(properties)}_{time.time_ns()}"
+        base_key = f"{entity_type.lower()}_{name_value.lower()}"
+        # series_instance: fold in an edition-distinguishing field (e.g.
+        # confDate) when this mention states one, so "JCDL" mentioned across
+        # two different years doesn't collide onto a single Conference node.
+        edition_field = SERIES_EDITION_FIELD.get(entity_type)
+        if edition_field and properties.get(edition_field):
+            base_key += f"_{str(properties[edition_field]).lower().strip()}"
+        return base_key
     return f"{entity_type.lower()}_{id(properties)}"
 
 
@@ -319,8 +513,8 @@ def create_unique_entity_id(entity_type: str, properties: dict) -> str:
     return stable_id
 
 
-def extract_header_entities(header_info: dict, email_num: int) -> Tuple[List, List]:
-    entities, relations = [], []
+def extract_header_entities(header_info: dict, email_num: int) -> Tuple[List, List, List]:
+    entities, relations, org_email_hints = [], [], []
 
     if 'thread_id' in header_info:
         thread_props = {"threadID": header_info['thread_id']}
@@ -339,25 +533,46 @@ def extract_header_entities(header_info: dict, email_num: int) -> Tuple[List, Li
 
     for field in ['from', 'to', 'cc']:
         if field in header_info:
-            for person in parse_email_person(header_info[field]):
-                person_id = create_unique_entity_id("Person", person)
-                entities.append([person_id, "Person", json.dumps(person)])
+            persons, org_emails = parse_email_participants(header_info[field])
+            org_email_hints.extend(org_emails)
+            for props in persons:
+                person_id = create_unique_entity_id("Person", props)
+                entities.append([person_id, "Person", json.dumps(props)])
                 if 'mail_id' in header_info:
                     rel = "sentBy" if field == 'from' else "receivedBy"
                     relations.append([email_id, person_id, rel, HEADER_EVIDENCE, "header"])
 
-    return entities, relations
+    return entities, relations, org_email_hints
 
 
-def build_header_persons_context(header_entities: List) -> str:
-    """Build the prompt context string listing persons found in headers."""
+def build_header_persons_context(header_entities: List, org_email_hints: List[str] = None) -> str:
+    """
+    Build the prompt context string listing Persons found in headers, so the
+    body-extraction LLM can reuse their IDs. Also lists any organizational
+    sender/recipient addresses detected in headers (editorial offices,
+    submission systems -- e.g. "jocch-office@acm.org") as plain email
+    strings, NOT as an entity -- there is no Organization node type. These
+    are hints only: if a Journal/Conference extracted from the body
+    corresponds to one of them, set that entity's own journalMail/confMail
+    property to it.
+    """
     persons = [e for e in header_entities if e[1] == 'Person']
-    if not persons:
+    org_email_hints = org_email_hints or []
+    if not persons and not org_email_hints:
         return "No persons in headers."
-    context = "Persons already extracted from email headers (reuse these IDs):\n"
-    for eid, _, _ in persons:
-        if eid in entity_registry:
-            context += f"- {eid}: {json.dumps(entity_registry[eid]['properties'])}\n"
+    context = ""
+    if persons:
+        context += "Persons already extracted from email headers (reuse these IDs):\n"
+        for eid, _, _ in persons:
+            if eid in entity_registry:
+                context += f"- {eid}: {json.dumps(entity_registry[eid]['properties'])}\n"
+    if org_email_hints:
+        context += ("Organizational sender/recipient addresses in this email's headers "
+                    "(NOT persons -- do not create any entity for these directly; if a "
+                    "Journal/Conference you extract from the body corresponds to one, "
+                    "set that entity's journalMail/confMail property to it instead):\n")
+        for addr in org_email_hints:
+            context += f"- {addr}\n"
     return context
 
 # ==============================================================================
@@ -472,11 +687,53 @@ def write_csv(filepath: str, headers: List[str], rows: List[List]) -> None:
 # ==============================================================================
 
 def process_email(email_num: int, email_text: str, engine, sampling, client,
-                  system_prompt: str, args, logger: logging.Logger) -> Tuple[int, int]:
-    header_info = extract_header_info(email_text)
+                  system_prompt: str, args, logger: logging.Logger,
+                  header_context_override: str = None,
+                  current_email_id_override: str = None,
+                  extra_valid_ids: set = None,
+                  org_email_hints_override: List[str] = None,
+                  context_id_map: Dict[str, str] = None) -> Tuple[int, int]:
+    """
+    header_context_override / current_email_id_override / extra_valid_ids /
+    context_id_map let an external orchestrator (run_full_extraction_pipeline.py)
+    supply richer header/signature context -- built by header_signature_parser.py,
+    which models Team/Organization/EmailID and signature-derived role/affiliation
+    that this module's own regex header parser below does not -- instead of
+    the crude header parsing this function computes internally by default.
+    When supplied, this function's own header parsing is skipped entirely
+    and no header entities/relations are written to this email's per-email
+    CSVs (the orchestrator's header pass owns and writes those separately);
+    `extra_valid_ids` extends the relation-validity check so an LLM relation
+    that reuses one of the orchestrator's header-side ids (as the context
+    instructs it to) is still accepted.
+
+    `context_id_map` (e.g. {"HDR_pn6": "pn6"}) is the mechanism that makes
+    that reuse actually SAFE: the LLM's own local temp-ids for genuinely NEW
+    entities it finds in the body are assigned starting fresh at 1 each
+    call, with no memory of what header ids already exist -- on a small
+    corpus, that range overlaps the header's own (small) id numbers, so the
+    LLM can and does accidentally reuse a bare header id (e.g. "pn7") as
+    its own temp-id for something else entirely, silently corrupting any
+    relation in the same response that meant to reference the header
+    entity. Namespacing header ids with a "HDR_" prefix in the prompt (see
+    header_signature_parser.build_llm_context) makes that string one the
+    LLM's own ad hoc numbering can never accidentally produce -- so a
+    "HDR_xxx" token in this email's LLM output is resolved via this map
+    STRAIGHT to the real id "xxx", bypassing temp_to_global entirely,
+    before any of the usual local-temp-id resolution below runs.
+
+    Standalone CLI use (no orchestrator) is unaffected -- all parameters
+    default to None, which reproduces the exact prior behavior.
+    """
     body_text = extract_body(email_text)
-    header_entities, header_relations = extract_header_entities(header_info, email_num)
-    header_context = build_header_persons_context(header_entities)
+    if header_context_override is not None:
+        header_entities, header_relations = [], []
+        header_context = header_context_override
+        org_email_hints = org_email_hints_override or []
+    else:
+        header_info = extract_header_info(email_text)
+        header_entities, header_relations, org_email_hints = extract_header_entities(header_info, email_num)
+        header_context = build_header_persons_context(header_entities, org_email_hints)
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -497,9 +754,16 @@ def process_email(email_num: int, email_text: str, engine, sampling, client,
 
     body_entities: List = []
     body_relations: List = []
+    context_id_map = context_id_map or {}
     temp_to_global: Dict = {}
 
     for temp_id, etype, props_str in entities_raw:
+        if temp_id in context_id_map:
+            # LLM redundantly re-declared an already-existing header entity
+            # as if it were new -- alias its temp id straight to the real
+            # one instead of minting a duplicate.
+            temp_to_global[temp_id] = context_id_map[temp_id]
+            continue
         try:
             props = json.loads(props_str)
             global_id = create_unique_entity_id(etype, props)
@@ -510,13 +774,43 @@ def process_email(email_num: int, email_text: str, engine, sampling, client,
         except Exception:
             continue
 
-    current_email_id = next((e[0] for e in header_entities if e[1] == "Email"), "unknown")
+    # Deterministic org-mail attachment: if this email had exactly one
+    # organizational address hint and exactly one Journal/Conference was
+    # extracted from its body, the match is unambiguous by construction --
+    # assign it directly rather than relying on the LLM to notice and set it.
+    # Left alone (for the LLM to judge, per rule 3b) whenever there's more
+    # than one hint or more than one venue in the same email.
+    if len(org_email_hints) == 1:
+        venue_rows = [row for row in body_entities if row[1] in ("Journal", "Conference")]
+        if len(venue_rows) == 1:
+            v_id, v_type, v_props_str = venue_rows[0]
+            v_props = json.loads(v_props_str)
+            mail_field = "journalMail" if v_type == "Journal" else "confMail"
+            if not v_props.get(mail_field):
+                v_props[mail_field] = org_email_hints[0]
+                new_props_str = json.dumps(v_props)
+                venue_rows[0][2] = new_props_str
+                if v_id in entity_registry:
+                    entity_registry[v_id]["properties"][mail_field] = org_email_hints[0]
+                for row in entities_all:
+                    if row[0] == v_id:
+                        row[2] = new_props_str
+                        break
 
+    current_email_id = current_email_id_override or next(
+        (e[0] for e in header_entities if e[1] == "Email"), "unknown")
+
+    extra_valid_ids = extra_valid_ids or set()
     for s_id, o_id, rel, ctx in relations_raw:
-        s_glob = temp_to_global.get(s_id, s_id)
-        o_glob = temp_to_global.get(o_id, o_id)
-        valid_start = s_glob in entity_registry or s_glob in {e[0] for e in body_entities}
-        valid_end   = o_glob in entity_registry or o_glob in {e[0] for e in body_entities}
+        # context_id_map takes priority: a "HDR_xxx" token is ALWAYS a
+        # direct reference to the real header id "xxx", never something
+        # temp_to_global should resolve (see this function's docstring).
+        s_glob = context_id_map.get(s_id) or temp_to_global.get(s_id, s_id)
+        o_glob = context_id_map.get(o_id) or temp_to_global.get(o_id, o_id)
+        valid_start = (s_glob in entity_registry or s_glob in {e[0] for e in body_entities}
+                       or s_glob in extra_valid_ids)
+        valid_end   = (o_glob in entity_registry or o_glob in {e[0] for e in body_entities}
+                       or o_glob in extra_valid_ids)
         if valid_start and valid_end:
             row = [s_glob, o_glob, rel, ctx, current_email_id]
             body_relations.append(row)
@@ -573,6 +867,21 @@ def merge_and_report(args, logger: logging.Logger) -> None:
                             seen.add(t)
         except Exception:
             continue
+
+    # Targeted Rule 2 (Appendix B.1): drop hasAuthor edges whose captured
+    # evidence carries no real authorship signal, before entity resolution
+    # ever sees them (see _has_hasauthor_evidence above).
+    n_before = len(final_relations)
+    final_relations = [
+        row for row in final_relations
+        if row[2] != "hasAuthor" or _has_hasauthor_evidence(row[3] if len(row) > 3 else None)
+    ]
+    n_dropped = n_before - len(final_relations)
+    if n_dropped:
+        logger.info(
+            f"Targeted Rule 2: dropped {n_dropped} hasAuthor edge(s) with no "
+            f"authorship-supporting evidence in their captured context."
+        )
 
     write_csv(args.final_entities, ["id", "type", "properties"], list(final_entities.values()))
     write_csv(args.final_relations, ["start_id", "end_id", "relation", "context", "source"], final_relations)

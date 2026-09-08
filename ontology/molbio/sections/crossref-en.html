@@ -1,0 +1,831 @@
+<h2 id="crossreference" class="list">Cross-reference for PERKOnto-MolBio: Molecular Biology extension of PERKOnto classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by PERKOnto-MolBio: Molecular Biology extension of PERKOnto.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a></li>
+  <li><a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a></li>
+  <li><a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a></li>
+  <li><a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a></li>
+  <li><a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a></li>
+  <li><a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a></li>
+  <li><a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a></li>
+  <li><a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a></li>
+ </ul>
+ <div class="entity" id="BiologicalEntity">
+  <h3>Biological Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#BiologicalEntity</p>
+  <div class="comment">
+   <span class="markdown">The biological object of study: a gene, protein, pathway, cell line, tissue, or organism (e.g. the p53 protein, E. coli, a HeLa cell line).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/perkonto#Dataset" target="_blank" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#accessionID" title="https://w3id.org/perkonto/molbio#accessionID">accession ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#appliedToProblem" title="https://w3id.org/perkonto/molbio#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#entityName" title="https://w3id.org/perkonto/molbio#entityName">entity name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#entityType" title="https://w3id.org/perkonto/molbio#entityType">entity type</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#assays" title="https://w3id.org/perkonto/molbio#assays">assays</a> <sup class="type-op" title="object property">op</sup>, <a href="#quantifies" title="https://w3id.org/perkonto/molbio#quantifies">quantifies</a> <sup class="type-op" title="object property">op</sup>, <a href="#studies" title="https://w3id.org/perkonto/molbio#studies">studies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>, <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>, <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="BiologicalSample">
+  <h3>Biological Sample / Generated Dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#BiologicalSample</p>
+  <div class="comment">
+   <span class="markdown">A concrete analysed artifact: a biological sample, a sequencing run, an image dataset, or a screen.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Dataset" target="_blank" title="https://w3id.org/perkonto#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="http://purl.obolibrary.org/obo/OBI_0100051" target="_blank" title="http://purl.obolibrary.org/obo/OBI_0100051">O B I 0100051</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#accessionID" title="https://w3id.org/perkonto/molbio#accessionID">accession ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sampleName" title="https://w3id.org/perkonto/molbio#sampleName">sample name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#assays" title="https://w3id.org/perkonto/molbio#assays">assays</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>, <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>, <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ExperimentalTechnique">
+  <h3>Experimental Technique / Assay<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#ExperimentalTechnique</p>
+  <div class="comment">
+   <span class="markdown">A laboratory technique or assay applied, e.g. PCR, CRISPR-Cas9 editing, RNA sequencing, Western blot, mass spectrometry, confocal microscopy, flow cytometry.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Method" target="_blank" title="https://w3id.org/perkonto#Method">Method</a> <sup class="type-c" title="class">c</sup>, <a href="http://purl.obolibrary.org/obo/OBI_0000070" target="_blank" title="http://purl.obolibrary.org/obo/OBI_0000070">O B I 0000070</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#appliedToProblem" title="https://w3id.org/perkonto/molbio#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#assays" title="https://w3id.org/perkonto/molbio#assays">assays</a> <sup class="type-op" title="object property">op</sup>, <a href="#followsProtocol" title="https://w3id.org/perkonto/molbio#followsProtocol">follows protocol</a> <sup class="type-op" title="object property">op</sup>, <a href="#runsOn" title="https://w3id.org/perkonto/molbio#runsOn">runs on</a> <sup class="type-op" title="object property">op</sup>, <a href="#techniqueName" title="https://w3id.org/perkonto/molbio#techniqueName">technique name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#usesReagent" title="https://w3id.org/perkonto/molbio#usesReagent">uses reagent</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appliesTechnique" title="https://w3id.org/perkonto/molbio#appliesTechnique">applies technique</a> <sup class="type-op" title="object property">op</sup>, <a href="#quantifies" title="https://w3id.org/perkonto/molbio#quantifies">quantifies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>, <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Instrument">
+  <h3>Instrument / Platform<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#Instrument</p>
+  <div class="comment">
+   <span class="markdown">A laboratory instrument or platform used to run a technique, e.g. an Illumina NovaSeq sequencer, a confocal microscope, a qPCR machine, a mass spectrometer.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/OBI_0000968" target="_blank" title="http://purl.obolibrary.org/obo/OBI_0000968">O B I 0000968</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#instrumentName" title="https://w3id.org/perkonto/molbio#instrumentName">instrument name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#runsOn" title="https://w3id.org/perkonto/molbio#runsOn">runs on</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>, <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Protocol">
+  <h3>Protocol<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#Protocol</p>
+  <div class="comment">
+   <span class="markdown">A documented experimental procedure / standard operating procedure followed to perform a technique.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/OBI_0000272" target="_blank" title="http://purl.obolibrary.org/obo/OBI_0000272">O B I 0000272</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#protocolName" title="https://w3id.org/perkonto/molbio#protocolName">protocol name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#protocolVersion" title="https://w3id.org/perkonto/molbio#protocolVersion">protocol version</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#followsProtocol" title="https://w3id.org/perkonto/molbio#followsProtocol">follows protocol</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>, <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>, <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Readout">
+  <h3>Readout / Measured Quantity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#Readout</p>
+  <div class="comment">
+   <span class="markdown">A measured biological quantity or endpoint, e.g. gene-expression level, cell viability, binding affinity (Kd), fluorescence intensity, differential-expression p-value.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Metric" target="_blank" title="https://w3id.org/perkonto#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="http://qudt.org/schema/qudt/Quantity" target="_blank" title="http://qudt.org/schema/qudt/Quantity">Quantity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#quantifies" title="https://w3id.org/perkonto/molbio#quantifies">quantifies</a> <sup class="type-op" title="object property">op</sup>, <a href="#readoutName" title="https://w3id.org/perkonto/molbio#readoutName">readout name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#readoutUnit" title="https://w3id.org/perkonto/molbio#readoutUnit">readout unit</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#readoutValue" title="https://w3id.org/perkonto/molbio#readoutValue">readout value</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>, <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Reagent">
+  <h3>Reagent / Material<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#Reagent</p>
+  <div class="comment">
+   <span class="markdown">A consumable biological/chemical material used in an experiment, e.g. an antibody, primer, plasmid, enzyme, stain, or kit.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#reagentName" title="https://w3id.org/perkonto/molbio#reagentName">reagent name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#usesReagent" title="https://w3id.org/perkonto/molbio#usesReagent">uses reagent</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>, <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>, <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ResearchProblem">
+  <h3>Research Problem / Hypothesis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#ResearchProblem</p>
+  <div class="comment">
+   <span class="markdown">A scientific question or hypothesis the group works on, e.g. 'role of gene X in apoptosis', 'mechanism of copper trafficking in cells'.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/perkonto#Task" target="_blank" title="https://w3id.org/perkonto#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appliedToProblem" title="https://w3id.org/perkonto/molbio#appliedToProblem">applied to problem</a> <sup class="type-op" title="object property">op</sup>, <a href="#investigates" title="https://w3id.org/perkonto/molbio#investigates">investigates</a> <sup class="type-op" title="object property">op</sup>, <a href="#quantifies" title="https://w3id.org/perkonto/molbio#quantifies">quantifies</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>, <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>, <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#appliedToProblem" title="https://w3id.org/perkonto/molbio#appliedToProblem">applied to problem</a></li>
+  <li><a href="#appliesTechnique" title="https://w3id.org/perkonto/molbio#appliesTechnique">applies technique</a></li>
+  <li><a href="#assays" title="https://w3id.org/perkonto/molbio#assays">assays</a></li>
+  <li><a href="#followsProtocol" title="https://w3id.org/perkonto/molbio#followsProtocol">follows protocol</a></li>
+  <li><a href="#investigates" title="https://w3id.org/perkonto/molbio#investigates">investigates</a></li>
+  <li><a href="#quantifies" title="https://w3id.org/perkonto/molbio#quantifies">quantifies</a></li>
+  <li><a href="#runsOn" title="https://w3id.org/perkonto/molbio#runsOn">runs on</a></li>
+  <li><a href="#studies" title="https://w3id.org/perkonto/molbio#studies">studies</a></li>
+  <li><a href="#usesReagent" title="https://w3id.org/perkonto/molbio#usesReagent">uses reagent</a></li>
+ </ul>
+ <div class="entity" id="appliedToProblem">
+  <h3>applied to problem<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#appliedToProblem</p>
+  <div class="comment">
+   <span class="markdown">Links an ExperimentalTechnique or BiologicalEntity to the ResearchProblem it addresses. Specialises perk:usedFor.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#usedFor" target="_blank" title="https://w3id.org/perkonto#usedFor">used For</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="appliesTechnique">
+  <h3>applies technique<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#appliesTechnique</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to an ExperimentalTechnique they use. Specialises perk:worksWith.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksWith" target="_blank" title="https://w3id.org/perkonto#worksWith">works With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="assays">
+  <h3>assays<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#assays</p>
+  <div class="comment">
+   <span class="markdown">Links an ExperimentalTechnique to the BiologicalEntity or BiologicalSample it is applied to. Specialises perk:uses.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#uses" target="_blank" title="https://w3id.org/perkonto#uses">uses</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="followsProtocol">
+  <h3>follows protocol<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#followsProtocol</p>
+  <div class="comment">
+   <span class="markdown">Links an ExperimentalTechnique to the Protocol it follows.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="investigates">
+  <h3>investigates<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#investigates</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a ResearchProblem they work on. Specialises perk:worksOn.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksOn" target="_blank" title="https://w3id.org/perkonto#worksOn">works On</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="quantifies">
+  <h3>quantifies<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#quantifies</p>
+  <div class="comment">
+   <span class="markdown">Links a Readout to the ExperimentalTechnique, BiologicalEntity, or ResearchProblem it characterises. Specialises perk:evaluates.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#evaluates" target="_blank" title="https://w3id.org/perkonto#evaluates">evaluates</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ResearchProblem" title="https://w3id.org/perkonto/molbio#ResearchProblem">Research Problem / Hypothesis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="runsOn">
+  <h3>runs on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#runsOn</p>
+  <div class="comment">
+   <span class="markdown">Links an ExperimentalTechnique to the Instrument / platform used to perform it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="studies">
+  <h3>studies<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#studies</p>
+  <div class="comment">
+   <span class="markdown">Links a Person to a BiologicalEntity they investigate. Specialises perk:worksWith.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#worksWith" target="_blank" title="https://w3id.org/perkonto#worksWith">works With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#Person" target="_blank" title="https://w3id.org/perkonto#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesReagent">
+  <h3>uses reagent<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#usesReagent</p>
+  <div class="comment">
+   <span class="markdown">Links an ExperimentalTechnique to a Reagent it requires.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#accessionID" title="https://w3id.org/perkonto/molbio#accessionID">accession ID</a></li>
+  <li><a href="#entityName" title="https://w3id.org/perkonto/molbio#entityName">entity name</a></li>
+  <li><a href="#entityType" title="https://w3id.org/perkonto/molbio#entityType">entity type</a></li>
+  <li><a href="#instrumentName" title="https://w3id.org/perkonto/molbio#instrumentName">instrument name</a></li>
+  <li><a href="#protocolName" title="https://w3id.org/perkonto/molbio#protocolName">protocol name</a></li>
+  <li><a href="#protocolVersion" title="https://w3id.org/perkonto/molbio#protocolVersion">protocol version</a></li>
+  <li><a href="#readoutName" title="https://w3id.org/perkonto/molbio#readoutName">readout name</a></li>
+  <li><a href="#readoutUnit" title="https://w3id.org/perkonto/molbio#readoutUnit">readout unit</a></li>
+  <li><a href="#readoutValue" title="https://w3id.org/perkonto/molbio#readoutValue">readout value</a></li>
+  <li><a href="#reagentName" title="https://w3id.org/perkonto/molbio#reagentName">reagent name</a></li>
+  <li><a href="#sampleName" title="https://w3id.org/perkonto/molbio#sampleName">sample name</a></li>
+  <li><a href="#techniqueName" title="https://w3id.org/perkonto/molbio#techniqueName">technique name</a></li>
+ </ul>
+ <div class="entity" id="accessionID">
+  <h3>accession ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#accessionID</p>
+  <div class="comment">
+   <span class="markdown">Database accession identifier, e.g. a UniProt ID, GenBank accession, or SRA run ID.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="entityName">
+  <h3>entity name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#entityName</p>
+  <div class="comment">
+   <span class="markdown">Name of the biological entity, e.g. 'p53', 'E. coli K-12', 'HeLa'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#datasetName" target="_blank" title="https://w3id.org/perkonto#datasetName">dataset Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="entityType">
+  <h3>entity type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#entityType</p>
+  <div class="comment">
+   <span class="markdown">Category of entity, e.g. 'gene', 'protein', 'pathway', 'cell line', 'organism'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#BiologicalEntity" title="https://w3id.org/perkonto/molbio#BiologicalEntity">Biological Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="instrumentName">
+  <h3>instrument name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#instrumentName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Instrument" title="https://w3id.org/perkonto/molbio#Instrument">Instrument / Platform</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="protocolName">
+  <h3>protocol name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#protocolName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="protocolVersion">
+  <h3>protocol version<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#protocolVersion</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#version" target="_blank" title="https://w3id.org/perkonto#version">version</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Protocol" title="https://w3id.org/perkonto/molbio#Protocol">Protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="readoutName">
+  <h3>readout name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#readoutName</p>
+  <div class="comment">
+   <span class="markdown">Name of the measured quantity, e.g. 'expression level', 'cell viability', 'Kd'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#metricName" target="_blank" title="https://w3id.org/perkonto#metricName">metric Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="readoutUnit">
+  <h3>readout unit<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#readoutUnit</p>
+  <div class="comment">
+   <span class="markdown">Unit of the readout value, e.g. 'nM', 'fold-change', 'percent'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="readoutValue">
+  <h3>readout value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#readoutValue</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Readout" title="https://w3id.org/perkonto/molbio#Readout">Readout / Measured Quantity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reagentName">
+  <h3>reagent name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#reagentName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Reagent" title="https://w3id.org/perkonto/molbio#Reagent">Reagent / Material</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="sampleName">
+  <h3>sample name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#sampleName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#datasetName" target="_blank" title="https://w3id.org/perkonto#datasetName">dataset Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#BiologicalSample" title="https://w3id.org/perkonto/molbio#BiologicalSample">Biological Sample / Generated Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="techniqueName">
+  <h3>technique name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/perkonto/molbio#techniqueName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/perkonto#methodName" target="_blank" title="https://w3id.org/perkonto#methodName">method Name</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ExperimentalTechnique" title="https://w3id.org/perkonto/molbio#ExperimentalTechnique">Experimental Technique / Assay</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

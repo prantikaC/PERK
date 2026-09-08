@@ -17,14 +17,11 @@
                              owl:imports <http://purl.org/ontology/bibo/> ,
                                          <http://www.w3.org/ns/prov-o> ,
                                          <http://xmlns.com/foaf/0.1/> ;
-                             dcterms:creator "Debarshi Kumar Sanyal" ,
-                                             "Partha Pratim Das" ,
-                                             "Prantika Chakraborty" ,
-                                             "Srijoni Majumdar" ;
+                             dcterms:creator "Anonymous Authors" ;
                              dcterms:description "A domain-specific ontology for representing the professional  knowledge of a researcher as extractable from personal email  communications. PERKOnto models communication infrastructure, researchers and venues, the publication lifecycle, and research content,  anchoring every assertion to its provenance email."@en ;
                              dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                              dcterms:title "PERKOnto: Personal Email Research Knowledge Ontology"@en ;
-                             rdfs:seeAlso <https://github.com/prantikaC/PERK> ;
+                             rdfs:seeAlso <urn:withheld-for-review> ;
                              owl:versionInfo "1.0.0" .
 
 #################################################################
@@ -83,6 +80,10 @@ bibo:authorList rdf:type owl:ObjectProperty .
 prov:wasInformedBy rdf:type owl:ObjectProperty .
 
 
+###  https://schema.org/affiliation
+schema:affiliation rdf:type owl:ObjectProperty .
+
+
 ###  https://schema.org/attendee
 schema:attendee rdf:type owl:ObjectProperty .
 
@@ -99,6 +100,10 @@ schema:isRelatedTo rdf:type owl:ObjectProperty .
 schema:knowsAbout rdf:type owl:ObjectProperty .
 
 
+###  https://schema.org/memberOf
+schema:memberOf rdf:type owl:ObjectProperty .
+
+
 ###  https://schema.org/recipient
 schema:recipient rdf:type owl:ObjectProperty .
 
@@ -109,6 +114,24 @@ schema:sender rdf:type owl:ObjectProperty .
 
 ###  https://schema.org/subjectOf
 schema:subjectOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/perkonto#affiliation
+:affiliation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf schema:affiliation ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Person
+                                         :Team
+                                       )
+                         ] ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( :Organization
+                                        :Journal
+                                        :Conference
+                                      )
+                        ] ;
+             rdfs:comment "Links a Person or Team to the Organization, Journal, or  Conference they are affiliated with."@en ;
+             rdfs:label "affiliation"@en .
 
 
 ###  https://w3id.org/perkonto#attends
@@ -147,6 +170,18 @@ schema:subjectOf rdf:type owl:ObjectProperty .
            rdfs:label "has author"@en .
 
 
+###  https://w3id.org/perkonto#hasOwner
+:hasOwner rdf:type owl:ObjectProperty ;
+          rdfs:domain :EmailID ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Person
+                                     :Team
+                                   )
+                     ] ;
+          rdfs:comment "Links an EmailID to the Person or Team who owns it."@en ;
+          rdfs:label "has owner"@en .
+
+
 ###  https://w3id.org/perkonto#hasPaperInfo
 :hasPaperInfo rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf schema:subjectOf ;
@@ -175,6 +210,15 @@ schema:subjectOf rdf:type owl:ObjectProperty .
                     ] ;
          rdfs:comment "Links a SubmissionID to its target Conference or Journal."@en ;
          rdfs:label "in venue"@en .
+
+
+###  https://w3id.org/perkonto#memberOf
+:memberOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf schema:memberOf ;
+          rdfs:domain :Person ;
+          rdfs:range :Team ;
+          rdfs:comment "Links a Person to the Team they are a member of."@en ;
+          rdfs:label "member of"@en .
 
 
 ###  https://w3id.org/perkonto#movesTo
@@ -290,10 +334,6 @@ prov:generatedAtTime rdf:type owl:DatatypeProperty .
 foaf:name rdf:type owl:DatatypeProperty .
 
 
-###  https://schema.org/affiliation
-schema:affiliation rdf:type owl:DatatypeProperty .
-
-
 ###  https://schema.org/dateCreated
 schema:dateCreated rdf:type owl:DatatypeProperty .
 
@@ -320,15 +360,6 @@ schema:startDate rdf:type owl:DatatypeProperty .
 
 ###  https://schema.org/url
 schema:url rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/perkonto#affiliation
-:affiliation rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf schema:affiliation ;
-             rdfs:domain :Person ;
-             rdfs:range xsd:string ;
-             rdfs:comment "The institutional affiliation of a Person."@en ;
-             rdfs:label "affiliation"@en .
 
 
 ###  https://w3id.org/perkonto#arxivID
@@ -359,6 +390,12 @@ schema:url rdf:type owl:DatatypeProperty .
            rdfs:label "conference venue"@en .
 
 
+###  https://w3id.org/perkonto#context
+:context rdf:type owl:DatatypeProperty ;
+         rdfs:comment "A free-text quote or paraphrase from the source email  substantiating the relationship it is attached to."@en ;
+         rdfs:label "context"@en .
+
+
 ###  https://w3id.org/perkonto#datasetName
 :datasetName rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf schema:name ;
@@ -381,6 +418,14 @@ schema:url rdf:type owl:DatatypeProperty .
      rdfs:range xsd:anyURI ;
      rdfs:comment "Digital Object Identifier for a published paper."@en ;
      rdfs:label "DOI"@en .
+
+
+###  https://w3id.org/perkonto#eID
+:eID rdf:type owl:DatatypeProperty ;
+     rdfs:domain :EmailID ;
+     rdfs:range xsd:string ;
+     rdfs:comment "The email address string identifying this EmailID."@en ;
+     rdfs:label "email ID"@en .
 
 
 ###  https://w3id.org/perkonto#identifier
@@ -449,6 +494,20 @@ schema:url rdf:type owl:DatatypeProperty .
           rdfs:label "meeting time"@en .
 
 
+###  https://w3id.org/perkonto#mergeConfidence
+:mergeConfidence rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:double ;
+                 rdfs:comment "Confidence score for an entity-resolution merge  decision."@en ;
+                 rdfs:label "merge confidence"@en .
+
+
+###  https://w3id.org/perkonto#mergedFrom
+:mergedFrom rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Record of the raw candidate node identifier(s) fused into  this canonical entity during entity resolution."@en ;
+            rdfs:label "merged from"@en .
+
+
 ###  https://w3id.org/perkonto#methodName
 :methodName rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf schema:name ;
@@ -463,6 +522,22 @@ schema:url rdf:type owl:DatatypeProperty .
             rdfs:domain :Metric ;
             rdfs:range xsd:string ;
             rdfs:label "metric name"@en .
+
+
+###  https://w3id.org/perkonto#orgLoc
+:orgLoc rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf schema:location ;
+        rdfs:domain :Organization ;
+        rdfs:range xsd:string ;
+        rdfs:label "organization location"@en .
+
+
+###  https://w3id.org/perkonto#orgName
+:orgName rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf schema:name ;
+         rdfs:domain :Organization ;
+         rdfs:range xsd:string ;
+         rdfs:label "organization name"@en .
 
 
 ###  https://w3id.org/perkonto#pages
@@ -494,6 +569,13 @@ schema:url rdf:type owl:DatatypeProperty .
 ###  https://w3id.org/perkonto#publisher
 :publisher rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:string .
+
+
+###  https://w3id.org/perkonto#role
+:role rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The role held (e.g. PhD Scholar, Professor) as attested by a  memberOf or affiliation relationship."@en ;
+      rdfs:label "role"@en .
 
 
 ###  https://w3id.org/perkonto#source
@@ -537,6 +619,14 @@ schema:url rdf:type owl:DatatypeProperty .
           rdfs:domain :Task ;
           rdfs:range xsd:string ;
           rdfs:label "task name"@en .
+
+
+###  https://w3id.org/perkonto#teamName
+:teamName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf schema:name ;
+          rdfs:domain :Team ;
+          rdfs:range xsd:string ;
+          rdfs:label "team name"@en .
 
 
 ###  https://w3id.org/perkonto#threadID
@@ -599,6 +689,14 @@ prov:Agent rdf:type owl:Class .
 prov:Entity rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Group
+foaf:Group rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class .
+
+
 ###  http://xmlns.com/foaf/0.1/Person
 foaf:Person rdf:type owl:Class .
 
@@ -658,6 +756,12 @@ schema:SoftwareApplication rdf:type owl:Class .
        rdfs:label "Email"@en .
 
 
+###  https://w3id.org/perkonto#EmailID
+:EmailID rdf:type owl:Class ;
+         rdfs:comment "An email address/account identity, distinct from the Email  message, that sends or receives Email and is owned by a Person or Team."@en ;
+         rdfs:label "Email ID"@en .
+
+
 ###  https://w3id.org/perkonto#Journal
 :Journal rdf:type owl:Class ;
          rdfs:subClassOf bibo:Journal ,
@@ -691,6 +795,14 @@ schema:SoftwareApplication rdf:type owl:Class .
 :Metric rdf:type owl:Class ;
         rdfs:comment "An evaluation metric used to assess the performance of a  method on a task or dataset."@en ;
         rdfs:label "Metric"@en .
+
+
+###  https://w3id.org/perkonto#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf prov:Agent ,
+                              foaf:Organization ;
+              rdfs:comment "An institution, university, or company that a Person or  Team is affiliated with."@en ;
+              rdfs:label "Organization"@en .
 
 
 ###  https://w3id.org/perkonto#Paper
@@ -735,6 +847,14 @@ schema:SoftwareApplication rdf:type owl:Class .
       rdfs:label "Task"@en .
 
 
+###  https://w3id.org/perkonto#Team
+:Team rdf:type owl:Class ;
+      rdfs:subClassOf prov:Agent ,
+                      foaf:Group ;
+      rdfs:comment "A group of Persons collaborating as a unit, e.g. a research  group or project team."@en ;
+      rdfs:label "Team"@en .
+
+
 #################################################################
 #    General axioms
 #################################################################
@@ -743,17 +863,20 @@ schema:SoftwareApplication rdf:type owl:Class .
   owl:members ( :Conference
                 :Dataset
                 :Email
+                :EmailID
                 :Journal
                 :MailThread
                 :Meeting
                 :Method
                 :Metric
+                :Organization
                 :Paper
                 :PaperBib
                 :PaperStatus
                 :Person
                 :SubmissionID
                 :Task
+                :Team
               )
 ] .
 

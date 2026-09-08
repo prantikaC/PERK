@@ -1,0 +1,172 @@
+:ID,mergeConfidence,mergedFrom,metricName,:LABEL
+mt1,,,accuracy,Metric
+mt3,,,temporal consistency score,Metric
+mt5,,,evaluation framework,Metric
+mt8,,,intrinsic evaluation protocols,Metric
+mt9,,,extrinsic evaluation protocols,Metric
+mt10,,,character error rate,Metric
+mt11,,,word error rate,Metric
+mt12,,,token-level accuracy,Metric
+mt13,0.8458,"['mt2', 'mt6']",F1 score,Metric
+mt14,0.8397,['mt7'],adjusted historical vocabulary recall (historical lexicon recall),Metric
+mt16,,,diagnostic metrics,Metric
+mt17,,,CER,Metric
+mt18,,,WER,Metric
+mt19,,,token-based metrics,Metric
+mt20,0.7688,['mt22'],explanation consistency scores (stability of explanations),Metric
+mt21,,,faithfulness indices,Metric
+mt23,,,quality of explanations,Metric
+mt24,,,interpretability,Metric
+mt25,,,historian usability,Metric
+mt26,,,actionability,Metric
+mt27,0.8539,['mt44'],trust in model explanations (trustworthiness),Metric
+mt28,,,stretch evaluation goals,Metric
+mt29,,,evaluation metrics,Metric
+mt30,,,usability metrics,Metric
+mt31,,,faithfulness metrics,Metric
+mt32,,,token accuracy,Metric
+mt33,,,consistency,Metric
+mt34,,,faithfulness,Metric
+mt35,,,actionability rating,Metric
+mt36,,,token-level F1,Metric
+mt37,,,"Likert-scale (1-5) on clarity, faithfulness, and trustworthiness",Metric
+mt38,0.8124,"['mt42', 'mt46']",Willingness to use score breakdowns (willingness scores),Metric
+mt39,0.8016,['mt47'],faithfulness ratings,Metric
+mt40,,,clarity ratings,Metric
+mt41,,,Faithfulness/clarity heatmaps,Metric
+mt43,,,Likert-scale responses,Metric
+mt45,,,clarity,Metric
+mt49,,,artifact severity,Metric
+mt52,,,cross-lingual results,Metric
+mt54,0.8651,['mt59'],Cohen’s kappa,Metric
+mt55,0.8449,['mt58'],per-class F1 scores (F1 per class),Metric
+mt56,,,"class distribution (substitution, insertion, deletion, segmentation errors)",Metric
+mt57,,,annotator-wise confusion matrices,Metric
+mt60,,,Krippendorff’s alpha,Metric
+mt63,0.832,['mt88'],"FAIR (Findable, Accessible, Interoperable, Reusable) data principles (FAIR data practice)",Metric
+mt64,,,ACM reproducibility principles,Metric
+mt65,,,edit distance,Metric
+mt66,,,Attribution standards,Metric
+mt67,,,precision in named entity recognition,Metric
+mt68,,,recall across temporal strata,Metric
+mt70,0.7563,['mt92'],hybrid evaluation metrics (hybrid metrics),Metric
+mt71,,,Statistically significant results,Metric
+mt72,,,confusion matrices,Metric
+mt73,,,error categories,Metric
+mt74,0.7959,['mt81'],annotated confusion matrices (confusion matrix),Metric
+mt75,0.8408,['mt76'],Macro-averaged F1 scores,Metric
+mt77,0.8598,['mt80'],micro-averaged F1 scores,Metric
+mt78,,,category-specific error rates,Metric
+mt79,,,F1 scores,Metric
+mt82,,,macro-F1,Metric
+mt83,,,precision,Metric
+mt84,,,recall,Metric
+mt85,,,Boundary Error,Metric
+mt86,,,sequence labelling evaluation,Metric
+mt87,,,performance metrics,Metric
+mt89,,,environment-specific edge cases,Metric
+mt90,,,quantitative evaluation metrics,Metric
+mt91,,,qualitative evaluation metrics,Metric
+mt93,,,precision/recall-based metrics,Metric
+mt94,,,qualitative expert assessments,Metric
+mt95,,,evaluative transparency,Metric
+mt96,,,historical representativeness,Metric
+mt97,,,provenance-aware precision,Metric
+mt98,,,provenance-aware recall,Metric
+mt100,,,metric computations,Metric
+mt101,0.8459,"['mt15', 'mt99']",provenance-aware metrics,Metric
+mt102,,,provenance-aware adaptations,Metric
+mt103,,,quantitative metrics,Metric
+mt104,,,traditional metrics,Metric
+mt105,,,metric comparisons,Metric
+mt106,,,corpus demographic statistics,Metric
+mt107,,,metrics for bias quantification,Metric
+mt108,0.7711,['mt144'],evaluation metrics for historical language models (evaluation metrics for historical NLP),Metric
+mt109,0.7814,['mt149'],evaluation metrics for noisy historical data (evaluation metrics for historical texts),Metric
+mt110,0.8139,"['mt133', 'mt135', 'mt136', 'mt137', 'mt138', 'mt143', 'mt156', 'mt169', 'mt177', 'mt183', 'mt51', 'mt53', 'mt61', 'mt69']",annotation inter-rater reliability score (annotator agreement),Metric
+mt111,,,media impact metrics,Metric
+mt112,,,newsletter traffic,Metric
+mt113,,,regional uptake,Metric
+mt114,,,JCDL criteria,Metric
+mt115,,,WCAG 2.1 criteria,Metric
+mt116,0.8148,"['mt117', 'mt50']",tabulated OCR error metrics (OCR error rate),Metric
+mt118,,,feedback metrics,Metric
+mt119,,,quantitative (Likert-scale),Metric
+mt120,,,qualitative sections,Metric
+mt121,,,registration numbers,Metric
+mt122,,,participant queries,Metric
+mt123,0.8545,['mt62'],accessibility evaluation metrics (accessibility scores),Metric
+mt124,,,evaluation metrics for historical corpus adaptations,Metric
+mt125,,,semantic drift benchmarks,Metric
+mt126,,,EMNLP evaluation metrics,Metric
+mt127,,,evaluation tools,Metric
+mt128,,,temporal word embedding shift,Metric
+mt129,,,NLP downstream performance,Metric
+mt130,,,hybrid evaluation suite,Metric
+mt131,,,EMNLP-derived low-resource benchmarks,Metric
+mt132,0.7946,['mt4'],Evaluation/Metrics,Metric
+mt134,,,EMNLP 2022 benchmark,Metric
+mt139,,,annotation metric,Metric
+mt140,,,evaluation metric transferability,Metric
+mt141,,,our metrics,Metric
+mt142,,,metric selection,Metric
+mt145,,,evaluation of metrics for historical data,Metric
+mt146,0.8445,['mt148'],semantic similarity metrics (semantic metrics),Metric
+mt147,,,precision-recall tradeoff,Metric
+mt150,,,precision-recall,Metric
+mt151,,,subset agreement,Metric
+mt152,,,Semantic Metrics Alignment,Metric
+mt153,,,error analysis,Metric
+mt154,0.8006,['mt48'],interpretability measures (interpretability metrics),Metric
+mt155,,,error distributions,Metric
+mt157,,,preliminary figures,Metric
+mt158,,,legend/terminology harmonization,Metric
+mt159,,,section integration,Metric
+mt160,,,balance between methodological detail and practical guidance,Metric
+mt161,,,professional momentum,Metric
+mt162,,,annotated sample sizes,Metric
+mt163,,,adjudication coverage,Metric
+mt164,,,entity metrics,Metric
+mt165,,,CC BY-NC 4.0 for corpus,Metric
+mt166,,,MIT for code,Metric
+mt167,,,open-access policy,Metric
+mt168,,,DOI,Metric
+mt170,,,summary statistics,Metric
+mt171,,,ACL 2023 BibTeX style,Metric
+mt172,,,ACL BibTeX style,Metric
+mt173,,,dataset DOIs,Metric
+mt174,,,JDoc sources,Metric
+mt175,,,ACM JOCCH sources,Metric
+mt176,,,DOI accessibility,Metric
+mt178,,,benchmark results,Metric
+mt179,,,traceability,Metric
+mt180,,,transparency,Metric
+mt181,,,accessibility,Metric
+mt182,,,F1 score variance,Metric
+mt184,,,legal protocol matrix,Metric
+mt185,,,legal table,Metric
+mt186,,,color-coded matrix,Metric
+mt187,,,flagged consent conditions,Metric
+mt188,,,flagged clauses on “heritage dataset export” (GDPR/UK section D3b),Metric
+mt189,,,data points highlighted with an asterisk,Metric
+mt190,,,red-outline legend in Michael’s figures,Metric
+mt191,,,comparative legal table,Metric
+mt192,,,legal protocol matrix and drafted footnotes,Metric
+mt193,,,main integration draft,Metric
+mt194,,,narrative summary in the shared appendix folder,Metric
+mt195,,,technical compliance commentary,Metric
+mt196,,,sections 37B and 45C,Metric
+mt197,,,extended legal citations and context,Metric
+mt198,,,appendix formatting,Metric
+mt199,,,annotation metadata to clarify consent-specific logic for the figure captions,Metric
+mt200,,,regional sensitivities and researcher obligations,Metric
+mt201,,,third-party archival material and anonymization protocols,Metric
+mt202,,,word count,Metric
+mt203,,,regulatory nuance,Metric
+mt204,,,reviewer transparency,Metric
+mt205,,,pace of work,Metric
+mt206,,,"alignment of supplementary, methodological, and visual elements",Metric
+mt207,,,strength of revision,Metric
+mt208,,,regulatory cross-referencing,Metric
+mt209,,,quantitative annotation metrics,Metric
+mt210,,,cross-border annotation metrics,Metric
